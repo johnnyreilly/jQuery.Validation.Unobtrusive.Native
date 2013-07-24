@@ -1,0 +1,35 @@
+﻿@model jQueryValidateNativeUnobtrusive.Models.Example
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h4>This is a demo...</h4>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(x => x.RequiredDateDemo)
+    @Html.TextBoxFor(x => x.RequiredDateDemo, true)
+
+    <p class="text-left">
+        <button type="submit" class="btn">Submit</button>
+    </p>
+}
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        var $form = $("form");
+        $form.validate();
+        $form.submit(function (event) {
+
+            if ($form.validate().valid()) {
+
+                event.preventDefault();
+
+                alert("Valid!");
+            }
+        });
+    </script>
+}
+
