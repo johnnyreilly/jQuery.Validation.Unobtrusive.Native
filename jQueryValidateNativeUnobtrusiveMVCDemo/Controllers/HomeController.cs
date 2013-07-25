@@ -9,7 +9,13 @@ namespace jQueryValidateNativeUnobtrusive.Controllers
         {
             ViewBag.Message = "Your demo page.";
 
-            return View(new Example());
+            return View(new ExampleModel
+                {
+                    RequiredDateDemo = null,
+                    StringLengthAndRequiredDemo = "abc",
+                    RangeAndNumberDemo = 77,
+                    DropDownRequiredDemo = null
+                });
         }
     }
 }

@@ -42,7 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="jQueryValidateNativeUnobtrusiveExtensions.cs" />
+    <Compile Include="Mapper.cs" />
+    <Compile Include="TextBoxExtensions.cs" />
+    <Compile Include="DropDownListExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

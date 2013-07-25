@@ -1,17 +1,30 @@
-﻿@model jQueryValidateNativeUnobtrusive.Models.Example
+﻿@model jQueryValidateNativeUnobtrusive.Models.ExampleModel
 @{
     ViewBag.Title = "Home Page";
 }
 
-<h4>This is a demo...</h4>
+<h4>Some basic demos...</h4>
 
 @using (Html.BeginForm())
 {
-    @Html.LabelFor(x => x.RequiredDateDemo)
+    @Html.LabelFor(x => x.RequiredDateDemo, "A date is required (eg \"15 June 2012\"):")
     @Html.TextBoxFor(x => x.RequiredDateDemo, true)
 
+    @Html.LabelFor(x => x.StringLengthAndRequiredDemo, "A string is required between 5 and 10 characters long:")
+    @Html.TextBoxFor(x => x.StringLengthAndRequiredDemo, true)
+
+    @Html.LabelFor(x => x.RangeAndNumberDemo, "Must be a number between -20 and 40:")
+    @Html.TextBoxFor(x => x.RangeAndNumberDemo, true)
+    
+    @Html.LabelFor(x => x.DropDownRequiredDemo, "An option must be selected:")
+    @Html.DropDownListFor(x => x.DropDownRequiredDemo, true, new List<SelectListItem> {
+        new SelectListItem{ Text = "Please select", Value = "" },
+        new SelectListItem{ Text = "An option", Value = "An option"}
+    })
+    
     <p class="text-left">
         <button type="submit" class="btn">Submit</button>
+        <button type="reset" class="btn btn-inverse">Reset</button>
     </p>
 }
 
@@ -20,15 +33,8 @@
     @Scripts.Render("~/bundles/jqueryval")
     <script>
         var $form = $("form");
-        $form.validate();
-        $form.submit(function (event) {
-
-            if ($form.validate().valid()) {
-
-                event.preventDefault();
-
-                alert("Valid!");
-            }
+        $form.validate({
+            submitHandler: function () { alert("Valid!"); }
         });
     </script>
 }
