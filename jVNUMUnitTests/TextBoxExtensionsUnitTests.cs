@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -277,7 +278,7 @@ namespace jQueryValidateNativeUnobtrusiveMVCUnitTests
         private class DateTimeModel { public DateTime Date { get; set; } }
 
         [TestMethod]
-        public void TextBoxFor_creates_date_and_required_data_attributes_for_DateTime()
+        public void TextBoxFor_creates_required_and_date_data_attributes_for_DateTime()
         {
             // Arrange
             var htmlHelper = HtmlHelperFactory.Create(new DateTimeModel());
@@ -288,6 +289,7 @@ namespace jQueryValidateNativeUnobtrusiveMVCUnitTests
             // Assert
             Assert.AreEqual(HTMLRequiredDate, result.ToHtmlString());
         }
+
         private const string HTMLDate = "<input " +
                                         "data-msg-date=\"The field Date must be a date.\" " +
                                         "data-rule-date=\"true\" " +
@@ -308,6 +310,72 @@ namespace jQueryValidateNativeUnobtrusiveMVCUnitTests
             Assert.AreEqual(HTMLDate, result.ToHtmlString());
         }
 
+        #endregion
+
+        #region Required tests for @Html.TextBoxFor(x => x.SomeProp, true)
+
+        private const string HTMLRequiredString = "<input " +
+                                                  "data-msg-required=\"The String field is required.\" " +
+                                                  "data-rule-required=\"true\" " +
+                                                  "id=\"String\" name=\"String\" type=\"text\" value=\"\" />";
+
+        private class RequiredStringModel
+        {
+            [Required]
+            public string String { get; set; }
+        }
+
+        [TestMethod]
+        public void TextBoxFor_creates_required_data_attributes_for_string_with_Required_attribute()
+        {
+            // Arrange
+            var htmlHelper = HtmlHelperFactory.Create(new RequiredStringModel());
+
+            // Act
+            var result = TextBoxExtensions.TextBoxFor(htmlHelper, exampleModel => exampleModel.String, true);
+
+            // Assert
+            Assert.AreEqual(HTMLRequiredString, result.ToHtmlString());
+        }
+
+        private class RequiredDateTimeModel
+        {
+            [Required]
+            public DateTime Date { get; set; }
+        }
+
+        [TestMethod]
+        public void TextBoxFor_creates_required_and_date_data_attributes_for_DateTime_with_Required_attribute()
+        {
+            // Arrange
+            var htmlHelper = HtmlHelperFactory.Create(new RequiredDateTimeModel());
+
+            // Act
+            var result = TextBoxExtensions.TextBoxFor(htmlHelper, exampleModel => exampleModel.Date, true);
+
+            // Assert
+            Assert.AreEqual(HTMLRequiredDate, result.ToHtmlString());
+        }
+
+        private class RequiredNullableDateTimeModel
+        {
+            [Required]
+            public DateTime? Date { get; set; }
+        }
+
+        [TestMethod]
+        public void TextBoxFor_creates_required_and_date_data_attributes_for_nullable_DateTime_with_Required_attribute()
+        {
+            // Arrange
+            var htmlHelper = HtmlHelperFactory.Create(new RequiredNullableDateTimeModel());
+
+            // Act
+            var result = TextBoxExtensions.TextBoxFor(htmlHelper, exampleModel => exampleModel.Date, true);
+
+            // Assert
+            Assert.AreEqual(HTMLRequiredDate, result.ToHtmlString());
+        }
+        
         #endregion
 
     }
