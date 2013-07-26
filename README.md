@@ -24,6 +24,8 @@ Include jQueryValidateNativeUnobtrusiveMVC in your project and you should be abl
 
 Ensure that you have the latest version of jquery.validate.js, you can find it [here](http://jqueryvalidation.org/).  Oh, and remember that you no longer need to use jquery.validate.unobtrusive.js if you're using jQueryValidateNativeUnobtrusiveMVC.
 
+And if you're compiling the source code in Visual Studio make sure you have the Package Manager option *"Allow NuGet to download missing packages during build"* set to true.
+
 ##Plans
 
 At the moment only a small subset of the HtmlHelpers and their associated unobtrusive mappings have been implemented, essentially driven by my own needs.  As I use more I will add more - and feel free to pitch in!
