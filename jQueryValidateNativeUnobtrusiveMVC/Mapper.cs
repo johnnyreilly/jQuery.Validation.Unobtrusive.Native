@@ -10,17 +10,21 @@ namespace System.Web.Mvc
     public static class Mapper
     {
         private const string data_val_required = "data-val-required";
+
         private const string data_val_number = "data-val-number";
         private const string data_val_date = "data-val-date";
+        
         private const string data_val_length = "data-val-length";
         private const string data_val_length_min = "data-val-length-min";
         private const string data_val_length_max = "data-val-length-max";
+        
         private const string data_val_range = "data-val-range";
 
-        public static RouteValueDictionary GetUnobtrusiveValidationAttributes<TModel, TProperty>(HtmlHelper<TModel> helper,
-                                                                                                 Expression<Func<TModel, TProperty>> expression,
-                                                                                                 object htmlAttributes,
-                                                                                                 ModelMetadata metadata)
+        public static RouteValueDictionary GetUnobtrusiveValidationAttributes<TModel, TProperty>(
+            HtmlHelper<TModel> helper,
+            Expression<Func<TModel, TProperty>> expression,
+            object htmlAttributes,
+            ModelMetadata metadata)
         {
             var propertyName = helper.NameFor(expression).ToString();
             var unobtrusiveValidationAttributes = helper.GetUnobtrusiveValidationAttributes(propertyName, metadata);
@@ -34,6 +38,8 @@ namespace System.Web.Mvc
             }
 
             // Number
+            // If a property is an Short, Integer, Long, Byte, Decimal, Single or Double then this validation will be
+            // applied (and also if they are Nullables of the same types)
             if (unobtrusiveValidationAttributes.ContainsKey(data_val_number))
             {
                 attributes.Add("data-rule-number", "true");
