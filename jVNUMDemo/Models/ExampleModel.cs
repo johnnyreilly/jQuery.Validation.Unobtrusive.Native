@@ -17,5 +17,7 @@ namespace jQueryValidateNativeUnobtrusive.Models
 
         [Required]
         public string DropDownRequiredDemo { get; set; }
+
+        public bool BoolDemo { get; set; }
     }
 }

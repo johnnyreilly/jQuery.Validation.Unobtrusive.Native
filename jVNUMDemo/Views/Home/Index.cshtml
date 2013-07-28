@@ -22,6 +22,9 @@
         new SelectListItem{ Text = "An option", Value = "An option"}
     })
     
+    @Html.LabelFor(x => x.BoolDemo, "A boolean must be provided (and since a checkbox can only be true or false it will be)")
+    @Html.CheckBoxFor(x => x.BoolDemo, true)
+    
     <p class="text-left">
         <button type="submit" class="btn">Submit</button>
         <button type="reset" class="btn btn-inverse">Reset</button>

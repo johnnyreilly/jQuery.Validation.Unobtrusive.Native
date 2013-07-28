@@ -6,34 +6,32 @@ namespace System.Web.Mvc
     /// <summary>
     /// MVC HtmlHelper extension methods - extensions that make use of jQuery Validates native unobtrusive data validation properties
     /// </summary>
-    public static class TextBoxExtensions
+    public static class CheckBoxExtensions
     {
         /// <summary>
-        /// Render a TextBox for the supplied model using native jQuery Validate Unobtrusive extensions (only if true passed)
+        /// Render a CheckBox for the supplied model using native jQuery Validate Unobtrusive extensions (only if true passed).
+        /// It's arguable whether this is necessary since a checkbox implicitly has a true / false value
         /// </summary>
         /// <typeparam name="TModel"></typeparam>
-        /// <typeparam name="TProperty"></typeparam>
         /// <param name="htmlHelper"></param>
         /// <param name="expression"></param>
         /// <param name="useNativeUnobtrusiveAttributes">Pass true if you want to use native extensions</param>
-        /// <param name="format">OPTIONAL</param>
         /// <param name="htmlAttributes">OPTIONAL</param>
         /// <returns></returns>
-        public static IHtmlString TextBoxFor<TModel, TProperty>(
-          this HtmlHelper<TModel> htmlHelper,
-          Expression<Func<TModel, TProperty>> expression,
+        public static IHtmlString CheckBoxFor<TModel>(this HtmlHelper<TModel> htmlHelper,
+          Expression<Func<TModel, bool>> expression,
           bool useNativeUnobtrusiveAttributes,
-          string format = null,
           object htmlAttributes = null)
         {
             // Return to native if true not passed
             if (!useNativeUnobtrusiveAttributes)
-                return htmlHelper.TextBoxFor(expression, format, htmlAttributes);
-
+                return htmlHelper.CheckBoxFor(expression, htmlAttributes);
+            
             var metadata = ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData);
             var attributes = Mapper.GetUnobtrusiveValidationAttributes(htmlHelper, expression, htmlAttributes, metadata);
+            var value = (bool)ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData).Model;
 
-            return htmlHelper.TextBox(metadata.PropertyName, metadata.Model, format, attributes);
+            return htmlHelper.CheckBox(metadata.PropertyName, value, attributes);
         }
 
     }

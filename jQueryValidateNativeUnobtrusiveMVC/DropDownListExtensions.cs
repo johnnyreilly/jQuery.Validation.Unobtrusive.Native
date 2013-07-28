@@ -18,22 +18,24 @@ namespace System.Web.Mvc
         /// <param name="expression"></param>
         /// <param name="useNativeUnobtrusiveAttributes"></param>
         /// <param name="selectList"></param>
-        /// <param name="htmlAttributes"></param>
+        /// <param name="optionLabel">OPTIONAL</param>
+        /// <param name="htmlAttributes">OPTIONAL</param>
         /// <returns></returns>
         public static MvcHtmlString DropDownListFor<TModel, TProperty>(this HtmlHelper<TModel> htmlHelper,
             Expression<Func<TModel, TProperty>> expression,
             bool useNativeUnobtrusiveAttributes,
             IEnumerable<SelectListItem> selectList,
+            string optionLabel = null,
             object htmlAttributes = null)
         {
             // Return to native if true not passed
             if (!useNativeUnobtrusiveAttributes)
-                return htmlHelper.DropDownListFor(expression, selectList, htmlAttributes);
+                return htmlHelper.DropDownListFor(expression, selectList, optionLabel, htmlAttributes);
 
             var metadata = ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData);
             var attributes = Mapper.GetUnobtrusiveValidationAttributes(htmlHelper, expression, htmlAttributes, metadata);
 
-            return htmlHelper.DropDownList(metadata.PropertyName, selectList, attributes);
+            return htmlHelper.DropDownList(metadata.PropertyName, selectList, optionLabel, attributes);
         }
     }
 }

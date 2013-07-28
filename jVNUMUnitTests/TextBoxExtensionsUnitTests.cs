@@ -372,7 +372,7 @@ namespace jQueryValidateNativeUnobtrusiveMVCUnitTests
                                                            "data-rule-number=\"true\" " +
                                                            "data-rule-range=\"[-20.5,40.3]\" " +
                                                            "id=\"Number\" name=\"Number\" type=\"text\" value=\"\" />";
-        
+
         private class ShortRangeModel
         {
             [Range(typeof(short), "-20", "40")]
@@ -428,6 +428,31 @@ namespace jQueryValidateNativeUnobtrusiveMVCUnitTests
 
             // Assert
             Assert.AreEqual(HTMLRangeNumberWithFraction, result.ToHtmlString());
+        }
+
+        #endregion
+
+        #region HtmlAttributes tests for @Html.TextBoxFor(x => x.Number, true, htmlAttributes: new { data_test_attribute = "I am a test" })
+
+        private class StringModel
+        {
+            public string String { get; set; }
+        }
+
+
+        [TestMethod]
+        public void TextBoxFor_has_custom_data_attributes()
+        {
+            // Arrange
+            var htmlHelper = HtmlHelperFactory.Create(new StringModel()); // used this model as it has few generated metadata attributes
+
+            // Act
+            var result = TextBoxExtensions.TextBoxFor(htmlHelper, exampleModel => exampleModel.String, true, htmlAttributes: new { data_test_attribute = "I am a test" });
+
+            // Assert
+            Assert.AreEqual("<input "+
+                "data-test-attribute=\"I am a test\" "+
+                "id=\"String\" name=\"String\" type=\"text\" value=\"\" />", result.ToHtmlString());
         }
 
         #endregion
