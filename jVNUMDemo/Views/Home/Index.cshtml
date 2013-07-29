@@ -1,4 +1,5 @@
-﻿@model jQueryValidateNativeUnobtrusive.Models.ExampleModel
+﻿@using jQueryValidateNativeUnobtrusive.Models
+@model jQueryValidateNativeUnobtrusive.Models.ExampleModel
 @{
     ViewBag.Title = "Home Page";
 }
@@ -24,6 +25,25 @@
     
     @Html.LabelFor(x => x.BoolDemo, "A boolean must be provided (and since a checkbox can only be true or false it will be)")
     @Html.CheckBoxFor(x => x.BoolDemo, true)
+    
+    <div class="control-group">
+        @Html.LabelFor(x => x.RadioButtonRequiredDemo, "A radio button must be selected:", new { @class="control-label" })
+
+        <div class="controls">
+            <label class="radio inline" for="RadioButtonRequiredDemo_Yes">
+                @Html.RadioButtonFor(x => x.RadioButtonRequiredDemo, true, TriStateEnum.Yes, new { id = "RadioButtonRequiredDemo_Yes" })
+                Yes
+            </label>
+            <label class="radio inline" for="RadioButtonRequiredDemo_No">
+                @Html.RadioButtonFor(x => x.RadioButtonRequiredDemo, true, TriStateEnum.No, new { id = "RadioButtonRequiredDemo_No" })
+                No
+            </label>
+            <label class="radio inline" for="RadioButtonRequiredDemo_DontKnow">
+                @Html.RadioButtonFor(x => x.RadioButtonRequiredDemo, true, TriStateEnum.DontKnow, new { id = "RadioButtonRequiredDemo_DontKnow" })
+                Don't Know
+            </label>
+        </div>
+    </div>
     
     <p class="text-left">
         <button type="submit" class="btn">Submit</button>

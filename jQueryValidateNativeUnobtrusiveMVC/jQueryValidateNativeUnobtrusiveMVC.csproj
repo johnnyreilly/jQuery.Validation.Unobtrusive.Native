@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CheckBoxExtensions.cs" />
+    <Compile Include="RadioButtonExtensions.cs" />
     <Compile Include="Mapper.cs" />
     <Compile Include="TextBoxExtensions.cs" />
     <Compile Include="DropDownListExtensions.cs" />

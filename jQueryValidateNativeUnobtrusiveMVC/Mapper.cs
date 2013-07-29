@@ -47,6 +47,8 @@ namespace System.Web.Mvc
             }
 
             // Date
+            // If a property is a DateTime (or similar) then this validation will be
+            // applied (and also if they are Nullables of the same types)
             if (unobtrusiveValidationAttributes.ContainsKey(data_val_date))
             {
                 attributes.Add("data-rule-date", "true");

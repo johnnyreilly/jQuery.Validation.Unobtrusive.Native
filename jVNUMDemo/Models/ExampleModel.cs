@@ -3,6 +3,13 @@ using System.ComponentModel.DataAnnotations;
 
 namespace jQueryValidateNativeUnobtrusive.Models
 {
+    public enum TriStateEnum
+    {
+        DontKnow = -1,
+        No = 0,
+        Yes = 1
+    }
+
     public class ExampleModel
     {
         [Required]
@@ -19,5 +26,8 @@ namespace jQueryValidateNativeUnobtrusive.Models
         public string DropDownRequiredDemo { get; set; }
 
         public bool BoolDemo { get; set; }
+
+        [Required]
+        public TriStateEnum? RadioButtonRequiredDemo { get; set; }
     }
 }
