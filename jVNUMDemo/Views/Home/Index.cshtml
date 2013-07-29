@@ -23,9 +23,6 @@
         new SelectListItem{ Text = "An option", Value = "An option"}
     })
     
-    @Html.LabelFor(x => x.BoolDemo, "A boolean must be provided (and since a checkbox can only be true or false it will be)")
-    @Html.CheckBoxFor(x => x.BoolDemo, true)
-    
     <div class="control-group">
         @Html.LabelFor(x => x.RadioButtonRequiredDemo, "A radio button must be selected:", new { @class="control-label" })
 
