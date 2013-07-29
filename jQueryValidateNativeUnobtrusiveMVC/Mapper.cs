@@ -13,7 +13,11 @@ namespace System.Web.Mvc
 
         private const string data_val_number = "data-val-number";
         private const string data_val_date = "data-val-date";
-        
+        private const string data_val_email = "data-val-email";
+        private const string data_val_url = "data-val-url";
+        private const string data_val_creditcard = "data-val-creditcard";
+        private const string data_val_equalto = "data-val-equalto";
+
         private const string data_val_length = "data-val-length";
         private const string data_val_length_min = "data-val-length-min";
         private const string data_val_length_max = "data-val-length-max";
@@ -29,13 +33,6 @@ namespace System.Web.Mvc
             var propertyName = helper.NameFor(expression).ToString();
             var unobtrusiveValidationAttributes = helper.GetUnobtrusiveValidationAttributes(propertyName, metadata);
             var attributes = HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttributes);
-
-            // Required
-            if (unobtrusiveValidationAttributes.ContainsKey(data_val_required))
-            {
-                attributes.Add("data-rule-required", "true");
-                attributes.Add("data-msg-required", unobtrusiveValidationAttributes[data_val_required]);
-            }
 
             // Number
             // If a property is an Short, Integer, Long, Byte, Decimal, Single or Double then this validation will be
@@ -53,6 +50,50 @@ namespace System.Web.Mvc
             {
                 attributes.Add("data-rule-date", "true");
                 attributes.Add("data-msg-date", unobtrusiveValidationAttributes[data_val_date]);
+            }
+
+            // Email
+            // Driven from EmailAddressAttribute eg "[EmailAddress]"
+            if (unobtrusiveValidationAttributes.ContainsKey(data_val_email))
+            {
+                attributes.Add("data-rule-email", "true");
+                attributes.Add("data-msg-email", unobtrusiveValidationAttributes[data_val_email]);
+            }
+
+            // Url
+            // Driven from UrlAttribute eg "[Url]"
+            if (unobtrusiveValidationAttributes.ContainsKey(data_val_url))
+            {
+                attributes.Add("data-rule-url", "true");
+                attributes.Add("data-msg-url", unobtrusiveValidationAttributes[data_val_url]);
+            }
+
+            // CreditCard
+            // Driven from CreditCardAttribute eg "[CreditCard]"
+            if (unobtrusiveValidationAttributes.ContainsKey(data_val_creditcard))
+            {
+                attributes.Add("data-rule-creditcard", "true");
+                attributes.Add("data-msg-creditcard", unobtrusiveValidationAttributes[data_val_creditcard]);
+            }
+
+            // EqualTo
+            // Driven from CompareAttribute eg "[Compare("PasswordDemo", ErrorMessage = "Passwords do not match.")]"
+            if (unobtrusiveValidationAttributes.ContainsKey(data_val_equalto))
+            {
+                // Convert equalto selector from "*.PasswordDemo" style to "#PasswordDemo" style
+                var equalToSelector = unobtrusiveValidationAttributes["data-val-equalto-other"].ToString();
+                equalToSelector = "#" + equalToSelector.Substring(2);
+
+                attributes.Add("data-rule-equalto", equalToSelector);
+                attributes.Add("data-msg-equalto", unobtrusiveValidationAttributes[data_val_equalto]);
+            }
+
+            // Required
+            // Driven from RequiredAttribute eg "[Required]"
+            if (unobtrusiveValidationAttributes.ContainsKey(data_val_required))
+            {
+                attributes.Add("data-rule-required", "true");
+                attributes.Add("data-msg-required", unobtrusiveValidationAttributes[data_val_required]);
             }
 
             // Min and Max Length

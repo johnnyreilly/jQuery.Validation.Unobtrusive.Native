@@ -42,6 +42,18 @@
         </div>
     </div>
     
+    @Html.LabelFor(x => x.EMailDemo, "An email address is required:")
+    @Html.TextBoxFor(x => x.EMailDemo, true)
+    
+    @Html.LabelFor(x => x.ConfirmEmailDemo, "This email need to match the previously entered one:")
+    @Html.TextBoxFor(x => x.ConfirmEmailDemo, true)
+    
+    @Html.LabelFor(x => x.UrlDemo, "A URL is required:")
+    @Html.TextBoxFor(x => x.UrlDemo, true)
+    
+    @Html.LabelFor(x => x.CreditCardDemo, "A credit card number is required:")
+    @Html.TextBoxFor(x => x.CreditCardDemo, true)
+
     <p class="text-left">
         <button type="submit" class="btn">Submit</button>
         <button type="reset" class="btn btn-inverse">Reset</button>

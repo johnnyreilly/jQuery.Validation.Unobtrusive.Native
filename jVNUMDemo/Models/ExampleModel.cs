@@ -29,5 +29,20 @@ namespace jQueryValidateNativeUnobtrusive.Models
 
         [Required]
         public TriStateEnum? RadioButtonRequiredDemo { get; set; }
+
+        [Required, 
+         EmailAddress]
+        public string EMailDemo { get; set; }
+
+        [Compare("EMailDemo", ErrorMessage = "Emails do not match.")]
+        public string ConfirmEmailDemo { get; set; }
+
+        [Required, 
+         Url]
+        public string UrlDemo { get; set; }
+
+        [Required, 
+         CreditCard]
+        public string CreditCardDemo { get; set; }
     }
 }
