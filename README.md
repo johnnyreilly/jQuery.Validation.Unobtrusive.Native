@@ -21,12 +21,18 @@ If you haven't already, ensure that the following entries can be found in your w
     </appSettings>
 
 Include jQuery.Validation.Unobtrusive.Native into your project (available on [nuget](https://www.nuget.org/packages/jQuery.Validation.Unobtrusive.Native/) or on [GitHub](http://github.com/johnnyreilly/jQueryValidateNativeUnobtrusiveMVC)). With this in place you should be able to switch from using the existing `TextBoxFor` / `DropDownListFor` HtmlHelper statements in your views and to jQuery.Validation.Unobtrusive.Native's equivalent by passing `true` to the `useNativeUnobtrusiveAttributes` parameter. (By convention this is the first parameter after the `Expression<Func<TModel, TProperty>> expression` parameter.
+	
+Ensure that you have the latest version of jquery.validate.js, you can find it [here](http://jqueryvalidation.org/).  Oh, and remember that you no longer need to serve up the jquery.validate.unobtrusive.js on a screen where you are using jQuery.Validation.Unobtrusive.Native.
 
-For example, where you would have written:
+P.S. If you're compiling the source code in Visual Studio make sure you have the Package Manager option *"Allow NuGet to download missing packages during build"* set to true.
+
+##Examples
+
+Where you would previously have written:
 
     @Html.TextBoxFor(x => x.RangeAndNumberDemo)
 
-Now you would put:
+To use jQuery.Validation.Unobtrusive.Native you would put:
 
     @Html.TextBoxFor(x => x.RangeAndNumberDemo, true)
 
@@ -43,14 +49,10 @@ Now you would put:
         new SelectListItem{ Text = "Please select", Value = "" },
         new SelectListItem{ Text = "An option", Value = "An option"}
     })
-	
-The only difference is the extra `true` parameter being passed.  If you passed `false` instead jQuery.Validation.Unobtrusive.Native internally calls the native MVC implementation.  I have considered keeping jQuery.Validation.Unobtrusive.Native's HtmlHelpers entirely separate from the inbuilt MVC ones and instead implementing `TextBoxNativeFor` / `DropDownListNativeFor` methods which shared the same signatures as the inbuilt MVC ones.  For now this is the way it is but it could change if people feel strongly enough - if you've an opinion then drop me a line with your rationale.
+
+The only differences above are the extra `true` parameters being passed.  If you had passed `false` instead jQuery.Validation.Unobtrusive.Native internally calls the inbuilt MVC implementation.  I have considered keeping jQuery.Validation.Unobtrusive.Native's HtmlHelpers entirely separate from the inbuilt MVC ones and instead implementing `TextBoxNativeFor` / `DropDownListNativeFor` methods which share the same signatures as the inbuilt MVC ones.  For now this is the way it is but it could change if people feel strongly enough - if you've an opinion then drop me a line with your rationale.
 
 By the way, the above examples (and others) can be found in the MVC demo project jVUNDemo on GitHub.
-	
-Ensure that you have the latest version of jquery.validate.js, you can find it [here](http://jqueryvalidation.org/).  Oh, and remember that you no longer need to serve up the jquery.validate.unobtrusive.js on a screen where you are using jQuery.Validation.Unobtrusive.Native.
-
-P.S. If you're compiling the source code in Visual Studio make sure you have the Package Manager option *"Allow NuGet to download missing packages during build"* set to true.
 
 ##Plans
 
