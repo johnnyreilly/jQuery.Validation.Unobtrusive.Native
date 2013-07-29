@@ -196,9 +196,9 @@
     <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\jQueryValidateNativeUnobtrusiveMVC\jQueryValidateNativeUnobtrusiveMVC.csproj">
+    <ProjectReference Include="..\jQuery.Validation.Unobtrusive.Native\jQuery.Validation.Unobtrusive.Native.csproj">
       <Project>{975e8578-003a-463c-bb3d-b75974e7d6d8}</Project>
-      <Name>jQueryValidateNativeUnobtrusiveMVC</Name>
+      <Name>jQuery.Validation.Unobtrusive.Native</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

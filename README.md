@@ -1,7 +1,7 @@
-jQuery Validate Native Unobtrusive MVC
-======================================
+jQuery Validation Unobtrusive Native
+====================================
 
-jQueryValidateNativeUnobtrusiveMVC is a collection of HTML helper extensions that make use of jQuery Validation's native unobtrusive support for validation driven by HTML 5 data attributes.  Microsoft shipped [jquery.validate.unobtrusive.js](http://bradwilson.typepad.com/blog/2010/10/mvc3-unobtrusive-validation.html) back with MVC 3.  It provided a way to apply data model validations to the client side using a combination of jQuery Validation and HTML 5 data attributes (that's the "unobtrusive" part).
+jQuery.Validation.Unobtrusive.Native is a collection of ASP.Net MVC HTML helper extensions that make use of jQuery Validation's native unobtrusive support for validation driven by HTML 5 data attributes.  Microsoft shipped [jquery.validate.unobtrusive.js](http://bradwilson.typepad.com/blog/2010/10/mvc3-unobtrusive-validation.html) back with MVC 3.  It provided a way to apply data model validations to the client side using a combination of jQuery Validation and HTML 5 data attributes (that's the "unobtrusive" part).
 
 The principal of this was and is fantastic.  But since that time the jQuery Validation project has implemented its own support for driving validation unobtrusively.  The advantages of the native support over jquery.validate.unobtrusive.js are:
 
@@ -20,11 +20,11 @@ If you haven't already, ensure that the following entries can be found in your w
         <add key="UnobtrusiveJavaScriptEnabled" value="true" />
     </appSettings>
 
-Include jQueryValidateNativeUnobtrusiveMVC in your project and you should be able switch to using this by taking an existing HtmlHelper statement and passing `true` to the `useNativeUnobtrusiveAttributes` parameter. (By convention this is the first parameter after the `Expression<Func<TModel, TProperty>> expression` parameter.
+Include jQuery.Validation.Unobtrusive.Native into your project (available on [nuget](https://www.nuget.org/packages/jQuery.Validation.Unobtrusive.Native/) or on [GitHub](http://github.com/johnnyreilly/jQueryValidateNativeUnobtrusiveMVC)). With this in place you should be able to switch from using the existing `TextBoxFor` / `DropDownListFor` HtmlHelper statements in your views and to jQuery.Validation.Unobtrusive.Native's equivalent by adding a new parameter of `true` to the `useNativeUnobtrusiveAttributes` parameter. (By convention this is the first parameter after the `Expression<Func<TModel, TProperty>> expression` parameter.
 
-Ensure that you have the latest version of jquery.validate.js, you can find it [here](http://jqueryvalidation.org/).  Oh, and remember that you no longer need to use jquery.validate.unobtrusive.js if you're using jQueryValidateNativeUnobtrusiveMVC.
+Ensure that you have the latest version of jquery.validate.js, you can find it [here](http://jqueryvalidation.org/).  Oh, and remember that you no longer need to serve up the jquery.validate.unobtrusive.js on a screen where you are using jQuery.Validation.Unobtrusive.Native.
 
-And if you're compiling the source code in Visual Studio make sure you have the Package Manager option *"Allow NuGet to download missing packages during build"* set to true.
+P.S. If you're compiling the source code in Visual Studio make sure you have the Package Manager option *"Allow NuGet to download missing packages during build"* set to true.
 
 ##Plans
 

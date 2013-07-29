@@ -7,8 +7,8 @@
     <ProjectGuid>{975E8578-003A-463C-BB3D-B75974E7D6D8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>jQueryValidateNativeUnobtrusiveMVC</RootNamespace>
-    <AssemblyName>jQueryValidateNativeUnobtrusiveMVC</AssemblyName>
+    <RootNamespace>jQuery.Validation.Unobtrusive.Native</RootNamespace>
+    <AssemblyName>jQuery.Validation.Unobtrusive.Native</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -45,7 +45,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="jQueryValidateNativeUnobtrusiveMVC.nuspec" />
+    <None Include="jQuery.Validation.Unobtrusive.Native.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Nuget Publish.txt" />
