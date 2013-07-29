@@ -1,0 +1,4 @@
+﻿Run the following commands to generate
+
+nuget pack jQueryValidateNativeUnobtrusiveMVC.csproj -Prop Configuration=Release
+nuget push jQuery.Validation.Unobtrusive.Native.0.1.0.nupkg
