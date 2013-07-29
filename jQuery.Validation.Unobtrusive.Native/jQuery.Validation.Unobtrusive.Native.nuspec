@@ -12,7 +12,7 @@
         <description>$description$</description>
         <releaseNotes>Initial release.</releaseNotes>
         <copyright>Copyright 2013</copyright>
-        <tags>jQuery Validation MVC Unobtrusive</tags>
+        <tags>jQuery Validation MVC Unobtrusive Native</tags>
         <dependencies>
             <dependency id="jQuery.Validation" version="1.11.0" />
         </dependencies>

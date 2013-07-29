@@ -20,7 +20,7 @@ If you haven't already, ensure that the following entries can be found in your w
         <add key="UnobtrusiveJavaScriptEnabled" value="true" />
     </appSettings>
 
-Include jQuery.Validation.Unobtrusive.Native into your project (available on [nuget](https://www.nuget.org/packages/jQuery.Validation.Unobtrusive.Native/) or on [GitHub](http://github.com/johnnyreilly/jQueryValidateNativeUnobtrusiveMVC)). With this in place you should be able to switch from using the existing `TextBoxFor` / `DropDownListFor` HtmlHelper statements in your views and to jQuery.Validation.Unobtrusive.Native's equivalent by passing `true` to the `useNativeUnobtrusiveAttributes` parameter. (By convention this is the first parameter after the `Expression<Func<TModel, TProperty>> expression` parameter.
+Include jQuery.Validation.Unobtrusive.Native into your project (available on [nuget](https://www.nuget.org/packages/jQuery.Validation.Unobtrusive.Native/) or on [GitHub](http://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native)). With this in place you should be able to switch from using the existing `TextBoxFor` / `DropDownListFor` HtmlHelper statements in your views and to jQuery.Validation.Unobtrusive.Native's equivalent by passing `true` to the `useNativeUnobtrusiveAttributes` parameter. (By convention this is the first parameter after the `Expression<Func<TModel, TProperty>> expression` parameter.
 	
 Ensure that you have the latest version of jquery.validate.js, you can find it [here](http://jqueryvalidation.org/).  Oh, and remember that you no longer need to serve up the jquery.validate.unobtrusive.js on a screen where you are using jQuery.Validation.Unobtrusive.Native.
 
