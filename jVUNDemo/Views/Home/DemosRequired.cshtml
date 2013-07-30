@@ -7,9 +7,69 @@
 
 <h4>Required</h4>
 
-<p>Here is how the <code>Required</code> attribute works with jQuery.Validation.Unobtrusive.Native.</p>
+<p>The <code>System.ComponentModel.DataAnnotations.RequiredAttribute</code> maps to the <a href="http://validation.bassistance.de/required-method/" target="_blank">required</a> validation method in jQuery Validation.  This is an example of how to use it with jQuery.Validation.Unobtrusive.Native.</p>
 
-<h4>Example</h4>
+<h5>Code</h5>
+
+<p>Here's the model, do note that the <code>Required</code> attribute decorates each property of the model:</p>
+
+<pre class="prettyprint cs">
+using System.ComponentModel.DataAnnotations;
+
+namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
+{
+    public class RequiredModel
+    {
+        [Required]
+        public string TextBox { get; set; }
+
+        [Required]
+        public string DropDownList { get; set; }
+
+        [Required]
+        public string RadioButton { get; set; }
+    }
+}
+
+</pre>
+
+<p>And here's the view:</p>
+
+<pre class="prettyprint cs">
+@@using (Html.BeginForm())
+{
+    @@Html.LabelFor(x =&gt; x.TextBox, "Something must be entered:")
+    @@Html.TextBoxFor(x =&gt; x.TextBox, true)
+
+    @@Html.LabelFor(x =&gt; x.DropDownList, "An option must be selected:")
+    @@Html.DropDownListFor(x =&gt; x.DropDownList, true, new List&lt;SelectListItem&gt; {
+        new SelectListItem{ Text = "Please select", Value = "" },
+        new SelectListItem{ Text = "An option", Value = "An option"}
+    })
+    
+    &lt;div class="control-group"&gt;
+        @@Html.LabelFor(x =&gt; x.RadioButton, "A radio button must be selected:", new { @@class="control-label" })
+
+        &lt;div class="controls"&gt;
+            &lt;label class="radio inline" for="RequiredString_Yes"&gt;
+                @@Html.RadioButtonFor(x =&gt; x.RadioButton, true, "Yes", new { id = "RequiredString_Yes" })
+                Yes
+            &lt;/label&gt;
+            &lt;label class="radio inline" for="RequiredString_No"&gt;
+                @@Html.RadioButtonFor(x =&gt; x.RadioButton, true, "No", new { id = "RequiredString_No" })
+                No
+            &lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p class="text-left"&gt;
+        &lt;button type="submit" class="btn"&gt;Submit&lt;/button&gt;
+        &lt;button type="reset" class="btn btn-inverse"&gt;Reset&lt;/button&gt;
+    &lt;/p&gt;
+}
+</pre>
+
+<h5>Example</h5>
 
 @using (Html.BeginForm())
 {
