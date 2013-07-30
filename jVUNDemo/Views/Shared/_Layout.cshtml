@@ -29,8 +29,7 @@
                             <ul class="dropdown-menu">
                                 @Html.RenderMenuItem("Overview", "DemosOverview", "Home")
                                 <li class="divider"></li>
-                                <li class="nav-header">Validation Types</li>
-                                @Html.RenderMenuItem("Required", "DemosRequired", "Home")
+                                @Html.Partial("_PartialDemoMenuItems")
                             </ul>
                         </li>
                     </ul>

@@ -198,6 +198,8 @@
     <Content Include="Views\Home\BasicDemos.cshtml" />
     <Content Include="Views\Home\DemosRequired.cshtml" />
     <Content Include="Views\Home\DemosOverview.cshtml" />
+    <Content Include="Views\Home\DemosDynamic.cshtml" />
+    <Content Include="Views\Shared\_PartialDemoMenuItems.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

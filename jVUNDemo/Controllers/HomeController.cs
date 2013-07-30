@@ -34,7 +34,14 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
 
         public ActionResult DemosRequired()
         {
-            ViewBag.Title = "Basic Demos";
+            ViewBag.Title = "Required Demo";
+
+            return View(new RequiredModel());
+        }
+
+        public ActionResult DemosDynamic()
+        {
+            ViewBag.Title = "Dynamic Demo";
 
             return View(new RequiredModel());
         }
