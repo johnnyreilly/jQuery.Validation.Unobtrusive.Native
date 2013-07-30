@@ -5,6 +5,7 @@
     <title>@ViewBag.Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @Styles.Render("~/Content/bootstrap", "~/Content/css")
+    @RenderSection("styles", required: false)
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
@@ -17,10 +18,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="brand" href="#">jQuery Validate Native Unobtrusive MVC</a>
+                <a class="brand" href="~/">jQuery Validate Native Unobtrusive MVC</a>
                 <div class="nav-collapse collapse">
                     <ul class="nav">
-                        <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
+                        @Html.RenderMenuItem("Home", "Index", "Home")
+                        @Html.RenderMenuItem("Basic Demos", "BasicDemos", "Home")
                     </ul>
                 </div>
             </div>

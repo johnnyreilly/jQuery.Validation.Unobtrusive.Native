@@ -1,6 +1,6 @@
 ﻿using System.Web.Optimization;
 
-namespace jQueryValidateNativeUnobtrusive
+namespace jQuery.Validation.Unobtrusive.Native.Demos.App_Start
 {
     public class BundleConfig
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace jQueryValidateNativeUnobtrusive.Models
+namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
 {
     public enum TriStateEnum
     {

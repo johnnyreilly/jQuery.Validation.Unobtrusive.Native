@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="jQueryValidateNativeUnobtrusive.MvcApplication" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="jQuery.Validation.Unobtrusive.Native.Demos.MvcApplication" Language="C#" %>

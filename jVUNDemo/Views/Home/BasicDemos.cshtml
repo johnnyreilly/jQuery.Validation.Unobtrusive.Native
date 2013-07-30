@@ -1,0 +1,71 @@
+﻿@using jQuery.Validation.Unobtrusive.Native.Demos.Models
+@model ExampleModel
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        var $form = $("form");
+        $form.validate({
+            submitHandler: function () { alert("Valid!"); }
+        });
+    </script>
+}
+
+<h4>Some basic demos...</h4>
+
+<p>Here are some basic demos of how to use the jQuery.Validation.Native.Unobtrusive Html Helpers.</p>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(x => x.RequiredDateDemo, "A date is required (eg \"15 June 2012\"):")
+    @Html.TextBoxFor(x => x.RequiredDateDemo, true)
+
+    @Html.LabelFor(x => x.StringLengthAndRequiredDemo, "A string is required between 5 and 10 characters long:")
+    @Html.TextBoxFor(x => x.StringLengthAndRequiredDemo, true)
+
+    @Html.LabelFor(x => x.RangeAndNumberDemo, "Must be a number between -20 and 40:")
+    @Html.TextBoxFor(x => x.RangeAndNumberDemo, true)
+    
+    @Html.LabelFor(x => x.DropDownRequiredDemo, "An option must be selected:")
+    @Html.DropDownListFor(x => x.DropDownRequiredDemo, true, new List<SelectListItem> {
+        new SelectListItem{ Text = "Please select", Value = "" },
+        new SelectListItem{ Text = "An option", Value = "An option"}
+    })
+    
+    <div class="control-group">
+        @Html.LabelFor(x => x.RadioButtonRequiredDemo, "A radio button must be selected:", new { @class="control-label" })
+
+        <div class="controls">
+            <label class="radio inline" for="RadioButtonRequiredDemo_Yes">
+                @Html.RadioButtonFor(x => x.RadioButtonRequiredDemo, true, TriStateEnum.Yes, new { id = "RadioButtonRequiredDemo_Yes" })
+                Yes
+            </label>
+            <label class="radio inline" for="RadioButtonRequiredDemo_No">
+                @Html.RadioButtonFor(x => x.RadioButtonRequiredDemo, true, TriStateEnum.No, new { id = "RadioButtonRequiredDemo_No" })
+                No
+            </label>
+            <label class="radio inline" for="RadioButtonRequiredDemo_DontKnow">
+                @Html.RadioButtonFor(x => x.RadioButtonRequiredDemo, true, TriStateEnum.DontKnow, new { id = "RadioButtonRequiredDemo_DontKnow" })
+                Don't Know
+            </label>
+        </div>
+    </div>
+    
+    @Html.LabelFor(x => x.EMailDemo, "An email address is required:")
+    @Html.TextBoxFor(x => x.EMailDemo, true)
+    
+    @Html.LabelFor(x => x.ConfirmEmailDemo, "This email need to match the previously entered one:")
+    @Html.TextBoxFor(x => x.ConfirmEmailDemo, true)
+    
+    @Html.LabelFor(x => x.UrlDemo, "A URL is required:")
+    @Html.TextBoxFor(x => x.UrlDemo, true)
+    
+    @Html.LabelFor(x => x.CreditCardDemo, "A credit card number is required:")
+    @Html.TextBoxFor(x => x.CreditCardDemo, true)
+
+    <p class="text-left">
+        <button type="submit" class="btn">Submit</button>
+        <button type="reset" class="btn btn-inverse">Reset</button>
+    </p>
+}
+
