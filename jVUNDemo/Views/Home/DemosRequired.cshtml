@@ -7,7 +7,43 @@
 
 <h4>Required</h4>
 
-<p>The <code>System.ComponentModel.DataAnnotations.RequiredAttribute</code> maps to the <a href="http://validation.bassistance.de/required-method/" target="_blank">required</a> validation method in jQuery Validation.  This is an example of how to use it with jQuery.Validation.Unobtrusive.Native.</p>
+<p>The <code>System.ComponentModel.DataAnnotations.RequiredAttribute</code> maps to the <a href="http://validation.bassistance.de/required-method/" target="_blank">required</a> validation method in jQuery Validation.</p>
+
+<h5>Example</h5>
+
+<p>This is an example of how to use it with jQuery.Validation.Unobtrusive.Native:</p>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(x => x.TextBox, "Something must be entered:")
+    @Html.TextBoxFor(x => x.TextBox, true)
+
+    @Html.LabelFor(x => x.DropDownList, "An option must be selected:")
+    @Html.DropDownListFor(x => x.DropDownList, true, new List<SelectListItem> {
+        new SelectListItem{ Text = "Please select", Value = "" },
+        new SelectListItem{ Text = "An option", Value = "An option"}
+    })
+    
+    <div class="control-group">
+        @Html.LabelFor(x => x.RadioButton, "A radio button must be selected:", new { @class="control-label" })
+
+        <div class="controls">
+            <label class="radio inline" for="RequiredString_Yes">
+                @Html.RadioButtonFor(x => x.RadioButton, true, "Yes", new { id = "RequiredString_Yes" })
+                Yes
+            </label>
+            <label class="radio inline" for="RequiredString_No">
+                @Html.RadioButtonFor(x => x.RadioButton, true, "No", new { id = "RequiredString_No" })
+                No
+            </label>
+        </div>
+    </div>
+
+    <p class="text-left">
+        <button type="submit" class="btn">Submit</button>
+        <button type="reset" class="btn btn-inverse">Reset</button>
+    </p>
+}
 
 <h5>Code</h5>
 
@@ -68,38 +104,4 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
     &lt;/p&gt;
 }
 </pre>
-
-<h5>Example</h5>
-
-@using (Html.BeginForm())
-{
-    @Html.LabelFor(x => x.TextBox, "Something must be entered:")
-    @Html.TextBoxFor(x => x.TextBox, true)
-
-    @Html.LabelFor(x => x.DropDownList, "An option must be selected:")
-    @Html.DropDownListFor(x => x.DropDownList, true, new List<SelectListItem> {
-        new SelectListItem{ Text = "Please select", Value = "" },
-        new SelectListItem{ Text = "An option", Value = "An option"}
-    })
-    
-    <div class="control-group">
-        @Html.LabelFor(x => x.RadioButton, "A radio button must be selected:", new { @class="control-label" })
-
-        <div class="controls">
-            <label class="radio inline" for="RequiredString_Yes">
-                @Html.RadioButtonFor(x => x.RadioButton, true, "Yes", new { id = "RequiredString_Yes" })
-                Yes
-            </label>
-            <label class="radio inline" for="RequiredString_No">
-                @Html.RadioButtonFor(x => x.RadioButton, true, "No", new { id = "RequiredString_No" })
-                No
-            </label>
-        </div>
-    </div>
-
-    <p class="text-left">
-        <button type="submit" class="btn">Submit</button>
-        <button type="reset" class="btn btn-inverse">Reset</button>
-    </p>
-}
 
