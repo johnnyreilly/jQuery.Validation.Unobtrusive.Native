@@ -1,0 +1,26 @@
+﻿<h4>Demos Overview</h4>
+
+<p>The demos show working examples of how to use jQuery.Validate.Unobtrusive.Native's HTML Helpers to generate form elements.  These form elements have data attributes in place that work with jQuery Validation.  To trigger the validation on a demo screen then just click on the Submit button.  When / if all the validations have passed and the form submitted then the user will be presented with a message confirming that the form is valid.</p>
+
+<p>All the demos rely upon the jQuery validation plugin and share the same initialisation code:</p>
+
+<pre class="prettyprint js">
+  var $form = $("form");
+  $form.validate({
+      errorPlacement: function($errorLabel, $element) {
+
+          var $elementToInsertAfter = $element;
+          if ($element.prop("type") === "radio") {
+              $elementToInsertAfter = $element.closest(".controls");
+          } 
+      
+          $errorLabel.insertAfter($elementToInsertAfter);
+      },
+
+      submitHandler: function (form) {
+          alert("This is a valid form!");
+      }
+  });
+</pre>
+
+<p>The <code>errorPlacement</code> option above is only in place so that radio validations are styled a little nicer for the user.</p>

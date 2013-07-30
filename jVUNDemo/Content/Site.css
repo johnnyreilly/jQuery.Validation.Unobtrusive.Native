@@ -1,12 +1,17 @@
 ﻿.error {
-     color: red;
+  border: 1px solid #e80c4d !important;
+  background-color: #ffeeee !important;
 }
-
-@media (min-width: 980px)
-{
-    body
-    {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-    }
+label.error {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px;
 }
-
+@media (min-width: 980px) {
+  body {
+    padding-top: 60px;
+    /* 60px to make the container go all the way to the bottom of the topbar */
+  
+  }
+}

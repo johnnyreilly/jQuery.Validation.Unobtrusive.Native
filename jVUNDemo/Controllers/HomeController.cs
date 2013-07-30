@@ -25,5 +25,19 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
             });
         }
 
+        public ActionResult DemosOverview()
+        {
+            ViewBag.Title = "Overview of the demos";
+
+            return View(new RequiredModel());
+        }
+
+        public ActionResult DemosRequired()
+        {
+            ViewBag.Title = "Basic Demos";
+
+            return View(new RequiredModel());
+        }
+
     }
 }

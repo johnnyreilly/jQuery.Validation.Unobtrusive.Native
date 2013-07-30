@@ -1,0 +1,28 @@
+﻿// Mixins
+
+.borderRadius(@radius: 5px)
+{
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.error {
+    border: 1px solid #e80c4d !important;
+    background-color: #ffeeee !important;
+}
+
+label.error
+{
+    .borderRadius();
+    padding: 5px;
+}
+
+@media (min-width: 980px)
+{
+    body
+    {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+    }
+}
+

@@ -2,13 +2,7 @@
 @model ExampleModel
 @section scripts
 {
-    @Scripts.Render("~/bundles/jqueryval")
-    <script>
-        var $form = $("form");
-        $form.validate({
-            submitHandler: function () { alert("Valid!"); }
-        });
-    </script>
+    @Scripts.Render("~/bundles/jquery-validation", "~/bundles/validate-form")
 }
 
 <h4>Some basic demos...</h4>
