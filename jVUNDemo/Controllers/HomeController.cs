@@ -5,9 +5,30 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ViewResult Index()
         {
             ViewBag.Title = "Welcome to jQuery.Validation.Unobtrusive.Native";
+
+            return View();
+        }
+
+        public ViewResult GettingStarted()
+        {
+            ViewBag.Title = "Getting Started";
+
+            return View();
+        }
+
+        public ViewResult Download()
+        {
+            ViewBag.Title = "Download";
+
+            return View();
+        }
+
+        public ViewResult License()
+        {
+            ViewBag.Title = "License";
 
             return View();
         }

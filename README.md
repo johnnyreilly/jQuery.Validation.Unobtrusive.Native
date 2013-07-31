@@ -58,6 +58,17 @@ By the way, the above examples (and others) can be found in the MVC demo project
 
 At the moment only a small subset of the HtmlHelpers and their associated unobtrusive mappings have been implemented, essentially driven by my own needs.  As I use more I will add more - and feel free to pitch in!
 
+## Author
+**John Reilly**
+
++ http://twitter.com/johnny_reilly
+
+## Credits
+Inspired by jquery.validate.unobtrusive.js and entirely dependent on https://github.com/jzaefferer/jquery-validation.
+
+## Copyright
+Copyright © 2013 [John Reilly](mailto:johnny_reilly@hotmail.com).
+
 ##License
 
 MIT license - [http://www.opensource.org/licenses/mit-license.php](http://www.opensource.org/licenses/mit-license.php)

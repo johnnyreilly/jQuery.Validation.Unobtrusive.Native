@@ -12,8 +12,12 @@ form {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background-color: #eeeeee;
+  background-color: rgba(0, 105, 214, 0.15);
   padding: 5px 10px;
+}
+#footer {
+  background-color: #eeeeee;
+  padding: 10px 10px 5px 10px;
 }
 @media (min-width: 980px) {
   body {

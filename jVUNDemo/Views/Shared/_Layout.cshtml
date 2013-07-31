@@ -23,6 +23,8 @@
                 <div class="nav-collapse collapse">
                     <ul class="nav">
                         @Html.RenderMenuItem("Home", "Index", "Home")
+                        @Html.RenderMenuItem("Getting Started", "GettingStarted", "Home")
+                        @Html.RenderMenuItem("Download", "Download", "Home")
                         <!--
                         @Html.RenderMenuItem("Basic Demos", "BasicDemos", "Home")
                         -->
@@ -40,10 +42,18 @@
         </div>
     </div>
 
-    <div class="container">
+    <div id="main" class="container">
 
         @RenderBody()
 
+    </div>
+    
+    <div id="footer">
+        <div class="container">
+            <p class="muted">
+                &#169; 2013 <a href="http://icanmakethiswork.blogspot.com" target="_blank">John Reilly</a>                · <a href="mailto:johnny_reilly@hotmail.com">Contact</a>
+                · @Html.ActionLink("License", "License", "Home")
+            </p>        </div>
     </div>
 
     @Scripts.Render("~/bundles/jquery", "~/bundles/bootstrap")

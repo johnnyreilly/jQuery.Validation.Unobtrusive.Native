@@ -1,0 +1,54 @@
+﻿<h3>Getting started</h3>
+
+<p>If you haven't already, ensure that the following entries can be found in your web.config:</p>
+
+<pre class="prettyprint xml">
+  &lt;appSettings&gt;
+      &lt;add key="ClientValidationEnabled" value="true" /&gt;
+      &lt;add key="UnobtrusiveJavaScriptEnabled" value="true" /&gt;
+  &lt;/appSettings&gt;
+</pre>
+
+<p>Include jQuery.Validation.Unobtrusive.Native into your project (available on <a href="https://www.nuget.org/packages/jQuery.Validation.Unobtrusive.Native/" target="_blank">nuget</a> or on <a href="http://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native" target="_blank">GitHub</a>). With this in place you should be able to switch from using the existing <code>TextBoxFor</code> / <code>DropDownListFor</code> HtmlHelper statements in your views and to jQuery.Validation.Unobtrusive.Native's equivalent by passing <code>true</code> to the <code>useNativeUnobtrusiveAttributes</code> parameter. (By convention this is the first parameter after the <code>Expression&lt;Func&lt;TModel, TProperty&gt;&gt; expression</code> parameter.</p>
+    
+<p>Ensure that you have the latest version of jquery.validate.js, you can find it <a href="http://jqueryvalidation.org/" target="_blank">here</a>.  Oh, and remember that you <em>no longer</em> need to serve up the jquery.validate.unobtrusive.js on a screen where you are using jQuery.Validation.Unobtrusive.Native.  All you need is jquery.validate.js (and of course jQuery).</p>
+
+<p>P.S. If you're using the source code from GitHub in Visual Studio, make sure you have the Package Manager option <em>"Allow NuGet to download missing packages during build"</em> set to true.  This will ensure that the required packages are downloaded from NuGet.</p>
+
+<h4>Simple examples</h4>
+
+<p>Where you would previously have written:</p>
+
+<pre class="prettyprint cs">
+    @@Html.TextBoxFor(x => x.RangeAndNumberDemo)
+</pre>
+
+<p>To use jQuery.Validation.Unobtrusive.Native you would put:</p>
+
+<pre class="prettyprint cs">
+    @@Html.TextBoxFor(x => x.RangeAndNumberDemo, true)
+</pre>
+
+<p>Or, where you would have written:</p>
+
+<pre class="prettyprint cs">
+    @@Html.DropDownListFor(x => x.DropDownRequiredDemo, new List&lt;SelectListItem&gt; {
+        new SelectListItem{ Text = "Please select", Value = "" },
+        new SelectListItem{ Text = "An option", Value = "An option"}
+    })
+</pre>
+
+<p>Now you would put:</p>
+
+<pre class="prettyprint cs">
+    @@Html.DropDownListFor(x => x.DropDownRequiredDemo, true, new List&lt;SelectListItem&gt; {
+        new SelectListItem{ Text = "Please select", Value = "" },
+        new SelectListItem{ Text = "An option", Value = "An option"}
+    })
+</pre>
+
+<p>The only differences above are the extra <code>true</code> parameters being passed.  If you had passed <code>false</code> instead jQuery.Validation.Unobtrusive.Native internally calls the inbuilt MVC implementation.</p>
+
+<p>By the way, I have considered keeping jQuery.Validation.Unobtrusive.Native's HtmlHelpers entirely separate from the inbuilt MVC ones and instead implementing <code>TextBoxNativeFor</code> / <code>DropDownListNativeFor</code> methods which share the same signatures as the inbuilt MVC ones.  I'm still in 2 minds about the best approach and I'm happy to be swayed in this direction if people feel strongly enough - if you've an opinion then drop me a line with your rationale.</p>
+
+<p>Take a look at the demos to see more detailed examples.</p>

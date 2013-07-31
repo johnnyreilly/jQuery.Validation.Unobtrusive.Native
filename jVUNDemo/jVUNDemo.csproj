@@ -200,6 +200,9 @@
     <Content Include="Views\Home\DemosOverview.cshtml" />
     <Content Include="Views\Home\DemosDynamic.cshtml" />
     <Content Include="Views\Shared\_PartialDemoMenuItems.cshtml" />
+    <Content Include="Views\Home\Download.cshtml" />
+    <Content Include="Views\Home\License.cshtml" />
+    <Content Include="Views\Home\GettingStarted.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
