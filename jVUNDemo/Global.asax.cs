@@ -3,7 +3,6 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using jQuery.Validation.Unobtrusive.Native.Demos.App_Start;
-using jQueryValidateNativeUnobtrusive;
 
 namespace jQuery.Validation.Unobtrusive.Native.Demos
 {

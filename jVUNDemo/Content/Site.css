@@ -1,5 +1,5 @@
 ﻿.error {
-  border: 1px solid #e80c4d !important;
+  border: 1px solid #b94a48 !important;
   background-color: #ffeeee !important;
 }
 label.error {
@@ -7,6 +7,13 @@ label.error {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   padding: 5px;
+}
+form {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #eeeeee;
+  padding: 5px 10px;
 }
 @media (min-width: 980px) {
   body {

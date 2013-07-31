@@ -9,99 +9,152 @@
 
 <p>The <code>System.ComponentModel.DataAnnotations.RequiredAttribute</code> maps to the <a href="http://validation.bassistance.de/required-method/" target="_blank">required</a> validation method in jQuery Validation.</p>
 
-<h5>Example</h5>
+<ul class="nav nav-tabs" data-tabs="tabs">
+    <li class="active"><a data-toggle="tab" href="#example">Example</a></li>
+    <li><a data-toggle="tab" href="#model">Model</a></li>
+    <li><a data-toggle="tab" href="#view">View</a></li>
+    <li><a data-toggle="tab" href="#html">HTML</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active" id="example">
+        
+        @using (Html.BeginForm())
+        {
+            @Html.LabelFor(x => x.TextBox, "Something must be entered:")
+            @Html.TextBoxFor(x => x.TextBox, true)
 
-<p>This is an example of how to use it with jQuery.Validation.Unobtrusive.Native:</p>
-
-@using (Html.BeginForm())
-{
-    @Html.LabelFor(x => x.TextBox, "Something must be entered:")
-    @Html.TextBoxFor(x => x.TextBox, true)
-
-    @Html.LabelFor(x => x.DropDownList, "An option must be selected:")
-    @Html.DropDownListFor(x => x.DropDownList, true, new List<SelectListItem> {
-        new SelectListItem{ Text = "Please select", Value = "" },
-        new SelectListItem{ Text = "An option", Value = "An option"}
-    })
+            @Html.LabelFor(x => x.DropDownList, "An option must be selected:")
+            @Html.DropDownListFor(x => x.DropDownList, true, new List<SelectListItem> {
+                new SelectListItem{ Text = "Please select", Value = "" },
+                new SelectListItem{ Text = "An option", Value = "An option"}
+            })
     
-    <div class="control-group">
-        @Html.LabelFor(x => x.RadioButton, "A radio button must be selected:", new { @class="control-label" })
+            <div class="control-group">
+                @Html.LabelFor(x => x.RadioButton, "A radio button must be selected:", new { @class="control-label" })
 
-        <div class="controls">
-            <label class="radio inline" for="RequiredString_Yes">
-                @Html.RadioButtonFor(x => x.RadioButton, true, "Yes", new { id = "RequiredString_Yes" })
-                Yes
-            </label>
-            <label class="radio inline" for="RequiredString_No">
-                @Html.RadioButtonFor(x => x.RadioButton, true, "No", new { id = "RequiredString_No" })
-                No
-            </label>
-        </div>
+                <div class="controls">
+                    <label class="radio inline" for="RequiredString_Yes">
+                        @Html.RadioButtonFor(x => x.RadioButton, true, "Yes", new { id = "RequiredString_Yes" })
+                        Yes
+                    </label>
+                    <label class="radio inline" for="RequiredString_No">
+                        @Html.RadioButtonFor(x => x.RadioButton, true, "No", new { id = "RequiredString_No" })
+                        No
+                    </label>
+                </div>
+            </div>
+
+            <p class="text-left">
+                <button type="submit" class="btn">Submit</button>
+                <button type="reset" class="btn btn-inverse">Reset</button>
+            </p>
+        }
+
     </div>
 
-    <p class="text-left">
-        <button type="submit" class="btn">Submit</button>
-        <button type="reset" class="btn btn-inverse">Reset</button>
-    </p>
-}
+    <div class="tab-pane" id="model">
+        
+        <p>Here's the model, do note that the <code>Required</code> attribute decorates each property of the model:</p>
 
-<h5>Code</h5>
+        <pre class="prettyprint cs">
+    using System.ComponentModel.DataAnnotations;
 
-<p>Here's the model, do note that the <code>Required</code> attribute decorates each property of the model:</p>
-
-<pre class="prettyprint cs">
-using System.ComponentModel.DataAnnotations;
-
-namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
-{
-    public class RequiredModel
+    namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
     {
-        [Required]
-        public string TextBox { get; set; }
+        public class RequiredModel
+        {
+            [Required]
+            public string TextBox { get; set; }
 
-        [Required]
-        public string DropDownList { get; set; }
+            [Required]
+            public string DropDownList { get; set; }
 
-        [Required]
-        public string RadioButton { get; set; }
+            [Required]
+            public string RadioButton { get; set; }
+        }
     }
-}
+        </pre>
+    </div>
 
-</pre>
+    <div class="tab-pane" id="view">
+        
+        <p>And here's the view:</p>
 
-<p>And here's the view:</p>
+        <pre class="prettyprint cs">
+    @@model jQuery.Validation.Unobtrusive.Native.Demos.Models.RequiredModel
+    @@using (Html.BeginForm())
+    {
+        @@Html.LabelFor(x =&gt; x.TextBox, "Something must be entered:")
+        @@Html.TextBoxFor(x =&gt; x.TextBox, true)
 
-<pre class="prettyprint cs">
-@@using (Html.BeginForm())
-{
-    @@Html.LabelFor(x =&gt; x.TextBox, "Something must be entered:")
-    @@Html.TextBoxFor(x =&gt; x.TextBox, true)
-
-    @@Html.LabelFor(x =&gt; x.DropDownList, "An option must be selected:")
-    @@Html.DropDownListFor(x =&gt; x.DropDownList, true, new List&lt;SelectListItem&gt; {
-        new SelectListItem{ Text = "Please select", Value = "" },
-        new SelectListItem{ Text = "An option", Value = "An option"}
-    })
+        @@Html.LabelFor(x =&gt; x.DropDownList, "An option must be selected:")
+        @@Html.DropDownListFor(x =&gt; x.DropDownList, true, new List&lt;SelectListItem&gt; {
+            new SelectListItem{ Text = "Please select", Value = "" },
+            new SelectListItem{ Text = "An option", Value = "An option"}
+        })
     
-    &lt;div class="control-group"&gt;
-        @@Html.LabelFor(x =&gt; x.RadioButton, "A radio button must be selected:", new { @@class="control-label" })
+        &lt;div class="control-group"&gt;
+            @@Html.LabelFor(x =&gt; x.RadioButton, "A radio button must be selected:", new { @@class="control-label" })
 
-        &lt;div class="controls"&gt;
-            &lt;label class="radio inline" for="RequiredString_Yes"&gt;
-                @@Html.RadioButtonFor(x =&gt; x.RadioButton, true, "Yes", new { id = "RequiredString_Yes" })
-                Yes
-            &lt;/label&gt;
-            &lt;label class="radio inline" for="RequiredString_No"&gt;
-                @@Html.RadioButtonFor(x =&gt; x.RadioButton, true, "No", new { id = "RequiredString_No" })
-                No
-            &lt;/label&gt;
+            &lt;div class="controls"&gt;
+                &lt;label class="radio inline" for="RequiredString_Yes"&gt;
+                    @@Html.RadioButtonFor(x =&gt; x.RadioButton, true, "Yes", new { id = "RequiredString_Yes" })
+                    Yes
+                &lt;/label&gt;
+                &lt;label class="radio inline" for="RequiredString_No"&gt;
+                    @@Html.RadioButtonFor(x =&gt; x.RadioButton, true, "No", new { id = "RequiredString_No" })
+                    No
+                &lt;/label&gt;
+            &lt;/div&gt;
         &lt;/div&gt;
-    &lt;/div&gt;
 
-    &lt;p class="text-left"&gt;
-        &lt;button type="submit" class="btn"&gt;Submit&lt;/button&gt;
-        &lt;button type="reset" class="btn btn-inverse"&gt;Reset&lt;/button&gt;
-    &lt;/p&gt;
-}
-</pre>
+        &lt;p class="text-left"&gt;
+            &lt;button type="submit" class="btn"&gt;Submit&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-inverse"&gt;Reset&lt;/button&gt;
+        &lt;/p&gt;
+    }
+        </pre>
+
+    </div>
+    <div class="tab-pane" id="html">
+        
+        <p>And here's the HTML that the view generates:</p>
+
+        <pre class="prettyprint html">
+    &lt;form action="/Home/DemosRequired" method="post"&gt;
+            
+        &lt;label for="TextBox"&gt;Something must be entered:&lt;/label&gt;
+        &lt;input data-msg-required="The TextBox field is required." data-rule-required="true" 
+            id="TextBox" name="TextBox" type="text" value="" /&gt;
+            
+        &lt;label for="DropDownList"&gt;An option must be selected:&lt;/label&gt;
+        &lt;select data-msg-required="The DropDownList field is required." data-rule-required="true" 
+            id="DropDownList" name="DropDownList"&gt;
+            &lt;option value=""&gt;Please select&lt;/option&gt;
+            &lt;option value="An option"&gt;An option&lt;/option&gt;
+        &lt;/select&gt;
+            
+        &lt;div class="control-group"&gt;
+            &lt;label class="control-label" for="RadioButton"&gt;A radio button must be selected:&lt;/label&gt;
+
+            &lt;div class="controls"&gt;
+                &lt;label class="radio inline" for="RequiredString_Yes"&gt;
+                    &lt;input data-msg-required="The RadioButton field is required." data-rule-required="true" 
+                        id="RequiredString_Yes" name="RadioButton" type="radio" value="Yes" /&gt;
+                    Yes
+                &lt;/label&gt;
+                &lt;label class="radio inline" for="RequiredString_No"&gt;
+                    &lt;input id="RequiredString_No" name="RadioButton" type="radio" value="No" /&gt;
+                    No
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;p class="text-left"&gt;
+            &lt;button type="submit" class="btn"&gt;Submit&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-inverse"&gt;Reset&lt;/button&gt;
+        &lt;/p&gt;
+    &lt;/form&gt;
+        </pre>
+    </div>
+</div>
 

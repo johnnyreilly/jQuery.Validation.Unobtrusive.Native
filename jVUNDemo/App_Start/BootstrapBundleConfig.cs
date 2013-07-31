@@ -1,8 +1,9 @@
 using System.Web.Optimization;
+using jQuery.Validation.Unobtrusive.Native.Demos.App_Start;
 
-[assembly: WebActivatorEx.PostApplicationStartMethod(typeof(jQueryValidateNativeUnobtrusive.App_Start.BootstrapBundleConfig), "RegisterBundles")]
+[assembly: WebActivatorEx.PostApplicationStartMethod(typeof(BootstrapBundleConfig), "RegisterBundles")]
 
-namespace jQueryValidateNativeUnobtrusive.App_Start
+namespace jQuery.Validation.Unobtrusive.Native.Demos.App_Start
 {
 	public class BootstrapBundleConfig
 	{
