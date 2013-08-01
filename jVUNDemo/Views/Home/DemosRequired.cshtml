@@ -2,7 +2,28 @@
 @model RequiredModel
 @section scripts
 {
-    @Scripts.Render("~/bundles/jquery-validation", "~/bundles/validate-form")
+    @Scripts.Render("~/bundles/jquery-validation")
+    <script>
+        $("form").validate({
+
+            errorPlacement: function ($errorLabel, $element) {
+
+                var $elementToInsertAfter = $element;
+                if ($element.prop("type") === "radio") {
+                    $elementToInsertAfter = $element.closest(".row");
+
+                    $errorLabel.appendTo($elementToInsertAfter);
+                } else {
+                    $errorLabel.insertAfter($elementToInsertAfter);
+                }
+            },
+
+            submitHandler: function (form) {
+                alert("This is a valid form!");
+            }
+        });
+
+    </script>
 }
 
 <h4>Required</h4>
@@ -10,13 +31,14 @@
 <p>The <code>System.ComponentModel.DataAnnotations.RequiredAttribute</code> maps to the <a href="http://validation.bassistance.de/required-method/" target="_blank">required</a> validation method in jQuery Validation.</p>
 
 <ul class="nav nav-tabs" data-tabs="tabs">
-    <li class="active"><a data-toggle="tab" href="#example">Example</a></li>
+    <li class="active"><a data-toggle="tab" href="#demo">Demo</a></li>
     <li><a data-toggle="tab" href="#model">Model</a></li>
     <li><a data-toggle="tab" href="#view">View</a></li>
     <li><a data-toggle="tab" href="#html">HTML</a></li>
+    <li><a data-toggle="tab" href="#javascript">JavaScript</a></li>
 </ul>
 <div class="tab-content">
-    <div class="tab-pane active" id="example">
+    <div class="tab-pane active" id="demo">
         
         @using (Html.BeginForm())
         {
@@ -55,7 +77,7 @@
 
     <div class="tab-pane" id="model">
         
-        <p>Here's the model, do note that the <code>Required</code> attribute decorates each property of the model:</p>
+        <p>Here's the model, note that the <code>Required</code> attribute decorates each property of the model:</p>
 
         <pre class="prettyprint cs">
     using System.ComponentModel.DataAnnotations;
@@ -79,7 +101,7 @@
 
     <div class="tab-pane" id="view">
         
-        <p>And here's the view:</p>
+        <p>Here's the view (which uses the model):</p>
 
         <pre class="prettyprint cs">
     @@model jQuery.Validation.Unobtrusive.Native.Demos.Models.RequiredModel
@@ -118,9 +140,10 @@
         </pre>
 
     </div>
+
     <div class="tab-pane" id="html">
         
-        <p>And here's the HTML that the view generates:</p>
+        <p>Here's the HTML that the view generates:</p>
 
         <pre class="prettyprint html">
     &lt;form action="/Home/DemosRequired" method="post"&gt;
@@ -156,5 +179,30 @@
     &lt;/form&gt;
         </pre>
     </div>
+    
+    <div class="tab-pane" id="javascript">
+        
+        <p>The <code>errorPlacement</code> option below is only in place so that radio validations are styled a little nicer.</p>
+
+        <pre class="prettyprint js">
+  $("form").validate({
+      errorPlacement: function($errorLabel, $element) {
+
+          var $elementToInsertAfter = $element;
+          if ($element.prop("type") === "radio") {
+              $elementToInsertAfter = $element.closest(".controls");
+          } 
+      
+          $errorLabel.insertAfter($elementToInsertAfter);
+      },
+
+      submitHandler: function (form) {
+          alert("This is a valid form!");
+      }
+  });
+        </pre>
+
+    </div>
+
 </div>
 
