@@ -1,7 +1,6 @@
 using System.Web.Optimization;
-using jQuery.Validation.Unobtrusive.Native.Demos.App_Start;
 
-[assembly: WebActivatorEx.PostApplicationStartMethod(typeof(BootstrapBundleConfig), "RegisterBundles")]
+[assembly: WebActivatorEx.PostApplicationStartMethod(typeof(jQuery.Validation.Unobtrusive.Native.Demos.App_Start.BootstrapBundleConfig), "RegisterBundles")]
 
 namespace jQuery.Validation.Unobtrusive.Native.Demos.App_Start
 {
@@ -9,11 +8,11 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.App_Start
 	{
 		public static void RegisterBundles()
 		{
-			// Add @Styles.Render("~/Content/bootstrap") in the <head/> of your _Layout.cshtml view
+			// Add @Styles.Render("~/Content/bootstrap/css") in the <head/> of your _Layout.cshtml view
 			// Add @Scripts.Render("~/bundles/bootstrap") after jQuery in your _Layout.cshtml view
 			// When <compilation debug="true" />, MVC4 will render the full readable version. When set to <compilation debug="false" />, the minified version will be rendered automatically
-			BundleTable.Bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include("~/Scripts/bootstrap*"));
-			BundleTable.Bundles.Add(new StyleBundle("~/Content/bootstrap").Include("~/Content/bootstrap.css", "~/Content/bootstrap-responsive.css"));
+			BundleTable.Bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include("~/Scripts/bootstrap.js"));
+			BundleTable.Bundles.Add(new StyleBundle("~/Content/bootstrap/css").Include("~/Content/bootstrap/bootstrap.css", "~/Content/bootstrap/bootstrap-glyphicons.css"));
 		}
 	}
 }

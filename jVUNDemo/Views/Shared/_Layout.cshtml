@@ -4,40 +4,38 @@
     <meta charset="utf-8" />
     <title>@ViewBag.Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @Styles.Render("~/Content/bootstrap", "~/Content/css")
+    @Styles.Render("~/Content/bootstrap/css", "~/Content/css")
     <link href="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.css" rel="stylesheet" />
     @RenderSection("styles", required: false)
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="brand" href="~/">jQuery Validate Native Unobtrusive MVC</a>
-                <div class="nav-collapse collapse">
-                    <ul class="nav">
-                        @Html.RenderMenuItem("Home", "Index", "Home")
-                        @Html.RenderMenuItem("Getting Started", "GettingStarted", "Home")
-                        @Html.RenderMenuItem("Download", "Download", "Home")
-                        <!--
-                        @Html.RenderMenuItem("Basic Demos", "BasicDemos", "Home")
-                        -->
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Demos <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                @Html.RenderMenuItem("Overview", "DemosOverview", "Home")
-                                <li class="divider"></li>
-                                @Html.Partial("_PartialDemoMenuItems")
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+    <div class="navbar">
+        <div class="container">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="~/">jVUN</a>
+            <div class="nav-collapse collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav">
+                    @Html.RenderMenuItem("Home", "Index", "Home")
+                    @Html.RenderMenuItem("Getting Started", "GettingStarted", "Home")
+                    @Html.RenderMenuItem("Download", "Download", "Home")
+                    <!--
+                    @Html.RenderMenuItem("Basic Demos", "BasicDemos", "Home")
+                    -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Demos <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            @Html.RenderMenuItem("Overview", "DemosOverview", "Home")
+                            <li class="divider"></li>
+                            @Html.Partial("_PartialDemoMenuItems")
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -47,13 +45,15 @@
         @RenderBody()
 
     </div>
-    
+
     <div id="footer">
         <div class="container">
             <p class="muted">
-                &#169; 2013 <a href="http://icanmakethiswork.blogspot.com" target="_blank">John Reilly</a>                · <a href="mailto:johnny_reilly@hotmail.com">Contact</a>
+                &#169; 2013 <a href="http://icanmakethiswork.blogspot.com" target="_blank">John Reilly</a>
+                · <a href="mailto:johnny_reilly@hotmail.com">Contact</a>
                 · @Html.ActionLink("License", "License", "Home")
-            </p>        </div>
+            </p>
+        </div>
     </div>
 
     @Scripts.Render("~/bundles/jquery", "~/bundles/bootstrap")

@@ -2,27 +2,26 @@
   border: 1px solid #b94a48 !important;
   background-color: #ffeeee !important;
 }
+label {
+  font-weight: 200;
+}
 label.error {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   padding: 5px;
 }
+.tab-content > .tab-pane {
+  padding: 10px 0px;
+}
 form {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   background-color: rgba(0, 105, 214, 0.15);
-  padding: 5px 10px;
+  padding: 15px 30px;
 }
 #footer {
   background-color: #eeeeee;
   padding: 10px 10px 5px 10px;
-}
-@media (min-width: 980px) {
-  body {
-    padding-top: 60px;
-    /* 60px to make the container go all the way to the bottom of the topbar */
-  
-  }
 }

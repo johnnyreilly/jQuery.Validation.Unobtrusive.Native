@@ -13,29 +13,31 @@
     background-color: #ffeeee !important;
 }
 
-label.error
+label
 {
-    .borderRadius();
-    padding: 5px;
+    font-weight: 200;
+
+    &.error
+    {
+        .borderRadius();
+        padding: 5px;
+    }
+}
+
+.tab-content > .tab-pane
+{
+    padding: 10px 0px;
 }
 
 form
 {
     .borderRadius();
     background-color: rgba(0, 105, 214, 0.15);
-    padding: 5px 10px;
+    padding: 15px 30px;
 }
 
 #footer
 {
     background-color: #eeeeee;
     padding: 10px 10px 5px 10px;
-}
-
-@media (min-width: 980px)
-{
-    body
-    {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-    }
 }
