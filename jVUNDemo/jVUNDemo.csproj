@@ -153,6 +153,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\UrlModel.cs" />
     <Compile Include="Models\DateModel.cs" />
     <Compile Include="Models\NumberModel.cs" />
     <Compile Include="Models\RequiredModel.cs" />
@@ -212,6 +213,7 @@
     <Content Include="Views\Demo\Date.cshtml" />
     <Content Include="Views\Demo\Index.cshtml" />
     <Content Include="Views\Demo\Number.cshtml" />
+    <Content Include="Views\Demo\URL.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

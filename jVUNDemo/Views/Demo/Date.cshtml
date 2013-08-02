@@ -93,86 +93,20 @@
 
     <div class="tab-pane" id="html">
         
-        <p>Here's the HTML that the view generates:</p>
+        <p>Here's the HTML that the view generates (nb DateTime has been initialised to a value):</p>
 
         <pre class="prettyprint html">
-    &lt;form action="/Home/DemosNumber" method="post"&gt;
+    &lt;form action="/Demo/Date" method="post"&gt;
         &lt;div class="row"&gt;
-            &lt;label for="Short"&gt;Short - a number must be entered:&lt;/label&gt;
-            &lt;input data-msg-number="The field Short must be a number." data-msg-required="The Short field is required." 
-                data-rule-number="true" data-rule-required="true" 
-                id="Short" name="Short" type="text" value="0" /&gt;
+            &lt;label for="DateTime"&gt;DateTime - a date must be entered:&lt;/label&gt;
+            &lt;input data-msg-date="The field DateTime must be a date." data-msg-required="The DateTime field is required." 
+                data-rule-date="true" data-rule-required="true" 
+                id="DateTime" name="DateTime" type="text" value="02/08/2013 00:00:00" /&gt;
         &lt;/div&gt;
         &lt;div class="row"&gt;
-            &lt;label for="NullableShort"&gt;Nullable Short - only numbers can be entered:&lt;/label&gt;
-            &lt;input data-msg-number="The field NullableShort must be a number." data-rule-number="true" 
-                id="NullableShort" name="NullableShort" type="text" value="" /&gt;
-        &lt;/div&gt;
-        &lt;div class="row"&gt;
-            &lt;label for="Integer"&gt;Integer - a number must be entered:&lt;/label&gt;
-            &lt;input data-msg-number="The field Integer must be a number." data-msg-required="The Integer field is required." 
-                data-rule-number="true" data-rule-required="true" 
-                id="Integer" name="Integer" type="text" value="0" /&gt;
-        &lt;/div&gt;
-        &lt;div class="row"&gt;
-            &lt;label for="NullableInteger"&gt;Nullable Integer - only numbers can be entered:&lt;/label&gt;
-            &lt;input data-msg-number="The field NullableInteger must be a number." data-rule-number="true" 
-                id="NullableInteger" name="NullableInteger" type="text" value="" /&gt;
-        &lt;/div&gt;
-        &lt;div class="row"&gt;
-            &lt;label for="Long"&gt;Long - a number must be entered:&lt;/label&gt;
-            &lt;input data-msg-number="The field Long must be a number." data-msg-required="The Long field is required." 
-                data-rule-number="true" data-rule-required="true" 
-                id="Long" name="Long" type="text" value="0" /&gt;
-        &lt;/div&gt;
-        &lt;div class="row"&gt;
-            &lt;label for="NullableLong"&gt;Nullable Long - only numbers can be entered:&lt;/label&gt;
-            &lt;input data-msg-number="The field NullableLong must be a number." data-rule-number="true"
-                id="NullableLong" name="NullableLong" type="text" value="" /&gt;
-        &lt;/div&gt;
-        &lt;div class="row"&gt;
-            &lt;label for="Byte"&gt;Byte - a number must be entered:&lt;/label&gt;
-            &lt;input data-msg-number="The field Byte must be a number." data-msg-required="The Byte field is required." 
-                data-rule-number="true" data-rule-required="true" 
-                id="Byte" name="Byte" type="text" value="0" /&gt;
-        &lt;/div&gt;
-        &lt;div class="row"&gt;
-            &lt;label for="NullableByte"&gt;Nullable Byte - only numbers can be entered:&lt;/label&gt;
-            &lt;input data-msg-number="The field NullableByte must be a number." data-rule-number="true"
-                id="NullableByte" name="NullableByte" type="text" value="" /&gt;
-        &lt;/div&gt;
-        &lt;div class="row"&gt;
-            &lt;label for="Decimal"&gt;Decimal - a number must be entered:&lt;/label&gt;
-            &lt;input data-msg-number="The field Decimal must be a number." data-msg-required="The Decimal field is required." 
-                data-rule-number="true" data-rule-required="true" 
-                id="Decimal" name="Decimal" type="text" value="0" /&gt;
-        &lt;/div&gt;
-        &lt;div class="row"&gt;
-            &lt;label for="NullableDecimal"&gt;Nullable Decimal - only numbers can be entered:&lt;/label&gt;
-            &lt;input data-msg-number="The field NullableDecimal must be a number." data-rule-number="true"
-                id="NullableDecimal" name="NullableDecimal" type="text" value="" /&gt;
-        &lt;/div&gt;
-        &lt;div class="row"&gt;
-            &lt;label for="Single"&gt;Single - a number must be entered:&lt;/label&gt;
-            &lt;input data-msg-number="The field Single must be a number." data-msg-required="The Single field is required." 
-                data-rule-number="true" data-rule-required="true" 
-                id="Single" name="Single" type="text" value="0" /&gt;
-        &lt;/div&gt;
-        &lt;div class="row"&gt;
-            &lt;label for="NullableSingle"&gt;Nullable Single - only numbers can be entered:&lt;/label&gt;
-            &lt;input data-msg-number="The field NullableSingle must be a number." data-rule-number="true"
-                id="NullableSingle" name="NullableSingle" type="text" value="" /&gt;
-        &lt;/div&gt;
-        &lt;div class="row"&gt;
-            &lt;label for="Double"&gt;Double - a number must be entered:&lt;/label&gt;
-            &lt;input data-msg-number="The field Double must be a number." data-msg-required="The Double field is required." 
-                data-rule-number="true" data-rule-required="true" 
-                id="Double" name="Double" type="text" value="0" /&gt;
-        &lt;/div&gt;
-        &lt;div class="row"&gt;
-            &lt;label for="NullableDouble"&gt;Nullable Double - only numbers can be entered:&lt;/label&gt;
-            &lt;input data-msg-number="The field NullableDouble must be a number." data-rule-number="true"
-                id="NullableDouble" name="NullableDouble" type="text" value="" /&gt;
+            &lt;label for="NullableDateTime"&gt;Nullable DateTime - only dates can be entered:&lt;/label&gt;
+            &lt;input data-msg-date="The field NullableDateTime must be a date." data-rule-date="true" 
+                id="NullableDateTime" name="NullableDateTime" type="text" value="" /&gt;
         &lt;/div&gt;
         &lt;div class="row"&gt;
             &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;

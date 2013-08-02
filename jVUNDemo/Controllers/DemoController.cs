@@ -37,6 +37,13 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
             return View(new RequiredModel());
         }
 
+        public ActionResult URL()
+        {
+            ViewBag.Title = "URL Demo";
+
+            return View(new UrlModel());
+        }
+
         public ActionResult Dynamic()
         {
             ViewBag.Title = "Dynamic Demo";
