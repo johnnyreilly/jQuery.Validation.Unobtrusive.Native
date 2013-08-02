@@ -152,6 +152,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\NumberModel.cs" />
     <Compile Include="Models\RequiredModel.cs" />
     <Compile Include="Models\ExampleModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -207,6 +208,7 @@
     <Content Include="Views\Home\Download.cshtml" />
     <Content Include="Views\Home\License.cshtml" />
     <Content Include="Views\Home\GettingStarted.cshtml" />
+    <Content Include="Views\Home\DemosNumber.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

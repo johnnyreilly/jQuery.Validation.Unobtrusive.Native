@@ -53,6 +53,13 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
             return View(new RequiredModel());
         }
 
+        public ActionResult DemosNumber()
+        {
+            ViewBag.Title = "Number Demo";
+
+            return View(new NumberModel());
+        }
+
         public ActionResult DemosRequired()
         {
             ViewBag.Title = "Required Demo";
