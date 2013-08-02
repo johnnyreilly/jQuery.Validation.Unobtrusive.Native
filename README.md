@@ -64,7 +64,7 @@ At the moment only a small subset of the HtmlHelpers and their associated unobtr
 + http://twitter.com/johnny_reilly
 
 ## Credits
-Inspired by jquery.validate.unobtrusive.js and entirely dependent on https://github.com/jzaefferer/jquery-validation.
+Inspired by jquery.validate.unobtrusive.js and entirely dependent on http://github.com/jzaefferer/jquery-validation and http://aspnet.codeplex.com/wikipage?title=MVC.
 
 ## Copyright
 Copyright © 2013 [John Reilly](mailto:johnny_reilly@hotmail.com).
