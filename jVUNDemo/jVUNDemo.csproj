@@ -147,11 +147,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Extensions\NavExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\DateModel.cs" />
     <Compile Include="Models\NumberModel.cs" />
     <Compile Include="Models\RequiredModel.cs" />
     <Compile Include="Models\ExampleModel.cs" />
@@ -200,15 +202,16 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="packages.config" />
-    <Content Include="Views\Home\BasicDemos.cshtml" />
-    <Content Include="Views\Home\DemosRequired.cshtml" />
-    <Content Include="Views\Home\DemosOverview.cshtml" />
-    <Content Include="Views\Home\DemosDynamic.cshtml" />
+    <Content Include="Views\Demo\BasicDemos.cshtml" />
+    <Content Include="Views\Demo\Required.cshtml" />
+    <Content Include="Views\Demo\Dynamic.cshtml" />
     <Content Include="Views\Shared\_PartialDemoMenuItems.cshtml" />
     <Content Include="Views\Home\Download.cshtml" />
     <Content Include="Views\Home\License.cshtml" />
     <Content Include="Views\Home\GettingStarted.cshtml" />
-    <Content Include="Views\Home\DemosNumber.cshtml" />
+    <Content Include="Views\Demo\Date.cshtml" />
+    <Content Include="Views\Demo\Index.cshtml" />
+    <Content Include="Views\Demo\Number.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

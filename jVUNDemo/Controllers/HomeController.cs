@@ -1,5 +1,4 @@
 ﻿using System.Web.Mvc;
-using jQuery.Validation.Unobtrusive.Native.Demos.Models;
 
 namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
 {
@@ -33,6 +32,7 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
             return View();
         }
 
+        /*
         public ActionResult BasicDemos()
         {
             ViewBag.Title = "Basic Demos";
@@ -45,34 +45,8 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
                 DropDownRequiredDemo = null
             });
         }
+         * */
 
-        public ActionResult DemosOverview()
-        {
-            ViewBag.Title = "Overview of the demos";
-
-            return View(new RequiredModel());
-        }
-
-        public ActionResult DemosNumber()
-        {
-            ViewBag.Title = "Number Demo";
-
-            return View(new NumberModel());
-        }
-
-        public ActionResult DemosRequired()
-        {
-            ViewBag.Title = "Required Demo";
-
-            return View(new RequiredModel());
-        }
-
-        public ActionResult DemosDynamic()
-        {
-            ViewBag.Title = "Dynamic Demo";
-
-            return View(new RequiredModel());
-        }
 
     }
 }

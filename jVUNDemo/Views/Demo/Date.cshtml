@@ -1,5 +1,5 @@
 ﻿@using jQuery.Validation.Unobtrusive.Native.Demos.Models
-@model NumberModel
+@model DateModel
 @section scripts
 {
     @Scripts.Render("~/bundles/jquery-validation")
@@ -13,9 +13,9 @@
     </script>
 }
 
-<h3>Number</h3>
+<h3>Date</h3>
 
-<p>If a property is an Short, Integer, Long, Byte, Decimal, Single or Double then jQuery.Validate.Unobtrusive.Native applies the <a href="http://validation.bassistance.de/number-method/" target="_blank">number</a> validation method in jQuery Validation.  This validation will also be applied for Nullables of the same types.  Non-nullable numbers also have the <a href="http://validation.bassistance.de/required-method/" target="_blank">required</a> validation method in jQuery Validation applied (as a non-nullable number in .NET has a <a href="http://msdn.microsoft.com/en-us/library/83fhsxwc(v=vs.110).aspx" target="_blank">default value</a>).</p>
+<p>If a property is a <code>DateTime</code> then jQuery.Validate.Unobtrusive.Native applies the <a href="http://validation.bassistance.de/date-method/" target="_blank">date</a> validation method in jQuery Validation.  This validation will also be applied for <code>Nullable&lt;DateTime&gt;</code>s.  <code>DateTime</code>s also have the <a href="http://validation.bassistance.de/date-method/" target="_blank">required</a> validation method in jQuery Validation applied (as a <code>DateTime</code> in .NET always has a value).</p>
 
 <ul class="nav nav-tabs" data-tabs="tabs">
     <li class="active"><a data-toggle="tab" href="#demo">Demo</a></li>
@@ -29,73 +29,13 @@
         @using (Html.BeginForm())
         {
             <div class="row">
-                @Html.LabelFor(x => x.Short, "Short - a number must be entered:")
-                @Html.TextBoxFor(x => x.Short, true)
+                @Html.LabelFor(x => x.DateTime, "DateTime - a date must be entered:")
+                @Html.TextBoxFor(x => x.DateTime, true)
             </div>
 
             <div class="row">
-                @Html.LabelFor(x => x.NullableShort, "Nullable Short - only numbers can be entered:")
-                @Html.TextBoxFor(x => x.NullableShort, true)
-            </div>
-
-            <div class="row">
-                @Html.LabelFor(x => x.Integer, "Integer - a number must be entered:")
-                @Html.TextBoxFor(x => x.Integer, true)
-            </div>
-
-            <div class="row">
-                @Html.LabelFor(x => x.NullableInteger, "Nullable Integer - only numbers can be entered:")
-                @Html.TextBoxFor(x => x.NullableInteger, true)
-            </div>
-
-            <div class="row">
-                @Html.LabelFor(x => x.Long, "Long - a number must be entered:")
-                @Html.TextBoxFor(x => x.Long, true)
-            </div>
-
-            <div class="row">
-                @Html.LabelFor(x => x.NullableLong, "Nullable Long - only numbers can be entered:")
-                @Html.TextBoxFor(x => x.NullableLong, true)
-            </div>
-
-            <div class="row">
-                @Html.LabelFor(x => x.Byte, "Byte - a number must be entered:")
-                @Html.TextBoxFor(x => x.Byte, true)
-            </div>
-
-            <div class="row">
-                @Html.LabelFor(x => x.NullableByte, "Nullable Byte - only numbers can be entered:")
-                @Html.TextBoxFor(x => x.NullableByte, true)
-            </div>
-
-            <div class="row">
-                @Html.LabelFor(x => x.Decimal, "Decimal - a number must be entered:")
-                @Html.TextBoxFor(x => x.Decimal, true)
-            </div>
-
-            <div class="row">
-                @Html.LabelFor(x => x.NullableDecimal, "Nullable Decimal - only numbers can be entered:")
-                @Html.TextBoxFor(x => x.NullableDecimal, true)
-            </div>
-
-            <div class="row">
-                @Html.LabelFor(x => x.Single, "Single - a number must be entered:")
-                @Html.TextBoxFor(x => x.Single, true)
-            </div>
-
-            <div class="row">
-                @Html.LabelFor(x => x.NullableSingle, "Nullable Single - only numbers can be entered:")
-                @Html.TextBoxFor(x => x.NullableSingle, true)
-            </div>
-
-            <div class="row">
-                @Html.LabelFor(x => x.Double, "Double - a number must be entered:")
-                @Html.TextBoxFor(x => x.Double, true)
-            </div>
-
-            <div class="row">
-                @Html.LabelFor(x => x.NullableDouble, "Nullable Double - only numbers can be entered:")
-                @Html.TextBoxFor(x => x.NullableDouble, true)
+                @Html.LabelFor(x => x.NullableDateTime, "Nullable DateTime - only dates can be entered:")
+                @Html.TextBoxFor(x => x.NullableDateTime, true)
             </div>
 
             <div class="row">
@@ -108,30 +48,17 @@
 
     <div class="tab-pane" id="model">
         
-        <p>Here's the model, note we have different .NET number types and their associated nullable equivalents:</p>
+        <p>Here's the model, note we have a DateTime and a Nullable DateTime:</p>
 
         <pre class="prettyprint cs">
     using System.ComponentModel.DataAnnotations;
 
     namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
     {
-        public class NumberModel
+        public class DateModel
         {
-            public short Short { get; set; }
-            public int Integer { get; set; }
-            public long Long { get; set; }
-            public byte Byte { get; set; }
-            public decimal Decimal { get; set; }
-            public float Single { get; set; }
-            public double Double { get; set; }
-
-            public short? NullableShort { get; set; }
-            public int? NullableInteger { get; set; }
-            public long? NullableLong { get; set; }
-            public byte? NullableByte { get; set; }
-            public decimal? NullableDecimal { get; set; }
-            public float? NullableSingle { get; set; }
-            public double? NullableDouble { get; set; }
+            public DateTime DateTime { get; set; }
+            public DateTime? NullableDateTime { get; set; }
         }
     }
         </pre>
@@ -142,77 +69,17 @@
         <p>Here's the view (which uses the model):</p>
 
         <pre class="prettyprint cs">
-    @@model jQuery.Validation.Unobtrusive.Native.Demos.Models.NumberModel
+    @@model jQuery.Validation.Unobtrusive.Native.Demos.Models.DateModel
     @@using (Html.BeginForm())
     {
         &lt;div class="row"&gt;
-            @@Html.LabelFor(x =&gt; x.Short, "Short - a number must be entered:")
-            @@Html.TextBoxFor(x =&gt; x.Short, true)
+            @@Html.LabelFor(x =&gt; x.DateTime, "DateTime - a date must be entered:")
+            @@Html.TextBoxFor(x =&gt; x.DateTime, true)
         &lt;/div&gt;
 
         &lt;div class="row"&gt;
-            @@Html.LabelFor(x =&gt; x.NullableShort, "Nullable Short - only numbers can be entered:")
-            @@Html.TextBoxFor(x =&gt; x.NullableShort, true)
-        &lt;/div&gt;
-
-        &lt;div class="row"&gt;
-            @@Html.LabelFor(x =&gt; x.Integer, "Integer - a number must be entered:")
-            @@Html.TextBoxFor(x =&gt; x.Integer, true)
-        &lt;/div&gt;
-
-        &lt;div class="row"&gt;
-            @@Html.LabelFor(x =&gt; x.NullableInteger, "Nullable Integer - only numbers can be entered:")
-            @@Html.TextBoxFor(x =&gt; x.NullableInteger, true)
-        &lt;/div&gt;
-
-        &lt;div class="row"&gt;
-            @@Html.LabelFor(x =&gt; x.Long, "Long - a number must be entered:")
-            @@Html.TextBoxFor(x =&gt; x.Long, true)
-        &lt;/div&gt;
-
-        &lt;div class="row"&gt;
-            @@Html.LabelFor(x =&gt; x.NullableLong, "Nullable Long - only numbers can be entered:")
-            @@Html.TextBoxFor(x =&gt; x.NullableLong, true)
-        &lt;/div&gt;
-
-        &lt;div class="row"&gt;
-            @@Html.LabelFor(x =&gt; x.Byte, "Byte - a number must be entered:")
-            @@Html.TextBoxFor(x =&gt; x.Byte, true)
-        &lt;/div&gt;
-
-        &lt;div class="row"&gt;
-            @@Html.LabelFor(x =&gt; x.NullableByte, "Nullable Byte - only numbers can be entered:")
-            @@Html.TextBoxFor(x =&gt; x.NullableByte, true)
-        &lt;/div&gt;
-
-        &lt;div class="row"&gt;
-            @@Html.LabelFor(x =&gt; x.Decimal, "Decimal - a number must be entered:")
-            @@Html.TextBoxFor(x =&gt; x.Decimal, true)
-        &lt;/div&gt;
-
-        &lt;div class="row"&gt;
-            @@Html.LabelFor(x =&gt; x.NullableDecimal, "Nullable Decimal - only numbers can be entered:")
-            @@Html.TextBoxFor(x =&gt; x.NullableDecimal, true)
-        &lt;/div&gt;
-
-        &lt;div class="row"&gt;
-            @@Html.LabelFor(x =&gt; x.Single, "Single - a number must be entered:")
-            @@Html.TextBoxFor(x =&gt; x.Single, true)
-        &lt;/div&gt;
-
-        &lt;div class="row"&gt;
-            @@Html.LabelFor(x =&gt; x.NullableSingle, "Nullable Single - only numbers can be entered:")
-            @@Html.TextBoxFor(x =&gt; x.NullableSingle, true)
-        &lt;/div&gt;
-
-        &lt;div class="row"&gt;
-            @@Html.LabelFor(x =&gt; x.Double, "Double - a number must be entered:")
-            @@Html.TextBoxFor(x =&gt; x.Double, true)
-        &lt;/div&gt;
-
-        &lt;div class="row"&gt;
-            @@Html.LabelFor(x =&gt; x.NullableDouble, "Nullable Double - only numbers can be entered:")
-            @@Html.TextBoxFor(x =&gt; x.NullableDouble, true)
+            @@Html.LabelFor(x =&gt; x.NullableDateTime, "Nullable DateTime - only dates can be entered:")
+            @@Html.TextBoxFor(x =&gt; x.NullableDateTime, true)
         &lt;/div&gt;
 
         &lt;div class="row"&gt;
@@ -330,4 +197,10 @@
     </div>
 
 </div>
+
+<p>It's worth noting that the jQuery Validation documentation says of the date validation method:</p> 
+
+<blockquote>"This method should not be used, since it relies on the <code>new Date</code> constructor, which behaves very differently across browsers and locales. Use dateISO instead or one of the locale specific methods (in localizations/ and additional-methods.js)."</blockquote>
+
+<p>If you want to patch the jQuery Validation date validation to be locale specific then you could do worse then look at the steps outlined in a <a href="http://icanmakethiswork.blogspot.com/2012/09/globalize-and-jquery-validate.html" target="_blank">blogpost I wrote</a>.  In my post I replace the jQuery Validation Date method with an implementation that depends on <a href="http://github.com/jquery/globalize" target="_blank">Globalize</a> - you could use the same approach and plug in a different validation mechanism if you wanted.</p>
 
