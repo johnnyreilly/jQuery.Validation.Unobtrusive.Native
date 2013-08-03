@@ -1,0 +1,138 @@
+﻿@using jQuery.Validation.Unobtrusive.Native.Demos.Models
+@model MaxLengthMinLengthModel
+@section scripts
+{
+    @Scripts.Render("~/bundles/jquery-validation")
+    <script>
+        $("form").validate({
+            submitHandler: function (form) {
+                alert("This is a valid form!");
+            }
+        });
+
+    </script>
+}
+
+<h3>@ViewBag.Title</h3>
+
+<p>The <code>System.ComponentModel.DataAnnotations.StringLengthAttribute</code> maps to the <a href="http://jqueryvalidation.org/maxlength-method" target="_blank">maxlength</a> validation method in jQuery Validation (and depending on usage the <a href="http://jqueryvalidation.org/minlength-method" target="_blank">minlength</a> validation method too).</p>
+
+<ul class="nav nav-tabs" data-tabs="tabs">
+    <li class="active"><a data-toggle="tab" href="#demo">Demo</a></li>
+    <li><a data-toggle="tab" href="#model">Model</a></li>
+    <li><a data-toggle="tab" href="#view">View</a></li>
+    <li><a data-toggle="tab" href="#html">HTML</a></li>
+    <li><a data-toggle="tab" href="#javascript">JavaScript</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active" id="demo">
+        
+        @using (Html.BeginForm())
+        {
+            <div class="row">
+                @Html.LabelFor(x => x.MaxLength, "A maximum of 7 characters can be entered:")
+                @Html.TextBoxFor(x => x.MaxLength, true)
+            </div>
+
+            <div class="row">
+                @Html.LabelFor(x => x.MaxAndMinLength, "A maximum of 10 characters can be entered and a minimum of 5:")
+                @Html.TextBoxFor(x => x.MaxAndMinLength, true)
+            </div>
+
+            <div class="row">
+                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="reset" class="btn btn-info">Reset</button>
+            </div>
+        }
+
+    </div>
+
+    <div class="tab-pane" id="model">
+        
+        <p>Here's the model, note that the <code>StringLength</code> attribute decorates the both properties on the model:</p>
+
+        <pre class="prettyprint cs">
+    using System.ComponentModel.DataAnnotations;
+
+    namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
+    {
+        public class MaxLengthMinLengthModel
+        {
+            [StringLength(7)]
+            public string MaxLength { get; set; }
+
+            [StringLength(10, MinimumLength = 5)]
+            public string MaxAndMinLength { get; set; }
+        }
+    }
+        </pre>
+    </div>
+
+    <div class="tab-pane" id="view">
+        
+        <p>Here's the view (which uses the model):</p>
+
+        <pre class="prettyprint cs">
+    @@using (Html.BeginForm())
+    {
+        &lt;div class="row"&gt;
+            @@Html.LabelFor(x =&gt; x.MaxLength, "A maximum of 7 characters can be entered:")
+            @@Html.TextBoxFor(x =&gt; x.MaxLength, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            @@Html.LabelFor(x =&gt; x.MaxAndMinLength, "A maximum of 10 characters can be entered and a minimum of 5:")
+            @@Html.TextBoxFor(x =&gt; x.MaxAndMinLength, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
+        &lt;/div&gt;
+    }
+        </pre>
+
+    </div>
+
+    <div class="tab-pane" id="html">
+        
+        <p>Here's the HTML that the view generates:</p>
+
+        <pre class="prettyprint html">
+    &lt;form action="/Demo/MaxLengthMinLength" method="post"&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="MaxLength"&gt;A maximum of 7 characters can be entered:&lt;/label&gt;
+            &lt;input data-msg-maxlength="The field MaxLength must be a string with a maximum length of 7." data-rule-maxlength="7" 
+                id="MaxLength" name="MaxLength" type="text" value="12345678" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="MaxAndMinLength"&gt;A maximum of 10 characters can be entered and a minimum of 5:&lt;/label&gt;
+            &lt;input data-msg-maxlength="The field MaxAndMinLength must be a string with a minimum length of 5 and a maximum length of 10." 
+                data-msg-minlength="The field MaxAndMinLength must be a string with a minimum length of 5 and a maximum length of 10." 
+                data-rule-maxlength="10" data-rule-minlength="5" 
+                id="MaxAndMinLength" name="MaxAndMinLength" type="text" value="123" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+        </pre>
+    </div>
+    
+    <div class="tab-pane" id="javascript">
+        
+        <p>Here's the JavaScript that initialises the validation:</p>
+
+        <pre class="prettyprint js">
+  $("form").validate({
+      submitHandler: function (form) {
+          alert("This is a valid form!");
+      }
+  });
+        </pre>
+
+    </div>
+
+</div>
+

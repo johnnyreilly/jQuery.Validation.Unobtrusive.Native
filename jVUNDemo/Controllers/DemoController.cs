@@ -37,6 +37,13 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
             return View(new RequiredModel());
         }
 
+        public ActionResult MaxLengthMinLength()
+        {
+            ViewBag.Title = "MaxLength and MinLength";
+
+            return View(new MaxLengthMinLengthModel{ MaxLength = "12345678", MaxAndMinLength = "123" });
+        }
+
         public ActionResult URL()
         {
             ViewBag.Title = "URL";
