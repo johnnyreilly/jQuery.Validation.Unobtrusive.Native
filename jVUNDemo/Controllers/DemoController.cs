@@ -58,6 +58,13 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
             return View(new EmailModel());
         }
 
+        public ActionResult CreditCard()
+        {
+            ViewBag.Title = "Credit Card";
+
+            return View(new CreditCardModel());
+        }
+
         public ActionResult Dynamic()
         {
             ViewBag.Title = "Dynamic Demo";

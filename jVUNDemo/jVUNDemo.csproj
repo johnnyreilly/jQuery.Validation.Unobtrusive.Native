@@ -153,6 +153,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CreditCardModel.cs" />
     <Compile Include="Models\MaxLengthMinLengthModel.cs" />
     <Compile Include="Models\EmailModel.cs" />
     <Compile Include="Models\UrlModel.cs" />
@@ -218,6 +219,7 @@
     <Content Include="Views\Demo\URL.cshtml" />
     <Content Include="Views\Demo\Email.cshtml" />
     <Content Include="Views\Demo\MaxLengthMinLength.cshtml" />
+    <Content Include="Views\Demo\CreditCard.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
