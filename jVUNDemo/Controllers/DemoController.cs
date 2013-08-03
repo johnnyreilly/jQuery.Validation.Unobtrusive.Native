@@ -11,37 +11,44 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
 
         public ActionResult Index()
         {
-            ViewBag.Title = "Overview of the demos";
+            ViewBag.Title = "Overview";
 
             return View();
         }
 
         public ActionResult Number()
         {
-            ViewBag.Title = "Number Demo";
+            ViewBag.Title = "Number";
 
             return View(new NumberModel());
         }
 
         public ActionResult Date()
         {
-            ViewBag.Title = "Date Demo";
+            ViewBag.Title = "Date";
 
             return View(new DateModel { DateTime = DateTime.Today } );
         }
 
         public ActionResult Required()
         {
-            ViewBag.Title = "Required Demo";
+            ViewBag.Title = "Required";
 
             return View(new RequiredModel());
         }
 
         public ActionResult URL()
         {
-            ViewBag.Title = "URL Demo";
+            ViewBag.Title = "URL";
 
             return View(new UrlModel());
+        }
+
+        public ActionResult Email()
+        {
+            ViewBag.Title = "Email";
+
+            return View(new EmailModel());
         }
 
         public ActionResult Dynamic()

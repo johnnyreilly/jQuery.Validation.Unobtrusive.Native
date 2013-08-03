@@ -1,5 +1,5 @@
 ﻿@using jQuery.Validation.Unobtrusive.Native.Demos.Models
-@model UrlModel
+@model EmailModel
 @section scripts
 {
     @Scripts.Render("~/bundles/jquery-validation")
@@ -15,7 +15,7 @@
 
 <h3>@ViewBag.Title</h3>
 
-<p>The <code>System.ComponentModel.DataAnnotations.UrlAttribute</code> maps to the <a href="http://jqueryvalidation.org/url-method/" target="_blank">url</a> validation method in jQuery Validation.</p>
+<p>The <code>System.ComponentModel.DataAnnotations.EmailAddressAttribute</code> maps to the <a href="http://jqueryvalidation.org/email-method/" target="_blank">email</a> validation method in jQuery Validation.</p>
 
 <ul class="nav nav-tabs" data-tabs="tabs">
     <li class="active"><a data-toggle="tab" href="#demo">Demo</a></li>
@@ -30,8 +30,8 @@
         @using (Html.BeginForm())
         {
             <div class="row">
-                @Html.LabelFor(x => x.Url, "Only Urls can be entered:")
-                @Html.TextBoxFor(x => x.Url, true)
+                @Html.LabelFor(x => x.Email, "Only an email address can be entered:")
+                @Html.TextBoxFor(x => x.Email, true)
             </div>
 
             <div class="row">
@@ -44,17 +44,17 @@
 
     <div class="tab-pane" id="model">
         
-        <p>Here's the model, note that the <code>Url</code> attribute decorates the sole property on the model:</p>
+        <p>Here's the model, note that the <code>EmailAddress</code> attribute decorates the sole property on the model:</p>
 
         <pre class="prettyprint cs">
     using System.ComponentModel.DataAnnotations;
 
     namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
     {
-        public class UrlModel
+        public class EmailModel
         {
-            [Url]
-            public string Url { get; set; }
+            [EmailAddress]
+            public string Email { get; set; }
         }
     }
         </pre>
@@ -65,12 +65,12 @@
         <p>Here's the view (which uses the model):</p>
 
         <pre class="prettyprint cs">
-    @@model jQuery.Validation.Unobtrusive.Native.Demos.Models.UrlModel
+    @@model jQuery.Validation.Unobtrusive.Native.Demos.Models.EmailModel
     @@using (Html.BeginForm())
     {
         &lt;div class="row"&gt;
-            @@Html.LabelFor(x =&gt; x.Url, "Only Urls can be entered:")
-            @@Html.TextBoxFor(x =&gt; x.Url, true)
+            @@Html.LabelFor(x =&gt; x.Email, "Only an email address can be entered:")
+            @@Html.TextBoxFor(x =&gt; x.Email, true)
         &lt;/div&gt;
 
         &lt;div class="row"&gt;
@@ -87,11 +87,11 @@
         <p>Here's the HTML that the view generates:</p>
 
         <pre class="prettyprint html">
-    &lt;form action="/Demo/Url" method="post"&gt;
+    &lt;form action="/Demo/Email" method="post"&gt;
         &lt;div class="row"&gt;
-            &lt;label for="Url"&gt;Only Urls can be entered:&lt;/label&gt;
-            &lt;input data-msg-url="The Url field is not a valid fully-qualified http, https, or ftp URL." data-rule-url="true" 
-                id="Url" name="Url" type="text" value="" /&gt;
+            &lt;label for="Email"&gt;Only an email address can be entered:&lt;/label&gt;
+            &lt;input data-msg-email="The Email field is not a valid e-mail address." data-rule-email="true" 
+                id="Email" name="Email" type="text" value="" /&gt;
         &lt;/div&gt;
         &lt;div class="row"&gt;
             &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;

@@ -153,6 +153,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\EmailModel.cs" />
     <Compile Include="Models\UrlModel.cs" />
     <Compile Include="Models\DateModel.cs" />
     <Compile Include="Models\NumberModel.cs" />
@@ -214,6 +215,7 @@
     <Content Include="Views\Demo\Index.cshtml" />
     <Content Include="Views\Demo\Number.cshtml" />
     <Content Include="Views\Demo\URL.cshtml" />
+    <Content Include="Views\Demo\Email.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
