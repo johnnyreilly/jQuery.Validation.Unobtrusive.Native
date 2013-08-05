@@ -58,6 +58,34 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
             return View(new EmailModel());
         }
 
+        public ViewResult Remote()
+        {
+            ViewBag.Title = "Remote";
+
+            return View(new RemoteModel());
+        }
+
+        public JsonResult RemoteSimple(string Simple)
+        {
+            return Json(Simple.StartsWith("a", true, null), JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult RemoteServerErrorMessage(string ServerErrorMessage)
+        {
+            return Json((ServerErrorMessage.StartsWith("b", true, null)
+                ? "true"
+                : ServerErrorMessage + " does not begin with \"b\" and this message was sent back from the server as a result..."),
+                JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult RemoteAdditionalFields(string AdditionalFields, string Simple)
+        {
+            return Json((AdditionalFields.StartsWith("c", true, null)
+                ? "true"
+                : AdditionalFields + " does not begin with \"c\" and this message was sent back from the server as a result..."),
+                JsonRequestBehavior.AllowGet);
+        }
+
         public ActionResult CreditCard()
         {
             ViewBag.Title = "Credit Card";

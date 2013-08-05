@@ -1,0 +1,174 @@
+﻿@using jQuery.Validation.Unobtrusive.Native.Demos.Models
+@model RemoteModel
+@section scripts
+{
+    @Scripts.Render("~/bundles/jquery-validation")
+    <script>
+        $("form").validate({
+            submitHandler: function (form) {
+                alert("This is a valid form!");
+            }
+        });
+
+    </script>
+}
+
+<h3>@ViewBag.Title</h3>
+
+<p>The <code>System.ComponentModel.DataAnnotations.RemoteAttribute</code> maps to the <a href="http://jqueryvalidation.org/remote-method/" target="_blank">remote</a> validation method in jQuery Validation.</p>
+
+<ul class="nav nav-tabs" data-tabs="tabs">
+    <li class="active"><a data-toggle="tab" href="#demo">Demo</a></li>
+    <li><a data-toggle="tab" href="#model">Model</a></li>
+    <li><a data-toggle="tab" href="#view">View</a></li>
+    <li><a data-toggle="tab" href="#controller">Controller</a></li>
+    <li><a data-toggle="tab" href="#html">HTML</a></li>
+    <li><a data-toggle="tab" href="#javascript">JavaScript</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active" id="demo">
+        
+        @using (Html.BeginForm())
+        {
+            <div class="row">
+                @Html.LabelFor(x => x.Simple, "Default error message demo.  Only text that begins with the letter \"A\" can be entered:")
+                @Html.TextBoxFor(x => x.Simple, true)
+            </div>
+
+            <div class="row">
+                @Html.LabelFor(x => x.ServerErrorMessage, "Server error message demo.  Only text that begins with the letter \"B\" can be entered:")
+                @Html.TextBoxFor(x => x.ServerErrorMessage, true)
+            </div>
+
+            <div class="row">
+                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="reset" class="btn btn-info">Reset</button>
+            </div>
+        }
+
+    </div>
+
+    <div class="tab-pane" id="model">
+        
+        <p>Here's the model, note that the <code>EmailAddress</code> attribute decorates the sole property on the model:</p>
+
+        <pre class="prettyprint cs">
+    using System.Web.Mvc;
+
+    namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
+    {
+        public class RemoteModel
+        {
+            [Remote("RemoteSimple", "Demo")]
+            public string Simple { get; set; }
+
+            [Remote("RemoteServerErrorMessage", "Demo")]
+            public string ServerErrorMessage { get; set; }
+        }
+    }
+        </pre>
+    </div>
+
+    <div class="tab-pane" id="view">
+        
+        <p>Here's the view (which uses the model):</p>
+
+        <pre class="prettyprint cs">
+    @@model jQuery.Validation.Unobtrusive.Native.Demos.Models.RemoteModel
+    @@using (Html.BeginForm())
+    {
+        &lt;div class="row"&gt;
+            @@Html.LabelFor(x =&gt; x.Simple, "Default error message demo.  Only text that begins with the letter \"A\" can be entered:")
+            @@Html.TextBoxFor(x =&gt; x.Simple, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            @@Html.LabelFor(x =&gt; x.ServerErrorMessage, "Server error message demo.  Only text that begins with the letter \"B\" can be entered:")
+            @@Html.TextBoxFor(x =&gt; x.ServerErrorMessage, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
+        &lt;/div&gt;
+    }
+        </pre>
+
+    </div>
+
+    <div class="tab-pane" id="controller">
+        
+        <p>Here's the (relevant parts) of the controller. Note the different endpoints for each remote validation:</p>
+
+        <pre class="prettyprint cs">
+    using System;
+    using System.Web.Mvc;
+    using jQuery.Validation.Unobtrusive.Native.Demos.Models;
+
+    namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
+    {
+        public class DemoController : Controller
+        {
+            // ...
+
+            public JsonResult RemoteSimple(string Simple)
+            {
+                return Json(Simple.StartsWith("a", true, null), JsonRequestBehavior.AllowGet);
+            }
+
+            public JsonResult RemoteServerErrorMessage(string ServerErrorMessage)
+            {
+                return Json((ServerErrorMessage.StartsWith("b", true, null)
+                    ? "true"
+                    : ServerErrorMessage + " does not begin with \"b\" and this message was sent back from the server as a result..."),
+                    JsonRequestBehavior.AllowGet);
+            }
+
+            // ...
+        }
+    }
+        </pre>
+    </div>
+
+    <div class="tab-pane" id="html">
+        
+        <p>Here's the HTML that the view generates:</p>
+
+        <pre class="prettyprint html">
+    &lt;form action="/Demo/Remote" method="post"&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="Simple"&gt;Default error message demo.  Only text that begins with the letter &quot;A&quot; can be entered:&lt;/label&gt;
+            &lt;input data-msg-remote="&#39;Simple&#39; is invalid." 
+                data-rule-remote="/Demo/RemoteSimple" 
+                id="Simple" name="Simple" type="text" value="" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="ServerErrorMessage"&gt;Server error message demo.  Only text that begins with the letter &quot;B&quot; can be entered:&lt;/label&gt;
+            &lt;input data-msg-remote="&#39;ServerErrorMessage&#39; is invalid." 
+                data-rule-remote="/Demo/RemoteServerErrorMessage" 
+                id="ServerErrorMessage" name="ServerErrorMessage" type="text" value="" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+        </pre>
+    </div>
+    
+    <div class="tab-pane" id="javascript">
+        
+        <p>Here's the JavaScript that initialises the validation:</p>
+
+        <pre class="prettyprint js">
+  $("form").validate({
+      submitHandler: function (form) {
+          alert("This is a valid form!");
+      }
+  });
+        </pre>
+
+    </div>
+
+</div>
+
