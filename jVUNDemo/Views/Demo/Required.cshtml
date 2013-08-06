@@ -68,6 +68,14 @@
             </div>
 
             <div class="row">
+                @Html.LabelFor(x => x.ListBox, "An option must be selected:")
+                @Html.ListBoxFor(x => x.ListBox, true, new List<SelectListItem> {
+                    new SelectListItem{ Text = "Please select", Value = "" },
+                    new SelectListItem{ Text = "An option", Value = "An option"}
+                })
+            </div>
+
+            <div class="row">
                 @Html.LabelFor(x => x.TextArea, "Something must be entered:")
                 @Html.TextAreaFor(x => x.TextArea, true)
             </div>

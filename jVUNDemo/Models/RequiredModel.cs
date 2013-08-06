@@ -11,6 +11,9 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
         public string DropDownList { get; set; }
 
         [Required]
+        public string ListBox { get; set; }
+
+        [Required]
         public string RadioButton { get; set; }
 
         [Required]

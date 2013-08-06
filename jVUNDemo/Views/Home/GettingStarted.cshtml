@@ -54,10 +54,15 @@
 
     <pre class="prettyprint cs">
 
-    @@Html.TextBoxFor(x => x.WeAreTextBox, true, htmlAttributes: new { @@class="css-class" })
+    @@Html.TextBoxFor(x => x.WeAreTextBox, htmlAttributes: new { @@class="css-class" })
     </pre>
     
-    <p>Is still completely possible.</p>
+    <p>Is still completely possible. You'd just do this:</p>
+
+    <pre class="prettyprint cs">
+
+    @@Html.TextBoxFor(x => x.WeAreTextBox, true, htmlAttributes: new { @@class="css-class" })
+    </pre>
 </div>
 
 <p>By the way, I have considered keeping jQuery.Validation.Unobtrusive.Native's HtmlHelpers entirely separate from the inbuilt MVC ones and instead implementing <code>TextBoxNativeFor</code> / <code>DropDownListNativeFor</code> methods which share the same signatures as the inbuilt MVC ones.  I'm still in 2 minds about the best approach and I'm happy to be swayed in this direction if people feel strongly enough - if you've an opinion then drop me a line with your rationale.</p>
