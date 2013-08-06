@@ -20,19 +20,19 @@
 <p>Where you would previously have written:</p>
 
 <pre class="prettyprint cs">
-    @@Html.TextBoxFor(x => x.RangeAndNumberDemo)
+    @@Html.TextBoxFor(x => x.WeAreTextBox)
 </pre>
 
 <p>To use jQuery.Validation.Unobtrusive.Native you would put:</p>
 
 <pre class="prettyprint cs">
-    @@Html.TextBoxFor(x => x.RangeAndNumberDemo, true)
+    @@Html.TextBoxFor(x => x.WeAreTextBox, true)
 </pre>
 
 <p>Or, where you would have written:</p>
 
 <pre class="prettyprint cs">
-    @@Html.DropDownListFor(x => x.DropDownRequiredDemo, new List&lt;SelectListItem&gt; {
+    @@Html.DropDownListFor(x => x.WeAreDropDown, new List&lt;SelectListItem&gt; {
         new SelectListItem{ Text = "Please select", Value = "" },
         new SelectListItem{ Text = "An option", Value = "An option"}
     })
@@ -41,7 +41,7 @@
 <p>Now you would put:</p>
 
 <pre class="prettyprint cs">
-    @@Html.DropDownListFor(x => x.DropDownRequiredDemo, true, new List&lt;SelectListItem&gt; {
+    @@Html.DropDownListFor(x => x.WeAreDropDown, true, new List&lt;SelectListItem&gt; {
         new SelectListItem{ Text = "Please select", Value = "" },
         new SelectListItem{ Text = "An option", Value = "An option"}
     })
@@ -49,6 +49,17 @@
 
 <p>The only differences above are the extra <code>true</code> parameters being passed.  If you had passed <code>false</code> instead jQuery.Validation.Unobtrusive.Native internally calls the inbuilt MVC implementation.</p>
 
+<div class="alert alert-info">
+    <p>If you're a heavy user of the <code>htmlAttributes</code> parameter (and indeed others) available using the MVC HTML Helpers and you're worried that jQuery.Validation.Unobtrusive.Native will stop you using it then <strong>fear not</strong>!  The same overloads should remain available to you as with the out-of-the-box HTML Helpers.  So doing something like this:</p>
+
+    <pre class="prettyprint cs">
+
+    @@Html.TextBoxFor(x => x.WeAreTextBox, true, htmlAttributes: new { @@class="css-class" })
+    </pre>
+    
+    <p>Is still completely possible.</p>
+</div>
+
 <p>By the way, I have considered keeping jQuery.Validation.Unobtrusive.Native's HtmlHelpers entirely separate from the inbuilt MVC ones and instead implementing <code>TextBoxNativeFor</code> / <code>DropDownListNativeFor</code> methods which share the same signatures as the inbuilt MVC ones.  I'm still in 2 minds about the best approach and I'm happy to be swayed in this direction if people feel strongly enough - if you've an opinion then drop me a line with your rationale.</p>
 
-<p>Take a look at the demos to see more detailed examples.</p>
+<p>Take a look at the @Html.ActionLink("demos", "Index", "Demo") to see more detailed examples.</p>

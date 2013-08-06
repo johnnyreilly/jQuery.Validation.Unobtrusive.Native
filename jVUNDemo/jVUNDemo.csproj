@@ -153,6 +153,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\RangeModel.cs" />
     <Compile Include="Models\EqualToModel.cs" />
     <Compile Include="Models\RemoteModel.cs" />
     <Compile Include="Models\CreditCardModel.cs" />
@@ -224,6 +225,7 @@
     <Content Include="Views\Demo\CreditCard.cshtml" />
     <Content Include="Views\Demo\Remote.cshtml" />
     <Content Include="Views\Demo\EqualTo.cshtml" />
+    <Content Include="Views\Demo\Range.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
