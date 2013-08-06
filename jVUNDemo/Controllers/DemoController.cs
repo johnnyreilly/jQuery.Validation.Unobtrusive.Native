@@ -41,7 +41,14 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
         {
             ViewBag.Title = "MaxLength and MinLength";
 
-            return View(new MaxLengthMinLengthModel{ MaxLength = "12345678", MaxAndMinLength = "123" });
+            return View(new MaxLengthMinLengthModel { MaxLength = "12345678", MaxAndMinLength = "123" });
+        }
+
+        public ActionResult EqualTo()
+        {
+            ViewBag.Title = "EqualTo";
+
+            return View(new EqualToModel { EMail = "an@emailaddress.com" });
         }
 
         public ActionResult URL()
