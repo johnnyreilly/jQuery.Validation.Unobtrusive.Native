@@ -12,5 +12,8 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
 
         [Required]
         public string RadioButton { get; set; }
+
+        [Required]
+        public string TextArea { get; set; }
     }
 }

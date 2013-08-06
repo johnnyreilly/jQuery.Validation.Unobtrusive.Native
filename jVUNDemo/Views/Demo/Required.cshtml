@@ -68,6 +68,11 @@
             </div>
 
             <div class="row">
+                @Html.LabelFor(x => x.TextArea, "Something must be entered:")
+                @Html.TextAreaFor(x => x.TextArea, true)
+            </div>
+
+            <div class="row">
                 <button type="submit" class="btn btn-default">Submit</button>
                 <button type="reset" class="btn btn-info">Reset</button>
             </div>
@@ -94,6 +99,9 @@
 
             [Required]
             public string RadioButton { get; set; }
+
+            [Required]
+            public string TextArea { get; set; }
         }
     }
         </pre>
@@ -133,6 +141,11 @@
         &lt;/div&gt;
 
         &lt;div class="row"&gt;
+            @@Html.LabelFor(x =&gt; x.TextArea, "Something must be entered:")
+            @@Html.TextAreaFor(x =&gt; x.TextArea, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
             &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
             &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
         &lt;/div&gt;
@@ -146,16 +159,18 @@
         <p>Here's the HTML that the view generates:</p>
 
         <pre class="prettyprint html">
-    &lt;form action="/Home/DemosRequired" method="post"&gt;
+    &lt;form action="/Demo/Required" method="post"&gt;
         &lt;div class="row"&gt;
             &lt;label for="TextBox"&gt;Something must be entered:&lt;/label&gt;
-            &lt;input data-msg-required="The TextBox field is required." data-rule-required="true" 
-                id="TextBox" name="TextBox" type="text" value="" /&gt;
+            &lt;input data-msg-required="The TextBox field is required." 
+                   data-rule-required="true" 
+                   id="TextBox" name="TextBox" type="text" value="" /&gt;
         &lt;/div&gt;
         &lt;div class="row"&gt;
             &lt;label for="DropDownList"&gt;An option must be selected:&lt;/label&gt;
-            &lt;select data-msg-required="The DropDownList field is required." data-rule-required="true" 
-                id="DropDownList" name="DropDownList"&gt;
+            &lt;select data-msg-required="The DropDownList field is required." 
+                    data-rule-required="true" 
+                    id="DropDownList" name="DropDownList"&gt;
                 &lt;option value=""&gt;Please select&lt;/option&gt;
                 &lt;option value="An option"&gt;An option&lt;/option&gt;
             &lt;/select&gt;
@@ -163,8 +178,9 @@
         &lt;div class="row"&gt;
             &lt;label for="RadioButton"&gt;A radio button must be selected:&lt;/label&gt;
             &lt;label class="radio.inline" for="RequiredString_Yes"&gt;
-                &lt;input data-msg-required="The RadioButton field is required." data-rule-required="true" 
-                    id="RequiredString_Yes" name="RadioButton" type="radio" value="Yes" /&gt;
+                &lt;input data-msg-required="The RadioButton field is required." 
+                       data-rule-required="true" 
+                       id="RequiredString_Yes" name="RadioButton" type="radio" value="Yes" /&gt;
                 Yes
             &lt;/label&gt;
             &lt;label class="radio.inline" for="RequiredString_No"&gt;
@@ -173,9 +189,16 @@
             &lt;/label&gt;
         &lt;/div&gt;
         &lt;div class="row"&gt;
+            &lt;label for="TextArea"&gt;Something must be entered:&lt;/label&gt;
+            &lt;textarea cols="20" 
+                      data-msg-required="The TextArea field is required." 
+                      data-rule-required="true" 
+                      id="TextArea" name="TextArea" rows="2"&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
             &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
             &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
-        &lt;/p&gt;
+        &lt;/div&gt;
     &lt;/form&gt;
         </pre>
     </div>
