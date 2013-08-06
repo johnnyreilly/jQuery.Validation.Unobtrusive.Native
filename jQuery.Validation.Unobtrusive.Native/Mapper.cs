@@ -62,38 +62,6 @@ namespace System.Web.Mvc
                 attributes.Add("data-msg-email", unobtrusiveValidationAttributes[data_val_email]);
             }
 
-            // Email
-            // Driven from RemoteAttribute eg "[Remote("Remote", "Demo")]"
-            if (unobtrusiveValidationAttributes.ContainsKey(data_val_remote))
-            {
-                if (unobtrusiveValidationAttributes[data_val_remote_additionalfields].ToString().Contains(","))
-                {
-                    // THIS MECHANISM DOESN'T REALLY WORK AT PRESENT - ADDITIONAL FIELDS ARE NOT WELL
-                    // CATERED FOR YET WITH jQuery.Validate
-                    // TODO: COME BACK TO WHEN A CLEAR APPROACH WITH jQuery.Validate IS AVAILABLE
-                    attributes.Add("data-rule-remote", "{" +
-                        "\"url\": \"" + unobtrusiveValidationAttributes["data-val-remote-url"] + "\"," +
-                        "\"type\": \"post\"," +
-                        "\"data\": {" +
-                        "\"Simple\": \"function() { return $('#Simple').val(); }\"" +
-                        "}" +
-                        "}");
-
-                    /* what the dynamically generated attrs look like:
-    unobtrusiveValidationAttributes
-    Count = 4
-        [0]: {[data-val-remote, 'AdditionalFields' is invalid.]}
-        [1]: {[data-val-remote-url, /Demo/RemoteAdditionalFields]}
-        [2]: {[data-val-remote-additionalfields, *.AdditionalFields,*.Simple]}
-        [3]: {[data-val, true]}
-                     */
-
-                }
-                else
-                    attributes.Add("data-rule-remote", unobtrusiveValidationAttributes["data-val-remote-url"]);
-                    
-                attributes.Add("data-msg-remote", unobtrusiveValidationAttributes[data_val_remote]);
-            }
 
             // Url
             // Driven from UrlAttribute eg "[Url]"
@@ -159,6 +127,40 @@ namespace System.Web.Mvc
                     );
                 attributes.Add("data-msg-range", unobtrusiveValidationAttributes[data_val_range]);
             }
+
+            // Remote
+            // Driven from RemoteAttribute eg "[Remote("Remote", "Demo")]"
+            if (unobtrusiveValidationAttributes.ContainsKey(data_val_remote))
+            {
+                if (unobtrusiveValidationAttributes[data_val_remote_additionalfields].ToString().Contains(","))
+                {
+                    // THIS MECHANISM DOESN'T REALLY WORK AT PRESENT - ADDITIONAL FIELDS ARE NOT WELL
+                    // CATERED FOR YET WITH jQuery.Validate
+                    // TODO: COME BACK TO WHEN A CLEAR APPROACH WITH jQuery.Validate IS AVAILABLE
+                    attributes.Add("data-rule-remote", "{" +
+                        "\"url\": \"" + unobtrusiveValidationAttributes["data-val-remote-url"] + "\"," +
+                        "\"type\": \"post\"," +
+                        "\"data\": {" +
+                        "\"Simple\": \"function() { return $('#Simple').val(); }\"" +
+                        "}" +
+                        "}");
+
+                    /* what the dynamically generated attrs look like:
+    unobtrusiveValidationAttributes
+    Count = 4
+        [0]: {[data-val-remote, 'AdditionalFields' is invalid.]}
+        [1]: {[data-val-remote-url, /Demo/RemoteAdditionalFields]}
+        [2]: {[data-val-remote-additionalfields, *.AdditionalFields,*.Simple]}
+        [3]: {[data-val, true]}
+                     */
+
+                }
+                else
+                    attributes.Add("data-rule-remote", unobtrusiveValidationAttributes["data-val-remote-url"]);
+                    
+                attributes.Add("data-msg-remote", unobtrusiveValidationAttributes[data_val_remote]);
+            }
+            
             return attributes;
         }
 
