@@ -25,3 +25,20 @@ form {
   background-color: #eeeeee;
   padding: 10px 10px 5px 10px;
 }
+.navbar {
+  background-color: #31b0d5;
+}
+.navbar .navbar-brand {
+  color: #ffffff;
+}
+.navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  color: #dddddd;
+}
+.navbar-nav > .dropdown > a .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
