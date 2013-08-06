@@ -11,6 +11,8 @@ The principal of this was and is fantastic.  But since that time the jQuery Vali
 
 This project intends to be a bridge between MVC's inbuilt support for driving validation from data attributes and jQuery Validation's native support for the same.  This is achieved by mapping the data attributes created by MVC over to the data attributes used by jQuery Validation.
 
+You can see more detail on the [demo site](http://jqueryvalidationunobtrusivenative.azurewebsites.net/).
+
 ##Getting started
 
 If you haven't already, ensure that the following entries can be found in your web.config:
