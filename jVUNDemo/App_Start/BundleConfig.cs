@@ -11,7 +11,7 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.App_Start
 
             bundles.Add(new ScriptBundle("~/bundles/jquery-validation").Include("~/Scripts/jquery.validate.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/knockout").Include("~/Scripts/knockout-{version}.debug.js"));
+            bundles.Add(new ScriptBundle("~/bundles/knockout").Include("~/Scripts/knockout-2.3.0.debug.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
