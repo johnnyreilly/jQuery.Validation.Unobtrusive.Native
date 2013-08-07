@@ -32,7 +32,7 @@ namespace System.Web.Mvc
             object htmlAttributes,
             ModelMetadata metadata)
         {
-            var propertyName = helper.NameFor(expression).ToString();
+            var propertyName = helper.NameFor(expression).ToString(); //var propertyName = ModelMetadata.FromLambdaExpression(expression, helper.ViewData).PropertyName; // MVC 3 can use this
             var unobtrusiveValidationAttributes = helper.GetUnobtrusiveValidationAttributes(propertyName, metadata);
             var attributes = HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttributes);
 

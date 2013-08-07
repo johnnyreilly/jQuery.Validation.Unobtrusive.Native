@@ -3,6 +3,7 @@
         .nuget-badge code {
             -moz-border-radius: 5px;
             -webkit-border-radius: 5px;
+            border-radius: 5px;
             background-color: #202020;
             border: 4px solid silver;
             border-radius: 5px;
@@ -19,12 +20,19 @@
 
 <h3>@ViewBag.Title</h3>
 
-<p>You can include jQuery Validation Unobtrusive Native into your project in a number of ways. You can get the source on <a href="http://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native" target="_blank">GitHub</a>.</p>
-
-<p>Also it's available to download on <a href="https://www.nuget.org/packages/jQuery.Validation.Unobtrusive.Native/" target="_blank">NuGet</a>:</p>
+<p>You can download jQuery Validation Unobtrusive Native from <a href="http://www.nuget.org/packages?q=jQuery.Validation.Unobtrusive.Native" target="_blank">NuGet</a>.  For an MVC 4 project go <a href="http://www.nuget.org/packages/jQuery.Validation.Unobtrusive.Native.MVC4/" target="_blank">here</a> or run the following command in the Package Manager Console:</p>
 
 <div class="nuget-badge">
-    <p><code>PM&gt; Install-Package jQuery.Validation.Unobtrusive.Native</code></p>
+    <p><code>PM&gt; Install-Package jQuery.Validation.Unobtrusive.Native.MVC4</code></p>
 </div>
 
-<p>Nb The NuGet package is compiled against MVC 4.  I plan to create an MVC 3 version at some point but it's not available yet.</p>
+<p>For an MVC 3 project go <a href="http://www.nuget.org/packages/jQuery.Validation.Unobtrusive.Native.MVC3/" target="_blank">here</a> or run the following command in the Package Manager Console:</p>
+
+<div class="nuget-badge">
+    <p><code>PM&gt; Install-Package jQuery.Validation.Unobtrusive.Native.MVC3</code></p>
+</div>
+
+<p>For all intents and purposes the 2 packages are identical.  The MVC 4 package has one extra parameter available for <code>TextBoxFor</code> which it shipped as part of MVC 4 but that should be the only difference.</p>
+
+<p>If you want to get the source, it can be found on <a href="http://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native" target="_blank">GitHub</a>.</p>
+
