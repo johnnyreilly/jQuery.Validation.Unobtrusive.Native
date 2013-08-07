@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("jQuery.Validation.Unobtrusive.Native")]
-[assembly: AssemblyDescription("Provides MVC HTML helper extensions that marry jQuery Validation's native unobtrusive support for validation driven by HTML 5 data attributes with MVC's ability to generate data attributes from Model metadata. With jQuery.Validation.Unobtrusive.Native in place you *no longer* need to use jquery.validate.unobtrusive.js.  Instead you can use jQuery Validation as it is. Please look at the project site for demos and documentation.")]
+[assembly: AssemblyTitle("jQuery Validation Unobtrusive Native")]
+[assembly: AssemblyDescription("Provides MVC HTML helper extensions that marry jQuery Validation's native unobtrusive support for validation driven by HTML 5 data attributes with MVC's ability to generate data attributes from Model metadata. With jQuery Validation Unobtrusive Native in place you *no longer* need to use jquery.validate.unobtrusive.js.  Instead you can use jQuery Validation as it is. Please look at the project site for demos and documentation.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("John Reilly")]
-[assembly: AssemblyProduct("jQuery.Validation.Unobtrusive.Native")]
+[assembly: AssemblyProduct("jQuery Validation Unobtrusive Native")]
 [assembly: AssemblyCopyright("Copyright © 2013 John Reilly (johnny_reilly@hotmail.com)")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
