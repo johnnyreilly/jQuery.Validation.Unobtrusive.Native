@@ -111,7 +111,7 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
         {
             ViewBag.Title = "Dynamic Demo";
 
-            return View(new RequiredModel());
+            return View(new PersonModel());
         }
     }
 }

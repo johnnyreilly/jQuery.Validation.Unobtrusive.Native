@@ -1,45 +1,240 @@
 ﻿@using jQuery.Validation.Unobtrusive.Native.Demos.Models
-@model RequiredModel
+@model PersonModel
 @section scripts
 {
-    @Scripts.Render("~/bundles/jquery-validation")
+    @Scripts.Render("~/bundles/jquery-validation", "~/bundles/knockout")
+    <script>
+
+        // The equivalent of the PersonModel class
+        function PersonModel(firstName, lastName) {
+            this.FirstName = ko.observable(firstName);
+            this.LastName = ko.observable(lastName);
+        }
+
+        // ViewModel for screen
+        function ViewModel($) {
+            var self = this;
+
+            self.people = ko.observableArray([
+                new PersonModel("Bert", "Bertington"),
+                new PersonModel("Charles", "Charlesforth"),
+                new PersonModel("Denise", "Dentiste")
+            ]);
+
+            self.addPerson = function(viewModel, event) {
+                self.people.push(new PersonModel("", "")); // Add a new person with no name
+            };
+
+            self.removePerson = function(person, event) {
+                self.people.remove(person);
+            };
+
+            self.save = function(form) {
+                alert("This is a valid form! These are the people: " + ko.toJSON(self.people));
+            };
+
+            $("form").validate({
+                submitHandler: self.save
+            });
+        }
+
+        ko.applyBindings(new ViewModel(jQuery));
+
+    </script>
 }
 
-<h4>Required</h4>
+<h3>@ViewBag.Title</h3>
 
-<p>Here is how the <code>Required</code> attribute works with jQuery.Validation.Unobtrusive.Native.</p>
-
-<h4>Example</h4>
-
-@using (Html.BeginForm())
-{
-    @Html.LabelFor(x => x.TextBox, "Something must be entered:")
-    @Html.TextBoxFor(x => x.TextBox, true)
-
-    @Html.LabelFor(x => x.DropDownList, "An option must be selected:")
-    @Html.DropDownListFor(x => x.DropDownList, true, new List<SelectListItem> {
-        new SelectListItem{ Text = "Please select", Value = "" },
-        new SelectListItem{ Text = "An option", Value = "An option"}
-    })
+<p>Have you ever wanted to dynamically create form elements in your application?  Given the trend for SPA's this is an increasingly common use case. As you may have learned from painful experience jquery.validate.unobtrusive.js does <strong>not</strong> support this by default. jQuery Validation <strong>does</strong>.  Just add a new element to a form and it will be automatically parsed and subsequently validated.</p>
     
-    <div class="control-group">
-        @Html.LabelFor(x => x.RadioButton, "A radio button must be selected:", new { @class="control-label" })
+<p>In this example we use <a href="http://knockoutjs.com/" target="_blank">Knockout</a> to dynamically add elements to a form.  It should be noted this approach is not Knockout specific. Hopefully when I get more time I'll provide some other examples to illustrate.</p>
+    
+<p>This demo is "inspired" by a <a href="http://knockoutjs.com/documentation/foreach-binding.html" target="_blank">demo on the Knockout site</a>.  If you look closely at the View you'll see that the HTML elements in the header and in the <code>foreach</code> binding are driven from the View's Model, in this case the <code>PersonModel</code> class. We just make use of the <code>htmlAttributes</code> parameter to set up the KO databinding.</p>
 
-        <div class="controls">
-            <label class="radio inline" for="RequiredString_Yes">
-                @Html.RadioButtonFor(x => x.RadioButton, true, "Yes", new { id = "RequiredString_Yes" })
-                Yes
-            </label>
-            <label class="radio inline" for="RequiredString_No">
-                @Html.RadioButtonFor(x => x.RadioButton, true, "No", new { id = "RequiredString_No" })
-                No
-            </label>
-        </div>
+<ul class="nav nav-tabs" data-tabs="tabs">
+    <li class="active"><a data-toggle="tab" href="#demo">Demo</a></li>
+    <li><a data-toggle="tab" href="#model">Model</a></li>
+    <li><a data-toggle="tab" href="#view">View</a></li>
+    <li><a data-toggle="tab" href="#html">HTML</a></li>
+    <li><a data-toggle="tab" href="#javascript">JavaScript</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active" id="demo">
+        
+        @using (Html.BeginForm())
+        {
+            <div class="row">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>@Html.DisplayNameFor(x => x.FirstName)</th>
+                            <th>@Html.DisplayNameFor(x => x.LastName)</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody data-bind="foreach: people">
+                        <tr>
+                            <td>@Html.TextBoxFor(x => x.FirstName, true, htmlAttributes: new { data_bind = "value: FirstName, " +
+                                                                                                           "attr: { name: 'FirstName' + $index(), id: 'FirstName' + $index() }" })</td>
+                            <td>@Html.TextBoxFor(x => x.LastName, true, htmlAttributes: new { data_bind = "value: LastName, " +
+                                                                                                          "attr: { name: 'LastName' + $index(), id: 'LastName' + $index() }" })</td>
+                            <td><button type="button" class="btn btn-link" data-bind="click: $root.removePerson">Remove person</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row">
+                <button type="button" class="btn btn-primary" data-bind="click: addPerson">Add person</button>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+        }
+
     </div>
 
-    <p class="text-left">
-        <button type="submit" class="btn">Submit</button>
-        <button type="reset" class="btn btn-inverse">Reset</button>
-    </p>
-}
+    <div class="tab-pane" id="model">
+        
+        <p>Here's the model, note that the <code>Required</code> attribute decorates each property of the model:</p>
+
+        <pre class="prettyprint cs">
+    using System.ComponentModel.DataAnnotations;
+
+    namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
+    {
+        public class PersonModel
+        {
+            [Display(Name = "First name"), 
+             Required]
+            public string FirstName { get; set; }
+
+            [Display(Name = "Last name"), 
+             Required]
+            public string LastName { get; set; }
+        }
+    }
+        </pre>
+    </div>
+
+    <div class="tab-pane" id="view">
+        
+        <p>Here's the view (which uses the model):</p>
+
+        <pre class="prettyprint cs">
+    @@model jQuery.Validation.Unobtrusive.Native.Demos.Models.RequiredModel
+    @@using (Html.BeginForm())
+    {
+        &lt;div class="row"&gt;
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;@@Html.DisplayNameFor(x =&gt; x.FirstName)&lt;/th&gt;
+                        &lt;th&gt;@@Html.DisplayNameFor(x =&gt; x.LastName)&lt;/th&gt;
+                        &lt;th&gt;&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody data-bind="foreach: people"&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;@@Html.TextBoxFor(x =&gt; x.FirstName, true, htmlAttributes: new { 
+                                             data_bind = "value: FirstName, " +
+                                                         "attr: { name: 'FirstName' + $index(), id: 'FirstName' + $index() }" })&lt;/td&gt;
+                        &lt;td&gt;@@Html.TextBoxFor(x =&gt; x.LastName, true, htmlAttributes: new { 
+                                             data_bind = "value: LastName, " +
+                                                         "attr: { name: 'LastName' + $index(), id: 'LastName' + $index() }" })&lt;/td&gt;
+                        &lt;td&gt;&lt;button type="button" class="btn btn-link" data-bind="click: $root.removePerson"&gt;
+                                Remove person&lt;/button&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            &lt;button type="button" class="btn btn-primary" data-bind="click: addPerson"&gt;Add person&lt;/button&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+        &lt;/div&gt;
+    }
+        </pre>
+
+    </div>
+
+    <div class="tab-pane" id="html">
+        
+        <p>Here's the HTML that the view generates:</p>
+
+        <pre class="prettyprint html">
+    &lt;form action="/Demo/Dynamic" method="post"&gt;
+        &lt;div class="row"&gt;
+            &lt;table&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;First name&lt;/th&gt;
+                        &lt;th&gt;Last name&lt;/th&gt;
+                        &lt;th&gt;&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody data-bind="foreach: people"&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;input data-bind="value: FirstName, attr: { name: &#39;FirstName&#39; + $index(), id: &#39;FirstName&#39; + $index() }"                          
+                                   data-msg-required="The First name field is required." 
+                                   data-rule-required="true" 
+                                   id="FirstName" name="FirstName" type="text" value="" /&gt;&lt;/td&gt;
+                        &lt;td&gt;&lt;input data-bind="value: LastName, attr: { name: &#39;LastName&#39; + $index(), id: &#39;LastName&#39; + $index() }" 
+                                   data-msg-required="The Last name field is required." 
+                                   data-rule-required="true" 
+                                   id="LastName" name="LastName" type="text" value="" /&gt;&lt;/td&gt;
+                        &lt;td&gt;&lt;button type="button" class="btn btn-link" data-bind="click: $root.removePerson"&gt;Remove person&lt;/button&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;button type="button" class="btn btn-primary" data-bind="click: addPerson"&gt;Add person&lt;/button&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+        </pre>
+    </div>
+    
+    <div class="tab-pane" id="javascript">
+        
+        <pre class="prettyprint js">
+
+    // The equivalent of the PersonModel class
+    function PersonModel(firstName, lastName) {
+        this.FirstName = ko.observable(firstName);
+        this.LastName = ko.observable(lastName);
+    }
+
+    // ViewModel for screen
+    function ViewModel($) {
+        var self = this;
+
+        self.people = ko.observableArray([
+            new PersonModel("Bert", "Bertington"),
+            new PersonModel("Charles", "Charlesforth"),
+            new PersonModel("Denise", "Dentiste")
+        ]);
+
+        self.addPerson = function(viewModel, event) {
+            self.people.push(new PersonModel("", "")); // Add a new person with no name
+        };
+
+        self.removePerson = function(person, event) {
+            self.people.remove(person);
+        };
+
+        self.save = function(form) {
+            alert("This is a valid form! These are the people: " + ko.toJSON(self.people));
+        };
+
+        $("form").validate({
+            submitHandler: self.save
+        });
+    }
+
+    ko.applyBindings(new ViewModel(jQuery));
+        </pre>
+
+    </div>
+
+</div>
 

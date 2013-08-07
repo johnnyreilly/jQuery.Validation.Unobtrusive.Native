@@ -153,6 +153,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\PersonModel.cs" />
     <Compile Include="Models\RangeModel.cs" />
     <Compile Include="Models\EqualToModel.cs" />
     <Compile Include="Models\RemoteModel.cs" />
@@ -163,7 +164,6 @@
     <Compile Include="Models\DateModel.cs" />
     <Compile Include="Models\NumberModel.cs" />
     <Compile Include="Models\RequiredModel.cs" />
-    <Compile Include="Models\ExampleModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -209,7 +209,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="packages.config" />
-    <Content Include="Views\Demo\BasicDemos.cshtml" />
     <Content Include="Views\Demo\Required.cshtml" />
     <Content Include="Views\Demo\Dynamic.cshtml" />
     <Content Include="Views\Shared\_PartialDemoMenuItems.cshtml" />
