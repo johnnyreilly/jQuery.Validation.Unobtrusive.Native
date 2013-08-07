@@ -2,12 +2,12 @@
 <package >
     <metadata>
         <id>jQuery.Validation.Unobtrusive.Native</id>
-        <version>0.1.0</version>
+        <version>0.2.0</version>
         <title>$title$</title>
         <authors>$author$</authors>
         <owners>$author$</owners>
-        <licenseUrl>http://github.com/johnnyreilly/jQueryValidateNativeUnobtrusiveMVC/blob/master/LICENSE</licenseUrl>
-        <projectUrl>http://github.com/johnnyreilly/jQueryValidateNativeUnobtrusiveMVC</projectUrl>
+        <licenseUrl>http://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native/blob/master/LICENSE</licenseUrl>
+        <projectUrl>http://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>$description$</description>
         <releaseNotes>Initial release.</releaseNotes>
@@ -17,8 +17,8 @@
             <dependency id="jQuery.Validation" version="1.11.0" />
         </dependencies>
         <frameworkAssemblies>
-            <frameworkAssembly assemblyName="System.Web" targetFramework="net40" />
-            <frameworkAssembly assemblyName="System.Web.Mvc" targetFramework="net40" />
+            <frameworkAssembly assemblyName="System.Web" />
+            <frameworkAssembly assemblyName="System.Web.Mvc" />
         </frameworkAssemblies>
     </metadata>
 </package>
