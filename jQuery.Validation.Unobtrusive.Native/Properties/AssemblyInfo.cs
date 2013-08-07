@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("jQuery.Validation.Unobtrusive.Native")]
-[assembly: AssemblyDescription("MVC HTML helper extensions that make use of jQuery Validation's native unobtrusive support for validation driven by HTML 5 data attributes.")]
+[assembly: AssemblyDescription("Provides MVC HTML helper extensions that marry jQuery Validation's native unobtrusive support for validation driven by HTML 5 data attributes with MVC's ability to generate data attributes from Model metadata. With jQuery.Validation.Unobtrusive.Native in place you *no longer* need to use jquery.validate.unobtrusive.js.  Instead you can use jQuery Validation as it is. Please look at the project site for demos and documentation.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("John Reilly")]
 [assembly: AssemblyProduct("jQuery.Validation.Unobtrusive.Native")]
@@ -31,5 +31,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.1.0")]
-[assembly: AssemblyFileVersion("0.1.0")]
+[assembly: AssemblyVersion("0.2.0")]
+[assembly: AssemblyFileVersion("0.2.0")]
