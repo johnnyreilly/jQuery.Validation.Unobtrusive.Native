@@ -177,6 +177,7 @@
     <Content Include="Content\site.min.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
+    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\site.less" />
     <Content Include="Content\fonts\glyphiconshalflings-regular.woff" />
