@@ -61,7 +61,8 @@ By the way, the above examples (and others) can be found in the MVC demo project
 So far the basic set of the HtmlHelpers and their associated unobtrusive mappings have been implemented.  If any have been missed then let me know.  As time goes by I intend to:
 
 * fill in any missing gaps there may be
-* publish both MVC 3, 4 (and when the time comes 5+) versions of this on Nuget
+* maintain both MVC 3, 4 (and when the time comes 5+) versions of this on Nuget
+* not all data annotations generate client data attributes - if it makes sense I may look to implement some of these where it seems sensible. (eg the MinLengthAttribute annotation could be mapped to minlength validation...)
 * get the unit test coverage to a good level and (most importantly)
 * create some really useful demos and documentation.
 
