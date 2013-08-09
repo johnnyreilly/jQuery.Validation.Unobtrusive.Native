@@ -41,7 +41,7 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
         {
             ViewBag.Title = "Range";
 
-            return View(new RangeModel{ DateTime = DateTime.Today });
+            return View(new RangeModel());
         }
 
         public ActionResult MaxLengthMinLength()
