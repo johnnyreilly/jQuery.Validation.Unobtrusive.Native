@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
 {
@@ -18,5 +19,8 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
         public float Single { get; set; }
         [Range(10D, 20D)]
         public double Double { get; set; }
+
+        [Range(typeof(DateTime), "2012-06-13", "2012-06-15")]
+        public DateTime DateTime { get; set; }
     }
 }

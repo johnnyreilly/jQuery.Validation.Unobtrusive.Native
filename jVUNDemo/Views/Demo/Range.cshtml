@@ -21,6 +21,7 @@
     <li class="active"><a data-toggle="tab" href="#demo">Demo</a></li>
     <li><a data-toggle="tab" href="#model">Model</a></li>
     <li><a data-toggle="tab" href="#view">View</a></li>
+    <li><a data-toggle="tab" href="#controller">Controller</a></li>
     <li><a data-toggle="tab" href="#html">HTML</a></li>
     <li><a data-toggle="tab" href="#javascript">JavaScript</a></li>
 </ul>
@@ -28,6 +29,8 @@
     <div class="tab-pane active" id="demo">
         @using (Html.BeginForm())
         {
+            <h4>Numbers</h4>
+            
             <div class="row">
                 @Html.LabelFor(x => x.Short, "Short - a number between 10 and 20 must be entered:")
                 @Html.TextBoxFor(x => x.Short, true)
@@ -63,6 +66,13 @@
                 @Html.TextBoxFor(x => x.Double, true)
             </div>
 
+            <h4>DateTimes</h4>
+            
+            <div class="row">
+                @Html.LabelFor(x => x.DateTime, "Date - a date between 2012-06-13 and 2012-06-15 must be entered:")
+                @Html.TextBoxFor(x => x.DateTime, true)
+            </div>
+
             <div class="row">
                 <button type="submit" class="btn btn-default">Submit</button>
                 <button type="reset" class="btn btn-info">Reset</button>
@@ -96,6 +106,9 @@
             public float Single { get; set; }
             [Range(10D, 20D)]
             public double Double { get; set; }
+
+            [Range(typeof(DateTime), "2012-06-13", "2012-06-15")]
+            public DateTime DateTime { get; set; }
         }
     }
         </pre>
@@ -109,6 +122,8 @@
     @@model jQuery.Validation.Unobtrusive.Native.Demos.Models.RangeModel
     @@using (Html.BeginForm())
     {
+        &lt;h4&gt;Numbers&lt;/h4&gt;
+
         &lt;div class="row"&gt;
             @@Html.LabelFor(x =&gt; x.Short, "Short - a number between 10 and 20 must be entered:")
             @@Html.TextBoxFor(x =&gt; x.Short, true)
@@ -144,6 +159,13 @@
             @@Html.TextBoxFor(x =&gt; x.Double, true)
         &lt;/div&gt;
 
+        &lt;h4&gt;DateTimes&lt;/h4&gt;
+            
+        &lt;div class="row"&gt;
+            @@Html.LabelFor(x =&gt; x.DateTime, "Date - a date between 2012-06-13 and 2012-06-15 must be entered:")
+            @@Html.TextBoxFor(x =&gt; x.DateTime, true)
+        &lt;/div&gt;
+
         &lt;div class="row"&gt;
             &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
             &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
@@ -153,12 +175,40 @@
 
     </div>
 
+    <div class="tab-pane" id="controller">
+        
+        <p>Here's the (relevant parts) of the controller. Note the DateTime being initialised with todays date:</p>
+
+        <pre class="prettyprint cs">
+    using System;
+    using System.Web.Mvc;
+    using jQuery.Validation.Unobtrusive.Native.Demos.Models;
+
+    namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
+    {
+        public class DemoController : Controller
+        {
+            // ...
+
+            public ActionResult Range()
+            {
+                return View(new RangeModel{ DateTime = DateTime.Today });
+            }
+
+            // ...
+        }
+    }
+        </pre>
+    </div>
+
     <div class="tab-pane" id="html">
         
         <p>Here's the HTML that the view generates:</p>
 
         <pre class="prettyprint html">
     &lt;form action="/Home/DemosNumber" method="post"&gt;
+        &lt;h4&gt;Numbers&lt;/h4&gt;
+
         &lt;div class="row"&gt;
             &lt;label for="Short"&gt;Short - a number between 10 and 20 must be entered:&lt;/label&gt;
             &lt;input data-msg-number="The field Short must be a number." data-msg-required="The Short field is required." 
@@ -231,10 +281,18 @@
                 data-rule-number="true" data-rule-required="true" 
                 id="Double" name="Double" type="text" value="0" /&gt;
         &lt;/div&gt;
+
+        &lt;h4&gt;DateTimes&lt;/h4&gt;
+
         &lt;div class="row"&gt;
-            &lt;label for="NullableDouble"&gt;Nullable Double - only numbers can be entered:&lt;/label&gt;
-            &lt;input data-msg-number="The field NullableDouble must be a number." data-rule-number="true"
-                id="NullableDouble" name="NullableDouble" type="text" value="" /&gt;
+            &lt;label for="DateTime"&gt;Date - a date between 2012-06-13 and 2012-06-15 must be entered:&lt;/label&gt;
+            &lt;input data-msg-date="The field DateTime must be a date." 
+                data-msg-range="The field DateTime must be between 13/06/2012 00:00:00 and 15/06/2012 00:00:00." 
+                data-msg-required="The DateTime field is required." 
+                data-rule-date="true" 
+                data-rule-range="[13/06/2012 00:00:00,15/06/2012 00:00:00]" 
+                data-rule-required="true" 
+                id="DateTime" name="DateTime" type="text" value="09/08/2013 00:00:00" /&gt;
         &lt;/div&gt;
         &lt;div class="row"&gt;
             &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
