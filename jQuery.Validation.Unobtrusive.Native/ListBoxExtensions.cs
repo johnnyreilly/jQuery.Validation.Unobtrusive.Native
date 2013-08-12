@@ -20,7 +20,7 @@ namespace System.Web.Mvc
         /// <param name="selectList"></param>
         /// <param name="htmlAttributes">OPTIONAL</param>
         /// <returns></returns>
-        public static MvcHtmlString ListBoxFor<TModel, TProperty>(this HtmlHelper<TModel> htmlHelper,
+        public static IHtmlString ListBoxFor<TModel, TProperty>(this HtmlHelper<TModel> htmlHelper,
             Expression<Func<TModel, TProperty>> expression,
             bool useNativeUnobtrusiveAttributes,
             IEnumerable<SelectListItem> selectList,
@@ -33,7 +33,10 @@ namespace System.Web.Mvc
             var metadata = ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData);
             var attributes = Mapper.GetUnobtrusiveValidationAttributes(htmlHelper, expression, htmlAttributes, metadata);
 
-            return htmlHelper.ListBox(metadata.PropertyName, selectList, attributes);
+            var listBox = Mapper.GenerateHtmlWithoutMvcUnobtrusiveAttributes(() =>
+                htmlHelper.ListBox(metadata.PropertyName, selectList, attributes));
+
+            return listBox;
         }
     }
 }

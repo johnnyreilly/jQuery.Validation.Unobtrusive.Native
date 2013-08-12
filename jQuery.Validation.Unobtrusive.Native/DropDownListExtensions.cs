@@ -21,7 +21,7 @@ namespace System.Web.Mvc
         /// <param name="optionLabel">OPTIONAL</param>
         /// <param name="htmlAttributes">OPTIONAL</param>
         /// <returns></returns>
-        public static MvcHtmlString DropDownListFor<TModel, TProperty>(this HtmlHelper<TModel> htmlHelper,
+        public static IHtmlString DropDownListFor<TModel, TProperty>(this HtmlHelper<TModel> htmlHelper,
             Expression<Func<TModel, TProperty>> expression,
             bool useNativeUnobtrusiveAttributes,
             IEnumerable<SelectListItem> selectList,
@@ -35,7 +35,10 @@ namespace System.Web.Mvc
             var metadata = ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData);
             var attributes = Mapper.GetUnobtrusiveValidationAttributes(htmlHelper, expression, htmlAttributes, metadata);
 
-            return htmlHelper.DropDownList(metadata.PropertyName, selectList, optionLabel, attributes);
+            var dropDown = Mapper.GenerateHtmlWithoutMvcUnobtrusiveAttributes(() =>
+                htmlHelper.DropDownList(metadata.PropertyName, selectList, optionLabel, attributes));
+
+            return dropDown;
         }
     }
 }

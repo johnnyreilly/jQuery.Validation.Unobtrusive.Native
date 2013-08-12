@@ -79,9 +79,9 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
             return View(new RemoteModel());
         }
 
-        public JsonResult RemoteSimple(string Simple)
+        public JsonResult RemoteSimple(string SimpleErrorMessage)
         {
-            return Json(Simple.StartsWith("a", true, null), JsonRequestBehavior.AllowGet);
+            return Json(SimpleErrorMessage.StartsWith("a", true, null), JsonRequestBehavior.AllowGet);
         }
 
         public JsonResult RemoteServerErrorMessage(string ServerErrorMessage)
@@ -92,7 +92,7 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
                 JsonRequestBehavior.AllowGet);
         }
 
-        public JsonResult RemoteAdditionalFields(string AdditionalFields, string Simple)
+        public JsonResult RemoteAdditionalFields(string AdditionalFields, string SimpleErrorMessage)
         {
             return Json((AdditionalFields.StartsWith("c", true, null)
                 ? "true"

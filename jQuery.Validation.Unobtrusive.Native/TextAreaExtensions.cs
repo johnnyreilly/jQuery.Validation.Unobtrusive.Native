@@ -35,7 +35,10 @@ namespace System.Web.Mvc
             var metadata = ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData);
             var attributes = Mapper.GetUnobtrusiveValidationAttributes(htmlHelper, expression, htmlAttributes, metadata);
 
-            return htmlHelper.TextArea(metadata.PropertyName, metadata.Model as string, rows, columns, attributes);
+            var textArea = Mapper.GenerateHtmlWithoutMvcUnobtrusiveAttributes(() =>
+                htmlHelper.TextArea(metadata.PropertyName, metadata.Model as string, rows, columns, attributes));
+
+            return textArea;
         }
 
     }

@@ -31,8 +31,8 @@
         @using (Html.BeginForm())
         {
             <div class="row">
-                @Html.LabelFor(x => x.Simple, "Default error message demo.  Only text that begins with the letter \"A\" can be entered:")
-                @Html.TextBoxFor(x => x.Simple, true)
+                @Html.LabelFor(x => x.SimpleErrorMessage, "Default error message demo.  Only text that begins with the letter \"A\" can be entered:")
+                @Html.TextBoxFor(x => x.SimpleErrorMessage, true)
             </div>
 
             <div class="row">
@@ -60,7 +60,7 @@
         public class RemoteModel
         {
             [Remote("RemoteSimple", "Demo")]
-            public string Simple { get; set; }
+            public string SimpleErrorMessage { get; set; }
 
             [Remote("RemoteServerErrorMessage", "Demo")]
             public string ServerErrorMessage { get; set; }
@@ -78,8 +78,8 @@
     @@using (Html.BeginForm())
     {
         &lt;div class="row"&gt;
-            @@Html.LabelFor(x =&gt; x.Simple, "Default error message demo.  Only text that begins with the letter \"A\" can be entered:")
-            @@Html.TextBoxFor(x =&gt; x.Simple, true)
+            @@Html.LabelFor(x =&gt; x.SimpleErrorMessage, "Default error message demo.  Only text that begins with the letter \"A\" can be entered:")
+            @@Html.TextBoxFor(x =&gt; x.SimpleErrorMessage, true)
         &lt;/div&gt;
 
         &lt;div class="row"&gt;
@@ -111,9 +111,9 @@
         {
             // ...
 
-            public JsonResult RemoteSimple(string Simple)
+            public JsonResult RemoteSimple(string SimpleErrorMessage)
             {
-                return Json(Simple.StartsWith("a", true, null), JsonRequestBehavior.AllowGet);
+                return Json(SimpleErrorMessage.StartsWith("a", true, null), JsonRequestBehavior.AllowGet);
             }
 
             public JsonResult RemoteServerErrorMessage(string ServerErrorMessage)
@@ -137,15 +137,15 @@
         <pre class="prettyprint html">
     &lt;form action="/Demo/Remote" method="post"&gt;
         &lt;div class="row"&gt;
-            &lt;label for="Simple"&gt;Default error message demo.  Only text that begins with the letter &quot;A&quot; can be entered:&lt;/label&gt;
-            &lt;input data-msg-remote="&#39;Simple&#39; is invalid." 
-                data-rule-remote="/Demo/RemoteSimple" 
-                id="Simple" name="Simple" type="text" value="" /&gt;
+            &lt;label for="SimpleErrorMessage"&gt;Default error message demo.  Only text that begins with the letter &quot;A&quot; can be entered:&lt;/label&gt;
+            &lt;input data-msg-remote="&#39;SimpleErrorMessage&#39; is invalid." 
+                data-rule-remote="{&amp;quot;url&amp;quot;:&amp;quot;/Demo/RemoteSimple&amp;quot;,&amp;quot;additionalfields&amp;quot;:&amp;quot;*.SimpleErrorMessage&amp;quot;}"
+                id="SimpleErrorMessage" name="SimpleErrorMessage" type="text" value="" /&gt;
         &lt;/div&gt;
         &lt;div class="row"&gt;
             &lt;label for="ServerErrorMessage"&gt;Server error message demo.  Only text that begins with the letter &quot;B&quot; can be entered:&lt;/label&gt;
             &lt;input data-msg-remote="&#39;ServerErrorMessage&#39; is invalid." 
-                data-rule-remote="/Demo/RemoteServerErrorMessage" 
+                data-rule-remote="{&amp;quot;url&amp;quot;:&amp;quot;/Demo/RemoteServerErrorMessage&amp;quot;,&amp;quot;additionalfields&amp;quot;:&amp;quot;*.ServerErrorMessage&amp;quot;}" 
                 id="ServerErrorMessage" name="ServerErrorMessage" type="text" value="" /&gt;
         &lt;/div&gt;
         &lt;div class="row"&gt;

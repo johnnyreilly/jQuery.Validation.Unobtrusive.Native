@@ -19,7 +19,7 @@ namespace System.Web.Mvc
         /// <param name="value"></param>
         /// <param name="htmlAttributes">OPTIONAL</param>
         /// <returns></returns>
-        public static MvcHtmlString RadioButtonFor<TModel, TProperty>(this HtmlHelper<TModel> htmlHelper,
+        public static IHtmlString RadioButtonFor<TModel, TProperty>(this HtmlHelper<TModel> htmlHelper,
             Expression<Func<TModel, TProperty>> expression,
             bool useNativeUnobtrusiveAttributes,
             object value,
@@ -32,7 +32,10 @@ namespace System.Web.Mvc
             var metadata = ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData);
             var attributes = Mapper.GetUnobtrusiveValidationAttributes(htmlHelper, expression, htmlAttributes, metadata);
 
-            return htmlHelper.RadioButton(metadata.PropertyName, value, attributes);
+            var radioButton = Mapper.GenerateHtmlWithoutMvcUnobtrusiveAttributes(() =>
+                htmlHelper.RadioButton(metadata.PropertyName, value, attributes));
+
+            return radioButton;
         }
     }
 }

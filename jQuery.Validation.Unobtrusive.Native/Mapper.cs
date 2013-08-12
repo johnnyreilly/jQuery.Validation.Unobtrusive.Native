@@ -1,6 +1,8 @@
-﻿using System.Linq.Expressions;
+﻿using System.Linq;
+using System.Linq.Expressions;
 using System.Web.Mvc.Html;
 using System.Web.Routing;
+using Newtonsoft.Json;
 
 namespace System.Web.Mvc
 {
@@ -9,6 +11,86 @@ namespace System.Web.Mvc
     /// </summary>
     public static class Mapper
     {
+        public static RouteValueDictionary GetUnobtrusiveValidationAttributes<TModel, TProperty>(
+            HtmlHelper<TModel> helper,
+            Expression<Func<TModel, TProperty>> expression,
+            object htmlAttributes,
+            ModelMetadata metadata)
+        {
+            var attributes = HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttributes);
+
+            // write rules to context object
+            var validators = ModelValidatorProviders.Providers.GetValidators(metadata, helper.ViewContext);
+            foreach (var rule in validators.SelectMany(v => v.GetClientValidationRules()))
+            {
+                // if we have an error message for this rule then create a data-msg-/rulename/ attribute to store it
+                if (!string.IsNullOrEmpty(rule.ErrorMessage) && rule.ValidationType != "length") // length is the only exception to this standard rule
+                    attributes.Add("data-msg-" + rule.ValidationType, rule.ErrorMessage);
+
+                switch (rule.ValidationType)
+                {
+                    // Exceptions to the standard handling of rules
+
+                    case "equalto":
+                        // Convert equalto selector from "*.PasswordDemo" style to "#PasswordDemo" style
+                        var equalToSelector = "#" + rule.ValidationParameters["other"].ToString().Substring(2);
+                        attributes.Add("data-rule-equalto", equalToSelector);
+                        break;
+
+                    case "length":
+                        // length is mapped to minlength and maxlength
+                        if (rule.ValidationParameters.ContainsKey("min"))
+                        {
+                            attributes.Add("data-rule-minlength", rule.ValidationParameters["min"]);
+                            attributes.Add("data-msg-minlength", rule.ErrorMessage);
+                        }
+
+                        if (rule.ValidationParameters.ContainsKey("max"))
+                        {
+                            attributes.Add("data-rule-maxlength", rule.ValidationParameters["max"]);
+                            attributes.Add("data-msg-maxlength", rule.ErrorMessage);
+                        }
+                        break;
+
+                    case "range":
+                        attributes.Add("data-rule-range", string.Format("[{0},{1}]", rule.ValidationParameters["min"], rule.ValidationParameters["max"]));
+                        break;
+
+                    // Standard handling of rules
+
+                    default:
+
+                        // if we have *no* validation parameters then create a data-rule-/rulename/ attribute with the value "true"
+                        // if we have validation parameters then create a data-rule-/rulename/ attribute with the JSON'd ValidationParameters
+                        attributes.Add("data-rule-" + rule.ValidationType,
+                            rule.ValidationParameters.Count == 0
+                                ? "true"
+                                : JsonConvert.SerializeObject(rule.ValidationParameters));
+                        break;
+                }
+            }
+
+            //MapMvcUnobtrusiveValidationAttributesToNative(helper, expression, metadata, attributes);
+
+            return attributes;
+        }
+
+        public static IHtmlString GenerateHtmlWithoutMvcUnobtrusiveAttributes(Func<IHtmlString> generator)
+        {
+            var cachedClientValidationEnabled = HtmlHelper.ClientValidationEnabled;
+            var cachedUnobtrusiveJavaScriptEnabled = HtmlHelper.UnobtrusiveJavaScriptEnabled;
+
+            HtmlHelper.ClientValidationEnabled = false;
+            HtmlHelper.UnobtrusiveJavaScriptEnabled = false;
+
+            var html = generator();
+
+            HtmlHelper.ClientValidationEnabled = cachedClientValidationEnabled;
+            HtmlHelper.UnobtrusiveJavaScriptEnabled = cachedUnobtrusiveJavaScriptEnabled;
+
+            return html;
+        }
+
         private const string data_val_required = "data-val-required";
 
         private const string data_val_number = "data-val-number";
@@ -26,15 +108,23 @@ namespace System.Web.Mvc
         
         private const string data_val_range = "data-val-range";
 
-        public static RouteValueDictionary GetUnobtrusiveValidationAttributes<TModel, TProperty>(
+        /// <summary>
+        /// Take the native MVC generated unobtrusive validation attributes and map them to the equivalent native attributes
+        /// </summary>
+        /// <typeparam name="TModel"></typeparam>
+        /// <typeparam name="TProperty"></typeparam>
+        /// <param name="helper"></param>
+        /// <param name="expression"></param>
+        /// <param name="metadata"></param>
+        /// <param name="attributes"></param>
+        private static void MapMvcUnobtrusiveValidationAttributesToNative<TModel, TProperty>(
             HtmlHelper<TModel> helper,
             Expression<Func<TModel, TProperty>> expression,
-            object htmlAttributes,
-            ModelMetadata metadata)
+            ModelMetadata metadata,
+            RouteValueDictionary attributes)
         {
             var propertyName = helper.NameFor(expression).ToString(); //var propertyName = ModelMetadata.FromLambdaExpression(expression, helper.ViewData).PropertyName; // MVC 3 can use this
             var unobtrusiveValidationAttributes = helper.GetUnobtrusiveValidationAttributes(propertyName, metadata);
-            var attributes = HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttributes);
 
             // Number
             // If a property is an Short, Integer, Long, Byte, Decimal, Single or Double then this validation will be
@@ -121,9 +211,9 @@ namespace System.Web.Mvc
             if (unobtrusiveValidationAttributes.ContainsKey(data_val_range))
             {
                 attributes.Add("data-rule-range",
-                               string.Format("[{0},{1}]",
-                                               unobtrusiveValidationAttributes["data-val-range-min"],
-                                               unobtrusiveValidationAttributes["data-val-range-max"])
+                               String.Format("[{0},{1}]",
+                                             unobtrusiveValidationAttributes["data-val-range-min"],
+                                             unobtrusiveValidationAttributes["data-val-range-max"])
                     );
                 attributes.Add("data-msg-range", unobtrusiveValidationAttributes[data_val_range]);
             }
@@ -138,12 +228,13 @@ namespace System.Web.Mvc
                     // CATERED FOR YET WITH jQuery.Validate
                     // TODO: COME BACK TO WHEN A CLEAR APPROACH WITH jQuery.Validate IS AVAILABLE
                     attributes.Add("data-rule-remote", "{" +
-                        "\"url\": \"" + unobtrusiveValidationAttributes["data-val-remote-url"] + "\"," +
-                        "\"type\": \"post\"," +
-                        "\"data\": {" +
-                        "\"Simple\": \"function() { return $('#Simple').val(); }\"" +
-                        "}" +
-                        "}");
+                                                       "\"url\": \"" + unobtrusiveValidationAttributes["data-val-remote-url"] +
+                                                       "\"," +
+                                                       "\"type\": \"post\"," +
+                                                       "\"data\": {" +
+                                                       "\"Simple\": \"function() { return $('#Simple').val(); }\"" +
+                                                       "}" +
+                                                       "}");
 
                     /* what the dynamically generated attrs look like:
     unobtrusiveValidationAttributes
@@ -153,16 +244,12 @@ namespace System.Web.Mvc
         [2]: {[data-val-remote-additionalfields, *.AdditionalFields,*.Simple]}
         [3]: {[data-val, true]}
                      */
-
                 }
                 else
                     attributes.Add("data-rule-remote", unobtrusiveValidationAttributes["data-val-remote-url"]);
-                    
+
                 attributes.Add("data-msg-remote", unobtrusiveValidationAttributes[data_val_remote]);
             }
-            
-            return attributes;
         }
-
     }
 }
