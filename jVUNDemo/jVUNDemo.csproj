@@ -149,11 +149,12 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="CustomAttributes\NotEqualAttribute.cs" />
+    <Compile Include="CustomAttributes\NotEqualToAttribute.cs" />
     <Compile Include="Extensions\NavExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CustomValidationModel.cs" />
     <Compile Include="Models\PersonModel.cs" />
     <Compile Include="Models\RangeModel.cs" />
     <Compile Include="Models\EqualToModel.cs" />
@@ -227,6 +228,7 @@
     <Content Include="Views\Demo\Remote.cshtml" />
     <Content Include="Views\Demo\EqualTo.cshtml" />
     <Content Include="Views\Demo\Range.cshtml" />
+    <Content Include="Views\Demo\CustomValidation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -5,15 +5,13 @@ using System.Web.Mvc;
 
 namespace jQuery.Validation.Unobtrusive.Native.Demos.CustomAttributes
 {
-    public class NotEqualAttribute : ValidationAttribute, IClientValidatable
+    public class NotEqualToAttribute : ValidationAttribute, IClientValidatable
     {
         public string OtherProperty { get; private set; }
-        public bool Test { get; private set; }
 
-        public NotEqualAttribute(string otherProperty, bool test)
+        public NotEqualToAttribute(string otherProperty)
         {
             OtherProperty = otherProperty;
-            Test = test;
         }
 
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
@@ -42,10 +40,9 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.CustomAttributes
             var rule = new ModelClientValidationRule
             {
                 ErrorMessage = ErrorMessage,
-                ValidationType = "notequalto",
+                ValidationType = "notequalto"
             };
-            rule.ValidationParameters["other"] = OtherProperty;
-            rule.ValidationParameters["test"] = Test;
+            rule.ValidationParameters["other"] = "#" + OtherProperty;
             yield return rule;
         }
     }

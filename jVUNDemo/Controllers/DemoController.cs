@@ -118,5 +118,12 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
 
             return View(new PersonModel());
         }
+
+        public ActionResult CustomValidation()
+        {
+            ViewBag.Title += "Custom Validation Demo";
+
+            return View(new CustomValidationModel());
+        }
     }
 }

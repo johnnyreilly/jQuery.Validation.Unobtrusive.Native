@@ -1,0 +1,202 @@
+﻿@using jQuery.Validation.Unobtrusive.Native.Demos.Models
+@model CustomValidationModel
+@section scripts
+{
+    @Scripts.Render("~/bundles/jquery-validation")
+    <script>
+        // Add our custom validator
+        jQuery.validator.addMethod("notequalto", function (value, element, params) {
+            return this.optional(element) || value !== $(params.other).val();
+        }, "These shouldn't equal");
+
+        $("form").validate({
+            submitHandler: function (form) {
+                alert("This is a valid form!");
+            }
+        });
+
+    </script>
+}
+
+<h3>@ViewBag.Title</h3>
+
+<p>We can also extend jQuery Validation with custom attributes.  There's a good example of this <a href="http://stackoverflow.com/a/5742494" target="_blank">here</a> which I'm going to build upon. Thanks to <a href="http://stackoverflow.com/users/29407/darin-dimitrov" target="_blank">Darin Dimitrov</a>.</p>
+
+<ul class="nav nav-tabs" data-tabs="tabs">
+    <li class="active"><a data-toggle="tab" href="#demo">Demo</a></li>
+    <li><a data-toggle="tab" href="#customattribute">Custom Attribute</a></li>
+    <li><a data-toggle="tab" href="#model">Model</a></li>
+    <li><a data-toggle="tab" href="#view">View</a></li>
+    <li><a data-toggle="tab" href="#html">HTML</a></li>
+    <li><a data-toggle="tab" href="#javascript">JavaScript</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active" id="demo">
+        
+        @using (Html.BeginForm())
+        {
+            <div class="row">
+                @Html.LabelFor(x => x.Property, "Put anything you like here... really - anything:")
+                @Html.TextBoxFor(x => x.Property, true)
+            </div>
+
+            <div class="row">
+                @Html.LabelFor(x => x.DifferentProperty, "Put something different here - this can't be the same as the previous property:")
+                @Html.TextBoxFor(x => x.DifferentProperty, true)
+            </div>
+
+            <div class="row">
+                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="reset" class="btn btn-info">Reset</button>
+            </div>
+        }
+
+    </div>
+    
+    <div class="tab-pane" id="customattribute">
+        
+        <pre class="prettyprint cs">
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.Globalization;
+    using System.Web.Mvc;
+
+    namespace jQuery.Validation.Unobtrusive.Native.Demos.CustomAttributes
+    {
+        public class NotEqualToAttribute : ValidationAttribute, IClientValidatable
+        {
+            public string OtherProperty { get; private set; }
+
+            public NotEqualToAttribute(string otherProperty)
+            {
+                OtherProperty = otherProperty;
+            }
+
+            protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+            {
+                var property = validationContext.ObjectType.GetProperty(OtherProperty);
+                if (property == null)
+                {
+                    return new ValidationResult(
+                        string.Format(
+                            CultureInfo.CurrentCulture,
+                            "{0} is unknown property",
+                            OtherProperty
+                        )
+                    );
+                }
+                var otherValue = property.GetValue(validationContext.ObjectInstance, null);
+                if (object.Equals(value, otherValue))
+                {
+                    return new ValidationResult(FormatErrorMessage(validationContext.DisplayName));
+                }
+                return null;
+            }
+
+            public IEnumerable&lt;ModelClientValidationRule&gt; GetClientValidationRules(ModelMetadata metadata, ControllerContext context)
+            {
+                var rule = new ModelClientValidationRule
+                {
+                    ErrorMessage = ErrorMessage,
+                    ValidationType = "notequalto"
+                };
+                rule.ValidationParameters["other"] = "#" + OtherProperty;
+                yield return rule;
+            }
+        }
+    }
+        </pre>
+    </div>
+
+    <div class="tab-pane" id="model">
+        
+        <p>Here's the model, note that the custom <code>NotEqualTo</code> attribute decorates the <code>DifferentProperty</code> property on the model:</p>
+
+        <pre class="prettyprint cs">
+    using System.ComponentModel.DataAnnotations;
+
+    namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
+    {
+        public class CustomValidationModel
+        {
+            public string Property { get; set; }
+
+            [NotEqualTo("Property", ErrorMessage = "These fields cannot match")]
+            public string DifferentProperty { get; set; }
+        }
+    }
+        </pre>
+    </div>
+
+    <div class="tab-pane" id="view">
+        
+        <p>Here's the view (which uses the model):</p>
+
+        <pre class="prettyprint cs">
+    @@model jQuery.Validation.Unobtrusive.Native.Demos.Models.CustomValidationModel
+    @@using (Html.BeginForm())
+    {
+        &lt;div class="row"&gt;
+            @@Html.LabelFor(x =&gt; x.Property, "Put anything you like here... really - anything:")
+            @@Html.TextBoxFor(x =&gt; x.Property, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            @@Html.LabelFor(x =&gt; x.DifferentProperty, "Put something different here - this can't be the same as the previous property:")
+            @@Html.TextBoxFor(x =&gt; x.DifferentProperty, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
+        &lt;/div&gt;
+    }
+        </pre>
+
+    </div>
+
+    <div class="tab-pane" id="html">
+        
+        <p>Here's the HTML that the view generates:</p>
+
+        <pre class="prettyprint html">
+    &lt;form action="/Demo/CustomValidation" method="post"&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="Property"&gt;Put anything you like here... really - anything:&lt;/label&gt;
+            &lt;input id="Property" name="Property" type="text" value="" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="DifferentProperty"&gt;Put something different here - this can&#39;t be the same as the previous property:&lt;/label&gt;
+            &lt;input data-msg-notequalto="These fields cannot match" 
+                data-rule-notequalto="{&amp;quot;other&amp;quot;:&amp;quot;#Property&amp;quot;}" 
+                id="DifferentProperty" name="DifferentProperty" type="text" value="" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+        </pre>
+    </div>
+    
+    <div class="tab-pane" id="javascript">
+        
+        <p>Here's the JavaScript that initialises the validation:</p>
+
+        <pre class="prettyprint js">
+  // Add our custom validator
+  jQuery.validator.addMethod("notequalto", function (value, element, params) {
+      return this.optional(element) || value !== $(params.other).val();
+  }, "These shouldn't equal");
+
+  $("form").validate({
+      submitHandler: function (form) {
+          alert("This is a valid form!");
+      }
+  });
+        </pre>
+
+    </div>
+
+</div>
+
