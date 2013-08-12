@@ -92,7 +92,7 @@ namespace jQueryValidateNativeUnobtrusiveMVCUnitTests
             Assert.AreEqual(HTMLRequiredNumber, result.ToHtmlString());
         }
 
-        private class SingleModel { public Single Number { get; set; } }
+        private class SingleModel { public float Number { get; set; } }
 
         [TestMethod]
         public void TextBoxFor_creates_number_and_required_data_attributes_for_Single()
@@ -202,7 +202,7 @@ namespace jQueryValidateNativeUnobtrusiveMVCUnitTests
             Assert.AreEqual(HTMLNumber, result.ToHtmlString());
         }
 
-        private class NullableSingleModel { public Single? Number { get; set; } }
+        private class NullableSingleModel { public float? Number { get; set; } }
 
         [TestMethod]
         public void TextBoxFor_creates_number_data_attributes_for_nullable_Single()
@@ -366,6 +366,13 @@ namespace jQueryValidateNativeUnobtrusiveMVCUnitTests
                                                                    "data-rule-required=\"true\" " +
                                                                    "id=\"Number\" name=\"Number\" type=\"text\" value=\"\" />";
 
+        private const string HTMLRangeNumber = "<input " +
+                                               "data-msg-number=\"The field Number must be a number.\" " +
+                                               "data-msg-range=\"The field Number must be between -20 and 40.\" " +
+                                               "data-rule-number=\"true\" " +
+                                               "data-rule-range=\"[-20,40]\" " +
+                                               "id=\"Number\" name=\"Number\" type=\"text\" value=\"\" />";
+
         private const string HTMLRangeNumberWithFraction = "<input " +
                                                            "data-msg-number=\"The field Number must be a number.\" " +
                                                            "data-msg-range=\"The field Number must be between -20.5 and 40.3.\" " +
@@ -392,6 +399,62 @@ namespace jQueryValidateNativeUnobtrusiveMVCUnitTests
             Assert.AreEqual(HTMLRangeRequiredNumber, result.ToHtmlString());
         }
 
+        private class IntRangeModel
+        {
+            [Range(-20, 40)]
+            public int Number { get; set; }
+        }
+
+        [TestMethod]
+        public void TextBoxFor_has_range_required_and_number_data_attributes_for_int_with_Range_attribute()
+        {
+            // Arrange
+            var htmlHelper = HtmlHelperFactory.Create(new IntRangeModel());
+
+            // Act
+            var result = TextBoxExtensions.TextBoxFor(htmlHelper, exampleModel => exampleModel.Number, true);
+
+            // Assert
+            Assert.AreEqual(HTMLRangeRequiredNumber, result.ToHtmlString());
+        }
+
+        private class LongRangeModel
+        {
+            [Range(typeof(long), "-20", "40")]
+            public long Number { get; set; }
+        }
+
+        [TestMethod]
+        public void TextBoxFor_has_range_required_and_number_data_attributes_for_long_with_Range_attribute()
+        {
+            // Arrange
+            var htmlHelper = HtmlHelperFactory.Create(new LongRangeModel());
+
+            // Act
+            var result = TextBoxExtensions.TextBoxFor(htmlHelper, exampleModel => exampleModel.Number, true);
+
+            // Assert
+            Assert.AreEqual(HTMLRangeRequiredNumber, result.ToHtmlString());
+        }
+        private class ByteRangeModel
+        {
+            [Range(typeof(byte), "20", "40")]
+            public byte Number { get; set; }
+        }
+
+        [TestMethod]
+        public void TextBoxFor_has_range_required_and_number_data_attributes_for_byte_with_Range_attribute()
+        {
+            // Arrange
+            var htmlHelper = HtmlHelperFactory.Create(new ByteRangeModel());
+
+            // Act
+            var result = TextBoxExtensions.TextBoxFor(htmlHelper, exampleModel => exampleModel.Number, true);
+
+            // Assert
+            Assert.AreEqual(HTMLRangeRequiredNumber.Replace("-20", "20"), result.ToHtmlString());
+        }
+
         private class DecimalRangeModel
         {
             [Range(typeof(decimal), "-20.5", "40.3")]
@@ -409,6 +472,120 @@ namespace jQueryValidateNativeUnobtrusiveMVCUnitTests
 
             // Assert
             Assert.AreEqual(HTMLRangeRequiredNumberWithFraction, result.ToHtmlString());
+        }
+
+        private class SingleRangeModel
+        {
+            [Range(typeof(float), "-20.5", "40.3")]
+            public float Number { get; set; }
+        }
+
+        [TestMethod]
+        public void TextBoxFor_has_range_required_and_number_data_attributes_for_float_with_Range_attribute()
+        {
+            // Arrange
+            var htmlHelper = HtmlHelperFactory.Create(new SingleRangeModel());
+
+            // Act
+            var result = TextBoxExtensions.TextBoxFor(htmlHelper, exampleModel => exampleModel.Number, true);
+
+            // Assert
+            Assert.AreEqual(HTMLRangeRequiredNumberWithFraction, result.ToHtmlString());
+        }
+
+        private class DoubleRangeModel
+        {
+            [Range(-20.5, 40.3)]
+            public double Number { get; set; }
+        }
+
+        [TestMethod]
+        public void TextBoxFor_has_range_required_and_number_data_attributes_for_double_with_Range_attribute()
+        {
+            // Arrange
+            var htmlHelper = HtmlHelperFactory.Create(new DoubleRangeModel());
+
+            // Act
+            var result = TextBoxExtensions.TextBoxFor(htmlHelper, exampleModel => exampleModel.Number, true);
+
+            // Assert
+            Assert.AreEqual(HTMLRangeRequiredNumberWithFraction, result.ToHtmlString());
+        }
+
+        private class NullableShortRangeModel
+        {
+            [Range(typeof(short), "-20", "40")]
+            public decimal? Number { get; set; }
+        }
+
+        [TestMethod]
+        public void TextBoxFor_has_range_and_number_data_attributes_for_nullable_short_with_Range_attribute()
+        {
+            // Arrange
+            var htmlHelper = HtmlHelperFactory.Create(new NullableShortRangeModel());
+
+            // Act
+            var result = TextBoxExtensions.TextBoxFor(htmlHelper, exampleModel => exampleModel.Number, true);
+
+            // Assert
+            Assert.AreEqual(HTMLRangeNumber, result.ToHtmlString());
+        }
+
+        private class NullableIntRangeModel
+        {
+            [Range(-20, 40)]
+            public int? Number { get; set; }
+        }
+
+        [TestMethod]
+        public void TextBoxFor_has_range_and_number_data_attributes_for_nullable_int_with_Range_attribute()
+        {
+            // Arrange
+            var htmlHelper = HtmlHelperFactory.Create(new NullableIntRangeModel());
+
+            // Act
+            var result = TextBoxExtensions.TextBoxFor(htmlHelper, exampleModel => exampleModel.Number, true);
+
+            // Assert
+            Assert.AreEqual(HTMLRangeNumber, result.ToHtmlString());
+        }
+
+        private class NullableLongRangeModel
+        {
+            [Range(typeof(long), "-20", "40")]
+            public long? Number { get; set; }
+        }
+
+        [TestMethod]
+        public void TextBoxFor_has_range_and_number_data_attributes_for_nullable_long_with_Range_attribute()
+        {
+            // Arrange
+            var htmlHelper = HtmlHelperFactory.Create(new NullableLongRangeModel());
+
+            // Act
+            var result = TextBoxExtensions.TextBoxFor(htmlHelper, exampleModel => exampleModel.Number, true);
+
+            // Assert
+            Assert.AreEqual(HTMLRangeNumber, result.ToHtmlString());
+        }
+
+        private class NullableByteRangeModel
+        {
+            [Range(typeof(byte), "20", "40")]
+            public byte? Number { get; set; }
+        }
+
+        [TestMethod]
+        public void TextBoxFor_has_range_and_number_data_attributes_for_nullable_byte_with_Range_attribute()
+        {
+            // Arrange
+            var htmlHelper = HtmlHelperFactory.Create(new NullableByteRangeModel());
+
+            // Act
+            var result = TextBoxExtensions.TextBoxFor(htmlHelper, exampleModel => exampleModel.Number, true);
+
+            // Assert
+            Assert.AreEqual(HTMLRangeNumber.Replace("-20", "20"), result.ToHtmlString());
         }
 
         private class NullableDecimalRangeModel
@@ -430,6 +607,93 @@ namespace jQueryValidateNativeUnobtrusiveMVCUnitTests
             Assert.AreEqual(HTMLRangeNumberWithFraction, result.ToHtmlString());
         }
 
+        private class NullableSingleRangeModel
+        {
+            [Range(typeof(float), "-20.5", "40.3")]
+            public float? Number { get; set; }
+        }
+
+        [TestMethod]
+        public void TextBoxFor_has_range_and_number_data_attributes_for_float_with_Range_attribute()
+        {
+            // Arrange
+            var htmlHelper = HtmlHelperFactory.Create(new NullableSingleRangeModel());
+
+            // Act
+            var result = TextBoxExtensions.TextBoxFor(htmlHelper, exampleModel => exampleModel.Number, true);
+
+            // Assert
+            Assert.AreEqual(HTMLRangeNumberWithFraction, result.ToHtmlString());
+        }
+
+        private class NullableDoubleRangeModel
+        {
+            [Range(-20.5, 40.3)]
+            public float? Number { get; set; }
+        }
+
+        [TestMethod]
+        public void TextBoxFor_has_range_and_number_data_attributes_for_double_with_Range_attribute()
+        {
+            // Arrange
+            var htmlHelper = HtmlHelperFactory.Create(new NullableDoubleRangeModel());
+
+            // Act
+            var result = TextBoxExtensions.TextBoxFor(htmlHelper, exampleModel => exampleModel.Number, true);
+
+            // Assert
+            Assert.AreEqual(HTMLRangeNumberWithFraction, result.ToHtmlString());
+        }
+
+        #endregion
+
+        #region MaxLength / MinLength tests for @Html.TextBoxFor(x => x.String, true)
+
+        private class MaxLengthModel
+        {
+            [StringLength(7)]
+            public string MaxLength { get; set; }
+        }
+
+        [TestMethod]
+        public void TextBoxFor_has_maxlength_data_attributes_for_string_with_StringLength_attribute()
+        {
+            // Arrange
+            var htmlHelper = HtmlHelperFactory.Create(new MaxLengthModel());
+
+            // Act
+            var result = TextBoxExtensions.TextBoxFor(htmlHelper, exampleModel => exampleModel.MaxLength, true);
+
+            // Assert
+            Assert.AreEqual("<input "+
+                "data-msg-maxlength=\"The field MaxLength must be a string with a maximum length of 7.\" " +
+                "data-rule-maxlength=\"7\" " +
+                "id=\"MaxLength\" name=\"MaxLength\" type=\"text\" value=\"\" />", result.ToHtmlString());
+        }
+
+        private class MaxAndMinLengthModel
+        {
+            [StringLength(10, MinimumLength = 5)]
+            public string MaxAndMinLength { get; set; }
+        }
+
+        [TestMethod]
+        public void TextBoxFor_has_maxlength_and_minlength_data_attributes_for_string_with_StringLength_attribute()
+        {
+            // Arrange
+            var htmlHelper = HtmlHelperFactory.Create(new MaxAndMinLengthModel());
+
+            // Act
+            var result = TextBoxExtensions.TextBoxFor(htmlHelper, exampleModel => exampleModel.MaxAndMinLength, true);
+
+            // Assert
+            Assert.AreEqual("<input "+
+                "data-msg-maxlength=\"The field MaxAndMinLength must be a string with a minimum length of 5 and a maximum length of 10.\" "+
+                "data-msg-minlength=\"The field MaxAndMinLength must be a string with a minimum length of 5 and a maximum length of 10.\" "+
+                "data-rule-maxlength=\"10\" "+
+                "data-rule-minlength=\"5\" "+
+                "id=\"MaxAndMinLength\" name=\"MaxAndMinLength\" type=\"text\" value=\"\" />", result.ToHtmlString());
+        }
         #endregion
 
         #region HtmlAttributes tests for @Html.TextBoxFor(x => x.Number, true, htmlAttributes: new { data_test_attribute = "I am a test" })
@@ -438,7 +702,6 @@ namespace jQueryValidateNativeUnobtrusiveMVCUnitTests
         {
             public string String { get; set; }
         }
-
 
         [TestMethod]
         public void TextBoxFor_has_custom_data_attributes()
