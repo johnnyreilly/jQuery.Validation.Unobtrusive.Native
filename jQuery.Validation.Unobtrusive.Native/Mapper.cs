@@ -19,7 +19,11 @@ namespace System.Web.Mvc
         {
             var attributes = HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttributes);
 
-            // write rules to context object
+            // If client validation or unobtrusive javascript are disabled then there's really nothing to do
+            if (!HtmlHelper.ClientValidationEnabled || !HtmlHelper.UnobtrusiveJavaScriptEnabled)
+                return attributes;
+
+            // get validators so we can get the contained ModelClientValidationRules
             var validators = ModelValidatorProviders.Providers.GetValidators(metadata, helper.ViewContext);
             foreach (var rule in validators.SelectMany(v => v.GetClientValidationRules()))
             {
