@@ -5,9 +5,11 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
 {
     public class CustomValidationModel
     {
+        [Required]
         public string Property { get; set; }
 
-        [NotEqualTo("Property", ErrorMessage = "These fields cannot match")]
+        [Required,
+         NotEqualTo("Property", ErrorMessage = "These fields cannot match")]
         public string DifferentProperty { get; set; }
     }
 }

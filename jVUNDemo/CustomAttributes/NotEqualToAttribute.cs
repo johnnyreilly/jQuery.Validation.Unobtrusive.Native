@@ -7,6 +7,17 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.CustomAttributes
 {
     public class NotEqualToAttribute : ValidationAttribute, IClientValidatable
     {
+        public IEnumerable<ModelClientValidationRule> GetClientValidationRules(ModelMetadata metadata, ControllerContext context)
+        {
+            var rule = new ModelClientValidationRule
+            {
+                ErrorMessage = ErrorMessage,
+                ValidationType = "notequalto"
+            };
+            rule.ValidationParameters["other"] = "#" + OtherProperty;
+            yield return rule;
+        }
+
         public string OtherProperty { get; private set; }
 
         public NotEqualToAttribute(string otherProperty)
@@ -33,17 +44,6 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.CustomAttributes
                 return new ValidationResult(FormatErrorMessage(validationContext.DisplayName));
             }
             return null;
-        }
-
-        public IEnumerable<ModelClientValidationRule> GetClientValidationRules(ModelMetadata metadata, ControllerContext context)
-        {
-            var rule = new ModelClientValidationRule
-            {
-                ErrorMessage = ErrorMessage,
-                ValidationType = "notequalto"
-            };
-            rule.ValidationParameters["other"] = "#" + OtherProperty;
-            yield return rule;
         }
     }
 }

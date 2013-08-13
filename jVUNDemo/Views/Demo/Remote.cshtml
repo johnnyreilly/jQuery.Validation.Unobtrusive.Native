@@ -132,7 +132,7 @@
 
     <div class="tab-pane" id="html">
         
-        <p>Here's the HTML that the view generates.  If you look closely at the <code>data-rule-remote</code> tags you can see the JSON used to drive the AJAX request. In this example there are 2 properties, <code>url</code> and <code>additionalfields</code>.  As you may have guessed <code>url</code> specifies the controller endpoints to hit to perform remote validation. The <code>additionalfields</code> property is a hangover from the default MVC unobtrusive implementation.  If we wanted we could strip this out, but since it does no harm it's been left behind for now.</p>
+        <p>Here's the HTML that the view generates.  If you look closely at the <code>data-rule-remote</code> attributes you can see the JSON used to drive the AJAX request. In this example there are 2 properties, <code>url</code> and <code>additionalfields</code>.  As you may have guessed <code>url</code> specifies the controller endpoints to hit to perform remote validation. The <code>additionalfields</code> property is a hangover from the default MVC unobtrusive implementation.  If we wanted we could strip this out, but since it does no harm it's been left behind for now.</p>
 
         <pre class="prettyprint html">
     &lt;form action="/Demo/Remote" method="post"&gt;
