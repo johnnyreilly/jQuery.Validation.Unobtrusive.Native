@@ -2,13 +2,13 @@
 
 <p>jQuery Validation Unobtrusive Native is a collection of ASP.Net MVC HTML helper extensions. These make use of jQuery Validation's native support for validation driven by HTML 5 data attributes.  Microsoft shipped <a href="http://bradwilson.typepad.com/blog/2010/10/mvc3-unobtrusive-validation.html" target="_blank">jquery.validate.unobtrusive.js</a> back with MVC 3.  It provided a way to apply data model validations to the client side using a combination of jQuery Validation and HTML 5 data attributes (that's the "unobtrusive" part).</p>
 
-<p>The principal of this was and is fantastic.  But since that time the jQuery Validation project has implemented its own support for driving validation unobtrusively (this shipped with <a href="http://jquery.bassistance.de/validate/changelog.txt" target="_blank">jQuery Validation 1.11.0</a>.  The advantages of the native support over jquery.validate.unobtrusive.js are:</p>
+<p>The principal of this was and is fantastic.  But since that time the jQuery Validation project has implemented its own support for driving validation unobtrusively (which shipped with <a href="http://jquery.bassistance.de/validate/changelog.txt" target="_blank">jQuery Validation 1.11.0</a>).  The main advantages of using the native support over jquery.validate.unobtrusive.js are:</p>
 
-<ul>
+<ol>
     <li>Dynamically created form elements are parsed automatically.  jquery.validate.unobtrusive.js does not support this whilst jQuery Validation does. @Html.ActionLink("See a demo", "Dynamic", "Demo")</li>
     <li>jquery.validate.unobtrusive.js restricts how you use jQuery Validation.  If you want to use showErrors or something similar then you may find that you need to go native (or at least you may find that significantly easier than working with the jquery.validate.unobtrusive.js defaults)... </li>
     <li>Send less code to your browser, make your browser to do less work, get a performance benefit (though you'd probably have to be the Flash to actually notice the difference)</li>
-</ul>
+</ol>
 
 <p>This project intends to be a bridge between MVC's inbuilt support for driving validation from data attributes and jQuery Validation's native support for the same.  This is achieved by hooking into the MVC data attribute creation mechanism and using it to generate the data attributes used by jQuery Validation.</p>
 
