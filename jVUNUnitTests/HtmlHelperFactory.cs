@@ -6,11 +6,12 @@ namespace jQueryValidateNativeUnobtrusiveMVCUnitTests
     {
         internal static HtmlHelper<T> Create<T>(T model)
         {
+            HtmlHelper.ClientValidationEnabled = true;
+            HtmlHelper.UnobtrusiveJavaScriptEnabled = true;
+
             var vc = new ViewContext
                 {
                     HttpContext = new FakeHttpContext(),
-                    UnobtrusiveJavaScriptEnabled = true,
-                    ClientValidationEnabled = true,
                     ViewData = new ViewDataDictionary(model)
                 };
 

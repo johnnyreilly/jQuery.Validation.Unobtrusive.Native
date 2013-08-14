@@ -2,7 +2,7 @@
 <package >
     <metadata>
         <id>jQuery.Validation.Unobtrusive.Native.MVC4</id>
-        <version>0.4.0</version>
+        <version>$version$</version>
         <title>jQuery.Validation.Unobtrusive.Native.MVC4</title>
         <authors>$author$</authors>
         <owners>$author$</owners>
