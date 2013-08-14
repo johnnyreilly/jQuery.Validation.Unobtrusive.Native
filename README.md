@@ -22,7 +22,7 @@ If you haven't already, ensure that the following entries can be found in your w
         <add key="UnobtrusiveJavaScriptEnabled" value="true" />
     </appSettings>
 
-Include jQuery.Validation.Unobtrusive.Native into your project (available on [nuget](https://www.nuget.org/packages/jQuery.Validation.Unobtrusive.Native/) or on [GitHub](http://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native)). With this in place you should be able to switch from using the existing `TextBoxFor` / `DropDownListFor` HtmlHelper statements in your views and to jQuery.Validation.Unobtrusive.Native's equivalent by passing `true` to the `useNativeUnobtrusiveAttributes` parameter. (By convention this is the first parameter after the `Expression<Func<TModel, TProperty>> expression` parameter.
+Include jQuery.Validation.Unobtrusive.Native into your project (available on [nuget](http://www.nuget.org/packages?q=jQuery.Validation.Unobtrusive.Native) or on [GitHub](http://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native)). With this in place you should be able to switch from using the existing `TextBoxFor` / `DropDownListFor` HtmlHelper statements in your views and to jQuery.Validation.Unobtrusive.Native's equivalent by passing `true` to the `useNativeUnobtrusiveAttributes` parameter. (By convention this is the first parameter after the `Expression<Func<TModel, TProperty>> expression` parameter.
 	
 Ensure that you have the latest version of jquery.validate.js, you can find it [here](http://jqueryvalidation.org/).  Oh, and remember that you *no longer* need to serve up the jquery.validate.unobtrusive.js on a screen where you are using jQuery.Validation.Unobtrusive.Native.  All you need is jquery.validate.js (and of course jQuery).
 
@@ -62,7 +62,6 @@ So far the basic set of the HtmlHelpers and their associated unobtrusive mapping
 
 * fill in any missing gaps there may be
 * maintain both MVC 3, 4 (and when the time comes 5+) versions of this on Nuget
-* not all data annotations generate client data attributes - if it makes sense I may look to implement some of these where it seems sensible. (eg the MinLengthAttribute annotation could be mapped to minlength validation...)
 * get the unit test coverage to a good level and (most importantly)
 * create some really useful demos and documentation.
 
