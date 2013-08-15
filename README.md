@@ -79,3 +79,20 @@ Copyright © 2013 [John Reilly](mailto:johnny_reilly@hotmail.com).
 ##License
 
 MIT license - [http://www.opensource.org/licenses/mit-license.php](http://www.opensource.org/licenses/mit-license.php)
+
+##Changelog
+
+###0.4.0.0 / 2013-08-14
+
+- All missing helpers now covered (TextArea / ListBox etc)
+- Switch to new mechanism to support users implementing their own custom validations
+- Included demo of custom validations implementation
+
+###0.2.0 / 2013-08-07
+
+- Initial release
+- Included demo of dynamic content using Knockout.
+
+###0.1.0 / 2013-07-29
+
+- Beta release - not fully featured
