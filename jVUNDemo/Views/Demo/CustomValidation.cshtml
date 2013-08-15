@@ -199,7 +199,9 @@
     
     <div class="tab-pane" id="javascript">
         
-        <p>Here's the JavaScript that adds our custom rule / method initialises the validation.  The name of the custom rule / method is the same as the <code>ValidationType</code> specified on the attribute. And if you look at the <code>params</code> parameter you can see this is the client side equivalent of our <code>ValidationParameters</code> Dictionary on the attribute.  As you can see from the method we use the <code>other</code> property to look up our comparison element. The <code>"These shouldn't equal"</code> string is the default error message that will be displayed if an <code>ErrorMessage</code> hasn't been specified when the attribute has been used.</p>
+        <p>Here's the JavaScript that adds our custom rule / method and initialises the validation.</p>
+        
+        <p>The name of the custom rule / method is the same as the <code>ValidationType</code> specified on the attribute, ie <code>"notequalto"</code>. The <code>"These shouldn't equal"</code> string is the default error message that will be displayed if an <code>ErrorMessage</code> wasn't specified when the attribute was being applied.  And if you look at the <code>params</code> parameter you can see this is the client side equivalent of our <code>ValidationParameters</code> Dictionary on the attribute.  As you can see, we use the <code>params.other</code> property to look up our comparison element. </p>
 
         <pre class="prettyprint js">
   // Add our custom rule / method
