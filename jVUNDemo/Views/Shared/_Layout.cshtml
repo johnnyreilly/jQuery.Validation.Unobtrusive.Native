@@ -12,15 +12,18 @@
 </head>
 <body>
 
-    <div class="navbar">
+    <nav class="navbar" role="navigation">
         <div class="container">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="~/">jVUN</a>
-            <div class="nav-collapse collapse navbar-responsive-collapse">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="~/">jVUN</a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
                 <ul class="nav navbar-nav">
                     @Html.RenderMenuItem("Home", "Index", "Home")
                     @Html.RenderMenuItem("Getting Started", "GettingStarted", "Home")
@@ -36,7 +39,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </nav>
 
     <div id="main" class="container">
 
