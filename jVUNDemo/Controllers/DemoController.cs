@@ -125,5 +125,13 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
 
             return View(new CustomValidationModel());
         }
+
+        public ActionResult Tooltip()
+        {
+            ViewBag.Title += "Tooltip";
+
+            return View(new TooltipModel());
+        }
+
     }
 }

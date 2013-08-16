@@ -154,6 +154,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\TooltipModel.cs" />
     <Compile Include="Models\CustomValidationModel.cs" />
     <Compile Include="Models\PersonModel.cs" />
     <Compile Include="Models\RangeModel.cs" />
@@ -229,6 +230,7 @@
     <Content Include="Views\Demo\EqualTo.cshtml" />
     <Content Include="Views\Demo\Range.cshtml" />
     <Content Include="Views\Demo\CustomValidation.cshtml" />
+    <Content Include="Views\Demo\Tooltip.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
