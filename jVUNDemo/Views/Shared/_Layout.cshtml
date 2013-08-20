@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>@ViewBag.Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @Styles.Render("~/Content/bootstrap/css", "~/Content/css")
+    @Styles.Render("~/Content/bootstrap/base", "~/Content/css")
     <link href="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico">
     @RenderSection("styles", required: false)
@@ -12,10 +12,11 @@
 </head>
 <body>
 
-    <nav class="navbar" role="navigation">
+    <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
