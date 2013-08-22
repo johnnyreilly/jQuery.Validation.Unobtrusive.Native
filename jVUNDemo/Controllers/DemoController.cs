@@ -6,80 +6,75 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
 {
     public class DemoController : Controller
     {
-        public DemoController()
-        {
-            ViewBag.Title = "Demos and Docs - ";
-        }
-
         //
         // GET: /Demo/
 
         public ActionResult Index()
         {
-            ViewBag.Title += "Overview";
+            ViewBag.Title = "Demos and Documentation Overview";
 
             return View();
         }
 
         public ActionResult Number()
         {
-            ViewBag.Title += "Number";
+            ViewBag.Title = "Number";
 
             return View(new NumberModel());
         }
 
         public ActionResult Date()
         {
-            ViewBag.Title += "Date";
+            ViewBag.Title = "Date";
 
             return View(new DateModel { DateTime = DateTime.Today } );
         }
 
         public ActionResult Required()
         {
-            ViewBag.Title += "Required";
+            ViewBag.Title = "Required";
 
             return View(new RequiredModel());
         }
 
         public ActionResult Range()
         {
-            ViewBag.Title += "Range";
+            ViewBag.Title = "Range";
 
             return View(new RangeModel());
         }
 
         public ActionResult MaxLengthMinLength()
         {
-            ViewBag.Title += "MaxLength and MinLength";
+            ViewBag.Title = "MaxLength and MinLength";
 
             return View(new MaxLengthMinLengthModel { MaxLength = "12345678", MaxAndMinLength = "123" });
         }
 
         public ActionResult EqualTo()
         {
-            ViewBag.Title += "EqualTo";
+            ViewBag.Title = "EqualTo";
 
             return View(new EqualToModel { EMail = "an@emailaddress.com" });
         }
 
         public ActionResult URL()
         {
-            ViewBag.Title += "URL";
+            ViewBag.Title = "URL";
 
             return View(new UrlModel());
         }
 
         public ActionResult Email()
         {
-            ViewBag.Title += "Email";
+            ViewBag.Title = "Email";
 
             return View(new EmailModel());
         }
 
         public ViewResult Remote()
         {
-            ViewBag.Title += "Remote";
+            ViewBag.Title = "Remote";
 
             return View(new RemoteModel());
         }
@@ -107,31 +102,11 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
 
         public ActionResult CreditCard()
         {
-            ViewBag.Title += "Credit Card";
+            ViewBag.Title = "Credit Card";
 
             return View(new CreditCardModel());
         }
 
-        public ActionResult Dynamic()
-        {
-            ViewBag.Title += "Dynamic Demo";
-
-            return View(new PersonModel());
-        }
-
-        public ActionResult CustomValidation()
-        {
-            ViewBag.Title += "Custom Validation Demo";
-
-            return View(new CustomValidationModel());
-        }
-
-        public ActionResult Tooltip()
-        {
-            ViewBag.Title += "Tooltip";
-
-            return View(new TooltipModel());
-        }
 
     }
 }

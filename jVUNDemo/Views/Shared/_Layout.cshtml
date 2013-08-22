@@ -30,11 +30,19 @@
                     @Html.RenderMenuItem("Getting Started", "GettingStarted", "Home")
                     @Html.RenderMenuItem("Download", "Download", "Home")
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Demos and Docs <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Demos <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             @Html.RenderMenuItem("Overview", "Index", "Demo")
                             <li class="divider"></li>
                             @Html.Partial("_PartialDemoMenuItems")
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced Demos <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            @Html.RenderMenuItem("Overview", "Index", "AdvancedDemo")
+                            <li class="divider"></li>
+                            @Html.Partial("_PartialAdvancedDemoMenuItems")
                         </ul>
                     </li>
                 </ul>
