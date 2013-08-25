@@ -82,6 +82,10 @@ MIT license - [http://www.opensource.org/licenses/mit-license.php](http://www.op
 
 ##Changelog
 
+###0.4.1.0 / 2013-08-25
+
+- Now possible to override generated data attributes with those passed in htmlAttributes parameter.
+
 ###0.4.0.0 / 2013-08-14
 
 - All missing helpers now covered (TextArea / ListBox etc)
