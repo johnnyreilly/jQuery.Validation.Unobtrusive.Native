@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Web.Mvc;
 using jQuery.Validation.Unobtrusive.Native.Demos.Models;
 
 namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
@@ -34,6 +35,13 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
             ViewBag.Title = "Tooltip";
 
             return View(new TooltipModel());
+        }
+
+        public ActionResult Globalize()
+        {
+            ViewBag.Title = "Globalize";
+
+            return View(new GlobalizeModel());
         }
 
     }
