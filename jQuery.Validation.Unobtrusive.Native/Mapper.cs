@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Web.Routing;
@@ -57,7 +58,8 @@ namespace System.Web.Mvc
                         break;
 
                     case "range":
-                        attributes.AddIfNotPresent("data-rule-range", string.Format("[{0},{1}]", rule.ValidationParameters["min"], rule.ValidationParameters["max"]));
+                        attributes.AddIfNotPresent("data-rule-range", string.Format(CultureInfo.InvariantCulture, // Invariant so JavaScript can parse the numbers
+                            "[{0},{1}]", rule.ValidationParameters["min"], rule.ValidationParameters["max"]));
                         break;
 
                     // Standard handling of rules
