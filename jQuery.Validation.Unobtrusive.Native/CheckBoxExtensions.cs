@@ -32,7 +32,7 @@ namespace System.Web.Mvc
             var value = (bool)ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData).Model;
 
             var checkBox = Mapper.GenerateHtmlWithoutMvcUnobtrusiveAttributes(() =>
-                htmlHelper.CheckBox(metadata.PropertyName, value, attributes));
+                htmlHelper.CheckBoxFor(expression, value, attributes));
 
             return checkBox;
         }

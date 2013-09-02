@@ -33,7 +33,7 @@ namespace System.Web.Mvc
             var attributes = Mapper.GetUnobtrusiveValidationAttributes(htmlHelper, expression, htmlAttributes, metadata);
 
             var radioButton = Mapper.GenerateHtmlWithoutMvcUnobtrusiveAttributes(() =>
-                htmlHelper.RadioButton(metadata.PropertyName, value, attributes));
+                htmlHelper.RadioButtonFor(expression, value, attributes));
 
             return radioButton;
         }

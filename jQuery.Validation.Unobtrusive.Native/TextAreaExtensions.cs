@@ -36,7 +36,7 @@ namespace System.Web.Mvc
             var attributes = Mapper.GetUnobtrusiveValidationAttributes(htmlHelper, expression, htmlAttributes, metadata);
 
             var textArea = Mapper.GenerateHtmlWithoutMvcUnobtrusiveAttributes(() =>
-                htmlHelper.TextArea(metadata.PropertyName, metadata.Model as string, rows, columns, attributes));
+                htmlHelper.TextAreaFor(expression, rows, columns, attributes));
 
             return textArea;
         }
