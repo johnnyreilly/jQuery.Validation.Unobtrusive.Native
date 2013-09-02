@@ -34,7 +34,7 @@ namespace System.Web.Mvc
             var attributes = Mapper.GetUnobtrusiveValidationAttributes(htmlHelper, expression, htmlAttributes, metadata);
 
             var listBox = Mapper.GenerateHtmlWithoutMvcUnobtrusiveAttributes(() =>
-                htmlHelper.ListBox(metadata.PropertyName, selectList, attributes));
+                htmlHelper.ListBoxFor(expression, selectList, attributes));
 
             return listBox;
         }
