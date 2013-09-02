@@ -34,7 +34,7 @@ namespace System.Web.Mvc
             var attributes = Mapper.GetUnobtrusiveValidationAttributes(htmlHelper, expression, htmlAttributes, metadata);
 
             var textBox = Mapper.GenerateHtmlWithoutMvcUnobtrusiveAttributes(() => 
-                htmlHelper.TextBox(metadata.PropertyName, metadata.Model, format, attributes));
+                htmlHelper.TextBoxFor(expression, format, attributes));
 
             return textBox;
         }

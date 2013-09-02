@@ -36,7 +36,7 @@ namespace System.Web.Mvc
             var attributes = Mapper.GetUnobtrusiveValidationAttributes(htmlHelper, expression, htmlAttributes, metadata);
 
             var dropDown = Mapper.GenerateHtmlWithoutMvcUnobtrusiveAttributes(() =>
-                htmlHelper.DropDownList(metadata.PropertyName, selectList, optionLabel, attributes));
+                htmlHelper.DropDownListFor(expression, selectList, optionLabel, attributes));
 
             return dropDown;
         }
