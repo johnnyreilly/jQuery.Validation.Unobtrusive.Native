@@ -3,7 +3,16 @@
 nuget pack jQuery.Validation.Unobtrusive.Native.csproj -Prop Configuration=Release
 nuget push jQuery.Validation.Unobtrusive.Native.MVC4.1.0.0.0.nupkg
 
-Run the following commands to generate and publish based on convention:
+To create the MVC 3 package:
 
-nuget pack jQuery.Validation.Unobtrusive.Native.nuspec
-nuget push jQuery.Validation.Unobtrusive.Native.MVC4.0.4.0.nupkg
+-	Remove System.Web.Mvc and System.Web.WebPages references
+-	Add System.Web.Mvc 3.0.0.0 reference
+-	Add System.Web.WebPages 1.0.0.0 reference
+-	In TextBoxExtensions.cs remove the format overload
+-	Change nuspec id and title to jQuery.Validation.Unobtrusive.Native.MVC3
+-	Compile in release mode
+
+Then run the following commands to generate and publish based on project:
+ 
+nuget pack jQuery.Validation.Unobtrusive.Native.csproj -Prop Configuration=Release
+nuget push jQuery.Validation.Unobtrusive.Native.MVC3.1.0.0.0.nupkg
