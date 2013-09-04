@@ -82,6 +82,12 @@ MIT license - [http://www.opensource.org/licenses/mit-license.php](http://www.op
 
 ##Changelog
 
+###1.0.0.0 / 2013-09-04
+
+- Fix to allow usage of EditorTemplates (thanks to @DavidCarroll for this)
+- Fix to make range culture invariant to enable use by cultures where the decimal place is represented by something other than a decimal place (eg in Germany 20.5 is expressed as 20,5 - JavaScript can't handle this yet).
+- Given major version number now that the rough edges have been dealt with.
+
 ###0.4.1.0 / 2013-08-25
 
 - Now possible to override generated data attributes with those passed in htmlAttributes parameter.
