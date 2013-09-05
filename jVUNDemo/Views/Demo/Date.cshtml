@@ -163,7 +163,4 @@
 
 <blockquote>"This method should not be used, since it relies on the <code>new Date</code> constructor, which behaves very differently across browsers and locales. Use dateISO instead or one of the locale specific methods (in localizations/ and additional-methods.js)."</blockquote>
 
-<p>If you have a modern browser you should be able to rely on the date constructor to <a href="http://es5.github.io/#x15.9.1.15" target="_blank">happily parse ISO 8601 date strings</a>.</p>
-
-<p>However, if you want to patch the jQuery Validation date validation to be locale specific then you could do worse then look at the steps outlined in a <a href="http://icanmakethiswork.blogspot.com/2012/09/globalize-and-jquery-validate.html" target="_blank">blogpost I wrote</a>.  In my post I replace the jQuery Validation Date method with an implementation that depends on <a href="http://github.com/jquery/globalize" target="_blank">Globalize</a> - you could use the same approach and plug in a different validation mechanism if you wanted.</p>
-
+<p>If you have a modern browser you should be able to rely on the date constructor to <a href="http://es5.github.io/#x15.9.1.15" target="_blank">happily parse ISO 8601 date strings</a>.  However, if you want to patch the jQuery Validation date validation to be locale specific regardless then take a look  @Html.ActionLink("here", "Globalize", "AdvancedDemo").</p>

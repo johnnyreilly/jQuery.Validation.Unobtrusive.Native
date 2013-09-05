@@ -1,5 +1,4 @@
-﻿using System;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using jQuery.Validation.Unobtrusive.Native.Demos.Models;
 
 namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
@@ -43,6 +42,5 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
 
             return View(new GlobalizeModel());
         }
-
     }
 }

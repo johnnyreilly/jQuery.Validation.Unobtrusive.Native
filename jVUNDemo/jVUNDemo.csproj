@@ -550,6 +550,8 @@
     <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.zu.js" />
     <Content Include="Scripts\jquery.globalize\cultures\globalize.cultures.js" />
     <Content Include="Scripts\jquery.globalize\globalize.js" />
+    <Content Include="Scripts\jquery.validate.globalize.js" />
+    <Content Include="Scripts\jquery.validate.globalize.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\knockout-2.3.0.debug.js" />
@@ -592,6 +594,8 @@
     <Content Include="Views\AdvancedDemo\Index.cshtml" />
     <Content Include="Views\Shared\_PartialAdvancedDemoMenuItems.cshtml" />
     <Content Include="Views\AdvancedDemo\Globalize.cshtml" />
+    <Content Include="Scripts\jquery.validate.globalize.min.js.map" />
+    <Content Include="Views\Shared\EditorTemplates\String.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

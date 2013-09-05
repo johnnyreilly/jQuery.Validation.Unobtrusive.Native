@@ -1,24 +1,4 @@
-﻿@section styles {
-    <style>
-        .nuget-badge code {
-            -moz-border-radius: 5px;
-            -webkit-border-radius: 5px;
-            border-radius: 5px;
-            background-color: #202020;
-            border: 4px solid silver;
-            border-radius: 5px;
-            box-shadow: 2px 2px 3px #6e6e6e;
-            color: #e2e2e2;
-            display: block;
-            font: 1.1em 'andale mono', 'lucida console', monospace;
-            line-height: 1.5em;
-            overflow: auto;
-            padding: 15px
-        }
-    </style>
-}
-
-<h3>@ViewBag.Title</h3>
+﻿<h3>@ViewBag.Title</h3>
 
 <p>You can download jQuery Validation Unobtrusive Native from <a href="http://www.nuget.org/packages?q=jQuery.Validation.Unobtrusive.Native" target="_blank">NuGet</a>.  For an MVC 4 project go <a href="http://www.nuget.org/packages/jQuery.Validation.Unobtrusive.Native.MVC4/" target="_blank">here</a> or run the following command in the Package Manager Console:</p>
 
@@ -37,6 +17,14 @@
 <p>If you want to get the source, it can be found on <a href="http://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native" target="_blank">GitHub</a>.</p>
 
 <h3 id="changelog">Changelog</h3>
+
+<h4 id="1.0.0.0">1.0.0.0 / 2013-09-04</h4>
+
+<ul>
+    <li>Fix to allow usage of EditorTemplates (thanks to <a href="https://github.com/davidcarroll" target="_blank">@@DavidCarroll</a> for this)</li>
+    <li>Fix to make range culture invariant to enable use by cultures where the decimal place is represented by something other than a decimal place (eg in Germany 20.5 is expressed as 20,5 - JavaScript can't handle this yet).</li>
+    <li>Given major version number now that the rough edges have been dealt with.</li>
+</ul>
 
 <h4 id="0.4.1.0">0.4.1.0 / 2013-08-25</h4>
 
