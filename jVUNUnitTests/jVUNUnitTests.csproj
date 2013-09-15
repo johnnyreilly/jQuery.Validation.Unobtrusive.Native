@@ -60,6 +60,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="TextBoxExtensionsRemoteTests.cs" />
     <Compile Include="TextBoxExtensionsEqualToTests.cs" />
     <Compile Include="TextBoxExtensionsCreditCardTests.cs" />
     <Compile Include="TextBoxExtensionsUrlTests.cs" />
