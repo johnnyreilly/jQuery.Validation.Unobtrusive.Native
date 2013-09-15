@@ -60,6 +60,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="TextBoxExtensionsEqualToTests.cs" />
+    <Compile Include="TextBoxExtensionsCreditCardTests.cs" />
+    <Compile Include="TextBoxExtensionsUrlTests.cs" />
     <Compile Include="TextBoxExtensionsHtmlAttributesTests.cs" />
     <Compile Include="TextBoxExtensionsMaxLengthMinLengthTests.cs" />
     <Compile Include="TextBoxExtensionsRangeTests.cs" />
