@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("jQueryValidateNativeUnobtrusiveMVCUnitTests")]
+[assembly: AssemblyTitle("jQuery.Validation.Unobtrusive.Native.MVC.UnitTests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("jQueryValidateNativeUnobtrusiveMVCUnitTests")]
+[assembly: AssemblyProduct("jQuery.Validation.Unobtrusive.Native.MVC.UnitTests")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

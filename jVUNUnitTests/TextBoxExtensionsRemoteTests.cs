@@ -2,7 +2,7 @@
 using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace jQueryValidateNativeUnobtrusiveMVCUnitTests
+namespace jQuery.Validation.Unobtrusive.Native.MVC.UnitTests
 {
     /// <summary>
     /// FakeRemoteAttribute subclasses RemoteAttribute so that we can override GetUrl and return a fake URL string.  

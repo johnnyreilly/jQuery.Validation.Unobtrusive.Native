@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace jQueryValidateNativeUnobtrusiveMVCUnitTests
+namespace jQuery.Validation.Unobtrusive.Native.MVC.UnitTests
 {
     public static class HtmlHelperFactory
     {

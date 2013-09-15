@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Web;
 using System.Web.Mvc;
 
-namespace jQueryValidateNativeUnobtrusiveMVCUnitTests
+namespace jQuery.Validation.Unobtrusive.Native.MVC.UnitTests
 {
     // Inspired by http://blogs.teamb.com/craigstuntz/2010/09/10/38638/ 
 

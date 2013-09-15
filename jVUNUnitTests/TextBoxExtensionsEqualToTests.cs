@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace jQueryValidateNativeUnobtrusiveMVCUnitTests
+namespace jQuery.Validation.Unobtrusive.Native.MVC.UnitTests
 {
     [TestClass]
     public class TextBoxExtensionsEqualToTests
