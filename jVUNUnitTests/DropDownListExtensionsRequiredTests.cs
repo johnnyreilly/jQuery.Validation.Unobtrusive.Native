@@ -9,6 +9,13 @@ namespace jQuery.Validation.Unobtrusive.Native.MVC.UnitTests
     [TestClass]
     public class DropDownListExtensionsRequiredTests
     {
+        private const string HTMLRequiredDate = "<select " +
+                                                "data-msg-date=\"The field Date must be a date.\" " +
+                                                "data-msg-required=\"The Date field is required.\" " +
+                                                "data-rule-date=\"true\" " +
+                                                "data-rule-required=\"true\" " +
+                                                "id=\"Date\" name=\"Date\"></select>";
+
         private class RequiredStringModel
         {
             [Required]
@@ -46,33 +53,26 @@ namespace jQuery.Validation.Unobtrusive.Native.MVC.UnitTests
             var result = DropDownListExtensions.DropDownListFor(htmlHelper, exampleModel => exampleModel.Date, true, new List<SelectListItem>());
 
             // Assert
-            Assert.AreEqual("<select "+
-                "data-msg-date=\"The field Date must be a date.\" "+
-                "data-msg-required=\"The Date field is required.\" "+
-                "data-rule-date=\"true\" "+
-                "data-rule-required=\"true\" "+
-                "id=\"Date\" name=\"Date\"></select>", result.ToHtmlString());
+            Assert.AreEqual(HTMLRequiredDate, result.ToHtmlString());
         }
 
-        private class NullableDateTimeModel
+        private class RequiredNullableDateTimeModel
         {
+            [Required]
             public DateTime? Date { get; set; }
         }
 
         [TestMethod]
-        public void DropDownListFor_creates_date_data_attributes_for_nullable_DateTime()
+        public void DropDownListFor_creates_required_and_date_data_attributes_for_nullable_DateTime_with_Required_attribute()
         {
             // Arrange
-            var htmlHelper = HtmlHelperFactory.Create(new NullableDateTimeModel());
+            var htmlHelper = HtmlHelperFactory.Create(new RequiredNullableDateTimeModel());
 
             // Act
             var result = DropDownListExtensions.DropDownListFor(htmlHelper, exampleModel => exampleModel.Date, true, new List<SelectListItem>());
 
             // Assert
-            Assert.AreEqual("<select " +
-                            "data-msg-date=\"The field Date must be a date.\" " +
-                            "data-rule-date=\"true\" " +
-                            "id=\"Date\" name=\"Date\"></select>", result.ToHtmlString());
+            Assert.AreEqual(HTMLRequiredDate, result.ToHtmlString());
         }
     }
 }

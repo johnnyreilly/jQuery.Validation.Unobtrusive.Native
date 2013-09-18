@@ -8,6 +8,13 @@ namespace jQuery.Validation.Unobtrusive.Native.MVC.UnitTests
     [TestClass]
     public class TextBoxExtensionsRequiredTests
     {
+        private const string HTMLRequiredDate = "<input " +
+                                                "data-msg-date=\"The field Date must be a date.\" " +
+                                                "data-msg-required=\"The Date field is required.\" " +
+                                                "data-rule-date=\"true\" " +
+                                                "data-rule-required=\"true\" " +
+                                                "id=\"Date\" name=\"Date\" type=\"text\" value=\"\" />";
+
         private class RequiredStringModel
         {
             [Required]
@@ -45,33 +52,26 @@ namespace jQuery.Validation.Unobtrusive.Native.MVC.UnitTests
             var result = TextBoxExtensions.TextBoxFor(htmlHelper, exampleModel => exampleModel.Date, true);
 
             // Assert
-            Assert.AreEqual("<input " +
-                            "data-msg-date=\"The field Date must be a date.\" " +
-                            "data-msg-required=\"The Date field is required.\" " +
-                            "data-rule-date=\"true\" " +
-                            "data-rule-required=\"true\" " +
-                            "id=\"Date\" name=\"Date\" type=\"text\" value=\"\" />", result.ToHtmlString());
+            Assert.AreEqual(HTMLRequiredDate, result.ToHtmlString());
         }
 
-        private class NullableDateTimeModel
+        private class RequiredNullableDateTimeModel
         {
+            [Required]
             public DateTime? Date { get; set; }
         }
 
         [TestMethod]
-        public void TextBoxFor_creates_date_data_attributes_for_nullable_DateTime()
+        public void TextBoxFor_creates_required_and_date_data_attributes_for_nullable_DateTime_with_Required_attribute()
         {
             // Arrange
-            var htmlHelper = HtmlHelperFactory.Create(new NullableDateTimeModel());
+            var htmlHelper = HtmlHelperFactory.Create(new RequiredNullableDateTimeModel());
 
             // Act
             var result = TextBoxExtensions.TextBoxFor(htmlHelper, exampleModel => exampleModel.Date, true);
 
             // Assert
-            Assert.AreEqual("<input " +
-                            "data-msg-date=\"The field Date must be a date.\" " +
-                            "data-rule-date=\"true\" " +
-                            "id=\"Date\" name=\"Date\" type=\"text\" value=\"\" />", result.ToHtmlString());
+            Assert.AreEqual(HTMLRequiredDate, result.ToHtmlString());
         }
     }
 }
