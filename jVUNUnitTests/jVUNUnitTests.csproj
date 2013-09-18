@@ -59,6 +59,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="DropDownListExtensionsRequiredTests.cs" />
     <Compile Include="TextBoxExtensionsCustomValidationTests.cs" />
     <Compile Include="TextBoxExtensionsRemoteTests.cs" />
     <Compile Include="TextBoxExtensionsEqualToTests.cs" />

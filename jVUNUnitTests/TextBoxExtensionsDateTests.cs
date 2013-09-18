@@ -7,7 +7,7 @@ namespace jQuery.Validation.Unobtrusive.Native.MVC.UnitTests
     [TestClass]
     public class TextBoxExtensionsDateTests
     {
-        public const string HTMLRequiredDate = "<input " +
+        private const string HTMLRequiredDate = "<input " +
                                                   "data-msg-date=\"The field Date must be a date.\" " +
                                                   "data-msg-required=\"The Date field is required.\" " +
                                                   "data-rule-date=\"true\" " +
