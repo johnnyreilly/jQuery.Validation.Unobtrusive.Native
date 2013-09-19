@@ -6,6 +6,8 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
     {
         public ViewResult Index()
         {
+            ViewBag.Title = "Welcome!";
+
             return View();
         }
 
