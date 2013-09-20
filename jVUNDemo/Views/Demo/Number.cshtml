@@ -1,5 +1,8 @@
 ﻿@using jQuery.Validation.Unobtrusive.Native.Demos.Models
 @model NumberModel
+@section metatags{
+    <meta name="Description" content="A demo of number validation.">
+}
 @section scripts
 {
     @Scripts.Render("~/bundles/jquery-validation")
@@ -15,7 +18,7 @@
 
 <h3>@ViewBag.Title</h3>
 
-<p>If a property is a <code>Short</code>, <code>Integer</code>, <code>Long</code>, <code>Byte</code>, <code>Decimal</code>, <code>Single</code> or <code>Double</code> then jQuery.Validate.Unobtrusive.Native applies the <a href="http://jqueryvalidation.org/number-method/" target="_blank">number</a> validation method in jQuery Validation.  This validation will also be applied for <code>Nullable</code>s of the same types.  Non-nullable numbers also have the <a href="http://jqueryvalidation.org/required-method/" target="_blank">required</a> validation method in jQuery Validation applied (as a non-nullable number in .NET has a <a href="http://msdn.microsoft.com/en-us/library/83fhsxwc(v=vs.110).aspx" target="_blank">default value</a>).</p>
+<p>If a property is a <code>Short</code>, <code>Integer</code>, <code>Long</code>, <code>Byte</code>, <code>Decimal</code>, <code>Single</code> or <code>Double</code> then jQuery Validation Unobtrusive Native applies the <a href="http://jqueryvalidation.org/number-method/" target="_blank">number</a> validation method in jQuery Validation.  This validation will also be applied for <code>Nullable</code>s of the same types.  Non-nullable numbers also have the <a href="http://jqueryvalidation.org/required-method/" target="_blank">required</a> validation method in jQuery Validation applied (as a non-nullable number in .NET has a <a href="http://msdn.microsoft.com/en-us/library/83fhsxwc(v=vs.110).aspx" target="_blank">default value</a>).</p>
 
 <ul class="nav nav-tabs" data-tabs="tabs">
     <li class="active"><a data-toggle="tab" href="#demo">Demo</a></li>

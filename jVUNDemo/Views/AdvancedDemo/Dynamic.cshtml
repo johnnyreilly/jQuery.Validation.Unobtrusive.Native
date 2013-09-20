@@ -1,5 +1,8 @@
 ﻿@using jQuery.Validation.Unobtrusive.Native.Demos.Models
 @model PersonModel
+@section metatags{
+    <meta name="Description" content="A demo of dynamically generated form elements being parsed and validated.">
+}
 @section scripts
 {
     @Scripts.Render("~/bundles/jquery-validation", "~/bundles/knockout")
