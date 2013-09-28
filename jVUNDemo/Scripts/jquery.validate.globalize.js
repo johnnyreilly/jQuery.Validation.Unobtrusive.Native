@@ -5,26 +5,18 @@
 
 (function ($, Globalize) {
 
+    // Clone original methods we want to call into
+    var originalMethods = {
+        min: $.validator.methods.min,
+        max: $.validator.methods.max,
+        range: $.validator.methods.range
+    };
+
     // Tell the validator that we want numbers parsed using Globalize
 
     $.validator.methods.number = function (value, element) {
         var val = Globalize.parseFloat(value);
         return this.optional(element) || ($.isNumeric(val));
-    };
-
-    $.validator.methods.min = function (value, element, param) {
-        var val = Globalize.parseFloat(value);
-        return this.optional(element) || val >= param;
-    };
-
-    $.validator.methods.max = function (value, element, param) {
-        var val = Globalize.parseFloat(value);
-        return this.optional(element) || val <= param;
-    };
-
-    $.validator.methods.range = function (value, element, param) {
-        var val = Globalize.parseFloat(value);
-        return this.optional(element) || (val >= param[0] && val <= param[1]);
     };
 
     // Tell the validator that we want dates parsed using Globalize
@@ -34,4 +26,22 @@
         return this.optional(element) || (val);
     };
 
-}( jQuery, Globalize ));
+    // Tell the validator that we want numbers parsed using Globalize, 
+    // then call into original implementation with parsed value
+
+    $.validator.methods.min = function (value, element, param) {
+        var val = Globalize.parseFloat(value);
+        return originalMethods.min.call(this, val, element, param);
+    };
+
+    $.validator.methods.max = function (value, element, param) {
+        var val = Globalize.parseFloat(value);
+        return originalMethods.max.call(this, val, element, param);
+    };
+
+    $.validator.methods.range = function (value, element, param) {
+        var val = Globalize.parseFloat(value);
+        return originalMethods.range.call(this, val, element, param);
+    };
+
+}(jQuery, Globalize));

@@ -32,21 +32,11 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
             return View();
         }
 
-        /*
-        public ActionResult BasicDemos()
+        public ViewResult NotFound()
         {
-            ViewBag.Title = "Basic Demos";
+            ViewBag.Title = "Page not found...";
 
-            return View(new ExampleModel
-            {
-                RequiredDateDemo = null,
-                StringLengthAndRequiredDemo = "abc",
-                RangeAndNumberDemo = 77,
-                DropDownRequiredDemo = null
-            });
+            return View();
         }
-         * */
-
-
     }
 }
