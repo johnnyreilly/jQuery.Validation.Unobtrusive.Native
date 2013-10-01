@@ -9,7 +9,7 @@ The principal of this was and is fantastic.  But since that time the jQuery Vali
 * jquery.validate.unobtrusive.js restricts how you use jQuery Validation.  Want to use showErrors etc?  Well you'll need to go native... 
 * Send less code to your browser, make your browser to do less work, get a performance benefit (though you'd probably have to be the Flash to actually notice the difference)
 
-This project intends to be a bridge between MVC's inbuilt support for driving validation from data attributes and jQuery Validation's native support for the same.  This is achieved by mapping the data attributes created by MVC over to the data attributes used by jQuery Validation.
+This project intends to be a bridge between MVC's inbuilt support for driving validation from data attributes and jQuery Validation's native support for the same.  This is achieved by hooking into the MVC data attribute creation mechanism and using it to generate the data attributes used by jQuery Validation.
 
 You can see more detail on the [demo site](http://jqueryvalidationunobtrusivenative.azurewebsites.net/).
 
@@ -54,7 +54,7 @@ Now you would put:
 
 The only differences above are the extra `true` parameters being passed.  If you had passed `false` instead jQuery.Validation.Unobtrusive.Native internally calls the inbuilt MVC implementation.  I have considered keeping jQuery.Validation.Unobtrusive.Native's HtmlHelpers entirely separate from the inbuilt MVC ones and instead implementing `TextBoxNativeFor` / `DropDownListNativeFor` methods which share the same signatures as the inbuilt MVC ones.  For now this is the way it is but it could change if people feel strongly enough - if you've an opinion then drop me a line with your rationale.
 
-By the way, the above examples (and others) can be found in the MVC demo project jVUNDemo on GitHub.
+By the way, the above examples (and others) can be found in the MVC demo project jVUNDemo on GitHub - this demo site be viewed at [jqueryvalidationunobtrusivenative.azurewebsites.net/](http://jqueryvalidationunobtrusivenative.azurewebsites.net/).
 
 ##Plans
 
