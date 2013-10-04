@@ -51,6 +51,11 @@
             </div>
 
             <div class="row">
+                @Html.LabelFor(x => x.Password, "A password must be entered:")
+                @Html.PasswordFor(x => x.Password, true)
+            </div>
+
+            <div class="row">
                 @Html.LabelFor(x => x.DropDownList, "An option must be selected:")
                 @Html.DropDownListFor(x => x.DropDownList, true, new List<SelectListItem> {
                     new SelectListItem{ Text = "Please select", Value = "" },

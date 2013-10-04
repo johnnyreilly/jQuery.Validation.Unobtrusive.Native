@@ -8,6 +8,9 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
         public string TextBox { get; set; }
 
         [Required]
+        public string Password { get; set; }
+
+        [Required]
         public string DropDownList { get; set; }
 
         [Required]

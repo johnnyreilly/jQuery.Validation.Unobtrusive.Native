@@ -82,6 +82,10 @@ MIT license - [http://www.opensource.org/licenses/mit-license.php](http://www.op
 
 ##Changelog
 
+###1.1.0.0 / 2013-10-04
+
+- Added support for PasswordFor, previously missing.
+
 ###1.0.0.0 / 2013-09-04
 
 - Fix to allow usage of EditorTemplates (thanks to @DavidCarroll for this)
