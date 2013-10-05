@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>jQuery Validation Unobtrusive Native - @ViewBag.Title</title>
+    <title>@if (ViewBag.Title != null) {<text>@ViewBag.Title - </text>}jQuery Validation Unobtrusive Native</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @RenderSection("metatags", required: false)
     @Styles.Render("~/Content/bootstrap/base", "~/Content/css")
