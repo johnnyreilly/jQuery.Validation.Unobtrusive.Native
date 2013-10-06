@@ -59,18 +59,20 @@
 <p>The only differences above are the extra <code>true</code> arguments being passed.  If you passed <code>false</code> instead jQuery Validation Unobtrusive Native would internally call the inbuilt MVC implementation.</p>
 
 <div class="alert alert-info">
-    <p>If you're a heavy user of the <code>htmlAttributes</code> parameter (and indeed others) available using the MVC HTML Helpers and you're worried that jQuery Validation Unobtrusive Native will stop you using it then <strong>fear not</strong>!  The same overloads should remain available to you as with the out-of-the-box HTML Helpers.  So doing something like this:</p>
+    <p>If you're a heavy user of the <code>htmlAttributes</code> parameter (and indeed others) available using the MVC HTML Helpers and you're worried that jQuery Validation Unobtrusive Native will stop you using it then <strong>fear not</strong>!  The same overloads remain available to you as with the out-of-the-box HTML Helpers.  jQuery Validation Unobtrusive Native adds new overloads to the existing helpers; it doesn't change the behaviour of existing helpers in any way.  So doing something like this:</p>
 
     <pre class="prettyprint cs">
 
-    @@Html.TextBoxFor(x => x.WeAreTextBox, htmlAttributes: new { @@class="css-class" })
+    @@Html.TextBoxFor(x => x.WeAreTextBox, 
+        htmlAttributes: new { @@class="my-css-class" })
     </pre>
     
-    <p>Is still completely possible. You'd just do this:</p>
+    <p>Is still completely possible.To move to using jQuery Validation Unobtrusive Native you'd just do this:</p>
 
     <pre class="prettyprint cs">
 
-    @@Html.TextBoxFor(x => x.WeAreTextBox, true, htmlAttributes: new { @@class="css-class" })
+    @@Html.TextBoxFor(x => x.WeAreTextBox, true, 
+        htmlAttributes: new { @@class="my-css-class" })
     </pre>
 </div>
 
