@@ -52,7 +52,7 @@ Now you would put:
         new SelectListItem{ Text = "An option", Value = "An option"}
     })
 
-The only differences above are the extra `true` parameters being passed.  If you had passed `false` instead jQuery.Validation.Unobtrusive.Native internally calls the inbuilt MVC implementation.  I have considered keeping jQuery.Validation.Unobtrusive.Native's HtmlHelpers entirely separate from the inbuilt MVC ones and instead implementing `TextBoxNativeFor` / `DropDownListNativeFor` methods which share the same signatures as the inbuilt MVC ones.  For now this is the way it is but it could change if people feel strongly enough - if you've an opinion then drop me a line with your rationale.
+The only differences above are the extra `true` parameters being passed.  If you had passed `false` instead jQuery.Validation.Unobtrusive.Native internally calls the inbuilt MVC implementation.  I have considered keeping jQuery.Validation.Unobtrusive.Native's HtmlHelpers entirely separate from the inbuilt MVC ones and instead implementing `TextBoxNativeFor` / `DropDownListNativeFor` / `CheckBoxFor` / `TextAreaFor` / `RadioButtonFor` / `ListBoxFor` / `PasswordFor` methods which share the same signatures as the inbuilt MVC ones.  For now this is the way it is but it could change if people feel strongly enough - if you've an opinion then drop me a line with your rationale.
 
 By the way, the above examples (and others) can be found in the MVC demo project jVUNDemo on GitHub - this demo site be viewed at [jqueryvalidationunobtrusivenative.azurewebsites.net/](http://jqueryvalidationunobtrusivenative.azurewebsites.net/).
 
