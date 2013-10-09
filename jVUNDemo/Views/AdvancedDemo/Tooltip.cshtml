@@ -57,7 +57,7 @@
         @using (Html.BeginForm())
         {
             <div class="row">
-                @Html.LabelFor(x => x.TextBox, "Something must be entered:")
+                @Html.LabelFor(x => x.TextBox, "A number must be entered:")
                 @Html.TextBoxFor(x => x.TextBox, true)
             </div>
 
@@ -107,7 +107,7 @@
     @@using (Html.BeginForm())
     {
         &lt;div class="row"&gt;
-            @@Html.LabelFor(x =&gt; x.TextBox, "Something must be entered:")
+            @@Html.LabelFor(x =&gt; x.TextBox, "A number must be entered:")
             @@Html.TextBoxFor(x =&gt; x.TextBox, true)
         &lt;/div&gt;
 
@@ -135,7 +135,7 @@
         <pre class="prettyprint html">
     &lt;form action="/Demo/Tooltip" method="post"&gt;
         &lt;div class="row"&gt;
-            &lt;label for="TextBox"&gt;Something must be entered:&lt;/label&gt;
+            &lt;label for="TextBox"&gt;A number must be entered:&lt;/label&gt;
             &lt;input data-msg-number="The field TextBox must be a number." 
                 data-msg-required="The TextBox field is required." 
                 data-rule-number="true" 
