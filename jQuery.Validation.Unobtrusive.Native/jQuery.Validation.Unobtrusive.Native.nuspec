@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package >
     <metadata>
-        <id>jQuery.Validation.Unobtrusive.Native.MVC4</id>
+        <id>jQuery.Validation.Unobtrusive.Native.MVC5</id>
         <version>$version$</version>
-        <title>jQuery.Validation.Unobtrusive.Native.MVC4</title>
+        <title>jQuery.Validation.Unobtrusive.Native.MVC5</title>
         <authors>$author$</authors>
         <owners>$author$</owners>
         <licenseUrl>http://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native/blob/master/LICENSE</licenseUrl>

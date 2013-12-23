@@ -26,7 +26,7 @@ namespace jQuery.Validation.Unobtrusive.Native.MVC.UnitTests
 
             // Assert
             Assert.AreEqual("<input "+
-                "data-msg-equalto=\"Fields do not match.\" "+
+                "data-msg-equalto=\"&#39;ConfirmField&#39; and &#39;MainField&#39; do not match.\" " +
                 "data-rule-equalto=\"#MainField\" "+
                 "id=\"ConfirmField\" name=\"ConfirmField\" type=\"text\" value=\"\" />", result.ToHtmlString());
         }
