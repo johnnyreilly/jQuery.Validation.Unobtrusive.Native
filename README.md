@@ -61,7 +61,7 @@ By the way, the above examples (and others) can be found in the MVC demo project
 So far the basic set of the HtmlHelpers and their associated unobtrusive mappings have been implemented.  If any have been missed then let me know.  As time goes by I intend to:
 
 * fill in any missing gaps there may be
-* maintain both MVC 3, 4 (and when the time comes 5+) versions of this on Nuget
+* maintain both MVC 3, 4, 5 (and when / if the time comes 6+) versions of this on Nuget
 * get the unit test coverage to a good level and (most importantly)
 * create some really useful demos and documentation.
 
