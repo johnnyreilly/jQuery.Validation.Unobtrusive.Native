@@ -14,7 +14,7 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.CustomAttributes
                 ErrorMessage = ErrorMessage,
                 ValidationType = "notequalto"
             };
-            rule.ValidationParameters["other"] = "#" + OtherProperty;
+            rule.ValidationParameters["other"] = "#" + OtherProperty; // CSS Selector (won't work if applied to nested properties on a viewmodel)
             yield return rule;
         }
 
@@ -35,15 +35,17 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.CustomAttributes
                         CultureInfo.CurrentCulture,
                         "{0} is unknown property",
                         OtherProperty
-                    )
+                    ), new [] { validationContext.MemberName }
                 );
             }
             var otherValue = property.GetValue(validationContext.ObjectInstance, null);
-            if (object.Equals(value, otherValue))
+            if (value == otherValue)
             {
-                return new ValidationResult(FormatErrorMessage(validationContext.DisplayName));
+                return new ValidationResult(
+                    FormatErrorMessage(validationContext.DisplayName), 
+                    new [] { validationContext.MemberName });
             }
-            return null;
+            return ValidationResult.Success;
         }
     }
 }
