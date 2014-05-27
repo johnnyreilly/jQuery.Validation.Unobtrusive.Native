@@ -82,6 +82,10 @@ MIT license - [http://www.opensource.org/licenses/mit-license.php](http://www.op
 
 ##Changelog
 
+###1.1.1 / 2014-05-27
+
+- [Bugfix for CheckBoxFor.](https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native/issues/9)
+
 ###1.1.0.0 / 2013-10-04
 
 - Added support for PasswordFor, previously missing.
