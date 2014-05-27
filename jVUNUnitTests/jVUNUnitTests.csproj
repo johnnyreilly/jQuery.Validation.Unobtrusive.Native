@@ -74,6 +74,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="PasswordExtensionsRequiredTests.cs" />
+    <Compile Include="CheckBoxExtensionsRequiredTests.cs" />
     <Compile Include="RadioButtonExtensionsRequiredTests.cs" />
     <Compile Include="TextAreaExtensionsRequiredTests.cs" />
     <Compile Include="ListBoxExtensionsRequiredTests.cs" />

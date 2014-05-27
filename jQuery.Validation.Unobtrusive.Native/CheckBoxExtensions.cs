@@ -29,10 +29,9 @@ namespace System.Web.Mvc
             
             var metadata = ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData);
             var attributes = Mapper.GetUnobtrusiveValidationAttributes(htmlHelper, expression, htmlAttributes, metadata);
-            var value = (bool)ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData).Model;
 
             var checkBox = Mapper.GenerateHtmlWithoutMvcUnobtrusiveAttributes(() =>
-                htmlHelper.CheckBoxFor(expression, value, attributes));
+                htmlHelper.CheckBoxFor(expression, attributes));
 
             return checkBox;
         }
