@@ -1,4 +1,4 @@
-jQuery Validation Unobtrusive Native [![Build Status](https://ci.appveyor.com/api/projects/status/github/johnnyreilly/jQuery.Validation.Unobtrusive.Native?retina=true)](https://ci.appveyor.com/project/JohnReilly/jQuery.Validation.Unobtrusive.Native)
+jQuery Validation Unobtrusive Native [![Build Status](https://ci.appveyor.com/api/projects/status/github/johnnyreilly/jQuery.Validation.Unobtrusive.Native?retina=true)](https://ci.appveyor.com/project/JohnReilly/jquery-validation-unobtrusive-native)
 ====================================
 
 jQuery.Validation.Unobtrusive.Native is a collection of ASP.Net MVC HTML helper extensions that make use of jQuery Validation's native unobtrusive support for validation driven by HTML 5 data attributes.  Microsoft shipped [jquery.validate.unobtrusive.js](http://bradwilson.typepad.com/blog/2010/10/mvc3-unobtrusive-validation.html) back with MVC 3.  It provided a way to apply data model validations to the client side using a combination of jQuery Validation and HTML 5 data attributes (that's the "unobtrusive" part).
