@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Custom Validation Demo - jQuery Validation Unobtrusive Native</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="Description" content="A demo of custom validation.">
+
+    <link href="../bundles/css@v=hy9I5n5ugoPS58kUp6jxdm3ZXgusJT9HrZrJMuDBoCs1" rel="stylesheet"/>
+
+    <link href="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    
+    <script src="../bundles/modernizr@v=dUz_C7QKTmbjqpHGnN4fhYIhS-YQnnG5Pqseul2b8PQ1"></script>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">jVUN</a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="../Home/GettingStarted.html">Getting Started</a></li>
+                    <li><a href="http://blog.icanmakethiswork.io/2013/10/migrating-from-jquery.validate.unobtrusive.js-to-jQuery.Validation.Unobtrusive.Native.html" target="_blank">Migrating</a></li>
+                    <li><a href="../Home/Download.html">Download</a></li>
+                    <li class="dropdown">
+                        <a href="CustomValidation.html#" class="dropdown-toggle" data-toggle="dropdown">Demos <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../Demo.html">Overview</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Type Validations</li>
+<li><a href="../Demo/Number.html">Number</a></li>
+<li><a href="../Demo/Date.html">Date</a></li>
+<li class="dropdown-header">Attribute Validations</li>
+<li><a href="../Demo/Required.html">Required</a></li>
+<li><a href="../Demo/Range.html">Range</a></li>
+<li><a href="../Demo/MaxLengthMinLength.html">MaxLength / MinLength</a></li>
+<li><a href="../Demo/EqualTo.html">EqualTo</a></li>
+<li><a href="../Demo/Url.html">URL</a></li>
+<li><a href="../Demo/Email.html">Email</a></li>
+<li><a href="../Demo/CreditCard.html">CreditCard</a></li>
+<li><a href="../Demo/Remote.html">Remote</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="CustomValidation.html#" class="dropdown-toggle" data-toggle="dropdown">Advanced Demos <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../AdvancedDemo.html">Overview</a></li>
+                            <li class="divider"></li>
+                            <li><a href="Dynamic.html">Dynamic (Knockout)</a></li>
+<li class="active"><a href="CustomValidation.html">Custom Validation</a></li>
+<li class="dropdown-header">Miscellaneous Demos</li>
+<li><a href="Tooltip.html">Tooltip</a></li>
+<li><a href="Globalize.html">Globalize</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="main" class="container">
+
+        
+<h3>Custom Validation Demo</h3>
+
+<p>It is also possible to extend jQuery Validation with custom attributes.  There's a good <code>notequalto</code> example of how this is done using jquery.validate.unobtrusive.js on <a href="http://stackoverflow.com/a/5742494" target="_blank">Stack Overflow</a>. For this demo I'm planning to demonstrate how the same validation would be implemented using jQuery Validation Unobtrusive Native.</p>
+
+<p>Credit and thanks to <a href="http://stackoverflow.com/users/29407/darin-dimitrov" target="_blank">Darin Dimitrov</a> for his original example and thanks to the Stack Overflow folks for <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" target="_blank">letting me share this</a>.</p>
+
+<ul class="nav nav-tabs" data-tabs="tabs">
+    <li class="active"><a data-toggle="tab" href="CustomValidation.html#demo">Demo</a></li>
+    <li><a data-toggle="tab" href="CustomValidation.html#customattribute">Custom Attribute</a></li>
+    <li><a data-toggle="tab" href="CustomValidation.html#model">Model</a></li>
+    <li><a data-toggle="tab" href="CustomValidation.html#view">View</a></li>
+    <li><a data-toggle="tab" href="CustomValidation.html#html">HTML</a></li>
+    <li><a data-toggle="tab" href="CustomValidation.html#javascript">JavaScript</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active" id="demo">
+        
+<form action="CustomValidation.html" method="post">            <div class="row">
+                <label for="Property">Put something here:</label>
+                <input data-msg-required="The Property field is required." data-rule-required="true" id="Property" name="Property" type="text" value="" />
+            </div>
+            <div class="row">
+                <label for="DifferentProperty">Put something different here:</label>
+                <input data-msg-notequalto="These fields cannot match" data-msg-required="The DifferentProperty field is required." data-rule-notequalto="{&quot;other&quot;:&quot;#Property&quot;}" data-rule-required="true" id="DifferentProperty" name="DifferentProperty" type="text" value="" />
+            </div>
+            <div class="row">
+                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="reset" class="btn btn-info">Reset</button>
+            </div>
+</form>
+    </div>
+    
+    <div class="tab-pane" id="customattribute">
+        
+        <p>This is the <code>NotEqualToAttribute</code> class.  As you can see this implements the <code>IClientValidatable</code> interface which amounts to just the <code>GetClientValidationRules</code> method.  And it is this method, and this method alone, that is relevant for jQuery Validation Unobtrusive Native just as it is for jquery.validate.unobtrusive.js.</p>
+        
+        <p>To go to a granualar level you can map each property of the <code>ModelClientValidationRule</code> to jQuery Validation as follows:</p>
+        
+        <ul>
+            <li><code>ValidationType</code> is the jQuery Validation method or rule name.  The value that this is set to will lead to the naming of data attributes like (in this example) <code>data-rule-notequalto</code> and <code>data-msg-notequalto</code>.  And it's the equivalent <code>notequalto</code> method that we'll need to add to jQuery Validation to get our client side implementation working.</li>
+            <li><code>ErrorMessage</code> is used to create the content of the (again, in this example) <code>data-msg-notequalto</code> attribute.  This is the custom error message for this validation.</li>
+            <li>The <code>ValidationParameters</code> Dictionary ends up being passed through to the <code>params</code> parameter in our client side implementation as a JavaScript Object Literal (through the magic of JSON).  You can see how this is used in the JavaScript.</li>
+        </ul>
+
+        <pre class="prettyprint cs">
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.Globalization;
+    using System.Web.Mvc;
+
+    namespace jQuery.Validation.Unobtrusive.Native.Demos.CustomAttributes
+    {
+        public class NotEqualToAttribute : ValidationAttribute, IClientValidatable
+        {
+            public IEnumerable&lt;ModelClientValidationRule&gt; GetClientValidationRules(ModelMetadata metadata, ControllerContext context)
+            {
+                var rule = new ModelClientValidationRule
+                {
+                    ErrorMessage = ErrorMessage,
+                    ValidationType = "notequalto"
+                };
+                rule.ValidationParameters["other"] = "#" + OtherProperty; // CSS Selector (won't work if applied to nested properties on a viewmodel)
+                yield return rule;
+            }
+
+            public string OtherProperty { get; private set; }
+
+            public NotEqualToAttribute(string otherProperty)
+            {
+                OtherProperty = otherProperty;
+            }
+
+            protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+            {
+                var property = validationContext.ObjectType.GetProperty(OtherProperty);
+                if (property == null)
+                {
+                    return new ValidationResult(
+                        string.Format(
+                            CultureInfo.CurrentCulture,
+                            "{0} is unknown property",
+                            OtherProperty
+                        ), new [] { validationContext.MemberName }
+                    );
+                }
+                var otherValue = property.GetValue(validationContext.ObjectInstance, null);
+                if (value == otherValue)
+                {
+                    return new ValidationResult(
+                        FormatErrorMessage(validationContext.DisplayName), 
+                        new [] { validationContext.MemberName });
+                }
+                return ValidationResult.Success;
+            }
+        }
+    }
+        </pre>
+    </div>
+
+    <div class="tab-pane" id="model">
+        
+        <p>Here's the model, note that the custom <code>NotEqualTo</code> attribute decorates the <code>DifferentProperty</code> property on the model:</p>
+
+        <pre class="prettyprint cs">
+    using System.ComponentModel.DataAnnotations;
+
+    namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
+    {
+        public class CustomValidationModel
+        {
+            [Required]
+            public string Property { get; set; }
+
+            [Required,
+             NotEqualTo("Property", ErrorMessage = "These fields cannot match")]
+            public string DifferentProperty { get; set; }
+        }
+    }
+        </pre>
+    </div>
+
+    <div class="tab-pane" id="view">
+        
+        <p>Here's the view (which uses the model):</p>
+
+        <pre class="prettyprint cs">
+    @model jQuery.Validation.Unobtrusive.Native.Demos.Models.CustomValidationModel
+    @using (Html.BeginForm())
+    {
+        &lt;div class="row"&gt;
+            @Html.LabelFor(x =&gt; x.Property, "Put something here:")
+            @Html.TextBoxFor(x =&gt; x.Property, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            @Html.LabelFor(x =&gt; x.DifferentProperty, "Put something different here:")
+            @Html.TextBoxFor(x =&gt; x.DifferentProperty, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
+        &lt;/div&gt;
+    }
+        </pre>
+
+    </div>
+
+    <div class="tab-pane" id="html">
+        
+        <p>Here's the HTML that the view generates.   If you look closely at the <code>data-rule-notequalto</code> attribute you can see the JSON hiding in plain sight in the form of many a <code>&amp;quot;</code> standing in for a <code>&quot;</code>. Here's the more human readable version: <code>{&quot;other&quot;:&quot;#Property&quot;}</code>.  And you can see that this single object represents the serialization of the <code>ValidationParameters</code> Dictionary on the attribute; an object with a single property.</p>
+
+        <pre class="prettyprint html">
+    &lt;form action="/Demo/CustomValidation" method="post"&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="Property"&gt;Put something here:&lt;/label&gt;
+            &lt;input data-msg-required="The Property field is required." 
+                data-rule-required="true" 
+                id="Property" name="Property" type="text" value="" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="DifferentProperty"&gt;Put something different here:&lt;/label&gt;
+            &lt;input data-msg-notequalto="These fields cannot match" 
+                data-msg-required="The DifferentProperty field is required." 
+                data-rule-notequalto="{&amp;quot;other&amp;quot;:&amp;quot;#Property&amp;quot;}" 
+                data-rule-required="true" 
+                id="DifferentProperty" name="DifferentProperty" type="text" value="" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+        </pre>
+    </div>
+    
+    <div class="tab-pane" id="javascript">
+        
+        <p>Here's the JavaScript that adds our custom rule / method and initialises the validation.</p>
+        
+        <p>The name of the custom rule / method is the same as the <code>ValidationType</code> specified on the attribute, ie <code>"notequalto"</code>. The <code>"These shouldn't equal"</code> string is the default error message that will be displayed if an <code>ErrorMessage</code> wasn't specified when the attribute was being applied.  And if you look at the <code>params</code> parameter you can see this is the client side equivalent of our <code>ValidationParameters</code> Dictionary on the attribute.  As you can see, we use the <code>params.other</code> property to look up our comparison element. </p>
+
+        <pre class="prettyprint js">
+  // Add our custom rule / method
+  jQuery.validator.addMethod("notequalto", function (value, element, params) {
+      return this.optional(element) || value !== $(params.other).val();
+  }, "These shouldn't equal");
+
+  $("form").validate({
+      submitHandler: function (form) {
+          alert("This is a valid form!");
+      }
+  });
+        </pre>
+
+    </div>
+
+</div>
+
+
+
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <p class="muted">
+                &#169; 2013 <a href="http://blog.icanmakethiswork.io" target="_blank">John Reilly</a>
+                · <a href="mailto:johnny_reilly@hotmail.com">Contact</a>
+                · <a href="../Home/License.html">License</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="../bundles/jquery@v=6mzb0ZqMuNYyRyraMphRsI-Pkxxu9zBO1Chyn1R5Dbo1"></script>
+<script src="../bundles/bootstrap@v=Be_tdE20qd9VsyWojY-2WqevI35808dBXSTNG9iF1n41"></script>
+
+    
+    <script src="../bundles/jquery-validation@v=3Ju00S74HCXaarMLyn_6GGgbuS4Ulygwx8xc_cmCn3o1"></script>
+
+    <script>
+        // Add our custom rule / method
+        jQuery.validator.addMethod("notequalto", function (value, element, params) {
+            return this.optional(element) || value !== $(params.other).val();
+        }, "These shouldn't equal");
+
+        $("form").validate({
+            submitHandler: function (form) {
+                alert("This is a valid form!");
+            }
+        });
+
+    </script>
+
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Range - jQuery Validation Unobtrusive Native</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="Description" content="A demo of range validation.">
+
+    <link href="../bundles/css@v=hy9I5n5ugoPS58kUp6jxdm3ZXgusJT9HrZrJMuDBoCs1" rel="stylesheet"/>
+
+    <link href="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    
+    <script src="../bundles/modernizr@v=dUz_C7QKTmbjqpHGnN4fhYIhS-YQnnG5Pqseul2b8PQ1"></script>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">jVUN</a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="../Home/GettingStarted.html">Getting Started</a></li>
+                    <li><a href="http://blog.icanmakethiswork.io/2013/10/migrating-from-jquery.validate.unobtrusive.js-to-jQuery.Validation.Unobtrusive.Native.html" target="_blank">Migrating</a></li>
+                    <li><a href="../Home/Download.html">Download</a></li>
+                    <li class="dropdown">
+                        <a href="Range.html#" class="dropdown-toggle" data-toggle="dropdown">Demos <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../Demo.html">Overview</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Type Validations</li>
+<li><a href="Number.html">Number</a></li>
+<li><a href="Date.html">Date</a></li>
+<li class="dropdown-header">Attribute Validations</li>
+<li><a href="Required.html">Required</a></li>
+<li class="active"><a href="Range.html">Range</a></li>
+<li><a href="MaxLengthMinLength.html">MaxLength / MinLength</a></li>
+<li><a href="EqualTo.html">EqualTo</a></li>
+<li><a href="Url.html">URL</a></li>
+<li><a href="Email.html">Email</a></li>
+<li><a href="CreditCard.html">CreditCard</a></li>
+<li><a href="Remote.html">Remote</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="Range.html#" class="dropdown-toggle" data-toggle="dropdown">Advanced Demos <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../AdvancedDemo.html">Overview</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../AdvancedDemo/Dynamic.html">Dynamic (Knockout)</a></li>
+<li><a href="../AdvancedDemo/CustomValidation.html">Custom Validation</a></li>
+<li class="dropdown-header">Miscellaneous Demos</li>
+<li><a href="../AdvancedDemo/Tooltip.html">Tooltip</a></li>
+<li><a href="../AdvancedDemo/Globalize.html">Globalize</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="main" class="container">
+
+        
+<h3>Range</h3>
+
+<p>The <a href="http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.rangeattribute.aspx" target="_blank">System.ComponentModel.DataAnnotations.RangeAttribute</a> maps to the <a href="http://jqueryvalidation.org/range-method/" target="_blank">range</a> validation method in jQuery Validation.</p>
+
+<ul class="nav nav-tabs" data-tabs="tabs">
+    <li class="active"><a data-toggle="tab" href="Range.html#demo">Demo</a></li>
+    <li><a data-toggle="tab" href="Range.html#model">Model</a></li>
+    <li><a data-toggle="tab" href="Range.html#view">View</a></li>
+    <li><a data-toggle="tab" href="Range.html#html">HTML</a></li>
+    <li><a data-toggle="tab" href="Range.html#javascript">JavaScript</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active" id="demo">
+<form action="Range.html" method="post">            <div class="row">
+                <label for="Short">Short - a number between 10 and 20 must be entered:</label>
+                <input data-msg-number="The field Short must be a number." data-msg-range="The field Short must be between 10 and 20." data-msg-required="The Short field is required." data-rule-number="true" data-rule-range="[10,20]" data-rule-required="true" id="Short" name="Short" type="text" value="0" />
+            </div>
+            <div class="row">
+                <label for="Integer">Integer - a number between 10 and 20 must be entered:</label>
+                <input data-msg-number="The field Integer must be a number." data-msg-range="The field Integer must be between 10 and 20." data-msg-required="The Integer field is required." data-rule-number="true" data-rule-range="[10,20]" data-rule-required="true" id="Integer" name="Integer" type="text" value="0" />
+            </div>
+            <div class="row">
+                <label for="Long">Long - a number between 10 and 20 must be entered:</label>
+                <input data-msg-number="The field Long must be a number." data-msg-range="The field Long must be between 10 and 20." data-msg-required="The Long field is required." data-rule-number="true" data-rule-range="[10,20]" data-rule-required="true" id="Long" name="Long" type="text" value="0" />
+            </div>
+            <div class="row">
+                <label for="Byte">Byte - a number between 10 and 20 must be entered:</label>
+                <input data-msg-number="The field Byte must be a number." data-msg-range="The field Byte must be between 10 and 20." data-msg-required="The Byte field is required." data-rule-number="true" data-rule-range="[10,20]" data-rule-required="true" id="Byte" name="Byte" type="text" value="0" />
+            </div>
+            <div class="row">
+                <label for="Decimal">Decimal - a number between 10 and 20 must be entered:</label>
+                <input data-msg-number="The field Decimal must be a number." data-msg-range="The field Decimal must be between 10 and 20." data-msg-required="The Decimal field is required." data-rule-number="true" data-rule-range="[10,20]" data-rule-required="true" id="Decimal" name="Decimal" type="text" value="0" />
+            </div>
+            <div class="row">
+                <label for="Single">Single - a number between 10 and 20 must be entered:</label>
+                <input data-msg-number="The field Single must be a number." data-msg-range="The field Single must be between 10 and 20." data-msg-required="The Single field is required." data-rule-number="true" data-rule-range="[10,20]" data-rule-required="true" id="Single" name="Single" type="text" value="0" />
+            </div>
+            <div class="row">
+                <label for="Double">Double - a number between 10 and 20 must be entered:</label>
+                <input data-msg-number="The field Double must be a number." data-msg-range="The field Double must be between 10 and 20." data-msg-required="The Double field is required." data-rule-number="true" data-rule-range="[10,20]" data-rule-required="true" id="Double" name="Double" type="text" value="0" />
+            </div>
+            <div class="row">
+                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="reset" class="btn btn-info">Reset</button>
+            </div>
+</form>
+    </div>
+
+    <div class="tab-pane" id="model">
+        
+        <p>Here's the model, note that the <code>Range</code> attribute decorates each property of the model enforcing a range of between 10 and 20 (we've used the integer and double convenience overloads for Integer and Double respectively, for other types we're using the overload that takes the type as a parameter):</p>
+
+        <pre class="prettyprint cs">
+    using System.ComponentModel.DataAnnotations;
+
+    namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
+    {
+        public class RangeModel
+        {
+            [Range(typeof(short), "10", "20")]
+            public short Short { get; set; }
+            [Range(10, 20)]
+            public int Integer { get; set; }
+            [Range(typeof(long), "10", "20")]
+            public long Long { get; set; }
+            [Range(typeof(byte), "10", "20")]
+            public byte Byte { get; set; }
+            [Range(typeof(decimal), "10", "20")]
+            public decimal Decimal { get; set; }
+            [Range(typeof(float), "10", "20")]
+            public float Single { get; set; }
+            [Range(10D, 20D)]
+            public double Double { get; set; }
+        }
+    }
+        </pre>
+    </div>
+
+    <div class="tab-pane" id="view">
+        
+        <p>Here's the view (which uses the model):</p>
+
+        <pre class="prettyprint cs">
+    @model jQuery.Validation.Unobtrusive.Native.Demos.Models.RangeModel
+    @using (Html.BeginForm())
+    {
+        &lt;div class="row"&gt;
+            @Html.LabelFor(x =&gt; x.Short, "Short - a number between 10 and 20 must be entered:")
+            @Html.TextBoxFor(x =&gt; x.Short, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            @Html.LabelFor(x =&gt; x.Integer, "Integer - a number between 10 and 20 must be entered:")
+            @Html.TextBoxFor(x =&gt; x.Integer, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            @Html.LabelFor(x =&gt; x.Long, "Long - a number between 10 and 20 must be entered:")
+            @Html.TextBoxFor(x =&gt; x.Long, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            @Html.LabelFor(x =&gt; x.Byte, "Byte - a number between 10 and 20 must be entered:")
+            @Html.TextBoxFor(x =&gt; x.Byte, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            @Html.LabelFor(x =&gt; x.Decimal, "Decimal - a number between 10 and 20 must be entered:")
+            @Html.TextBoxFor(x =&gt; x.Decimal, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            @Html.LabelFor(x =&gt; x.Single, "Single - a number between 10 and 20 must be entered:")
+            @Html.TextBoxFor(x =&gt; x.Single, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            @Html.LabelFor(x =&gt; x.Double, "Double - a number between 10 and 20 must be entered:")
+            @Html.TextBoxFor(x =&gt; x.Double, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
+        &lt;/div&gt;
+    }
+        </pre>
+
+    </div>
+
+    <div class="tab-pane" id="html">
+        
+        <p>Here's the HTML that the view generates:</p>
+
+        <pre class="prettyprint html">
+    &lt;form action="/Demo/Range" method="post"&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="Short"&gt;Short - a number between 10 and 20 must be entered:&lt;/label&gt;
+            &lt;input data-msg-number="The field Short must be a number." 
+                data-msg-range="The field Short must be between 10 and 20." 
+                data-msg-required="The Short field is required." 
+                data-rule-number="true" 
+                data-rule-range="[10,20]" 
+                data-rule-required="true" 
+                id="Short" name="Short" type="text" value="0" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="Integer"&gt;Integer - a number between 10 and 20 must be entered:&lt;/label&gt;
+            &lt;input data-msg-number="The field Integer must be a number." 
+                data-msg-range="The field Integer must be between 10 and 20." 
+                data-msg-required="The Integer field is required." 
+                data-rule-number="true" 
+                data-rule-range="[10,20]" 
+                data-rule-required="true" 
+                id="Integer" name="Integer" type="text" value="0" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="Long"&gt;Long - a number between 10 and 20 must be entered:&lt;/label&gt;
+            &lt;input data-msg-number="The field Long must be a number." 
+                data-msg-range="The field Long must be between 10 and 20." 
+                data-msg-required="The Long field is required." 
+                data-rule-number="true" 
+                data-rule-range="[10,20]" 
+                data-rule-required="true" 
+                id="Long" name="Long" type="text" value="0" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="Byte"&gt;Byte - a number between 10 and 20 must be entered:&lt;/label&gt;
+            &lt;input data-msg-number="The field Byte must be a number." 
+                data-msg-range="The field Byte must be between 10 and 20." 
+                data-msg-required="The Byte field is required." 
+                data-rule-number="true" 
+                data-rule-range="[10,20]" 
+                data-rule-required="true" 
+                id="Byte" name="Byte" type="text" value="0" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="Decimal"&gt;Decimal - a number between 10 and 20 must be entered:&lt;/label&gt;
+            &lt;input data-msg-number="The field Decimal must be a number." 
+                data-msg-range="The field Decimal must be between 10 and 20." 
+                data-msg-required="The Decimal field is required." 
+                data-rule-number="true" 
+                data-rule-range="[10,20]" 
+                data-rule-required="true" 
+                id="Decimal" name="Decimal" type="text" value="0" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="Single"&gt;Single - a number between 10 and 20 must be entered:&lt;/label&gt;
+            &lt;input data-msg-number="The field Single must be a number." 
+                data-msg-range="The field Single must be between 10 and 20." 
+                data-msg-required="The Single field is required." 
+                data-rule-number="true" 
+                data-rule-range="[10,20]" 
+                data-rule-required="true" 
+                id="Single" name="Single" type="text" value="0" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="Double"&gt;Double - a number between 10 and 20 must be entered:&lt;/label&gt;
+            &lt;input data-msg-number="The field Double must be a number." 
+                data-msg-range="The field Double must be between 10 and 20." 
+                data-msg-required="The Double field is required." 
+                data-rule-number="true" 
+                data-rule-range="[10,20]" 
+                data-rule-required="true" 
+                id="Double" name="Double" type="text" value="0" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+        </pre>
+    </div>
+    
+    <div class="tab-pane" id="javascript">
+        
+        <p>Here's the JavaScript that initialises the validation:</p>
+
+        <pre class="prettyprint js">
+  $("form").validate({
+      submitHandler: function (form) {
+          alert("This is a valid form!");
+      }
+  });
+        </pre>
+
+    </div>
+
+</div>
+
+
+
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <p class="muted">
+                &#169; 2013 <a href="http://blog.icanmakethiswork.io" target="_blank">John Reilly</a>
+                · <a href="mailto:johnny_reilly@hotmail.com">Contact</a>
+                · <a href="../Home/License.html">License</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="../bundles/jquery@v=6mzb0ZqMuNYyRyraMphRsI-Pkxxu9zBO1Chyn1R5Dbo1"></script>
+<script src="../bundles/bootstrap@v=Be_tdE20qd9VsyWojY-2WqevI35808dBXSTNG9iF1n41"></script>
+
+    
+    <script src="../bundles/jquery-validation@v=3Ju00S74HCXaarMLyn_6GGgbuS4Ulygwx8xc_cmCn3o1"></script>
+
+    <script>
+        $("form").validate({
+            submitHandler: function (form) {
+                alert("This is a valid form!");
+            }
+        });
+
+    </script>
+
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+</body>
+</html>
