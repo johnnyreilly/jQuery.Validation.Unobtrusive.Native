@@ -15,6 +15,19 @@ Then spin up your website and enter this at the command line:
 
 ```
 wget.exe --recursive --convert-links -E --directory-prefix=static-site --no-host-directories http://localhost:57612/
+
+# Switch to gh-pages branch and remove contents of directory
+cd C:\GitHub\jQuery.Validation.Unobtrusive.Native 
+
+git checkout gh-pages
+Get-ChildItem -Attributes !r | Remove-Item -Recurse -Force
+
+# Copy contents of C:\GitHub\static-site to C:\GitHub\jQuery.Validation.Unobtrusive.Native
+copy-item -path C:\GitHub\static-site\* -Destination C:\GitHub\jQuery.Validation.Unobtrusive.Native -Recurse
+
+# Commit and push
+git commit -a -m "Changes to docs"
+git push
 ```
 
 This will create a static version of the website in a directory called "static-site". The contents of this directory should be pushed to the [gh-pages branch](https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native/tree/gh-pages) where it will be served up at [johnnyreilly.github.io/jQuery.Validation.Unobtrusive.Native/](http://johnnyreilly.github.io/jQuery.Validation.Unobtrusive.Native/).
