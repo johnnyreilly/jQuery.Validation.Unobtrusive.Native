@@ -9,7 +9,7 @@
 
     <link href="../Content/site.css" rel="stylesheet"/>
 
-    <link href="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.css" rel="stylesheet" />
+    <link href="https://google-code-prettify.googlecode.com/svn/loader/prettify.css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     
     <script src="../Scripts/modernizr-2.7.1.js"></script>
@@ -85,6 +85,11 @@
 <p>To find more information about this then you could have a read of my <a href="http://blog.icanmakethiswork.io/2012/09/globalize-and-jquery-validate.html" target="_blank">blogpost</a> or look at the project on <a href="https://github.com/johnnyreilly/jquery-validation-globalize" target="_blank">GitHub</a>.  This library replaces the jQuery Validation date and number validation with an implementation that depends on <a href="http://github.com/jquery/globalize" target="_blank">Globalize</a>.</p>
 
 <p>Take a look at the demo below, customised for the <strong>en-GB</strong> culture - that's right, *<strong>your</strong>* culture (or at least what ASP.Net thinks your culture ought to be).  If you switch your browser to say, <strong>de-DE</strong> and reload this page then you'll see the app has switched to the closest Globalize appropriate culture it can find.</p>
+
+<div class="alert alert-danger alert-block" style="display: none;" id="warning">
+    <h4>This demo is fixed to the current culture</h4>
+    <p>Hey people - it looks like you're viewing a static version of this page.  (GitHub pages is all about the static content you see.)  If you want to switch cultures as suggested above then try running the jVUNDemo project locally.  Then it's all goodness I promise.</p>
+</div>
 
 <ul class="nav nav-tabs" data-tabs="tabs">
     <li class="active"><a data-toggle="tab" href="Globalize.html#demo">Demo</a></li>
@@ -313,6 +318,10 @@
             }
         });
 
+        // Show warning if this is a static page
+        if (window.location.href.toLowerCase().indexOf("globalize.html") !== -1) {
+            $("#warning").slideDown();
+        }
     </script>
 
     <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>

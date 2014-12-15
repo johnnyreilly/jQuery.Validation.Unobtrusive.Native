@@ -9,7 +9,7 @@
 
     <link href="../Content/site.css" rel="stylesheet"/>
 
-    <link href="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.css" rel="stylesheet" />
+    <link href="https://google-code-prettify.googlecode.com/svn/loader/prettify.css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     
     <script src="../Scripts/modernizr-2.7.1.js"></script>
@@ -76,6 +76,11 @@
 <h3>Remote</h3>
 
 <p>The <a href="http://msdn.microsoft.com/en-us/library/system.web.mvc.remoteattribute.aspx" target="_blank">System.Web.Mvc.RemoteAttribute</a> maps to the <a href="http://jqueryvalidation.org/remote-method/" target="_blank">remote</a> validation method in jQuery Validation.</p>
+
+<div class="alert alert-danger alert-block" style="display: none;" id="warning">
+    <h4>This demo won't work when viewed as a static site</h4>
+    <p>Hey people - it looks like you're viewing a static version of this page.  (GitHub pages is all about the static content you see.)  Because there's no server for this page to talk to the demo won't work.  To see a working version in all it's glory then try running the jVUNDemo project locally.  Then it's all goodness I promise.</p>
+</div>
 
 <ul class="nav nav-tabs" data-tabs="tabs">
     <li class="active"><a data-toggle="tab" href="Remote.html#demo">Demo</a></li>
@@ -249,11 +254,15 @@
 
     <script>
         $("form").validate({
-            submitHandler: function (form) {
+            submitHandler: function(form) {
                 alert("This is a valid form!");
             }
         });
 
+        // Show warning if this is a static page
+        if (window.location.href.toLowerCase().indexOf("remote.html") !== -1) {
+            $("#warning").slideDown();
+        }
     </script>
 
     <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
