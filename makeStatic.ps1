@@ -25,7 +25,6 @@ if (Test-Path $staticSite) {
 
 write-host "Create static version of demo site here: $($staticSite)"
 Push-Location $staticSiteParent
-wget.exe --recursive --convert-links -E --directory-prefix=static-site --no-host-directories http://johnnyreilly.github.io/jQuery.Validation.Unobtrusive.Native/
 wget.exe --recursive --convert-links -E --directory-prefix=static-site --no-host-directories http://localhost:57612/
 Pop-Location
 
