@@ -11,7 +11,9 @@ write-host "Spin up jVUNDemo site"
 $job = Start-Job -Name RunIisExpress -Scriptblock {& 'C:\Program Files (x86)\IIS Express\iisexpress.exe' /path:$jVUNDemo /port:57612}
 
 write-host "Wait a moment for IIS to startup"
+write-host "Job state: $($job.state)"
 Wait-Job $job -Timeout 5
+write-host "Job state: $($job.state)"
 
 if (Test-Path $staticSite) { 
     write-host "Removing $($staticSite)..."
@@ -24,8 +26,12 @@ wget.exe --recursive --convert-links -E --directory-prefix=static-site --no-host
 Pop-Location
 
 write-host "Shut down jVUNDemo site"
+write-host "Job state: $($job.state)"
 Stop-Job $job
-while ($job.state -ne "Stopped") {}
+do {
+    Start-sleep -s 5
+} while ($job.state -eq "Running")
+write-host "Job state: $($job.state)"
 receive-job $job
 Remove-Job $job
 
