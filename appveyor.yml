@@ -11,14 +11,19 @@ version: 1.0.{build}
 
 # scripts that are called at very beginning, before repo cloning
 init:
-  - git config --global user.email "johnny_reilly@hotmail.com"
-  - git config --global user.name "johnnyreilly"
+  - ps: git config --global user.email "johnny_reilly@hotmail.com"
+  - ps: git config --global user.name "johnnyreilly"
+  - ps: git remote -v
 
 # environment variables
 environment:
   GithubUsername: johnnyreilly
   GithubPassword:
     secure: ilM6UXjXXOmFLz6pDWsoOA==
+
+branches:
+  only:
+    - master
 
 install:
 - ps: choco install wget
