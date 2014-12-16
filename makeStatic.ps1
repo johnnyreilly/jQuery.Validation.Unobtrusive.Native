@@ -35,7 +35,8 @@ do {
     Start-sleep -s 5
 } while ($job.state -eq "Running")
 write-host "Job state: $($job.state)"
-receive-job $job
+receive-job $job | out-file jobs.log -append
+cat jobs.log
 Remove-Job $job
 
 if (Test-Path $staticSite) { 
