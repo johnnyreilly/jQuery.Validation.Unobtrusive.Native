@@ -13,7 +13,6 @@ version: 1.0.{build}
 init:
   - ps: git config --global user.email "johnny_reilly@hotmail.com"
   - ps: git config --global user.name "johnnyreilly"
-  - ps: git remote -v
 
 # environment variables
 environment:
@@ -32,4 +31,4 @@ build:
   verbosity: minimal
 
 after_build:
-- ps: "$jVUNDemo = \"$($env:APPVEYOR_BUILD_FOLDER)\\jVUNDemo\"\n$staticSite = \"$jVUNDemo\\..\\..\\\"\nwrite-host \"jVUNDemo location: $jVUNDemo\"\nwrite-host \"static site location: $staticSite\"\n\nls \"C:\\Program Files (x86)\\IIS Express\\\"\nwrite-host \"Spin up jVUNDemo site\"\nStart-Job –Name RunIisExpress –Scriptblock {& 'C:\\Program Files (x86)\\IIS Express\\iisexpress.exe' /path:$jVUNDemo /port:57612}\n\nWait-Job -Name RunIisExpress -Timeout 15\n\nwrite-host \"Create static version of demo site here: $staticSite\"\ncd $staticSite\nwget.exe --recursive --convert-links -E --directory-prefix=static-site --no-host-directories http://localhost:57612/\n\nwrite-host \"Shut down jVUNDemo site\"\nReceive-Job -Name RunIisExpress\nGet-Job –Name RunIisExpress | Stop-Job\nGet-Job –Name RunIisExpress | Remove-Job\n\nls $staticSite"
+- ps: "git remote -v\n$jVUNDemo = \"$($env:APPVEYOR_BUILD_FOLDER)\\jVUNDemo\"\n$staticSite = \"$jVUNDemo\\..\\..\\\"\nwrite-host \"jVUNDemo location: $jVUNDemo\"\nwrite-host \"static site location: $staticSite\"\n\nls \"C:\\Program Files (x86)\\IIS Express\\\"\nwrite-host \"Spin up jVUNDemo site\"\nStart-Job –Name RunIisExpress –Scriptblock {& 'C:\\Program Files (x86)\\IIS Express\\iisexpress.exe' /path:$jVUNDemo /port:57612}\n\nWait-Job -Name RunIisExpress -Timeout 15\n\nwrite-host \"Create static version of demo site here: $staticSite\"\ncd $staticSite\nwget.exe --recursive --convert-links -E --directory-prefix=static-site --no-host-directories http://localhost:57612/\n\nwrite-host \"Shut down jVUNDemo site\"\nReceive-Job -Name RunIisExpress\nGet-Job –Name RunIisExpress | Stop-Job\nGet-Job –Name RunIisExpress | Remove-Job\n\nls $staticSite"
