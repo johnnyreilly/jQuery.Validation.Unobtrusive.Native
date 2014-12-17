@@ -49,16 +49,3 @@ if (Test-Path $staticSitePath) {
     write-host "Contents of $($staticSitePath)"
     ls $staticSitePath
 }
-
-
-#################
-Write-Host "Create default.htm..."
-'<h1>Hello, world!</h1>' | Out-File $buildFolder\default.htm -Encoding UTF8
- 
-Write-Host "Start IIS Express..."
-Start-Job -Name RunIisExpress2 -Scriptblock {& 'C:\Program Files (x86)\IIS Express\iisexpress.exe' /path:$buildFolder /port:57614}
-Wait-Job -Name RunIisExpress2 -Timeout 30
- 
-Write-Host "Send request to IIS Express..."
-Invoke-RestMethod http://localhost:57614
-#################
