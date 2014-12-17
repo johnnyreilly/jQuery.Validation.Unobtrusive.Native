@@ -14,21 +14,11 @@ You're going to need a copy of [wget](http://users.ugent.be/~bpuype/wget/).
 Build your app then enter this at the command line: (Visual Studio should be closed)
 
 ```
-Remove-Item -path C:\GitHub\static-site -Recurse -Force
-
-Start-Job -Name RunIisExpress -Scriptblock {& 'C:\Program Files (x86)\IIS Express\iisexpress.exe' /path:C:\GitHub\jQuery.Validation.Unobtrusive.Native\jVUNDemo /port:57612}
-
-Wait-Job -Name RunIisExpress -Timeout 5
-
-cd C:\GitHub\
-wget.exe --recursive --convert-links -E --directory-prefix=static-site --no-host-directories http://localhost:57612/
-
-Get-Job -Name RunIisExpress | Stop-Job
-Get-Job -Name RunIisExpress | Remove-Job
+# Generate the static site
+cd C:\GitHub\jQuery.Validation.Unobtrusive.Native 
+.\makeStatic.ps1 $pwd.path
 
 # Switch to gh-pages branch and remove contents of directory
-cd C:\GitHub\jQuery.Validation.Unobtrusive.Native 
-
 git checkout gh-pages
 Get-ChildItem -Attributes !r | Remove-Item -Recurse -Force
 
