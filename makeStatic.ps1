@@ -1,15 +1,18 @@
 param([string]$buildFolder)
 
 $jVUNDemo = "$($buildFolder)\jVUNDemo"
-$staticSiteParent = (get-item $buildFolder).Parent.FullName
-$staticSite = "$($staticSiteParent)\static-site"
+$staticSiteParentPath = (get-item $buildFolder).Parent.FullName
+$staticSite = "static-site"
+$staticSitePath = "$($staticSiteParentPath)\$($staticSite)"
+$port = 57612
+$servedAt = "http://localhost:$($port)/"
 write-host "jVUNDemo location: $jVUNDemo"
-write-host "static site parent location: $staticSiteParent"
-write-host "static site location: $staticSite"
+write-host "static site parent location: $staticSiteParentPath"
+write-host "static site location: $staticSitePath"
 
-write-host "Spin up jVUNDemo site"
+write-host "Spin up jVUNDemo site at $($servedAt)"
 $iisExpressScript = {
-    return & 'C:\Program Files (x86)\IIS Express\iisexpress.exe' /path:$jVUNDemo /port:57612
+    return & 'C:\Program Files (x86)\IIS Express\iisexpress.exe' /path:$jVUNDemo /port:$port
 }
 $job = Start-Job -Name RunIisExpress -Scriptblock $iisExpressScript
 
@@ -18,14 +21,14 @@ write-host "Job state: $($job.state)"
 Wait-Job $job -Timeout 5
 write-host "Job state: $($job.state)"
 
-if (Test-Path $staticSite) { 
-    write-host "Removing $($staticSite)..."
-    Remove-Item -path $staticSite -Recurse -Force
+if (Test-Path $staticSitePath) { 
+    write-host "Removing $($staticSitePath)..."
+    Remove-Item -path $staticSitePath -Recurse -Force
 }
 
-write-host "Create static version of demo site here: $($staticSite)"
-Push-Location $staticSiteParent
-wget.exe --recursive --convert-links -E --directory-prefix=static-site --no-host-directories http://localhost:57612/
+write-host "Create static version of demo site here: $($staticSitePath)"
+Push-Location $staticSiteParentPath
+wget.exe --recursive --convert-links -E --directory-prefix=$staticSite --no-host-directories --debug $servedAt
 Pop-Location
 
 write-host "Shut down jVUNDemo site"
@@ -39,6 +42,7 @@ receive-job $job | out-file jobs.log -append
 cat jobs.log
 Remove-Job $job
 
-if (Test-Path $staticSite) { 
-    ls $staticSite
+if (Test-Path $staticSitePath) { 
+    write-host "Contents of $($staticSitePath)"
+    ls $staticSitePath
 }
