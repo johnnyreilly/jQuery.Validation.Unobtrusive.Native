@@ -18,13 +18,16 @@ $job = Start-Job -Name RunIisExpress -Scriptblock $iisExpressScript
 
 write-host "Wait a moment for IIS to startup"
 write-host "Job state: $($job.state)"
-Wait-Job $job -Timeout 5
+Wait-Job $job -Timeout 30
 write-host "Job state: $($job.state)"
 
 if (Test-Path $staticSitePath) { 
     write-host "Removing $($staticSitePath)..."
     Remove-Item -path $staticSitePath -Recurse -Force
 }
+
+Write-Host "Send request to IIS Express..."
+Invoke-RestMethod $servedAt
 
 write-host "Create static version of demo site here: $($staticSitePath)"
 Push-Location $staticSiteParentPath
