@@ -34,6 +34,8 @@ after_test:
 - ps: git remote -v
 - ps: ./makeStatic.ps1 $env:APPVEYOR_BUILD_FOLDER
 - ps: git checkout gh-pages
+- ps: git status
+- ps: ls
 - ps: git remote set-url origin 'https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git'
 - ps: git remote -v
 - ps: Get-ChildItem -Attributes !r | Remove-Item -Recurse -Force
