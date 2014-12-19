@@ -33,9 +33,9 @@ build:
 after_test:
 - ps: git remote -v
 - ps: ./makeStatic.ps1 $env:APPVEYOR_BUILD_FOLDER
+- ps: git checkout gh-pages
 - ps: git remote set-url origin 'https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git'
 - ps: git remote -v
-- ps: git checkout gh-pages
 - ps: Get-ChildItem -Attributes !r | Remove-Item -Recurse -Force
 - ps: copy-item -path ..\static-site\* -Destination $env:APPVEYOR_BUILD_FOLDER -Recurse
 - ps: git commit -a -m "skip ci - static site regeneration"
