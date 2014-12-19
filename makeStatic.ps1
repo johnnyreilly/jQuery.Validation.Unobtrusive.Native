@@ -11,10 +11,11 @@ write-host "static site parent location: $staticSiteParentPath"
 write-host "static site location: $staticSitePath"
 
 write-host "Spin up jVUNDemo site at $($servedAt)"
-$iisExpressScript = {
-    & 'C:\Program Files (x86)\IIS Express\iisexpress.exe' /path:$jVUNDemo /port:$port
-}
-$job = Start-Job -Name RunIisExpress -Scriptblock $iisExpressScript
+#$iisExpressScript = {
+#    & 'C:\Program Files (x86)\IIS Express\iisexpress.exe' /path:$jVUNDemo /port:$port
+#}
+#$job = Start-Job -Name RunIisExpress -Scriptblock $iisExpressScript
+$process = Start-Process 'C:\Program Files (x86)\IIS Express\iisexpress.exe' -NoNewWindow -ArgumentList "/path:$($jVUNDemo) /port:$($port)"
 
 write-host "Wait a moment for IIS to startup"
 write-host "$(Get-Date -format 'u') Job state: $($job.state)"
@@ -36,14 +37,15 @@ Pop-Location
 
 write-host "Shut down jVUNDemo site"
 write-host "$(Get-Date -format 'u') Job state: $($job.state)"
-Stop-Job $job
-do {
-    Start-sleep -s 5
-} while ($job.state -eq "Running")
-write-host "$(Get-Date -format 'u') Job state: $($job.state)"
-receive-job $job | out-file jobs.log -append
-cat jobs.log
-Remove-Job $job
+#Stop-Job $job
+#do {
+#    Start-sleep -s 5
+#} while ($job.state -eq "Running")
+#write-host "$(Get-Date -format 'u') Job state: $($job.state)"
+#receive-job $job | out-file jobs.log -append
+#cat jobs.log
+#Remove-Job $job
+stop-process $process
 
 if (Test-Path $staticSitePath) { 
     write-host "Contents of $($staticSitePath)"
