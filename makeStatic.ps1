@@ -35,6 +35,7 @@ write-host "Create static version of demo site here: $($staticSitePath)"
 Push-Location $staticSiteParentPath
 #wget.exe --recursive --convert-links -E --directory-prefix=$staticSite --no-host-directories --debug $servedAt
 wget.exe --recursive --convert-links -E --directory-prefix=$staticSite --no-host-directories $servedAt
+write-host "$lastExitCode: $($lastExitCode)"
 Pop-Location
 
 write-host "Shut down jVUNDemo site"
@@ -47,7 +48,7 @@ write-host "Shut down jVUNDemo site"
 #receive-job $job | out-file jobs.log -append
 #cat jobs.log
 #Remove-Job $job
-stop-process $process
+stop-process -Name iisexpress
 
 if (Test-Path $staticSitePath) { 
     write-host "Contents of $($staticSitePath)"
