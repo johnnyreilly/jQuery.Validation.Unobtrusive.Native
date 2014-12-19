@@ -35,7 +35,7 @@ write-host "Create static version of demo site here: $($staticSitePath)"
 Push-Location $staticSiteParentPath
 #wget.exe --recursive --convert-links -E --directory-prefix=$staticSite --no-host-directories --debug $servedAt
 wget.exe --recursive --convert-links -E --directory-prefix=$staticSite --no-host-directories $servedAt
-write-host "$lastExitCode: $($lastExitCode)"
+write-host "lastExitCode: $($lastExitCode)"
 Pop-Location
 
 write-host "Shut down jVUNDemo site"
