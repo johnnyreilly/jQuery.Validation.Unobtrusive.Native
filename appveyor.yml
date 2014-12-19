@@ -33,5 +33,5 @@ build:
 after_test:
 - ps: git remote -v
 - ps: ./makeStatic.ps1 $env:APPVEYOR_BUILD_FOLDER
-- ps: & 'git remote set-url origin https://$(env:GithubUsername):$(env:GithubPassword)@github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git'
+- ps: & 'git remote set-url origin https://$($env:GithubUsername):$($env:GithubPassword)@github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git'
 - ps: git remote -v
