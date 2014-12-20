@@ -33,9 +33,10 @@ if (Test-Path $staticSitePath) {
 
 write-host "Create static version of demo site here: $($staticSitePath)"
 Push-Location $staticSiteParentPath
+# 2>&1 used to combine stderr and stdout
 #wget.exe --recursive --convert-links -E --directory-prefix=$staticSite --no-host-directories --debug $servedAt
 wget.exe --recursive --convert-links -E --directory-prefix=$staticSite --no-host-directories $servedAt
-write-host "lastExitCode: $($lastExitCode)"
+write-host "lastExitCode: $($lastExitCode)" 2>&1
 Pop-Location
 
 write-host "Shut down jVUNDemo site"
