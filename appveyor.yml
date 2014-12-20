@@ -43,14 +43,16 @@ after_test:
 - ps: mkdir gh-pages
 - ps: cd gh-pages
 #- ps: iex 'git clone -b gh-pages https://$($env:GithubUsername):$($env:GithubPassword)@github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git';$LastExitCode
-- ps: git clone --branch=gh-pages https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git $pwd.Path
-- ps: git status
-- ps: ls
-- ps: copy-item -path ..\static-site\* -Destination $pwd.Path -Recurse
-- ps: ls
-- ps: git status
-- ps: git commit -a -m "skip ci - static site regeneration"
-- ps: git status
+#- ps: git clone --branch=gh-pages https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git $pwd.Path
+#- ps: git status
+#- ps: ls
+#- ps: copy-item -path ..\static-site\* -Destination $pwd.Path -Recurse
+#- ps: ls
+#- ps: git status
+#- ps: git commit -a -m "skip ci - static site regeneration"
+#- ps: git status
+
+
 #- ps: ls
 #- ps: git remote set-url origin 'https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git'
 #- ps: git remote -v
