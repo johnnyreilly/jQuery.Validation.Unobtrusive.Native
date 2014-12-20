@@ -19,7 +19,9 @@ environment:
   GithubUsername: johnnyreilly
   GithubPassword:
     secure: ilM6UXjXXOmFLz6pDWsoOA==
-
+  testVariable:
+    secure: JnsTiFLXDTQVPQVUjQDWSg==
+    
 branches:
   only:
     - master
@@ -40,7 +42,8 @@ after_test:
 - ps: ls
 - ps: mkdir gh-pages
 - ps: cd gh-pages
-- ps: git clone 'https://$($env:GithubUsername):$($env:GithubPassword)@github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git'
+- ps: $test = 'https://$($env:GithubUsername):$($env:testVariable)@github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git';write-host "Test looked like this $($test)"
+- ps: git clone 'https://$($env:GithubUsername):$($env:GithubPassword)@github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git';$LastExitCode
 - ps: git status
 - ps: ls
 - ps: copy-item -path ..\static-site\* -Destination $pwd.Path -Recurse
