@@ -42,7 +42,6 @@ after_test:
 - ps: ls
 - ps: mkdir gh-pages
 - ps: cd gh-pages
-- ps: $test = 'git clone -b gh-pages https://$($env:GithubUsername):$($env:testVariable)@github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git';write-host "Test looked like this $($test)"
 - ps: & 'git clone -b gh-pages https://$($env:GithubUsername):$($env:GithubPassword)@github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git';$LastExitCode
 - ps: git status
 - ps: ls
