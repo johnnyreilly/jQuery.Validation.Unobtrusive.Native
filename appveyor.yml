@@ -42,7 +42,8 @@ after_test:
 - ps: ls
 - ps: mkdir gh-pages
 - ps: cd gh-pages
-- ps: iex 'git clone -b gh-pages https://$($env:GithubUsername):$($env:GithubPassword)@github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git';$LastExitCode
+#- ps: iex 'git clone -b gh-pages https://$($env:GithubUsername):$($env:GithubPassword)@github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git';$LastExitCode
+- ps: git clone -b gh-pages https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git
 - ps: git status
 - ps: ls
 - ps: copy-item -path ..\static-site\* -Destination $pwd.Path -Recurse
