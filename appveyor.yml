@@ -46,6 +46,8 @@ after_test:
 - ps: cd gh-pages
 - ps: git status
 - ps: ls
+- ps: Get-ChildItem -Attributes !r | Remove-Item -Recurse -Force
+- ps: ls
 - ps: copy-item -path ..\static-site\* -Destination $pwd.Path -Recurse
 - ps: ls
 - ps: git status
