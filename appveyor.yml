@@ -49,7 +49,7 @@ after_test:
 - ps: git status
 - ps: git commit -a -m "skip ci - static site regeneration"
 - ps: git status
-- ps: git push
+#- ps: git push
 #- ps: git push ..\push.log 2<&1
 #- ps: cat ..\push.log
 
