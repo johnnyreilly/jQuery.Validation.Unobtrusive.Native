@@ -47,7 +47,7 @@ after_test:
 - ps: copy-item -path ..\static-site\* -Destination $pwd.Path -Recurse
 - ps: ls
 - ps: git status
-- ps: git commit -a -m --allow-empty "skip ci - static site regeneration"
+- ps: git commit -a --allow-empty -m "skip ci - static site regeneration"
 - ps: git status
 - ps: git push
 #- ps: git push ..\push.log 2<&1
