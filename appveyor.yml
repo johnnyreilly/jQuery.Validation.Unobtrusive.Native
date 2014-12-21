@@ -45,12 +45,12 @@ after_test:
 - ps: git clone --quiet --branch=gh-pages https://$($env:GithubUsername):$($env:GithubPassword)@github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git .\gh-pages\
 - ps: cd gh-pages
 - ps: git status
-#- ps: ls
-#- ps: copy-item -path ..\static-site\* -Destination $pwd.Path -Recurse
-#- ps: ls
-#- ps: git status
-#- ps: git commit -a -m "skip ci - static site regeneration"
-#- ps: git status
+- ps: ls
+- ps: copy-item -path ..\static-site\* -Destination $pwd.Path -Recurse
+- ps: ls
+- ps: git status
+- ps: git commit -a -m "skip ci - static site regeneration"
+- ps: git status
 
 
 #- ps: ls
