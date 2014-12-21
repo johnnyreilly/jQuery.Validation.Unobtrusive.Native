@@ -46,7 +46,8 @@ after_test:
 - ps: ls
 - ps: copy-item -path ..\static-site\* -Destination $pwd.Path -Recurse
 - ps: ls
-- ps: git status --porcelain
+- ps: git status
+- ps: git status | grep "up to date"
 - ps: git commit -a -m "skip ci - static site regeneration"
 - ps: git status --porcelain
 #- ps: git push
