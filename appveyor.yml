@@ -41,10 +41,10 @@ after_test:
 - ps: cd "$($env:APPVEYOR_BUILD_FOLDER)\..\"
 - ps: ls
 - ps: mkdir gh-pages
-- ps: cd gh-pages
 #- ps: iex 'git clone -b gh-pages https://$($env:GithubUsername):$($env:GithubPassword)@github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git';$LastExitCode
-#- ps: git clone --branch=gh-pages https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git $pwd.Path
-#- ps: git status
+- ps: git clone --quiet --branch=gh-pages https://$($env:GithubUsername):$($env:GithubPassword)@github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git .\gh-pages\
+- ps: cd gh-pages
+- ps: git status
 #- ps: ls
 #- ps: copy-item -path ..\static-site\* -Destination $pwd.Path -Recurse
 #- ps: ls
