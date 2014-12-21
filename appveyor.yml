@@ -9,11 +9,6 @@ version: 1.0.{build}
 #    environment configuration    #
 #---------------------------------#
 
-# scripts that are called at very beginning, before repo cloning
-init:
-  - ps: git config --global user.email "johnny_reilly@hotmail.com"
-  - ps: git config --global user.name "johnnyreilly"
-
 # environment variables
 environment:
   GithubUsername: johnnyreilly
@@ -37,11 +32,12 @@ build:
 after_test:
 - ps: git remote -v
 - ps: ./makeStatic.ps1 $env:APPVEYOR_BUILD_FOLDER
-#- ps: git checkout gh-pages
+- ps: git config --global user.email "johnny_reilly@hotmail.com"
+- ps: git config --global user.name "johnnyreilly"
+- ps: git config --global push.default matching
 - ps: cd "$($env:APPVEYOR_BUILD_FOLDER)\..\"
 - ps: ls
 - ps: mkdir gh-pages
-#- ps: iex 'git clone -b gh-pages https://$($env:GithubUsername):$($env:GithubPassword)@github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git';$LastExitCode
 - ps: git clone --quiet --branch=gh-pages https://$($env:GithubUsername):$($env:GithubPassword)@github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git .\gh-pages\
 - ps: cd gh-pages
 - ps: git status
@@ -53,7 +49,7 @@ after_test:
 - ps: git status
 - ps: git commit -a -m "skip ci - static site regeneration"
 - ps: git status
-- ps: git push
+- ps: git push --quiet
 
 #- ps: ls
 #- ps: git remote set-url origin 'https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git'
