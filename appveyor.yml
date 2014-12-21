@@ -49,9 +49,9 @@ after_test:
 - ps: git status
 - ps: git commit -a -m "skip ci - static site regeneration"
 - ps: git status
-- ps: git push --quiet > ..\push.log 2>&1
+- ps: git push --quiet > "..\push.log" 2>&1
 - ps: write-host "lastExitCode: $($lastExitCode)"
-- ps: cat ..\push.log
+- ps: cd ..\;cat push.log
 
 #- ps: ls
 #- ps: git remote set-url origin 'https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git'
