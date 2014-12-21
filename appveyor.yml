@@ -53,7 +53,6 @@ after_test:
 #- ps: git push ..\push.log 2<&1
 #- ps: cat ..\push.log
 
-#- ps: ls
 #- ps: git remote set-url origin 'https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git'
 #- ps: git remote -v
 #- ps: Get-ChildItem -Attributes !r | Remove-Item -Recurse -Force
