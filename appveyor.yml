@@ -14,8 +14,6 @@ environment:
   GithubUsername: johnnyreilly
   GithubPassword:
     secure: ilM6UXjXXOmFLz6pDWsoOA==
-  testVariable:
-    secure: JnsTiFLXDTQVPQVUjQDWSg==
     
 branches:
   only:
@@ -32,7 +30,7 @@ build:
 after_test:
 #- ps: git remote -v
 - ps: ./makeStatic.ps1 $env:APPVEYOR_BUILD_FOLDER
-- ps: ./pushStatic.ps1 $env:APPVEYOR_BUILD_FOLDER
+- ps: ./pushStatic.ps1 $env:APPVEYOR_BUILD_FOLDER $env:GithubUsername $env:GithubPassword
 #- ps: git config --global user.email "johnny_reilly@hotmail.com"
 #- ps: git config --global user.name "johnnyreilly"
 #- ps: git config --global push.default matching
