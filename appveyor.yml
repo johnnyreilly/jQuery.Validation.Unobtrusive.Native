@@ -30,26 +30,27 @@ build:
 # 
 
 after_test:
-- ps: git remote -v
+#- ps: git remote -v
 - ps: ./makeStatic.ps1 $env:APPVEYOR_BUILD_FOLDER
-- ps: git config --global user.email "johnny_reilly@hotmail.com"
-- ps: git config --global user.name "johnnyreilly"
-- ps: git config --global push.default matching
-- ps: cd "$($env:APPVEYOR_BUILD_FOLDER)\..\"
-- ps: ls
-- ps: mkdir gh-pages
-- ps: git clone --quiet --branch=gh-pages https://$($env:GithubUsername):$($env:GithubPassword)@github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git .\gh-pages\
-- ps: cd gh-pages
-- ps: git status
-- ps: ls
-- ps: Get-ChildItem -Attributes !r | Remove-Item -Recurse -Force
-- ps: ls
-- ps: copy-item -path ..\static-site\* -Destination $pwd.Path -Recurse
-- ps: ls
-- ps: git status
+- ps: ./pushStatic.ps1 $env:APPVEYOR_BUILD_FOLDER
+#- ps: git config --global user.email "johnny_reilly@hotmail.com"
+#- ps: git config --global user.name "johnnyreilly"
+#- ps: git config --global push.default matching
+#- ps: cd "$($env:APPVEYOR_BUILD_FOLDER)\..\"
+#- ps: ls
+#- ps: mkdir gh-pages
+#- ps: git clone --quiet --branch=gh-pages https://$($env:GithubUsername):$($env:GithubPassword)@github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git .\gh-pages\
+#- ps: cd gh-pages
+#- ps: git status
+#- ps: ls
+#- ps: Get-ChildItem -Attributes !r | Remove-Item -Recurse -Force
+#- ps: ls
+#- ps: copy-item -path ..\static-site\* -Destination $pwd.Path -Recurse
+#- ps: ls
+#- ps: git status
 #- ps: $upToDate = git status | select-string -pattern "Your branch is up-to-date with 'origin/gh-pages'." -simplematch
-- ps: $upToDate = git status | select-string -pattern "Changes not staged for commit:" -simplematch
-- ps: if ($upToDate -ne $null) { Write-host "changes"; } else { write-host "no changes"; }
+#- ps: $upToDate = git status | select-string -pattern "Changes not staged for commit:" -simplematch
+#- ps: if ($upToDate -ne $null) { Write-host "changes"; } else { write-host "no changes"; }
 #- ps: git commit -a -m "skip ci - static site regeneration"
 #- ps: git status --porcelain
 #- ps: git push

@@ -13,10 +13,11 @@ Get-ChildItem -Attributes !r | Remove-Item -Recurse -Force
 copy-item -path ..\static-site\* -Destination $pwd.Path -Recurse
 
 git status
-$thereAreChanges = git status | select-string -pattern "Changes not staged for commit:" -simplematch
+$thereAreChanges = git status | select-string -pattern "Changes not staged for commit:","Untracked files:" -simplematch
 if ($thereAreChanges -ne $null) { 
     Write-host "Committing changes to documentation..."
     git add --all
+    git status
     git commit -m "skip ci - static site regeneration"
     git status
     git push
