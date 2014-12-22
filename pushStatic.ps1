@@ -1,5 +1,7 @@
 param([string]$buildFolder)
 
+git config --global user.email "johnny_reilly@hotmail.com"
+git config --global user.name "johnnyreilly"
 git config --global push.default matching
 
 cd "$($buildFolder)\..\"
