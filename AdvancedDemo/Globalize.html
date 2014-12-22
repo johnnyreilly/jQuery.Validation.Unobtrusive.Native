@@ -87,7 +87,7 @@
 
 <p>To find more information about this then you could have a read of my <a href="http://blog.icanmakethiswork.io/2012/09/globalize-and-jquery-validate.html" target="_blank">blogpost</a> or look at the project on <a href="https://github.com/johnnyreilly/jquery-validation-globalize" target="_blank">GitHub</a>.  This library replaces the jQuery Validation date and number validation with an implementation that depends on <a href="http://github.com/jquery/globalize" target="_blank">Globalize</a>.</p>
 
-<p>Take a look at the demo below, customised for the <strong>en-US</strong> culture - that's right, *<strong>your</strong>* culture (or at least what ASP.Net thinks your culture ought to be).  If you switch your browser to say, <strong>de-DE</strong> and reload this page then you'll see the app has switched to the closest Globalize appropriate culture it can find.</p>
+<p>Take a look at the demo below, customised for the <strong>en-GB</strong> culture - that's right, *<strong>your</strong>* culture (or at least what ASP.Net thinks your culture ought to be).  If you switch your browser to say, <strong>de-DE</strong> and reload this page then you'll see the app has switched to the closest Globalize appropriate culture it can find.</p>
 
 <div class="alert alert-danger alert-block" style="display: none;" id="warning">
     <h4>This demo is fixed to the current culture</h4>
@@ -109,7 +109,7 @@
                 <input data-msg-number="The field Double must be a number." data-msg-range="The field Double must be between 10.5 and 20.3." data-msg-required="The Double field is required." data-rule-number="true" data-rule-range="[10.5,20.3]" data-rule-required="true" id="Double" name="Double" type="text" value="0" />
             </div>
             <div class="row">
-                <label for="DateTime">DateTime - example date string: 12/21/2014, example date and time string: Sunday, December 21, 2014 12:00 AM:</label>
+                <label for="DateTime">DateTime - example date string: 22/12/2014, example date and time string: 22 December 2014 00:00:</label>
                 <input data-msg-date="The field DateTime must be a date." data-msg-required="The DateTime field is required." data-rule-date="true" data-rule-required="true" id="DateTime" name="DateTime" type="text" value="" />
             </div>
             <div class="row">
@@ -184,7 +184,7 @@
                 id="Double" name="Double" type="text" value="0" /&gt;
         &lt;/div&gt;
         &lt;div class="row"&gt;
-            &lt;label for="DateTime"&gt;DateTime - example date string: 12/21/2014, example date and time string: Sunday, December 21, 2014 12:00 AM:&lt;/label&gt;
+            &lt;label for="DateTime"&gt;DateTime - example date string: 22/12/2014, example date and time string: 22 December 2014 00:00:&lt;/label&gt;
             &lt;input data-msg-date="The field DateTime must be a date." 
                 data-msg-required="The DateTime field is required." 
                 data-rule-date="true" 
@@ -214,7 +214,7 @@
 
         <pre class="prettyprint js">
   // Initialise Globalize to the current UI culture (you need to have served up the relevant culture file for this to work)
-  Globalize.culture("en-US");
+  Globalize.culture("en-GB");
 
   $("form").validate({
       submitHandler: function (form) {
@@ -262,7 +262,7 @@
 
         </pre>
         
-        <p>The Key returned from the function is the Globalize culture you are going to use (eg "<strong>en-US</strong>") which you can use to initialise Globalize to the relevant culture.  The Value returned is the Globalize culture file you are going to use (eg <strong>"~/scripts/globalize/cultures/globalize.culture.en-US.js</strong>") which you can use to serve up that culture file.  These 2 combined allows you to do something like this:</p>
+        <p>The Key returned from the function is the Globalize culture you are going to use (eg "<strong>en-GB</strong>") which you can use to initialise Globalize to the relevant culture.  The Value returned is the Globalize culture file you are going to use (eg <strong>"~/scripts/globalize/cultures/globalize.culture.en-GB.js</strong>") which you can use to serve up that culture file.  These 2 combined allows you to do something like this:</p>
         
         <pre class="prettyprint html">
     @{
@@ -308,12 +308,12 @@
     
     <script src="../Scripts/jquery.validate.js"></script>
 <script src="../Scripts/globalize/globalize.js"></script>
-<script src="../scripts/globalize/cultures/globalize.culture.en-US.js"></script>
+<script src="../scripts/globalize/cultures/globalize.culture.en-GB.js"></script>
 <script src="../Scripts/jquery.validate.globalize.js"></script>
 
     <script>
         // Initialise Globalize to the current UI culture
-        Globalize.culture("en-US");
+        Globalize.culture("en-GB");
 
         $("form").validate({
             submitHandler: function (form) {
