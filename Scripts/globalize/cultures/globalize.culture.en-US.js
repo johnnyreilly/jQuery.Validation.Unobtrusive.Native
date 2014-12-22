@@ -1,5 +1,5 @@
 /*
- * Globalize Culture en-GB
+ * Globalize Culture en-US
  *
  * http://github.com/jquery/globalize
  *
@@ -25,31 +25,9 @@ if ( typeof require !== "undefined" &&
 	Globalize = window.Globalize;
 }
 
-Globalize.addCultureInfo( "en-GB", "default", {
-	name: "en-GB",
-	englishName: "English (United Kingdom)",
-	nativeName: "English (United Kingdom)",
-	numberFormat: {
-		currency: {
-			pattern: ["-$n","$n"],
-			symbol: "£"
-		}
-	},
-	calendars: {
-		standard: {
-			firstDay: 1,
-			patterns: {
-				d: "dd/MM/yyyy",
-				D: "dd MMMM yyyy",
-				t: "HH:mm",
-				T: "HH:mm:ss",
-				f: "dd MMMM yyyy HH:mm",
-				F: "dd MMMM yyyy HH:mm:ss",
-				M: "dd MMMM",
-				Y: "MMMM yyyy"
-			}
-		}
-	}
+Globalize.addCultureInfo( "en-US", "default", {
+	name: "en-US",
+	englishName: "English (United States)"
 });
 
 }( this ));
