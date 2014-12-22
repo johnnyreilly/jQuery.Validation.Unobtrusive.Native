@@ -47,7 +47,7 @@ after_test:
 - ps: copy-item -path ..\static-site\* -Destination $pwd.Path -Recurse
 - ps: ls
 - ps: git status
-#- ps: git status | grep "up to date"
+- ps: if (git status | select-string -pattern "Your branch is up-to-date with 'origin/gh-pages'." -simplematch -eq $null) { Write-host "changes"; } else { write-host "no changes"; }
 #- ps: git commit -a -m "skip ci - static site regeneration"
 #- ps: git status --porcelain
 #- ps: git push
