@@ -8,7 +8,7 @@ git config --global push.default matching
 Write-Host "- Clone gh-pages branch...."
 cd "$($buildFolder)\..\"
 mkdir gh-pages
-git clone --quiet --branch=gh-pages https://$($username):$($password)@github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git .\gh-pages\
+git clone --quiet --branch=gh-pages https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git .\gh-pages\
 cd gh-pages
 git status
 
@@ -27,10 +27,7 @@ if ($thereAreChanges -ne $null) {
     git commit -m "skip ci - static site regeneration"
     git status
     Write-Host "- Push it...."
-    git remote -v
     git push
-    echo $username
-    echo $password
     Write-Host "- Pushed it good?"
 } 
 else { 
