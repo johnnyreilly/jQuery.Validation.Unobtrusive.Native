@@ -1,4 +1,4 @@
-param([string]$buildFolder, [string]$username, [string]$password)
+param([string]$buildFolder, [string]$username, [string]$personalAccessToken)
 
 Write-Host "- Set config settings...."
 git config --global user.email "johnny_reilly@hotmail.com"
@@ -8,7 +8,7 @@ git config --global push.default matching
 Write-Host "- Clone gh-pages branch...."
 cd "$($buildFolder)\..\"
 mkdir gh-pages
-git clone --quiet --branch=gh-pages https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git .\gh-pages\
+git clone --quiet --branch=gh-pages https://$($username):$($personalAccessToken)@github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git .\gh-pages\
 cd gh-pages
 git status
 
@@ -27,7 +27,7 @@ if ($thereAreChanges -ne $null) {
     git commit -m "skip ci - static site regeneration"
     git status
     Write-Host "- Push it...."
-    git push
+    git push --quiet
     Write-Host "- Pushed it good?"
 } 
 else { 

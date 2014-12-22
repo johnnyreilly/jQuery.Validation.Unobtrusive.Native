@@ -12,9 +12,9 @@ version: 1.0.{build}
 # environment variables
 environment:
   GithubUsername: johnnyreilly
-  GithubPassword:
-    secure: ilM6UXjXXOmFLz6pDWsoOA==
-    
+  GithubPersonalAccessToken:
+    secure: T4M/N+e/baksVoeWoYKPWIpfahOsiSFw/+Zc81VuThZmWEqmrRtgEHUyin0vCWhl    
+
 branches:
   only:
     - master
