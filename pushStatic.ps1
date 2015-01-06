@@ -1,7 +1,7 @@
-param([string]$buildFolder, [string]$username, [string]$personalAccessToken)
+param([string]$buildFolder, [string]$email, [string]$username, [string]$personalAccessToken)
 
 Write-Host "- Set config settings...."
-git config --global user.email "johnny_reilly@hotmail.com"
+git config --global user.email $email
 git config --global user.name $username
 git config --global push.default matching
 

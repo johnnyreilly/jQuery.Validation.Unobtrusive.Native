@@ -11,6 +11,7 @@ version: 1.0.{build}
 
 # environment variables
 environment:
+  GithubEmail: johnny_reilly@hotmail.com
   GithubUsername: johnnyreilly
   GithubPersonalAccessToken:
     secure: T4M/N+e/baksVoeWoYKPWIpfahOsiSFw/+Zc81VuThZmWEqmrRtgEHUyin0vCWhl    
@@ -27,4 +28,4 @@ build:
 
 after_test:
 - ps: ./makeStatic.ps1 $env:APPVEYOR_BUILD_FOLDER
-- ps: ./pushStatic.ps1 $env:APPVEYOR_BUILD_FOLDER $env:GithubUsername $env:GithubPersonalAccessToken
+- ps: ./pushStatic.ps1 $env:APPVEYOR_BUILD_FOLDER $env:GithubEmail $env:GithubUsername $env:GithubPersonalAccessToken
