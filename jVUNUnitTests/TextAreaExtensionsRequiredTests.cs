@@ -1,6 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using System.Web.Mvc;
+using System.Web.Mvc.Html;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace jQuery.Validation.Unobtrusive.Native.MVC.UnitTests
@@ -29,7 +29,7 @@ namespace jQuery.Validation.Unobtrusive.Native.MVC.UnitTests
             var htmlHelper = HtmlHelperFactory.Create(new RequiredStringModel());
 
             // Act
-            var result = TextAreaExtensions.TextAreaFor(htmlHelper, exampleModel => exampleModel.String, true);
+            var result = TextAreaExtensionsUnobtrusive.TextAreaFor(htmlHelper, exampleModel => exampleModel.String, true);
 
             // Assert
             Assert.AreEqual("<textarea "+
@@ -51,7 +51,7 @@ namespace jQuery.Validation.Unobtrusive.Native.MVC.UnitTests
             var htmlHelper = HtmlHelperFactory.Create(new DateTimeModel());
 
             // Act
-            var result = TextAreaExtensions.TextAreaFor(htmlHelper, exampleModel => exampleModel.Date, true);
+            var result = TextAreaExtensionsUnobtrusive.TextAreaFor(htmlHelper, exampleModel => exampleModel.Date, true);
 
             // Assert
             Assert.AreEqual(HTMLRequiredDate, result.ToHtmlString());
@@ -70,7 +70,7 @@ namespace jQuery.Validation.Unobtrusive.Native.MVC.UnitTests
             var htmlHelper = HtmlHelperFactory.Create(new RequiredNullableDateTimeModel());
 
             // Act
-            var result = TextAreaExtensions.TextAreaFor(htmlHelper, exampleModel => exampleModel.Date, true);
+            var result = TextAreaExtensionsUnobtrusive.TextAreaFor(htmlHelper, exampleModel => exampleModel.Date, true);
 
             // Assert
             Assert.AreEqual(HTMLRequiredDate, result.ToHtmlString());

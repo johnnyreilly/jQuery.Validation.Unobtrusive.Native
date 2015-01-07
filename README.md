@@ -82,6 +82,10 @@ MIT license - [http://www.opensource.org/licenses/mit-license.php](http://www.op
 
 ##Changelog
 
+###1.1.2 / 2015-01-07
+
+- [Moved from System.Web.Mvc namespace to System.Web.Mvc.Html in line with MVC's built in extension methods](https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native/issues/12)
+
 ###1.1.1 / 2014-05-27
 
 - [Bugfix for CheckBoxFor.](https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native/issues/9)

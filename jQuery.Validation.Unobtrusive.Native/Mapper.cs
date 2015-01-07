@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Web.Routing;
 using Newtonsoft.Json;
 
-namespace System.Web.Mvc
+namespace System.Web.Mvc.Html
 {
     /// <summary>
     /// MVC HtmlHelper extension methods - extensions that make use of jQuery Validates native unobtrusive data validation properties

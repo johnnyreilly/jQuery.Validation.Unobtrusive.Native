@@ -1,7 +1,6 @@
 ﻿using System.Linq.Expressions;
-using System.Web.Mvc.Html;
 
-namespace System.Web.Mvc
+namespace System.Web.Mvc.Html
 {
     /// <summary>
     /// MVC HtmlHelper extension methods - extensions that make use of jQuery Validates native unobtrusive data validation properties

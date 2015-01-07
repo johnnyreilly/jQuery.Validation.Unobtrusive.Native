@@ -56,7 +56,7 @@
     <Compile Include="CheckBoxExtensions.cs" />
     <Compile Include="PasswordExtensions.cs" />
     <Compile Include="ListBoxExtensions.cs" />
-    <Compile Include="TextAreaExtensions.cs" />
+    <Compile Include="TextAreaExtensionsUnobtrusive.cs" />
     <Compile Include="RadioButtonExtensions.cs" />
     <Compile Include="Mapper.cs" />
     <Compile Include="TextBoxExtensions.cs" />

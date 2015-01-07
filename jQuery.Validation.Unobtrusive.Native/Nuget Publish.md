@@ -10,7 +10,7 @@ Then run the following commands to generate and publish based on project:
 
 ```
 nuget pack jQuery.Validation.Unobtrusive.Native.csproj -Prop Configuration=Release
-nuget push jQuery.Validation.Unobtrusive.Native.MVC5.1.1.1.0.nupkg
+nuget push jQuery.Validation.Unobtrusive.Native.MVC5.1.1.2.nupkg
 ```
 
 ##Creating MVC 4 / MVC 3 packages
