@@ -28,7 +28,7 @@ if ($thereAreChanges -ne $null) {
     git status
     Write-Host "- Push it...."
     git push --quiet
-    Write-Host "- Pushed it good?"
+    Write-Host "- Pushed it good!"
 } 
 else { 
     write-host "- No changes to documentation to commit"
