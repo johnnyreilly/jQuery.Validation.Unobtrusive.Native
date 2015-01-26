@@ -15,9 +15,9 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
             return View();
         }
 
-        public ActionResult Dynamic()
+        public ActionResult Knockout()
         {
-            ViewBag.Title = "Dynamic Demo";
+            ViewBag.Title = "Knockout Demo";
 
             return View(new PersonModel());
         }
