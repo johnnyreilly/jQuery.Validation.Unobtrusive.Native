@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="John Reilly">
     <meta name="keywords" content="jQuery Validation Unobtrusive Native, ASP.Net MVC, validation, jQuery, jquery-validate.js, unobtrusive">
-    <title>Dynamic Demo - jQuery Validation Unobtrusive Native</title>
+    <title>Knockout Demo - jQuery Validation Unobtrusive Native</title>
     
     <meta name="Description" content="A demo of dynamically generated form elements being parsed and validated.">
 
@@ -38,7 +38,7 @@
                     <li><a href="http://blog.icanmakethiswork.io/2013/10/migrating-from-jquery.validate.unobtrusive.js-to-jQuery.Validation.Unobtrusive.Native.html" target="_blank">Migrating</a></li>
                     <li><a href="../Home/Download.html">Download</a></li>
                     <li class="dropdown">
-                        <a href="Dynamic.html#" class="dropdown-toggle" data-toggle="dropdown">Demos <b class="caret"></b></a>
+                        <a href="Knockout.html#" class="dropdown-toggle" data-toggle="dropdown">Demos <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="../Demo.html">Overview</a></li>
                             <li class="divider"></li>
@@ -57,11 +57,11 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="Dynamic.html#" class="dropdown-toggle" data-toggle="dropdown">Advanced Demos <b class="caret"></b></a>
+                        <a href="Knockout.html#" class="dropdown-toggle" data-toggle="dropdown">Advanced Demos <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="../AdvancedDemo.html">Overview</a></li>
                             <li class="divider"></li>
-                            <li class="active"><a href="Dynamic.html">Dynamic (Knockout)</a></li>
+                            <li class="active"><a href="Knockout.html">Knockout</a></li>
 <li><a href="CustomValidation.html">Custom Validation</a></li>
 <li class="dropdown-header">Miscellaneous Demos</li>
 <li><a href="Tooltip.html">Tooltip</a></li>
@@ -76,7 +76,7 @@
     <div id="main" class="container">
 
         
-<h3>Dynamic Demo</h3>
+<h3>Knockout Demo</h3>
 
 <p>Have you ever wanted to dynamically create form elements in your application?  Given the trend for SPA's this is an increasingly common use case. As you may have learned from painful experience jquery.validate.unobtrusive.js does <strong>not</strong> support this by default. jQuery Validation <strong>does</strong>.  Just add a new element to a form and it will be automatically parsed and subsequently validated.</p>
     
@@ -85,16 +85,16 @@
 <p>This demo is "inspired" by a <a href="http://knockoutjs.com/documentation/foreach-binding.html" target="_blank">demo on the Knockout site</a>.  If you look closely at the View you'll see that the HTML elements in the header and in the <code>foreach</code> binding are driven from the View's Model, in this case the <code>PersonModel</code> class. We just make use of the <code>htmlAttributes</code> parameter to set up the KO databinding.</p>
 
 <ul class="nav nav-tabs" data-tabs="tabs">
-    <li class="active"><a data-toggle="tab" href="Dynamic.html#demo">Demo</a></li>
-    <li><a data-toggle="tab" href="Dynamic.html#model">Model</a></li>
-    <li><a data-toggle="tab" href="Dynamic.html#view">View</a></li>
-    <li><a data-toggle="tab" href="Dynamic.html#html">HTML</a></li>
-    <li><a data-toggle="tab" href="Dynamic.html#javascript">JavaScript</a></li>
+    <li class="active"><a data-toggle="tab" href="Knockout.html#demo">Demo</a></li>
+    <li><a data-toggle="tab" href="Knockout.html#model">Model</a></li>
+    <li><a data-toggle="tab" href="Knockout.html#view">View</a></li>
+    <li><a data-toggle="tab" href="Knockout.html#html">HTML</a></li>
+    <li><a data-toggle="tab" href="Knockout.html#javascript">JavaScript</a></li>
 </ul>
 <div class="tab-content">
     <div class="tab-pane active" id="demo">
         
-<form action="Dynamic.html" method="post">            <div class="row">
+<form action="Knockout.html" method="post">            <div class="row">
                 <table>
                     <thead>
                         <tr>
@@ -279,12 +279,12 @@
         </div>
     </div>
 
-    <script src="../Scripts/jquery-1.11.0.js"></script>
+    <script src="../Scripts/jquery-1.11.2.js"></script>
 <script src="../Scripts/bootstrap.js"></script>
 
     
     <script src="../Scripts/jquery.validate.js"></script>
-<script src="../Scripts/knockout-3.1.0.debug.js"></script>
+<script src="../Scripts/knockout-3.2.0.debug.js"></script>
 
     <script>
 
