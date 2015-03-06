@@ -18,7 +18,15 @@ namespace System.Web.Mvc.Html
             object htmlAttributes,
             ModelMetadata metadata)
         {
-            var attributes = HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttributes);
+            RouteValueDictionary attributes = null;
+            
+            // prevent double conversion
+            if (htmlAttributes is RouteValueDictionary)
+                attributes = (RouteValueDictionary)htmlAttributes;
+            else if (htmlAttributes is IDictionary<string, object>)
+                attributes = new RouteValueDictionary((IDictionary<string, object>)htmlAttributes);
+            else
+                attributes = HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttributes);
 
             // If client validation or unobtrusive javascript are disabled then there's really nothing to do
             if (!HtmlHelper.ClientValidationEnabled || !HtmlHelper.UnobtrusiveJavaScriptEnabled)
