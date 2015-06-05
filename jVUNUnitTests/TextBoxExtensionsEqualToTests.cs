@@ -10,7 +10,7 @@ namespace jQuery.Validation.Unobtrusive.Native.MVC.UnitTests
         {
             public string MainField { get; set; }
 
-            [System.ComponentModel.DataAnnotations.Compare("MainField", ErrorMessage = "Fields do not match.")]
+            [System.ComponentModel.DataAnnotations.Compare("MainField")]
             public string ConfirmField { get; set; }
         }
 
