@@ -48,7 +48,7 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
         {
             ViewBag.Title = "MaxLength and MinLength";
 
-            return View(new MaxLengthMinLengthModel { MaxLength = "12345678", MaxAndMinLength = "123" });
+            return View(new MaxLengthMinLengthModel { StringLengthMaxOnly = "12345678", StringLengthMaxAndMinLength = "123", MaxLength = "1234567890", MinLength = "12345"});
         }
 
         public ActionResult EqualTo()
@@ -107,6 +107,18 @@ namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
             return View(new CreditCardModel());
         }
 
+        public ActionResult RegularExpression()
+        {
+            ViewBag.Title = "Regular Expression";
 
+            return View(new RegularExpressionModel { RegularExpression = "goodbye" });
+        }
+
+        public ActionResult FileExtensions()
+        {
+            ViewBag.Title = "File Extensions";
+
+            return View(new FileExtensionsModel());
+        }
     }
 }

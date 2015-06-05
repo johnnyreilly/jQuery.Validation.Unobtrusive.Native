@@ -1,0 +1,126 @@
+﻿@using jQuery.Validation.Unobtrusive.Native.Demos.Models
+@model RegularExpressionModel
+@section metatags{
+    <meta name="Description" content="A demo of regular expression validation.">
+}
+@section scripts
+{
+    @Scripts.Render("~/bundles/jquery-validation")
+    
+    <script type="text/javascript" src="/Scripts/additional-methods.min.js"></script>
+
+    <script>
+        $("form").validate({
+            submitHandler: function (form) {
+                alert("This is a valid form!");
+            }
+        });
+
+    </script>
+}
+
+<h3>@ViewBag.Title</h3>
+
+<p>The <a href="http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.regularexpressionattribute.aspx" target="_blank">System.ComponentModel.DataAnnotations.RegularExpressionAttribute</a> maps to the pattern validation method in jQuery Validation additonal-methods.js.</p>
+
+<ul class="nav nav-tabs" data-tabs="tabs">
+    <li class="active"><a data-toggle="tab" href="#demo">Demo</a></li>
+    <li><a data-toggle="tab" href="#model">Model</a></li>
+    <li><a data-toggle="tab" href="#view">View</a></li>
+    <li><a data-toggle="tab" href="#html">HTML</a></li>
+    <li><a data-toggle="tab" href="#javascript">JavaScript</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active" id="demo">
+        
+        @using (Html.BeginForm())
+        {
+            <div class="row">
+                @Html.LabelFor(x => x.RegularExpression, "Only \"hello\" can be entered:")
+                @Html.TextBoxFor(x => x.RegularExpression, true)
+            </div>
+
+            <div class="row">
+                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="reset" class="btn btn-info">Reset</button>
+            </div>
+        }
+
+    </div>
+
+    <div class="tab-pane" id="model">
+        
+        <p>Here's the model, note that the <code>RegularExpression</code> attribute decorates the sole property on the model:</p>
+
+        <pre class="prettyprint cs">
+    using System.ComponentModel.DataAnnotations;
+
+    namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
+    {
+        public class RegularExpressionModel
+        {
+            [RegularExpression("^hello$")]
+            public string RegularExpression { get; set; }
+        }
+    }
+        </pre>
+    </div>
+
+    <div class="tab-pane" id="view">
+        
+        <p>Here's the view (which uses the model):</p>
+
+        <pre class="prettyprint cs">
+    @@model jQuery.Validation.Unobtrusive.Native.Demos.Models.RegularExpressionModel
+    @@using (Html.BeginForm())
+    {
+        &lt;div class="row"&gt;
+            @@Html.LabelFor(x =&gt; x.RegularExpression, "Only \"hello\" can be entered:")
+            @@Html.TextBoxFor(x =&gt; x.RegularExpression, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
+        &lt;/div&gt;
+    }
+        </pre>
+
+    </div>
+
+    <div class="tab-pane" id="html">
+        
+        <p>Here's the HTML that the view generates:</p>
+
+        <pre class="prettyprint html">
+    &lt;form action="/Demo/Email" method="post"&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="RegularExpression"&gt;Only an "hello" can be entered:&lt;/label&gt;
+            &lt;input data-msg-pattern="The field RegularExpression must match the regular expression '^hello$'." data-rule-pattern="^hello$" 
+                id="RegularExpression" name="RegularExpression" type="text" value="goodbye" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+        </pre>
+    </div>
+    
+    <div class="tab-pane" id="javascript">
+        
+        <p>Here's the JavaScript that initialises the validation:</p>
+
+        <pre class="prettyprint js">
+  &lt;script type="text/javascript" src="/Scripts/additional-methods.min.js"&gt;&lt;/script&gt;
+
+  $("form").validate({
+      submitHandler: function (form) {
+          alert("This is a valid form!");
+      }
+  });
+        </pre>
+
+    </div>
+
+</div>
