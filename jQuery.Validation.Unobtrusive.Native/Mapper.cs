@@ -37,7 +37,7 @@ namespace System.Web.Mvc.Html
             foreach (var rule in validators.SelectMany(v => v.GetClientValidationRules()))
             {
                 // if we have an error message for this rule then create a data-msg-/rulename/ attribute to store it
-                if (!string.IsNullOrEmpty(rule.ErrorMessage) && rule.ValidationType != "length") // length is the only exception to this standard rule
+                if (!string.IsNullOrEmpty(rule.ErrorMessage) && rule.ValidationType != "length" && rule.ValidationType != "regex") // length & regex are exceptions to this mapping
                     attributes.AddIfNotPresent("data-msg-" + rule.ValidationType, rule.ErrorMessage);
 
                 switch (rule.ValidationType)
@@ -50,6 +50,8 @@ namespace System.Web.Mvc.Html
                         attributes.AddIfNotPresent("data-rule-equalto", equalToSelector);
                         break;
 
+                    case "minlength":
+                    case "maxlength":
                     case "length":
                         // length is mapped to minlength and maxlength
                         if (rule.ValidationParameters.ContainsKey("min"))
@@ -68,6 +70,17 @@ namespace System.Web.Mvc.Html
                     case "range":
                         attributes.AddIfNotPresent("data-rule-range", string.Format(CultureInfo.InvariantCulture, // Invariant so JavaScript can parse the numbers
                             "[{0},{1}]", rule.ValidationParameters["min"], rule.ValidationParameters["max"]));
+                        break;
+
+                    case "extension":
+                        // Use the older "extensions" validator in Additional-Methods, and only spit out a string of extensions.
+                        attributes.AddIfNotPresent("data-rule-extension", rule.ValidationParameters["extension"]);
+                        break;
+
+                    case "regex":
+                        // Additional-Methods provides support for "pattern" with the regex passed in as a string.
+                        attributes.AddIfNotPresent("data-rule-pattern", rule.ValidationParameters["pattern"]);
+                        attributes.AddIfNotPresent("data-msg-pattern", rule.ErrorMessage);
                         break;
 
                     // Standard handling of rules
