@@ -21,7 +21,7 @@
 
 <h3>@ViewBag.Title</h3>
 
-<p>The <a href="http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.regularexpressionattribute.aspx" target="_blank">System.ComponentModel.DataAnnotations.RegularExpressionAttribute</a> maps to the pattern validation method in jQuery Validation additonal-methods.js.</p>
+<p>The <a href="http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.regularexpressionattribute.aspx" target="_blank">System.ComponentModel.DataAnnotations.RegularExpressionAttribute</a> maps to the pattern validation method in jQuery Validation <a href="http://jqueryvalidation.org/" target="_blank">additional-methods.js</a>.</p>
 
 <ul class="nav nav-tabs" data-tabs="tabs">
     <li class="active"><a data-toggle="tab" href="#demo">Demo</a></li>
@@ -95,7 +95,7 @@
         <pre class="prettyprint html">
     &lt;form action="/Demo/Email" method="post"&gt;
         &lt;div class="row"&gt;
-            &lt;label for="RegularExpression"&gt;Only an "hello" can be entered:&lt;/label&gt;
+            &lt;label for="RegularExpression"&gt;Only "hello" can be entered:&lt;/label&gt;
             &lt;input data-msg-pattern="The field RegularExpression must match the regular expression '^hello$'." data-rule-pattern="^hello$" 
                 id="RegularExpression" name="RegularExpression" type="text" value="goodbye" /&gt;
         &lt;/div&gt;

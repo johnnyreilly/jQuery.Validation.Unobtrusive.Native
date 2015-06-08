@@ -82,6 +82,10 @@ MIT license - [http://www.opensource.org/licenses/mit-license.php](http://www.op
 
 ##Changelog
 
+###1.2.0 / 2015-06-08
+
+- [Added support for RegularExpression, MaxLength, MinLength and FileExtensions attributes](https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native/pull/17) (thanks to [Ben Duguid](https://github.com/Zhaph) for this)</li>
+
 ###1.1.2 / 2015-01-07
 
 - [Moved from System.Web.Mvc namespace to System.Web.Mvc.Html in line with MVC's built in extension methods](https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native/issues/12)
