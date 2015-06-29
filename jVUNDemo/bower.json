@@ -1,0 +1,26 @@
+{
+  "name": "jVUNDemo",
+  "version": "1.0.0",
+  "homepage": "https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native",
+  "authors": [
+    "John Reilly <johnny_reilly@hotmail.com>"
+  ],
+  "description": "Demo of jQuery.Validation.Unobtrusive.Native",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1.11.3",
+    "jquery-validation": "~1.13.1",
+    "bootstrap": "~3.3.5",
+    "jquery-validation-globalize": "~0.1.1",
+    "knockout": "~3.3.0",
+    "modernizr": "~2.8.3",
+    "globalize": "0.1.1"
+  }
+}

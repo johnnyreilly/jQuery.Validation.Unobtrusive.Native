@@ -9,7 +9,7 @@
     public KeyValuePair<string, string> GlobalizeCulture()
     { 
         // Determine culture - GUI culture for preference, user selected culture as fallback
-        const string filePattern = "~/scripts/globalize/cultures/globalize.culture.{0}.js";
+        const string filePattern = "~/scripts/cultures/globalize.culture.{0}.js";
         var currentCulture = CultureInfo.CurrentCulture;
         var cultureToUse = "en-GB"; //Default regionalisation to use
  
@@ -32,7 +32,7 @@
 {
     @Scripts.Render(
         "~/bundles/jquery-validation", 
-        "~/Scripts/globalize/globalize.js", 
+        "~/Scripts/globalize.js", 
         culture.Value, // eg "~/scripts/jquery.globalize/cultures/globalize.culture.en-GB.js"
         "~/Scripts/jquery.validate.globalize.js")
     <script>
@@ -54,13 +54,9 @@
 
 <h3>@ViewBag.Title</h3>
 
-<p>If you want to patch the jQuery Validation date and number validation to be locale specific then you can using <code>jquery.validate.globalize.js</code>.  You can download it from Nuget here:</p>
+<p>If you want to patch the jQuery Validation date and number validation to be locale specific then you can using <code><a href="https://github.com/johnnyreilly/jquery-validation-globalize" target="_blank">jquery-validate-globalize.js</a></code>. You can download it from Bower with <code>bower install jquery-validation-globalize --save</code>.</p>
 
-<div class="nuget-badge">
-    <p><code>PM&gt; Install-Package jQuery.Validation.Globalize</code></p>
-</div>
-
-<p>To find more information about this then you could have a read of my <a href="http://blog.icanmakethiswork.io/2012/09/globalize-and-jquery-validate.html" target="_blank">blogpost</a> or look at the project on <a href="https://github.com/johnnyreilly/jquery-validation-globalize" target="_blank">GitHub</a>.  This library replaces the jQuery Validation date and number validation with an implementation that depends on <a href="http://github.com/jquery/globalize" target="_blank">Globalize</a>.</p>
+<p>To find more information about this then you could have a read of my <a href="http://blog.icanmakethiswork.io/2012/09/globalize-and-jquery-validate.html" target="_blank">blogpost</a>.  This library replaces the jQuery Validation date and number validation with an implementation that depends on <a href="http://github.com/jquery/globalize" target="_blank">Globalize</a>.</p>
 
 <p>Take a look at the demo below, customised for the <strong>@culture.Key</strong> culture - that's right, *<strong>your</strong>* culture (or at least what ASP.Net thinks your culture ought to be).  If you switch your browser to say, <strong>de-DE</strong> and reload this page then you'll see the app has switched to the closest Globalize appropriate culture it can find.</p>
 
@@ -185,8 +181,8 @@
 
         <pre class="prettyprint html">
   &lt;script src="/Scripts/jquery.validate.js"&gt;&lt;/script&gt;
-  &lt;script src="/Scripts/jquery.globalize/globalize.js"&gt;&lt;/script&gt;
-  &lt;script src="/scripts/jquery.globalize/cultures/globalize.culture.en-GB.js"&gt;&lt;/script&gt;
+  &lt;script src="/Scripts/globalize.js"&gt;&lt;/script&gt;
+  &lt;script src="/scripts/cultures/globalize.culture.en-GB.js"&gt;&lt;/script&gt;
   &lt;script src="/Scripts/jquery.validate.globalize.js"&gt;&lt;/script&gt;
         </pre>
 
@@ -216,7 +212,7 @@
     public KeyValuePair&lt;string, string&gt; GlobalizeCulture()
     { 
         // Determine culture - GUI culture for preference, user selected culture as fallback
-        const string filePattern = "~/scripts/jquery.globalize/cultures/globalize.culture.{0}.js";
+        const string filePattern = "~/scripts/cultures/globalize.culture.{0}.js";
         var currentCulture = CultureInfo.CurrentCulture;
         var cultureToUse = "en-GB"; //Default regionalisation to use
  
@@ -251,8 +247,8 @@
 
     @@Scripts.Render(
         "~/bundles/jquery-validation", 
-        "~/Scripts/jquery.globalize/globalize.js", 
-        culture.Value, // eg "~/scripts/jquery.globalize/cultures/globalize.culture.en-GB.js"
+        "~/Scripts/globalize.js", 
+        culture.Value, // eg "~/scripts/cultures/globalize.culture.en-GB.js"
         "~/Scripts/jquery.validate.globalize.js")
 
     &lt;script&gt;

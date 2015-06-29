@@ -22,6 +22,12 @@ branches:
 
 install:
 - ps: choco install wget
+- cmd: >-
+    npm install -g rimraf
+
+    npm install -g bower
+    
+    npm install -g gulp
 
 build:
   verbosity: minimal

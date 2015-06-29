@@ -711,6 +711,7 @@ formatDate = function( value, format, culture ) {
 		numberString = split[ 0 ];
 		right = split.length > 1 ? split[ 1 ] : "";
 
+		var l;
 		if ( exponent > 0 ) {
 			right = zeroPad( right, exponent, false );
 			numberString += right.slice( 0, exponent );
@@ -760,7 +761,7 @@ formatDate = function( value, format, culture ) {
 			if ( value === -Infinity ) {
 				return culture.numberFormat.negativeInfinity;
 			}
-			return culture.numberFormat.NaN;
+			return culture.numberFormat[ "NaN" ];
 		}
 		if ( !format || format === "i" ) {
 			return culture.name.length ? value.toLocaleString() : value.toString();
@@ -1403,7 +1404,7 @@ Globalize.findClosestCulture = function( name ) {
 			lang = prioritized[ i ].lang;
 			for ( var cultureKey in cultures ) {
 				var culture = cultures[ cultureKey ];
-				if ( culture.language === lang ) {
+				if ( culture.language == lang ) {
 					return culture;
 				}
 			}

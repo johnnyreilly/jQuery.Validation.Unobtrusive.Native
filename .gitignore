@@ -81,6 +81,12 @@ publish
 # NuGet Packages Directory
 packages
 
+# NPM packages
+node_modules
+
+# Bower packages
+bower_components
+
 # Windows Azure Build Output
 csx
 *.build.csdef

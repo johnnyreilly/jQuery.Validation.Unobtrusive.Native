@@ -1,0 +1,28 @@
+{
+  "name": "jVUNDemo",
+  "version": "1.0.0",
+  "description": "Demo of jQuery.Validation.Unobtrusive.Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native.git"
+  },
+  "author": "John Reilly (johnny_reilly@hotmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native/issues"
+  },
+  "homepage": "https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native",
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-remote-src": "^0.3.0",
+    "gulp-util": "^3.0.6",
+    "path": "^0.11.14",
+    "wiredep": "^2.2.2"
+  }
+}
