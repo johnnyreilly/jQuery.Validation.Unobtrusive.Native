@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="John Reilly">
+    <meta name="keywords" content="jQuery Validation Unobtrusive Native, ASP.Net MVC, validation, jQuery, jquery-validate.js, unobtrusive">
+    <title>Remote - jQuery Validation Unobtrusive Native</title>
+    
+    <meta name="Description" content="A demo of remote validation.">
+
+    <link href="../Content/site.css" rel="stylesheet"/>
+
+    <link href="https://google-code-prettify.googlecode.com/svn/loader/prettify.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    
+    <script src="../Scripts/modernizr.js"></script>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">jVUN</a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="../Home/GettingStarted.html">Getting Started</a></li>
+                    <li><a href="http://blog.icanmakethiswork.io/2013/10/migrating-from-jquery.validate.unobtrusive.js-to-jQuery.Validation.Unobtrusive.Native.html" target="_blank">Migrating</a></li>
+                    <li><a href="../Home/Download.html">Download</a></li>
+                    <li class="dropdown">
+                        <a href="Remote.html#" class="dropdown-toggle" data-toggle="dropdown">Demos <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../Demo.html">Overview</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Type Validations</li>
+<li><a href="Number.html">Number</a></li>
+<li><a href="Date.html">Date</a></li>
+<li class="dropdown-header">Attribute Validations</li>
+<li><a href="Required.html">Required</a></li>
+<li><a href="Range.html">Range</a></li>
+<li><a href="MaxLengthMinLength.html">MaxLength / MinLength</a></li>
+<li><a href="EqualTo.html">EqualTo</a></li>
+<li><a href="Url.html">URL</a></li>
+<li><a href="Email.html">Email</a></li>
+<li><a href="CreditCard.html">CreditCard</a></li>
+<li class="active"><a href="Remote.html">Remote</a></li>
+<li><a href="RegularExpression.html">Regular Expression</a></li>
+<li><a href="FileExtensions.html">File Extensions</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="Remote.html#" class="dropdown-toggle" data-toggle="dropdown">Advanced Demos <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../AdvancedDemo.html">Overview</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../AdvancedDemo/Knockout.html">Knockout</a></li>
+<li><a href="../AdvancedDemo/CustomValidation.html">Custom Validation</a></li>
+<li class="dropdown-header">Miscellaneous Demos</li>
+<li><a href="../AdvancedDemo/Tooltip.html">Tooltip</a></li>
+<li><a href="../AdvancedDemo/Globalize.html">Globalize</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="main" class="container">
+
+        
+<h3>Remote</h3>
+
+<p>The <a href="http://msdn.microsoft.com/en-us/library/system.web.mvc.remoteattribute.aspx" target="_blank">System.Web.Mvc.RemoteAttribute</a> maps to the <a href="http://jqueryvalidation.org/remote-method/" target="_blank">remote</a> validation method in jQuery Validation.</p>
+
+<div class="alert alert-danger alert-block" style="display: none;" id="warning">
+    <h4>This demo won't work when viewed as a static site</h4>
+    <p>Hey people - it looks like you're viewing a static version of this page.  (GitHub pages is all about the static content you see.)  Because there's no server for this page to talk to the demo won't work.  To see a working version in all it's glory then try running the jVUNDemo project locally.  Then it's all goodness I promise.</p>
+</div>
+
+<ul class="nav nav-tabs" data-tabs="tabs">
+    <li class="active"><a data-toggle="tab" href="Remote.html#demo">Demo</a></li>
+    <li><a data-toggle="tab" href="Remote.html#model">Model</a></li>
+    <li><a data-toggle="tab" href="Remote.html#view">View</a></li>
+    <li><a data-toggle="tab" href="Remote.html#controller">Controller</a></li>
+    <li><a data-toggle="tab" href="Remote.html#html">HTML</a></li>
+    <li><a data-toggle="tab" href="Remote.html#javascript">JavaScript</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active" id="demo">
+        
+<form action="Remote.html" method="post">            <div class="row">
+                <label for="SimpleErrorMessage">Default error message demo.  Only text that begins with the letter &quot;A&quot; can be entered:</label>
+                <input data-msg-remote="&#39;SimpleErrorMessage&#39; is invalid." data-rule-remote="{&quot;url&quot;:&quot;/Demo/RemoteSimple&quot;,&quot;additionalfields&quot;:&quot;*.SimpleErrorMessage&quot;}" id="SimpleErrorMessage" name="SimpleErrorMessage" type="text" value="" />
+            </div>
+            <div class="row">
+                <label for="ServerErrorMessage">Server error message demo.  Only text that begins with the letter &quot;B&quot; can be entered:</label>
+                <input data-msg-remote="&#39;ServerErrorMessage&#39; is invalid." data-rule-remote="{&quot;url&quot;:&quot;/Demo/RemoteServerErrorMessage&quot;,&quot;additionalfields&quot;:&quot;*.ServerErrorMessage&quot;}" id="ServerErrorMessage" name="ServerErrorMessage" type="text" value="" />
+            </div>
+            <div class="row">
+                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="reset" class="btn btn-info">Reset</button>
+            </div>
+</form>
+    </div>
+
+    <div class="tab-pane" id="model">
+        
+        <p>Here's the model, note that the <code>EmailAddress</code> attribute decorates the sole property on the model:</p>
+
+        <pre class="prettyprint cs">
+    using System.Web.Mvc;
+
+    namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
+    {
+        public class RemoteModel
+        {
+            [Remote("RemoteSimple", "Demo")]
+            public string SimpleErrorMessage { get; set; }
+
+            [Remote("RemoteServerErrorMessage", "Demo")]
+            public string ServerErrorMessage { get; set; }
+        }
+    }
+        </pre>
+    </div>
+
+    <div class="tab-pane" id="view">
+        
+        <p>Here's the view (which uses the model):</p>
+
+        <pre class="prettyprint cs">
+    @model jQuery.Validation.Unobtrusive.Native.Demos.Models.RemoteModel
+    @using (Html.BeginForm())
+    {
+        &lt;div class="row"&gt;
+            @Html.LabelFor(x =&gt; x.SimpleErrorMessage, "Default error message demo.  Only text that begins with the letter \"A\" can be entered:")
+            @Html.TextBoxFor(x =&gt; x.SimpleErrorMessage, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            @Html.LabelFor(x =&gt; x.ServerErrorMessage, "Server error message demo.  Only text that begins with the letter \"B\" can be entered:")
+            @Html.TextBoxFor(x =&gt; x.ServerErrorMessage, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
+        &lt;/div&gt;
+    }
+        </pre>
+
+    </div>
+
+    <div class="tab-pane" id="controller">
+        
+        <p>Here's the (relevant parts) of the controller. Note the different endpoints for each remote validation:</p>
+
+        <pre class="prettyprint cs">
+    using System;
+    using System.Web.Mvc;
+    using jQuery.Validation.Unobtrusive.Native.Demos.Models;
+
+    namespace jQuery.Validation.Unobtrusive.Native.Demos.Controllers
+    {
+        public class DemoController : Controller
+        {
+            // ...
+
+            public JsonResult RemoteSimple(string SimpleErrorMessage)
+            {
+                return Json(SimpleErrorMessage.StartsWith("a", true, null), JsonRequestBehavior.AllowGet);
+            }
+
+            public JsonResult RemoteServerErrorMessage(string ServerErrorMessage)
+            {
+                return Json((ServerErrorMessage.StartsWith("b", true, null)
+                    ? "true"
+                    : ServerErrorMessage + " does not begin with \"b\" and this message was sent back from the server as a result..."),
+                    JsonRequestBehavior.AllowGet);
+            }
+
+            // ...
+        }
+    }
+        </pre>
+    </div>
+
+    <div class="tab-pane" id="html">
+        
+        <p>Here's the HTML that the view generates.  If you look closely at the <code>data-rule-remote</code> attributes you can see the JSON used to drive the AJAX request. In this example there are 2 properties, <code>url</code> and <code>additionalfields</code>.  As you may have guessed <code>url</code> specifies the controller endpoints to hit to perform remote validation. The <code>additionalfields</code> property is a hangover from the default MVC unobtrusive implementation.  If we wanted we could strip this out, but since it does no harm it's been left behind for now.</p>
+
+        <pre class="prettyprint html">
+    &lt;form action="/Demo/Remote" method="post"&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="SimpleErrorMessage"&gt;Default error message demo.  Only text that begins with the letter &quot;A&quot; can be entered:&lt;/label&gt;
+            &lt;input data-msg-remote="&#39;SimpleErrorMessage&#39; is invalid." 
+                data-rule-remote="{&amp;quot;url&amp;quot;:&amp;quot;/Demo/RemoteSimple&amp;quot;,&amp;quot;additionalfields&amp;quot;:&amp;quot;*.SimpleErrorMessage&amp;quot;}"
+                id="SimpleErrorMessage" name="SimpleErrorMessage" type="text" value="" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="ServerErrorMessage"&gt;Server error message demo.  Only text that begins with the letter &quot;B&quot; can be entered:&lt;/label&gt;
+            &lt;input data-msg-remote="&#39;ServerErrorMessage&#39; is invalid." 
+                data-rule-remote="{&amp;quot;url&amp;quot;:&amp;quot;/Demo/RemoteServerErrorMessage&amp;quot;,&amp;quot;additionalfields&amp;quot;:&amp;quot;*.ServerErrorMessage&amp;quot;}" 
+                id="ServerErrorMessage" name="ServerErrorMessage" type="text" value="" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+        </pre>
+    </div>
+    
+    <div class="tab-pane" id="javascript">
+        
+        <p>Here's the JavaScript that initialises the validation:</p>
+
+        <pre class="prettyprint js">
+  $("form").validate({
+      submitHandler: function (form) {
+          alert("This is a valid form!");
+      }
+  });
+        </pre>
+
+    </div>
+
+</div>
+
+
+
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <p class="muted">
+                &#169; 2013 <a href="http://blog.icanmakethiswork.io" target="_blank">John Reilly</a>
+                · <a href="mailto:johnny_reilly@hotmail.com">Contact</a>
+                · <a href="../Home/License.html">License</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="../Scripts/jquery.js"></script>
+<script src="../Scripts/bootstrap.js"></script>
+
+    
+    <script src="../Scripts/jquery.validate.js"></script>
+
+    <script>
+        $("form").validate({
+            submitHandler: function(form) {
+                alert("This is a valid form!");
+            }
+        });
+
+        // Show warning if this is a static page
+        if (window.location.href.toLowerCase().indexOf("remote.html") !== -1) {
+            $("#warning").slideDown();
+        }
+    </script>
+
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <a href="https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native" class="hidden-xs"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+</body>
+</html>
