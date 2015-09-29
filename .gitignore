@@ -87,6 +87,11 @@ node_modules
 # Bower packages
 bower_components
 
+# Exclude dependencies that are copied locally
+[Cc]ontent/bootstrap
+[Ss]cripts
+
+
 # Windows Azure Build Output
 csx
 *.build.csdef
