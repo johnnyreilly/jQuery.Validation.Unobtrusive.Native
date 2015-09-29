@@ -89,7 +89,7 @@ bower_components
 
 # Exclude dependencies that are copied locally
 [Cc]ontent/bootstrap
-[Ss]cripts
+[Ss]cripts/
 
 
 # Windows Azure Build Output
