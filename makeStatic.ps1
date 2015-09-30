@@ -36,6 +36,9 @@ write-host "Shut down jVUNDemo site"
 stop-process -Name iisexpress
 
 if (Test-Path $staticSitePath) { 
+    Write-Host "- Copy $($jVUNDemo)\bower_components to $($staticSitePath)"
+    copy-item -path $($jVUNDemo)\bower_components -Destination $staticSitePath -Recurse
+
     write-host "Contents of $($staticSitePath)"
     ls $staticSitePath
 }
