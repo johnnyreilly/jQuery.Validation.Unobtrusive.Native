@@ -9,7 +9,6 @@
     public KeyValuePair<string, string[]> GetLocaleAndCldrData()
     {
     // Determine culture - GUI culture for preference, user selected culture as fallback
-    const string directoryPattern = "~/bower_components/cldr-data/{0}";
     const string localePattern = "~/bower_components/cldr-data/main/{0}";
     var currentCulture = CultureInfo.CurrentCulture;
     var cultureToUse = "en-GB"; //Default regionalisation to use
@@ -20,6 +19,7 @@
     else if (Directory.Exists(HostingEnvironment.MapPath(string.Format(localePattern, currentCulture.TwoLetterISOLanguageName)))) //That failed; now try for a en style directory
         cultureToUse = currentCulture.TwoLetterISOLanguageName;
 
+    const string directoryPattern = "../../bower_components/cldr-data/{0}";
     var cultureFilesToUse = new[] {
         "supplemental/likelySubtags.json",
         string.Format("main/{0}/numbers.json", cultureToUse),
@@ -28,7 +28,7 @@
         string.Format("main/{0}/timeZoneNames.json", cultureToUse),
         "supplemental/timeData.json",
         "supplemental/weekData.json"
-    }.Select(f => Url.Content(string.Format(directoryPattern, f))).ToArray();
+    }.Select(f => string.Format(directoryPattern, f)).ToArray();
 
     return new KeyValuePair<string, string[]>(cultureToUse, cultureFilesToUse);
     }
@@ -272,7 +272,6 @@
     public KeyValuePair&lt;string, string[]&gt;GetLocaleAndCldrData()
     {
         // Determine culture - GUI culture for preference, user selected culture as fallback
-        const string directoryPattern = "~/bower_components/cldr-data/{0}";
         const string localePattern = "~/bower_components/cldr-data/main/{0}";
 
         var currentCulture = CultureInfo.CurrentCulture;
@@ -284,6 +283,7 @@
         else if (Directory.Exists(HostingEnvironment.MapPath(string.Format(localePattern, currentCulture.TwoLetterISOLanguageName)))) //That failed; now try for a en style directory
         cultureToUse = currentCulture.TwoLetterISOLanguageName;
 
+        const string directoryPattern = "../../bower_components/cldr-data/{0}";
         var cultureFilesToUse = new[] {
             "supplemental/likelySubtags.json",
             string.Format("main/{0}/numbers.json", cultureToUse),
@@ -292,7 +292,7 @@
             string.Format("main/{0}/timeZoneNames.json", cultureToUse),
             "supplemental/timeData.json",
             "supplemental/weekData.json"
-        }.Select(f =&gt; Url.Content(string.Format(directoryPattern, f))).ToArray();
+        }.Select(f =&gt; string.Format(directoryPattern, f)).ToArray();
 
         return new KeyValuePair&lt;string, string[]&gt;(cultureToUse, cultureFilesToUse);
     }
