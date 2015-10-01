@@ -304,6 +304,13 @@
     &lt;globalization culture="auto" uiCulture="auto" /&gt;
     &lt;!--- Other stuff.... --&gt;
   &lt;/system.web&gt;
+
+  &lt;system.webServer&gt;
+    &lt;staticContent&gt;
+      &lt;remove fileExtension=".json" /&gt;
+      &lt;mimeMap fileExtension=".json" mimeType="application/json" /&gt;
+    &lt;/staticContent&gt;
+  &lt;/system.webServer&gt;
 &lt;/configuration&gt;
         </pre>
                 <p>The Key returned from the function is the Globalize culture you are going to use (eg <em>"@localeAndCldrData.Key"</em>) which you can use to initialise Globalize to the relevant culture.  The Value returned is an array of the cldr locale data files you are going to use to power Globalize (eg <em>"@string.Join("\", \"", localeAndCldrData.Value)"</em>) which you can use to serve up that culture file.  These 2 combined allows you to do something like this:</p>
