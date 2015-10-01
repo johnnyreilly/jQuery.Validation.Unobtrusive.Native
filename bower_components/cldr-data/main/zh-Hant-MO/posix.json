@@ -1,0 +1,21 @@
+{
+  "main": {
+    "zh-Hant-MO": {
+      "identity": {
+        "version": {
+          "_cldrVersion": "28",
+          "_number": "$Revision: 11914 $"
+        },
+        "language": "zh",
+        "script": "Hant",
+        "territory": "MO"
+      },
+      "posix": {
+        "messages": {
+          "yesstr": "是",
+          "nostr": "否"
+        }
+      }
+    }
+  }
+}

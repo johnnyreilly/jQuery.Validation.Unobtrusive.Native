@@ -81,14 +81,24 @@
 
 <h3>Globalize</h3>
 
-<p>If you want to patch the jQuery Validation date and number validation to be locale specific then you can using <code><a href="https://github.com/johnnyreilly/jquery-validation-globalize" target="_blank">jquery-validate-globalize.js</a></code>. You can download it from Bower with <code>bower install jquery-validation-globalize --save</code>.</p>
+<p>If you want to patch the jQuery Validation date and number validation to be locale specific then you can using <code><a href="https://github.com/johnnyreilly/jquery-validation-globalize" target="_blank">jquery-validate-globalize.js</a></code>. This is available on Bower.  To install it you should first ensure you have a <code>.bowerrc</code> file in place which looks like this:</p>
 
-<p>To find more information about this then you could have a read of my <a href="http://blog.icanmakethiswork.io/2012/09/globalize-and-jquery-validate.html" target="_blank">blogpost</a>.  This library replaces the jQuery Validation date and number validation with an implementation that depends on <a href="http://github.com/jquery/globalize" target="_blank">Globalize</a>.</p>
+<pre class="prettyprint js">
+{
+  "scripts": {
+    "preinstall": "npm install cldr-data-downloader@0.2.x",
+    "postinstall": "node ./node_modules/cldr-data-downloader/bin/download.js -i bower_components/cldr-data/index.json -o bower_components/cldr-data/"
+  }
+}
+</pre>
 
-<p>Take a look at the demo below, customised for the <strong>en-US</strong> culture - that's right, *<strong>your</strong>* culture (or at least what ASP.Net thinks your culture ought to be).  If you switch your browser to say, <strong>de-DE</strong> and reload this page then you'll see the app has switched to the closest Globalize appropriate culture it can find.</p>
+<p>Then you can add the package as a dependency of your project with <code>bower install jquery-validation-globalize --save</code>.</p>
 
+<p>To find more information about this then you could have a read of my <a href="http://blog.icanmakethiswork.io/2012/09/globalize-and-jquery-validate.html" target="_blank">blogpost</a>.  This library replaces the jQuery Validation date and number validation with an implementation that depends on <a href="http://github.com/jquery/globalize" target="_blank">Globalize</a>. (By the way, the post relates to when I first created <code><a href="https://github.com/johnnyreilly/jquery-validation-globalize" target="_blank">jquery-validate-globalize.js</a></code> and it depended on Globalize 0.1.x - it has now been migrated to Globalize 1.x which is very different.)  </p>
+
+<p>Take a look at the demo below, customised for the <strong>en</strong> locale - that's right, *<strong>your</strong>* locale (or at least what ASP.Net thinks your locale ought to be).  If you switch your browser to say, <strong>de-DE</strong> and reload this page then you'll see the app has switched to the closest Globalize appropriate locale it can find.</p>
 <div class="alert alert-danger alert-block" style="display: none;" id="warning">
-    <h4>This demo is fixed to the current culture</h4>
+    <h4>This demo is fixed to the current locale</h4>
     <p>Hey people - it looks like you're viewing a static version of this page.  (GitHub pages is all about the static content you see.)  If you want to switch cultures as suggested above then try running the jVUNDemo project locally.  Then it's all goodness I promise.</p>
 </div>
 
@@ -98,27 +108,27 @@
     <li><a data-toggle="tab" href="Globalize.html#view">View</a></li>
     <li><a data-toggle="tab" href="Globalize.html#html">HTML</a></li>
     <li><a data-toggle="tab" href="Globalize.html#javascript">JavaScript</a></li>
-    <li><a data-toggle="tab" href="Globalize.html#culture">Determine which culture to use</a></li>
+    <li><a data-toggle="tab" href="Globalize.html#locale">Determine which locale to use</a></li>
 </ul>
 <div class="tab-content">
     <div class="tab-pane active" id="demo">
-<form action="Globalize.html" method="post">            <div class="row">
-                <label for="Double">Double - a number between 10.5 and 20.3 must be entered: </label>
-                <input data-msg-number="The field Double must be a number." data-msg-range="The field Double must be between 10.5 and 20.3." data-msg-required="The Double field is required." data-rule-number="true" data-rule-range="[10.5,20.3]" data-rule-required="true" id="Double" name="Double" type="text" value="0" />
-            </div>
-            <div class="row">
-                <label for="DateTime">DateTime - example date string: 9/30/2015, example date and time string: Wednesday, September 30, 2015 12:00 AM:</label>
-                <input data-msg-date="The field DateTime must be a date." data-msg-required="The DateTime field is required." data-rule-date="true" data-rule-required="true" id="DateTime" name="DateTime" type="text" value="" />
-            </div>
-            <div class="row">
-                <button type="submit" class="btn btn-default">Submit</button>
-                <button type="reset" class="btn btn-info">Reset</button>
-            </div>
+<form action="Globalize.html" method="post">        <div class="row">
+            <label for="Double">Double - a number between 10.5 and 20.3 must be entered: </label>
+            <input data-msg-number="The field Double must be a number." data-msg-range="The field Double must be between 10.5 and 20.3." data-msg-required="The Double field is required." data-rule-number="true" data-rule-range="[10.5,20.3]" data-rule-required="true" id="Double" name="Double" type="text" value="0" />
+        </div>
+        <div class="row">
+            <label for="DateTime">DateTime - example date string: 10/1/2015:</label>
+            <input data-msg-date="The field DateTime must be a date." data-msg-required="The DateTime field is required." data-rule-date="true" data-rule-required="true" id="DateTime" name="DateTime" type="text" value="" />
+        </div>
+        <div class="row">
+            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="reset" class="btn btn-info">Reset</button>
+        </div>
 </form>
     </div>
 
     <div class="tab-pane" id="model">
-        
+
         <p>Here's the model, note that the <code>Range</code> attribute decorates the decimal property and a <code>Required</code> attribute decorates our nullable DateTime.:</p>
 
         <pre class="prettyprint cs">
@@ -139,7 +149,7 @@
     </div>
 
     <div class="tab-pane" id="view">
-        
+
         <p>Here's the view (which uses the model):</p>
 
         <pre class="prettyprint cs">
@@ -152,7 +162,7 @@
         &lt;/div&gt;
 
         &lt;div class="row"&gt;
-            @Html.LabelFor(x =&gt; x.DateTime, string.Format("DateTime - example date string: {0:d}, example date and time string: {0:f}:", DateTime.Today))
+            @Html.LabelFor(x =&gt; x.DateTime, string.Format("DateTime - example date string: {0:d}", DateTime.Today))
             @Html.TextBoxFor(x =&gt; x.DateTime, true)
         &lt;/div&gt;
 
@@ -161,15 +171,15 @@
             &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
         &lt;/div&gt;
     }
-        </pre>
+    </pre>
 
     </div>
 
     <div class="tab-pane" id="html">
-        
+
         <p>Here's the HTML that the view generates:</p>
 
-        <pre class="prettyprint html">
+            <pre class="prettyprint html">
     &lt;form action="/AdvancedDemo/Globalize" method="post"&gt;
         &lt;div class="row"&gt;
             &lt;label for="Double"&gt;Double - a number between 10.5 and 20.3 must be entered: &lt;/label&gt;
@@ -182,7 +192,7 @@
                 id="Double" name="Double" type="text" value="0" /&gt;
         &lt;/div&gt;
         &lt;div class="row"&gt;
-            &lt;label for="DateTime"&gt;DateTime - example date string: 9/30/2015, example date and time string: Wednesday, September 30, 2015 12:00 AM:&lt;/label&gt;
+            &lt;label for="DateTime"&gt;DateTime - example date string: 10/1/2015, example date and time string: Thursday, October 1, 2015 12:00 AM:&lt;/label&gt;
             &lt;input data-msg-date="The field DateTime must be a date." 
                 data-msg-required="The DateTime field is required." 
                 data-rule-date="true" 
@@ -196,96 +206,136 @@
     &lt;/form&gt;
         </pre>
     </div>
-    
+
     <div class="tab-pane" id="javascript">
-        
+
         <p>Here's an example of the scripts that you might serve up if you wanted to use <code>jquery.validate.globalize.js</code>.  Note that <code>jquery.validate.globalize.js</code> is last as it depends on both <code>jquery.validate.js</code> and <code>globalize.js</code>.</p>
 
         <pre class="prettyprint html">
-  &lt;script src="/Scripts/jquery.validate.js"&gt;&lt;/script&gt;
-  &lt;script src="/Scripts/globalize.js"&gt;&lt;/script&gt;
-  &lt;script src="/scripts/cultures/globalize.culture.en-GB.js"&gt;&lt;/script&gt;
-  &lt;script src="/Scripts/jquery.validate.globalize.js"&gt;&lt;/script&gt;
+    &lt;script src="/Scripts/jquery.validate.js"&gt;&lt;/script&gt;
+
+    &lt;!-- cldr scripts (needed for globalize) --&gt;
+    &lt;script src="/bower_components/cldrjs/dist/cldr.js"&gt;&lt;/script&gt;
+    &lt;script src="/bower_components/cldrjs/dist/cldr/event.js"&gt;&lt;/script&gt;
+    &lt;script src="/bower_components/cldrjs/dist/cldr/supplemental.js"&gt;&lt;/script&gt;
+
+    &lt;!-- globalize scripts --&gt;
+    &lt;script src="/bower_components/globalize/dist/globalize.js"&gt;&lt;/script&gt;
+    &lt;script src="/bower_components/globalize/dist/globalize/number.js"&gt;&lt;/script&gt;
+    &lt;script src="/bower_components/globalize/dist/globalize/date.js"&gt;&lt;/script&gt;
+
+    &lt;script src="/Scripts/jquery.validate.globalize.js"&gt;&lt;/script&gt;
         </pre>
 
-        <p>Here's the JavaScript that initialises the validation - notice it also initialises Globalize to your culture:</p>
+        <p>Here's the JavaScript that loads the required cldr data via AJAX and initialises the validation - notice it also initialises Globalize to your culture:</p>
 
         <pre class="prettyprint js">
-  // Initialise Globalize to the current UI culture (you need to have served up the relevant culture file for this to work)
-  Globalize.culture("en-US");
+    $.when(
+        $.get("/bower_components/cldr-data/supplemental/likelySubtags.json"),
+        $.get("/bower_components/cldr-data/main/en/numbers.json"),
+        $.get("/bower_components/cldr-data/supplemental/numberingSystems.json"),
+        $.get("/bower_components/cldr-data/main/en/ca-gregorian.json"),
+        $.get("/bower_components/cldr-data/main/en/timeZoneNames.json"),
+        $.get("/bower_components/cldr-data/supplemental/timeData.json"),
+        $.get("/bower_components/cldr-data/supplemental/weekData.json")
+    ).then(function () {
+        // Normalize $.get results, we only need the JSON, not the request statuses.
+        return [].slice.apply(arguments, [0]).map(function (result) {
+            return result[0];
+        });
+    }).then(Globalize.load).then(function () {
+        // Initialise Globalize to the current UI culture
+        Globalize.locale("en");
 
-  $("form").validate({
-      submitHandler: function (form) {
-          alert("This is a valid form!");
-      }
-  });
+        $("form").validate({
+            submitHandler: function (form) {
+                alert("This is a valid form!");
+            }
+        });
+    });
         </pre>
 
     </div>
-     
-    <div class="tab-pane" id="culture">
-        
-        <p>You may wonder how this page is determining which culture to use.  Well it's using this function here:</p>
+    <div class="tab-pane" id="locale">
+        <p>You may wonder how this page is determining which locale to use.  Well it's using this function here:</p>
 
         <pre class="prettyprint cs">
     // Identifies and returns the culture Globalize should use and it's file path in a KeyValuePair where:
     // Key = culture to use (eg "en-GB")
-    // Value = culture file to use (eg "~/scripts/jquery.globalize/cultures/globalize.culture.en-GB.js")
-    public KeyValuePair&lt;string, string&gt; GlobalizeCulture()
-    { 
+    // Value = culture files to use (eg "/bower_components/cldr-data/main/en-GB/numbers.json")
+    public KeyValuePair&lt;string, string[]&gt;GetLocaleAndCldrData()
+    {
         // Determine culture - GUI culture for preference, user selected culture as fallback
-        const string filePattern = "~/scripts/cultures/globalize.culture.{0}.js";
+        const string directoryPattern = "~/bower_components/cldr-data/{0}";
+        const string localePattern = "~/bower_components/cldr-data/main/{0}";
+
         var currentCulture = CultureInfo.CurrentCulture;
         var cultureToUse = "en-GB"; //Default regionalisation to use
- 
+
         //Try to pick a more appropriate regionalisation
-        if (File.Exists(HostingEnvironment.MapPath(string.Format(filePattern, currentCulture.Name)))) //First try for a globalize.culture.en-GB.js style file
-            cultureToUse = currentCulture.Name;
-        else if (File.Exists(HostingEnvironment.MapPath(string.Format(filePattern, currentCulture.TwoLetterISOLanguageName)))) //That failed; now try for a globalize.culture.en.js style file
-            cultureToUse = currentCulture.TwoLetterISOLanguageName;
- 
-        return new KeyValuePair&lt;string, string&gt;(cultureToUse, string.Format(filePattern, cultureToUse));
-    }        
-        </pre>
-        
-        <p>This takes the current culture that ASP.Net believes you are running as and then looks for a Globalize culture that is a close match (finally falling back to en-GB if it finds nothing suitable). Do note that this depends on the following setting in the <code>web.config</code>:</p>
-        
-        <pre class="prettyprint xml">
+        if (Directory.Exists(HostingEnvironment.MapPath(string.Format(localePattern, currentCulture.Name)))) //First try for a en-GB style directory
+        cultureToUse = currentCulture.Name;
+        else if (Directory.Exists(HostingEnvironment.MapPath(string.Format(localePattern, currentCulture.TwoLetterISOLanguageName)))) //That failed; now try for a en style directory
+        cultureToUse = currentCulture.TwoLetterISOLanguageName;
+
+        var cultureFilesToUse = new[] {
+            "supplemental/likelySubtags.json",
+            string.Format("main/{0}/numbers.json", cultureToUse),
+            "supplemental/numberingSystems.json",
+            string.Format("main/{0}/ca-gregorian.json", cultureToUse),
+            string.Format("main/{0}/timeZoneNames.json", cultureToUse),
+            "supplemental/timeData.json",
+            "supplemental/weekData.json"
+        }.Select(f =&gt; Url.Content(string.Format(directoryPattern, f))).ToArray();
+
+        return new KeyValuePair&lt;string, string[]&gt;(cultureToUse, cultureFilesToUse);
+    }
+                </pre>
+                <p>This takes the current culture that ASP.Net believes you are running as and then looks for a Globalize culture that is a close match (finally falling back to en-GB if it finds nothing suitable). Do note that this depends on the following setting in the <code>web.config</code>:</p>
+                <pre class="prettyprint xml">
 &lt;configuration&gt;
   &lt;system.web&gt;
     &lt;globalization culture="auto" uiCulture="auto" /&gt;
     &lt;!--- Other stuff.... --&gt;
   &lt;/system.web&gt;
 &lt;/configuration&gt;
-
         </pre>
-        
-        <p>The Key returned from the function is the Globalize culture you are going to use (eg "<strong>en-US</strong>") which you can use to initialise Globalize to the relevant culture.  The Value returned is the Globalize culture file you are going to use (eg <strong>"~/Scripts/cultures/globalize.culture.en-US.js</strong>") which you can use to serve up that culture file.  These 2 combined allows you to do something like this:</p>
-        
-        <pre class="prettyprint html">
+                <p>The Key returned from the function is the Globalize culture you are going to use (eg <em>"en"</em>) which you can use to initialise Globalize to the relevant culture.  The Value returned is an array of the cldr locale data files you are going to use to power Globalize (eg <em>"/bower_components/cldr-data/supplemental/likelySubtags.json&quot;, &quot;/bower_components/cldr-data/main/en/numbers.json&quot;, &quot;/bower_components/cldr-data/supplemental/numberingSystems.json&quot;, &quot;/bower_components/cldr-data/main/en/ca-gregorian.json&quot;, &quot;/bower_components/cldr-data/main/en/timeZoneNames.json&quot;, &quot;/bower_components/cldr-data/supplemental/timeData.json&quot;, &quot;/bower_components/cldr-data/supplemental/weekData.json"</em>) which you can use to serve up that culture file.  These 2 combined allows you to do something like this:</p>
+                <pre class="prettyprint html">
     @{
-        var culture = GlobalizeCulture();
+        var localeAndCldrData = GetLocaleAndCldrData();
     }
-
     @Scripts.Render(
-        "~/bundles/jquery-validation", 
-        "~/Scripts/globalize.js", 
-        culture.Value, // eg "~/scripts/cultures/globalize.culture.en-GB.js"
+        "~/bundles/jquery-validation",
+        "~/bower_components/cldrjs/dist/cldr.js",
+        "~/bower_components/cldrjs/dist/cldr/event.js",
+        "~/bower_components/cldrjs/dist/cldr/supplemental.js",
+        "~/bower_components/globalize/dist/globalize.js",
+        "~/bower_components/globalize/dist/globalize/number.js",
+        "~/bower_components/globalize/dist/globalize/date.js",
         "~/Scripts/jquery.validate.globalize.js")
-
     &lt;script&gt;
-        // Initialise Globalize to the current UI culture
-        Globalize.culture("@culture.Key"); // eg "en-GB"
-
-        // ....
-
+        $.when(
+            @Html.Raw(string.Join(",\r\n", localeAndCldrData.Value.Select(c => "$.get(\"" + c + "\")")))
+        ).then(function () {
+            // Normalize $.get results, we only need the JSON, not the request statuses.
+            return [].slice.apply(arguments, [0]).map(function (result) {
+                return result[0];
+            });
+        }).then(Globalize.load).then(function () {
+            // Initialise Globalize to the current UI culture
+            Globalize.locale("@localeAndCldrData.Key");
+            $("form").validate({
+                submitHandler: function (form) {
+                    alert("This is a valid form!");
+                }
+            });
+        });
     &lt;/script&gt;
-
         </pre>
-    </div>
-
-</div>
-
+                <p>This may well not be the best way to do this... But this is a way.</p>
+            </div>
+        </div>
 
 
     </div>
@@ -305,24 +355,47 @@
 
     
     <script src="../Scripts/jquery.validate.js"></script>
-<script src="../Scripts/globalize.js"></script>
-<script src="../Scripts/cultures/globalize.culture.en-US.js"></script>
+<script src="../bower_components/cldrjs/dist/cldr.js"></script>
+<script src="../bower_components/cldrjs/dist/cldr/event.js"></script>
+<script src="../bower_components/cldrjs/dist/cldr/supplemental.js"></script>
+<script src="../bower_components/globalize/dist/globalize.js"></script>
+<script src="../bower_components/globalize/dist/globalize/number.js"></script>
+<script src="../bower_components/globalize/dist/globalize/date.js"></script>
 <script src="../Scripts/jquery.validate.globalize.js"></script>
 
     <script>
-        // Initialise Globalize to the current UI culture
-        Globalize.culture("en-US");
+            $.when(
+                $.get("/bower_components/cldr-data/supplemental/likelySubtags.json"),
+$.get("/bower_components/cldr-data/main/en/numbers.json"),
+$.get("/bower_components/cldr-data/supplemental/numberingSystems.json"),
+$.get("/bower_components/cldr-data/main/en/ca-gregorian.json"),
+$.get("/bower_components/cldr-data/main/en/timeZoneNames.json"),
+$.get("/bower_components/cldr-data/supplemental/timeData.json"),
+$.get("/bower_components/cldr-data/supplemental/weekData.json")
+            ).then(function () {
 
-        $("form").validate({
-            submitHandler: function (form) {
-                alert("This is a valid form!");
+                // Normalize $.get results, we only need the JSON, not the request statuses.
+                return [].slice.apply(arguments, [0]).map(function (result) {
+                    return result[0];
+                });
+
+            }).then(Globalize.load).then(function () {
+
+                // Initialise Globalize to the current UI culture
+                Globalize.locale("en");
+
+                $("form").validate({
+                    submitHandler: function (form) {
+                        alert("This is a valid form!");
+                    }
+                });
+
+            });
+
+            // Show warning if this is a static page
+            if (window.location.href.toLowerCase().indexOf("globalize.html") !== -1) {
+                $("#warning").slideDown();
             }
-        });
-
-        // Show warning if this is a static page
-        if (window.location.href.toLowerCase().indexOf("globalize.html") !== -1) {
-            $("#warning").slideDown();
-        }
     </script>
 
     <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>

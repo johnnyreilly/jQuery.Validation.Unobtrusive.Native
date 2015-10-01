@@ -1,0 +1,20 @@
+{
+  "main": {
+    "zu": {
+      "identity": {
+        "version": {
+          "_cldrVersion": "28",
+          "_number": "$Revision: 11914 $"
+        },
+        "language": "zu"
+      },
+      "localeDisplayNames": {
+        "measurementSystemNames": {
+          "metric": "i-Metric",
+          "UK": "i-UK",
+          "US": "i-US"
+        }
+      }
+    }
+  }
+}

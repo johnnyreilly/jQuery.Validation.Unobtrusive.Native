@@ -1,0 +1,20 @@
+{
+  "main": {
+    "sw-UG": {
+      "identity": {
+        "version": {
+          "_cldrVersion": "28",
+          "_number": "$Revision: 11914 $"
+        },
+        "language": "sw",
+        "territory": "UG"
+      },
+      "posix": {
+        "messages": {
+          "yesstr": "Ndiyo:N",
+          "nostr": "Hapana:H"
+        }
+      }
+    }
+  }
+}
