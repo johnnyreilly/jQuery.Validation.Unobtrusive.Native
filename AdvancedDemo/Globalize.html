@@ -298,6 +298,13 @@
     &lt;globalization culture="auto" uiCulture="auto" /&gt;
     &lt;!--- Other stuff.... --&gt;
   &lt;/system.web&gt;
+
+  &lt;system.webServer&gt;
+    &lt;staticContent&gt;
+      &lt;remove fileExtension=".json" /&gt;
+      &lt;mimeMap fileExtension=".json" mimeType="application/json" /&gt;
+    &lt;/staticContent&gt;
+  &lt;/system.webServer&gt;
 &lt;/configuration&gt;
         </pre>
                 <p>The Key returned from the function is the Globalize culture you are going to use (eg <em>"en"</em>) which you can use to initialise Globalize to the relevant culture.  The Value returned is an array of the cldr locale data files you are going to use to power Globalize (eg <em>"/bower_components/cldr-data/supplemental/likelySubtags.json&quot;, &quot;/bower_components/cldr-data/main/en/numbers.json&quot;, &quot;/bower_components/cldr-data/supplemental/numberingSystems.json&quot;, &quot;/bower_components/cldr-data/main/en/ca-gregorian.json&quot;, &quot;/bower_components/cldr-data/main/en/timeZoneNames.json&quot;, &quot;/bower_components/cldr-data/supplemental/timeData.json&quot;, &quot;/bower_components/cldr-data/supplemental/weekData.json"</em>) which you can use to serve up that culture file.  These 2 combined allows you to do something like this:</p>
