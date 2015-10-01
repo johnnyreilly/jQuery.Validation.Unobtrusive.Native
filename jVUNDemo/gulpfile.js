@@ -77,9 +77,6 @@ gulp.task("bower-copy-local-fonts", ["clean-bower-local"], function () {
 gulp.task("bower-copy-local-js", ["clean-bower-local"], function () {
 
     var filesToUse = [].concat(getBowerScriptsOrStyles("js"), [
-        // Globalize does not ship with a bower.json specifying dependencies and so Wiredep does not pick this up
-        "./bower_components/globalize/lib/**/*.*",
-
         // jQuery Validation does not include additional-methods.js in its bower.json
         "./bower_components/jquery-validation/dist/additional-methods.js"
     ]);

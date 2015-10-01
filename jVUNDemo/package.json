@@ -4,7 +4,7 @@
   "description": "Demo of jQuery.Validation.Unobtrusive.Native",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp"
   },
   "repository": {
     "type": "git",

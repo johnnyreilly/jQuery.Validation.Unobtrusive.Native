@@ -245,6 +245,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".bowerrc" />
     <Content Include="bower.json" />
     <Content Include="package.json" />
   </ItemGroup>
@@ -298,7 +299,7 @@
   <Target Name="GulpBuild">
     <Exec Command="npm install" />
     <Exec Command="bower install" />
-    <Exec Command="gulp" />
+    <Exec Command="npm run build" />
     <Exec Command="rimraf ./node_modules" />
   </Target>
   <Target Name="GulpClean">

@@ -18,9 +18,11 @@
     "jquery": "~1.11.3",
     "jquery-validation": "~1.13.1",
     "bootstrap": "~3.3.5",
-    "jquery-validation-globalize": "~0.1.1",
+    "jquery-validation-globalize": "^1.0.0",
     "knockout": "~3.3.0",
-    "modernizr": "~2.8.3",
-    "globalize": "0.1.1"
+    "modernizr": "~2.8.3"
+  },
+  "resolutions": {
+    "globalize": "^1.0.0"
   }
 }
