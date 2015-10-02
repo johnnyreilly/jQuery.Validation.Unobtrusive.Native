@@ -19,7 +19,7 @@
     else if (Directory.Exists(HostingEnvironment.MapPath(string.Format(localePattern, currentCulture.TwoLetterISOLanguageName)))) //That failed; now try for a en style directory
         cultureToUse = currentCulture.TwoLetterISOLanguageName;
 
-    const string directoryPattern = "../../bower_components/cldr-data/{0}";
+    const string directoryPattern = "../bower_components/cldr-data/{0}";
     var cultureFilesToUse = new[] {
         "supplemental/likelySubtags.json",
         string.Format("main/{0}/numbers.json", cultureToUse),
@@ -283,7 +283,7 @@
         else if (Directory.Exists(HostingEnvironment.MapPath(string.Format(localePattern, currentCulture.TwoLetterISOLanguageName)))) //That failed; now try for a en style directory
         cultureToUse = currentCulture.TwoLetterISOLanguageName;
 
-        const string directoryPattern = "../../bower_components/cldr-data/{0}";
+        const string directoryPattern = "../bower_components/cldr-data/{0}";
         var cultureFilesToUse = new[] {
             "supplemental/likelySubtags.json",
             string.Format("main/{0}/numbers.json", cultureToUse),
