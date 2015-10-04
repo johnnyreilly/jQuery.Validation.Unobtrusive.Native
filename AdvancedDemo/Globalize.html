@@ -96,11 +96,7 @@
 
 <p>To find more information about this then you could have a read of my <a href="http://blog.icanmakethiswork.io/2012/09/globalize-and-jquery-validate.html" target="_blank">blogpost</a>.  This library replaces the jQuery Validation date and number validation with an implementation that depends on <a href="http://github.com/jquery/globalize" target="_blank">Globalize</a>. (By the way, the post relates to when I first created <code><a href="https://github.com/johnnyreilly/jquery-validation-globalize" target="_blank">jquery-validate-globalize.js</a></code> and it depended on Globalize 0.1.x - it has now been migrated to Globalize 1.x which is very different.)  </p>
 
-<p>Take a look at the demo below, customised for the <strong>en</strong> locale - that's right, *<strong>your</strong>* locale (or at least what ASP.Net thinks your locale ought to be).  If you switch your browser to say, <strong>de-DE</strong> and reload this page then you'll see the app has switched to the closest Globalize appropriate locale it can find.</p>
-<div class="alert alert-danger alert-block" style="display: none;" id="warning">
-    <h4>This demo is fixed to the current locale</h4>
-    <p>Hey people - it looks like you're viewing a static version of this page.  (GitHub pages is all about the static content you see.)  If you want to switch cultures as suggested above then try running the jVUNDemo project locally.  Then it's all goodness I promise.</p>
-</div>
+<p>Take a look at the demo below, do note that you can switch cultures as you wish.</p>
 
 <ul class="nav nav-tabs" data-tabs="tabs">
     <li class="active"><a data-toggle="tab" href="Globalize.html#demo">Demo</a></li>
@@ -108,16 +104,375 @@
     <li><a data-toggle="tab" href="Globalize.html#view">View</a></li>
     <li><a data-toggle="tab" href="Globalize.html#html">HTML</a></li>
     <li><a data-toggle="tab" href="Globalize.html#javascript">JavaScript</a></li>
-    <li><a data-toggle="tab" href="Globalize.html#locale">Determine which locale to use</a></li>
+    <li><a data-toggle="tab" href="Globalize.html#locale">ASP.Net and Globalize</a></li>
 </ul>
 <div class="tab-content">
     <div class="tab-pane active" id="demo">
 <form action="Globalize.html" method="post">        <div class="row">
-            <label for="Double">Double - a number between 10.5 and 20.3 must be entered: </label>
+            <label for="localeSelector">Current locale:</label>
+            <select id="localeSelector">
+                    <option>af</option>
+                    <option>af-NA</option>
+                    <option>am</option>
+                    <option>ar</option>
+                    <option>ar-AE</option>
+                    <option>ar-BH</option>
+                    <option>ar-DJ</option>
+                    <option>ar-DZ</option>
+                    <option>ar-EG</option>
+                    <option>ar-EH</option>
+                    <option>ar-ER</option>
+                    <option>ar-IL</option>
+                    <option>ar-IQ</option>
+                    <option>ar-JO</option>
+                    <option>ar-KM</option>
+                    <option>ar-KW</option>
+                    <option>ar-LB</option>
+                    <option>ar-LY</option>
+                    <option>ar-MA</option>
+                    <option>ar-MR</option>
+                    <option>ar-OM</option>
+                    <option>ar-PS</option>
+                    <option>ar-QA</option>
+                    <option>ar-SA</option>
+                    <option>ar-SD</option>
+                    <option>ar-SO</option>
+                    <option>ar-SS</option>
+                    <option>ar-SY</option>
+                    <option>ar-TD</option>
+                    <option>ar-TN</option>
+                    <option>ar-YE</option>
+                    <option>az</option>
+                    <option>az-Latn</option>
+                    <option>be</option>
+                    <option>bg</option>
+                    <option>bn</option>
+                    <option>bn-IN</option>
+                    <option>bs</option>
+                    <option>bs-Latn</option>
+                    <option>ca</option>
+                    <option>ca-AD</option>
+                    <option>ca-ES-VALENCIA</option>
+                    <option>ca-FR</option>
+                    <option>ca-IT</option>
+                    <option>cs</option>
+                    <option>cy</option>
+                    <option>da</option>
+                    <option>da-GL</option>
+                    <option>de</option>
+                    <option>de-AT</option>
+                    <option>de-BE</option>
+                    <option>de-CH</option>
+                    <option>de-LI</option>
+                    <option>de-LU</option>
+                    <option>el</option>
+                    <option>el-CY</option>
+                    <option selected="selected">en</option>
+                    <option>en-001</option>
+                    <option>en-150</option>
+                    <option>en-AG</option>
+                    <option>en-AI</option>
+                    <option>en-AS</option>
+                    <option>en-AT</option>
+                    <option>en-AU</option>
+                    <option>en-BB</option>
+                    <option>en-BE</option>
+                    <option>en-BI</option>
+                    <option>en-BM</option>
+                    <option>en-BS</option>
+                    <option>en-BW</option>
+                    <option>en-BZ</option>
+                    <option>en-CA</option>
+                    <option>en-CC</option>
+                    <option>en-CH</option>
+                    <option>en-CK</option>
+                    <option>en-CM</option>
+                    <option>en-CX</option>
+                    <option>en-CY</option>
+                    <option>en-DE</option>
+                    <option>en-DG</option>
+                    <option>en-DK</option>
+                    <option>en-DM</option>
+                    <option>en-ER</option>
+                    <option>en-FI</option>
+                    <option>en-FJ</option>
+                    <option>en-FK</option>
+                    <option>en-FM</option>
+                    <option>en-GB</option>
+                    <option>en-GD</option>
+                    <option>en-GG</option>
+                    <option>en-GH</option>
+                    <option>en-GI</option>
+                    <option>en-GM</option>
+                    <option>en-GU</option>
+                    <option>en-GY</option>
+                    <option>en-HK</option>
+                    <option>en-IE</option>
+                    <option>en-IL</option>
+                    <option>en-IM</option>
+                    <option>en-IN</option>
+                    <option>en-IO</option>
+                    <option>en-JE</option>
+                    <option>en-JM</option>
+                    <option>en-KE</option>
+                    <option>en-KI</option>
+                    <option>en-KN</option>
+                    <option>en-KY</option>
+                    <option>en-LC</option>
+                    <option>en-LR</option>
+                    <option>en-LS</option>
+                    <option>en-MG</option>
+                    <option>en-MH</option>
+                    <option>en-MO</option>
+                    <option>en-MP</option>
+                    <option>en-MS</option>
+                    <option>en-MT</option>
+                    <option>en-MU</option>
+                    <option>en-MW</option>
+                    <option>en-MY</option>
+                    <option>en-NA</option>
+                    <option>en-NF</option>
+                    <option>en-NG</option>
+                    <option>en-NL</option>
+                    <option>en-NR</option>
+                    <option>en-NU</option>
+                    <option>en-NZ</option>
+                    <option>en-PG</option>
+                    <option>en-PH</option>
+                    <option>en-PK</option>
+                    <option>en-PN</option>
+                    <option>en-PR</option>
+                    <option>en-PW</option>
+                    <option>en-RW</option>
+                    <option>en-SB</option>
+                    <option>en-SC</option>
+                    <option>en-SD</option>
+                    <option>en-SE</option>
+                    <option>en-SG</option>
+                    <option>en-SH</option>
+                    <option>en-SI</option>
+                    <option>en-SL</option>
+                    <option>en-SS</option>
+                    <option>en-SX</option>
+                    <option>en-SZ</option>
+                    <option>en-TC</option>
+                    <option>en-TK</option>
+                    <option>en-TO</option>
+                    <option>en-TT</option>
+                    <option>en-TV</option>
+                    <option>en-TZ</option>
+                    <option>en-UG</option>
+                    <option>en-UM</option>
+                    <option>en-US-POSIX</option>
+                    <option>en-VC</option>
+                    <option>en-VG</option>
+                    <option>en-VI</option>
+                    <option>en-VU</option>
+                    <option>en-WS</option>
+                    <option>en-ZA</option>
+                    <option>en-ZM</option>
+                    <option>en-ZW</option>
+                    <option>es</option>
+                    <option>es-419</option>
+                    <option>es-AR</option>
+                    <option>es-BO</option>
+                    <option>es-CL</option>
+                    <option>es-CO</option>
+                    <option>es-CR</option>
+                    <option>es-CU</option>
+                    <option>es-DO</option>
+                    <option>es-EA</option>
+                    <option>es-EC</option>
+                    <option>es-GQ</option>
+                    <option>es-GT</option>
+                    <option>es-HN</option>
+                    <option>es-IC</option>
+                    <option>es-MX</option>
+                    <option>es-NI</option>
+                    <option>es-PA</option>
+                    <option>es-PE</option>
+                    <option>es-PH</option>
+                    <option>es-PR</option>
+                    <option>es-PY</option>
+                    <option>es-SV</option>
+                    <option>es-US</option>
+                    <option>es-UY</option>
+                    <option>es-VE</option>
+                    <option>et</option>
+                    <option>eu</option>
+                    <option>fa</option>
+                    <option>fa-AF</option>
+                    <option>fi</option>
+                    <option>fil</option>
+                    <option>fo</option>
+                    <option>fo-DK</option>
+                    <option>fr</option>
+                    <option>fr-BE</option>
+                    <option>fr-BF</option>
+                    <option>fr-BI</option>
+                    <option>fr-BJ</option>
+                    <option>fr-BL</option>
+                    <option>fr-CA</option>
+                    <option>fr-CD</option>
+                    <option>fr-CF</option>
+                    <option>fr-CG</option>
+                    <option>fr-CH</option>
+                    <option>fr-CI</option>
+                    <option>fr-CM</option>
+                    <option>fr-DJ</option>
+                    <option>fr-DZ</option>
+                    <option>fr-GA</option>
+                    <option>fr-GF</option>
+                    <option>fr-GN</option>
+                    <option>fr-GP</option>
+                    <option>fr-GQ</option>
+                    <option>fr-HT</option>
+                    <option>fr-KM</option>
+                    <option>fr-LU</option>
+                    <option>fr-MA</option>
+                    <option>fr-MC</option>
+                    <option>fr-MF</option>
+                    <option>fr-MG</option>
+                    <option>fr-ML</option>
+                    <option>fr-MQ</option>
+                    <option>fr-MR</option>
+                    <option>fr-MU</option>
+                    <option>fr-NC</option>
+                    <option>fr-NE</option>
+                    <option>fr-PF</option>
+                    <option>fr-PM</option>
+                    <option>fr-RE</option>
+                    <option>fr-RW</option>
+                    <option>fr-SC</option>
+                    <option>fr-SN</option>
+                    <option>fr-SY</option>
+                    <option>fr-TD</option>
+                    <option>fr-TG</option>
+                    <option>fr-TN</option>
+                    <option>fr-VU</option>
+                    <option>fr-WF</option>
+                    <option>fr-YT</option>
+                    <option>ga</option>
+                    <option>gl</option>
+                    <option>gu</option>
+                    <option>he</option>
+                    <option>hi</option>
+                    <option>hr</option>
+                    <option>hr-BA</option>
+                    <option>hu</option>
+                    <option>hy</option>
+                    <option>id</option>
+                    <option>is</option>
+                    <option>it</option>
+                    <option>it-CH</option>
+                    <option>it-SM</option>
+                    <option>ja</option>
+                    <option>ka</option>
+                    <option>kk</option>
+                    <option>km</option>
+                    <option>kn</option>
+                    <option>ko</option>
+                    <option>ko-KP</option>
+                    <option>ky</option>
+                    <option>lo</option>
+                    <option>lt</option>
+                    <option>lv</option>
+                    <option>mk</option>
+                    <option>ml</option>
+                    <option>mn</option>
+                    <option>mr</option>
+                    <option>ms</option>
+                    <option>ms-BN</option>
+                    <option>ms-SG</option>
+                    <option>my</option>
+                    <option>nb</option>
+                    <option>nb-SJ</option>
+                    <option>ne</option>
+                    <option>ne-IN</option>
+                    <option>nl</option>
+                    <option>nl-AW</option>
+                    <option>nl-BE</option>
+                    <option>nl-BQ</option>
+                    <option>nl-CW</option>
+                    <option>nl-SR</option>
+                    <option>nl-SX</option>
+                    <option>pa</option>
+                    <option>pa-Guru</option>
+                    <option>pl</option>
+                    <option>pt</option>
+                    <option>pt-AO</option>
+                    <option>pt-CV</option>
+                    <option>pt-GW</option>
+                    <option>pt-MO</option>
+                    <option>pt-MZ</option>
+                    <option>pt-PT</option>
+                    <option>pt-ST</option>
+                    <option>pt-TL</option>
+                    <option>ro</option>
+                    <option>ro-MD</option>
+                    <option>root</option>
+                    <option>ru</option>
+                    <option>ru-BY</option>
+                    <option>ru-KG</option>
+                    <option>ru-KZ</option>
+                    <option>ru-MD</option>
+                    <option>ru-UA</option>
+                    <option>si</option>
+                    <option>sk</option>
+                    <option>sl</option>
+                    <option>sq</option>
+                    <option>sq-MK</option>
+                    <option>sq-XK</option>
+                    <option>sr</option>
+                    <option>sr-Cyrl</option>
+                    <option>sr-Cyrl-BA</option>
+                    <option>sr-Cyrl-ME</option>
+                    <option>sr-Cyrl-XK</option>
+                    <option>sr-Latn</option>
+                    <option>sr-Latn-BA</option>
+                    <option>sr-Latn-ME</option>
+                    <option>sr-Latn-XK</option>
+                    <option>sv</option>
+                    <option>sv-AX</option>
+                    <option>sv-FI</option>
+                    <option>sw</option>
+                    <option>sw-CD</option>
+                    <option>sw-KE</option>
+                    <option>sw-UG</option>
+                    <option>ta</option>
+                    <option>ta-LK</option>
+                    <option>ta-MY</option>
+                    <option>ta-SG</option>
+                    <option>te</option>
+                    <option>th</option>
+                    <option>to</option>
+                    <option>tr</option>
+                    <option>tr-CY</option>
+                    <option>uk</option>
+                    <option>ur</option>
+                    <option>ur-IN</option>
+                    <option>uz</option>
+                    <option>uz-Latn</option>
+                    <option>vi</option>
+                    <option>zh</option>
+                    <option>zh-Hans</option>
+                    <option>zh-Hans-HK</option>
+                    <option>zh-Hans-MO</option>
+                    <option>zh-Hans-SG</option>
+                    <option>zh-Hant</option>
+                    <option>zh-Hant-HK</option>
+                    <option>zh-Hant-MO</option>
+                    <option>zu</option>
+            </select>
+            <span id="exampleFormats"></span>
+            <span id="loading">Loading...</span>
+        </div>
+        <div class="row">
+            <label for="Double">Double</label>
             <input data-msg-number="The field Double must be a number." data-msg-range="The field Double must be between 10.5 and 20.3." data-msg-required="The Double field is required." data-rule-number="true" data-rule-range="[10.5,20.3]" data-rule-required="true" id="Double" name="Double" type="text" value="0" />
         </div>
         <div class="row">
-            <label for="DateTime">DateTime - example date string: 10/2/2015:</label>
+            <label for="DateTime">DateTime</label>
             <input data-msg-date="The field DateTime must be a date." data-msg-required="The DateTime field is required." data-rule-date="true" data-rule-required="true" id="DateTime" name="DateTime" type="text" value="" />
         </div>
         <div class="row">
@@ -157,12 +512,12 @@
     @using (Html.BeginForm())
     {
         &lt;div class="row"&gt;
-            @Html.LabelFor(x =&gt; x.Double, string.Format("Double - a number between {0} and {1} must be entered: ",10.5D, 20.3D))
+            @Html.LabelFor(x =&gt; x.Double, "Double")
             @Html.TextBoxFor(x =&gt; x.Double, true)
         &lt;/div&gt;
 
         &lt;div class="row"&gt;
-            @Html.LabelFor(x =&gt; x.DateTime, string.Format("DateTime - example date string: {0:d}", DateTime.Today))
+            @Html.LabelFor(x =&gt; x.DateTime, "DateTime")
             @Html.TextBoxFor(x =&gt; x.DateTime, true)
         &lt;/div&gt;
 
@@ -182,7 +537,7 @@
             <pre class="prettyprint html">
     &lt;form action="/AdvancedDemo/Globalize" method="post"&gt;
         &lt;div class="row"&gt;
-            &lt;label for="Double"&gt;Double - a number between 10.5 and 20.3 must be entered: &lt;/label&gt;
+            &lt;label for="Double"&gt;Double&lt;/label&gt;
             &lt;input data-msg-number="The field Double must be a number." 
                 data-msg-range="The field Double must be between 10.5 and 20.3." 
                 data-msg-required="The Double field is required." 
@@ -192,7 +547,7 @@
                 id="Double" name="Double" type="text" value="0" /&gt;
         &lt;/div&gt;
         &lt;div class="row"&gt;
-            &lt;label for="DateTime"&gt;DateTime - example date string: 10/2/2015, example date and time string: Friday, October 2, 2015 12:00 AM:&lt;/label&gt;
+            &lt;label for="DateTime"&gt;DateTime&lt;/label&gt;
             &lt;input data-msg-date="The field DateTime must be a date." 
                 data-msg-required="The DateTime field is required." 
                 data-rule-date="true" 
@@ -257,41 +612,35 @@
 
     </div>
     <div class="tab-pane" id="locale">
-        <p>You may wonder how this page is determining which locale to use.  Well it's using this function here:</p>
+        <p>Globalize has locales (eg "en-GB", "de" etc). ASP.Net has cultures (eg "en-GB", "de-DE" etc).  There is not a 1-to-1 relationship between Globalize's locales and ASP.Net's cultures but you can make a good approximation.  How?  Well this simple function will do the job for you:</p>
 
         <pre class="prettyprint cs">
-    // Identifies and returns the culture Globalize should use and it's file path in a KeyValuePair where:
-    // Key = culture to use (eg "en-GB")
-    // Value = culture files to use (eg "/bower_components/cldr-data/main/en-GB/numbers.json")
-    public KeyValuePair&lt;string, string[]&gt;GetLocaleAndCldrData()
+    /// &lt;summary&gt;
+    /// Identifies and returns the default locale to use by mapping as close as possible from ASP.Nets culture to Globalize's locales
+    /// &lt;/summary&gt;
+    /// &lt;returns&gt;The default locale to use for the current culture; eg "de"&lt;/returns&gt;
+    public string GetDefaultLocale()
     {
-        // Determine culture - GUI culture for preference, user selected culture as fallback
-        const string localePattern = "~/bower_components/cldr-data/main/{0}";
-
+        const string localePattern = "~/bower_components/cldr-data/main/{0}"; // where cldr-data lives on disk
         var currentCulture = CultureInfo.CurrentCulture;
         var cultureToUse = "en-GB"; //Default regionalisation to use
 
         //Try to pick a more appropriate regionalisation
         if (Directory.Exists(HostingEnvironment.MapPath(string.Format(localePattern, currentCulture.Name)))) //First try for a en-GB style directory
-        cultureToUse = currentCulture.Name;
+            cultureToUse = currentCulture.Name;
         else if (Directory.Exists(HostingEnvironment.MapPath(string.Format(localePattern, currentCulture.TwoLetterISOLanguageName)))) //That failed; now try for a en style directory
-        cultureToUse = currentCulture.TwoLetterISOLanguageName;
-
-        const string directoryPattern = "../bower_components/cldr-data/{0}";
-        var cultureFilesToUse = new[] {
-            "supplemental/likelySubtags.json",
-            string.Format("main/{0}/numbers.json", cultureToUse),
-            "supplemental/numberingSystems.json",
-            string.Format("main/{0}/ca-gregorian.json", cultureToUse),
-            string.Format("main/{0}/timeZoneNames.json", cultureToUse),
-            "supplemental/timeData.json",
-            "supplemental/weekData.json"
-        }.Select(f =&gt; string.Format(directoryPattern, f)).ToArray();
-
-        return new KeyValuePair&lt;string, string[]&gt;(cultureToUse, cultureFilesToUse);
+            cultureToUse = currentCulture.TwoLetterISOLanguageName;
+        return cultureToUse;
     }
                 </pre>
-                <p>This takes the current culture that ASP.Net believes you are running as and then looks for a Globalize culture that is a close match (finally falling back to en-GB if it finds nothing suitable). Do note that this depends on the following setting in the <code>web.config</code>:</p>
+                <p>This takes the current culture that ASP.Net is running as and then looks for a Globalize culture that is as close a match as possible (finally falling back to en-GB if it finds nothing suitable).  You can use this to initialise your app to the most appropriate culture for your users. When this is running hosted in ASP.Net that's exactly how this demo page works. This page defaults to the <strong>en</strong> locale - that's right, *<strong>your</strong>* locale (or at least what ASP.Net thinks your locale ought to be).  If you switch your browser to say, <strong>de-DE</strong> and reload this page then you'll see the app has switched to the closest Globalize appropriate locale it can find.</p>
+
+                <div class="alert alert-danger alert-block static-warning" style="display: none;">
+                    <h4>This demo is being served statically (i.e. not by ASP.Net) and so the default is fixed to the <strong>en</strong> locale</h4>
+                    <p>Hey people - it looks like you're viewing a static version of this page.  (GitHub pages is all about the static content you see.)   So what I just said about this being customised to your culture by default isn't true.  Sorry about that.  If you want to drive the initial culture from your user settings then try running hosting the jVUNDemo project somewhere.  Then it's all goodness I promise.</p>
+                </div>
+
+                <p>Do note that this depends on the following settings in the <code>web.config</code>:</p>
                 <pre class="prettyprint xml">
 &lt;configuration&gt;
   &lt;system.web&gt;
@@ -307,40 +656,7 @@
   &lt;/system.webServer&gt;
 &lt;/configuration&gt;
         </pre>
-                <p>The Key returned from the function is the Globalize culture you are going to use (eg <em>"en"</em>) which you can use to initialise Globalize to the relevant culture.  The Value returned is an array of the cldr locale data files you are going to use to power Globalize (eg <em>"../bower_components/cldr-data/supplemental/likelySubtags.json&quot;, &quot;../bower_components/cldr-data/main/en/numbers.json&quot;, &quot;../bower_components/cldr-data/supplemental/numberingSystems.json&quot;, &quot;../bower_components/cldr-data/main/en/ca-gregorian.json&quot;, &quot;../bower_components/cldr-data/main/en/timeZoneNames.json&quot;, &quot;../bower_components/cldr-data/supplemental/timeData.json&quot;, &quot;../bower_components/cldr-data/supplemental/weekData.json"</em>) which you can use to serve up that culture file.  These 2 combined allows you to do something like this:</p>
-                <pre class="prettyprint html">
-    @{
-        var localeAndCldrData = GetLocaleAndCldrData();
-    }
-    @Scripts.Render(
-        "~/bundles/jquery-validation",
-        "~/bower_components/cldrjs/dist/cldr.js",
-        "~/bower_components/cldrjs/dist/cldr/event.js",
-        "~/bower_components/cldrjs/dist/cldr/supplemental.js",
-        "~/bower_components/globalize/dist/globalize.js",
-        "~/bower_components/globalize/dist/globalize/number.js",
-        "~/bower_components/globalize/dist/globalize/date.js",
-        "~/Scripts/jquery.validate.globalize.js")
-    &lt;script&gt;
-        $.when(
-            @Html.Raw(string.Join(",\r\n", localeAndCldrData.Value.Select(c => "$.get(\"" + c + "\")")))
-        ).then(function () {
-            // Normalize $.get results, we only need the JSON, not the request statuses.
-            return [].slice.apply(arguments, [0]).map(function (result) {
-                return result[0];
-            });
-        }).then(Globalize.load).then(function () {
-            // Initialise Globalize to the current UI culture
-            Globalize.locale("@localeAndCldrData.Key");
-            $("form").validate({
-                submitHandler: function (form) {
-                    alert("This is a valid form!");
-                }
-            });
-        });
-    &lt;/script&gt;
-        </pre>
-                <p>This may well not be the best way to do this... But this is a way.</p>
+                <p>The <code>globalization</code> settings activate ASP.Nets auto culture feature. This switches culture per user based on the user's setup - eg German users may be switched to the "de-DE" culture, Brits to "en-GB" etc. The <code>.json</code> setting ensures that the web server is happy to serve up JSON files (which the culture data is stored in). Surprisingly ASP.Net doesn't offer this by default.</p>
             </div>
         </div>
 
@@ -371,38 +687,89 @@
 <script src="../Scripts/jquery.validate.globalize.js"></script>
 
     <script>
-            $.when(
-                $.get("../bower_components/cldr-data/supplemental/likelySubtags.json"),
-$.get("../bower_components/cldr-data/main/en/numbers.json"),
-$.get("../bower_components/cldr-data/supplemental/numberingSystems.json"),
-$.get("../bower_components/cldr-data/main/en/ca-gregorian.json"),
-$.get("../bower_components/cldr-data/main/en/timeZoneNames.json"),
-$.get("../bower_components/cldr-data/supplemental/timeData.json"),
-$.get("../bower_components/cldr-data/supplemental/weekData.json")
-            ).then(function () {
+        function getJsonFilenames(locale, loadedData) {
 
+            return [
+                "supplemental/likelySubtags.json",
+                "main/{locale}/numbers.json",
+                "supplemental/numberingSystems.json",
+                "main/{locale}/ca-gregorian.json",
+                "main/{locale}/timeZoneNames.json",
+                "supplemental/timeData.json",
+                "supplemental/weekData.json"
+            ].filter(function (f) {
+                var noDataLoaded = loadedData.length === 0;
+                if (noDataLoaded) {
+                    return true;
+                }
+                var localeNotYetLoaded = loadedData.indexOf(locale) === -1;
+                if (localeNotYetLoaded) {
+                    var fileIsCommonAndSoAlreadyLoaded = f.indexOf("supplemental/" !== -1);
+                    return fileIsCommonAndSoAlreadyLoaded;
+                }
+                return false;
+            }).map(function (f) { return "../bower_components/cldr-data/" + f.replace("{locale}", locale); });
+        }
+
+        function loadLocale(locale, loadedData) {
+
+            var promise = $.Deferred();
+            var jsonToLoad = getJsonFilenames(locale, loadedData);
+            if (jsonToLoad.length === 0) {
+                Globalize.locale(locale); // Presumably already loaded
+                promise.resolve(locale + " selected...")
+                return promise;
+            }
+
+            return $.when.apply(
+                this, jsonToLoad.map($.get)
+            ).then(function () {
                 // Normalize $.get results, we only need the JSON, not the request statuses.
                 return [].slice.apply(arguments, [0]).map(function (result) {
                     return result[0];
                 });
-
             }).then(Globalize.load).then(function () {
-
-                // Initialise Globalize to the current UI culture
-                Globalize.locale("en");
-
-                $("form").validate({
-                    submitHandler: function (form) {
-                        alert("This is a valid form!");
-                    }
-                });
-
+                loadedData.push(locale);
+                Globalize.locale(locale);
+                return locale + " loaded and selected..."
             });
+        }
 
-            // Show warning if this is a static page
-            if (window.location.href.toLowerCase().indexOf("globalize.html") !== -1) {
-                $("#warning").slideDown();
+        var localesLoaded = [];
+
+        $("form").validate({
+            submitHandler: function (form) {
+                alert("This is a valid form!");
             }
+        });
+
+        $("#localeSelector").change(function () {
+            var $this = $(this);
+            var $exampleFormats = $("#exampleFormats");
+            var $loading = $("#loading");
+
+            $this.prop("disabled", true);
+            $loading.show();
+            $exampleFormats.hide();
+
+            loadLocale($this.val(), localesLoaded)
+                .then(function (result) {
+                    $this.prop("disabled", false);
+                    $loading.hide();
+                    var exampleFormats = "A number may look like this: " + Globalize.numberFormatter()(11.7) +
+                        " and a date may look like this: " + Globalize.dateFormatter()(new Date());
+                    $exampleFormats.text(exampleFormats).show();
+                }, function (error) {
+                    $exampleFormats.text("Problem loading locale: " + error).show();
+                    $this.prop("disabled", false);
+                    $loading.hide();
+                });
+        }).change();
+
+        // Show warning if this is a static page
+        if (window.location.href.toLowerCase().indexOf("globalize.html") !== -1) {
+            $(".static-warning").show();
+        }
     </script>
 
     <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
