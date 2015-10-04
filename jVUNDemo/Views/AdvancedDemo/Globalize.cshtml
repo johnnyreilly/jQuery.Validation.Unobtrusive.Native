@@ -3,38 +3,27 @@
 @using jQuery.Validation.Unobtrusive.Native.Demos.Models
 @model GlobalizeModel
 @functions{
-    // Identifies and returns the culture Globalize should use and it's file path in a KeyValuePair where:
-    // Key = culture to use (eg "en-GB")
-    // Value = culture files to use (eg "/bower_components/cldr-data/main/en-GB/numbers.json")
-    public KeyValuePair<string, string[]> GetLocaleAndCldrData()
+    /// <summary>
+    /// Identifies and returns the default locale to use by mapping as close as possible from ASP.Nets culture to Globalize's locales
+    /// </summary>
+    /// <returns>The default locale to use for the current culture; eg "de"</returns>
+    public string GetDefaultLocale()
     {
-    // Determine culture - GUI culture for preference, user selected culture as fallback
-    const string localePattern = "~/bower_components/cldr-data/main/{0}";
-    var currentCulture = CultureInfo.CurrentCulture;
-    var cultureToUse = "en-GB"; //Default regionalisation to use
+        const string localePattern = "~/bower_components/cldr-data/main/{0}"; // where cldr-data lives on disk
+        var currentCulture = CultureInfo.CurrentCulture;
+        var cultureToUse = "en-GB"; //Default regionalisation to use
 
-    //Try to pick a more appropriate regionalisation
-    if (Directory.Exists(HostingEnvironment.MapPath(string.Format(localePattern, currentCulture.Name)))) //First try for a en-GB style directory
-        cultureToUse = currentCulture.Name;
-    else if (Directory.Exists(HostingEnvironment.MapPath(string.Format(localePattern, currentCulture.TwoLetterISOLanguageName)))) //That failed; now try for a en style directory
-        cultureToUse = currentCulture.TwoLetterISOLanguageName;
+        //Try to pick a more appropriate regionalisation
+        if (Directory.Exists(HostingEnvironment.MapPath(string.Format(localePattern, currentCulture.Name)))) //First try for a en-GB style directory
+            cultureToUse = currentCulture.Name;
+        else if (Directory.Exists(HostingEnvironment.MapPath(string.Format(localePattern, currentCulture.TwoLetterISOLanguageName)))) //That failed; now try for a en style directory
+            cultureToUse = currentCulture.TwoLetterISOLanguageName;
 
-    const string directoryPattern = "../bower_components/cldr-data/{0}";
-    var cultureFilesToUse = new[] {
-        "supplemental/likelySubtags.json",
-        string.Format("main/{0}/numbers.json", cultureToUse),
-        "supplemental/numberingSystems.json",
-        string.Format("main/{0}/ca-gregorian.json", cultureToUse),
-        string.Format("main/{0}/timeZoneNames.json", cultureToUse),
-        "supplemental/timeData.json",
-        "supplemental/weekData.json"
-    }.Select(f => string.Format(directoryPattern, f)).ToArray();
-
-    return new KeyValuePair<string, string[]>(cultureToUse, cultureFilesToUse);
+        return cultureToUse;
     }
 }
 @{
-    var localeAndCldrData = GetLocaleAndCldrData();
+    var defaultLocale = GetDefaultLocale();
 }
 @section metatags{
     <meta name="Description" content="A demo of internationalized / locale-specific validation using Globalize.">
@@ -51,32 +40,89 @@
         "~/bower_components/globalize/dist/globalize/date.js",
         "~/Scripts/jquery.validate.globalize.js")
     <script>
-            $.when(
-                @Html.Raw(string.Join(",\r\n", localeAndCldrData.Value.Select(c => "$.get(\"" + c + "\")")))
-            ).then(function () {
+        function getJsonFilenames(locale, loadedData) {
 
+            return [
+                "supplemental/likelySubtags.json",
+                "main/{locale}/numbers.json",
+                "supplemental/numberingSystems.json",
+                "main/{locale}/ca-gregorian.json",
+                "main/{locale}/timeZoneNames.json",
+                "supplemental/timeData.json",
+                "supplemental/weekData.json"
+            ].filter(function (f) {
+                var noDataLoaded = loadedData.length === 0;
+                if (noDataLoaded) {
+                    return true;
+                }
+                var localeNotYetLoaded = loadedData.indexOf(locale) === -1;
+                if (localeNotYetLoaded) {
+                    var fileIsCommonAndSoAlreadyLoaded = f.indexOf("supplemental/" !== -1);
+                    return fileIsCommonAndSoAlreadyLoaded;
+                }
+                return false;
+            }).map(function (f) { return "../bower_components/cldr-data/" + f.replace("{locale}", locale); });
+        }
+
+        function loadLocale(locale, loadedData) {
+
+            var promise = $.Deferred();
+            var jsonToLoad = getJsonFilenames(locale, loadedData);
+            if (jsonToLoad.length === 0) {
+                Globalize.locale(locale); // Presumably already loaded
+                promise.resolve(locale + " selected...")
+                return promise;
+            }
+
+            return $.when.apply(
+                this, jsonToLoad.map($.get)
+            ).then(function () {
                 // Normalize $.get results, we only need the JSON, not the request statuses.
                 return [].slice.apply(arguments, [0]).map(function (result) {
                     return result[0];
                 });
-
             }).then(Globalize.load).then(function () {
-
-                // Initialise Globalize to the current UI culture
-                Globalize.locale("@localeAndCldrData.Key");
-
-                $("form").validate({
-                    submitHandler: function (form) {
-                        alert("This is a valid form!");
-                    }
-                });
-
+                loadedData.push(locale);
+                Globalize.locale(locale);
+                return locale + " loaded and selected..."
             });
+        }
 
-            // Show warning if this is a static page
-            if (window.location.href.toLowerCase().indexOf("globalize.html") !== -1) {
-                $("#warning").slideDown();
+        var localesLoaded = [];
+
+        $("form").validate({
+            submitHandler: function (form) {
+                alert("This is a valid form!");
             }
+        });
+
+        $("#localeSelector").change(function () {
+            var $this = $(this);
+            var $exampleFormats = $("#exampleFormats");
+            var $loading = $("#loading");
+
+            $this.prop("disabled", true);
+            $loading.show();
+            $exampleFormats.hide();
+
+            loadLocale($this.val(), localesLoaded)
+                .then(function (result) {
+                    $this.prop("disabled", false);
+                    $loading.hide();
+                    var exampleFormats = "A number may look like this: " + Globalize.numberFormatter()(11.7) +
+                        " and a date may look like this: " + Globalize.dateFormatter()(new Date());
+                    $exampleFormats.text(exampleFormats).show();
+                }, function (error) {
+                    $exampleFormats.text("Problem loading locale: " + error).show();
+                    $this.prop("disabled", false);
+                    $loading.hide();
+                });
+        }).change();
+
+        // Show warning if this is a static page
+        if (window.location.href.toLowerCase().indexOf("globalize.html") !== -1) {
+            $(".static-warning").show();
+        }
     </script>
 }
 
@@ -97,11 +143,7 @@
 
 <p>To find more information about this then you could have a read of my <a href="http://blog.icanmakethiswork.io/2012/09/globalize-and-jquery-validate.html" target="_blank">blogpost</a>.  This library replaces the jQuery Validation date and number validation with an implementation that depends on <a href="http://github.com/jquery/globalize" target="_blank">Globalize</a>. (By the way, the post relates to when I first created <code><a href="https://github.com/johnnyreilly/jquery-validation-globalize" target="_blank">jquery-validate-globalize.js</a></code> and it depended on Globalize 0.1.x - it has now been migrated to Globalize 1.x which is very different.)  </p>
 
-<p>Take a look at the demo below, customised for the <strong>@localeAndCldrData.Key</strong> locale - that's right, *<strong>your</strong>* locale (or at least what ASP.Net thinks your locale ought to be).  If you switch your browser to say, <strong>de-DE</strong> and reload this page then you'll see the app has switched to the closest Globalize appropriate locale it can find.</p>
-<div class="alert alert-danger alert-block" style="display: none;" id="warning">
-    <h4>This demo is fixed to the current locale</h4>
-    <p>Hey people - it looks like you're viewing a static version of this page.  (GitHub pages is all about the static content you see.)  If you want to switch cultures as suggested above then try running the jVUNDemo project locally.  Then it's all goodness I promise.</p>
-</div>
+<p>Take a look at the demo below, do note that you can switch cultures as you wish.</p>
 
 <ul class="nav nav-tabs" data-tabs="tabs">
     <li class="active"><a data-toggle="tab" href="#demo">Demo</a></li>
@@ -109,19 +151,31 @@
     <li><a data-toggle="tab" href="#view">View</a></li>
     <li><a data-toggle="tab" href="#html">HTML</a></li>
     <li><a data-toggle="tab" href="#javascript">JavaScript</a></li>
-    <li><a data-toggle="tab" href="#locale">Determine which locale to use</a></li>
+    <li><a data-toggle="tab" href="#locale">ASP.Net and Globalize</a></li>
 </ul>
 <div class="tab-content">
     <div class="tab-pane active" id="demo">
         @using (Html.BeginForm())
         {
         <div class="row">
-            @Html.LabelFor(x => x.Double, string.Format("Double - a number between {0} and {1} must be entered: ",10.5D, 20.3D))
+            <label for="localeSelector">Current locale:</label>
+            <select id="localeSelector">
+                @foreach(var localePath in Directory.EnumerateDirectories(HostingEnvironment.MapPath("~/bower_components/cldr-data/main/"))){
+                    var localeDir = localePath.Substring(localePath.LastIndexOf('\\') + 1);
+                    <option selected="@(localeDir == defaultLocale)">@localeDir</option>
+                }
+            </select>
+            <span id="exampleFormats"></span>
+            <span id="loading">Loading...</span>
+        </div>
+
+        <div class="row">
+            @Html.LabelFor(x => x.Double, "Double")
             @Html.TextBoxFor(x => x.Double, true)
         </div>
 
         <div class="row">
-            @Html.LabelFor(x => x.DateTime, string.Format("DateTime - example date string: {0:d}:", DateTime.Today))
+            @Html.LabelFor(x => x.DateTime, "DateTime")
             @Html.TextBoxFor(x => x.DateTime, true)
         </div>
 
@@ -163,12 +217,12 @@
     @@using (Html.BeginForm())
     {
         &lt;div class="row"&gt;
-            @@Html.LabelFor(x =&gt; x.Double, string.Format("Double - a number between {0} and {1} must be entered: ",10.5D, 20.3D))
+            @@Html.LabelFor(x =&gt; x.Double, "Double")
             @@Html.TextBoxFor(x =&gt; x.Double, true)
         &lt;/div&gt;
 
         &lt;div class="row"&gt;
-            @@Html.LabelFor(x =&gt; x.DateTime, string.Format("DateTime - example date string: {0:d}", DateTime.Today))
+            @@Html.LabelFor(x =&gt; x.DateTime, "DateTime")
             @@Html.TextBoxFor(x =&gt; x.DateTime, true)
         &lt;/div&gt;
 
@@ -188,7 +242,7 @@
             <pre class="prettyprint html">
     &lt;form action="/AdvancedDemo/Globalize" method="post"&gt;
         &lt;div class="row"&gt;
-            &lt;label for="Double"&gt;@string.Format("Double - a number between {0} and {1} must be entered: ",10.5D, 20.3D)&lt;/label&gt;
+            &lt;label for="Double"&gt;Double&lt;/label&gt;
             &lt;input data-msg-number="The field Double must be a number." 
                 data-msg-range="@string.Format("The field Double must be between {0} and {1}.",10.5D, 20.3D)" 
                 data-msg-required="The Double field is required." 
@@ -198,7 +252,7 @@
                 id="Double" name="Double" type="text" value="0" /&gt;
         &lt;/div&gt;
         &lt;div class="row"&gt;
-            &lt;label for="DateTime"&gt;@string.Format("DateTime - example date string: {0:d}, example date and time string: {0:f}:", DateTime.Today)&lt;/label&gt;
+            &lt;label for="DateTime"&gt;DateTime&lt;/label&gt;
             &lt;input data-msg-date="The field DateTime must be a date." 
                 data-msg-required="The DateTime field is required." 
                 data-rule-date="true" 
@@ -238,10 +292,10 @@
         <pre class="prettyprint js">
     $.when(
         $.get("/bower_components/cldr-data/supplemental/likelySubtags.json"),
-        $.get("/bower_components/cldr-data/main/@localeAndCldrData.Key/numbers.json"),
+        $.get("/bower_components/cldr-data/main/@defaultLocale/numbers.json"),
         $.get("/bower_components/cldr-data/supplemental/numberingSystems.json"),
-        $.get("/bower_components/cldr-data/main/@localeAndCldrData.Key/ca-gregorian.json"),
-        $.get("/bower_components/cldr-data/main/@localeAndCldrData.Key/timeZoneNames.json"),
+        $.get("/bower_components/cldr-data/main/@defaultLocale/ca-gregorian.json"),
+        $.get("/bower_components/cldr-data/main/@defaultLocale/timeZoneNames.json"),
         $.get("/bower_components/cldr-data/supplemental/timeData.json"),
         $.get("/bower_components/cldr-data/supplemental/weekData.json")
     ).then(function () {
@@ -251,7 +305,7 @@
         });
     }).then(Globalize.load).then(function () {
         // Initialise Globalize to the current UI culture
-        Globalize.locale("@localeAndCldrData.Key");
+        Globalize.locale("@defaultLocale");
 
         $("form").validate({
             submitHandler: function (form) {
@@ -263,41 +317,35 @@
 
     </div>
     <div class="tab-pane" id="locale">
-        <p>You may wonder how this page is determining which locale to use.  Well it's using this function here:</p>
+        <p>Globalize has locales (eg "en-GB", "de" etc). ASP.Net has cultures (eg "en-GB", "de-DE" etc).  There is not a 1-to-1 relationship between Globalize's locales and ASP.Net's cultures but you can make a good approximation.  How?  Well this simple function will do the job for you:</p>
 
         <pre class="prettyprint cs">
-    // Identifies and returns the culture Globalize should use and it's file path in a KeyValuePair where:
-    // Key = culture to use (eg "en-GB")
-    // Value = culture files to use (eg "/bower_components/cldr-data/main/en-GB/numbers.json")
-    public KeyValuePair&lt;string, string[]&gt;GetLocaleAndCldrData()
+    /// &lt;summary&gt;
+    /// Identifies and returns the default locale to use by mapping as close as possible from ASP.Nets culture to Globalize's locales
+    /// &lt;/summary&gt;
+    /// &lt;returns&gt;The default locale to use for the current culture; eg "de"&lt;/returns&gt;
+    public string GetDefaultLocale()
     {
-        // Determine culture - GUI culture for preference, user selected culture as fallback
-        const string localePattern = "~/bower_components/cldr-data/main/{0}";
-
+        const string localePattern = "~/bower_components/cldr-data/main/{0}"; // where cldr-data lives on disk
         var currentCulture = CultureInfo.CurrentCulture;
         var cultureToUse = "en-GB"; //Default regionalisation to use
 
         //Try to pick a more appropriate regionalisation
         if (Directory.Exists(HostingEnvironment.MapPath(string.Format(localePattern, currentCulture.Name)))) //First try for a en-GB style directory
-        cultureToUse = currentCulture.Name;
+            cultureToUse = currentCulture.Name;
         else if (Directory.Exists(HostingEnvironment.MapPath(string.Format(localePattern, currentCulture.TwoLetterISOLanguageName)))) //That failed; now try for a en style directory
-        cultureToUse = currentCulture.TwoLetterISOLanguageName;
-
-        const string directoryPattern = "../bower_components/cldr-data/{0}";
-        var cultureFilesToUse = new[] {
-            "supplemental/likelySubtags.json",
-            string.Format("main/{0}/numbers.json", cultureToUse),
-            "supplemental/numberingSystems.json",
-            string.Format("main/{0}/ca-gregorian.json", cultureToUse),
-            string.Format("main/{0}/timeZoneNames.json", cultureToUse),
-            "supplemental/timeData.json",
-            "supplemental/weekData.json"
-        }.Select(f =&gt; string.Format(directoryPattern, f)).ToArray();
-
-        return new KeyValuePair&lt;string, string[]&gt;(cultureToUse, cultureFilesToUse);
+            cultureToUse = currentCulture.TwoLetterISOLanguageName;
+        return cultureToUse;
     }
                 </pre>
-                <p>This takes the current culture that ASP.Net believes you are running as and then looks for a Globalize culture that is a close match (finally falling back to en-GB if it finds nothing suitable). Do note that this depends on the following setting in the <code>web.config</code>:</p>
+                <p>This takes the current culture that ASP.Net is running as and then looks for a Globalize culture that is as close a match as possible (finally falling back to en-GB if it finds nothing suitable).  You can use this to initialise your app to the most appropriate culture for your users. When this is running hosted in ASP.Net that's exactly how this demo page works. This page defaults to the <strong>@defaultLocale</strong> locale - that's right, *<strong>your</strong>* locale (or at least what ASP.Net thinks your locale ought to be).  If you switch your browser to say, <strong>de-DE</strong> and reload this page then you'll see the app has switched to the closest Globalize appropriate locale it can find.</p>
+
+                <div class="alert alert-danger alert-block static-warning" style="display: none;">
+                    <h4>This demo is being served statically (i.e. not by ASP.Net) and so the default is fixed to the <strong>@defaultLocale</strong> locale</h4>
+                    <p>Hey people - it looks like you're viewing a static version of this page.  (GitHub pages is all about the static content you see.)   So what I just said about this being customised to your culture by default isn't true.  Sorry about that.  If you want to drive the initial culture from your user settings then try running hosting the jVUNDemo project somewhere.  Then it's all goodness I promise.</p>
+                </div>
+
+                <p>Do note that this depends on the following settings in the <code>web.config</code>:</p>
                 <pre class="prettyprint xml">
 &lt;configuration&gt;
   &lt;system.web&gt;
@@ -313,39 +361,6 @@
   &lt;/system.webServer&gt;
 &lt;/configuration&gt;
         </pre>
-                <p>The Key returned from the function is the Globalize culture you are going to use (eg <em>"@localeAndCldrData.Key"</em>) which you can use to initialise Globalize to the relevant culture.  The Value returned is an array of the cldr locale data files you are going to use to power Globalize (eg <em>"@string.Join("\", \"", localeAndCldrData.Value)"</em>) which you can use to serve up that culture file.  These 2 combined allows you to do something like this:</p>
-                <pre class="prettyprint html">
-    @@{
-        var localeAndCldrData = GetLocaleAndCldrData();
-    }
-    @@Scripts.Render(
-        "~/bundles/jquery-validation",
-        "~/bower_components/cldrjs/dist/cldr.js",
-        "~/bower_components/cldrjs/dist/cldr/event.js",
-        "~/bower_components/cldrjs/dist/cldr/supplemental.js",
-        "~/bower_components/globalize/dist/globalize.js",
-        "~/bower_components/globalize/dist/globalize/number.js",
-        "~/bower_components/globalize/dist/globalize/date.js",
-        "~/Scripts/jquery.validate.globalize.js")
-    &lt;script&gt;
-        $.when(
-            @@Html.Raw(string.Join(",\r\n", localeAndCldrData.Value.Select(c => "$.get(\"" + c + "\")")))
-        ).then(function () {
-            // Normalize $.get results, we only need the JSON, not the request statuses.
-            return [].slice.apply(arguments, [0]).map(function (result) {
-                return result[0];
-            });
-        }).then(Globalize.load).then(function () {
-            // Initialise Globalize to the current UI culture
-            Globalize.locale("@@localeAndCldrData.Key");
-            $("form").validate({
-                submitHandler: function (form) {
-                    alert("This is a valid form!");
-                }
-            });
-        });
-    &lt;/script&gt;
-        </pre>
-                <p>This may well not be the best way to do this... But this is a way.</p>
+                <p>The <code>globalization</code> settings activate ASP.Nets auto culture feature. This switches culture per user based on the user's setup - eg German users may be switched to the "de-DE" culture, Brits to "en-GB" etc. The <code>.json</code> setting ensures that the web server is happy to serve up JSON files (which the culture data is stored in). Surprisingly ASP.Net doesn't offer this by default.</p>
             </div>
         </div>
