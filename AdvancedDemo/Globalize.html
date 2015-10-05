@@ -753,12 +753,15 @@
         $this.prop("disabled", true);
         $loading.show();
         $exampleFormats.hide();
+        
+        var localeToLoad = $this.val();
 
-        loadLocale($this.val(), localesLoaded)
+        loadLocale(localeToLoad, localesLoaded)
             .then(function (result) {
                 $this.prop("disabled", false);
                 $loading.hide();
-                var exampleFormats = "A number may look like this: " + Globalize.numberFormatter()(11.7) +
+                var languageName = Globalize.locale().main('localeDisplayNames/languages/' + locale);
+                var exampleFormats = languageName + ": A number may look like this: " + Globalize.numberFormatter()(11.7) +
                     " and a date may look like this: " + Globalize.dateFormatter()(new Date());
                 $exampleFormats.text(exampleFormats).show();
             }, function (error) {
