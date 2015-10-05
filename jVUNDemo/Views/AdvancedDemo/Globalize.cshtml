@@ -26,7 +26,7 @@
     var defaultLocale = GetDefaultLocale();
 }
 @section metatags{
-    <meta name="Description" content="A demo of internationalized / locale-specific validation using Globalize.">
+<meta name="Description" content="A demo of internationalized / locale-specific validation using Globalize.">
 }
 @section scripts
 {
@@ -39,96 +39,98 @@
         "~/bower_components/globalize/dist/globalize/number.js",
         "~/bower_components/globalize/dist/globalize/date.js",
         "~/Scripts/jquery.validate.globalize.js")
-    <script>
-        function getJsonFilenames(locale, loadedData) {
+<script>
+    function getJsonFilenames(locale, loadedData) {
 
-            return [
-                "supplemental/likelySubtags.json",
-                "main/{locale}/numbers.json",
-                "supplemental/numberingSystems.json",
-                "main/{locale}/ca-gregorian.json",
-                "main/{locale}/timeZoneNames.json",
-                "supplemental/timeData.json",
-                "supplemental/weekData.json"
-            ].filter(function (f) {
-                var noDataLoaded = loadedData.length === 0;
-                if (noDataLoaded) {
-                    return true;
-                }
-                var localeNotYetLoaded = loadedData.indexOf(locale) === -1;
-                if (localeNotYetLoaded) {
-                    var fileIsCommonAndSoAlreadyLoaded = f.indexOf("supplemental/" !== -1);
-                    return fileIsCommonAndSoAlreadyLoaded;
-                }
-                return false;
-            }).map(function (f) { return "../bower_components/cldr-data/" + f.replace("{locale}", locale); });
+        return [
+            "supplemental/likelySubtags.json",
+            "main/{locale}/numbers.json",
+            "supplemental/numberingSystems.json",
+            "main/{locale}/ca-gregorian.json",
+            "main/{locale}/timeZoneNames.json",
+            "supplemental/timeData.json",
+            "supplemental/weekData.json"
+        ].filter(function (f) {
+            var noDataLoaded = loadedData.length === 0;
+            if (noDataLoaded) {
+                return true;
+            }
+            var localeNotYetLoaded = loadedData.indexOf(locale) === -1;
+            if (localeNotYetLoaded) {
+                var fileIsCommonAndSoAlreadyLoaded = f.indexOf("supplemental/" !== -1);
+                return fileIsCommonAndSoAlreadyLoaded;
+            }
+            return false;
+        }).map(function (f) { return "../bower_components/cldr-data/" + f.replace("{locale}", locale); });
+    }
+
+    function loadLocale(locale, loadedData) {
+
+        var promise = $.Deferred();
+        var jsonToLoad = getJsonFilenames(locale, loadedData);
+        if (jsonToLoad.length === 0) {
+            Globalize.locale(locale); // Presumably already loaded
+            promise.resolve(locale + " selected...")
+            return promise;
         }
 
-        function loadLocale(locale, loadedData) {
-
-            var promise = $.Deferred();
-            var jsonToLoad = getJsonFilenames(locale, loadedData);
-            if (jsonToLoad.length === 0) {
-                Globalize.locale(locale); // Presumably already loaded
-                promise.resolve(locale + " selected...")
-                return promise;
-            }
-
-            return $.when.apply(
-                this, jsonToLoad.map($.get)
-            ).then(function () {
-                // Normalize $.get results, we only need the JSON, not the request statuses.
-                return [].slice.apply(arguments, [0]).map(function (result) {
-                    return result[0];
-                });
-            }).then(Globalize.load).then(function () {
-                loadedData.push(locale);
-                Globalize.locale(locale);
-                return locale + " loaded and selected..."
+        return $.when.apply(
+            this, jsonToLoad.map($.get)
+        ).then(function () {
+            // Normalize $.get results, we only need the JSON, not the request statuses.
+            return [].slice.apply(arguments, [0]).map(function (result) {
+                return result[0];
             });
-        }
-
-        var localesLoaded = [];
-
-        $("form").validate({
-            submitHandler: function (form) {
-                alert("This is a valid form!");
-            }
+        }).then(Globalize.load).then(function () {
+            loadedData.push(locale);
+            Globalize.locale(locale);
+            return locale + " loaded and selected..."
         });
+    }
 
-        $("#localeSelector").change(function () {
-            var $this = $(this);
-            var $exampleFormats = $("#exampleFormats");
-            var $loading = $("#loading");
+    var localesLoaded = [];
 
-            $this.prop("disabled", true);
-            $loading.show();
-            $exampleFormats.hide();
-
-            loadLocale($this.val(), localesLoaded)
-                .then(function (result) {
-                    $this.prop("disabled", false);
-                    $loading.hide();
-                    var exampleFormats = "A number may look like this: " + Globalize.numberFormatter()(11.7) +
-                        " and a date may look like this: " + Globalize.dateFormatter()(new Date());
-                    $exampleFormats.text(exampleFormats).show();
-                }, function (error) {
-                    $exampleFormats.text("Problem loading locale: " + error).show();
-                    $this.prop("disabled", false);
-                    $loading.hide();
-                });
-        }).change();
-
-        // Show warning if this is a static page
-        if (window.location.href.toLowerCase().indexOf("globalize.html") !== -1) {
-            $(".static-warning").show();
+    $("form").validate({
+        submitHandler: function (form) {
+            alert("This is a valid form!");
         }
-    </script>
+    });
+
+    $("#localeSelector").change(function () {
+        var $this = $(this);
+        var $exampleFormats = $("#exampleFormats");
+        var $loading = $("#loading");
+
+        $this.prop("disabled", true);
+        $loading.show();
+        $exampleFormats.hide();
+
+        loadLocale($this.val(), localesLoaded)
+            .then(function (result) {
+                $this.prop("disabled", false);
+                $loading.hide();
+                var exampleFormats = "A number may look like this: " + Globalize.numberFormatter()(11.7) +
+                    " and a date may look like this: " + Globalize.dateFormatter()(new Date());
+                $exampleFormats.text(exampleFormats).show();
+            }, function (error) {
+                $exampleFormats.text("Problem loading locale: " + error).show();
+                $this.prop("disabled", false);
+                $loading.hide();
+            });
+    }).change();
+
+    // Show warning if this is a static page
+    if (window.location.href.toLowerCase().indexOf("globalize.html") !== -1) {
+        $(".static-warning").show();
+    }
+</script>
 }
 
 <h3>@ViewBag.Title</h3>
 
-<p>If you want to patch the jQuery Validation date and number validation to be locale specific then you can using <code><a href="https://github.com/johnnyreilly/jquery-validation-globalize" target="_blank">jquery-validate-globalize.js</a></code>. This is available on Bower.  To install it you should first ensure you have a <code>.bowerrc</code> file in place which looks like this:</p>
+<p>If you want to patch the jQuery Validation date and number validation to be locale specific then you can using <code><a href="https://github.com/johnnyreilly/jquery-validation-globalize" target="_blank">jquery-validate-globalize.js</a></code>. This demo is not strictly related to jVUN - it's really more about Globalize and jquery-validation-globalize. It's built using jVUN but if you're here strictly for information about jquery-validation-globalize then just ignore the "Model" and "ASP.Net and Globalize" tabs below.  Everything else is just normal JavaScript and jQuery Validation code.</p>
+
+<p>jquery-validation-globalize is available on Bower.  To install it you should first ensure you have a <code>.bowerrc</code> file in place which looks like this:</p>
 
 <pre class="prettyprint js">
 {
@@ -161,8 +163,8 @@
             <label for="localeSelector">Current locale:</label>
             <select id="localeSelector">
                 @foreach(var localePath in Directory.EnumerateDirectories(HostingEnvironment.MapPath("~/bower_components/cldr-data/main/"))){
-                    var localeDir = localePath.Substring(localePath.LastIndexOf('\\') + 1);
-                    <option selected="@(localeDir == defaultLocale)">@localeDir</option>
+                var localeDir = localePath.Substring(localePath.LastIndexOf('\\') + 1);
+                <option selected="@(localeDir == defaultLocale)">@localeDir</option>
                 }
             </select>
             <span id="exampleFormats"></span>
@@ -239,7 +241,7 @@
 
         <p>Here's the HTML that the view generates:</p>
 
-            <pre class="prettyprint html">
+        <pre class="prettyprint html">
     &lt;form action="/AdvancedDemo/Globalize" method="post"&gt;
         &lt;div class="row"&gt;
             &lt;label for="Double"&gt;Double&lt;/label&gt;
@@ -338,15 +340,15 @@
         return cultureToUse;
     }
                 </pre>
-                <p>This takes the current culture that ASP.Net is running as and then looks for a Globalize culture that is as close a match as possible (finally falling back to en-GB if it finds nothing suitable).  You can use this to initialise your app to the most appropriate culture for your users. When this is running hosted in ASP.Net that's exactly how this demo page works. This page defaults to the <strong>@defaultLocale</strong> locale - that's right, *<strong>your</strong>* locale (or at least what ASP.Net thinks your locale ought to be).  If you switch your browser to say, <strong>de-DE</strong> and reload this page then you'll see the app has switched to the closest Globalize appropriate locale it can find.</p>
+        <p>This takes the current culture that ASP.Net is running as and then looks for a Globalize culture that is as close a match as possible (finally falling back to en-GB if it finds nothing suitable).  You can use this to initialise your app to the most appropriate culture for your users. When this is running hosted in ASP.Net that's exactly how this demo page works. This page defaults to the <strong>@defaultLocale</strong> locale - that's right, *<strong>your</strong>* locale (or at least what ASP.Net thinks your locale ought to be).  If you switch your browser to say, <strong>de-DE</strong> and reload this page then you'll see the app has switched to the closest Globalize appropriate locale it can find.</p>
 
-                <div class="alert alert-danger alert-block static-warning" style="display: none;">
-                    <h4>This demo is being served statically (i.e. not by ASP.Net) and so the default is fixed to the <strong>@defaultLocale</strong> locale</h4>
-                    <p>Hey people - it looks like you're viewing a static version of this page.  (GitHub pages is all about the static content you see.)   So what I just said about this being customised to your culture by default isn't true.  Sorry about that.  If you want to drive the initial culture from your user settings then try running hosting the jVUNDemo project somewhere.  Then it's all goodness I promise.</p>
-                </div>
+        <div class="alert alert-danger alert-block static-warning" style="display: none;">
+            <h4>This demo is being served statically (i.e. not by ASP.Net) and so the default is fixed to the <strong>@defaultLocale</strong> locale</h4>
+            <p>Hey people - it looks like you're viewing a static version of this page.  (GitHub pages is all about the static content you see.)   So what I just said about this being customised to your culture by default isn't true.  Sorry about that.  If you want to drive the initial culture from your user settings then try running hosting the jVUNDemo project somewhere.  Then it's all goodness I promise.</p>
+        </div>
 
-                <p>Do note that this depends on the following settings in the <code>web.config</code>:</p>
-                <pre class="prettyprint xml">
+        <p>Do note that this depends on the following settings in the <code>web.config</code>:</p>
+        <pre class="prettyprint xml">
 &lt;configuration&gt;
   &lt;system.web&gt;
     &lt;globalization culture="auto" uiCulture="auto" /&gt;
@@ -361,6 +363,6 @@
   &lt;/system.webServer&gt;
 &lt;/configuration&gt;
         </pre>
-                <p>The <code>globalization</code> settings activate ASP.Nets auto culture feature. This switches culture per user based on the user's setup - eg German users may be switched to the "de-DE" culture, Brits to "en-GB" etc. The <code>.json</code> setting ensures that the web server is happy to serve up JSON files (which the culture data is stored in). Surprisingly ASP.Net doesn't offer this by default.</p>
-            </div>
-        </div>
+        <p>The <code>globalization</code> settings activate ASP.Nets auto culture feature. This switches culture per user based on the user's setup - eg German users may be switched to the "de-DE" culture, Brits to "en-GB" etc. The <code>.json</code> setting ensures that the web server is happy to serve up JSON files (which the culture data is stored in). Surprisingly ASP.Net doesn't offer this by default.</p>
+    </div>
+</div>
