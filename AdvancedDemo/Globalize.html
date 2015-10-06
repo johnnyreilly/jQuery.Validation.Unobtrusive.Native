@@ -738,7 +738,7 @@
         });
     }
 
-    var localesLoaded = [];
+    var localesLoaded = [], originalLocale = $("#localeSelector").val();
 
     $("form").validate({
         submitHandler: function (form) {
@@ -762,7 +762,9 @@
                 $this.prop("disabled", false);
                 $loading.hide();
                 var languageName = Globalize.locale().main('localeDisplayNames/languages/' + localeToLoad);
-                languageName = (languageName ? languageName + ': ' : '');
+                languageName = (languageName
+                  ? languageName + ' / ' + Globalize.locale(originalLocale).main('localeDisplayNames/languages/' + localeToLoad) + ' : '
+                  : '');
                 var exampleFormats = languageName + "A number may look like this: " + Globalize.numberFormatter()(11.7) +
                     " and a date may look like this: " + Globalize.dateFormatter()(new Date());
                 $exampleFormats.text(exampleFormats).show();
