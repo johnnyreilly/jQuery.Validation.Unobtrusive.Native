@@ -1,8 +1,8 @@
 ﻿##To create the MVC 5 package:
 
 -	Remove System.Web.Mvc and System.Web.WebPages references
--	Add System.Web.Mvc 5.0.0.0 reference
--	Add System.Web.WebPages 3.0.0.0 reference
+-	Add System.Web.Mvc 5.1.0.0 reference
+-	Add System.Web.WebPages 3.1.0.0 reference
 -	Change nuspec id and title to jQuery.Validation.Unobtrusive.Native.MVC5 in jQuery.Validation.Unobtrusive.Native.nuspec
 -	Compile in release mode
 
@@ -10,7 +10,7 @@ Then run the following commands to generate and publish based on project:
 
 ```
 nuget pack jQuery.Validation.Unobtrusive.Native.csproj -Prop Configuration=Release
-nuget push jQuery.Validation.Unobtrusive.Native.MVC5.1.2.0.nupkg
+nuget push jQuery.Validation.Unobtrusive.Native.MVC5.1.3.0.nupkg
 ```
 
 ##Creating MVC 4 / MVC 3 packages
