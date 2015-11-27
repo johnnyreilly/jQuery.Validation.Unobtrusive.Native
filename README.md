@@ -82,43 +82,47 @@ MIT license - [http://www.opensource.org/licenses/mit-license.php](http://www.op
 
 ##Changelog
 
-###1.2.0 / 2015-06-08
+### 1.3.0 / 2015-11-27
 
-- [Added support for RegularExpression, MaxLength, MinLength and FileExtensions attributes](https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native/pull/17) (thanks to [Ben Duguid](https://github.com/Zhaph) for this)</li>
+- [Added EnumDropDownListFor support for MVC 5.1](https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native/issues/23) (thanks to thanks to Ryan Kenney)
 
-###1.1.2 / 2015-01-07
+### 1.2.0 / 2015-06-08
+
+- [Added support for RegularExpression, MaxLength, MinLength and FileExtensions attributes](https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native/pull/17) (thanks to [Ben Duguid](https://github.com/Zhaph) for this)
+
+### 1.1.2 / 2015-01-07
 
 - [Moved from System.Web.Mvc namespace to System.Web.Mvc.Html in line with MVC's built in extension methods](https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native/issues/12)
 
-###1.1.1 / 2014-05-27
+### 1.1.1 / 2014-05-27
 
 - [Bugfix for CheckBoxFor.](https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native/issues/9)
 
-###1.1.0.0 / 2013-10-04
+### 1.1.0.0 / 2013-10-04
 
 - Added support for PasswordFor, previously missing.
 
-###1.0.0.0 / 2013-09-04
+### 1.0.0.0 / 2013-09-04
 
 - Fix to allow usage of EditorTemplates (thanks to @DavidCarroll for this)
 - Fix to make range culture invariant to enable use by cultures where the decimal place is represented by something other than a decimal place (eg in Germany 20.5 is expressed as 20,5 - JavaScript can't handle this yet).
 - Given major version number now that the rough edges have been dealt with.
 
-###0.4.1.0 / 2013-08-25
+### 0.4.1.0 / 2013-08-25
 
 - Now possible to override generated data attributes with those passed in htmlAttributes parameter.
 
-###0.4.0.0 / 2013-08-14
+### 0.4.0.0 / 2013-08-14
 
 - All missing helpers now covered (TextArea / ListBox etc)
 - Switch to new mechanism to support users implementing their own custom validations
 - Included demo of custom validations implementation
 
-###0.2.0 / 2013-08-07
+### 0.2.0 / 2013-08-07
 
 - Initial release
 - Included demo of dynamic content using Knockout.
 
-###0.1.0 / 2013-07-29
+### 0.1.0 / 2013-07-29
 
 - Beta release - not fully featured

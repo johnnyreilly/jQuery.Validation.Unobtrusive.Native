@@ -85,6 +85,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="EnumDropDownListExtensionsRequiredTests.cs" />
     <Compile Include="PasswordExtensionsRequiredTests.cs" />
     <Compile Include="CheckBoxExtensionsRequiredTests.cs" />
     <Compile Include="RadioButtonExtensionsRequiredTests.cs" />
