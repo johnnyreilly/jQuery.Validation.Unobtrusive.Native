@@ -1,0 +1,20 @@
+{
+  "main": {
+    "en-FM": {
+      "identity": {
+        "version": {
+          "_cldrVersion": "28",
+          "_number": "$Revision: 11914 $"
+        },
+        "language": "en",
+        "territory": "FM"
+      },
+      "delimiters": {
+        "quotationStart": "“",
+        "quotationEnd": "”",
+        "alternateQuotationStart": "‘",
+        "alternateQuotationEnd": "’"
+      }
+    }
+  }
+}

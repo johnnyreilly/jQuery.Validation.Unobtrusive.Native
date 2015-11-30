@@ -1,0 +1,20 @@
+{
+  "main": {
+    "fr-RW": {
+      "identity": {
+        "version": {
+          "_cldrVersion": "28",
+          "_number": "$Revision: 11914 $"
+        },
+        "language": "fr",
+        "territory": "RW"
+      },
+      "posix": {
+        "messages": {
+          "yesstr": "oui:o",
+          "nostr": "non:n"
+        }
+      }
+    }
+  }
+}

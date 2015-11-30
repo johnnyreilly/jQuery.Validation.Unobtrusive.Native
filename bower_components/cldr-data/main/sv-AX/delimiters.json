@@ -1,0 +1,20 @@
+{
+  "main": {
+    "sv-AX": {
+      "identity": {
+        "version": {
+          "_cldrVersion": "28",
+          "_number": "$Revision: 11914 $"
+        },
+        "language": "sv",
+        "territory": "AX"
+      },
+      "delimiters": {
+        "quotationStart": "”",
+        "quotationEnd": "”",
+        "alternateQuotationStart": "’",
+        "alternateQuotationEnd": "’"
+      }
+    }
+  }
+}

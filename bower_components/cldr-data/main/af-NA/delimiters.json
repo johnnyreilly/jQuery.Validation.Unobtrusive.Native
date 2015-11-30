@@ -1,0 +1,20 @@
+{
+  "main": {
+    "af-NA": {
+      "identity": {
+        "version": {
+          "_cldrVersion": "28",
+          "_number": "$Revision: 11914 $"
+        },
+        "language": "af",
+        "territory": "NA"
+      },
+      "delimiters": {
+        "quotationStart": "“",
+        "quotationEnd": "”",
+        "alternateQuotationStart": "‘",
+        "alternateQuotationEnd": "’"
+      }
+    }
+  }
+}

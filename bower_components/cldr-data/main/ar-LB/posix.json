@@ -1,0 +1,20 @@
+{
+  "main": {
+    "ar-LB": {
+      "identity": {
+        "version": {
+          "_cldrVersion": "28",
+          "_number": "$Revision: 11914 $"
+        },
+        "language": "ar",
+        "territory": "LB"
+      },
+      "posix": {
+        "messages": {
+          "yesstr": "نعم:ن",
+          "nostr": "لا:ل"
+        }
+      }
+    }
+  }
+}

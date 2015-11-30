@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="John Reilly">
+    <meta name="keywords" content="jQuery Validation Unobtrusive Native, ASP.Net MVC, validation, jQuery, jquery-validate.js, unobtrusive">
+    <title>MaxLength and MinLength - jQuery Validation Unobtrusive Native</title>
+    
+    <meta name="Description" content="A demo of minlength and maxlength validation.">
+
+    <link href="../Content/site.css" rel="stylesheet"/>
+
+    <link href="https://google-code-prettify.googlecode.com/svn/loader/prettify.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    
+    <script src="../Scripts/modernizr.js"></script>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">jVUN</a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="../Home/GettingStarted.html">Getting Started</a></li>
+                    <li><a href="http://blog.johnnyreilly.com/2013/10/migrating-from-jquery.validate.unobtrusive.js-to-jQuery.Validation.Unobtrusive.Native.html" target="_blank">Migrating</a></li>
+                    <li><a href="../Home/Download.html">Download</a></li>
+                    <li class="dropdown">
+                        <a href="MaxLengthMinLength.html#" class="dropdown-toggle" data-toggle="dropdown">Demos <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../Demo.html">Overview</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Type Validations</li>
+<li><a href="Number.html">Number</a></li>
+<li><a href="Date.html">Date</a></li>
+<li class="dropdown-header">Attribute Validations</li>
+<li><a href="Required.html">Required</a></li>
+<li><a href="Range.html">Range</a></li>
+<li class="active"><a href="MaxLengthMinLength.html">MaxLength / MinLength</a></li>
+<li><a href="EqualTo.html">EqualTo</a></li>
+<li><a href="Url.html">URL</a></li>
+<li><a href="Email.html">Email</a></li>
+<li><a href="CreditCard.html">CreditCard</a></li>
+<li><a href="Remote.html">Remote</a></li>
+<li><a href="RegularExpression.html">Regular Expression</a></li>
+<li><a href="FileExtensions.html">File Extensions</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="MaxLengthMinLength.html#" class="dropdown-toggle" data-toggle="dropdown">Advanced Demos <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../AdvancedDemo.html">Overview</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../AdvancedDemo/Knockout.html">Knockout</a></li>
+<li><a href="../AdvancedDemo/CustomValidation.html">Custom Validation</a></li>
+<li class="dropdown-header">Miscellaneous Demos</li>
+<li><a href="../AdvancedDemo/Tooltip.html">Tooltip</a></li>
+<li><a href="../AdvancedDemo/Globalize.html">Globalize</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="main" class="container">
+
+        
+<h3>MaxLength and MinLength</h3>
+
+<p>The <a href="http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.stringlengthattribute.aspx" target="_blank">System.ComponentModel.DataAnnotations.StringLengthAttribute</a> maps to the <a href="http://jqueryvalidation.org/maxlength-method" target="_blank">maxlength</a> validation method in jQuery Validation (and depending on usage the <a href="http://jqueryvalidation.org/minlength-method" target="_blank">minlength</a> validation method too).</p>
+<p>The <a href="http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.maxlengthattribute.aspx" target="_blank">System.ComponentModel.DataAnnotations.MaxLengthAttribute</a> maps to the <a href="http://jqueryvalidation.org/maxlength-method" target="_blank">maxlength</a> validation method in jQuery Validation.</p>
+<p>The <a href="http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.minlengthattribute.aspx" target="_blank">System.ComponentModel.DataAnnotations.MinLengthAttribute</a> maps to the <a href="http://jqueryvalidation.org/minlength-method" target="_blank">minlength</a> validation method in jQuery Validation.</p>
+
+<ul class="nav nav-tabs" data-tabs="tabs">
+    <li class="active"><a data-toggle="tab" href="MaxLengthMinLength.html#demo">Demo</a></li>
+    <li><a data-toggle="tab" href="MaxLengthMinLength.html#model">Model</a></li>
+    <li><a data-toggle="tab" href="MaxLengthMinLength.html#view">View</a></li>
+    <li><a data-toggle="tab" href="MaxLengthMinLength.html#html">HTML</a></li>
+    <li><a data-toggle="tab" href="MaxLengthMinLength.html#javascript">JavaScript</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active" id="demo">
+        
+<form action="MaxLengthMinLength.html" method="post">            <div class="row">
+                <label for="StringLengthMaxOnly">A maximum of 7 characters can be entered:</label>
+                <input data-msg-maxlength="The field StringLengthMaxOnly must be a string with a maximum length of 7." data-rule-maxlength="7" id="StringLengthMaxOnly" name="StringLengthMaxOnly" type="text" value="12345678" />
+            </div>
+            <div class="row">
+                <label for="StringLengthMaxAndMinLength">A maximum of 10 characters can be entered and a minimum of 5:</label>
+                <input data-msg-maxlength="The field StringLengthMaxAndMinLength must be a string with a minimum length of 5 and a maximum length of 10." data-msg-minlength="The field StringLengthMaxAndMinLength must be a string with a minimum length of 5 and a maximum length of 10." data-rule-maxlength="10" data-rule-minlength="5" id="StringLengthMaxAndMinLength" name="StringLengthMaxAndMinLength" type="text" value="123" />
+            </div>
+            <div class="row">
+                <label for="MaxLength">A maximum of 9 characters can be entered:</label>
+                <input data-msg-maxlength="The field MaxLength must be a string or array type with a maximum length of &#39;9&#39;." data-rule-maxlength="9" id="MaxLength" name="MaxLength" type="text" value="1234567890" />
+            </div>
+            <div class="row">
+                <label for="MinLength">A minimum of 6 characters can be entered:</label>
+                <input data-msg-minlength="The field MinLength must be a string or array type with a minimum length of &#39;6&#39;." data-rule-minlength="6" id="MinLength" name="MinLength" type="text" value="12345" />
+            </div>
+            <div class="row">
+                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="reset" class="btn btn-info">Reset</button>
+            </div>
+</form>
+    </div>
+
+    <div class="tab-pane" id="model">
+        
+        <p>Here's the model, note that the <code>StringLength</code> attribute decorates the first two properties on the model, the next is decorated with the <code>MinLength</code> attribute and the final property is decorated with the <code>MaxLength</code> attribute:</p>
+
+        <pre class="prettyprint cs">
+    using System.ComponentModel.DataAnnotations;
+
+    namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
+    {
+        public class MaxLengthMinLengthModel
+        {
+            [StringLength(7)]
+            public string StringLengthMaxOnly { get; set; }
+
+            [StringLength(10, MinimumLength = 5)]
+            public string StringLengthMaxAndMinLength { get; set; }
+
+            [MinLength(6)]
+            public string MinLength { get; set; }
+
+            [MaxLength(9)]
+            public string MaxLength { get; set; }
+        }
+    }
+        </pre>
+    </div>
+
+    <div class="tab-pane" id="view">
+        
+        <p>Here's the view (which uses the model):</p>
+
+        <pre class="prettyprint cs">
+    @model jQuery.Validation.Unobtrusive.Native.Demos.Models.MaxLengthMinLengthModel
+    @using (Html.BeginForm())
+    {
+        &lt;div class="row"&gt;
+            @Html.LabelFor(x =&gt; x.StringLengthMaxOnly, "A maximum of 7 characters can be entered:")
+            @Html.TextBoxFor(x =&gt; x.StringLengthMaxOnly, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            @Html.LabelFor(x =&gt; x.StringLengthMaxAndMinLength, "A maximum of 10 characters can be entered and a minimum of 5:")
+            @Html.TextBoxFor(x =&gt; x.StringLengthMaxAndMinLength, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            @Html.LabelFor(x =&gt; x.MaxLength, "A maximum of 9 characters can be entered:")
+            @Html.TextBoxFor(x =&gt; x.MaxLength, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            @Html.LabelFor(x =&gt; x.MinLength, "A minimum of 6 characters can be entered:")
+            @Html.TextBoxFor(x =&gt; x.MinLength, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
+        &lt;/div&gt;
+    }
+        </pre>
+
+    </div>
+
+    <div class="tab-pane" id="html">
+        
+        <p>Here's the HTML that the view generates:</p>
+
+        <pre class="prettyprint html">
+    &lt;form action="/Demo/MaxLengthMinLength" method="post"&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="StringLengthMaxOnly"&gt;A maximum of 7 characters can be entered:&lt;/label&gt;
+            &lt;input data-msg-maxlength="The field StringLengthMaxOnly must be a string with a maximum length of 7." data-rule-maxlength="7" 
+                id="StringLengthMaxOnly" name="StringLengthMaxOnly" type="text" value="12345678" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="StringLengthMaxAndMinLength"&gt;A maximum of 10 characters can be entered and a minimum of 5:&lt;/label&gt;
+            &lt;input data-msg-maxlength="The field StringLengthMaxAndMinLength must be a string with a minimum length of 5 and a maximum length of 10." 
+                data-msg-minlength="The field StringLengthMaxAndMinLength must be a string with a minimum length of 5 and a maximum length of 10." 
+                data-rule-maxlength="10" data-rule-minlength="5" 
+                id="StringLengthMaxAndMinLength" name="StringLengthMaxAndMinLength" type="text" value="123" /&gt;
+        &lt;/div&gt;
+                    &lt;div class="row"&gt;
+            &lt;label for="MaxLength"&gt;A maximum of 7 characters can be entered:&lt;/label&gt;
+            &lt;input data-msg-maxlength="The field MaxLength must be a string with a maximum length of 7." data-rule-maxlength="7" 
+                id="StringLengthMaxOnly" name="StringLengthMaxOnly" type="text" value="12345678" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="MaxLength"&gt;A maximum of 9 characters can be entered:&lt;/label&gt;
+            &lt;input data-msg-maxlength="The field MaxLength must be a string or array type with a maximum length of '9'." data-rule-maxlength="9" 
+                id="MaxLength" name="MaxLength" type="text" value="1234567890" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="MinLength"&gt;A minimum of 6 characters can be entered:&lt;/label&gt;
+            &lt;input data-msg-minlength="The field MinLength must be a string or array type with a minimum length of '6'." data-rule-maxlength="6" 
+                id="MinLength" name="MinLength" type="text" value="12345" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+        </pre>
+    </div>
+    
+    <div class="tab-pane" id="javascript">
+        
+        <p>Here's the JavaScript that initialises the validation:</p>
+
+        <pre class="prettyprint js">
+  $("form").validate({
+      submitHandler: function (form) {
+          alert("This is a valid form!");
+      }
+  });
+        </pre>
+
+    </div>
+
+</div>
+
+
+
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <p class="muted">
+                &#169; 2013 <a href="http://blog.johnnyreilly.com" target="_blank">John Reilly</a>
+                · <a href="mailto:johnny_reilly@hotmail.com">Contact</a>
+                · <a href="../Home/License.html">License</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="../Scripts/jquery.js"></script>
+<script src="../Scripts/bootstrap.js"></script>
+
+    
+    <script src="../Scripts/jquery.validate.js"></script>
+
+    <script>
+        $("form").validate({
+            submitHandler: function (form) {
+                alert("This is a valid form!");
+            }
+        });
+
+    </script>
+
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <a href="https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native" class="hidden-xs"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+</body>
+</html>

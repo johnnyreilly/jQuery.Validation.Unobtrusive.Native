@@ -1,0 +1,20 @@
+{
+  "main": {
+    "ms": {
+      "identity": {
+        "version": {
+          "_cldrVersion": "28",
+          "_number": "$Revision: 11994 $"
+        },
+        "language": "ms"
+      },
+      "localeDisplayNames": {
+        "measurementSystemNames": {
+          "metric": "Metrik",
+          "UK": "UK",
+          "US": "AS"
+        }
+      }
+    }
+  }
+}

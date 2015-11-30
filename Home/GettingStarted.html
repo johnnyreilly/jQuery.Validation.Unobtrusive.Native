@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="John Reilly">
+    <meta name="keywords" content="jQuery Validation Unobtrusive Native, ASP.Net MVC, validation, jQuery, jquery-validate.js, unobtrusive">
+    <title>Getting Started - jQuery Validation Unobtrusive Native</title>
+    
+    <meta name="Description" content="Getting started with jQuery Validation Unobtrusive Native.  How do I include it in my project, how do I use it?">
+
+    <link href="../Content/site.css" rel="stylesheet"/>
+
+    <link href="https://google-code-prettify.googlecode.com/svn/loader/prettify.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    
+    <script src="../Scripts/modernizr.js"></script>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">jVUN</a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="GettingStarted.html">Getting Started</a></li>
+                    <li><a href="http://blog.johnnyreilly.com/2013/10/migrating-from-jquery.validate.unobtrusive.js-to-jQuery.Validation.Unobtrusive.Native.html" target="_blank">Migrating</a></li>
+                    <li><a href="Download.html">Download</a></li>
+                    <li class="dropdown">
+                        <a href="GettingStarted.html#" class="dropdown-toggle" data-toggle="dropdown">Demos <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../Demo.html">Overview</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Type Validations</li>
+<li><a href="../Demo/Number.html">Number</a></li>
+<li><a href="../Demo/Date.html">Date</a></li>
+<li class="dropdown-header">Attribute Validations</li>
+<li><a href="../Demo/Required.html">Required</a></li>
+<li><a href="../Demo/Range.html">Range</a></li>
+<li><a href="../Demo/MaxLengthMinLength.html">MaxLength / MinLength</a></li>
+<li><a href="../Demo/EqualTo.html">EqualTo</a></li>
+<li><a href="../Demo/Url.html">URL</a></li>
+<li><a href="../Demo/Email.html">Email</a></li>
+<li><a href="../Demo/CreditCard.html">CreditCard</a></li>
+<li><a href="../Demo/Remote.html">Remote</a></li>
+<li><a href="../Demo/RegularExpression.html">Regular Expression</a></li>
+<li><a href="../Demo/FileExtensions.html">File Extensions</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="GettingStarted.html#" class="dropdown-toggle" data-toggle="dropdown">Advanced Demos <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../AdvancedDemo.html">Overview</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../AdvancedDemo/Knockout.html">Knockout</a></li>
+<li><a href="../AdvancedDemo/CustomValidation.html">Custom Validation</a></li>
+<li class="dropdown-header">Miscellaneous Demos</li>
+<li><a href="../AdvancedDemo/Tooltip.html">Tooltip</a></li>
+<li><a href="../AdvancedDemo/Globalize.html">Globalize</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="main" class="container">
+
+        <h3>Getting Started</h3>
+
+<p>If you haven't already, ensure that the following entries can be found in your web.config:</p>
+
+<pre class="prettyprint xml">
+  &lt;appSettings&gt;
+      &lt;add key="ClientValidationEnabled" value="true" /&gt;
+      &lt;add key="UnobtrusiveJavaScriptEnabled" value="true" /&gt;
+  &lt;/appSettings&gt;
+</pre>
+
+<p>Include jQuery Validation Unobtrusive Native into your project (available on <a href="Download.html">Nuget</a> or on <a href="http://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native" target="_blank">GitHub</a>). With this in place you should be able to switch from using the existing <code>TextBoxFor</code> / <code>DropDownListFor</code> / <code>CheckBoxFor</code> / <code>TextAreaFor</code> / <code>RadioButtonFor</code> / <code>ListBoxFor</code> / <code>PasswordFor</code> HtmlHelper statements in your views and to jQuery Validation Unobtrusive Native's equivalent by passing <code>true</code> to the <code>useNativeUnobtrusiveAttributes</code> parameter. (By convention this is the first parameter after the <code>Expression&lt;Func&lt;TModel, TProperty&gt;&gt; expression</code> parameter in each helper.</p>
+    
+<p>Ensure that you have the latest version of jquery.validate.js included, you can find it <a href="http://jqueryvalidation.org/" target="_blank">here</a> (minimum version supported is 1.11.0).  Oh, and remember that you <em>no longer</em> need to serve up the jquery.validate.unobtrusive.js on a screen where you are using jQuery Validation Unobtrusive Native.  All you need is jquery.validate.js (and of course jQuery).  However, if you were using jquery.validate.unobtrusive.js to trigger your screen validation on page load then remember that you will now need to do this yourself like this:</p>
+
+<pre class="prettyprint js">
+  &lt;script&gt;
+      $("form").validate();
+  &lt;/&lt;script&gt;
+</pre>
+
+<h4>Using the jQuery Validation Unobtrusive Native HTML Helper overloads</h4>
+
+<p>Where you would previously have written:</p>
+
+<pre class="prettyprint cs">
+    @Html.TextBoxFor(x => x.WeAreTextBox)
+</pre>
+
+<p>To use jQuery Validation Unobtrusive Native you would put:</p>
+
+<pre class="prettyprint cs">
+    @Html.TextBoxFor(x => x.WeAreTextBox, true)
+</pre>
+
+<p>Or, where you would have written:</p>
+
+<pre class="prettyprint cs">
+    @Html.DropDownListFor(x => x.WeAreDropDown, 
+      new List&lt;SelectListItem&gt; {
+        new SelectListItem{ Text = "Please select", Value = "" },
+        new SelectListItem{ Text = "An option", Value = "An option"}
+    })
+</pre>
+
+<p>Now you would put:</p>
+
+<pre class="prettyprint cs">
+    @Html.DropDownListFor(x => x.WeAreDropDown, true, 
+      new List&lt;SelectListItem&gt; {
+        new SelectListItem{ Text = "Please select", Value = "" },
+        new SelectListItem{ Text = "An option", Value = "An option"}
+    })
+</pre>
+
+<p>The only differences above are the extra <code>true</code> arguments being passed.  If you passed <code>false</code> instead jQuery Validation Unobtrusive Native would internally call the inbuilt MVC implementation.</p>
+
+<div class="alert alert-info">
+    <p>If you're a heavy user of the <code>htmlAttributes</code> parameter (and indeed others) available using the MVC HTML Helpers and you're worried that jQuery Validation Unobtrusive Native will stop you using it then <strong>fear not</strong>!  The same overloads remain available to you as with the out-of-the-box HTML Helpers.  jQuery Validation Unobtrusive Native adds new overloads to the existing helpers; it doesn't change the behaviour of existing helpers in any way.  So doing something like this:</p>
+
+    <pre class="prettyprint cs">
+
+    @Html.TextBoxFor(x => x.WeAreTextBox, 
+        htmlAttributes: new { @class="my-css-class" })
+    </pre>
+    
+    <p>Is still completely possible.To move to using jQuery Validation Unobtrusive Native you'd just do this:</p>
+
+    <pre class="prettyprint cs">
+
+    @Html.TextBoxFor(x => x.WeAreTextBox, true, 
+        htmlAttributes: new { @class="my-css-class" })
+    </pre>
+
+    <p>Given that there are now more overloads available you may find that using named arguments (as above) gives you terser syntax rather than specifying every argument that there is.</p>
+</div>
+
+<p>Take a look at the <a href="../Demo.html">demos</a> to see more detailed examples.</p>
+
+<h4>Using jQuery Validation Unobtrusive Native alongside jquery.validate.unobtrusive.js</h4>
+
+<p>When it comes to using jQuery Validation Unobtrusive Native side by side with jquery.validate.unobtrusive.js in the same project, you can.  As you see, it takes very little effort to migrate from one approach to the other. And it's *<strong>your</strong>* choice. If you want to have one screen that uses jQuery Validation Unobtrusive Native and one screen that uses jquery.validation.unobtrusive.js then you can! Including jQuery Validation Unobtrusive Native in your project gives you the <strong>option</strong> to use it. It doesn't force you to, you can do so as you need to and when you want to. It's down to you.</p>
+
+
+
+<p><small>P.S. If you're using the source code from GitHub in Visual Studio, make sure you have the Package Manager option <em>"Allow NuGet to download missing packages during build"</em> set to true.  This will ensure that the required packages are downloaded from NuGet.</small></p>
+
+
+
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <p class="muted">
+                &#169; 2013 <a href="http://blog.johnnyreilly.com" target="_blank">John Reilly</a>
+                · <a href="mailto:johnny_reilly@hotmail.com">Contact</a>
+                · <a href="License.html">License</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="../Scripts/jquery.js"></script>
+<script src="../Scripts/bootstrap.js"></script>
+
+    
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <a href="https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native" class="hidden-xs"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+</body>
+</html>

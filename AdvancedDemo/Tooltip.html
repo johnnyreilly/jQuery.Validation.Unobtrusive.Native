@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="John Reilly">
+    <meta name="keywords" content="jQuery Validation Unobtrusive Native, ASP.Net MVC, validation, jQuery, jquery-validate.js, unobtrusive">
+    <title>Tooltip - jQuery Validation Unobtrusive Native</title>
+    
+    <meta name="Description" content="A demo of how do display validation messages using a tooltip (in this case Bootstraps tooltip).">
+
+    <link href="../Content/site.css" rel="stylesheet"/>
+
+    <link href="https://google-code-prettify.googlecode.com/svn/loader/prettify.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    
+    <script src="../Scripts/modernizr.js"></script>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">jVUN</a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="../Home/GettingStarted.html">Getting Started</a></li>
+                    <li><a href="http://blog.johnnyreilly.com/2013/10/migrating-from-jquery.validate.unobtrusive.js-to-jQuery.Validation.Unobtrusive.Native.html" target="_blank">Migrating</a></li>
+                    <li><a href="../Home/Download.html">Download</a></li>
+                    <li class="dropdown">
+                        <a href="Tooltip.html#" class="dropdown-toggle" data-toggle="dropdown">Demos <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../Demo.html">Overview</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Type Validations</li>
+<li><a href="../Demo/Number.html">Number</a></li>
+<li><a href="../Demo/Date.html">Date</a></li>
+<li class="dropdown-header">Attribute Validations</li>
+<li><a href="../Demo/Required.html">Required</a></li>
+<li><a href="../Demo/Range.html">Range</a></li>
+<li><a href="../Demo/MaxLengthMinLength.html">MaxLength / MinLength</a></li>
+<li><a href="../Demo/EqualTo.html">EqualTo</a></li>
+<li><a href="../Demo/Url.html">URL</a></li>
+<li><a href="../Demo/Email.html">Email</a></li>
+<li><a href="../Demo/CreditCard.html">CreditCard</a></li>
+<li><a href="../Demo/Remote.html">Remote</a></li>
+<li><a href="../Demo/RegularExpression.html">Regular Expression</a></li>
+<li><a href="../Demo/FileExtensions.html">File Extensions</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="Tooltip.html#" class="dropdown-toggle" data-toggle="dropdown">Advanced Demos <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../AdvancedDemo.html">Overview</a></li>
+                            <li class="divider"></li>
+                            <li><a href="Knockout.html">Knockout</a></li>
+<li><a href="CustomValidation.html">Custom Validation</a></li>
+<li class="dropdown-header">Miscellaneous Demos</li>
+<li class="active"><a href="Tooltip.html">Tooltip</a></li>
+<li><a href="Globalize.html">Globalize</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="main" class="container">
+
+        
+<h3>Tooltip</h3>
+
+<p>Ever wanted to use tooltips to display your errors?  No?  Maybe it's just me...  Anyway, if you want to do it it's not that hard and here's the recipe.  (And yes I know that this has nothing really to do with jQuery Validation Unobtrusive Native but it's kind of cool and interesting so there you go.)</p>
+
+<p>Everything you need to see is in the JavaScript tab below.  You can see that I'm using the <a href="http://getbootstrap.com/javascript/#tooltips" target="_blank">Bootstrap Tooltip</a>.  That's because this is (in case you hadn't guessed) a Bootstrapped site.  But the principal stands and you can use whatever tooltip loveliness you like really.  Plug and play.</p>
+
+<ul class="nav nav-tabs" data-tabs="tabs">
+    <li class="active"><a data-toggle="tab" href="Tooltip.html#demo">Demo</a></li>
+    <li><a data-toggle="tab" href="Tooltip.html#model">Model</a></li>
+    <li><a data-toggle="tab" href="Tooltip.html#view">View</a></li>
+    <li><a data-toggle="tab" href="Tooltip.html#html">HTML</a></li>
+    <li><a data-toggle="tab" href="Tooltip.html#javascript">JavaScript</a></li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane active" id="demo">
+        
+<form action="Tooltip.html" method="post">            <div class="row">
+                <label for="TextBox">A number must be entered:</label>
+                <input data-msg-number="The field TextBox must be a number." data-msg-required="The TextBox field is required." data-rule-number="true" data-rule-required="true" id="TextBox" name="TextBox" type="text" value="" />
+            </div>
+            <div class="row">
+                <label for="DropDownList">An option must be selected:</label>
+                <select data-msg-required="The DropDownList field is required." data-rule-required="true" id="DropDownList" name="DropDownList"><option value="">Please select</option>
+<option value="An option">An option</option>
+</select>
+            </div>
+            <div class="row">
+                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="reset" class="btn btn-info">Reset</button>
+            </div>
+</form>
+    </div>
+
+    <div class="tab-pane" id="model">
+        
+        <p>Here's the model, nothing special to report but we've got some <code>Required</code> attributes in place and one of the properties is a nullable integer which means we'll requiring a number:</p>
+
+        <pre class="prettyprint cs">
+    using System.ComponentModel.DataAnnotations;
+
+    namespace jQuery.Validation.Unobtrusive.Native.Demos.Models
+    {
+        public class TooltipModel
+        {
+            [Required]
+            public int? TextBox { get; set; }
+
+            [Required]
+            public string DropDownList { get; set; }
+        }
+    }
+        </pre>
+    </div>
+
+    <div class="tab-pane" id="view">
+        
+        <p>Here's the view (which uses the model):</p>
+
+        <pre class="prettyprint cs">
+    @model jQuery.Validation.Unobtrusive.Native.Demos.Models.RequiredModel
+    @using (Html.BeginForm())
+    {
+        &lt;div class="row"&gt;
+            @Html.LabelFor(x =&gt; x.TextBox, "A number must be entered:")
+            @Html.TextBoxFor(x =&gt; x.TextBox, true)
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            @Html.LabelFor(x =&gt; x.DropDownList, "An option must be selected:")
+            @Html.DropDownListFor(x =&gt; x.DropDownList, true, new List&lt;SelectListItem&gt; {
+                new SelectListItem{ Text = "Please select", Value = "" },
+                new SelectListItem{ Text = "An option", Value = "An option"}
+            })
+        &lt;/div&gt;
+
+        &lt;div class="row"&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
+        &lt;/div&gt;
+    }
+        </pre>
+
+    </div>
+
+    <div class="tab-pane" id="html">
+        
+        <p>Here's the HTML that the view generates:</p>
+
+        <pre class="prettyprint html">
+    &lt;form action="/Demo/Tooltip" method="post"&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="TextBox"&gt;A number must be entered:&lt;/label&gt;
+            &lt;input data-msg-number="The field TextBox must be a number." 
+                data-msg-required="The TextBox field is required." 
+                data-rule-number="true" 
+                data-rule-required="true" 
+                id="TextBox" name="TextBox" type="text" value="" /&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;label for="DropDownList"&gt;An option must be selected:&lt;/label&gt;
+            &lt;select data-msg-required="The DropDownList field is required." 
+                data-rule-required="true" 
+                id="DropDownList" name="DropDownList"&gt;
+                &lt;option value=""&gt;Please select&lt;/option&gt;
+                &lt;option value="An option"&gt;An option&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+            &lt;button type="reset" class="btn btn-info"&gt;Reset&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+        </pre>
+    </div>
+    
+    <div class="tab-pane" id="javascript">
+        
+        <p>The <code>showErrors</code> option here does all the hard work of setting up our tooltips.</p>
+
+        <pre class="prettyprint js">
+  $("form").validate({
+          
+      showErrors: function(errorMap, errorList) {
+
+          // Clean up any tooltips for valid elements
+          $.each(this.validElements(), function (index, element) {
+              var $element = $(element);
+
+              $element.data("title", "") // Clear the title - there is no error associated anymore
+                  .removeClass("error")
+                  .tooltip("destroy");
+          });
+
+          // Create new tooltips for invalid elements
+          $.each(errorList, function (index, error) {
+              var $element = $(error.element);
+
+              $element.tooltip("destroy") // Destroy any pre-existing tooltip so we can repopulate with new tooltip content
+                  .data("title", error.message)
+                  .addClass("error")
+                  .tooltip(); // Create a new tooltip based on the error messsage we just set in the title
+          });
+      },
+
+      submitHandler: function(form) {
+          alert("This is a valid form!");
+      }
+  });
+        </pre>
+
+    </div>
+
+</div>
+
+
+
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <p class="muted">
+                &#169; 2013 <a href="http://blog.johnnyreilly.com" target="_blank">John Reilly</a>
+                · <a href="mailto:johnny_reilly@hotmail.com">Contact</a>
+                · <a href="../Home/License.html">License</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="../Scripts/jquery.js"></script>
+<script src="../Scripts/bootstrap.js"></script>
+
+    
+    <script src="../Scripts/jquery.validate.js"></script>
+
+    <script>
+        $("form").validate({
+            
+            showErrors: function(errorMap, errorList) {
+
+                // Clean up any tooltips for valid elements
+                $.each(this.validElements(), function (index, element) {
+                    var $element = $(element);
+
+                    $element.data("title", "") // Clear the title - there is no error associated anymore
+                        .removeClass("error")
+                        .tooltip("destroy");
+                });
+
+                // Create new tooltips for invalid elements
+                $.each(errorList, function (index, error) {
+                    var $element = $(error.element);
+
+                    $element.tooltip("destroy") // Destroy any pre-existing tooltip so we can repopulate with new tooltip content
+                        .data("title", error.message)
+                        .addClass("error")
+                        .tooltip(); // Create a new tooltip based on the error messsage we just set in the title
+                });
+            },
+
+            submitHandler: function(form) {
+                alert("This is a valid form!");
+            }
+        });
+    </script>
+
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <a href="https://github.com/johnnyreilly/jQuery.Validation.Unobtrusive.Native" class="hidden-xs"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+</body>
+</html>
