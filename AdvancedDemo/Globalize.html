@@ -763,7 +763,7 @@
                 $loading.hide();
                 var languageName = Globalize.locale().main('localeDisplayNames/languages/' + localeToLoad);
                 languageName = (languageName
-                  ? languageName + ' / ' + Globalize.locale(originalLocale).main('localeDisplayNames/languages/' + localeToLoad) + ' : '
+                  ? languageName + ' / ' + Globalize.locale(localeToLoad).main('localeDisplayNames/languages/' + localeToLoad) + ' : '
                   : '');
                 var exampleFormats = languageName + "A number may look like this: " + Globalize.numberFormatter()(11.7) +
                     " and a date may look like this: " + Globalize.dateFormatter()(new Date());
