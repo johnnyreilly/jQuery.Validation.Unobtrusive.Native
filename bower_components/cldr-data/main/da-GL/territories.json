@@ -3,8 +3,8 @@
     "da-GL": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "da",
         "territory": "GL"
@@ -49,7 +49,6 @@
           "AI": "Anguilla",
           "AL": "Albanien",
           "AM": "Armenien",
-          "AN": "Hollandske Antiller",
           "AO": "Angola",
           "AQ": "Antarktis",
           "AR": "Argentina",
@@ -221,7 +220,7 @@
           "NF": "Norfolk Island",
           "NG": "Nigeria",
           "NI": "Nicaragua",
-          "NL": "Nederlandene",
+          "NL": "Holland",
           "NO": "Norge",
           "NP": "Nepal",
           "NR": "Nauru",

@@ -3,16 +3,16 @@
     "eu": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "eu"
       },
       "delimiters": {
-        "quotationStart": "\\\"",
-        "quotationEnd": "\\\"",
-        "alternateQuotationStart": "\\\"",
-        "alternateQuotationEnd": "\\\""
+        "quotationStart": "“",
+        "quotationEnd": "”",
+        "alternateQuotationStart": "“",
+        "alternateQuotationEnd": "”"
       }
     }
   }

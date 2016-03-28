@@ -3,13 +3,14 @@
     "my": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12384 $",
+          "_cldrVersion": "29"
         },
         "language": "my"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "အာရေဗျ",
@@ -21,6 +22,7 @@
           "Bass": "Bass",
           "Batk": "Batk",
           "Beng": "ဘင်္ဂါလီ",
+          "Bhks": "Bhks",
           "Bopo": "ဘိုပို",
           "Brah": "ဗြဟ္မမီ",
           "Brai": "ဘရေ",
@@ -47,6 +49,7 @@
           "Grek": "ဂရိ",
           "Gujr": "ဂုဂျာရသီ",
           "Guru": "ဂူရူ",
+          "Hanb": "Hanb",
           "Hang": "ဟန်ဂူးလ်",
           "Hani": "ဟန်",
           "Hano": "Hano",
@@ -62,6 +65,7 @@
           "Hrkt": "ခတခဏ သို့မဟုတ် ဟိရဂဏ",
           "Hung": "Hung",
           "Ital": "Ital",
+          "Jamo": "Jamo",
           "Java": "ဂျာဗားနီးစ်",
           "Jpan": "ဂျပန်",
           "Kali": "ကယားလီ",
@@ -85,6 +89,7 @@
           "Mahj": "Mahj",
           "Mand": "Mand",
           "Mani": "Mani",
+          "Marc": "Marc",
           "Mend": "Mend",
           "Merc": "Merc",
           "Mero": "Mero",
@@ -97,11 +102,13 @@
           "Mymr": "မြန်မာ",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "Nkoo",
           "Ogam": "Ogam",
           "Olck": "Olck",
           "Orkh": "Orkh",
           "Orya": "အိုရာ",
+          "Osge": "Osge",
           "Osma": "Osma",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -181,6 +188,7 @@
           "Tale": "တိုင်လီ",
           "Talu": "Talu",
           "Taml": "တမီးလ်",
+          "Tang": "Tang",
           "Tavt": "Tavt",
           "Telu": "တီလု",
           "Tfng": "Tfng",
@@ -198,6 +206,7 @@
           "Yiii": "ရီ",
           "Zinh": "Zinh",
           "Zmth": "Zmth",
+          "Zsye": "Zsye",
           "Zsym": "သင်္ကေတ",
           "Zxxx": "မရေးထားသော",
           "Zyyy": "အများနှင့်သက်ဆိုင်သော",

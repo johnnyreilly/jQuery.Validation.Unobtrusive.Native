@@ -3,8 +3,8 @@
     "si": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12384 $",
+          "_cldrVersion": "29"
         },
         "language": "si"
       },
@@ -96,6 +96,23 @@
             "unitPattern-count-other": "වර්ග අඟල් {0}",
             "perUnitPattern": "වර්ග අඟලට {0}"
           },
+          "concentr-karat": {
+            "displayName": "ක්‍රාත්",
+            "unitPattern-count-one": "ක්‍රාත් {0}",
+            "unitPattern-count-other": "ක්‍රාත් {0}"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "කිලෝ මීටරයට ලීටරය",
             "unitPattern-count-one": "කිලෝ මීටරයට ලීටරය {0}",
@@ -110,6 +127,10 @@
             "displayName": "ගැලුමට හැතැප්ම",
             "unitPattern-count-one": "ගැලුමට හැතැප්ම {0}",
             "unitPattern-count-other": "ගැලුමට හැතැප්ම {0}"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "ටෙරාබයිට්",
@@ -206,7 +227,7 @@
             "displayName": "තත්පර",
             "unitPattern-count-one": "තත්පර {0}",
             "unitPattern-count-other": "තත්පර {0}",
-            "perUnitPattern": "තත්පරයට"
+            "perUnitPattern": "තත්පරයට {0}"
           },
           "duration-millisecond": {
             "displayName": "මිලිතත්පර",
@@ -509,11 +530,6 @@
             "unitPattern-count-one": "මිලිබාර් {0}",
             "unitPattern-count-other": "මිලිබාර් {0}"
           },
-          "proportion-karat": {
-            "displayName": "ක්‍රාත්",
-            "unitPattern-count-one": "ක්‍රාත් {0}",
-            "unitPattern-count-other": "ක්‍රාත් {0}"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "පැයට කිලෝමීටර්",
             "unitPattern-count-one": "පැයට කිලෝමීටර් {0}",
@@ -647,6 +663,11 @@
             "unitPattern-count-other": "ගැලුම් {0}",
             "perUnitPattern": "ගැලුමට {0}"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "ක්වාට්",
             "unitPattern-count-one": "ක්වාට් {0}",
@@ -771,6 +792,23 @@
             "unitPattern-count-other": "වඅ {0}",
             "perUnitPattern": "{0}/වඅ"
           },
+          "concentr-karat": {
+            "displayName": "ක්‍රාත්",
+            "unitPattern-count-one": "ක්‍රාත් {0}",
+            "unitPattern-count-other": "ක්‍රාත් {0}"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "ලීටරය/කිමී",
             "unitPattern-count-one": "ලී/කිමී {0}",
@@ -785,6 +823,10 @@
             "displayName": "හැතැප්ම/ගැලු",
             "unitPattern-count-one": "හැගැ {0}",
             "unitPattern-count-other": "හැගැ {0}"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "ටෙබයිට්",
@@ -1184,11 +1226,6 @@
             "unitPattern-count-one": "මි.බාර් {0}",
             "unitPattern-count-other": "මි.බාර් {0}"
           },
-          "proportion-karat": {
-            "displayName": "ක්‍රාත්",
-            "unitPattern-count-one": "ක්‍රාත් {0}",
-            "unitPattern-count-other": "ක්‍රාත් {0}"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "පැයට කිලෝමීටර්",
             "unitPattern-count-one": "කිමී/පැ {0}",
@@ -1322,6 +1359,11 @@
             "unitPattern-count-other": "ගැලු {0}",
             "perUnitPattern": "{0}/ගැලු"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "ක්වාට්",
             "unitPattern-count-one": "ක්ට් {0}",
@@ -1446,6 +1488,23 @@
             "unitPattern-count-other": "වඅ {0}",
             "perUnitPattern": "{0}/වඅ"
           },
+          "concentr-karat": {
+            "displayName": "ක්‍රාත්",
+            "unitPattern-count-one": "ක්‍රාත් {0}",
+            "unitPattern-count-other": "ක්‍රාත් {0}"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "ලීටරය/කිමී",
             "unitPattern-count-one": "ලී/කිමී {0}",
@@ -1460,6 +1519,10 @@
             "displayName": "හැතැප්ම/ගැලු",
             "unitPattern-count-one": "හැගැ {0}",
             "unitPattern-count-other": "හැගැ {0}"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "ටෙබයිට්",
@@ -1859,11 +1922,6 @@
             "unitPattern-count-one": "මි.බා. {0}",
             "unitPattern-count-other": "මි.බා. {0}"
           },
-          "proportion-karat": {
-            "displayName": "ක්‍රාත්",
-            "unitPattern-count-one": "ක්‍රාත් {0}",
-            "unitPattern-count-other": "ක්‍රාත් {0}"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "පැයට කිලෝමීටර්",
             "unitPattern-count-one": "කිමී/පැ {0}",
@@ -1996,6 +2054,11 @@
             "unitPattern-count-one": "ගැලු {0}",
             "unitPattern-count-other": "ගැලු {0}",
             "perUnitPattern": "{0}/ගැලු"
+          },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
           },
           "volume-quart": {
             "displayName": "ක්වාට්",

@@ -3,13 +3,14 @@
     "pl": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "pl"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "arabskie",
@@ -22,6 +23,7 @@
           "Bass": "Bass",
           "Batk": "batak",
           "Beng": "bengalskie",
+          "Bhks": "Bhks",
           "Blis": "symbole Blissa",
           "Bopo": "bopomofo",
           "Brah": "brahmi",
@@ -54,6 +56,7 @@
           "Grek": "greckie",
           "Gujr": "gudźarackie",
           "Guru": "gurmukhi",
+          "Hanb": "Hanb",
           "Hang": "hangyl",
           "Hani": "han",
           "Hano": "hanunoo",
@@ -70,6 +73,7 @@
           "Hung": "starowęgierskie",
           "Inds": "indus",
           "Ital": "starowłoskie",
+          "Jamo": "Jamo",
           "Java": "jawajskie",
           "Jpan": "japońskie",
           "Kali": "kayah li",
@@ -95,6 +99,7 @@
           "Mahj": "Mahj",
           "Mand": "mandejskie",
           "Mani": "manichejskie",
+          "Marc": "Marc",
           "Maya": "hieroglify Majów",
           "Mend": "Mend",
           "Merc": "Merc",
@@ -109,11 +114,13 @@
           "Mymr": "birmańskie",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "n’ko",
           "Ogam": "ogham",
           "Olck": "ol chiki",
           "Orkh": "orchońskie",
           "Orya": "orija",
+          "Osge": "Osge",
           "Osma": "osmanya",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -199,6 +206,7 @@
           "Tale": "tai le",
           "Talu": "nowy tai lue",
           "Taml": "tamilskie",
+          "Tang": "Tang",
           "Tavt": "tai viet",
           "Telu": "telugu",
           "Teng": "tengwar",
@@ -217,6 +225,7 @@
           "Yiii": "yi",
           "Zinh": "dziedziczone",
           "Zmth": "notacja matematyczna",
+          "Zsye": "Zsye",
           "Zsym": "symbole",
           "Zxxx": "język bez systemu pisma",
           "Zyyy": "wspólne",

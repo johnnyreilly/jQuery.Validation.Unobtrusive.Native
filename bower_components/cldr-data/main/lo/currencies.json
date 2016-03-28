@@ -3,8 +3,8 @@
     "lo": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "lo"
       },
@@ -475,6 +475,7 @@
             "displayName": "ຈໍ​ຈຽນ ລາ​ຣິ",
             "displayName-count-other": "ຈໍ​ຈຽນ ລາ​ຣິ",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "ລາຣີ"
           },
           "GHC": {

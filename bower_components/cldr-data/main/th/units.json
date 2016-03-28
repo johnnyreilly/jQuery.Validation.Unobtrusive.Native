@@ -3,8 +3,8 @@
     "th": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11977 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "th"
       },
@@ -80,6 +80,22 @@
             "unitPattern-count-other": "{0} ตร.นิ้ว",
             "perUnitPattern": "{0} ต่อตารางนิ้ว"
           },
+          "concentr-karat": {
+            "displayName": "กะรัต",
+            "unitPattern-count-other": "{0} กะรัต"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "ลิตรต่อกิโลเมตร",
             "unitPattern-count-other": "{0} ลิตรต่อกิโลเมตร"
@@ -91,6 +107,10 @@
           "consumption-mile-per-gallon": {
             "displayName": "ไมล์ต่อแกลลอน",
             "unitPattern-count-other": "{0} ไมล์ต่อแกลลอน"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "เทราไบต์",
@@ -416,10 +436,6 @@
             "displayName": "มิลลิบาร์",
             "unitPattern-count-other": "{0} มิลลิบาร์"
           },
-          "proportion-karat": {
-            "displayName": "กะรัต",
-            "unitPattern-count-other": "{0} กะรัต"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "กิโลเมตรต่อชั่วโมง",
             "unitPattern-count-other": "{0} กิโลเมตรต่อชั่วโมง"
@@ -528,6 +544,11 @@
             "unitPattern-count-other": "{0} แกลลอน",
             "perUnitPattern": "{0} ต่อแกลลอน"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "ควอร์ต",
             "unitPattern-count-other": "{0} ควอร์ต"
@@ -630,6 +651,22 @@
             "unitPattern-count-other": "{0} ตร.นิ้ว",
             "perUnitPattern": "{0} ต่อตารางนิ้ว"
           },
+          "concentr-karat": {
+            "displayName": "กะรัต",
+            "unitPattern-count-other": "{0} กะรัต"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "ลิตร/กม.",
             "unitPattern-count-other": "{0} ล./กม."
@@ -641,6 +678,10 @@
           "consumption-mile-per-gallon": {
             "displayName": "ไมล์/แกลลอน",
             "unitPattern-count-other": "{0} ไมล์/แกลลอน"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "TB",
@@ -966,10 +1007,6 @@
             "displayName": "มิลลิบาร์",
             "unitPattern-count-other": "{0} มิลลิบาร์"
           },
-          "proportion-karat": {
-            "displayName": "กะรัต",
-            "unitPattern-count-other": "{0} กะรัต"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "กม./ชั่วโมง",
             "unitPattern-count-other": "{0} กม./ชม."
@@ -1078,6 +1115,11 @@
             "unitPattern-count-other": "{0} แกลลอน",
             "perUnitPattern": "{0}/แกลลอน"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "คว.",
             "unitPattern-count-other": "{0} คว."
@@ -1180,6 +1222,22 @@
             "unitPattern-count-other": "{0} ตร.นิ้ว",
             "perUnitPattern": "{0} ต่อตารางนิ้ว"
           },
+          "concentr-karat": {
+            "displayName": "กะรัต",
+            "unitPattern-count-other": "{0} กะรัต"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "ลิตร/กม.",
             "unitPattern-count-other": "{0} ล./กม."
@@ -1191,6 +1249,10 @@
           "consumption-mile-per-gallon": {
             "displayName": "ไมล์/แกลลอน",
             "unitPattern-count-other": "{0} ไมล์/แกลลอน"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "TB",
@@ -1516,10 +1578,6 @@
             "displayName": "มิลลิบาร์",
             "unitPattern-count-other": "{0}มิลลิบาร์"
           },
-          "proportion-karat": {
-            "displayName": "กะรัต",
-            "unitPattern-count-other": "{0} กะรัต"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "กม./ชม.",
             "unitPattern-count-other": "{0}กม./ชม."
@@ -1627,6 +1685,11 @@
             "displayName": "แกลลอน",
             "unitPattern-count-other": "{0} แกลลอน",
             "perUnitPattern": "{0}/แกลลอน"
+          },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
           },
           "volume-quart": {
             "displayName": "คว.",

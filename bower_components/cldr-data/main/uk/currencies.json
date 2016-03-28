@@ -3,8 +3,8 @@
     "uk": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "uk"
       },
@@ -655,6 +655,7 @@
             "displayName-count-many": "грузинських ларі",
             "displayName-count-other": "грузинського ларі",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

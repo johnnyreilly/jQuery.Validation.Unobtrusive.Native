@@ -3,8 +3,8 @@
     "is": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "is"
       },
@@ -48,7 +48,6 @@
           "AI": "Angvilla",
           "AL": "Albanía",
           "AM": "Armenía",
-          "AN": "Hollensku Antillur",
           "AO": "Angóla",
           "AQ": "Suðurskautslandið",
           "AR": "Argentína",

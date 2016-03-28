@@ -3,8 +3,8 @@
     "he": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "he"
       },
@@ -224,12 +224,24 @@
             "dayPeriods": {
               "format": {
                 "abbreviated": {
-                  "am": "AM",
-                  "pm": "PM"
+                  "midnight": "חצות",
+                  "am": "לפנה״צ",
+                  "pm": "אחה״צ",
+                  "morning1": "בוקר",
+                  "afternoon1": "צהריים",
+                  "afternoon2": "אחר הצהריים",
+                  "evening1": "ערב",
+                  "night1": "לילה"
                 },
                 "narrow": {
-                  "am": "AM",
-                  "pm": "PM"
+                  "midnight": "חצות",
+                  "am": "לפנה״צ",
+                  "pm": "אחה״צ",
+                  "morning1": "בוקר",
+                  "afternoon1": "צהריים",
+                  "afternoon2": "אחר הצהריים",
+                  "evening1": "ערב",
+                  "night1": "לילה"
                 },
                 "wide": {
                   "midnight": "חצות",
@@ -244,17 +256,29 @@
               },
               "stand-alone": {
                 "abbreviated": {
-                  "am": "AM",
-                  "pm": "PM"
+                  "midnight": "חצות",
+                  "am": "לפנה״צ",
+                  "pm": "אחה״צ",
+                  "morning1": "בוקר",
+                  "afternoon1": "צהריים",
+                  "afternoon2": "אחר הצהריים",
+                  "evening1": "ערב",
+                  "night1": "לילה"
                 },
                 "narrow": {
-                  "am": "AM",
-                  "pm": "PM"
+                  "midnight": "חצות",
+                  "am": "לפנה״צ",
+                  "pm": "אחה״צ",
+                  "morning1": "בוקר",
+                  "afternoon1": "צהריים",
+                  "afternoon2": "אחר הצהריים",
+                  "evening1": "ערב",
+                  "night1": "לילה"
                 },
                 "wide": {
                   "midnight": "חצות",
-                  "am": "AM",
-                  "pm": "PM",
+                  "am": "לפנה״צ",
+                  "pm": "אחה״צ",
                   "morning1": "בוקר",
                   "afternoon1": "צהריים",
                   "afternoon2": "אחר הצהריים",

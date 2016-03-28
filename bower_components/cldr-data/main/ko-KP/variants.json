@@ -3,8 +3,8 @@
     "ko-KP": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "ko",
         "territory": "KP"
@@ -26,12 +26,14 @@
           "BAKU1926": "BAKU1926",
           "BALANKA": "BALANKA",
           "BARLA": "BARLA",
+          "BASICENG": "BASICENG",
           "BAUDDHA": "바우다",
           "BISCAYAN": "비스카얀",
           "BISKE": "BISKE",
           "BOHORIC": "BOHORIC",
           "BOONT": "BOONT",
           "COLB1945": "COLB1945",
+          "CORNU": "CORNU",
           "DAJNKO": "DAJNKO",
           "EKAVSK": "EKAVSK",
           "EMODENG": "EMODENG",
@@ -54,6 +56,7 @@
           "MONOTON": "MONOTON",
           "NDYUKA": "느듀카 방언",
           "NEDIS": "NEDIS",
+          "NEWFOUND": "NEWFOUND",
           "NJIVA": "NJIVA",
           "NULIK": "NULIK",
           "OSOJS": "OSOJS",
@@ -71,6 +74,7 @@
           "SAAHO": "SAAHO",
           "SCOTLAND": "스코틀랜드 표준 영어",
           "SCOUSE": "SCOUSE",
+          "SIMPLE": "SIMPLE",
           "SOLBA": "SOLBA",
           "SOTAV": "SOTAV",
           "SURMIRAN": "서미안",

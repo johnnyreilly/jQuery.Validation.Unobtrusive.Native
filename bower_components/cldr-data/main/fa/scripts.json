@@ -3,13 +3,14 @@
     "fa": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "fa"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "آلبانیایی قفقازی",
           "Ahom": "Ahom",
           "Arab": "عربی",
@@ -22,6 +23,7 @@
           "Bass": "Bass",
           "Batk": "باتاکی",
           "Beng": "بنگالی",
+          "Bhks": "Bhks",
           "Blis": "نمادهای بلیس",
           "Bopo": "بوپوموفو",
           "Brah": "براهمی",
@@ -52,6 +54,7 @@
           "Grek": "یونانی",
           "Gujr": "گجراتی",
           "Guru": "گورومخی",
+          "Hanb": "Hanb",
           "Hang": "هانگول",
           "Hani": "هان",
           "Hano": "هانونویی",
@@ -68,6 +71,7 @@
           "Hung": "مجاری باستان",
           "Inds": "ایندوس",
           "Ital": "ایتالی باستان",
+          "Jamo": "Jamo",
           "Java": "جاوه‌ای",
           "Jpan": "ژاپنی",
           "Kali": "کایالی",
@@ -93,6 +97,7 @@
           "Mahj": "Mahj",
           "Mand": "منده‌ای",
           "Mani": "مانوی",
+          "Marc": "Marc",
           "Maya": "هیروگلیف مایایی",
           "Mend": "Mend",
           "Merc": "Merc",
@@ -107,11 +112,13 @@
           "Mymr": "میانمار",
           "Narb": "عربی شمالی باستان",
           "Nbat": "نبطی",
+          "Newa": "Newa",
           "Nkoo": "Nkoo",
           "Ogam": "اوگامی",
           "Olck": "Olck",
           "Orkh": "اورخونی",
           "Orya": "اوریه‌ای",
+          "Osge": "Osge",
           "Osma": "Osma",
           "Palm": "پالمیرایی",
           "Pauc": "Pauc",
@@ -196,6 +203,7 @@
           "Tale": "Tale",
           "Talu": "Talu",
           "Taml": "تامیلی",
+          "Tang": "Tang",
           "Tavt": "Tavt",
           "Telu": "تلوگویی",
           "Teng": "تنگوار",
@@ -214,6 +222,7 @@
           "Yiii": "یی",
           "Zinh": "موروثی",
           "Zmth": "علائم ریاضی",
+          "Zsye": "Zsye",
           "Zsym": "علائم",
           "Zxxx": "نانوشته",
           "Zyyy": "مشترک",

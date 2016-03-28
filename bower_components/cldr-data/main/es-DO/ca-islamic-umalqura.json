@@ -3,8 +3,8 @@
     "es-DO": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12217 $",
+          "_cldrVersion": "29"
         },
         "language": "es",
         "territory": "DO"
@@ -235,7 +235,7 @@
                 },
                 "narrow": {
                   "am": "a. m.",
-                  "noon": "m.",
+                  "noon": "mediodía",
                   "pm": "p. m.",
                   "morning1": "día",
                   "morning2": "mañana",

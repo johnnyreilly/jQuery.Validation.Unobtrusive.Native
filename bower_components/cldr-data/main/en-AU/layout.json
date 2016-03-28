@@ -3,8 +3,8 @@
     "en-AU": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12413 $",
+          "_cldrVersion": "29"
         },
         "language": "en",
         "territory": "AU"

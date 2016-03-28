@@ -3,8 +3,8 @@
     "si": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12384 $",
+          "_cldrVersion": "29"
         },
         "language": "si"
       },
@@ -531,8 +531,8 @@
           "sux": "sux",
           "sv": "ස්වීඩන්",
           "sw": "ස්වාහිලි",
+          "sw-CD": "කොන්ගෝ ස්වාහිලි",
           "swb": "swb",
-          "swc": "කොන්ගෝ ස්වාහිලි",
           "syc": "syc",
           "syr": "syr",
           "szl": "szl",

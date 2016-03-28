@@ -3,8 +3,8 @@
     "fi": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "fi"
       },
@@ -25,12 +25,14 @@
           "BAKU1926": "yhtenäistetty turkkilainen latinalainen aakkosto",
           "BALANKA": "aniin balankalaismurre",
           "BARLA": "kapverdenkreolin barlaventolainen murreryhmä",
+          "BASICENG": "BASICENG",
           "BAUDDHA": "sanskriitin buddhalainen sekamuoto",
           "BISCAYAN": "baskin biskajalaismurre",
           "BISKE": "sloveenin resian San Giorgion/Bilan alamurre",
           "BOHORIC": "sloveenin Bohorič-aakkosto",
           "BOONT": "englannin boontling-murre",
           "COLB1945": "COLB1945",
+          "CORNU": "CORNU",
           "DAJNKO": "sloveenin Dajnko-aakkosto",
           "EKAVSK": "serbian ekavialainen ääntämys",
           "EMODENG": "varhaisnykyenglanti",
@@ -54,6 +56,7 @@
           "MONOTON": "monotoninen kreikka",
           "NDYUKA": "ndyukan kreolimurre",
           "NEDIS": "sloveenin natisonen murre",
+          "NEWFOUND": "NEWFOUND",
           "NJIVA": "sloveenin resian Gnivan/Njivan alamurre",
           "NULIK": "nykyvolapük",
           "OSOJS": "sloveenin resian Oseaccon/Osojanen alamurre",
@@ -71,6 +74,7 @@
           "SAAHO": "afarin saho-murre",
           "SCOTLAND": "skotlanninenglanti",
           "SCOUSE": "englannin scouse-murre",
+          "SIMPLE": "SIMPLE",
           "SOLBA": "sloveenin resian Stolvizzan/Solbican alamurre",
           "SOTAV": "kapverdenkreolin sotaventolainen murreryhmä",
           "SURMIRAN": "retoromaanin surmiran-muoto",

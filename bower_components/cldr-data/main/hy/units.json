@@ -3,8 +3,8 @@
     "hy": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "hy"
       },
@@ -96,6 +96,23 @@
             "unitPattern-count-other": "{0} քառակուսի դյույմ",
             "perUnitPattern": "{0}/in²"
           },
+          "concentr-karat": {
+            "displayName": "կարատ",
+            "unitPattern-count-one": "{0} կարատ",
+            "unitPattern-count-other": "{0} կարատ"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "լիտր / կիլոմետր",
             "unitPattern-count-one": "{0} լիտր / կիլոմետր",
@@ -110,6 +127,10 @@
             "displayName": "մղոն / գալոն",
             "unitPattern-count-one": "{0} մղոն / գալոն",
             "unitPattern-count-other": "{0} մղոն / գալոն"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "տերաբայթեր",
@@ -508,11 +529,6 @@
             "unitPattern-count-one": "{0} միլիբար",
             "unitPattern-count-other": "{0} միլիբար"
           },
-          "proportion-karat": {
-            "displayName": "կարատ",
-            "unitPattern-count-one": "{0} կարատ",
-            "unitPattern-count-other": "{0} կարատ"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "կիլոմետրեր ժամում",
             "unitPattern-count-one": "{0} կիլոմետր ժամում",
@@ -645,6 +661,11 @@
             "unitPattern-count-other": "{0} գալոն",
             "perUnitPattern": "{0}/գալ․"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "քվարտ",
             "unitPattern-count-one": "{0} քվարտ",
@@ -769,6 +790,23 @@
             "unitPattern-count-other": "{0} քռ. դյմ.",
             "perUnitPattern": "{0}/in²"
           },
+          "concentr-karat": {
+            "displayName": "կար",
+            "unitPattern-count-one": "{0} կար",
+            "unitPattern-count-other": "{0} կար"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "լ/կմ",
             "unitPattern-count-one": "{0} լ/կմ",
@@ -783,6 +821,10 @@
             "displayName": "մղ/գալ",
             "unitPattern-count-one": "{0} մղ/գալ",
             "unitPattern-count-other": "{0} մղ/գալ"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "ՏԲ",
@@ -1181,11 +1223,6 @@
             "unitPattern-count-one": "{0} մբար",
             "unitPattern-count-other": "{0} մբար"
           },
-          "proportion-karat": {
-            "displayName": "կար",
-            "unitPattern-count-one": "{0} կար",
-            "unitPattern-count-other": "{0} կար"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "կմ/ժ",
             "unitPattern-count-one": "{0} կմ/ժ",
@@ -1317,6 +1354,11 @@
             "unitPattern-count-other": "{0} գալ.",
             "perUnitPattern": "{0}/գալ․"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "քտ.",
             "unitPattern-count-one": "{0} քտ.",
@@ -1441,6 +1483,23 @@
             "unitPattern-count-other": "{0} քռ. դյմ.",
             "perUnitPattern": "{0}/in²"
           },
+          "concentr-karat": {
+            "displayName": "կար",
+            "unitPattern-count-one": "{0} կար",
+            "unitPattern-count-other": "{0} կար"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "լ/կմ",
             "unitPattern-count-one": "{0} լ/կմ",
@@ -1455,6 +1514,10 @@
             "displayName": "մղ/գալ",
             "unitPattern-count-one": "{0} մղ/գալ",
             "unitPattern-count-other": "{0} մղ/գալ"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "ՏԲ",
@@ -1853,11 +1916,6 @@
             "unitPattern-count-one": "{0} մբ",
             "unitPattern-count-other": "{0} մբ"
           },
-          "proportion-karat": {
-            "displayName": "կար",
-            "unitPattern-count-one": "{0} կար",
-            "unitPattern-count-other": "{0} կար"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "կմ/ժ",
             "unitPattern-count-one": "{0} կմ/ժ",
@@ -1988,6 +2046,11 @@
             "unitPattern-count-one": "{0} գալ.",
             "unitPattern-count-other": "{0} գալ.",
             "perUnitPattern": "{0}/գալ․"
+          },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
           },
           "volume-quart": {
             "displayName": "քտ.",

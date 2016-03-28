@@ -3,8 +3,8 @@
     "fa": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "fa"
       },
@@ -533,6 +533,7 @@
             "displayName-count-one": "لاری گرجستان",
             "displayName-count-other": "لاری گرجستان",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

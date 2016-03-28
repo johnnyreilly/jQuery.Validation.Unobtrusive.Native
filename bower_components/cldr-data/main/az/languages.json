@@ -3,8 +3,8 @@
     "az": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11983 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "az"
       },
@@ -532,8 +532,8 @@
           "sux": "sumeryan",
           "sv": "isveç",
           "sw": "suahili",
+          "sw-CD": "Konqo suahilicəsi",
           "swb": "swb",
-          "swc": "Konqo suahilicəsi",
           "syc": "syc",
           "syr": "siryak",
           "szl": "szl",

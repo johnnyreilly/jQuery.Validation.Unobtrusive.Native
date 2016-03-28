@@ -3,13 +3,14 @@
     "ka": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ka"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "აფაკა",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
@@ -22,6 +23,7 @@
           "Bass": "ბასა ვაჰი",
           "Batk": "ბატაკი",
           "Beng": "ბენგალური",
+          "Bhks": "Bhks",
           "Blis": "ბლისსიმბოლოები",
           "Bopo": "ბოპომოფო",
           "Brah": "ბრაჰმი",
@@ -54,6 +56,7 @@
           "Grek": "ბერძნული",
           "Gujr": "გუჯარათული",
           "Guru": "გურმუხი",
+          "Hanb": "Hanb",
           "Hang": "ჰანგული",
           "Hani": "ჰანი",
           "Hano": "ჰანუნოო",
@@ -69,6 +72,7 @@
           "Hrkt": "იაპონური კანა",
           "Hung": "ძველი უნგრული",
           "Ital": "Ital",
+          "Jamo": "Jamo",
           "Java": "იავური",
           "Jpan": "იაპონური",
           "Jurc": "ჯურჯენული",
@@ -96,6 +100,7 @@
           "Mahj": "Mahj",
           "Mand": "მანდეური",
           "Mani": "მანიქეური",
+          "Marc": "Marc",
           "Maya": "მაიას იეროგლიფები",
           "Mend": "მენდე",
           "Merc": "მეროიტული კურსივი",
@@ -109,12 +114,14 @@
           "Mymr": "მიანმური",
           "Narb": "ძველი ჩრდილოეთ-არაბული",
           "Nbat": "ნაბატეური",
+          "Newa": "Newa",
           "Nkoo": "ნკო",
           "Nshu": "ნუშუ",
           "Ogam": "ოღამი",
           "Olck": "ოლ-ჩიკი",
           "Orkh": "ორხონული",
           "Orya": "ორია",
+          "Osge": "Osge",
           "Osma": "ოსმანია",
           "Palm": "პალმირული",
           "Pauc": "Pauc",
@@ -220,6 +227,7 @@
           "Yiii": "Yiii",
           "Zinh": "გადაღებული",
           "Zmth": "მათემატიკური ნოტაცია",
+          "Zsye": "Zsye",
           "Zsym": "სიმბოლოები",
           "Zxxx": "უმწერლობო",
           "Zyyy": "ზოგადი",

@@ -1,9 +1,9 @@
 {
   "supplemental": {
     "version": {
-      "_cldrVersion": "28",
+      "_number": "$Revision: 12447 $",
       "_unicodeVersion": "8.0.0",
-      "_number": "$Revision: 11969 $"
+      "_cldrVersion": "29"
     },
     "references": {
       "R1000": {
@@ -410,6 +410,10 @@
       "R1104": {
         "_value": "[missing]",
         "_uri": "http://www.ethnologue.com/show_language.asp?code=bem"
+      },
+      "R1105": {
+        "_value": "and https://en.wikipedia.org/wiki/Mru_language",
+        "_uri": "https://www.ethnologue.com/language/mro"
       },
       "R1106": {
         "_value": "- More than 95% of Pakistanis can speak or understand Urdu as their second or third language",
@@ -818,10 +822,6 @@
         "_value": "(could be higher if 2nd lang included; no data yet)",
         "_uri": "http://en.wikipedia.org/wiki/Vietnamese_language"
       },
-      "R1219": {
-        "_value": "Modern use of Arabic (Jawi) seems to be minimal, but is co-official with ms_Latn; set to 5% for now.",
-        "_uri": "http://en.wikipedia.org/wiki/Languages_of_Brunei"
-      },
       "R1220": "​http://www.interlingua.com/statutos leading Interlingua assoc \\\"\\\"\\\"\\\"\\\"\\\"\\\"\\\"Union Mundial pro Interlingua\\\"\\\"\\\"\\\"\\\"\\\"\\\"\\\" registered French non-profit - real user pop figure is unknown but low",
       "R1221": {
         "_value": "[missing]",
@@ -854,6 +854,10 @@
       "R1228": {
         "_value": "language also called Kamta in India",
         "_uri": "http://www.ethnologue.com/show_language.asp?code=rkt"
+      },
+      "R1229": {
+        "_value": "Modern use of Arabic (Jawi) seems to be minimal, but is co-official with ms; set to 5% for now.",
+        "_uri": "http://en.wikipedia.org/wiki/Languages_of_Brunei"
       },
       "R1230": {
         "_value": "[missing]",
@@ -1073,7 +1077,6 @@
         "_value": "[missing]",
         "_uri": "http://en.wikipedia.org/wiki/Wolof_language"
       },
-      "R1298": "No estimate available",
       "R1299": {
         "_value": "[missing]",
         "_uri": "http://en.wikipedia.org/wiki/Fiji_Hindi"
@@ -1131,6 +1134,35 @@
       "R1314": {
         "_value": "[missing]",
         "_uri": "http://www.axl.cefan.ulaval.ca/afrique/soudan.htm"
+      },
+      "R1315": {
+        "_value": "[missing]",
+        "_uri": "https://en.wikipedia.org/wiki/Languages_of_Brazil"
+      },
+      "R1316": {
+        "_value": "[missing]",
+        "_uri": "http://www.bfs.admin.ch/bfs/portal/en/index/themen/01/05/blank/key/sprachen.html"
+      },
+      "R1317": "about 50% of population in Guangzhou Prov",
+      "R1318": {
+        "_value": "Widely spoken less written, and most speakers know standard German as well",
+        "_uri": "https://en.wikipedia.org/wiki/Bavarian_language"
+      },
+      "R1320": {
+        "_value": "and https://www.ethnologue.com/language/yue",
+        "_uri": "https://www.cia.gov/library/publications/the-world-factbook/geos/hk.html"
+      },
+      "R1321": {
+        "_value": "[missing]",
+        "_uri": "https://en.wikipedia.org/wiki/Portuguese_Luxembourger"
+      },
+      "R1322": {
+        "_value": "[missing]",
+        "_uri": "https://en.wikipedia.org/wiki/Doteli_language"
+      },
+      "R1323": {
+        "_value": "[missing]",
+        "_uri": "https://en.wikipedia.org/wiki/Immigration_to_Portugal#Immigration"
       }
     }
   }

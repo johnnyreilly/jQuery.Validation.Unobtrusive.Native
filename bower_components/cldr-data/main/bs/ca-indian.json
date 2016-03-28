@@ -3,8 +3,8 @@
     "bs": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11977 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "bs"
       },
@@ -225,9 +225,9 @@
               "format": {
                 "abbreviated": {
                   "midnight": "ponoć",
-                  "am": "AM",
+                  "am": "prijepodne",
                   "noon": "podne",
-                  "pm": "PM",
+                  "pm": "popodne",
                   "morning1": "jutro",
                   "afternoon1": "poslijepodne",
                   "evening1": "večer",
@@ -257,9 +257,9 @@
               "stand-alone": {
                 "abbreviated": {
                   "midnight": "ponoć",
-                  "am": "AM",
+                  "am": "prijepodne",
                   "noon": "podne",
-                  "pm": "PM",
+                  "pm": "popodne",
                   "morning1": "jutro",
                   "afternoon1": "poslijepodne",
                   "evening1": "večer",

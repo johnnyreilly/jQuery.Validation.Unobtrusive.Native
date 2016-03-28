@@ -3,8 +3,8 @@
     "am": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11996 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "am"
       },
@@ -532,8 +532,8 @@
           "sux": "sux",
           "sv": "ስዊድንኛ",
           "sw": "ስዋሂሊኛ",
+          "sw-CD": "ኮንጎ ስዋሂሊ",
           "swb": "ኮሞሪያን",
-          "swc": "ኮንጎ ስዋሂሊ",
           "syc": "ክላሲክ ኔይራ",
           "syr": "syr",
           "szl": "szl",

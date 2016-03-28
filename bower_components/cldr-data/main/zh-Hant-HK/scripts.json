@@ -3,8 +3,8 @@
     "zh-Hant-HK": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12217 $",
+          "_cldrVersion": "29"
         },
         "language": "zh",
         "script": "Hant",
@@ -12,6 +12,7 @@
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "阿法卡文字",
           "Aghb": "高加索阿爾巴尼亞文",
           "Ahom": "Ahom",
@@ -25,6 +26,7 @@
           "Bass": "巴薩文",
           "Batk": "巴塔克文",
           "Beng": "孟加拉文",
+          "Bhks": "Bhks",
           "Blis": "布列斯文",
           "Bopo": "注音符號",
           "Brah": "婆羅米文",
@@ -57,6 +59,7 @@
           "Grek": "希臘文",
           "Gujr": "古吉拉特文",
           "Guru": "古木基文",
+          "Hanb": "Hanb",
           "Hang": "韓文字母",
           "Hani": "漢語",
           "Hano": "哈努諾文",
@@ -73,6 +76,7 @@
           "Hung": "古匈牙利文",
           "Inds": "印度河流域（哈拉帕文）",
           "Ital": "古意大利文",
+          "Jamo": "Jamo",
           "Java": "爪哇文",
           "Jpan": "日文",
           "Jurc": "女真文字",
@@ -101,6 +105,7 @@
           "Mahj": "Mahj",
           "Mand": "曼底安文",
           "Mani": "摩尼教文",
+          "Marc": "Marc",
           "Maya": "瑪雅象形文字",
           "Mend": "門德文",
           "Merc": "麥羅埃文（曲線字體）",
@@ -115,6 +120,7 @@
           "Mymr": "緬甸文",
           "Narb": "古北阿拉伯文",
           "Nbat": "納巴泰文字",
+          "Newa": "Newa",
           "Nkgb": "納西格巴文",
           "Nkoo": "西非書面語言 (N’Ko)",
           "Nshu": "女書文字",
@@ -122,6 +128,7 @@
           "Olck": "桑塔利文",
           "Orkh": "鄂爾渾文",
           "Orya": "奧里雅文",
+          "Osge": "Osge",
           "Osma": "歐斯曼亞文",
           "Palm": "帕米瑞拉文字",
           "Pauc": "Pauc",
@@ -227,6 +234,7 @@
           "Yiii": "彞文",
           "Zinh": "繼承文字（Unicode）",
           "Zmth": "數學符號",
+          "Zsye": "Zsye",
           "Zsym": "符號",
           "Zxxx": "非書寫語言",
           "Zyyy": "一般文字",

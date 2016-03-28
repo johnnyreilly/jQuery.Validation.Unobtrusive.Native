@@ -3,8 +3,8 @@
     "sr-Latn-ME": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12417 $",
+          "_cldrVersion": "29"
         },
         "language": "sr",
         "script": "Latn",
@@ -534,8 +534,8 @@
           "sux": "Sumerski",
           "sv": "švedski",
           "sw": "svahili",
+          "sw-CD": "kongo svahili",
           "swb": "Komorski",
-          "swc": "kongo svahili",
           "syc": "Klasični sirijski",
           "syr": "Sirijski",
           "szl": "szl",

@@ -3,8 +3,8 @@
     "mk": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12411 $",
+          "_cldrVersion": "29"
         },
         "language": "mk"
       },
@@ -523,6 +523,7 @@
             "displayName-count-one": "Грузиски лари",
             "displayName-count-other": "Грузиски лари",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

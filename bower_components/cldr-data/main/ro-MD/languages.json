@@ -3,8 +3,8 @@
     "ro-MD": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "ro",
         "territory": "MD"
@@ -533,8 +533,8 @@
           "sux": "sumeriană",
           "sv": "suedeză",
           "sw": "swahili",
+          "sw-CD": "swahili Congo",
           "swb": "comoreză",
-          "swc": "swahili Congo",
           "syc": "siriacă clasică",
           "syr": "siriacă",
           "szl": "szl",

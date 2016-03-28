@@ -3,16 +3,16 @@
     "he": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "he"
       },
       "delimiters": {
-        "quotationStart": "״",
-        "quotationEnd": "״",
-        "alternateQuotationStart": "׳",
-        "alternateQuotationEnd": "׳"
+        "quotationStart": "”",
+        "quotationEnd": "”",
+        "alternateQuotationStart": "’",
+        "alternateQuotationEnd": "’"
       }
     }
   }

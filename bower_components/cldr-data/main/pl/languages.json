@@ -3,8 +3,8 @@
     "pl": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "pl"
       },
@@ -532,8 +532,8 @@
           "sux": "sumeryjski",
           "sv": "szwedzki",
           "sw": "suahili",
+          "sw-CD": "kongijski suahili",
           "swb": "komoryjski",
-          "swc": "kongijski suahili",
           "syc": "syriacki",
           "syr": "syryjski",
           "szl": "śląski",

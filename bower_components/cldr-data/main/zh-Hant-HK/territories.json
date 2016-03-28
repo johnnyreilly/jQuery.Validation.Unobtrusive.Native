@@ -3,8 +3,8 @@
     "zh-Hant-HK": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12217 $",
+          "_cldrVersion": "29"
         },
         "language": "zh",
         "script": "Hant",
@@ -50,7 +50,6 @@
           "AI": "安圭拉",
           "AL": "阿爾巴尼亞",
           "AM": "亞美尼亞",
-          "AN": "荷屬安地列斯",
           "AO": "安哥拉",
           "AQ": "南極洲",
           "AR": "阿根廷",

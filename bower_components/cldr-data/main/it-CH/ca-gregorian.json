@@ -3,8 +3,8 @@
     "it-CH": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12415 $",
+          "_cldrVersion": "29"
         },
         "language": "it",
         "territory": "CH"
@@ -311,7 +311,7 @@
             "dateFormats": {
               "full": "EEEE, d MMMM y",
               "long": "d MMMM y",
-              "medium": "d-MMM-y",
+              "medium": "d MMM y",
               "short": "dd.MM.yy"
             },
             "timeFormats": {

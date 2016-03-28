@@ -3,8 +3,8 @@
     "bs-Latn": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "bs",
         "script": "Latn"
@@ -226,9 +226,9 @@
               "format": {
                 "abbreviated": {
                   "midnight": "ponoć",
-                  "am": "AM",
+                  "am": "prijepodne",
                   "noon": "podne",
-                  "pm": "PM",
+                  "pm": "popodne",
                   "morning1": "jutro",
                   "afternoon1": "poslijepodne",
                   "evening1": "večer",
@@ -258,9 +258,9 @@
               "stand-alone": {
                 "abbreviated": {
                   "midnight": "ponoć",
-                  "am": "AM",
+                  "am": "prijepodne",
                   "noon": "podne",
-                  "pm": "PM",
+                  "pm": "popodne",
                   "morning1": "jutro",
                   "afternoon1": "poslijepodne",
                   "evening1": "večer",

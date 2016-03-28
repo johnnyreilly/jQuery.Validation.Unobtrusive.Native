@@ -3,8 +3,8 @@
     "ka": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ka"
       },
@@ -531,8 +531,8 @@
           "sux": "შუმერული",
           "sv": "შვედური",
           "sw": "სუაჰილი",
+          "sw-CD": "კონგოს სუაჰილი",
           "swb": "კომორული",
-          "swc": "კონგოს სუაჰილი",
           "syc": "კლასიკური სირიული",
           "syr": "სირიული",
           "szl": "szl",

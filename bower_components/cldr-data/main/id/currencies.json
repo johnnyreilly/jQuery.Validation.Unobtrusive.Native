@@ -3,8 +3,8 @@
     "id": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "id"
       },
@@ -327,8 +327,8 @@
             "symbol-alt-narrow": "$"
           },
           "CNY": {
-            "displayName": "Yuan China",
-            "displayName-count-other": "Yuan China",
+            "displayName": "Yuan Tiongkok",
+            "displayName-count-other": "Yuan Tiongkok",
             "symbol": "CN¥",
             "symbol-alt-narrow": "¥"
           },
@@ -495,7 +495,7 @@
             "displayName": "Lari Georgia",
             "displayName-count-other": "Lari Georgia",
             "symbol": "GEL",
-            "symbol-alt-variant": "₾"
+            "symbol-alt-narrow": "₾"
           },
           "GHC": {
             "displayName": "Cedi Ghana (1979–2007)",

@@ -3,13 +3,14 @@
     "it": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "it"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "afaka",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
@@ -23,6 +24,7 @@
           "Bass": "Bassa Vah",
           "Batk": "batak",
           "Beng": "bengalese",
+          "Bhks": "Bhks",
           "Blis": "simboli bliss",
           "Bopo": "bopomofo",
           "Brah": "brahmi",
@@ -55,6 +57,7 @@
           "Grek": "greco",
           "Gujr": "gujarati",
           "Guru": "gurmukhi",
+          "Hanb": "Hanb",
           "Hang": "hangul",
           "Hani": "han",
           "Hano": "hanunoo",
@@ -71,6 +74,7 @@
           "Hung": "antico ungherese",
           "Inds": "indu",
           "Ital": "italico antico",
+          "Jamo": "Jamo",
           "Java": "javanese",
           "Jpan": "giapponese",
           "Jurc": "jurchen",
@@ -99,6 +103,7 @@
           "Mahj": "Mahj",
           "Mand": "mandaico",
           "Mani": "manicheo",
+          "Marc": "Marc",
           "Maya": "geroglifici maya",
           "Mend": "mende",
           "Merc": "corsivo meroitico",
@@ -113,6 +118,7 @@
           "Mymr": "birmano",
           "Narb": "arabo settentrionale antico",
           "Nbat": "nabateo",
+          "Newa": "Newa",
           "Nkgb": "geba naxi",
           "Nkoo": "n’ko",
           "Nshu": "nushu",
@@ -120,6 +126,7 @@
           "Olck": "ol chiki",
           "Orkh": "orkhon",
           "Orya": "oriya",
+          "Osge": "Osge",
           "Osma": "osmanya",
           "Palm": "palmireno",
           "Pauc": "Pauc",
@@ -225,6 +232,7 @@
           "Yiii": "yi",
           "Zinh": "ereditato",
           "Zmth": "notazione matematica",
+          "Zsye": "Zsye",
           "Zsym": "simboli",
           "Zxxx": "non scritto",
           "Zyyy": "comune",

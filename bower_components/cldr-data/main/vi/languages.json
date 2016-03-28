@@ -3,8 +3,8 @@
     "vi": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12312 $",
+          "_cldrVersion": "29"
         },
         "language": "vi"
       },
@@ -532,8 +532,8 @@
           "sux": "Tiếng Sumeria",
           "sv": "Tiếng Thụy Điển",
           "sw": "Tiếng Swahili",
+          "sw-CD": "Tiếng Swahili Congo",
           "swb": "Tiếng Cômo",
-          "swc": "Tiếng Swahili Congo",
           "syc": "Tiếng Syria Cổ điển",
           "syr": "Tiếng Syriac",
           "szl": "szl",

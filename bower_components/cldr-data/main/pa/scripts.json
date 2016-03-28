@@ -3,13 +3,14 @@
     "pa": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "pa"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "ਅਰਬੀ",
@@ -21,6 +22,7 @@
           "Bass": "Bass",
           "Batk": "Batk",
           "Beng": "ਬੰਗਾਲੀ",
+          "Bhks": "Bhks",
           "Bopo": "ਬੋਪੋਮੋਫੋ",
           "Brah": "Brah",
           "Brai": "ਬਰੇਲ",
@@ -47,6 +49,7 @@
           "Grek": "ਗ੍ਰੀਕ",
           "Gujr": "ਗੁਜਰਾਤੀ",
           "Guru": "ਗੁਰਮੁਖੀ",
+          "Hanb": "Hanb",
           "Hang": "ਹੰਗੁਲ",
           "Hani": "ਹਾਨ",
           "Hano": "Hano",
@@ -62,6 +65,7 @@
           "Hrkt": "Hrkt",
           "Hung": "Hung",
           "Ital": "Ital",
+          "Jamo": "Jamo",
           "Java": "Java",
           "Jpan": "ਜਪਾਨੀ",
           "Kali": "Kali",
@@ -85,6 +89,7 @@
           "Mahj": "Mahj",
           "Mand": "Mand",
           "Mani": "Mani",
+          "Marc": "Marc",
           "Mend": "Mend",
           "Merc": "Merc",
           "Mero": "Mero",
@@ -97,11 +102,13 @@
           "Mymr": "ਮਿਆਂਮਾਰ",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "Nkoo",
           "Ogam": "Ogam",
           "Olck": "Olck",
           "Orkh": "Orkh",
           "Orya": "ਉੜੀਆ",
+          "Osge": "Osge",
           "Osma": "Osma",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -181,6 +188,7 @@
           "Tale": "Tale",
           "Talu": "Talu",
           "Taml": "ਤਮਿਲ",
+          "Tang": "Tang",
           "Tavt": "Tavt",
           "Telu": "ਤੇਲਗੂ",
           "Tfng": "Tfng",
@@ -197,6 +205,7 @@
           "Yiii": "Yiii",
           "Zinh": "Zinh",
           "Zmth": "ਗਣਿਤ ਚਿੰਨ੍ਹ-ਲਿਪੀ",
+          "Zsye": "Zsye",
           "Zsym": "ਚਿੰਨ੍ਹ",
           "Zxxx": "ਅਲਿਖਤ",
           "Zyyy": "ਸਧਾਰਨ",

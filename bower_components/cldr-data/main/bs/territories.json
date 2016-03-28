@@ -3,8 +3,8 @@
     "bs": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11977 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "bs"
       },
@@ -48,7 +48,6 @@
           "AI": "Angvila",
           "AL": "Albanija",
           "AM": "Jermenija",
-          "AN": "Holandski Antili",
           "AO": "Angola",
           "AQ": "Antarktika",
           "AR": "Argentina",

@@ -3,8 +3,8 @@
     "bn": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12306 $",
+          "_cldrVersion": "29"
         },
         "language": "bn"
       },
@@ -532,8 +532,8 @@
           "sux": "সুমেরীয়",
           "sv": "সুইডিশ",
           "sw": "সোয়াহিলি",
+          "sw-CD": "কঙ্গো সোয়াহিলি",
           "swb": "swb",
-          "swc": "কঙ্গো সোয়াহিলি",
           "syc": "প্রাচীন সিরিও",
           "syr": "সিরিয়াক",
           "szl": "szl",

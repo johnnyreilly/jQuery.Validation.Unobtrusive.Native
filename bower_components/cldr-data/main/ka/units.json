@@ -3,8 +3,8 @@
     "ka": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ka"
       },
@@ -96,6 +96,23 @@
             "unitPattern-count-other": "{0} კვადრატული დუიმი",
             "perUnitPattern": "{0} კვადრატულ დუიმში"
           },
+          "concentr-karat": {
+            "displayName": "კარატი",
+            "unitPattern-count-one": "{0} კარატი",
+            "unitPattern-count-other": "{0} კარატი"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "ლიტრი კილომეტრზე",
             "unitPattern-count-one": "{0} ლიტრი კილომეტრზე",
@@ -110,6 +127,10 @@
             "displayName": "მილი გალონზე",
             "unitPattern-count-one": "{0} მილი გალონზე",
             "unitPattern-count-other": "{0} მილი გალონზე"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "ტერაბაიტი",
@@ -509,11 +530,6 @@
             "unitPattern-count-one": "{0} მილიბარი",
             "unitPattern-count-other": "{0} მილიბარი"
           },
-          "proportion-karat": {
-            "displayName": "კარატი",
-            "unitPattern-count-one": "{0} კარატი",
-            "unitPattern-count-other": "{0} კარატი"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "კილომეტრი საათში",
             "unitPattern-count-one": "{0} კილომეტრი საათში",
@@ -647,6 +663,11 @@
             "unitPattern-count-other": "{0} გალონი",
             "perUnitPattern": "{0} გალონში"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "კვარტა",
             "unitPattern-count-one": "{0} კვარტა",
@@ -771,6 +792,23 @@
             "unitPattern-count-other": "{0} დუიმი²",
             "perUnitPattern": "{0}/დუიმი²"
           },
+          "concentr-karat": {
+            "displayName": "კარატი",
+            "unitPattern-count-one": "{0} კარ.",
+            "unitPattern-count-other": "{0} კარ."
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "ლიტრი/კმ",
             "unitPattern-count-one": "{0} ლ/კმ",
@@ -785,6 +823,10 @@
             "displayName": "მილი/გალ.",
             "unitPattern-count-one": "{0} მილი/გალ.",
             "unitPattern-count-other": "{0} მილი/გალ."
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "ტბაიტი",
@@ -1184,11 +1226,6 @@
             "unitPattern-count-one": "{0} მბარი",
             "unitPattern-count-other": "{0} მბარი"
           },
-          "proportion-karat": {
-            "displayName": "კარატი",
-            "unitPattern-count-one": "{0} კარ.",
-            "unitPattern-count-other": "{0} კარ."
-          },
           "speed-kilometer-per-hour": {
             "displayName": "კმ/სთ",
             "unitPattern-count-one": "{0} კმ/სთ",
@@ -1322,6 +1359,11 @@
             "unitPattern-count-other": "{0} გალონი",
             "perUnitPattern": "{0}/გალონი"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "კვარტა",
             "unitPattern-count-one": "{0} კვარტა",
@@ -1446,6 +1488,23 @@
             "unitPattern-count-other": "{0} დუიმი²",
             "perUnitPattern": "{0}/დუიმი²"
           },
+          "concentr-karat": {
+            "displayName": "კარატი",
+            "unitPattern-count-one": "{0} კარ.",
+            "unitPattern-count-other": "{0} კარ."
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "ლიტრი/კმ",
             "unitPattern-count-one": "{0} ლ/კმ",
@@ -1460,6 +1519,10 @@
             "displayName": "მილი/გალ.",
             "unitPattern-count-one": "{0} მილი/გალ.",
             "unitPattern-count-other": "{0} მილი/გალ."
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "ტბაიტი",
@@ -1859,11 +1922,6 @@
             "unitPattern-count-one": "{0} მბრ",
             "unitPattern-count-other": "{0} მბრ"
           },
-          "proportion-karat": {
-            "displayName": "კარატი",
-            "unitPattern-count-one": "{0} კარ.",
-            "unitPattern-count-other": "{0} კარ."
-          },
           "speed-kilometer-per-hour": {
             "displayName": "კმ/სთ",
             "unitPattern-count-one": "{0} კმ/სთ",
@@ -1996,6 +2054,11 @@
             "unitPattern-count-one": "{0} გალონი",
             "unitPattern-count-other": "{0} გალონი",
             "perUnitPattern": "{0}/გალონი"
+          },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
           },
           "volume-quart": {
             "displayName": "კვარტა",

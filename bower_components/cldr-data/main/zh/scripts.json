@@ -3,13 +3,14 @@
     "zh": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12031 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "zh"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "阿法卡文",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
@@ -23,6 +24,7 @@
           "Bass": "巴萨文",
           "Batk": "巴塔克文",
           "Beng": "孟加拉文",
+          "Bhks": "Bhks",
           "Blis": "布列斯符号",
           "Bopo": "汉语拼音",
           "Brah": "婆罗米文字",
@@ -55,6 +57,7 @@
           "Grek": "希腊文",
           "Gujr": "古吉拉特文",
           "Guru": "果鲁穆奇文",
+          "Hanb": "Hanb",
           "Hang": "韩文字",
           "Hani": "汉字",
           "Hano": "汉奴罗文",
@@ -71,6 +74,7 @@
           "Hung": "古匈牙利文",
           "Inds": "古希腊哈拉潘",
           "Ital": "古意大利文",
+          "Jamo": "Jamo",
           "Java": "爪哇文",
           "Jpan": "日文",
           "Jurc": "女真文",
@@ -99,6 +103,7 @@
           "Mahj": "Mahj",
           "Mand": "阿拉米文",
           "Mani": "摩尼教文",
+          "Marc": "Marc",
           "Maya": "玛雅圣符文",
           "Mend": "门迪文",
           "Merc": "麦罗埃草书",
@@ -113,6 +118,7 @@
           "Mymr": "缅甸文",
           "Narb": "古北方阿拉伯文",
           "Nbat": "纳巴泰文",
+          "Newa": "Newa",
           "Nkgb": "纳西格巴文",
           "Nkoo": "西非书面文字（N’Ko）",
           "Nshu": "女书",
@@ -120,6 +126,7 @@
           "Olck": "桑塔利文",
           "Orkh": "鄂尔浑文",
           "Orya": "奥里亚文",
+          "Osge": "Osge",
           "Osma": "奥斯曼亚文",
           "Palm": "帕尔迈拉文",
           "Pauc": "Pauc",
@@ -225,6 +232,7 @@
           "Yiii": "彝文",
           "Zinh": "遗传学术语",
           "Zmth": "数学符号",
+          "Zsye": "Zsye",
           "Zsym": "符号",
           "Zxxx": "非书面文字",
           "Zyyy": "通用",

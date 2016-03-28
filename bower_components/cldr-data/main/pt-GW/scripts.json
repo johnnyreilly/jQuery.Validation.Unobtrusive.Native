@@ -3,14 +3,15 @@
     "pt-GW": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "pt",
         "territory": "GW"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "árabe",
@@ -23,6 +24,7 @@
           "Bass": "Bass",
           "Batk": "bataque",
           "Beng": "bengali",
+          "Bhks": "Bhks",
           "Blis": "símbolos bliss",
           "Bopo": "bopomofo",
           "Brah": "brahmi",
@@ -55,6 +57,7 @@
           "Grek": "grego",
           "Gujr": "guzerate",
           "Guru": "gurmuqui",
+          "Hanb": "Hanb",
           "Hang": "hangul",
           "Hani": "han",
           "Hano": "hanunoo",
@@ -71,6 +74,7 @@
           "Hung": "húngaro antigo",
           "Inds": "indus",
           "Ital": "itálico antigo",
+          "Jamo": "Jamo",
           "Java": "javanês",
           "Jpan": "japonês",
           "Kali": "kayah li",
@@ -96,6 +100,7 @@
           "Mahj": "Mahj",
           "Mand": "mandaico",
           "Mani": "maniqueano",
+          "Marc": "Marc",
           "Maya": "hieróglifos maias",
           "Mend": "Mend",
           "Merc": "meroítico cursivo",
@@ -110,11 +115,13 @@
           "Mymr": "birmanês",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "n’ko",
           "Ogam": "ogâmico",
           "Olck": "ol chiki",
           "Orkh": "orkhon",
           "Orya": "oriya",
+          "Osge": "Osge",
           "Osma": "osmania",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -200,6 +207,7 @@
           "Tale": "tai le",
           "Talu": "novo tai lue",
           "Taml": "tâmil",
+          "Tang": "Tang",
           "Tavt": "tavt",
           "Telu": "telugu",
           "Teng": "tengwar",
@@ -218,6 +226,7 @@
           "Yiii": "yi",
           "Zinh": "herdado",
           "Zmth": "zmth",
+          "Zsye": "Zsye",
           "Zsym": "símbolos",
           "Zxxx": "não escrito",
           "Zyyy": "comum",

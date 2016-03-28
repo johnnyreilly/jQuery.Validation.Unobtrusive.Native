@@ -3,8 +3,8 @@
     "de-BE": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "de",
         "territory": "BE"
@@ -633,6 +633,7 @@
             "displayName-count-one": "Georgischer Lari",
             "displayName-count-other": "Georgische Lari",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

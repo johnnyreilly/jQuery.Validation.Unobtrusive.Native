@@ -3,14 +3,15 @@
     "ar-LB": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "ar",
         "territory": "LB"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "العربية",
@@ -23,6 +24,7 @@
           "Bass": "Bass",
           "Batk": "الباتاك",
           "Beng": "البنغالية",
+          "Bhks": "Bhks",
           "Blis": "رموز بليس",
           "Bopo": "البوبوموفو",
           "Brah": "الهندوسية",
@@ -55,6 +57,7 @@
           "Grek": "اليونانية",
           "Gujr": "التاغجراتية",
           "Guru": "الجرمخي",
+          "Hanb": "Hanb",
           "Hang": "الهانغول",
           "Hani": "الهان",
           "Hano": "الهانونو",
@@ -71,6 +74,7 @@
           "Hung": "المجرية القديمة",
           "Inds": "اندس - هارابان",
           "Ital": "الإيطالية القديمة",
+          "Jamo": "Jamo",
           "Java": "الجاوية",
           "Jpan": "اليابانية",
           "Kali": "الكياه لى",
@@ -96,6 +100,7 @@
           "Mahj": "Mahj",
           "Mand": "المانداينية",
           "Mani": "Mani",
+          "Marc": "Marc",
           "Maya": "المايا الهيروغليفية",
           "Mend": "Mend",
           "Merc": "Merc",
@@ -110,11 +115,13 @@
           "Mymr": "الميانمار",
           "Narb": "العربية الشمالية القديمة",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "أنكو",
           "Ogam": "الأوجهام",
           "Olck": "Olck",
           "Orkh": "الأورخون",
           "Orya": "الأوريا",
+          "Osge": "Osge",
           "Osma": "الأوسمانيا",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -199,6 +206,7 @@
           "Tale": "التاي لي",
           "Talu": "التاى لى الجديد",
           "Taml": "التاميلية",
+          "Tang": "Tang",
           "Tavt": "Tavt",
           "Telu": "التيلجو",
           "Teng": "التينجوار",
@@ -217,6 +225,7 @@
           "Yiii": "اليي",
           "Zinh": "الموروث",
           "Zmth": "Zmth",
+          "Zsye": "Zsye",
           "Zsym": "رموز",
           "Zxxx": "غير مكتوب",
           "Zyyy": "عام",

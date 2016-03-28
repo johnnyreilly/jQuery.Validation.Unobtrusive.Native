@@ -3,13 +3,14 @@
     "nl": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11996 $"
+          "_number": "$Revision: 12381 $",
+          "_cldrVersion": "29"
         },
         "language": "nl"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "Defaka",
           "Aghb": "Kaukasisch Albanees",
           "Ahom": "Ahom",
@@ -23,6 +24,7 @@
           "Bass": "Bassa Vah",
           "Batk": "Batak",
           "Beng": "Bengaals",
+          "Bhks": "Bhks",
           "Blis": "Blissymbolen",
           "Bopo": "Bopomofo",
           "Brah": "Brahmi",
@@ -55,6 +57,7 @@
           "Grek": "Grieks",
           "Gujr": "Gujarati",
           "Guru": "Gurmukhi",
+          "Hanb": "Hanb",
           "Hang": "Hangul",
           "Hani": "Han",
           "Hano": "Hanunoo",
@@ -71,6 +74,7 @@
           "Hung": "Oudhongaars",
           "Inds": "Indus",
           "Ital": "Oud-italisch",
+          "Jamo": "Jamo",
           "Java": "Javaans",
           "Jpan": "Japans",
           "Jurc": "Jurchen",
@@ -99,6 +103,7 @@
           "Mahj": "Mahajani",
           "Mand": "Mandaeans",
           "Mani": "Manicheaans",
+          "Marc": "Marc",
           "Maya": "Mayahiërogliefen",
           "Mend": "Mende",
           "Merc": "Meroitisch cursief",
@@ -113,6 +118,7 @@
           "Mymr": "Birmaans",
           "Narb": "Oud Noord-Arabisch",
           "Nbat": "Nabateaans",
+          "Newa": "Newa",
           "Nkgb": "Naxi Geba",
           "Nkoo": "N’Ko",
           "Nshu": "Nüshu",
@@ -120,6 +126,7 @@
           "Olck": "Ol Chiki",
           "Orkh": "Orkhon",
           "Orya": "Odia",
+          "Osge": "Osge",
           "Osma": "Osmanya",
           "Palm": "Palmyreens",
           "Pauc": "Pau Cin Hau",
@@ -225,6 +232,7 @@
           "Yiii": "Yi",
           "Zinh": "Overgeërfd",
           "Zmth": "Wiskundige notatie",
+          "Zsye": "Zsye",
           "Zsym": "Symbolen",
           "Zxxx": "ongeschreven",
           "Zyyy": "algemeen",

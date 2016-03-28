@@ -3,8 +3,8 @@
     "to": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12379 $",
+          "_cldrVersion": "29"
         },
         "language": "to"
       },
@@ -531,8 +531,8 @@
           "sux": "lea fakasumelia",
           "sv": "lea fakasuēteni",
           "sw": "lea fakasuahili",
+          "sw-CD": "lea fakasuahili-kongikō",
           "swb": "lea fakakomolo",
-          "swc": "lea fakasuahili-kongikō",
           "syc": "lea fakasuliāiā-muʻa",
           "syr": "lea fakasuliāiā",
           "szl": "lea fakasilesia",

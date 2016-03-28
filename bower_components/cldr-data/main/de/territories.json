@@ -3,8 +3,8 @@
     "de": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11972 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "de"
       },
@@ -48,7 +48,6 @@
           "AI": "Anguilla",
           "AL": "Albanien",
           "AM": "Armenien",
-          "AN": "Niederländische Antillen",
           "AO": "Angola",
           "AQ": "Antarktis",
           "AR": "Argentinien",

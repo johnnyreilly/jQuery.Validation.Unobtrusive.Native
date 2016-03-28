@@ -3,8 +3,8 @@
     "hu": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "hu"
       },
@@ -531,8 +531,8 @@
           "sux": "sumér",
           "sv": "svéd",
           "sw": "szuahéli",
+          "sw-CD": "kongói szuahéli",
           "swb": "comorei",
-          "swc": "kongói szuahéli",
           "syc": "klasszikus szír",
           "syr": "szíriai",
           "szl": "szl",

@@ -3,8 +3,8 @@
     "th": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11977 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "th"
       },
@@ -475,6 +475,7 @@
             "displayName": "ลารีจอร์เจีย",
             "displayName-count-other": "ลารีจอร์เจีย",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

@@ -3,8 +3,8 @@
     "ne": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "ne"
       },
@@ -164,6 +164,9 @@
               },
               "El_Salvador": {
                 "exemplarCity": "एल् साल्भाडोर"
+              },
+              "Fort_Nelson": {
+                "exemplarCity": "Fort Nelson"
               },
               "Fortaleza": {
                 "exemplarCity": "फोर्टालेजा"

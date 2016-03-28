@@ -3,8 +3,8 @@
     "en-AU": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12413 $",
+          "_cldrVersion": "29"
         },
         "language": "en",
         "territory": "AU"
@@ -228,7 +228,7 @@
                   "midnight": "midnight",
                   "am": "am",
                   "am-alt-variant": "am",
-                  "noon": "noon",
+                  "noon": "midday",
                   "pm": "pm",
                   "pm-alt-variant": "pm",
                   "morning1": "morning",
@@ -1172,7 +1172,7 @@
                   "y": "d MMM y – d MMM y G"
                 },
                 "yMMMEd": {
-                  "d": "E, d MMM – E, dMMM, y G",
+                  "d": "E, d MMM – E, d MMM y G",
                   "M": "E, d MMM – E, d MMM y G",
                   "y": "E, d MMM y – E, d MMM y G"
                 },

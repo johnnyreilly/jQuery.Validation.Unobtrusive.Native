@@ -3,13 +3,14 @@
     "am": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11996 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "am"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "ዓረብኛ",
@@ -22,6 +23,7 @@
           "Bass": "Bass",
           "Batk": "Batk",
           "Beng": "ቤንጋሊ",
+          "Bhks": "Bhks",
           "Bopo": "ቦፖሞፎ",
           "Brah": "Brah",
           "Brai": "ብሬይል",
@@ -48,6 +50,7 @@
           "Grek": "ግሪክ",
           "Gujr": "ጉጃራቲ",
           "Guru": "ጉርሙኪ",
+          "Hanb": "Hanb",
           "Hang": "ሐንጉል",
           "Hani": "ሃን",
           "Hano": "Hano",
@@ -63,6 +66,7 @@
           "Hrkt": "Hrkt",
           "Hung": "Hung",
           "Ital": "Ital",
+          "Jamo": "Jamo",
           "Java": "Java",
           "Jpan": "ጃፓንኛ",
           "Kali": "Kali",
@@ -86,6 +90,7 @@
           "Mahj": "Mahj",
           "Mand": "Mand",
           "Mani": "Mani",
+          "Marc": "Marc",
           "Mend": "Mend",
           "Merc": "Merc",
           "Mero": "Mero",
@@ -98,11 +103,13 @@
           "Mymr": "ምያንማር",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "Nkoo",
           "Ogam": "Ogam",
           "Olck": "Olck",
           "Orkh": "Orkh",
           "Orya": "ኦሪያ",
+          "Osge": "Osge",
           "Osma": "Osma",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -182,6 +189,7 @@
           "Tale": "Tale",
           "Talu": "Talu",
           "Taml": "ታሚል",
+          "Tang": "Tang",
           "Tavt": "Tavt",
           "Telu": "ተሉጉ",
           "Tfng": "Tfng",
@@ -198,6 +206,7 @@
           "Yiii": "Yiii",
           "Zinh": "Zinh",
           "Zmth": "Zmth",
+          "Zsye": "Zsye",
           "Zsym": "ምልክቶች",
           "Zxxx": "ያልተጻፈ",
           "Zyyy": "የጋራ",

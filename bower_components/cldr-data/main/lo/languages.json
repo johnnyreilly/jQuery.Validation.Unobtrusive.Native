@@ -3,8 +3,8 @@
     "lo": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "lo"
       },
@@ -531,8 +531,8 @@
           "sux": "ຊູເມີເລຍ",
           "sv": "ສະວີດິຊ",
           "sw": "ຊວາຮີລິ",
+          "sw-CD": "ຄອງໂກ ຊວາຮີລິ",
           "swb": "ໂຄໂນຣຽນ",
-          "swc": "ຄອງໂກ ຊວາຮີລິ",
           "syc": "ຊີເລຍແບບດັ້ງເດີມ",
           "syr": "ຊີເລຍ",
           "szl": "szl",

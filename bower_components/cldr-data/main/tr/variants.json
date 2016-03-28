@@ -3,8 +3,8 @@
     "tr": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12373 $",
+          "_cldrVersion": "29"
         },
         "language": "tr"
       },
@@ -25,12 +25,14 @@
           "BAKU1926": "Birleştirilmiş Yeni Türk Alfabesi",
           "BALANKA": "BALANKA",
           "BARLA": "BARLA",
+          "BASICENG": "BASICENG",
           "BAUDDHA": "BAUDDHA",
           "BISCAYAN": "BISCAYAN",
           "BISKE": "San Giorgio/Bila Lehçesi",
           "BOHORIC": "BOHORIC",
           "BOONT": "Boontling",
           "COLB1945": "COLB1945",
+          "CORNU": "CORNU",
           "DAJNKO": "DAJNKO",
           "EKAVSK": "EKAVSK",
           "EMODENG": "EMODENG",
@@ -53,6 +55,7 @@
           "MONOTON": "Monotonik",
           "NDYUKA": "NDYUKA",
           "NEDIS": "Natisone Lehçesi",
+          "NEWFOUND": "NEWFOUND",
           "NJIVA": "Gniva/Njiva Lehçesi",
           "NULIK": "NULIK",
           "OSOJS": "Oseacco/Osojane Lehçesi",
@@ -70,6 +73,7 @@
           "SAAHO": "Saho",
           "SCOTLAND": "Standart İskoç İngilizcesi",
           "SCOUSE": "Scouse",
+          "SIMPLE": "SIMPLE",
           "SOLBA": "Stolvizza/Solbica Lehçesi",
           "SOTAV": "SOTAV",
           "SURMIRAN": "SURMIRAN",

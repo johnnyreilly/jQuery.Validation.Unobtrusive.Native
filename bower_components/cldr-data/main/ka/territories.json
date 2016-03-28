@@ -3,8 +3,8 @@
     "ka": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ka"
       },
@@ -48,7 +48,6 @@
           "AI": "ანგილია",
           "AL": "ალბანეთი",
           "AM": "სომხეთი",
-          "AN": "ნიდერლანდების ანტილები",
           "AO": "ანგოლა",
           "AQ": "ანტარქტიკა",
           "AR": "არგენტინა",

@@ -3,13 +3,14 @@
     "kk": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "kk"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "араб жазуы",
@@ -21,6 +22,7 @@
           "Bass": "Bass",
           "Batk": "Batk",
           "Beng": "бенгал жазуы",
+          "Bhks": "Bhks",
           "Bopo": "бопомофо жазу",
           "Brah": "Brah",
           "Brai": "Брайль жазуы",
@@ -47,6 +49,7 @@
           "Grek": "грек жазуы",
           "Gujr": "гуджарати жазуы",
           "Guru": "гурмукхи жазуы",
+          "Hanb": "Hanb",
           "Hang": "хангул жазуы",
           "Hani": "қытай жазуы",
           "Hano": "Hano",
@@ -62,6 +65,7 @@
           "Hrkt": "Hrkt",
           "Hung": "Hung",
           "Ital": "Ital",
+          "Jamo": "Jamo",
           "Java": "Java",
           "Jpan": "жапон жазуы",
           "Kali": "Kali",
@@ -85,6 +89,7 @@
           "Mahj": "Mahj",
           "Mand": "Mand",
           "Mani": "Mani",
+          "Marc": "Marc",
           "Mend": "Mend",
           "Merc": "Merc",
           "Mero": "Mero",
@@ -97,11 +102,13 @@
           "Mymr": "мьянма жазуы",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "Nkoo",
           "Ogam": "Ogam",
           "Olck": "Olck",
           "Orkh": "Orkh",
           "Orya": "ория жазуы",
+          "Osge": "Osge",
           "Osma": "Osma",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -181,6 +188,7 @@
           "Tale": "Tale",
           "Talu": "Talu",
           "Taml": "тамиль жазуы",
+          "Tang": "Tang",
           "Tavt": "Tavt",
           "Telu": "телугу жазуы",
           "Tfng": "Tfng",
@@ -197,6 +205,7 @@
           "Yiii": "Yiii",
           "Zinh": "Zinh",
           "Zmth": "Zmth",
+          "Zsye": "Zsye",
           "Zsym": "таңбалар",
           "Zxxx": "жазусыз",
           "Zyyy": "жалпы",

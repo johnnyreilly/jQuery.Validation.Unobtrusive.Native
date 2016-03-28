@@ -3,8 +3,8 @@
     "fil": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "fil"
       },
@@ -48,7 +48,6 @@
           "AI": "Anguilla",
           "AL": "Albania",
           "AM": "Armenia",
-          "AN": "Netherlands Antilles",
           "AO": "Angola",
           "AQ": "Antarctica",
           "AR": "Argentina",

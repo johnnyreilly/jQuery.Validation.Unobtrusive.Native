@@ -3,8 +3,8 @@
     "nl-BQ": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "nl",
         "territory": "BQ"
@@ -634,6 +634,7 @@
             "displayName-count-one": "Georgische lari",
             "displayName-count-other": "Georgische lari",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "ლ"
           },
           "GHC": {
@@ -901,9 +902,9 @@
             "symbol": "KWD"
           },
           "KYD": {
-            "displayName": "Caymaneilandse dollar",
-            "displayName-count-one": "Caymaneilandse dollar",
-            "displayName-count-other": "Caymaneilandse dollar",
+            "displayName": "Kaaimaneilandse dollar",
+            "displayName-count-one": "Kaaimaneilandse dollar",
+            "displayName-count-other": "Kaaimaneilandse dollar",
             "symbol": "KYD",
             "symbol-alt-narrow": "$"
           },

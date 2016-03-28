@@ -3,8 +3,8 @@
     "te": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "te"
       },
@@ -96,6 +96,23 @@
             "unitPattern-count-other": "{0} చదరపు అంగుళాలు",
             "perUnitPattern": "{0}/చదరపు అంగుళాలు"
           },
+          "concentr-karat": {
+            "displayName": "కేరట్లు",
+            "unitPattern-count-one": "{0} కేరట్",
+            "unitPattern-count-other": "{0} కేరట్లు"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "లీటర్లు/కిలోమీటరు",
             "unitPattern-count-one": "{0} లీటరు/కిలోమీటరు",
@@ -110,6 +127,10 @@
             "displayName": "మైళ్లు/గ్యాలన్",
             "unitPattern-count-one": "{0} మైలు/గ్యాలన్",
             "unitPattern-count-other": "{0} మైళ్లు/గ్యాలన్"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "టెరాబైట్లు",
@@ -509,11 +530,6 @@
             "unitPattern-count-one": "{0} మిల్లీబార్",
             "unitPattern-count-other": "{0} మిల్లీబార్‌లు"
           },
-          "proportion-karat": {
-            "displayName": "కేరట్లు",
-            "unitPattern-count-one": "{0} కేరట్",
-            "unitPattern-count-other": "{0} కేరట్లు"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "కిలోమీటర్లు/గంట",
             "unitPattern-count-one": "{0} కిలోమీటరు/గంట",
@@ -647,6 +663,11 @@
             "unitPattern-count-other": "{0} గ్యాలన్లు",
             "perUnitPattern": "గ్యాలనుకు {0}"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "పావు వంతులు",
             "unitPattern-count-one": "{0} పావు వంతు",
@@ -771,6 +792,23 @@
             "unitPattern-count-other": "{0} అం²",
             "perUnitPattern": "{0}/అం²"
           },
+          "concentr-karat": {
+            "displayName": "కేరట్లు",
+            "unitPattern-count-one": "{0} కేర.",
+            "unitPattern-count-other": "{0} కేర."
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "లీటర్లు/కి.మీ",
             "unitPattern-count-one": "{0} లీ./కి.మీ",
@@ -785,6 +823,10 @@
             "displayName": "మైళ్లు/గ్యా.",
             "unitPattern-count-one": "{0} మై./గ్యా.",
             "unitPattern-count-other": "{0} మై./గ్యా."
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "టె.బైట్",
@@ -1184,11 +1226,6 @@
             "unitPattern-count-one": "{0} మి.బార్",
             "unitPattern-count-other": "{0} మి.బార్"
           },
-          "proportion-karat": {
-            "displayName": "కేరట్లు",
-            "unitPattern-count-one": "{0} కేర.",
-            "unitPattern-count-other": "{0} కేర."
-          },
           "speed-kilometer-per-hour": {
             "displayName": "కి.మీ/గంట",
             "unitPattern-count-one": "{0} కి.మీ/గం",
@@ -1322,6 +1359,11 @@
             "unitPattern-count-other": "{0} గ్యా.",
             "perUnitPattern": "{0}/గ్యా."
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "పావు వం.",
             "unitPattern-count-one": "{0} పావు వం.",
@@ -1446,6 +1488,23 @@
             "unitPattern-count-other": "{0} అం²",
             "perUnitPattern": "{0}/అం²"
           },
+          "concentr-karat": {
+            "displayName": "కేరట్లు",
+            "unitPattern-count-one": "{0} కేర.",
+            "unitPattern-count-other": "{0} కేర."
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "లీటర్లు/కి.మీ",
             "unitPattern-count-one": "{0} లీ./కి.మీ",
@@ -1460,6 +1519,10 @@
             "displayName": "మైళ్లు/గ్యా.",
             "unitPattern-count-one": "{0} మై./గ్యా.",
             "unitPattern-count-other": "{0} మై./గ్యా."
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "టె.బైట్",
@@ -1859,11 +1922,6 @@
             "unitPattern-count-one": "{0} మి.బార్",
             "unitPattern-count-other": "{0} మి.బార్"
           },
-          "proportion-karat": {
-            "displayName": "కేరట్లు",
-            "unitPattern-count-one": "{0} కేర.",
-            "unitPattern-count-other": "{0} కేర."
-          },
           "speed-kilometer-per-hour": {
             "displayName": "కి.మీ/గం",
             "unitPattern-count-one": "{0}కి.మీ/గం",
@@ -1996,6 +2054,11 @@
             "unitPattern-count-one": "{0} గ్యా.",
             "unitPattern-count-other": "{0} గ్యా.",
             "perUnitPattern": "{0}/గ్యా."
+          },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
           },
           "volume-quart": {
             "displayName": "పావు వం.",

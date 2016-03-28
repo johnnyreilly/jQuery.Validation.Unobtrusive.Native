@@ -3,8 +3,8 @@
     "pa-Guru": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "pa",
         "script": "Guru"
@@ -552,6 +552,7 @@
             "displayName-count-one": "ਜਾਰਜੀਆਈ ਲਾਰੀ",
             "displayName-count-other": "ਜਾਰਜੀਆਈ ਲਾਰੀ",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

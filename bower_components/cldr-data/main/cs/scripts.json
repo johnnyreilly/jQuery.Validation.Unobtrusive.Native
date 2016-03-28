@@ -3,13 +3,14 @@
     "cs": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "cs"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "afaka",
           "Aghb": "kavkazskoalbánské",
           "Ahom": "Ahom",
@@ -23,6 +24,7 @@
           "Bass": "bassa vah",
           "Batk": "batacké",
           "Beng": "bengálské",
+          "Bhks": "Bhks",
           "Blis": "Blissovo písmo",
           "Bopo": "bopomofo",
           "Brah": "bráhmí",
@@ -55,6 +57,7 @@
           "Grek": "řecké",
           "Gujr": "gudžarátí",
           "Guru": "gurmukhi",
+          "Hanb": "Hanb",
           "Hang": "hangul",
           "Hani": "han",
           "Hano": "hanunóo",
@@ -71,6 +74,7 @@
           "Hung": "staromaďarské",
           "Inds": "harappské",
           "Ital": "etruské",
+          "Jamo": "Jamo",
           "Java": "javánské",
           "Jpan": "japonské",
           "Jurc": "džürčenské",
@@ -99,6 +103,7 @@
           "Mahj": "mahádžaní",
           "Mand": "mandejské",
           "Mani": "manichejské",
+          "Marc": "Marc",
           "Maya": "mayské hieroglyfy",
           "Mend": "mendské",
           "Merc": "meroitické psací",
@@ -113,6 +118,7 @@
           "Mymr": "myanmarské",
           "Narb": "staroseveroarabské",
           "Nbat": "nabatejské",
+          "Newa": "Newa",
           "Nkgb": "naxi geba",
           "Nkoo": "n’ko",
           "Nshu": "nü-šu",
@@ -120,6 +126,7 @@
           "Olck": "santálské (ol chiki)",
           "Orkh": "orchonské",
           "Orya": "urijské",
+          "Osge": "Osge",
           "Osma": "osmanské",
           "Palm": "palmýrské",
           "Pauc": "pau cin hau",
@@ -225,6 +232,7 @@
           "Yiii": "yi",
           "Zinh": "Zinh",
           "Zmth": "matematický zápis",
+          "Zsye": "Zsye",
           "Zsym": "symboly",
           "Zxxx": "bez zápisu",
           "Zyyy": "obecné",

@@ -3,8 +3,8 @@
     "hu": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "hu"
       },
@@ -25,12 +25,14 @@
           "BAKU1926": "Egyesített türkic latin ábécé",
           "BALANKA": "BALANKA",
           "BARLA": "BARLA",
+          "BASICENG": "BASICENG",
           "BAUDDHA": "Bauddha",
           "BISCAYAN": "Biszkajan",
           "BISKE": "San Giorgo/Bila tájszólás",
           "BOHORIC": "BOHORIC",
           "BOONT": "Boontling",
           "COLB1945": "COLB1945",
+          "CORNU": "CORNU",
           "DAJNKO": "DAJNKO",
           "EKAVSK": "EKAVSK",
           "EMODENG": "EMODENG",
@@ -53,6 +55,7 @@
           "MONOTON": "Monoton",
           "NDYUKA": "Ndyuka dialektus",
           "NEDIS": "Natisone dialektus",
+          "NEWFOUND": "NEWFOUND",
           "NJIVA": "Gniva/Njiva tájszólás",
           "NULIK": "NULIK",
           "OSOJS": "Oseacco/Osojane tájszólás",
@@ -70,6 +73,7 @@
           "SAAHO": "Saho",
           "SCOTLAND": "Skót szabványos angol",
           "SCOUSE": "Scouse",
+          "SIMPLE": "SIMPLE",
           "SOLBA": "Stolvizza/Solbica tájszólás",
           "SOTAV": "SOTAV",
           "SURMIRAN": "Surmiran",

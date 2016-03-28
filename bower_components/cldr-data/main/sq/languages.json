@@ -3,8 +3,8 @@
     "sq": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "sq"
       },
@@ -531,8 +531,8 @@
           "sux": "sux",
           "sv": "suedisht",
           "sw": "suahilisht",
+          "sw-CD": "suahilishte kongoje",
           "swb": "swb",
-          "swc": "suahilishte kongoje",
           "syc": "syc",
           "syr": "syr",
           "szl": "szl",

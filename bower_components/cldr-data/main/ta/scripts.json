@@ -3,13 +3,14 @@
     "ta": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11955 $"
+          "_number": "$Revision: 12316 $",
+          "_cldrVersion": "29"
         },
         "language": "ta"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "அரபிக்",
@@ -22,6 +23,7 @@
           "Bass": "Bass",
           "Batk": "பாடாக்",
           "Beng": "வங்காளம்",
+          "Bhks": "Bhks",
           "Blis": "ப்லிஸ்ஸிமிபால்ஸ்",
           "Bopo": "போபோமோஃபோ",
           "Brah": "பிரம்மி",
@@ -54,6 +56,7 @@
           "Grek": "கிரேக்கம்",
           "Gujr": "குஜராத்தி",
           "Guru": "குர்முகி",
+          "Hanb": "Hanb",
           "Hang": "ஹங்குல்",
           "Hani": "ஹன்",
           "Hano": "ஹனுனூ",
@@ -70,6 +73,7 @@
           "Hung": "பழைய ஹங்கேரியன்",
           "Inds": "சிந்து",
           "Ital": "பழைய இத்தாலி",
+          "Jamo": "Jamo",
           "Java": "ஜாவனீஸ்",
           "Jpan": "ஜப்பானியம்",
           "Kali": "கயாஹ் லீ",
@@ -95,6 +99,7 @@
           "Mahj": "Mahj",
           "Mand": "மேன்டியன்",
           "Mani": "மனிசெய்ன்",
+          "Marc": "Marc",
           "Maya": "மயான் ஹைரோகிளிப்",
           "Mend": "Mend",
           "Merc": "Merc",
@@ -109,11 +114,13 @@
           "Mymr": "மியான்மர்",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "என்‘கோ",
           "Ogam": "ஒகாம்",
           "Olck": "ஒல் சிக்கி",
           "Orkh": "ஆர்கான்",
           "Orya": "ஒரியா",
+          "Osge": "Osge",
           "Osma": "ஒஸ்மான்யா",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -199,6 +206,7 @@
           "Tale": "தாய் லே",
           "Talu": "புதிய தை லூ",
           "Taml": "தமிழ்",
+          "Tang": "Tang",
           "Tavt": "தை வியத்",
           "Telu": "தெலுங்கு",
           "Teng": "தெங்வார்",
@@ -217,6 +225,7 @@
           "Yiii": "யீ",
           "Zinh": "பாரம்பரியமான",
           "Zmth": "கணிதக்குறியீடு",
+          "Zsye": "Zsye",
           "Zsym": "சின்னங்கள்",
           "Zxxx": "எழுதப்படாதது",
           "Zyyy": "பொது",

@@ -3,8 +3,8 @@
     "az-Latn": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "az",
         "script": "Latn"
@@ -533,8 +533,8 @@
           "sux": "sumeryan",
           "sv": "isveç",
           "sw": "suahili",
+          "sw-CD": "Konqo suahilicəsi",
           "swb": "swb",
-          "swc": "Konqo suahilicəsi",
           "syc": "syc",
           "syr": "siryak",
           "szl": "szl",

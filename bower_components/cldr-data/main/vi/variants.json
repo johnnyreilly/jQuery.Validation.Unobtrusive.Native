@@ -3,8 +3,8 @@
     "vi": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12312 $",
+          "_cldrVersion": "29"
         },
         "language": "vi"
       },
@@ -25,12 +25,14 @@
           "BAKU1926": "Bảng chữ cái La-tinh Tiếng Turk Hợp nhất",
           "BALANKA": "BALANKA",
           "BARLA": "BARLA",
+          "BASICENG": "BASICENG",
           "BAUDDHA": "BAUDDHA",
           "BISCAYAN": "BISCAYAN",
           "BISKE": "Phương ngữ San Giorgio/Bila",
           "BOHORIC": "Bảng chữ cái Bohorič",
           "BOONT": "Tiếng Boontling",
           "COLB1945": "COLB1945",
+          "CORNU": "CORNU",
           "DAJNKO": "Bảng chữ cái Dajnko",
           "EKAVSK": "EKAVSK",
           "EMODENG": "Tiếng Anh Hiện đại Thời kỳ đầu",
@@ -53,6 +55,7 @@
           "MONOTON": "Đơn âm",
           "NDYUKA": "Phương ngữ Ndyuka",
           "NEDIS": "Phương ngữ Natisone",
+          "NEWFOUND": "NEWFOUND",
           "NJIVA": "Phương ngữ Gniva/Njiva",
           "NULIK": "Tiếng Volapük Hiện đại",
           "OSOJS": "Phương ngữ Oseacco/Osojane",
@@ -70,6 +73,7 @@
           "SAAHO": "Tiếng Saho",
           "SCOTLAND": "Tiếng Anh chuẩn tại Scotland",
           "SCOUSE": "Phương ngữ Liverpool",
+          "SIMPLE": "SIMPLE",
           "SOLBA": "Phương ngữ Stolvizza/Solbica",
           "SOTAV": "SOTAV",
           "SURMIRAN": "SURMIRAN",

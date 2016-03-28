@@ -3,8 +3,8 @@
     "mr": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11953 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "mr"
       },
@@ -532,8 +532,8 @@
           "sux": "सुमेरियन",
           "sv": "स्वीडिश",
           "sw": "स्वाहिली",
+          "sw-CD": "काँगो स्वाहिली",
           "swb": "कोमोरियन",
-          "swc": "काँगो स्वाहिली",
           "syc": "अभिजात सिरियाक",
           "syr": "सिरियाक",
           "szl": "szl",

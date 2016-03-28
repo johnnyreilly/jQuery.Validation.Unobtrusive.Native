@@ -3,8 +3,8 @@
     "zu": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "zu"
       },
@@ -532,8 +532,8 @@
           "sux": "sux",
           "sv": "isi-Swedish",
           "sw": "isiSwahili",
+          "sw-CD": "isi-Congo Swahili",
           "swb": "swb",
-          "swc": "isi-Congo Swahili",
           "syc": "syc",
           "syr": "syr",
           "szl": "szl",

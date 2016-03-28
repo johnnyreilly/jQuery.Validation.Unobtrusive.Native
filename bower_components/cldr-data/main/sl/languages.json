@@ -3,8 +3,8 @@
     "sl": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "sl"
       },
@@ -531,8 +531,8 @@
           "sux": "sumerščina",
           "sv": "švedščina",
           "sw": "svahili",
+          "sw-CD": "svahili (Kongo)",
           "swb": "šikomor",
-          "swc": "svahili (Kongo)",
           "syc": "klasična sirščina",
           "syr": "sirščina",
           "szl": "szl",

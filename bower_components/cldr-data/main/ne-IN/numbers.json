@@ -3,8 +3,8 @@
     "ne-IN": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "ne",
         "territory": "IN"
@@ -14,7 +14,7 @@
         "otherNumberingSystems": {
           "native": "deva"
         },
-        "minimumGroupingDigits": "१",
+        "minimumGroupingDigits": "1",
         "symbols-numberSystem-deva": {
           "decimal": ".",
           "group": ",",

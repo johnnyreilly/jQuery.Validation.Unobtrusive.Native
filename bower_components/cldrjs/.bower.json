@@ -1,6 +1,5 @@
 {
   "name": "cldrjs",
-  "version": "0.4.1",
   "dependencies": {
     "cldr-data": ">=25"
   },
@@ -13,13 +12,14 @@
     "requirejs-text": "2.0.10"
   },
   "homepage": "https://github.com/rxaviers/cldrjs",
-  "_release": "0.4.1",
+  "version": "0.4.4",
+  "_release": "0.4.4",
   "_resolution": {
     "type": "version",
-    "tag": "0.4.1",
-    "commit": "a5b4333f1e946560f551e256d29d351ad33e1105"
+    "tag": "0.4.4",
+    "commit": "ffa7de2f81e334eff2bf6a9ce0b586c0c875d7de"
   },
   "_source": "git://github.com/rxaviers/cldrjs.git",
-  "_target": "0.4.1",
+  "_target": "0.4.4",
   "_originalSource": "cldrjs"
 }

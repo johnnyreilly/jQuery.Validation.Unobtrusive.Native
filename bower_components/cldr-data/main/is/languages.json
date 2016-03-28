@@ -3,8 +3,8 @@
     "is": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "is"
       },
@@ -531,8 +531,8 @@
           "sux": "súmerska",
           "sv": "sænska",
           "sw": "svahílí",
+          "sw-CD": "Kongó-svahílí",
           "swb": "swb",
-          "swc": "Kongó-svahílí",
           "syc": "klassísk sýrlenska",
           "syr": "sýrlenska",
           "szl": "szl",

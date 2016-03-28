@@ -3,8 +3,8 @@
     "sl": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "sl"
       },
@@ -25,12 +25,14 @@
           "BAKU1926": "modernizirana turška latinica",
           "BALANKA": "BALANKA",
           "BARLA": "BARLA",
+          "BASICENG": "BASICENG",
           "BAUDDHA": "BAUDDHA",
           "BISCAYAN": "BISCAYAN",
           "BISKE": "rezijansko narečje Bila (San Giorgio)",
           "BOHORIC": "BOHORIC",
           "BOONT": "boonvilski jezik",
           "COLB1945": "COLB1945",
+          "CORNU": "CORNU",
           "DAJNKO": "DAJNKO",
           "EKAVSK": "EKAVSK",
           "EMODENG": "EMODENG",
@@ -53,6 +55,7 @@
           "MONOTON": "monotonalni pravopis",
           "NDYUKA": "NDYUKA",
           "NEDIS": "nadiško narečje",
+          "NEWFOUND": "NEWFOUND",
           "NJIVA": "rezijansko narečje Njiva (Gniva)",
           "NULIK": "NULIK",
           "OSOJS": "rezijansko narečje iz Osojan (Oseacco)",
@@ -70,6 +73,7 @@
           "SAAHO": "SAAHO",
           "SCOTLAND": "standardna škotska angleščina",
           "SCOUSE": "liverpoolsko angleško narečje scouse",
+          "SIMPLE": "SIMPLE",
           "SOLBA": "rezijansko narečje iz Solbice (Stolvizza)",
           "SOTAV": "SOTAV",
           "SURMIRAN": "SURMIRAN",

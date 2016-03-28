@@ -3,8 +3,8 @@
     "hi": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11947 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "hi"
       },
@@ -96,6 +96,23 @@
             "unitPattern-count-other": "{0} वर्ग इंच",
             "perUnitPattern": "{0}/वर्ग इंच"
           },
+          "concentr-karat": {
+            "displayName": "कैरट",
+            "unitPattern-count-one": "{0} कैरट",
+            "unitPattern-count-other": "{0} कैरट"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "लीटर प्रति किलोमीटर",
             "unitPattern-count-one": "{0} लीटर प्रति किलोमीटर",
@@ -110,6 +127,10 @@
             "displayName": "मील प्रति गैलन",
             "unitPattern-count-one": "{0} मील प्रति गैलन",
             "unitPattern-count-other": "{0} मील प्रति गैलन"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "टेराबाइट",
@@ -509,11 +530,6 @@
             "unitPattern-count-one": "{0} मिलीबार",
             "unitPattern-count-other": "{0} मिलीबार"
           },
-          "proportion-karat": {
-            "displayName": "कैरट",
-            "unitPattern-count-one": "{0} कैरट",
-            "unitPattern-count-other": "{0} कैरट"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "किलोमीटर प्रति घंटा",
             "unitPattern-count-one": "{0} किलोमीटर प्रति घंटा",
@@ -647,6 +663,11 @@
             "unitPattern-count-other": "{0} गैलन",
             "perUnitPattern": "{0}/गैलन"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "क्वार्ट",
             "unitPattern-count-one": "{0} क्वार्ट",
@@ -771,6 +792,23 @@
             "unitPattern-count-other": "{0} व. इं.",
             "perUnitPattern": "{0}/वर्ग इंच"
           },
+          "concentr-karat": {
+            "displayName": "कैरट",
+            "unitPattern-count-one": "{0} kt",
+            "unitPattern-count-other": "{0} kt"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "लीटर/किमी",
             "unitPattern-count-one": "{0} ली/किमी",
@@ -785,6 +823,10 @@
             "displayName": "मील/गैलन",
             "unitPattern-count-one": "{0} mpg",
             "unitPattern-count-other": "{0} mpg"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "TB",
@@ -1184,11 +1226,6 @@
             "unitPattern-count-one": "{0} mbar",
             "unitPattern-count-other": "{0} mbar"
           },
-          "proportion-karat": {
-            "displayName": "कैरट",
-            "unitPattern-count-one": "{0} kt",
-            "unitPattern-count-other": "{0} kt"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "कि.मी./घं.",
             "unitPattern-count-one": "{0} कि.मी. प्रति घं.",
@@ -1322,6 +1359,11 @@
             "unitPattern-count-other": "{0} गैलन",
             "perUnitPattern": "{0}/गैलन"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "क्वार्ट",
             "unitPattern-count-one": "{0} क्वार्ट",
@@ -1446,6 +1488,23 @@
             "unitPattern-count-other": "{0} व. इं.",
             "perUnitPattern": "{0}/वर्ग इंच"
           },
+          "concentr-karat": {
+            "displayName": "कैरट",
+            "unitPattern-count-one": "{0} kt",
+            "unitPattern-count-other": "{0} kt"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "लीटर/किमी",
             "unitPattern-count-one": "{0} ली/किमी",
@@ -1460,6 +1519,10 @@
             "displayName": "मील/गैलन",
             "unitPattern-count-one": "{0} mpg",
             "unitPattern-count-other": "{0} mpg"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "TB",
@@ -1859,11 +1922,6 @@
             "unitPattern-count-one": "{0}mb",
             "unitPattern-count-other": "{0}mb"
           },
-          "proportion-karat": {
-            "displayName": "कैरट",
-            "unitPattern-count-one": "{0} kt",
-            "unitPattern-count-other": "{0} kt"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "कि.मी./घं.",
             "unitPattern-count-one": "{0}कि॰/घं॰",
@@ -1996,6 +2054,11 @@
             "unitPattern-count-one": "{0} गैलन",
             "unitPattern-count-other": "{0} गैलन",
             "perUnitPattern": "{0}/गैलन"
+          },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
           },
           "volume-quart": {
             "displayName": "क्वार्ट",

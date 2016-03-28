@@ -3,8 +3,8 @@
     "lt": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "lt"
       },
@@ -25,12 +25,14 @@
           "BAKU1926": "Suvienodinta turkų kalbos lotyniška abėcėlė",
           "BALANKA": "BALANKA",
           "BARLA": "BARLA",
+          "BASICENG": "BASICENG",
           "BAUDDHA": "BAUDDHA",
           "BISCAYAN": "BISCAYAN",
           "BISKE": "San Giorgio / Bila tarmė",
           "BOHORIC": "BOHORIC",
           "BOONT": "Boontling",
           "COLB1945": "COLB1945",
+          "CORNU": "CORNU",
           "DAJNKO": "DAJNKO",
           "EKAVSK": "EKAVSK",
           "EMODENG": "EMODENG",
@@ -53,6 +55,7 @@
           "MONOTON": "Vienodas",
           "NDYUKA": "NDYUKA",
           "NEDIS": "Natisone tarmė",
+          "NEWFOUND": "NEWFOUND",
           "NJIVA": "Gniva / Njiva tarmė",
           "NULIK": "NULIK",
           "OSOJS": "Oseacco / Osojane tarmė",
@@ -70,6 +73,7 @@
           "SAAHO": "Saho",
           "SCOTLAND": "Norminė škotiška anglų kalba",
           "SCOUSE": "Scouse",
+          "SIMPLE": "SIMPLE",
           "SOLBA": "Stolvizza / Solbica tarmė",
           "SOTAV": "SOTAV",
           "SURMIRAN": "SURMIRAN",

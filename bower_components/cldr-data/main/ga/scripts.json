@@ -3,13 +3,14 @@
     "ga": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ga"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "Arabach",
@@ -21,6 +22,7 @@
           "Bass": "Bass",
           "Batk": "Batacach",
           "Beng": "Beangálach",
+          "Bhks": "Bhks",
           "Bopo": "Bopomofo",
           "Brah": "Brah",
           "Brai": "Braille",
@@ -49,6 +51,7 @@
           "Grek": "Gréagach",
           "Gujr": "Gúisearátach",
           "Guru": "Gurmúcach",
+          "Hanb": "Hanb",
           "Hang": "Hangalach",
           "Hani": "Han",
           "Hano": "Hano",
@@ -64,6 +67,7 @@
           "Hrkt": "Siollabraí Seapánacha",
           "Hung": "Sean-Ungárach",
           "Ital": "Sean-Iodáilic",
+          "Jamo": "Jamo",
           "Java": "Iávach",
           "Jpan": "Seapánach",
           "Kali": "Kali",
@@ -88,6 +92,7 @@
           "Mahj": "Mahasánach",
           "Mand": "Mand",
           "Mani": "Mainicéasach",
+          "Marc": "Marc",
           "Maya": "Iairiglifí Máigheacha",
           "Mend": "Meindeach",
           "Merc": "Merc",
@@ -101,11 +106,13 @@
           "Mymr": "Maenmarach",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "Nkoo",
           "Ogam": "Ogham",
           "Olck": "Olck",
           "Orkh": "Orkh",
           "Orya": "Oiríseach",
+          "Osge": "Osge",
           "Osma": "Osma",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -185,6 +192,7 @@
           "Tale": "Tale",
           "Talu": "Talu",
           "Taml": "Tamalach",
+          "Tang": "Tang",
           "Tavt": "Tavt",
           "Telu": "Teileagúch",
           "Tfng": "Tifinagh",
@@ -201,6 +209,7 @@
           "Yiii": "Yiii",
           "Zinh": "Zinh",
           "Zmth": "Nodaireacht Mhatamaiticiúil",
+          "Zsye": "Zsye",
           "Zsym": "Siombailí",
           "Zxxx": "Gan Scríobh",
           "Zyyy": "Coitianta",

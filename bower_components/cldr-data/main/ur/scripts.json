@@ -3,13 +3,14 @@
     "ur": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12311 $",
+          "_cldrVersion": "29"
         },
         "language": "ur"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "عربی",
@@ -22,6 +23,7 @@
           "Bass": "Bass",
           "Batk": "Batk",
           "Beng": "بنگالی",
+          "Bhks": "Bhks",
           "Bopo": "بوپوموفو",
           "Brah": "Brah",
           "Brai": "بریل",
@@ -48,6 +50,7 @@
           "Grek": "یونانی",
           "Gujr": "گجراتی",
           "Guru": "گرمکھی",
+          "Hanb": "Hanb",
           "Hang": "ہنگول",
           "Hani": "ہان",
           "Hano": "Hano",
@@ -63,6 +66,7 @@
           "Hrkt": "Hrkt",
           "Hung": "Hung",
           "Ital": "Ital",
+          "Jamo": "Jamo",
           "Java": "Java",
           "Jpan": "جاپانی",
           "Kali": "Kali",
@@ -86,6 +90,7 @@
           "Mahj": "Mahj",
           "Mand": "Mand",
           "Mani": "Mani",
+          "Marc": "Marc",
           "Mend": "Mend",
           "Merc": "Merc",
           "Mero": "Mero",
@@ -98,11 +103,13 @@
           "Mymr": "میانمار",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "Nkoo",
           "Ogam": "Ogam",
           "Olck": "Olck",
           "Orkh": "Orkh",
           "Orya": "اڑیہ",
+          "Osge": "Osge",
           "Osma": "Osma",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -182,6 +189,7 @@
           "Tale": "Tale",
           "Talu": "Talu",
           "Taml": "تمل",
+          "Tang": "Tang",
           "Tavt": "Tavt",
           "Telu": "تیلگو",
           "Tfng": "Tfng",
@@ -198,6 +206,7 @@
           "Yiii": "Yiii",
           "Zinh": "Zinh",
           "Zmth": "Zmth",
+          "Zsye": "Zsye",
           "Zsym": "علامات",
           "Zxxx": "غیر تحریر شدہ",
           "Zyyy": "عام",

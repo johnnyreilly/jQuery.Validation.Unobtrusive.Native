@@ -3,8 +3,8 @@
     "sv-FI": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "sv",
         "territory": "FI"
@@ -533,8 +533,8 @@
           "sux": "sumeriska",
           "sv": "svenska",
           "sw": "swahili",
+          "sw-CD": "Kongo-swahili",
           "swb": "shimaoré",
-          "swc": "Kongo-swahili",
           "syc": "klassisk syriska",
           "syr": "syriska",
           "szl": "silesiska",

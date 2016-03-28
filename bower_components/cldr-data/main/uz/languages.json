@@ -3,8 +3,8 @@
     "uz": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "uz"
       },
@@ -531,8 +531,8 @@
           "sux": "sux",
           "sv": "shved",
           "sw": "suaxili",
+          "sw-CD": "kongo-suaxili",
           "swb": "swb",
-          "swc": "kongo-suaxili",
           "syc": "syc",
           "syr": "syr",
           "szl": "szl",

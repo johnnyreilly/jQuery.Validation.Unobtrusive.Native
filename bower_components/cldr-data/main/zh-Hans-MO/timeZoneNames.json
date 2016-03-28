@@ -3,8 +3,8 @@
     "zh-Hans-MO": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11979 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "zh",
         "script": "Hans",
@@ -166,6 +166,9 @@
               },
               "El_Salvador": {
                 "exemplarCity": "萨尔瓦多"
+              },
+              "Fort_Nelson": {
+                "exemplarCity": "Fort Nelson"
               },
               "Fortaleza": {
                 "exemplarCity": "福塔雷萨"

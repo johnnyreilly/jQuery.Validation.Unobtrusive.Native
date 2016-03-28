@@ -3,8 +3,8 @@
     "et": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "et"
       },
@@ -592,7 +592,7 @@
             "displayName-count-one": "Gruusia lari",
             "displayName-count-other": "Gruusia lari",
             "symbol": "GEL",
-            "symbol-alt-variant": "₾"
+            "symbol-alt-narrow": "₾"
           },
           "GHC": {
             "displayName": "Ghana sedi (1979–2007)",

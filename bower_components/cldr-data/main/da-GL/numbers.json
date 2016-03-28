@@ -3,8 +3,8 @@
     "da-GL": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "da",
         "territory": "GL"
@@ -141,7 +141,7 @@
           "unitPattern-count-other": "{0} {1}"
         },
         "miscPatterns-numberSystem-latn": {
-          "atLeast": "{0} eller derover",
+          "atLeast": "{0}+",
           "range": "{0}-{1}"
         }
       }

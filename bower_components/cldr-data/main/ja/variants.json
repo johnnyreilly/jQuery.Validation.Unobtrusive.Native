@@ -3,8 +3,8 @@
     "ja": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11989 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ja"
       },
@@ -25,12 +25,14 @@
           "BAKU1926": "統一トルコラテン文字",
           "BALANKA": "BALANKA",
           "BARLA": "BARLA",
+          "BASICENG": "BASICENG",
           "BAUDDHA": "バウッダ",
           "BISCAYAN": "ビスカヤ語",
           "BISKE": "サン・ジョルジョ/ビーラ方言",
           "BOHORIC": "ボホリッツ・アルファベット",
           "BOONT": "ブーントリング",
           "COLB1945": "COLB1945",
+          "CORNU": "CORNU",
           "DAJNKO": "ダインチッツァ",
           "EKAVSK": "EKAVSK",
           "EMODENG": "初期近代英語",
@@ -53,6 +55,7 @@
           "MONOTON": "モノトニック",
           "NDYUKA": "ンジュカ方言",
           "NEDIS": "ナティゾーネ方言",
+          "NEWFOUND": "NEWFOUND",
           "NJIVA": "ニヴァ方言",
           "NULIK": "現代ヴォラピュク語",
           "OSOJS": "オゼアッコ/オソヤネ方言",
@@ -70,6 +73,7 @@
           "SAAHO": "サホ語",
           "SCOTLAND": "スコットランド標準英語",
           "SCOUSE": "リバプール方言",
+          "SIMPLE": "SIMPLE",
           "SOLBA": "ストルヴィッツァ/ソルビツァ方言",
           "SOTAV": "SOTAV",
           "SURMIRAN": "スルミラン",

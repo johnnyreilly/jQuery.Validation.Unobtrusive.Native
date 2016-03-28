@@ -3,8 +3,8 @@
     "ja": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11989 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ja"
       },
@@ -532,8 +532,8 @@
           "sux": "シュメール語",
           "sv": "スウェーデン語",
           "sw": "スワヒリ語",
+          "sw-CD": "コンゴ・スワヒリ語",
           "swb": "コモロ語",
-          "swc": "コンゴ・スワヒリ語",
           "syc": "古典シリア語",
           "syr": "シリア語",
           "szl": "シレジア語",

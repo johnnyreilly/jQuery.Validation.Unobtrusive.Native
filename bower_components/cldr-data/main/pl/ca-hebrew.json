@@ -3,8 +3,8 @@
     "pl": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "pl"
       },
@@ -134,13 +134,13 @@
                   "sat": "S"
                 },
                 "short": {
-                  "sun": "niedz.",
-                  "mon": "pon.",
-                  "tue": "wt.",
-                  "wed": "śr.",
-                  "thu": "czw.",
-                  "fri": "pt.",
-                  "sat": "sob."
+                  "sun": "nie",
+                  "mon": "pon",
+                  "tue": "wto",
+                  "wed": "śro",
+                  "thu": "czw",
+                  "fri": "pią",
+                  "sat": "sob"
                 },
                 "wide": {
                   "sun": "niedziela",
@@ -172,13 +172,13 @@
                   "sat": "S"
                 },
                 "short": {
-                  "sun": "niedz.",
-                  "mon": "pon.",
-                  "tue": "wt.",
-                  "wed": "śr.",
-                  "thu": "czw.",
-                  "fri": "pt.",
-                  "sat": "sob."
+                  "sun": "nie",
+                  "mon": "pon",
+                  "tue": "wto",
+                  "wed": "śro",
+                  "thu": "czw",
+                  "fri": "pią",
+                  "sat": "sob"
                 },
                 "wide": {
                   "sun": "niedziela",

@@ -3,8 +3,8 @@
     "vi": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12312 $",
+          "_cldrVersion": "29"
         },
         "language": "vi"
       },
@@ -48,7 +48,6 @@
           "AI": "Anguilla",
           "AL": "Albani",
           "AM": "Armenia",
-          "AN": "Tây Ấn Hà Lan",
           "AO": "Angola",
           "AQ": "Nam Cực",
           "AR": "Argentina",

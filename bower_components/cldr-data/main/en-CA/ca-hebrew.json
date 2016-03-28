@@ -3,8 +3,8 @@
     "en-CA": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11979 $"
+          "_number": "$Revision: 12291 $",
+          "_cldrVersion": "29"
         },
         "language": "en",
         "territory": "CA"
@@ -327,7 +327,8 @@
               "full": "EEEE, d MMMM y",
               "long": "d MMMM y",
               "medium": "d MMM y",
-              "short": "d MMM y"
+              "short": "d MMM y",
+              "short-alt-variant": "d/M/y GGGGG"
             },
             "timeFormats": {
               "full": "h:mm:ss a zzzz",
@@ -360,7 +361,9 @@
                 "Hms": "HH:mm:ss",
                 "M": "L",
                 "Md": "d MMM",
+                "Md-alt-variant": "d/M",
                 "MEd": "E, d MMM",
+                "MEd-alt-variant": "E, d/M",
                 "MMM": "LLL",
                 "MMMd": "d MMM",
                 "MMMEd": "E, d MMM",
@@ -378,8 +381,11 @@
                 "yQQQQ": "QQQQ y",
                 "yyyy": "y G",
                 "yyyyM": "GGGGG y-MM",
+                "yyyyM-alt-variant": "M/y GGGGG",
                 "yyyyMd": "GGGGG y-MM-dd",
+                "yyyyMd-alt-variant": "d/M/y GGGGG",
                 "yyyyMEd": "E, GGGGG y-MM-dd",
+                "yyyyMEd-alt-variant": "E, d/M/y GGGGG",
                 "yyyyMMM": "MMM y G",
                 "yyyyMMMd": "MMM d, y G",
                 "yyyyMMMEd": "E, MMM d, y G",
@@ -442,11 +448,15 @@
                 },
                 "Md": {
                   "d": "d – d MMM",
-                  "M": "d MMM – d MMM"
+                  "d-alt-variant": "d/M – d/M",
+                  "M": "d MMM – d MMM",
+                  "M-alt-variant": "d/M – d/M"
                 },
                 "MEd": {
                   "d": "E, d MMM – E, d MMM",
-                  "M": "E, d MMM – E, d MMM"
+                  "d-alt-variant": "E, d/M – E, d/M",
+                  "M": "E, d MMM – E, d MMM",
+                  "M-alt-variant": "E, d/M – E, d/M"
                 },
                 "MMM": {
                   "M": "MMM – MMM"
@@ -464,17 +474,25 @@
                 },
                 "yM": {
                   "M": "MMM – MMM y",
-                  "y": "MMM y – MMM y"
+                  "M-alt-variant": "M/y – M/y GGGGG",
+                  "y": "MMM y – MMM y",
+                  "y-alt-variant": "M/y – M/y GGGGG"
                 },
                 "yMd": {
                   "d": "d – d MMM y",
+                  "d-alt-variant": "d/M/y – d/M/y GGGGG",
                   "M": "d MMM – d MMM y",
-                  "y": "d MMM y – d MMM y"
+                  "M-alt-variant": "d/M/y – d/M/y GGGGG",
+                  "y": "d MMM y – d MMM y",
+                  "y-alt-variant": "d/M/y – d/M/y GGGGG"
                 },
                 "yMEd": {
                   "d": "E, d MMM – E, d MMM y",
+                  "d-alt-variant": "E, d/M/y – E, d/M/y GGGGG",
                   "M": "E, d MMM – E, d MMM y",
-                  "y": "E, d MMM y – E, d MMM y"
+                  "M-alt-variant": "E, d/M/y – E, d/M/y GGGGG",
+                  "y": "E, d MMM y – E, d MMM y",
+                  "y-alt-variant": "E, d/M/y – E, d/M/y GGGGG"
                 },
                 "yMMM": {
                   "M": "MMM – MMM y",

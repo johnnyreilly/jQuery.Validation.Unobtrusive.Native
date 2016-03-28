@@ -3,8 +3,8 @@
     "to": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12379 $",
+          "_cldrVersion": "29"
         },
         "language": "to"
       },
@@ -48,7 +48,6 @@
           "AI": "Anikuila",
           "AL": "ʻAlipania",
           "AM": "ʻĀmenia",
-          "AN": "Anitila fakahōlani",
           "AO": "ʻAngikola",
           "AQ": "ʻAnitātika",
           "AR": "ʻAsenitina",

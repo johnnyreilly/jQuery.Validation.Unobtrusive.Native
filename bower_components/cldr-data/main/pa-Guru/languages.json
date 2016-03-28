@@ -3,8 +3,8 @@
     "pa-Guru": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "pa",
         "script": "Guru"
@@ -532,8 +532,8 @@
           "sux": "sux",
           "sv": "ਸਵੀਡਿਸ਼",
           "sw": "ਸਵਾਹਿਲੀ",
+          "sw-CD": "ਕਾਂਗੋ ਸਵਾਹਿਲੀ",
           "swb": "swb",
-          "swc": "ਕਾਂਗੋ ਸਵਾਹਿਲੀ",
           "syc": "syc",
           "syr": "syr",
           "szl": "szl",

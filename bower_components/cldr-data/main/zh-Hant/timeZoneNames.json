@@ -3,8 +3,8 @@
     "zh-Hant": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11989 $"
+          "_number": "$Revision: 12390 $",
+          "_cldrVersion": "29"
         },
         "language": "zh",
         "script": "Hant"
@@ -165,6 +165,9 @@
               },
               "El_Salvador": {
                 "exemplarCity": "薩爾瓦多"
+              },
+              "Fort_Nelson": {
+                "exemplarCity": "Fort Nelson"
               },
               "Fortaleza": {
                 "exemplarCity": "福塔力莎"

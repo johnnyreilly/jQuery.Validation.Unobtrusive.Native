@@ -3,8 +3,8 @@
     "sw-KE": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "sw",
         "territory": "KE"
@@ -533,8 +533,8 @@
           "sux": "sux",
           "sv": "Kiswidi",
           "sw": "Kiswahili",
+          "sw-CD": "Kingwana",
           "swb": "swb",
-          "swc": "Kingwana",
           "syc": "syc",
           "syr": "syr",
           "szl": "szl",

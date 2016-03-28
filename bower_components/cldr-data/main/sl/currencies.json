@@ -3,8 +3,8 @@
     "sl": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "sl"
       },
@@ -619,6 +619,7 @@
             "displayName-count-few": "gruzijski lari",
             "displayName-count-other": "gruzijskih larov",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

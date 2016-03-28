@@ -3,14 +3,15 @@
     "sw-CD": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12197 $",
+          "_cldrVersion": "29"
         },
         "language": "sw",
         "territory": "CD"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "Kiarabu",
@@ -23,6 +24,7 @@
           "Bass": "Bass",
           "Batk": "Batk",
           "Beng": "Kibengali",
+          "Bhks": "Bhks",
           "Bopo": "Kibopomofo",
           "Brah": "Brah",
           "Brai": "Braille",
@@ -49,6 +51,7 @@
           "Grek": "Kigiriki",
           "Gujr": "Kigujarati",
           "Guru": "Kigurmukhi",
+          "Hanb": "Hanb",
           "Hang": "Kihangul",
           "Hani": "Kihan",
           "Hano": "Hano",
@@ -64,6 +67,7 @@
           "Hrkt": "Hrkt",
           "Hung": "Hung",
           "Ital": "Ital",
+          "Jamo": "Jamo",
           "Java": "Java",
           "Jpan": "Kijapani",
           "Kali": "Kali",
@@ -87,6 +91,7 @@
           "Mahj": "Mahj",
           "Mand": "Mand",
           "Mani": "Mani",
+          "Marc": "Marc",
           "Mend": "Mend",
           "Merc": "Merc",
           "Mero": "Mero",
@@ -99,11 +104,13 @@
           "Mymr": "Myama",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "Nkoo",
           "Ogam": "Ogam",
           "Olck": "Olck",
           "Orkh": "Orkh",
           "Orya": "Kioriya",
+          "Osge": "Osge",
           "Osma": "Osma",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -183,6 +190,7 @@
           "Tale": "Tale",
           "Talu": "Talu",
           "Taml": "Kitamil",
+          "Tang": "Tang",
           "Tavt": "Tavt",
           "Telu": "Kitelugu",
           "Tfng": "Tfng",
@@ -199,6 +207,7 @@
           "Yiii": "Yiii",
           "Zinh": "Zinh",
           "Zmth": "Zmth",
+          "Zsye": "Zsye",
           "Zsym": "Alama",
           "Zxxx": "Haijaandikwa",
           "Zyyy": "Kawaida",

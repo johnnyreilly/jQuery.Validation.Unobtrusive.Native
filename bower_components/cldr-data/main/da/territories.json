@@ -3,8 +3,8 @@
     "da": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11944 $"
+          "_number": "$Revision: 12387 $",
+          "_cldrVersion": "29"
         },
         "language": "da"
       },
@@ -48,7 +48,6 @@
           "AI": "Anguilla",
           "AL": "Albanien",
           "AM": "Armenien",
-          "AN": "Hollandske Antiller",
           "AO": "Angola",
           "AQ": "Antarktis",
           "AR": "Argentina",
@@ -220,7 +219,7 @@
           "NF": "Norfolk Island",
           "NG": "Nigeria",
           "NI": "Nicaragua",
-          "NL": "Nederlandene",
+          "NL": "Holland",
           "NO": "Norge",
           "NP": "Nepal",
           "NR": "Nauru",

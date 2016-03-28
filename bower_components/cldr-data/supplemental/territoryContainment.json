@@ -1,9 +1,9 @@
 {
   "supplemental": {
     "version": {
-      "_cldrVersion": "28",
+      "_number": "$Revision: 12447 $",
       "_unicodeVersion": "8.0.0",
-      "_number": "$Revision: 11969 $"
+      "_cldrVersion": "29"
     },
     "territoryContainment": {
       "001": {
@@ -35,12 +35,12 @@
         ]
       },
       "003": {
-        "_grouping": "true",
         "_contains": [
           "021",
           "013",
           "029"
-        ]
+        ],
+        "_grouping": "true"
       },
       "005": {
         "_contains": [
@@ -118,6 +118,7 @@
           "RW",
           "SC",
           "SO",
+          "SS",
           "TZ",
           "UG",
           "YT",
@@ -133,7 +134,6 @@
           "LY",
           "MA",
           "SD",
-          "SS",
           "TN",
           "EA",
           "IC"
@@ -453,15 +453,14 @@
         ]
       },
       "419": {
-        "_grouping": "true",
         "_contains": [
           "013",
           "029",
           "005"
-        ]
+        ],
+        "_grouping": "true"
       },
       "EU": {
-        "_grouping": "true",
         "_contains": [
           "AT",
           "BE",
@@ -491,7 +490,8 @@
           "SK",
           "BG",
           "RO"
-        ]
+        ],
+        "_grouping": "true"
       },
       "QO": {
         "_contains": [

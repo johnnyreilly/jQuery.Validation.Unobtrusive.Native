@@ -3,8 +3,8 @@
     "ta": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11955 $"
+          "_number": "$Revision: 12316 $",
+          "_cldrVersion": "29"
         },
         "language": "ta"
       },
@@ -164,6 +164,9 @@
               },
               "El_Salvador": {
                 "exemplarCity": "எல் சால்வடோர்"
+              },
+              "Fort_Nelson": {
+                "exemplarCity": "Fort Nelson"
               },
               "Fortaleza": {
                 "exemplarCity": "ஃபோர்டாலெசா"
@@ -1850,17 +1853,17 @@
             },
             "Indonesia_Central": {
               "long": {
-                "standard": "மத்திய இந்தோனேஷிய நேரம்"
+                "standard": "மத்திய இந்தோனேசியா நேரம்"
               }
             },
             "Indonesia_Eastern": {
               "long": {
-                "standard": "கிழக்கத்திய இந்தோனேஷிய நேரம்"
+                "standard": "கிழக்கத்திய இந்தோனேசியா நேரம்"
               }
             },
             "Indonesia_Western": {
               "long": {
-                "standard": "மேற்கத்திய இந்தோனேஷியா நேரம்"
+                "standard": "மேற்கத்திய இந்தோனேசியா நேரம்"
               }
             },
             "Iran": {

@@ -3,8 +3,8 @@
     "gu": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "gu"
       },
@@ -523,6 +523,7 @@
             "displayName-count-one": "જ્યોર્જિઅન લારી",
             "displayName-count-other": "જ્યોર્જિઅન લારી",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

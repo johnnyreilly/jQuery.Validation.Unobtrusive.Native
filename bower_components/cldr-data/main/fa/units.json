@@ -3,8 +3,8 @@
     "fa": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "fa"
       },
@@ -96,6 +96,23 @@
             "unitPattern-count-other": "{0} اینچ مربع",
             "perUnitPattern": "{0} در اینچ مربع"
           },
+          "concentr-karat": {
+            "displayName": "عیار",
+            "unitPattern-count-one": "{0} عیار",
+            "unitPattern-count-other": "{0} عیار"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "لیتر در کیلومتر",
             "unitPattern-count-one": "{0} لیتر در کیلومتر",
@@ -110,6 +127,10 @@
             "displayName": "مایل در گالن",
             "unitPattern-count-one": "{0} مایل در گالن",
             "unitPattern-count-other": "{0} مایل در گالن"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "ترابایت",
@@ -509,11 +530,6 @@
             "unitPattern-count-one": "{0} میلی‌بار",
             "unitPattern-count-other": "{0} میلی‌بار"
           },
-          "proportion-karat": {
-            "displayName": "عیار",
-            "unitPattern-count-one": "{0} عیار",
-            "unitPattern-count-other": "{0} عیار"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "کیلومتر در ساعت",
             "unitPattern-count-one": "{0} کیلومتر در ساعت",
@@ -647,6 +663,11 @@
             "unitPattern-count-other": "{0} گالن",
             "perUnitPattern": "{0} در گالن"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "کوارت",
             "unitPattern-count-one": "{0} کوارت",
@@ -771,6 +792,23 @@
             "unitPattern-count-other": "{0} اینچ مربع",
             "perUnitPattern": "{0} در اینچ مربع"
           },
+          "concentr-karat": {
+            "displayName": "عیار",
+            "unitPattern-count-one": "{0} عیار",
+            "unitPattern-count-other": "{0} عیار"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "لیتر/کیلومتر",
             "unitPattern-count-one": "{0} ل./ک.م.",
@@ -785,6 +823,10 @@
             "displayName": "مایل/گالن",
             "unitPattern-count-one": "{0} مایل در گالن",
             "unitPattern-count-other": "{0} مایل در گالن"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "ترابایت",
@@ -1184,11 +1226,6 @@
             "unitPattern-count-one": "{0} میلی‌بار",
             "unitPattern-count-other": "{0} میلی‌بار"
           },
-          "proportion-karat": {
-            "displayName": "عیار",
-            "unitPattern-count-one": "{0} عیار",
-            "unitPattern-count-other": "{0} عیار"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "کیلومتر در ساعت",
             "unitPattern-count-one": "{0}‎ km/h",
@@ -1322,6 +1359,11 @@
             "unitPattern-count-other": "{0} گالن",
             "perUnitPattern": "{0} در گالن"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "کوارت",
             "unitPattern-count-one": "{0} کوارت",
@@ -1446,6 +1488,23 @@
             "unitPattern-count-other": "{0} اینچ مربع",
             "perUnitPattern": "{0} در اینچ مربع"
           },
+          "concentr-karat": {
+            "displayName": "عیار",
+            "unitPattern-count-one": "{0} عیار",
+            "unitPattern-count-other": "{0} عیار"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "لیتر/کیلومتر",
             "unitPattern-count-one": "{0} ل./ک.م.",
@@ -1460,6 +1519,10 @@
             "displayName": "مایل/گالن",
             "unitPattern-count-one": "{0} مایل در گالن",
             "unitPattern-count-other": "{0} مایل در گالن"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "ترابایت",
@@ -1859,11 +1922,6 @@
             "unitPattern-count-one": "{0}mbar",
             "unitPattern-count-other": "{0}mbar"
           },
-          "proportion-karat": {
-            "displayName": "عیار",
-            "unitPattern-count-one": "{0} عیار",
-            "unitPattern-count-other": "{0} عیار"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "کیلومتر/ساعت",
             "unitPattern-count-one": "{0}‎ km/h",
@@ -1996,6 +2054,11 @@
             "unitPattern-count-one": "{0} گالن",
             "unitPattern-count-other": "{0} گالن",
             "perUnitPattern": "{0} در گالن"
+          },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
           },
           "volume-quart": {
             "displayName": "کوارت",

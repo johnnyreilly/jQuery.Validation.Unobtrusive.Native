@@ -3,8 +3,8 @@
     "my": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12384 $",
+          "_cldrVersion": "29"
         },
         "language": "my"
       },
@@ -80,6 +80,22 @@
             "unitPattern-count-other": "{0}စတုရန်းလက်မ",
             "perUnitPattern": "{0}တစ်စတုရန်းလက်မလျှင်"
           },
+          "concentr-karat": {
+            "displayName": "ကရက်",
+            "unitPattern-count-other": "{0} ကရက်"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "လီတာ/ကီလိုမီတာ",
             "unitPattern-count-other": "၁ကီလိုမီတာ {0}လီတာနှုန်း"
@@ -91,6 +107,10 @@
           "consumption-mile-per-gallon": {
             "displayName": "မိုင်/ဂါလန်",
             "unitPattern-count-other": "၁ ဂါလန် {0} မိုင်နှုန်း"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "တီရာဘိုက်",
@@ -357,7 +377,7 @@
           "mass-pound": {
             "displayName": "ပေါင်",
             "unitPattern-count-other": "{0}ပေါင်",
-            "perUnitPattern": "တစ်ပေါင်လျှင်"
+            "perUnitPattern": "{0}တစ်ပေါင်လျှင်"
           },
           "mass-ounce": {
             "displayName": "အောင်စ",
@@ -416,10 +436,6 @@
             "displayName": "မီလီဘား",
             "unitPattern-count-other": "{0}မီလီဘား"
           },
-          "proportion-karat": {
-            "displayName": "ကရက်",
-            "unitPattern-count-other": "{0} ကရက်"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "ကီလိုမီတာ/နာရီ",
             "unitPattern-count-other": "တစ်နာရီလျှင်{0}ကီလိုမီတာနှုန်း"
@@ -459,7 +475,7 @@
           "volume-cubic-meter": {
             "displayName": "ကုဗမီတာ",
             "unitPattern-count-other": "{0}ကုဗမီတာ",
-            "perUnitPattern": "တစ်ကုဗစင်တီမီတာလျှင်"
+            "perUnitPattern": "{0}တစ်ကုဗမီတာလျှင်"
           },
           "volume-cubic-centimeter": {
             "displayName": "ကုဗစင်တီမီတာ",
@@ -527,6 +543,11 @@
             "displayName": "ဂါလန်",
             "unitPattern-count-other": "{0}ဂါလန်",
             "perUnitPattern": "{0}တစ်ဂါလံလျှင်"
+          },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
           },
           "volume-quart": {
             "displayName": "ကွတ်",
@@ -630,6 +651,22 @@
             "unitPattern-count-other": "{0} in²",
             "perUnitPattern": "{0}/in²"
           },
+          "concentr-karat": {
+            "displayName": "ကရက်",
+            "unitPattern-count-other": "{0} kt"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "လီတာ/ကီလိုမီတာ",
             "unitPattern-count-other": "{0} L/km"
@@ -641,6 +678,10 @@
           "consumption-mile-per-gallon": {
             "displayName": "မိုင်/ဂါလန်",
             "unitPattern-count-other": "{0} mpg"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "တီရာဘိုက်",
@@ -966,10 +1007,6 @@
             "displayName": "မီလီဘား",
             "unitPattern-count-other": "{0} mbar"
           },
-          "proportion-karat": {
-            "displayName": "ကရက်",
-            "unitPattern-count-other": "{0} kt"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "ကီလိုမီတာ/နာရီ",
             "unitPattern-count-other": "{0} km/h"
@@ -1078,6 +1115,11 @@
             "unitPattern-count-other": "{0}ဂါလန်",
             "perUnitPattern": "{0}/ဂါလံ"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "ကွတ်",
             "unitPattern-count-other": "{0}ကွတ်"
@@ -1180,6 +1222,22 @@
             "unitPattern-count-other": "{0} in²",
             "perUnitPattern": "{0}/in²"
           },
+          "concentr-karat": {
+            "displayName": "ကရက်",
+            "unitPattern-count-other": "{0} kt"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "လီတာ/ကီလိုမီတာ",
             "unitPattern-count-other": "{0} L/km"
@@ -1191,6 +1249,10 @@
           "consumption-mile-per-gallon": {
             "displayName": "မိုင်/ဂါလန်",
             "unitPattern-count-other": "{0} mpg"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "တီရာဘိုက်",
@@ -1516,10 +1578,6 @@
             "displayName": "မီလီဘား",
             "unitPattern-count-other": "{0} mbar"
           },
-          "proportion-karat": {
-            "displayName": "ကရက်",
-            "unitPattern-count-other": "{0} kt"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "ကီလိုမီတာ/နာရီ",
             "unitPattern-count-other": "{0} km/h"
@@ -1627,6 +1685,11 @@
             "displayName": "ဂါလန်",
             "unitPattern-count-other": "{0}ဂါလန်",
             "perUnitPattern": "{0}/ဂါလံ"
+          },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
           },
           "volume-quart": {
             "displayName": "ကွတ်",

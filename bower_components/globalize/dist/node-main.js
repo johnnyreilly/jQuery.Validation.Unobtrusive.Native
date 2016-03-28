@@ -1,5 +1,5 @@
 /*!
- * Globalize v1.0.0
+ * Globalize v1.1.1
  *
  * http://github.com/jquery/globalize
  *
@@ -7,7 +7,7 @@
  * Released under the MIT license
  * http://jquery.org/license
  *
- * Date: 2015-04-23T12:02Z
+ * Date: 2016-02-04T12:01Z
  */
 
 // Core
@@ -24,3 +24,4 @@ require( "./globalize/date" );
 
 // Load after globalize/number and globalize/plural
 require( "./globalize/relative-time" );
+require( "./globalize/unit" );

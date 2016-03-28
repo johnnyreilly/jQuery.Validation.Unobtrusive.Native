@@ -3,8 +3,8 @@
     "ne": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "ne"
       },
@@ -531,8 +531,8 @@
           "sux": "सुमेरियाली",
           "sv": "स्विडिस",
           "sw": "स्वाहिली",
+          "sw-CD": "कङ्गो स्वाहिली",
           "swb": "कोमोरी",
-          "swc": "कङ्गो स्वाहिली",
           "syc": "परम्परागत सिरियाक",
           "syr": "सिरियाक",
           "szl": "szl",

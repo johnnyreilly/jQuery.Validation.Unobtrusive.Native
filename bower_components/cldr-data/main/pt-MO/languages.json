@@ -3,8 +3,8 @@
     "pt-MO": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "pt",
         "territory": "MO"
@@ -534,8 +534,8 @@
           "sux": "sumério",
           "sv": "sueco",
           "sw": "suaíli",
+          "sw-CD": "suaíli do Congo",
           "swb": "comoriano",
-          "swc": "suaíli do Congo",
           "syc": "siríaco clássico",
           "syr": "siríaco",
           "szl": "szl",

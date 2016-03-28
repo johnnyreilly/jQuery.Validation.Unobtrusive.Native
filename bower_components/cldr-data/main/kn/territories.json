@@ -3,8 +3,8 @@
     "kn": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11977 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "kn"
       },
@@ -48,7 +48,6 @@
           "AI": "ಆಂಗುಯಿಲ್ಲಾ",
           "AL": "ಅಲ್ಬೇನಿಯಾ",
           "AM": "ಅರ್ಮೇನಿಯಾ",
-          "AN": "ನೆದರ್‌ಲ್ಯಾಂಡ್",
           "AO": "ಅಂಗೋಲಾ",
           "AQ": "ಅಂಟಾರ್ಟಿಕಾ",
           "AR": "ಅರ್ಜೆಂಟಿನಾ",

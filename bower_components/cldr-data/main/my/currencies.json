@@ -3,8 +3,8 @@
     "my": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12384 $",
+          "_cldrVersion": "29"
         },
         "language": "my"
       },
@@ -475,7 +475,7 @@
             "displayName": "ဂျော်ဂျီယာလားရီ",
             "displayName-count-other": "ဂျော်ဂျီယာလားရီ",
             "symbol": "GEL",
-            "symbol-alt-variant": "₾"
+            "symbol-alt-narrow": "₾"
           },
           "GHC": {
             "displayName": "GHC",

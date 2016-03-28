@@ -3,8 +3,8 @@
     "ko-KP": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "ko",
         "territory": "KP"
@@ -476,6 +476,7 @@
             "displayName": "조지아 라리",
             "displayName-count-other": "조지아 라리",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

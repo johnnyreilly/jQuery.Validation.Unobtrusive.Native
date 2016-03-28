@@ -3,8 +3,8 @@
     "bs-Latn": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "bs",
         "script": "Latn"
@@ -707,7 +707,7 @@
             "displayName-count-few": "gruzijska larija",
             "displayName-count-other": "gruzijskih larija",
             "symbol": "GEL",
-            "symbol-alt-variant": "₾"
+            "symbol-alt-narrow": "₾"
           },
           "GHC": {
             "displayName": "Ganijski cedi (1979–2007)",

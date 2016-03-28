@@ -3,13 +3,14 @@
     "he": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "he"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "ערבי",
@@ -22,6 +23,7 @@
           "Bass": "Bass",
           "Batk": "Batk",
           "Beng": "בנגלי",
+          "Bhks": "Bhks",
           "Bopo": "בופומופו",
           "Brah": "Brah",
           "Brai": "ברייל",
@@ -49,6 +51,7 @@
           "Grek": "יווני",
           "Gujr": "גוג׳רטי",
           "Guru": "גורמוקי",
+          "Hanb": "Hanb",
           "Hang": "האנגול",
           "Hani": "האן",
           "Hano": "Hano",
@@ -65,6 +68,7 @@
           "Hung": "הונגרי עתיק",
           "Inds": "אינדוס",
           "Ital": "איטלקי עתיק",
+          "Jamo": "Jamo",
           "Java": "ג׳אוונזי",
           "Jpan": "יפני",
           "Kali": "Kali",
@@ -89,6 +93,7 @@
           "Mahj": "Mahj",
           "Mand": "Mand",
           "Mani": "Mani",
+          "Marc": "Marc",
           "Maya": "מאיה",
           "Mend": "Mend",
           "Merc": "Merc",
@@ -102,11 +107,13 @@
           "Mymr": "מיאנמר",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "Nkoo",
           "Ogam": "Ogam",
           "Olck": "Olck",
           "Orkh": "Orkh",
           "Orya": "אורייה",
+          "Osge": "Osge",
           "Osma": "Osma",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -188,6 +195,7 @@
           "Tale": "Tale",
           "Talu": "Talu",
           "Taml": "טמיל",
+          "Tang": "Tang",
           "Tavt": "Tavt",
           "Telu": "טלוגו",
           "Tfng": "Tfng",
@@ -204,6 +212,7 @@
           "Yiii": "Yiii",
           "Zinh": "מורש",
           "Zmth": "סימון מתמטי",
+          "Zsye": "Zsye",
           "Zsym": "סימנים",
           "Zxxx": "לא כתוב",
           "Zyyy": "רגיל",

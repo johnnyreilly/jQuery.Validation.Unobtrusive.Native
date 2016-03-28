@@ -3,8 +3,8 @@
     "ro": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ro"
       },
@@ -619,6 +619,7 @@
             "displayName-count-few": "lari georgieni",
             "displayName-count-other": "lari georgieni",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

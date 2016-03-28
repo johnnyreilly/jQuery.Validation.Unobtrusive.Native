@@ -3,8 +3,8 @@
     "zh-Hans-HK": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11979 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "zh",
         "script": "Hans",
@@ -534,8 +534,8 @@
           "sux": "苏马文",
           "sv": "瑞典文",
           "sw": "斯瓦希里文",
+          "sw-CD": "刚果斯瓦希里文",
           "swb": "科摩罗文",
-          "swc": "刚果斯瓦希里文",
           "syc": "经典叙利亚文",
           "syr": "叙利亚文",
           "szl": "szl",

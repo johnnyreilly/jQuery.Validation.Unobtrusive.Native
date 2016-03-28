@@ -3,8 +3,8 @@
     "ro": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ro"
       },
@@ -532,8 +532,8 @@
           "sux": "sumeriană",
           "sv": "suedeză",
           "sw": "swahili",
+          "sw-CD": "swahili Congo",
           "swb": "comoreză",
-          "swc": "swahili Congo",
           "syc": "siriacă clasică",
           "syr": "siriacă",
           "szl": "szl",

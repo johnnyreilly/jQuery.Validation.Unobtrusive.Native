@@ -3,13 +3,14 @@
     "bg": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "bg"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "арабска",
@@ -22,6 +23,7 @@
           "Bass": "Bass",
           "Batk": "Батакска",
           "Beng": "бенгалска",
+          "Bhks": "Bhks",
           "Blis": "Блис символи",
           "Bopo": "бопомофо",
           "Brah": "Брахми",
@@ -53,6 +55,7 @@
           "Grek": "гръцка",
           "Gujr": "гуджарати",
           "Guru": "гурмукхи",
+          "Hanb": "Hanb",
           "Hang": "хангъл",
           "Hani": "китайска",
           "Hano": "Хануну",
@@ -69,6 +72,7 @@
           "Hung": "Староунгарска",
           "Inds": "Харапска",
           "Ital": "Древно италийска",
+          "Jamo": "Jamo",
           "Java": "Яванска",
           "Jpan": "японска",
           "Kali": "Кая Ли",
@@ -94,6 +98,7 @@
           "Mahj": "Mahj",
           "Mand": "Мандаринска",
           "Mani": "Манихейска",
+          "Marc": "Marc",
           "Maya": "Йероглифи на Маите",
           "Mend": "Mend",
           "Merc": "Merc",
@@ -108,11 +113,13 @@
           "Mymr": "бирманска",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "Н’Ко",
           "Ogam": "Огамическа",
           "Olck": "Ол Чики",
           "Orkh": "Орхоно-енисейска",
           "Orya": "ория",
+          "Osge": "Osge",
           "Osma": "Османска",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -198,6 +205,7 @@
           "Tale": "Тай Ле",
           "Talu": "Нова Тай Ле",
           "Taml": "тамилска",
+          "Tang": "Tang",
           "Tavt": "Tavt",
           "Telu": "телугу",
           "Tfng": "Tfng",
@@ -215,6 +223,7 @@
           "Yiii": "Йи",
           "Zinh": "Zinh",
           "Zmth": "Математически символи",
+          "Zsye": "Zsye",
           "Zsym": "символи",
           "Zxxx": "без писменост",
           "Zyyy": "обща",

@@ -3,8 +3,8 @@
     "nl-SR": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "nl",
         "territory": "SR"
@@ -533,8 +533,8 @@
           "sux": "Soemerisch",
           "sv": "Zweeds",
           "sw": "Swahili",
+          "sw-CD": "Congo Swahili",
           "swb": "Shimaore",
-          "swc": "Congo Swahili",
           "syc": "Klassiek Syrisch",
           "syr": "Syrisch",
           "szl": "Silezisch",

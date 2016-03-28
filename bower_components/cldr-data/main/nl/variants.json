@@ -3,8 +3,8 @@
     "nl": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11996 $"
+          "_number": "$Revision: 12381 $",
+          "_cldrVersion": "29"
         },
         "language": "nl"
       },
@@ -25,12 +25,14 @@
           "BAKU1926": "Eenvormig Turkse Latijnse alfabet",
           "BALANKA": "Balanka-dialect van Anii",
           "BARLA": "Barlavento-dialectgroep van Kabuverdianu",
+          "BASICENG": "BASICENG",
           "BAUDDHA": "Bauddha",
           "BISCAYAN": "Biskajaans",
           "BISKE": "San Giorgio/Bila-dialect",
           "BOHORIC": "Bohorič-alfabet",
           "BOONT": "Boontling",
           "COLB1945": "COLB1945",
+          "CORNU": "CORNU",
           "DAJNKO": "Dajnko-alfabet",
           "EKAVSK": "Servisch met Ekaviaanse uitspraak",
           "EMODENG": "Vroegmodern Engels",
@@ -53,6 +55,7 @@
           "MONOTON": "Monotonaal",
           "NDYUKA": "Ndyuka-dialect",
           "NEDIS": "Natisone-dialect",
+          "NEWFOUND": "NEWFOUND",
           "NJIVA": "Gniva/Njiva-dialect",
           "NULIK": "Modern Volapük",
           "OSOJS": "Oseacco/Osojane-dialect",
@@ -70,6 +73,7 @@
           "SAAHO": "Saho",
           "SCOTLAND": "Schots standaard-Engels",
           "SCOUSE": "Liverpools (Scouse)",
+          "SIMPLE": "SIMPLE",
           "SOLBA": "Stolvizza/Solbica-dialect",
           "SOTAV": "Sotavento-dialectgroep van Kabuverdianu",
           "SURMIRAN": "Surmiran",

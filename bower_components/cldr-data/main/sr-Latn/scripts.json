@@ -3,14 +3,15 @@
     "sr-Latn": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12417 $",
+          "_cldrVersion": "29"
         },
         "language": "sr",
         "script": "Latn"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "arapsko pismo",
@@ -23,6 +24,7 @@
           "Bass": "Bass",
           "Batk": "batak pismo",
           "Beng": "bengalsko pismo",
+          "Bhks": "Bhks",
           "Blis": "blisimbolično pismo",
           "Bopo": "bopomofo pismo",
           "Brah": "bramansko pismo",
@@ -55,6 +57,7 @@
           "Grek": "grčko pismo",
           "Gujr": "gudžaratsko pismo",
           "Guru": "gurmuki pismo",
+          "Hanb": "Hanb",
           "Hang": "hangul",
           "Hani": "han",
           "Hano": "hanuno",
@@ -71,6 +74,7 @@
           "Hung": "staromađarsko pismo",
           "Inds": "induško pismo",
           "Ital": "stari italik",
+          "Jamo": "Jamo",
           "Java": "javansko pismo",
           "Jpan": "japansko pismo",
           "Kali": "kajah-li pismo",
@@ -96,6 +100,7 @@
           "Mahj": "Mahj",
           "Mand": "mandeansko pismo",
           "Mani": "manihejsko pismo",
+          "Marc": "Marc",
           "Maya": "majanski hijeroglifi",
           "Mend": "Mend",
           "Merc": "Merc",
@@ -110,11 +115,13 @@
           "Mymr": "mijanmarsko pismo",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "n’ko pismo",
           "Ogam": "ogamsko pismo",
           "Olck": "ol čiki pismo",
           "Orkh": "orkonsko pismo",
           "Orya": "orijansko pismo",
+          "Osge": "Osge",
           "Osma": "osmanjansko pismo",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -200,6 +207,7 @@
           "Tale": "tai le pismo",
           "Talu": "novi tai lue",
           "Taml": "tamilsko pismo",
+          "Tang": "Tang",
           "Tavt": "tai viet pismo",
           "Telu": "telugu pismo",
           "Teng": "tengvar pismo",
@@ -218,6 +226,7 @@
           "Yiii": "ji pismo",
           "Zinh": "nasledno pismo",
           "Zmth": "matematička notacija",
+          "Zsye": "Zsye",
           "Zsym": "simboli",
           "Zxxx": "nepisani jezik",
           "Zyyy": "zajedničko pismo",

@@ -3,8 +3,8 @@
     "ms": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12416 $",
+          "_cldrVersion": "29"
         },
         "language": "ms"
       },
@@ -532,8 +532,8 @@
           "sux": "sux",
           "sv": "Sweden",
           "sw": "Swahili",
+          "sw-CD": "Congo Swahili",
           "swb": "Comoria",
-          "swc": "Congo Swahili",
           "syc": "syc",
           "syr": "syr",
           "szl": "szl",

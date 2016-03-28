@@ -3,8 +3,8 @@
     "bg": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "bg"
       },
@@ -237,8 +237,8 @@
               "format": {
                 "abbreviated": {
                   "midnight": "полунощ",
-                  "am": "AM",
-                  "pm": "PM",
+                  "am": "пр.об.",
+                  "pm": "сл.об.",
                   "morning1": "сутринта",
                   "morning2": "на обед",
                   "afternoon1": "следобед",

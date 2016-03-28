@@ -3,8 +3,8 @@
     "ms-BN": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "ms",
         "territory": "BN"
@@ -49,7 +49,6 @@
           "AI": "Anguilla",
           "AL": "Albania",
           "AM": "Armenia",
-          "AN": "Netherlands Antilles",
           "AO": "Angola",
           "AQ": "Antartika",
           "AR": "Argentina",

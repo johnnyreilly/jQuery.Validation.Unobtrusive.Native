@@ -3,8 +3,8 @@
     "es-CO": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12032 $"
+          "_number": "$Revision: 12217 $",
+          "_cldrVersion": "29"
         },
         "language": "es",
         "territory": "CO"
@@ -250,9 +250,9 @@
                   "noon": "m.",
                   "pm": "p. m.",
                   "morning1": "madrugada",
-                  "morning2": "a. m.",
-                  "evening1": "p. m.",
-                  "night1": "p. m."
+                  "morning2": "mañana",
+                  "evening1": "tarde",
+                  "night1": "noche"
                 },
                 "wide": {
                   "am": "a.m.",
@@ -276,12 +276,12 @@
                 },
                 "narrow": {
                   "am": "a.m.",
-                  "noon": "m.",
+                  "noon": "mediodía",
                   "pm": "p.m.",
                   "morning1": "madrugada",
-                  "morning2": "a. m.",
-                  "evening1": "p. m.",
-                  "night1": "p. m."
+                  "morning2": "mañana",
+                  "evening1": "tarde",
+                  "night1": "noche"
                 },
                 "wide": {
                   "am": "a.m.",

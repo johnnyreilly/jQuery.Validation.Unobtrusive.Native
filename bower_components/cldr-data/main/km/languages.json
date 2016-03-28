@@ -3,8 +3,8 @@
     "km": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "km"
       },
@@ -531,8 +531,8 @@
           "sux": "sux",
           "sv": "ស៊ុយអែដ",
           "sw": "ស្វាហ៊ីលី",
+          "sw-CD": "កុងហ្គោស្វាហ៊ីលី",
           "swb": "swb",
-          "swc": "កុងហ្គោស្វាហ៊ីលី",
           "syc": "syc",
           "syr": "syr",
           "szl": "szl",

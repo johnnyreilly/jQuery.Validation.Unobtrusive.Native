@@ -3,13 +3,14 @@
     "fi": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "fi"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "afaka",
           "Aghb": "kaukasianalbanialainen",
           "Ahom": "ahom",
@@ -23,6 +24,7 @@
           "Bass": "bassa",
           "Batk": "batakilainen",
           "Beng": "bengalilainen",
+          "Bhks": "Bhks",
           "Blis": "bliss-symbolit",
           "Bopo": "bopomofo",
           "Brah": "brahmi",
@@ -58,6 +60,7 @@
           "Grek": "kreikkalainen",
           "Gujr": "gudžaratilainen",
           "Guru": "gurmukhi",
+          "Hanb": "Hanb",
           "Hang": "hangul",
           "Hani": "kiinalainen han",
           "Hano": "hanunoolainen",
@@ -74,6 +77,7 @@
           "Hung": "muinaisunkarilainen",
           "Inds": "induslainen",
           "Ital": "muinaisitalialainen",
+          "Jamo": "Jamo",
           "Java": "jaavalainen",
           "Jpan": "japanilainen",
           "Jurc": "džurtšen",
@@ -102,6 +106,7 @@
           "Mahj": "mahajanilainen",
           "Mand": "mandealainen",
           "Mani": "manikealainen",
+          "Marc": "Marc",
           "Maya": "maya-hieroglyfit",
           "Mend": "mende",
           "Merc": "meroiittinen kursiivikirjoitus",
@@ -117,6 +122,7 @@
           "Mymr": "burmalainen",
           "Narb": "muinaispohjoisarabialainen",
           "Nbat": "nabatealainen",
+          "Newa": "Newa",
           "Nkgb": "naxi geba",
           "Nkoo": "n’ko",
           "Nshu": "nüshu",
@@ -124,6 +130,7 @@
           "Olck": "ol chiki",
           "Orkh": "orkhon",
           "Orya": "orijalainen",
+          "Osge": "Osge",
           "Osma": "osmanjalainen",
           "Palm": "palmyralainen",
           "Pauc": "zotuallai",
@@ -230,6 +237,7 @@
           "Yiii": "yiläinen",
           "Zinh": "peritty",
           "Zmth": "matemaattinen",
+          "Zsye": "Zsye",
           "Zsym": "symbolit",
           "Zxxx": "kirjoittamaton",
           "Zyyy": "määrittämätön",

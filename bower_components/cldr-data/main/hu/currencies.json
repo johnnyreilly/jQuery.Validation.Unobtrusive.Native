@@ -3,8 +3,8 @@
     "hu": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "hu"
       },
@@ -565,6 +565,7 @@
             "displayName-count-one": "grúz lari",
             "displayName-count-other": "grúz lari",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

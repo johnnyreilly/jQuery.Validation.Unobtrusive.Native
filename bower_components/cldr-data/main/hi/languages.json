@@ -3,8 +3,8 @@
     "hi": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11947 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "hi"
       },
@@ -532,8 +532,8 @@
           "sux": "सुमेरियन",
           "sv": "स्वीडिश",
           "sw": "स्वाहिली",
+          "sw-CD": "कांगो स्वाहिली",
           "swb": "swb",
-          "swc": "कांगो स्वाहिली",
           "syc": "क्लासिकल सिरिएक",
           "syr": "सिरिएक",
           "szl": "szl",

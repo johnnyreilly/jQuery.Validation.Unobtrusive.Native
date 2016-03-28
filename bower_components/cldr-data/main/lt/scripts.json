@@ -3,13 +3,14 @@
     "lt": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "lt"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "Afaka",
           "Aghb": "Kaukazo Albanijos",
           "Ahom": "Ahom",
@@ -23,6 +24,7 @@
           "Bass": "Bassa Vah",
           "Batk": "batak",
           "Beng": "bengalų",
+          "Bhks": "Bhks",
           "Blis": "„Bliss“ simboliai",
           "Bopo": "bopomofo",
           "Brah": "brahmi",
@@ -55,6 +57,7 @@
           "Grek": "graikų",
           "Gujr": "gudžaratų",
           "Guru": "gurmuki",
+          "Hanb": "Hanb",
           "Hang": "hangul",
           "Hani": "han",
           "Hano": "hanuno",
@@ -71,6 +74,7 @@
           "Hung": "senasis vengrų",
           "Inds": "indus",
           "Ital": "senasis italų",
+          "Jamo": "Jamo",
           "Java": "javiečių",
           "Jpan": "japonų",
           "Jurc": "Jurchen",
@@ -99,6 +103,7 @@
           "Mahj": "Mahadžani",
           "Mand": "mandėjų",
           "Mani": "maničų",
+          "Marc": "Marc",
           "Maya": "malų hieroglifai",
           "Mend": "Mende",
           "Merc": "Merojitų rankraštinis",
@@ -113,6 +118,7 @@
           "Mymr": "birmiečių",
           "Narb": "Senasis šiaurės arabų",
           "Nbat": "Nabatėjų",
+          "Newa": "Newa",
           "Nkgb": "Naxi Geba",
           "Nkoo": "enko",
           "Nshu": "Nüshu",
@@ -120,6 +126,7 @@
           "Olck": "ol čiki",
           "Orkh": "orkon",
           "Orya": "orijų",
+          "Osge": "Osge",
           "Osma": "osmanų",
           "Palm": "Palmiros",
           "Pauc": "Pau Cin Hau",
@@ -225,6 +232,7 @@
           "Yiii": "ji",
           "Zinh": "paveldėtas",
           "Zmth": "matematiniai simboliai",
+          "Zsye": "Zsye",
           "Zsym": "simbolių",
           "Zxxx": "neparašyta",
           "Zyyy": "bendri",

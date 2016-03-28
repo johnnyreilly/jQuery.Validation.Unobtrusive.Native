@@ -3,8 +3,8 @@
     "az": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11983 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "az"
       },
@@ -48,7 +48,6 @@
           "AI": "Angila",
           "AL": "Albaniya",
           "AM": "Ermənistan",
-          "AN": "Hollandiya antilleri",
           "AO": "Anqola",
           "AQ": "Antarktika",
           "AR": "Argentina",

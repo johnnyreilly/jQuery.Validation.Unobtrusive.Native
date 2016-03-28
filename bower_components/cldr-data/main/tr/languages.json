@@ -3,8 +3,8 @@
     "tr": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12373 $",
+          "_cldrVersion": "29"
         },
         "language": "tr"
       },
@@ -532,8 +532,8 @@
           "sux": "Sümerce",
           "sv": "İsveççe",
           "sw": "Svahili",
+          "sw-CD": "Kongo Svahili",
           "swb": "Komorca",
-          "swc": "Kongo Svahili",
           "syc": "Klasik Süryanice",
           "syr": "Süryanice",
           "szl": "Silezyaca",

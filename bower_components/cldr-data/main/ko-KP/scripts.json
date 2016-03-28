@@ -3,14 +3,15 @@
     "ko-KP": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "ko",
         "territory": "KP"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "아파카 문자",
           "Aghb": "코카시안 알바니아 문자",
           "Ahom": "Ahom",
@@ -24,6 +25,7 @@
           "Bass": "바사바흐 문자",
           "Batk": "바타크 문자",
           "Beng": "벵골 문자",
+          "Bhks": "Bhks",
           "Blis": "블리스기호 문자",
           "Bopo": "주음부호",
           "Brah": "브라미",
@@ -56,6 +58,7 @@
           "Grek": "그리스 문자",
           "Gujr": "구쟈라티 문자",
           "Guru": "구르무키 문자",
+          "Hanb": "Hanb",
           "Hang": "한글",
           "Hani": "한자",
           "Hano": "하누누 문자",
@@ -72,6 +75,7 @@
           "Hung": "고대 헝가리 문자",
           "Inds": "인더스 문자",
           "Ital": "고대 이탈리아 문자",
+          "Jamo": "Jamo",
           "Java": "자바 문자",
           "Jpan": "일본 문자",
           "Jurc": "줄첸 문자",
@@ -100,6 +104,7 @@
           "Mahj": "마하자니 문자",
           "Mand": "만다이아 문자",
           "Mani": "마니교 문자",
+          "Marc": "Marc",
           "Maya": "마야 상형 문자",
           "Mend": "멘데 문자",
           "Merc": "메로에 필기체",
@@ -114,6 +119,7 @@
           "Mymr": "미얀마 문자",
           "Narb": "옛 북부 아라비아 문자",
           "Nbat": "나바테아 문자",
+          "Newa": "Newa",
           "Nkgb": "나시 게바 문자",
           "Nkoo": "응코 문자",
           "Nshu": "누슈 문자",
@@ -121,6 +127,7 @@
           "Olck": "올 치키 문자",
           "Orkh": "오르혼어",
           "Orya": "오리야 문자",
+          "Osge": "Osge",
           "Osma": "오스마니아 문자",
           "Palm": "팔미라 문자",
           "Pauc": "Pauc",
@@ -226,6 +233,7 @@
           "Yiii": "이 문자",
           "Zinh": "구전 문자",
           "Zmth": "수학 기호",
+          "Zsye": "Zsye",
           "Zsym": "기호",
           "Zxxx": "구전",
           "Zyyy": "일반 문자",

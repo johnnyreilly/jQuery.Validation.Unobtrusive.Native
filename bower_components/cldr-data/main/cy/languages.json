@@ -3,8 +3,8 @@
     "cy": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "cy"
       },
@@ -532,8 +532,8 @@
           "sux": "Swmereg",
           "sv": "Swedeg",
           "sw": "Swahili",
+          "sw-CD": "Swahili’r Congo",
           "swb": "Comoreg",
-          "swc": "Swahili’r Congo",
           "syc": "Hen Syrieg",
           "syr": "Syrieg",
           "szl": "Silesieg",

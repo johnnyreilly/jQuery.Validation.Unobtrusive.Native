@@ -3,8 +3,8 @@
     "si": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12384 $",
+          "_cldrVersion": "29"
         },
         "language": "si"
       },
@@ -523,6 +523,7 @@
             "displayName-count-one": "ජෝජියානු ලැරී",
             "displayName-count-other": "ජෝජියානු ලැරී",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

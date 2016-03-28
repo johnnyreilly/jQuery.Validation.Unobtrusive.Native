@@ -3,8 +3,8 @@
     "ms-SG": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "ms",
         "territory": "SG"
@@ -335,7 +335,6 @@
                 "H": "HH",
                 "hm": "h:mm a",
                 "Hm": "HH:mm",
-                "Hmm": "H:mm",
                 "hms": "h:mm:ss a",
                 "Hms": "HH:mm:ss",
                 "hmsv": "h:mm:ss a v",
@@ -358,7 +357,7 @@
                 "yMMM": "MMM y",
                 "yMMMd": "d MMM y",
                 "yMMMEd": "E, d MMM y",
-                "yMMMM": "y MMMM",
+                "yMMMM": "MMMM y",
                 "yQQQ": "QQQ y",
                 "yQQQQ": "QQQQ y"
               },

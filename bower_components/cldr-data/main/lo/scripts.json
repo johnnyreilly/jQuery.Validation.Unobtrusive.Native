@@ -3,13 +3,14 @@
     "lo": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "lo"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "ອັບຟາກາ",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
@@ -22,6 +23,7 @@
           "Bass": "ບັດຊາ",
           "Batk": "ບາຕັກ",
           "Beng": "ເບັງກາລິ",
+          "Bhks": "Bhks",
           "Blis": "ບລິກຊິມໂບລສ",
           "Bopo": "ຈູ້ອິນ",
           "Brah": "ພຮາຫມີ",
@@ -54,6 +56,7 @@
           "Grek": "ກະເລັກ",
           "Gujr": "ຈູຈາຣາທີ",
           "Guru": "ກົວມູຄີ",
+          "Hanb": "Hanb",
           "Hang": "ຮັນກູນ",
           "Hani": "ຮານ",
           "Hano": "ຮານູໂນໂອ",
@@ -70,6 +73,7 @@
           "Hung": "ຮັງກາຮີໂບຮານ",
           "Inds": "ອິນດັດ",
           "Ital": "ອີຕາລີໂບຮານ",
+          "Jamo": "Jamo",
           "Java": "ຈາວາ",
           "Jpan": "ຍີ່ປຸ່ນ",
           "Jurc": "ຈູຮເຊັນ",
@@ -98,6 +102,7 @@
           "Mahj": "Mahj",
           "Mand": "ແມນດຽນ",
           "Mani": "ມານິແຊນ",
+          "Marc": "Marc",
           "Maya": "ມາຍາໄຮໂຮກລິບ",
           "Mend": "ເມນເດ",
           "Merc": "ເຄເລີຊີເມໂຮອິຕິກ",
@@ -112,6 +117,7 @@
           "Mymr": "ມຽນມາ",
           "Narb": "ອາຮະເບຍເໜືອໂບຮານ",
           "Nbat": "ນາບາທາທຽນ",
+          "Newa": "Newa",
           "Nkgb": "ກີບາ-ນາຊີ",
           "Nkoo": "ເອັນໂກ",
           "Nshu": "ນຸຊຸ",
@@ -119,6 +125,7 @@
           "Olck": "ໂອຊິກິ",
           "Orkh": "ອອກສມັນຍາ",
           "Orya": "ໂອຣິຢາ",
+          "Osge": "Osge",
           "Osma": "Osma",
           "Palm": "ພາລໄມຮິນ",
           "Pauc": "Pauc",
@@ -224,6 +231,7 @@
           "Yiii": "ຍີ",
           "Zinh": "ອິນເຮຮິດ",
           "Zmth": "ເຄື່ອງໝາຍທາງຄະນິດສາດ",
+          "Zsye": "Zsye",
           "Zsym": "ສັນຍາລັກ",
           "Zxxx": "ບໍ່ມີພາສາຂຽນ",
           "Zyyy": "ສາມັນ",

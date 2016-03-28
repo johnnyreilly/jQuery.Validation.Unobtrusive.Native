@@ -3,13 +3,14 @@
     "ja": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11989 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ja"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "アファカ文字",
           "Aghb": "カフカス・アルバニア文字",
           "Ahom": "Ahom",
@@ -23,6 +24,7 @@
           "Bass": "バサ文字",
           "Batk": "バタク文字",
           "Beng": "ベンガル文字",
+          "Bhks": "Bhks",
           "Blis": "ブリスシンボル",
           "Bopo": "注音字母",
           "Brah": "ブラーフミー文字",
@@ -55,6 +57,7 @@
           "Grek": "ギリシャ文字",
           "Gujr": "グジャラート文字",
           "Guru": "グルムキー文字",
+          "Hanb": "Hanb",
           "Hang": "ハングル",
           "Hani": "漢字",
           "Hano": "ハヌノオ文字",
@@ -71,6 +74,7 @@
           "Hung": "古代ハンガリー文字",
           "Inds": "インダス文字",
           "Ital": "古イタリア文字",
+          "Jamo": "Jamo",
           "Java": "ジャワ文字",
           "Jpan": "日本語の文字",
           "Jurc": "女真文字",
@@ -99,6 +103,7 @@
           "Mahj": "マハージャニー文字",
           "Mand": "マンダ文字",
           "Mani": "マニ文字",
+          "Marc": "Marc",
           "Maya": "マヤ象形文字",
           "Mend": "メンデ文字",
           "Merc": "メロエ文字草書体",
@@ -113,6 +118,7 @@
           "Mymr": "ミャンマー文字",
           "Narb": "古代北アラビア文字",
           "Nbat": "ナバテア文字",
+          "Newa": "Newa",
           "Nkgb": "ナシ族ゲバ文字",
           "Nkoo": "ンコ文字",
           "Nshu": "女書",
@@ -120,6 +126,7 @@
           "Olck": "オルチキ文字",
           "Orkh": "オルホン文字",
           "Orya": "オリヤー文字",
+          "Osge": "Osge",
           "Osma": "オスマニア文字",
           "Palm": "パルミラ文字",
           "Pauc": "パウ・チン・ハウ文字",
@@ -225,6 +232,7 @@
           "Yiii": "イ文字",
           "Zinh": "基底文字の種別を継承する結合文字",
           "Zmth": "数学記号",
+          "Zsye": "Zsye",
           "Zsym": "記号文字",
           "Zxxx": "非表記",
           "Zyyy": "共通文字",

@@ -3,8 +3,8 @@
     "ru-BY": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "ru",
         "territory": "BY"
@@ -129,6 +129,25 @@
             "unitPattern-count-other": "{0} квадратного дюйма",
             "perUnitPattern": "{0} на квадратный дюйм"
           },
+          "concentr-karat": {
+            "displayName": "караты",
+            "unitPattern-count-one": "{0} карат",
+            "unitPattern-count-few": "{0} карата",
+            "unitPattern-count-many": "{0} карат",
+            "unitPattern-count-other": "{0} карата"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "литры на километр",
             "unitPattern-count-one": "{0} литр на километр",
@@ -149,6 +168,10 @@
             "unitPattern-count-few": "{0} мили на галлон",
             "unitPattern-count-many": "{0} миль на галлон",
             "unitPattern-count-other": "{0} мили на галлон"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "терабайты",
@@ -696,13 +719,6 @@
             "unitPattern-count-many": "{0} миллибар",
             "unitPattern-count-other": "{0} миллибара"
           },
-          "proportion-karat": {
-            "displayName": "караты",
-            "unitPattern-count-one": "{0} карат",
-            "unitPattern-count-few": "{0} карата",
-            "unitPattern-count-many": "{0} карат",
-            "unitPattern-count-other": "{0} карата"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "километры в час",
             "unitPattern-count-one": "{0} километр в час",
@@ -886,6 +902,11 @@
             "unitPattern-count-other": "{0} галлона",
             "perUnitPattern": "{0} на галлон"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "кварты",
             "unitPattern-count-one": "{0} кварта",
@@ -1054,6 +1075,25 @@
             "unitPattern-count-other": "{0} кв. дюйм.",
             "perUnitPattern": "{0}/дюйм²"
           },
+          "concentr-karat": {
+            "displayName": "кар",
+            "unitPattern-count-one": "{0} кар",
+            "unitPattern-count-few": "{0} кар",
+            "unitPattern-count-many": "{0} кар",
+            "unitPattern-count-other": "{0} кар"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "л/км",
             "unitPattern-count-one": "{0} л/км",
@@ -1074,6 +1114,10 @@
             "unitPattern-count-few": "{0} мили/галл.",
             "unitPattern-count-many": "{0} миль/галл.",
             "unitPattern-count-other": "{0} мили/галл."
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "ТБ",
@@ -1621,13 +1665,6 @@
             "unitPattern-count-many": "{0} мбар",
             "unitPattern-count-other": "{0} мбар"
           },
-          "proportion-karat": {
-            "displayName": "кар",
-            "unitPattern-count-one": "{0} кар",
-            "unitPattern-count-few": "{0} кар",
-            "unitPattern-count-many": "{0} кар",
-            "unitPattern-count-other": "{0} кар"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "км/ч",
             "unitPattern-count-one": "{0} км/ч",
@@ -1811,6 +1848,11 @@
             "unitPattern-count-other": "{0} гал.",
             "perUnitPattern": "{0}/галл"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "кварт.",
             "unitPattern-count-one": "{0} кварт.",
@@ -1979,6 +2021,25 @@
             "unitPattern-count-other": "{0} кв. дюйм.",
             "perUnitPattern": "{0}/дюйм²"
           },
+          "concentr-karat": {
+            "displayName": "кар",
+            "unitPattern-count-one": "{0} кар",
+            "unitPattern-count-few": "{0} кар",
+            "unitPattern-count-many": "{0} кар",
+            "unitPattern-count-other": "{0} кар"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "л/км",
             "unitPattern-count-one": "{0} л/км",
@@ -1999,6 +2060,10 @@
             "unitPattern-count-few": "{0} мили/галл.",
             "unitPattern-count-many": "{0} мили/галл.",
             "unitPattern-count-other": "{0} мили/галл."
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "ТБ",
@@ -2546,13 +2611,6 @@
             "unitPattern-count-many": "{0} мбар",
             "unitPattern-count-other": "{0} мбар"
           },
-          "proportion-karat": {
-            "displayName": "кар",
-            "unitPattern-count-one": "{0} кар",
-            "unitPattern-count-few": "{0} кар",
-            "unitPattern-count-many": "{0} кар",
-            "unitPattern-count-other": "{0} кар"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "км/ч",
             "unitPattern-count-one": "{0} км/ч",
@@ -2735,6 +2793,11 @@
             "unitPattern-count-many": "{0} гал.",
             "unitPattern-count-other": "{0} гал.",
             "perUnitPattern": "{0}/галл"
+          },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
           },
           "volume-quart": {
             "displayName": "кварт.",

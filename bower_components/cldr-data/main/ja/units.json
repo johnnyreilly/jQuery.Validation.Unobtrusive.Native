@@ -3,8 +3,8 @@
     "ja": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11989 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ja"
       },
@@ -80,6 +80,22 @@
             "unitPattern-count-other": "{0} 平方インチ",
             "perUnitPattern": "{0}/平方インチ"
           },
+          "concentr-karat": {
+            "displayName": "金",
+            "unitPattern-count-other": "{0} 金"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "リットル毎キロメートル",
             "unitPattern-count-other": "{0} リットル毎キロメートル"
@@ -91,6 +107,10 @@
           "consumption-mile-per-gallon": {
             "displayName": "マイル毎ガロン",
             "unitPattern-count-other": "{0} マイル毎ガロン"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "テラバイト",
@@ -416,10 +436,6 @@
             "displayName": "ミリバール",
             "unitPattern-count-other": "{0} ミリバール"
           },
-          "proportion-karat": {
-            "displayName": "金",
-            "unitPattern-count-other": "{0} 金"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "キロメートル毎時",
             "unitPattern-count-other": "時速 {0} キロメートル"
@@ -528,6 +544,11 @@
             "unitPattern-count-other": "{0} ガロン",
             "perUnitPattern": "{0}/ガロン"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "クォート",
             "unitPattern-count-other": "{0} クォート"
@@ -630,6 +651,22 @@
             "unitPattern-count-other": "{0} in²",
             "perUnitPattern": "{0}/in²"
           },
+          "concentr-karat": {
+            "displayName": "金",
+            "unitPattern-count-other": "{0} 金"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "L/km",
             "unitPattern-count-other": "{0} L/km"
@@ -641,6 +678,10 @@
           "consumption-mile-per-gallon": {
             "displayName": "マイル/ガロン",
             "unitPattern-count-other": "{0} mpg"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "テラバイト",
@@ -966,10 +1007,6 @@
             "displayName": "ミリバール",
             "unitPattern-count-other": "{0} mb"
           },
-          "proportion-karat": {
-            "displayName": "金",
-            "unitPattern-count-other": "{0} 金"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "km/h",
             "unitPattern-count-other": "{0} km/h"
@@ -1078,6 +1115,11 @@
             "unitPattern-count-other": "{0} gal",
             "perUnitPattern": "{0}/gal"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "クォート",
             "unitPattern-count-other": "{0} qt"
@@ -1180,6 +1222,22 @@
             "unitPattern-count-other": "{0}in²",
             "perUnitPattern": "{0}/in²"
           },
+          "concentr-karat": {
+            "displayName": "金",
+            "unitPattern-count-other": "{0}K"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "L/km",
             "unitPattern-count-other": "{0}L/km"
@@ -1191,6 +1249,10 @@
           "consumption-mile-per-gallon": {
             "displayName": "マイル/ガロン",
             "unitPattern-count-other": "{0}mpg"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "テラバイト",
@@ -1516,10 +1578,6 @@
             "displayName": "ミリバール",
             "unitPattern-count-other": "{0}mb"
           },
-          "proportion-karat": {
-            "displayName": "金",
-            "unitPattern-count-other": "{0}K"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "km/h",
             "unitPattern-count-other": "{0}km/h"
@@ -1627,6 +1685,11 @@
             "displayName": "ガロン",
             "unitPattern-count-other": "{0}gal",
             "perUnitPattern": "{0}/gal"
+          },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
           },
           "volume-quart": {
             "displayName": "クォート",

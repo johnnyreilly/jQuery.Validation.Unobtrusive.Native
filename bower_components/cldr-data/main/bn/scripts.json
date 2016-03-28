@@ -3,13 +3,14 @@
     "bn": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12306 $",
+          "_cldrVersion": "29"
         },
         "language": "bn"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "আরবি",
@@ -22,6 +23,7 @@
           "Bass": "Bass",
           "Batk": "বাটাক",
           "Beng": "বাংলা",
+          "Bhks": "Bhks",
           "Blis": "ব্লিসপ্রতীক",
           "Bopo": "বোপোমোফো",
           "Brah": "ব্রাহ্মী",
@@ -54,6 +56,7 @@
           "Grek": "গ্রিক",
           "Gujr": "গুজরাটি",
           "Guru": "গুরুমুখি",
+          "Hanb": "Hanb",
           "Hang": "হাঙ্গুল",
           "Hani": "হ্যান",
           "Hano": "হ্যানুনু",
@@ -70,6 +73,7 @@
           "Hung": "পুরোনো হাঙ্গেরীয়",
           "Inds": "সিন্ধু",
           "Ital": "প্রাচীন ইতালি",
+          "Jamo": "Jamo",
           "Java": "জাভানিজ",
           "Jpan": "জাপানী",
           "Kali": "কায়াহ লি",
@@ -95,6 +99,7 @@
           "Mahj": "Mahj",
           "Mand": "ম্যান্ডায়ীন",
           "Mani": "ম্যানিচাইন",
+          "Marc": "Marc",
           "Maya": "মায়ান হায়ারোগ্লিপ",
           "Mend": "Mend",
           "Merc": "Merc",
@@ -109,11 +114,13 @@
           "Mymr": "মায়ানমার",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "এনকো",
           "Ogam": "ওঘাম",
           "Olck": "ওল চিকি",
           "Orkh": "অর্খোন",
           "Orya": "ওড়িয়া",
+          "Osge": "Osge",
           "Osma": "ওসমানিয়",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -199,6 +206,7 @@
           "Tale": "তাইলে",
           "Talu": "নতুন তাই লু",
           "Taml": "তামিল",
+          "Tang": "Tang",
           "Tavt": "তাই ভিয়েৎ",
           "Telu": "তেলেগু",
           "Teng": "তেঙ্গোয়ার",
@@ -217,6 +225,7 @@
           "Yiii": "উই",
           "Zinh": "কাই",
           "Zmth": "গানিতিক চিহ্ন",
+          "Zsye": "Zsye",
           "Zsym": "প্রতীকসমুহ",
           "Zxxx": "অলিখিত",
           "Zyyy": "সাধারন",

@@ -3,13 +3,14 @@
     "kn": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11977 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "kn"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "ಅರೇಬಿಕ್",
@@ -22,6 +23,7 @@
           "Bass": "Bass",
           "Batk": "ಬಾಟಕ್",
           "Beng": "ಬೆಂಗಾಲಿ",
+          "Bhks": "Bhks",
           "Blis": "ಬ್ಲಿಸ್‌ಸಿಂಬಲ್ಸ್",
           "Bopo": "ಬೋಪೊಮೋಫೋ",
           "Brah": "ಬ್ರಾಹ್ಮಿ",
@@ -54,6 +56,7 @@
           "Grek": "ಗ್ರೀಕ್",
           "Gujr": "ಗುಜರಾತಿ",
           "Guru": "ಗುರ್ಮುಖಿ",
+          "Hanb": "Hanb",
           "Hang": "ಹ್ಯಾಂಗುಲ್",
           "Hani": "ಹಾನ್",
           "Hano": "ಹನೂನೂ",
@@ -70,6 +73,7 @@
           "Hung": "ಪ್ರಾಚೀನ ಹಂಗೇರಿಯನ್",
           "Inds": "ಸಿಂಧೂ",
           "Ital": "ಪ್ರಾಚೀನ್ ಇಟಾಲಿಕ್",
+          "Jamo": "Jamo",
           "Java": "ಜಾವನೀಸ್",
           "Jpan": "ಜಾಪನೀಸ್",
           "Kali": "ಕೆಯಾ ಲಿ",
@@ -95,6 +99,7 @@
           "Mahj": "Mahj",
           "Mand": "ಮಂಡೇಯನ್",
           "Mani": "ಮನಿಚೈಯನ್",
+          "Marc": "Marc",
           "Maya": "ಮಯಾನ್ ಹೀರೋಗ್ಲಿಫ್ಸ್",
           "Mend": "Mend",
           "Merc": "Merc",
@@ -109,11 +114,13 @@
           "Mymr": "ಮ್ಯಾನ್ಮಾರ್",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "ಎನ್‍ಕೋ",
           "Ogam": "ಓಘಮ್",
           "Olck": "ಓಲ್ ಚಿಕಿ",
           "Orkh": "ಓರ್ಖೋನ್",
           "Orya": "ಒರಿಯಾ",
+          "Osge": "Osge",
           "Osma": "ಓಸ್ಮಾನ್ಯಾ",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -199,6 +206,7 @@
           "Tale": "ಥಾಯ್ ಲಿ",
           "Talu": "ನ್ಯೂ ಥಾಯ್ ಲುಇ",
           "Taml": "ತಮಿಳು",
+          "Tang": "Tang",
           "Tavt": "ಥಾಯ್ ವಿಯೆಟ್",
           "Telu": "ತೆಲುಗು",
           "Teng": "ತೆಂಗ್‌ವಾರ್",
@@ -217,6 +225,7 @@
           "Yiii": "ಯಿ",
           "Zinh": "ಇನ್‍ಹೆರಿಟೆಡ್",
           "Zmth": "ಗಣೀತ ಸಂಕೇತಲಿಪಿ",
+          "Zsye": "Zsye",
           "Zsym": "ಸಂಕೇತಗಳು",
           "Zxxx": "ಅಲಿಖಿತ",
           "Zyyy": "ಸಾಮಾನ್ಯ",

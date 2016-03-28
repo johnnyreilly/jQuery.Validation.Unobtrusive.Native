@@ -3,13 +3,14 @@
     "uk": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "uk"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "афака",
           "Aghb": "кавказька албанська",
           "Ahom": "ахом",
@@ -23,6 +24,7 @@
           "Bass": "басса",
           "Batk": "Батак",
           "Beng": "бенгальська",
+          "Bhks": "Bhks",
           "Blis": "символи Блісса",
           "Bopo": "бопомофо",
           "Brah": "Брахмі",
@@ -55,6 +57,7 @@
           "Grek": "грецька",
           "Gujr": "гуджараті",
           "Guru": "гурмухі",
+          "Hanb": "Hanb",
           "Hang": "хангиль",
           "Hani": "китайська",
           "Hano": "Хануну",
@@ -71,6 +74,7 @@
           "Hung": "Давньоугорський",
           "Inds": "Харапський",
           "Ital": "Давньоіталійський",
+          "Jamo": "Jamo",
           "Java": "Яванський",
           "Jpan": "японська",
           "Kali": "Кая Лі",
@@ -97,6 +101,7 @@
           "Mahj": "Mahj",
           "Mand": "Мандейський",
           "Mani": "Маніхейський",
+          "Marc": "Marc",
           "Maya": "Майя ієрогліфічний",
           "Mend": "Mend",
           "Merc": "Merc",
@@ -111,11 +116,13 @@
           "Mymr": "мʼянмська",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "Нко",
           "Ogam": "Огамічний",
           "Olck": "Сантальський",
           "Orkh": "Орхонський",
           "Orya": "орія",
+          "Osge": "Osge",
           "Osma": "Османський",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -220,6 +227,7 @@
           "Yiii": "Йї",
           "Zinh": "успадкована",
           "Zmth": "математична",
+          "Zsye": "Zsye",
           "Zsym": "символьна",
           "Zxxx": "безписемна",
           "Zyyy": "звичайна",

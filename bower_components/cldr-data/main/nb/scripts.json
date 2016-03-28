@@ -3,13 +3,14 @@
     "nb": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11996 $"
+          "_number": "$Revision: 12379 $",
+          "_cldrVersion": "29"
         },
         "language": "nb"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "afaka",
           "Aghb": "kaukasus-albansk",
           "Ahom": "ahom",
@@ -23,6 +24,7 @@
           "Bass": "bassa vah",
           "Batk": "batak",
           "Beng": "bengalsk",
+          "Bhks": "Bhks",
           "Blis": "blissymbol",
           "Bopo": "bopomofo",
           "Brah": "brahmi",
@@ -55,6 +57,7 @@
           "Grek": "gresk",
           "Gujr": "gujarati",
           "Guru": "gurmukhi",
+          "Hanb": "Hanb",
           "Hang": "hangul",
           "Hani": "han",
           "Hano": "hanunoo",
@@ -71,6 +74,7 @@
           "Hung": "gammelungarsk",
           "Inds": "indus",
           "Ital": "gammelitalisk",
+          "Jamo": "Jamo",
           "Java": "javanesisk",
           "Jpan": "japansk",
           "Jurc": "jurchen",
@@ -99,6 +103,7 @@
           "Mahj": "mahajani",
           "Mand": "mandaisk",
           "Mani": "manikeisk",
+          "Marc": "Marc",
           "Maya": "maya-hieroglyfer",
           "Mend": "mende",
           "Merc": "meroitisk kursiv",
@@ -113,6 +118,7 @@
           "Mymr": "myanmar",
           "Narb": "gammelnordarabisk",
           "Nbat": "nabataeansk",
+          "Newa": "Newa",
           "Nkgb": "naxi geba",
           "Nkoo": "n’ko",
           "Nshu": "nüshu",
@@ -120,6 +126,7 @@
           "Olck": "ol-chiki",
           "Orkh": "orkhon",
           "Orya": "oriya",
+          "Osge": "Osge",
           "Osma": "osmanya",
           "Palm": "palmyrensk",
           "Pauc": "pau cin hau",
@@ -139,7 +146,7 @@
           "Qaaf": "qaaf",
           "Qaag": "qaag",
           "Qaah": "qaah",
-          "Qaaj": "qaaj",
+          "Qaaj": "Qaaj",
           "Qaak": "qaak",
           "Qaal": "qaal",
           "Qaam": "qaam",
@@ -225,6 +232,7 @@
           "Yiii": "yi",
           "Zinh": "nedarvet",
           "Zmth": "matematisk notasjon",
+          "Zsye": "Zsye",
           "Zsym": "symboler",
           "Zxxx": "språk uten skrift",
           "Zyyy": "felles",

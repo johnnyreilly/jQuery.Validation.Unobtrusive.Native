@@ -3,14 +3,15 @@
     "da-GL": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "da",
         "territory": "GL"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "afaka",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
@@ -24,6 +25,7 @@
           "Bass": "bassa",
           "Batk": "batak",
           "Beng": "bengali",
+          "Bhks": "Bhks",
           "Blis": "blissymboler",
           "Bopo": "bopomofo",
           "Brah": "bramisk",
@@ -56,6 +58,7 @@
           "Grek": "græsk",
           "Gujr": "gujarati",
           "Guru": "gurmukhi",
+          "Hanb": "Hanb",
           "Hang": "hangul",
           "Hani": "han",
           "Hano": "hanunoo",
@@ -72,6 +75,7 @@
           "Hung": "oldungarsk",
           "Inds": "indus",
           "Ital": "Olditalisk",
+          "Jamo": "Jamo",
           "Java": "javanesisk",
           "Jpan": "japansk",
           "Jurc": "jurchen",
@@ -100,6 +104,7 @@
           "Mahj": "Mahj",
           "Mand": "mandaisk",
           "Mani": "manikæisk",
+          "Marc": "Marc",
           "Maya": "mayahieroglyffer",
           "Mend": "mende",
           "Merc": "metroitisk sammenhængende",
@@ -114,6 +119,7 @@
           "Mymr": "burmesisk",
           "Narb": "gammelt nordarabisk",
           "Nbat": "nabateisk",
+          "Newa": "Newa",
           "Nkgb": "nakhi geba",
           "Nkoo": "n’ko",
           "Nshu": "nüshu",
@@ -121,6 +127,7 @@
           "Olck": "ol-chiki",
           "Orkh": "orkhon",
           "Orya": "oriya",
+          "Osge": "Osge",
           "Osma": "osmannisk",
           "Palm": "palmyrensk",
           "Pauc": "Pauc",
@@ -226,6 +233,7 @@
           "Yiii": "yi",
           "Zinh": "arvet",
           "Zmth": "zmth",
+          "Zsye": "Zsye",
           "Zsym": "zsym",
           "Zxxx": "uden skriftsprog",
           "Zyyy": "fælles",

@@ -3,8 +3,8 @@
     "en-GB": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11979 $"
+          "_number": "$Revision: 12217 $",
+          "_cldrVersion": "29"
         },
         "language": "en",
         "territory": "GB"
@@ -290,7 +290,7 @@
                   "midnight": "midnight",
                   "am": "a",
                   "am-alt-variant": "am",
-                  "noon": "n",
+                  "noon": "noon",
                   "pm": "p",
                   "pm-alt-variant": "pm",
                   "morning1": "in the morning",

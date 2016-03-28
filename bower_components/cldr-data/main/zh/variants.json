@@ -3,8 +3,8 @@
     "zh": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12031 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "zh"
       },
@@ -25,12 +25,14 @@
           "BAKU1926": "统一土耳其拉丁字母",
           "BALANKA": "BALANKA",
           "BARLA": "BARLA",
+          "BASICENG": "BASICENG",
           "BAUDDHA": "佛陀梵文",
           "BISCAYAN": "比斯开方言",
           "BISKE": "圣乔治/比拉方言",
           "BOHORIC": "BOHORIC",
           "BOONT": "布恩特林方言",
           "COLB1945": "COLB1945",
+          "CORNU": "CORNU",
           "DAJNKO": "DAJNKO",
           "EKAVSK": "EKAVSK",
           "EMODENG": "EMODENG",
@@ -53,6 +55,7 @@
           "MONOTON": "单音字母",
           "NDYUKA": "Ndyuka 方言",
           "NEDIS": "Natisone 方言",
+          "NEWFOUND": "NEWFOUND",
           "NJIVA": "Gniva/Njiva 方言",
           "NULIK": "NULIK",
           "OSOJS": "Oseacco/Osojane 方言",
@@ -70,6 +73,7 @@
           "SAAHO": "萨霍文",
           "SCOTLAND": "苏格兰标准英文",
           "SCOUSE": "利物浦方言",
+          "SIMPLE": "SIMPLE",
           "SOLBA": "Stolvizza/Solbica 方言",
           "SOTAV": "SOTAV",
           "SURMIRAN": "瑞士苏迈拉方言",

@@ -3,8 +3,8 @@
     "ar-QA": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "ar",
         "territory": "QA"
@@ -533,8 +533,8 @@
           "sux": "السومارية",
           "sv": "السويدية",
           "sw": "السواحلية",
+          "sw-CD": "الكونغو السواحلية",
           "swb": "القمرية",
-          "swc": "الكونغو السواحلية",
           "syc": "سريانية تقليدية",
           "syr": "السريانية",
           "szl": "szl",

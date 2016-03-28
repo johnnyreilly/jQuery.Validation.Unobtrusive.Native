@@ -3,8 +3,8 @@
     "es-HN": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: $",
+          "_cldrVersion": "29"
         },
         "language": "es",
         "territory": "HN"

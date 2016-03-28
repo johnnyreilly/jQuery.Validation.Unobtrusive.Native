@@ -3,8 +3,8 @@
     "cy": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "cy"
       },
@@ -25,12 +25,14 @@
           "BAKU1926": "BAKU1926",
           "BALANKA": "BALANKA",
           "BARLA": "BARLA",
+          "BASICENG": "BASICENG",
           "BAUDDHA": "BAUDDHA",
           "BISCAYAN": "BISCAYAN",
           "BISKE": "BISKE",
           "BOHORIC": "Gwyddor Bohorič",
           "BOONT": "BOONT",
           "COLB1945": "COLB1945",
+          "CORNU": "CORNU",
           "DAJNKO": "gwyddor Dajnko",
           "EKAVSK": "EKAVSK",
           "EMODENG": "Saesneg Modern Cynnar",
@@ -53,6 +55,7 @@
           "MONOTON": "MONOTON",
           "NDYUKA": "tafodiaith Ndyuka",
           "NEDIS": "tafodiaith Natisone",
+          "NEWFOUND": "NEWFOUND",
           "NJIVA": "tafodiaith Gniva/Njiva",
           "NULIK": "NULIK",
           "OSOJS": "tafodiaith Oseacco/Osojane",
@@ -70,6 +73,7 @@
           "SAAHO": "SAAHO",
           "SCOTLAND": "Saesneg Safonol yr Alban",
           "SCOUSE": "SCOUSE",
+          "SIMPLE": "SIMPLE",
           "SOLBA": "SOLBA",
           "SOTAV": "SOTAV",
           "SURMIRAN": "SURMIRAN",

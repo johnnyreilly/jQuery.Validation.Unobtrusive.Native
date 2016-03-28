@@ -3,8 +3,8 @@
     "el": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "el"
       },
@@ -48,7 +48,6 @@
           "AI": "Ανγκουίλα",
           "AL": "Αλβανία",
           "AM": "Αρμενία",
-          "AN": "Ολλανδικές Αντίλλες",
           "AO": "Ανγκόλα",
           "AQ": "Ανταρκτική",
           "AR": "Αργεντινή",

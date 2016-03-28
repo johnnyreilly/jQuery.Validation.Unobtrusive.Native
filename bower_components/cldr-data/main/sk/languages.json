@@ -3,8 +3,8 @@
     "sk": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12411 $",
+          "_cldrVersion": "29"
         },
         "language": "sk"
       },
@@ -531,8 +531,8 @@
           "sux": "sumerčina",
           "sv": "švédčina",
           "sw": "svahilčina",
+          "sw-CD": "svahilčina (konžská)",
           "swb": "komorčina",
-          "swc": "svahilčina (konžská)",
           "syc": "klasická sýrčina",
           "syr": "sýrčina",
           "szl": "szl",

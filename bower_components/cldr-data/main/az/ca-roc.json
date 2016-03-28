@@ -3,8 +3,8 @@
     "az": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11983 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "az"
       },
@@ -224,8 +224,16 @@
             "dayPeriods": {
               "format": {
                 "abbreviated": {
+                  "midnight": "gecəyarı",
                   "am": "AM",
-                  "pm": "PM"
+                  "noon": "günorta",
+                  "pm": "PM",
+                  "morning1": "sübh",
+                  "morning2": "səhər",
+                  "afternoon1": "gündüz",
+                  "evening1": "axşamüstü",
+                  "night1": "axşam",
+                  "night2": "gecə"
                 },
                 "narrow": {
                   "midnight": "gecəyarı",

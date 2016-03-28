@@ -3,8 +3,8 @@
     "zh-Hant": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11989 $"
+          "_number": "$Revision: 12390 $",
+          "_cldrVersion": "29"
         },
         "language": "zh",
         "script": "Hant"
@@ -238,8 +238,8 @@
               "format": {
                 "abbreviated": {
                   "midnight": "午夜",
-                  "am": "AM",
-                  "pm": "PM",
+                  "am": "上午",
+                  "pm": "下午",
                   "morning1": "清晨",
                   "morning2": "上午",
                   "afternoon1": "中午",
@@ -273,8 +273,8 @@
               "stand-alone": {
                 "abbreviated": {
                   "midnight": "午夜",
-                  "am": "AM",
-                  "pm": "PM",
+                  "am": "上午",
+                  "pm": "下午",
                   "morning1": "清晨",
                   "morning2": "上午",
                   "afternoon1": "中午",
@@ -295,8 +295,8 @@
                 },
                 "wide": {
                   "midnight": "午夜",
-                  "am": "AM",
-                  "pm": "PM",
+                  "am": "上午",
+                  "pm": "下午",
                   "morning1": "清晨",
                   "morning2": "上午",
                   "afternoon1": "中午",

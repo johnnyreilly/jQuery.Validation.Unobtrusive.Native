@@ -3,8 +3,8 @@
     "kn": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11977 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "kn"
       },
@@ -96,6 +96,23 @@
             "unitPattern-count-other": "{0} ಚದರ ಅಂಗುಲಗಳು",
             "perUnitPattern": "{0} ಚದರ ಅಂಗುಲಕ್ಕೆ"
           },
+          "concentr-karat": {
+            "displayName": "ಕಾರಟ್‌ಗಳು",
+            "unitPattern-count-one": "{0} ಕಾರಟ್‌",
+            "unitPattern-count-other": "{0} ಕಾರಟ್‌ಗಳು"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "ಲೀಟರ್ ಪ್ರತಿ ಕಿಲೋಮೀಟರ್‌ಗೆ",
             "unitPattern-count-one": "{0} ಲೀಟರ್ ಪ್ರತಿ ಕಿಲೋಮೀಟರ್‌ಗೆ",
@@ -110,6 +127,10 @@
             "displayName": "ಪ್ರತಿ ಗ್ಯಾಲನ್‌‌ಗೆ ಮೈಲಿಗಳು",
             "unitPattern-count-one": "{0} ಪ್ರತಿ ಗ್ಯಾಲನ್‌‌ಗೆ ಮೈಲಿ",
             "unitPattern-count-other": "{0} ಪ್ರತಿ ಗ್ಯಾಲನ್‌ಗೆ ಮೈಲಿಗಳು"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "ಟೆರಾಬೈಟ್‌ಗಳು",
@@ -509,11 +530,6 @@
             "unitPattern-count-one": "{0} ಮಿಲಿಬಾರ್",
             "unitPattern-count-other": "{0} ಮಿಲಿಬಾರ್‌ಗಳು"
           },
-          "proportion-karat": {
-            "displayName": "ಕಾರಟ್‌ಗಳು",
-            "unitPattern-count-one": "{0} ಕಾರಟ್‌",
-            "unitPattern-count-other": "{0} ಕಾರಟ್‌ಗಳು"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "ಗಂಟೆಗೆ ಕಿಲೋಮೀಟರ್‌ಗಳು",
             "unitPattern-count-one": "{0} ಕಿಲೋಮಿಟರ್ ಪ್ರತಿ ಗಂಟೆಗೆ",
@@ -647,6 +663,11 @@
             "unitPattern-count-other": "{0} ಗ್ಯಾಲನ್‌ಗಳು",
             "perUnitPattern": "{0} ಪ್ರತಿ ಗ್ಯಾಲನ್‍ಗೆ"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "ಕಾಲುಭಾಗಗಳು",
             "unitPattern-count-one": "{0} ಕಾಲುಭಾಗ",
@@ -771,6 +792,23 @@
             "unitPattern-count-other": "{0} ಅಂ²",
             "perUnitPattern": "{0}/ಅಂ²ಕ್ಕೆ"
           },
+          "concentr-karat": {
+            "displayName": "ಕಾರ.",
+            "unitPattern-count-one": "{0} ಕಾರ.",
+            "unitPattern-count-other": "{0} ಕಾರ."
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "ಲೀ/ಕಿ.ಮೀ",
             "unitPattern-count-one": "{0} ಲೀ/ಕಿ.ಮೀ",
@@ -785,6 +823,10 @@
             "displayName": "ಮೈ/ಗ್ಯಾ",
             "unitPattern-count-one": "{0} ಪ್ರ.ಗ್ಯಾ.ಮೈ.",
             "unitPattern-count-other": "{0} ಪ್ರ.ಗ್ಯಾ.ಮೈ."
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "ಟೆ.ಬೈ.",
@@ -1184,11 +1226,6 @@
             "unitPattern-count-one": "{0} ಮಿ.ಬಾರ್",
             "unitPattern-count-other": "{0} ಮಿ.ಬಾರ್"
           },
-          "proportion-karat": {
-            "displayName": "ಕಾರ.",
-            "unitPattern-count-one": "{0} ಕಾರ.",
-            "unitPattern-count-other": "{0} ಕಾರ."
-          },
           "speed-kilometer-per-hour": {
             "displayName": "ಕಿ.ಮೀ/ಗಂ",
             "unitPattern-count-one": "{0} ಕಿ.ಮೀ./ಗಂ",
@@ -1322,6 +1359,11 @@
             "unitPattern-count-other": "{0} ಗ್ಯಾ",
             "perUnitPattern": "{0}/ಗ್ಯಾ"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "ಕಾ.ಭಾ",
             "unitPattern-count-one": "{0} ಕಾ.ಭಾ",
@@ -1446,6 +1488,23 @@
             "unitPattern-count-other": "{0} ಅಂ²",
             "perUnitPattern": "{0}/ಅಂ²ಕ್ಕೆ"
           },
+          "concentr-karat": {
+            "displayName": "ಕಾರ.",
+            "unitPattern-count-one": "{0} ಕಾರ.",
+            "unitPattern-count-other": "{0} ಕಾರ."
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "ಲೀ/ಕಿ.ಮೀ",
             "unitPattern-count-one": "{0} ಲೀ/ಕಿ.ಮೀ",
@@ -1460,6 +1519,10 @@
             "displayName": "ಮೈ/ಗ್ಯಾ",
             "unitPattern-count-one": "{0} ಪ್ರ.ಗ್ಯಾ.ಮೈ.",
             "unitPattern-count-other": "{0} ಪ್ರ.ಗ್ಯಾ.ಮೈ."
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "ಟೆ.ಬೈ.",
@@ -1859,11 +1922,6 @@
             "unitPattern-count-one": "{0}ಮಿ.ಬಾ.",
             "unitPattern-count-other": "{0}ಮಿ.ಬಾ."
           },
-          "proportion-karat": {
-            "displayName": "ಕಾರ.",
-            "unitPattern-count-one": "{0} ಕಾರ.",
-            "unitPattern-count-other": "{0} ಕಾರ."
-          },
           "speed-kilometer-per-hour": {
             "displayName": "ಕಿ.ಮೀ/ಗಂ",
             "unitPattern-count-one": "{0}ಕಿ.ಮೀ./ಗಂ",
@@ -1996,6 +2054,11 @@
             "unitPattern-count-one": "{0} ಗ್ಯಾ",
             "unitPattern-count-other": "{0} ಗ್ಯಾ",
             "perUnitPattern": "{0}/ಗ್ಯಾ"
+          },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
           },
           "volume-quart": {
             "displayName": "ಕಾ.ಭಾ",

@@ -3,8 +3,8 @@
     "sr-Latn": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12417 $",
+          "_cldrVersion": "29"
         },
         "language": "sr",
         "script": "Latn"
@@ -49,7 +49,6 @@
           "AI": "Angvila",
           "AL": "Albanija",
           "AM": "Jermenija",
-          "AN": "Holandski Antili",
           "AO": "Angola",
           "AQ": "Antarktik",
           "AR": "Argentina",

@@ -3,8 +3,8 @@
     "nl": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11996 $"
+          "_number": "$Revision: 12381 $",
+          "_cldrVersion": "29"
         },
         "language": "nl"
       },

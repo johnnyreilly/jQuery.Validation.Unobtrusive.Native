@@ -3,8 +3,8 @@
     "ar-LY": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "ar",
         "territory": "LY"
@@ -716,6 +716,7 @@
             "displayName-count-many": "لاري جورجي",
             "displayName-count-other": "لاري جورجي",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

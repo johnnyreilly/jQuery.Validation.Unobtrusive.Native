@@ -3,8 +3,8 @@
     "ne-IN": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "ne",
         "territory": "IN"
@@ -238,9 +238,9 @@
               "format": {
                 "abbreviated": {
                   "midnight": "मध्यरात",
-                  "am": "AM",
+                  "am": "पूर्वाह्न",
                   "noon": "मध्यान्ह",
-                  "pm": "PM",
+                  "pm": "अपराह्न",
                   "morning1": "बिहान",
                   "afternoon1": "अपरान्ह",
                   "afternoon2": "बेलुका",
@@ -273,9 +273,9 @@
               "stand-alone": {
                 "abbreviated": {
                   "midnight": "मध्यरात",
-                  "am": "AM",
+                  "am": "पूर्वाह्न",
                   "noon": "मध्यान्ह",
-                  "pm": "PM",
+                  "pm": "अपराह्न",
                   "morning1": "बिहान",
                   "afternoon1": "अपरान्ह",
                   "afternoon2": "बेलुका",
@@ -295,9 +295,9 @@
                 },
                 "wide": {
                   "midnight": "मध्यरात",
-                  "am": "AM",
+                  "am": "पूर्वाह्न",
                   "noon": "मध्यान्ह",
-                  "pm": "PM",
+                  "pm": "अपराह्न",
                   "morning1": "विहान",
                   "afternoon1": "अपरान्ह",
                   "afternoon2": "साँझ",

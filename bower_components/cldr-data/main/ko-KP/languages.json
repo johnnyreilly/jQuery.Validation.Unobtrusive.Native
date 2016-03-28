@@ -3,8 +3,8 @@
     "ko-KP": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "ko",
         "territory": "KP"
@@ -532,8 +532,8 @@
           "sux": "수메르어",
           "sv": "스웨덴어",
           "sw": "스와힐리어",
+          "sw-CD": "콩고 스와힐리어",
           "swb": "코모로어",
-          "swc": "콩고 스와힐리어",
           "syc": "시리아어 (고전)",
           "syr": "시리아어",
           "szl": "szl",

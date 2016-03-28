@@ -3,8 +3,8 @@
     "hr-BA": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "hr",
         "territory": "BA"
@@ -26,12 +26,14 @@
           "BAKU1926": "unificirana turska abeceda",
           "BALANKA": "BALANKA",
           "BARLA": "BARLA",
+          "BASICENG": "BASICENG",
           "BAUDDHA": "BAUDDHA",
           "BISCAYAN": "BISCAYAN",
           "BISKE": "san giorgio/bila dijalekt",
           "BOHORIC": "BOHORIC",
           "BOONT": "boontling",
           "COLB1945": "COLB1945",
+          "CORNU": "CORNU",
           "DAJNKO": "DAJNKO",
           "EKAVSK": "EKAVSK",
           "EMODENG": "rani moderni engleski",
@@ -54,6 +56,7 @@
           "MONOTON": "monotono",
           "NDYUKA": "NDYUKA",
           "NEDIS": "natisone dijalekt",
+          "NEWFOUND": "NEWFOUND",
           "NJIVA": "Gniva/Njiva dijalekt",
           "NULIK": "moderni volapuk",
           "OSOJS": "oseacco/osojane dijalekt",
@@ -71,6 +74,7 @@
           "SAAHO": "saho",
           "SCOTLAND": "škotski standardni engleski",
           "SCOUSE": "scouse",
+          "SIMPLE": "SIMPLE",
           "SOLBA": "stolvizza/solbica dijalekt",
           "SOTAV": "SOTAV",
           "SURMIRAN": "SURMIRAN",

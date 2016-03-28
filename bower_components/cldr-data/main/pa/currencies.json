@@ -3,8 +3,8 @@
     "pa": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "pa"
       },
@@ -551,6 +551,7 @@
             "displayName-count-one": "ਜਾਰਜੀਆਈ ਲਾਰੀ",
             "displayName-count-other": "ਜਾਰਜੀਆਈ ਲਾਰੀ",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

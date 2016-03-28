@@ -3,13 +3,14 @@
     "hr": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "hr"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "afaka pismo",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
@@ -23,6 +24,7 @@
           "Bass": "bassa vah pismo",
           "Batk": "batak pismo",
           "Beng": "bengalsko pismo",
+          "Bhks": "Bhks",
           "Blis": "blissymbols",
           "Bopo": "bopomofo pismo",
           "Brah": "brahmi pismo",
@@ -55,6 +57,7 @@
           "Grek": "grčko pismo",
           "Gujr": "gudžaratsko pismo",
           "Guru": "gurmukhi pismo",
+          "Hanb": "Hanb",
           "Hang": "hangul pismo",
           "Hani": "han pismo",
           "Hano": "hanunoo pismo",
@@ -71,6 +74,7 @@
           "Hung": "staro mađarsko pismo",
           "Inds": "indijsko pismo",
           "Ital": "staro talijansko pismo",
+          "Jamo": "Jamo",
           "Java": "javansko pismo",
           "Jpan": "japansko pismo",
           "Jurc": "jurchen pismo",
@@ -99,6 +103,7 @@
           "Mahj": "Mahj",
           "Mand": "mandai pismo",
           "Mani": "manihejsko pismo",
+          "Marc": "Marc",
           "Maya": "majanski hijeroglifi",
           "Mend": "mende pismo",
           "Merc": "meroitski kurziv",
@@ -113,6 +118,7 @@
           "Mymr": "mjanmarsko pismo",
           "Narb": "staro sjevernoarapsko pismo",
           "Nbat": "nabatejsko pismo",
+          "Newa": "Newa",
           "Nkgb": "naxi geba pismo",
           "Nkoo": "n’ko pismo",
           "Nshu": "nushu pismo",
@@ -120,6 +126,7 @@
           "Olck": "ol chiki pismo",
           "Orkh": "orkhon pismo",
           "Orya": "orijsko pismo",
+          "Osge": "Osge",
           "Osma": "osmanya pismo",
           "Palm": "palmyrene pismo",
           "Pauc": "Pauc",
@@ -225,6 +232,7 @@
           "Yiii": "Yi pismo",
           "Zinh": "nasljedno pismo",
           "Zmth": "matematičko znakovlje",
+          "Zsye": "Zsye",
           "Zsym": "simboli",
           "Zxxx": "jezik bez pismenosti",
           "Zyyy": "zajedničko pismo",

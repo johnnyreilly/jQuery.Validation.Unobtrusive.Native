@@ -3,8 +3,8 @@
     "ca-ES-VALENCIA": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "ca",
         "territory": "ES",
@@ -635,6 +635,7 @@
             "displayName-count-one": "lari georgià",
             "displayName-count-other": "laris georgians",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

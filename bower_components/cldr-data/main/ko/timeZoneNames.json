@@ -3,8 +3,8 @@
     "ko": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ko"
       },
@@ -164,6 +164,9 @@
               },
               "El_Salvador": {
                 "exemplarCity": "엘살바도르"
+              },
+              "Fort_Nelson": {
+                "exemplarCity": "Fort Nelson"
               },
               "Fortaleza": {
                 "exemplarCity": "포르탈레자"
@@ -1433,7 +1436,7 @@
               "long": {
                 "generic": "알마티 표준 시간",
                 "standard": "알마티 표준 표준시",
-                "daylight": "알마티 서머 타임"
+                "daylight": "알마티 하계 표준시"
               }
             },
             "Amazon": {
@@ -1475,7 +1478,7 @@
               "long": {
                 "generic": "아나디리 시간",
                 "standard": "아나디리 표준시",
-                "daylight": "아나디리 서머 타임"
+                "daylight": "아나디리 하계 표준시"
               }
             },
             "Apia": {
@@ -1489,14 +1492,14 @@
               "long": {
                 "generic": "악타우 표준 시간",
                 "standard": "악타우 표준 표준시",
-                "daylight": "악타우 서머 타임"
+                "daylight": "악타우 하계 표준시"
               }
             },
             "Aqtobe": {
               "long": {
                 "generic": "악퇴베 표준 시간",
                 "standard": "악퇴베 표준 표준시",
-                "daylight": "악퇴베 서머 타임"
+                "daylight": "악퇴베 하계 표준시"
               }
             },
             "Arabian": {
@@ -1671,7 +1674,7 @@
               "long": {
                 "generic": "쿡 제도 시간",
                 "standard": "쿡 제도 표준시",
-                "daylight": "쿡 제도 절반 서머 타임"
+                "daylight": "쿡 제도 절반 하계 표준시"
               }
             },
             "Cuba": {
@@ -1731,7 +1734,7 @@
               "long": {
                 "generic": "서유럽 시간",
                 "standard": "서유럽 표준시",
-                "daylight": "서유럽 서머 타임"
+                "daylight": "서유럽 하계 표준시"
               }
             },
             "Falkland": {
@@ -1745,7 +1748,7 @@
               "long": {
                 "generic": "피지 시간",
                 "standard": "피지 표준시",
-                "daylight": "피지 서머 타임"
+                "daylight": "피지 하계 표준시"
               }
             },
             "French_Guiana": {
@@ -1892,7 +1895,7 @@
               "long": {
                 "generic": "페트로파블롭스크-캄차츠키 시간",
                 "standard": "페트로파블롭스크-캄차츠키 표준시",
-                "daylight": "페트로파블롭스크-캄차츠키 서머 타임"
+                "daylight": "페트로파블롭스크-캄차츠키 하계 표준시"
               }
             },
             "Kazakhstan_Eastern": {
@@ -1945,7 +1948,7 @@
               "long": {
                 "generic": "마카오 시간",
                 "standard": "마카오 표준 시간",
-                "daylight": "마카오 서머 타임"
+                "daylight": "마카오 하계 표준시"
               }
             },
             "Macquarie": {
@@ -2151,7 +2154,7 @@
               "long": {
                 "generic": "키질로르다 시간",
                 "standard": "키질로르다 표준 시간",
-                "daylight": "키질로르다 서머 타임"
+                "daylight": "키질로르다 하계 표준시"
               }
             },
             "Reunion": {
@@ -2175,7 +2178,7 @@
               "long": {
                 "generic": "사마라 시간",
                 "standard": "사마라 표준시",
-                "daylight": "사마라 서머 타임"
+                "daylight": "사마라 하계 표준시"
               }
             },
             "Samoa": {
@@ -2241,7 +2244,7 @@
               "long": {
                 "generic": "통가 시간",
                 "standard": "통가 표준시",
-                "daylight": "통가 서머 타임"
+                "daylight": "통가 하계 표준시"
               }
             },
             "Truk": {
@@ -2279,7 +2282,7 @@
               "long": {
                 "generic": "바누아투 시간",
                 "standard": "바누아투 표준시",
-                "daylight": "바누아투 서머 타임"
+                "daylight": "바누아투 하계 표준시"
               }
             },
             "Venezuela": {

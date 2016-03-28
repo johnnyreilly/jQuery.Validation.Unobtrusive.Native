@@ -3,14 +3,15 @@
     "de-LU": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "de",
         "territory": "LU"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "Afaka",
           "Aghb": "Kaukasisch-Albanisch",
           "Ahom": "Ahom",
@@ -24,6 +25,7 @@
           "Bass": "Bassa",
           "Batk": "Battakisch",
           "Beng": "Bengalisch",
+          "Bhks": "Bhks",
           "Blis": "Bliss-Symbole",
           "Bopo": "Bopomofo",
           "Brah": "Brahmi",
@@ -56,6 +58,7 @@
           "Grek": "Griechisch",
           "Gujr": "Gujarati",
           "Guru": "Gurmukhi",
+          "Hanb": "Hanb",
           "Hang": "Hangul",
           "Hani": "Chinesisch",
           "Hano": "Hanunoo",
@@ -72,6 +75,7 @@
           "Hung": "Altungarisch",
           "Inds": "Indus-Schrift",
           "Ital": "Altitalisch",
+          "Jamo": "Jamo",
           "Java": "Javanesisch",
           "Jpan": "Japanisch",
           "Jurc": "Jurchen",
@@ -100,6 +104,7 @@
           "Mahj": "Mahajani",
           "Mand": "Mandäisch",
           "Mani": "Manichäisch",
+          "Marc": "Marc",
           "Maya": "Maya-Hieroglyphen",
           "Mend": "Mende",
           "Merc": "Meroitisch kursiv",
@@ -114,6 +119,7 @@
           "Mymr": "Birmanisch",
           "Narb": "Altnordarabisch",
           "Nbat": "Nabatäisch",
+          "Newa": "Newa",
           "Nkgb": "Geba",
           "Nkoo": "N’Ko",
           "Nshu": "Frauenschrift",
@@ -121,6 +127,7 @@
           "Olck": "Ol Chiki",
           "Orkh": "Orchon-Runen",
           "Orya": "Oriya",
+          "Osge": "Osge",
           "Osma": "Osmanisch",
           "Palm": "Palmyrenisch",
           "Pauc": "Pau Cin Hau",
@@ -226,6 +233,7 @@
           "Yiii": "Yi",
           "Zinh": "Geerbter Schriftwert",
           "Zmth": "Mathematische Notation",
+          "Zsye": "Zsye",
           "Zsym": "Symbole",
           "Zxxx": "Schriftlos",
           "Zyyy": "Unbestimmt",

@@ -3,8 +3,8 @@
     "es-PY": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: $",
+          "_cldrVersion": "29"
         },
         "language": "es",
         "territory": "PY"
@@ -594,6 +594,7 @@
             "displayName-count-one": "lari",
             "displayName-count-other": "laris",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

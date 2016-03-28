@@ -3,8 +3,8 @@
     "en-IL": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11969 $"
+          "_number": "$Revision: 12347 $",
+          "_cldrVersion": "29"
         },
         "language": "en",
         "territory": "IL"
@@ -536,8 +536,8 @@
           "sux": "Sumerian",
           "sv": "Swedish",
           "sw": "Swahili",
+          "sw-CD": "Congo Swahili",
           "swb": "Comorian",
-          "swc": "Congo Swahili",
           "syc": "Classical Syriac",
           "syr": "Syriac",
           "szl": "Silesian",

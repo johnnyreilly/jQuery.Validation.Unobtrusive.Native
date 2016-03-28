@@ -3,8 +3,8 @@
     "tr-CY": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "tr",
         "territory": "CY"
@@ -49,7 +49,6 @@
           "AI": "Anguilla",
           "AL": "Arnavutluk",
           "AM": "Ermenistan",
-          "AN": "Hollanda Antilleri",
           "AO": "Angola",
           "AQ": "Antarktika",
           "AR": "Arjantin",
@@ -101,7 +100,7 @@
           "CV": "Cape Verde",
           "CW": "Curaçao",
           "CX": "Christmas Adası",
-          "CY": "Güney Kıbrıs Rum Kesimi",
+          "CY": "Kıbrıs",
           "CZ": "Çek Cumhuriyeti",
           "DE": "Almanya",
           "DG": "Diego Garcia",

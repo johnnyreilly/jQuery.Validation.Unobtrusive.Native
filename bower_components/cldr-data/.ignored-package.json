@@ -1,8 +1,8 @@
 {
   "name": "cldr-units-modern",
-  "version": "28.0.0",
+  "version": "29.0.0",
   "peerDependencies": {
-    "cldr-core": "28.0.0"
+    "cldr-core": "29.0.0"
   },
   "homepage": "http://cldr.unicode.org",
   "author": "The Unicode Consortium",

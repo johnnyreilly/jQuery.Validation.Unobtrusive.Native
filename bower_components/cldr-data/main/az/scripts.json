@@ -3,13 +3,14 @@
     "az": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11983 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "az"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "ərəb",
@@ -21,6 +22,7 @@
           "Bass": "Bass",
           "Batk": "batak",
           "Beng": "benqal",
+          "Bhks": "Bhks",
           "Blis": "blissymbols",
           "Bopo": "bopomofo",
           "Brah": "brahmi",
@@ -53,6 +55,7 @@
           "Grek": "yunan",
           "Gujr": "qucarat",
           "Guru": "qurmuxi",
+          "Hanb": "Hanb",
           "Hang": "hanqıl",
           "Hani": "han",
           "Hano": "hanunu",
@@ -69,6 +72,7 @@
           "Hung": "qədimi macar",
           "Inds": "hindistan",
           "Ital": "qədimi italyalı",
+          "Jamo": "Jamo",
           "Java": "cava",
           "Jpan": "yapon",
           "Kali": "kayax li",
@@ -94,6 +98,7 @@
           "Mahj": "Mahj",
           "Mand": "mandayen",
           "Mani": "maniçayen",
+          "Marc": "Marc",
           "Maya": "maya hiyeroqlifi",
           "Mend": "Mend",
           "Merc": "Merc",
@@ -108,11 +113,13 @@
           "Mymr": "myanmar",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "nko",
           "Ogam": "oğam",
           "Olck": "ol çiki",
           "Orkh": "orxon",
           "Orya": "oriya",
+          "Osge": "Osge",
           "Osma": "osmanya",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -196,6 +203,7 @@
           "Tale": "tay le",
           "Talu": "təzə tay lu",
           "Taml": "tamil",
+          "Tang": "Tang",
           "Tavt": "tavt",
           "Telu": "teluqu",
           "Teng": "tengvar",
@@ -214,6 +222,7 @@
           "Yiii": "yi",
           "Zinh": "Zinh",
           "Zmth": "zmth",
+          "Zsye": "Zsye",
           "Zsym": "simvollar",
           "Zxxx": "yazısız",
           "Zyyy": "ümumi yazı",

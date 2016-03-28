@@ -3,8 +3,8 @@
     "da": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11944 $"
+          "_number": "$Revision: 12387 $",
+          "_cldrVersion": "29"
         },
         "language": "da"
       },
@@ -140,7 +140,7 @@
           "unitPattern-count-other": "{0} {1}"
         },
         "miscPatterns-numberSystem-latn": {
-          "atLeast": "{0} eller derover",
+          "atLeast": "{0}+",
           "range": "{0}-{1}"
         }
       }

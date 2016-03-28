@@ -3,8 +3,8 @@
     "es-MX": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: $",
+          "_cldrVersion": "29"
         },
         "language": "es",
         "territory": "MX"
@@ -49,7 +49,6 @@
           "AI": "Anguila",
           "AL": "Albania",
           "AM": "Armenia",
-          "AN": "Antillas Neerlandesas",
           "AO": "Angola",
           "AQ": "Antártida",
           "AR": "Argentina",

@@ -3,8 +3,8 @@
     "uk": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "uk"
       },
@@ -25,12 +25,14 @@
           "BAKU1926": "Уніфікований турецький латинський алфавіт",
           "BALANKA": "BALANKA",
           "BARLA": "BARLA",
+          "BASICENG": "BASICENG",
           "BAUDDHA": "BAUDDHA",
           "BISCAYAN": "BISCAYAN",
           "BISKE": "Діалект Сан-Джорджіо/Біла",
           "BOHORIC": "BOHORIC",
           "BOONT": "Бунтлінг",
           "COLB1945": "COLB1945",
+          "CORNU": "CORNU",
           "DAJNKO": "DAJNKO",
           "EKAVSK": "EKAVSK",
           "EMODENG": "EMODENG",
@@ -53,6 +55,7 @@
           "MONOTON": "Монотонічний",
           "NDYUKA": "NDYUKA",
           "NEDIS": "Натісонський діалект",
+          "NEWFOUND": "NEWFOUND",
           "NJIVA": "Діалект Нджіва",
           "NULIK": "NULIK",
           "OSOJS": "Осоянський діалект",
@@ -70,6 +73,7 @@
           "SAAHO": "Сахо",
           "SCOTLAND": "Шотландська англійська",
           "SCOUSE": "Ліверпульський діалект",
+          "SIMPLE": "SIMPLE",
           "SOLBA": "Діалект Столвіца/Солбіка",
           "SOTAV": "SOTAV",
           "SURMIRAN": "SURMIRAN",

@@ -3,8 +3,8 @@
     "en-150": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11976 $"
+          "_number": "$Revision: 11976 $",
+          "_cldrVersion": "29"
         },
         "language": "en",
         "territory": "150"
@@ -633,7 +633,7 @@
             "displayName-count-one": "Georgian lari",
             "displayName-count-other": "Georgian laris",
             "symbol": "GEL",
-            "symbol-alt-variant": "₾"
+            "symbol-alt-narrow": "₾"
           },
           "GHC": {
             "displayName": "Ghanaian Cedi (1979–2007)",

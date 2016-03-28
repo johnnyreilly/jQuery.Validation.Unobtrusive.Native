@@ -3,13 +3,14 @@
     "gu": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "gu"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "અરબી",
@@ -22,6 +23,7 @@
           "Bass": "Bass",
           "Batk": "બટાક",
           "Beng": "બંગાળી",
+          "Bhks": "Bhks",
           "Blis": "બ્લિસિમ્બોલ્સ",
           "Bopo": "બોપોમોફો",
           "Brah": "બ્રહ્મી",
@@ -54,6 +56,7 @@
           "Grek": "ગ્રીક",
           "Gujr": "ગુજરાતી",
           "Guru": "ગુરૂમુખી",
+          "Hanb": "Hanb",
           "Hang": "હંગુલ",
           "Hani": "હાન",
           "Hano": "હનુનૂ",
@@ -70,6 +73,7 @@
           "Hung": "ઓલ્ડ હંગેરિયન",
           "Inds": "સિન્ધુ",
           "Ital": "જૂનુ ઇટાલિક",
+          "Jamo": "Jamo",
           "Java": "જાવાનીસ",
           "Jpan": "જાપાની",
           "Kali": "કાયાહ લી",
@@ -95,6 +99,7 @@
           "Mahj": "Mahj",
           "Mand": "માન્ડાયીન",
           "Mani": "માનીચાયીન",
+          "Marc": "Marc",
           "Maya": "મયાન હાઇરોગ્લિફ્સ",
           "Mend": "Mend",
           "Merc": "Merc",
@@ -109,11 +114,13 @@
           "Mymr": "મ્યાંમાર",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "એન’ કો",
           "Ogam": "ઓઘામ",
           "Olck": "ઓલ ચિકી",
           "Orkh": "ઓરખોન",
           "Orya": "ઉડિયા",
+          "Osge": "Osge",
           "Osma": "ઓસ્માન્યા",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -199,6 +206,7 @@
           "Tale": "તાઇ લી",
           "Talu": "નવીન તાઇ લૂ",
           "Taml": "તમિલ",
+          "Tang": "Tang",
           "Tavt": "તાઇ વેઇત",
           "Telu": "તેલુગુ",
           "Teng": "તેન્ગવાર",
@@ -217,6 +225,7 @@
           "Yiii": "યી",
           "Zinh": "વંશાગત",
           "Zmth": "ગણિતીય સંકેતલિપિ",
+          "Zsye": "Zsye",
           "Zsym": "પ્રતીકો",
           "Zxxx": "અલિખિત",
           "Zyyy": "સામાન્ય",

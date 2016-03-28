@@ -3,8 +3,8 @@
     "es-GT": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12032 $"
+          "_number": "$Revision: $",
+          "_cldrVersion": "29"
         },
         "language": "es",
         "territory": "GT"
@@ -49,7 +49,6 @@
           "AI": "Anguila",
           "AL": "Albania",
           "AM": "Armenia",
-          "AN": "Antillas Neerlandesas",
           "AO": "Angola",
           "AQ": "Antártida",
           "AR": "Argentina",

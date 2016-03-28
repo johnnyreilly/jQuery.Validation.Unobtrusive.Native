@@ -3,8 +3,8 @@
     "en-AU": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12413 $",
+          "_cldrVersion": "29"
         },
         "language": "en",
         "territory": "AU"
@@ -154,7 +154,7 @@
           "BAM": {
             "displayName": "Bosnia-Herzegovina Convertible Marka",
             "displayName-count-one": "Bosnia-Herzegovina convertible marka",
-            "displayName-count-other": "Bosnia-Herzegovina convertible marks",
+            "displayName-count-other": "Bosnia-Herzegovina convertible marka",
             "symbol": "BAM",
             "symbol-alt-narrow": "KM"
           },
@@ -632,6 +632,7 @@
             "displayName-count-one": "Georgian lari",
             "displayName-count-other": "Georgian lari",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "GEL"
           },
           "GHC": {
@@ -922,7 +923,7 @@
             "displayName-count-one": "Lebanese pound",
             "displayName-count-other": "Lebanese pounds",
             "symbol": "LBP",
-            "symbol-alt-narrow": "ل.ل"
+            "symbol-alt-narrow": "L£"
           },
           "LKR": {
             "displayName": "Sri Lankan Rupee",

@@ -3,8 +3,8 @@
     "de-LI": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "de",
         "territory": "LI"
@@ -532,8 +532,8 @@
           "sux": "Sumerisch",
           "sv": "Schwedisch",
           "sw": "Suaheli",
+          "sw-CD": "Kongo-Suaheli",
           "swb": "Komorisch",
-          "swc": "Kongo-Suaheli",
           "syc": "Altsyrisch",
           "syr": "Syrisch",
           "szl": "Schlesisch (Polen)",

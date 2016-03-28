@@ -3,8 +3,8 @@
     "am": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11996 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "am"
       },
@@ -523,6 +523,7 @@
             "displayName-count-one": "የጆርጅያ ላሪ",
             "displayName-count-other": "የጆርጅያ ላሪ",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

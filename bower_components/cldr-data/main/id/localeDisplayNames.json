@@ -3,8 +3,8 @@
     "id": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "id"
       },
@@ -39,7 +39,7 @@
         "types": {
           "calendar": {
             "buddhist": "Kalender Buddha",
-            "chinese": "Kalender China",
+            "chinese": "Kalender Tionghoa",
             "coptic": "Kalender Koptik",
             "dangi": "Kalender Dangi",
             "ethiopic": "Kalender Etiopia",
@@ -83,13 +83,13 @@
             "yes": "Sortir Kana Secara Berbeda"
           },
           "collation": {
-            "big5han": "Urutan Sortir China Tradisional - Big5",
+            "big5han": "Urutan Sortir Tionghoa Tradisional - Big5",
             "compat": "compat",
             "dictionary": "Urutan Sortir Kamus",
             "ducet": "Aturan Pengurutan Unicode Default",
             "emoji": "emoji",
             "eor": "Aturan Pengurutan Eropa",
-            "gb2312han": "Urutan Sortir China Aks. Sederhana - GB2312",
+            "gb2312han": "Urutan Sortir Tionghoa Aks. Sederhana - GB2312",
             "phonebook": "Urutan Sortir Buku Telepon",
             "phonetic": "Urutan Sortir Fonetik",
             "pinyin": "Urutan Sortir Pinyin",
@@ -154,11 +154,11 @@
             "greklow": "Angka Yunani Huruf Kecil",
             "gujr": "Angka Gujarati",
             "guru": "Angka Gurmukhi",
-            "hanidec": "Angka Desimal China",
-            "hans": "Angka China Sederhana",
-            "hansfin": "Angka Keuangan China Sederhana",
-            "hant": "Angka China Tradisional",
-            "hantfin": "Angka Keuangan China Tradisional",
+            "hanidec": "Angka Desimal Tionghoa",
+            "hans": "Angka Tionghoa Sederhana",
+            "hansfin": "Angka Keuangan Tionghoa Sederhana",
+            "hant": "Angka Tionghoa Tradisional",
+            "hantfin": "Angka Keuangan Tionghoa Tradisional",
             "hebr": "Angka Ibrani",
             "hmng": "hmng",
             "java": "Angka Jawa",

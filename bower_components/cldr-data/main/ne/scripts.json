@@ -3,13 +3,14 @@
     "ne": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "ne"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "अरबी",
@@ -21,6 +22,7 @@
           "Bass": "Bass",
           "Batk": "बाटक",
           "Beng": "बङ्गाली",
+          "Bhks": "Bhks",
           "Blis": "ब्लिजसिम्बोल्स",
           "Bopo": "बोपोमोफो",
           "Brah": "ब्राह्मी",
@@ -52,6 +54,7 @@
           "Grek": "ग्रीक",
           "Gujr": "गुजराती",
           "Guru": "गुरूमुखी",
+          "Hanb": "Hanb",
           "Hang": "हान्गुल",
           "Hani": "हान",
           "Hano": "हानुनु",
@@ -68,6 +71,7 @@
           "Hung": "पुरानो हङ्गेरियाली",
           "Inds": "इन्दुस",
           "Ital": "पुरानो इटालिक",
+          "Jamo": "Jamo",
           "Java": "जाभानी",
           "Jpan": "जापानी",
           "Kali": "कायाहली",
@@ -93,6 +97,7 @@
           "Mahj": "Mahj",
           "Mand": "मान्डाएन",
           "Mani": "मानिकाएन",
+          "Marc": "Marc",
           "Maya": "माया हाइरोग्लिफ्स",
           "Mend": "Mend",
           "Merc": "Merc",
@@ -107,11 +112,13 @@
           "Mymr": "म्यान्मार",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "एन्को",
           "Ogam": "ओघाम",
           "Olck": "ओलचिकी",
           "Orkh": "ओर्खोन",
           "Orya": "ओडिया",
+          "Osge": "Osge",
           "Osma": "ओस्मान्या",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -197,6 +204,7 @@
           "Tale": "टाइले",
           "Talu": "न्यू टाइ लुइ",
           "Taml": "तामिल",
+          "Tang": "Tang",
           "Tavt": "टाभ्ट",
           "Telu": "तेलुगु",
           "Teng": "टेङ्वार",
@@ -215,6 +223,7 @@
           "Yiii": "यी",
           "Zinh": "इन्हेरिटेड",
           "Zmth": "जमथ",
+          "Zsye": "Zsye",
           "Zsym": "प्रतीकहरू",
           "Zxxx": "नलेखिएको",
           "Zyyy": "साझा",

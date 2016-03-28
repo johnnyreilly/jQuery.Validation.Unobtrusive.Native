@@ -3,13 +3,14 @@
     "sv": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12366 $",
+          "_cldrVersion": "29"
         },
         "language": "sv"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "afakiska",
           "Aghb": "kaukasiska albanska",
           "Ahom": "ahom",
@@ -22,6 +23,7 @@
           "Bass": "bassaiska vah",
           "Batk": "batak",
           "Beng": "bengaliska",
+          "Bhks": "Bhks",
           "Blis": "blissymboler",
           "Bopo": "bopomofo",
           "Brah": "brami",
@@ -54,6 +56,7 @@
           "Grek": "grekiska",
           "Gujr": "gujarati",
           "Guru": "gurmukhi",
+          "Hanb": "Hanb",
           "Hang": "hangul",
           "Hani": "han",
           "Hano": "hanunå",
@@ -70,6 +73,7 @@
           "Hung": "fornungerska",
           "Inds": "indus",
           "Ital": "fornitaliska",
+          "Jamo": "Jamo",
           "Java": "javanska",
           "Jpan": "japanska",
           "Jurc": "jurchenska",
@@ -98,6 +102,7 @@
           "Mahj": "mahajaniska",
           "Mand": "mandaéiska",
           "Mani": "manikeanska",
+          "Marc": "Marc",
           "Maya": "mayahieroglyfer",
           "Mend": "mende",
           "Merc": "kursiv-meroitiska",
@@ -112,6 +117,7 @@
           "Mymr": "burmesiska",
           "Narb": "fornnordarabiska",
           "Nbat": "nabatateiska",
+          "Newa": "Newa",
           "Nkgb": "naxi geba",
           "Nkoo": "n-kå",
           "Nshu": "nüshu",
@@ -119,6 +125,7 @@
           "Olck": "ol-chiki",
           "Orkh": "orkon",
           "Orya": "oriya",
+          "Osge": "Osge",
           "Osma": "osmanja",
           "Palm": "palmyreniska",
           "Pauc": "Pau Cin Hau-skrift",
@@ -224,6 +231,7 @@
           "Yiii": "yi",
           "Zinh": "ärvda",
           "Zmth": "matematisk notation",
+          "Zsye": "Zsye",
           "Zsym": "symboler",
           "Zxxx": "oskrivet språk",
           "Zyyy": "gemensamma",

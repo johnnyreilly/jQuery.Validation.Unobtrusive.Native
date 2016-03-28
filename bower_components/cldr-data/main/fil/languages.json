@@ -3,8 +3,8 @@
     "fil": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "fil"
       },
@@ -532,8 +532,8 @@
           "sux": "sux",
           "sv": "Swedish",
           "sw": "Swahili",
+          "sw-CD": "Swahili (Congo)",
           "swb": "Comorian",
-          "swc": "Swahili (Congo)",
           "syc": "syc",
           "syr": "syr",
           "szl": "szl",

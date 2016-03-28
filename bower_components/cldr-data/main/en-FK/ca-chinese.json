@@ -3,8 +3,8 @@
     "en-FK": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "en",
         "territory": "FK"
@@ -43,18 +43,18 @@
                   "12": "12"
                 },
                 "wide": {
-                  "1": "Month1",
-                  "2": "Month2",
-                  "3": "Month3",
-                  "4": "Month4",
-                  "5": "Month5",
-                  "6": "Month6",
-                  "7": "Month7",
-                  "8": "Month8",
-                  "9": "Month9",
-                  "10": "Month10",
-                  "11": "Month11",
-                  "12": "Month12"
+                  "1": "First Month",
+                  "2": "Second Month",
+                  "3": "Third Month",
+                  "4": "Fourth Month",
+                  "5": "Fifth Month",
+                  "6": "Sixth Month",
+                  "7": "Seventh Month",
+                  "8": "Eighth Month",
+                  "9": "Ninth Month",
+                  "10": "Tenth Month",
+                  "11": "Eleventh Month",
+                  "12": "Twelfth Month"
                 }
               },
               "stand-alone": {
@@ -87,18 +87,18 @@
                   "12": "12"
                 },
                 "wide": {
-                  "1": "Month1",
-                  "2": "Month2",
-                  "3": "Month3",
-                  "4": "Month4",
-                  "5": "Month5",
-                  "6": "Month6",
-                  "7": "Month7",
-                  "8": "Month8",
-                  "9": "Month9",
-                  "10": "Month10",
-                  "11": "Month11",
-                  "12": "Month12"
+                  "1": "First Month",
+                  "2": "Second Month",
+                  "3": "Third Month",
+                  "4": "Fourth Month",
+                  "5": "Fifth Month",
+                  "6": "Sixth Month",
+                  "7": "Seventh Month",
+                  "8": "Eighth Month",
+                  "9": "Ninth Month",
+                  "10": "Tenth Month",
+                  "11": "Eleventh Month",
+                  "12": "Twelfth Month"
                 }
               }
             },

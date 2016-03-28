@@ -3,8 +3,8 @@
     "sk": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12411 $",
+          "_cldrVersion": "29"
         },
         "language": "sk"
       },
@@ -631,6 +631,7 @@
             "displayName-count-many": "gruzínskeho lari",
             "displayName-count-other": "gruzínskych lari",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

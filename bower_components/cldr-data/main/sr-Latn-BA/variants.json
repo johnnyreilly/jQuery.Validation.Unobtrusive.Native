@@ -3,8 +3,8 @@
     "sr-Latn-BA": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12417 $",
+          "_cldrVersion": "29"
         },
         "language": "sr",
         "script": "Latn",
@@ -27,12 +27,14 @@
           "BAKU1926": "Ujedinjen turski latinični alfabet",
           "BALANKA": "BALANKA",
           "BARLA": "BARLA",
+          "BASICENG": "BASICENG",
           "BAUDDHA": "BAUDDHA",
           "BISCAYAN": "BISCAYAN",
           "BISKE": "San Đorđio/Bila dijalekt",
           "BOHORIC": "BOHORIC",
           "BOONT": "Buntling",
           "COLB1945": "COLB1945",
+          "CORNU": "CORNU",
           "DAJNKO": "DAJNKO",
           "EKAVSK": "EKAVSK",
           "EMODENG": "EMODENG",
@@ -55,6 +57,7 @@
           "MONOTON": "Monotonik",
           "NDYUKA": "NDYUKA",
           "NEDIS": "Natisone dijalekt",
+          "NEWFOUND": "NEWFOUND",
           "NJIVA": "Gnjiva/Njiva dijalkekt",
           "NULIK": "NULIK",
           "OSOJS": "Oseako/Osojane dijalekt",
@@ -72,6 +75,7 @@
           "SAAHO": "Saho",
           "SCOTLAND": "Škotski standardni Engleski",
           "SCOUSE": "Skauz",
+          "SIMPLE": "SIMPLE",
           "SOLBA": "Stolvica/Solbica dijalekt",
           "SOTAV": "SOTAV",
           "SURMIRAN": "SURMIRAN",

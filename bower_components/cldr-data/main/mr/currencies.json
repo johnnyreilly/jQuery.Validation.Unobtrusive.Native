@@ -3,8 +3,8 @@
     "mr": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11953 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "mr"
       },
@@ -523,6 +523,7 @@
             "displayName-count-one": "जॉर्जियन लारी",
             "displayName-count-other": "जॉर्जियन लारी",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "[₾]"
           },
           "GHC": {

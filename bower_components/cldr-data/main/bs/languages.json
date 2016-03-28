@@ -3,8 +3,8 @@
     "bs": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11977 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "bs"
       },
@@ -532,8 +532,8 @@
           "sux": "sumerski",
           "sv": "švedski",
           "sw": "svahili",
+          "sw-CD": "kongoanski swahili",
           "swb": "swb",
-          "swc": "kongoanski swahili",
           "syc": "klasični sirijski",
           "syr": "sirijski",
           "szl": "szl",

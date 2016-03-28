@@ -3,8 +3,8 @@
     "zh-Hant": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11989 $"
+          "_number": "$Revision: 12390 $",
+          "_cldrVersion": "29"
         },
         "language": "zh",
         "script": "Hant"
@@ -26,12 +26,14 @@
           "BAKU1926": "統一土耳其拉丁字母",
           "BALANKA": "BALANKA",
           "BARLA": "BARLA",
+          "BASICENG": "BASICENG",
           "BAUDDHA": "佛教混合梵文",
           "BISCAYAN": "比斯開方言",
           "BISKE": "聖喬治/比拉方言",
           "BOHORIC": "BOHORIC",
           "BOONT": "布恩特林方言",
           "COLB1945": "COLB1945",
+          "CORNU": "CORNU",
           "DAJNKO": "DAJNKO",
           "EKAVSK": "EKAVSK",
           "EMODENG": "早期現代英語",
@@ -54,6 +56,7 @@
           "MONOTON": "希臘文單調正字法",
           "NDYUKA": "蘇利南恩都卡方言",
           "NEDIS": "那提松尼方言",
+          "NEWFOUND": "NEWFOUND",
           "NJIVA": "雷西亞尼瓦方言",
           "NULIK": "NULIK",
           "OSOJS": "雷西亞歐西亞柯方言",
@@ -71,6 +74,7 @@
           "SAAHO": "薩霍文",
           "SCOTLAND": "英文（蘇格蘭）",
           "SCOUSE": "利物浦方言",
+          "SIMPLE": "SIMPLE",
           "SOLBA": "雷西亞史托維薩方言",
           "SOTAV": "SOTAV",
           "SURMIRAN": "瑞士蘇邁拉方言",

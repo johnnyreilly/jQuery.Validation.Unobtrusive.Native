@@ -3,8 +3,8 @@
     "ml": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11977 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ml"
       },
@@ -48,7 +48,6 @@
           "AI": "ആൻഗ്വില്ല",
           "AL": "അൽബേനിയ",
           "AM": "അർമേനിയ",
-          "AN": "നെതർലൻഡ്സ് ആൻറിലിസ്",
           "AO": "അംഗോള",
           "AQ": "അൻറാർട്ടിക്ക",
           "AR": "അർജൻറീന",

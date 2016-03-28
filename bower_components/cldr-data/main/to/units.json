@@ -3,8 +3,8 @@
     "to": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12379 $",
+          "_cldrVersion": "29"
         },
         "language": "to"
       },
@@ -80,6 +80,22 @@
             "unitPattern-count-other": "ʻinisi sikuea ʻe {0}",
             "perUnitPattern": "{0}/in²"
           },
+          "concentr-karat": {
+            "displayName": "kalati",
+            "unitPattern-count-other": "kalati ʻe {0}"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "lita he kilomita",
             "unitPattern-count-other": "lita ʻe {0} he kilomita"
@@ -91,6 +107,10 @@
           "consumption-mile-per-gallon": {
             "displayName": "maile he kālani",
             "unitPattern-count-other": "maile ʻe {0} he kālani"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "telapaiti",
@@ -416,10 +436,6 @@
             "displayName": "milipā",
             "unitPattern-count-other": "milipā ʻe {0}"
           },
-          "proportion-karat": {
-            "displayName": "kalati",
-            "unitPattern-count-other": "kalati ʻe {0}"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "kilomita he houa",
             "unitPattern-count-other": "kilomita he houa ʻe {0}"
@@ -526,7 +542,12 @@
           "volume-gallon": {
             "displayName": "kālani",
             "unitPattern-count-other": "kālani ʻe {0}",
-            "perUnitPattern": "{0}/gal"
+            "perUnitPattern": "{0}/gal US"
+          },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
           },
           "volume-quart": {
             "displayName": "kuata",
@@ -630,6 +651,22 @@
             "unitPattern-count-other": "in² ʻe {0}",
             "perUnitPattern": "{0}/in²"
           },
+          "concentr-karat": {
+            "displayName": "kt",
+            "unitPattern-count-other": "kt ʻe {0}"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "l/km",
             "unitPattern-count-other": "l ʻe {0}/km"
@@ -641,6 +678,10 @@
           "consumption-mile-per-gallon": {
             "displayName": "mi/kā",
             "unitPattern-count-other": "mi ʻe {0}/kā"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "telapaiti",
@@ -966,10 +1007,6 @@
             "displayName": "mpā",
             "unitPattern-count-other": "mpā ʻe {0}"
           },
-          "proportion-karat": {
-            "displayName": "kt",
-            "unitPattern-count-other": "kt ʻe {0}"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "km/h",
             "unitPattern-count-other": "km/h ʻe {0}"
@@ -1076,7 +1113,12 @@
           "volume-gallon": {
             "displayName": "kā",
             "unitPattern-count-other": "kā ʻe {0}",
-            "perUnitPattern": "{0}/gal"
+            "perUnitPattern": "{0}/gal US"
+          },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
           },
           "volume-quart": {
             "displayName": "ku",
@@ -1180,6 +1222,22 @@
             "unitPattern-count-other": "{0} in²",
             "perUnitPattern": "{0}/in²"
           },
+          "concentr-karat": {
+            "displayName": "kt",
+            "unitPattern-count-other": "{0} kt"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "l/km",
             "unitPattern-count-other": "{0} l/km"
@@ -1191,6 +1249,10 @@
           "consumption-mile-per-gallon": {
             "displayName": "mi/kā",
             "unitPattern-count-other": "{0} mi/kā"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "TB",
@@ -1516,10 +1578,6 @@
             "displayName": "mpā",
             "unitPattern-count-other": "{0} mpā"
           },
-          "proportion-karat": {
-            "displayName": "kt",
-            "unitPattern-count-other": "{0} kt"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "km/h",
             "unitPattern-count-other": "{0} km/h"
@@ -1626,7 +1684,12 @@
           "volume-gallon": {
             "displayName": "kā",
             "unitPattern-count-other": "{0} kā",
-            "perUnitPattern": "{0}/gal"
+            "perUnitPattern": "{0}/gal US"
+          },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
           },
           "volume-quart": {
             "displayName": "ku",

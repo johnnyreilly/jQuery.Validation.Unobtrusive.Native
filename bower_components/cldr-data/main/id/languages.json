@@ -3,8 +3,8 @@
     "id": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "id"
       },
@@ -532,8 +532,8 @@
           "sux": "Sumeria",
           "sv": "Swedia",
           "sw": "Swahili",
+          "sw-CD": "Kongo Swahili",
           "swb": "Komoria",
-          "swc": "Kongo Swahili",
           "syc": "Suriah Klasik",
           "syr": "Suriah",
           "szl": "Silesia",
@@ -622,9 +622,9 @@
           "zea": "zea",
           "zen": "Zenaga",
           "zgh": "Tamazight Maroko Standar",
-          "zh": "China",
-          "zh-Hans": "China (Aksara Sederhana)",
-          "zh-Hant": "China (Aksara Tradisional)",
+          "zh": "Tionghoa",
+          "zh-Hans": "Tionghoa (Aksara Sederhana)",
+          "zh-Hant": "Tionghoa (Aksara Tradisional)",
           "zu": "Zulu",
           "zun": "Zuni",
           "zxx": "Tidak ada konten linguistik",

@@ -3,8 +3,8 @@
     "lt": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "lt"
       },
@@ -531,8 +531,8 @@
           "sux": "šumerų",
           "sv": "švedų",
           "sw": "suahilių",
+          "sw-CD": "Kongo suahilių",
           "swb": "Komorų",
-          "swc": "Kongo suahilių",
           "syc": "klasikinė siriečių",
           "syr": "sirų",
           "szl": "sileziečių",

@@ -1,7 +1,8 @@
 {
   "name": "globalize-hello-world-node-npm",
+  "private": true,
   "dependencies": {
     "cldr-data": "latest",
-    "globalize": "1.x"
+    "globalize": "1.1.x"
   }
 }

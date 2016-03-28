@@ -3,8 +3,8 @@
     "hy": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "hy"
       },
@@ -531,8 +531,8 @@
           "sux": "sux",
           "sv": "շվեդերեն",
           "sw": "սուահիլի",
+          "sw-CD": "կոնգոյի սուահիլի",
           "swb": "swb",
-          "swc": "կոնգոյի սուահիլի",
           "syc": "syc",
           "syr": "syr",
           "szl": "szl",

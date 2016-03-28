@@ -3,8 +3,8 @@
     "ms-BN": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "ms",
         "territory": "BN"
@@ -338,7 +338,6 @@
                 "H": "HH",
                 "hm": "h:mm a",
                 "Hm": "HH:mm",
-                "Hmm": "H:mm",
                 "hms": "h:mm:ss a",
                 "Hms": "HH:mm:ss",
                 "M": "L",
@@ -357,7 +356,7 @@
                 "yyyyMMM": "MMM y G",
                 "yyyyMMMd": "d MMM y G",
                 "yyyyMMMEd": "E, d MMM y G",
-                "yyyyMMMM": "G y MMMM",
+                "yyyyMMMM": "MMMM y G",
                 "yyyyQQQ": "QQQ y G",
                 "yyyyQQQQ": "QQQQ y G"
               },

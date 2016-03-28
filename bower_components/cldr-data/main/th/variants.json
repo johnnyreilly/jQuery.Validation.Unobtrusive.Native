@@ -3,8 +3,8 @@
     "th": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11977 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "th"
       },
@@ -25,12 +25,14 @@
           "BAKU1926": "ตัวอักษรละตินเตอร์กิกแบบครบวงจร",
           "BALANKA": "BALANKA",
           "BARLA": "BARLA",
+          "BASICENG": "BASICENG",
           "BAUDDHA": "พระพุทธเจ้า",
           "BISCAYAN": "บิสคายัน",
           "BISKE": "ภาษาพื้นเมืองซานจอร์โจ/บิลา",
           "BOHORIC": "ตัวอักษรโบโฮริช",
           "BOONT": "บูนทลิ่ง",
           "COLB1945": "COLB1945",
+          "CORNU": "CORNU",
           "DAJNKO": "ตัวอักษรดายนชิซา",
           "EKAVSK": "EKAVSK",
           "EMODENG": "อังกฤษสมัยใหม่ตอนต้น",
@@ -53,6 +55,7 @@
           "MONOTON": "โมโนโทนิก",
           "NDYUKA": "ดิวคา",
           "NEDIS": "ภาษาพื้นเมืองนาทิโซเน",
+          "NEWFOUND": "NEWFOUND",
           "NJIVA": "ภาษาพื้นเมืองจนีวา/นจีวา",
           "NULIK": "โวลาพึคสมัยใหม่",
           "OSOJS": "ภาษาพื้นเมืองโอเซียคโค/โอโซยาเน",
@@ -70,6 +73,7 @@
           "SAAHO": "ซาโฮ",
           "SCOTLAND": "ภาษาอังกฤษมาตราฐานสก๊อต",
           "SCOUSE": "สเกาส์",
+          "SIMPLE": "SIMPLE",
           "SOLBA": "ภาษาพื้นเมืองสโตวีซซา/โซลบีกา",
           "SOTAV": "SOTAV",
           "SURMIRAN": "ซูร์มิราน",

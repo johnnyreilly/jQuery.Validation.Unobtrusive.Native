@@ -3,8 +3,8 @@
     "da": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11944 $"
+          "_number": "$Revision: 12387 $",
+          "_cldrVersion": "29"
         },
         "language": "da"
       },

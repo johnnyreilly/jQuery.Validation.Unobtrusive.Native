@@ -3,8 +3,8 @@
     "eu": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "eu"
       },
@@ -526,7 +526,7 @@
             "displayName-count-one": "Georgiako lari",
             "displayName-count-other": "Georgiako lari",
             "symbol": "GEL",
-            "symbol-alt-variant": "₾"
+            "symbol-alt-narrow": "₾"
           },
           "GHC": {
             "displayName": "GHC",

@@ -21,7 +21,7 @@ define([
  * ref: http://www.unicode.org/reports/tr35/tr35-dates.html#Date_Format_Patterns
  */
 return function( value, tokens, properties ) {
-	var amPm, day, daysOfYear, era, hour, hour12, timezoneOffset, valid,
+	var amPm, day, daysOfYear, month, era, hour, hour12, timezoneOffset, valid,
 		YEAR = 0,
 		MONTH = 1,
 		DAY = 2,
@@ -41,6 +41,7 @@ return function( value, tokens, properties ) {
 		var century, chr, value, length;
 
 		if ( token.type === "literal" ) {
+
 			// continue
 			return true;
 		}
@@ -49,6 +50,7 @@ return function( value, tokens, properties ) {
 		length = token.type.length;
 
 		if ( chr === "j" ) {
+
 			// Locale preferred hHKk.
 			// http://www.unicode.org/reports/tr35/tr35-dates.html#Time_Data
 			chr = properties.preferredTimeData;
@@ -69,6 +71,7 @@ return function( value, tokens, properties ) {
 					if ( outOfRange( value, 0, 99 ) ) {
 						return false;
 					}
+
 					// mimic dojo/date/locale: choose century to apply, according to a sliding
 					// window of 80 years before and 20 years after present year.
 					century = Math.floor( date.getFullYear() / 100 ) * 100;
@@ -102,7 +105,10 @@ return function( value, tokens, properties ) {
 				if ( outOfRange( value, 1, 12 ) ) {
 					return false;
 				}
-				dateSetMonth( date, value - 1 );
+
+				// Setting the month later so that we have the correct year and can determine
+				// the correct last day of February in case of leap year.
+				month = value;
 				truncateAt.push( MONTH );
 				break;
 
@@ -123,6 +129,7 @@ return function( value, tokens, properties ) {
 				break;
 
 			case "F":
+
 				// Day of Week in month. eg. 2nd Wed in July.
 				// Skip
 				break;
@@ -131,6 +138,7 @@ return function( value, tokens, properties ) {
 			case "e":
 			case "c":
 			case "E":
+
 				// Skip.
 				// value = arrayIndexOf( dateWeekDays, token.value );
 				break;
@@ -237,8 +245,13 @@ return function( value, tokens, properties ) {
 	}
 
 	if ( era === 0 ) {
+
 		// 1 BC = year 0
 		date.setFullYear( date.getFullYear() * -1 + 1 );
+	}
+
+	if ( month !== undefined ) {
+		dateSetMonth( date, month - 1 );
 	}
 
 	if ( day !== undefined ) {
@@ -250,7 +263,7 @@ return function( value, tokens, properties ) {
 		if ( outOfRange( daysOfYear, 1, dateIsLeapYear( date.getFullYear() ) ? 366 : 365 ) ) {
 			return null;
 		}
-		date.setMonth(0);
+		date.setMonth( 0 );
 		date.setDate( daysOfYear );
 	}
 

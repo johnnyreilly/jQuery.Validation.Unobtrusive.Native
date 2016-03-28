@@ -3,8 +3,8 @@
     "he": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "he"
       },
@@ -619,6 +619,7 @@
             "displayName-count-many": "לרי גאורגי",
             "displayName-count-other": "לרי גאורגי",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

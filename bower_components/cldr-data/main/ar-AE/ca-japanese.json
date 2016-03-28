@@ -3,8 +3,8 @@
     "ar-AE": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 11994 $",
+          "_cldrVersion": "29"
         },
         "language": "ar",
         "territory": "AE"
@@ -1051,7 +1051,7 @@
                 "MMM": "LLL",
                 "MMMd": "d MMM",
                 "MMMEd": "E، d MMM",
-                "MMMMd": "MMMM d",
+                "MMMMd": "d MMMM",
                 "ms": "mm:ss",
                 "y": "y G",
                 "yyyy": "y G",

@@ -3,8 +3,8 @@
     "nb": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11996 $"
+          "_number": "$Revision: 12379 $",
+          "_cldrVersion": "29"
         },
         "language": "nb"
       },
@@ -306,9 +306,13 @@
             },
             "timeFormats": {
               "full": "HH.mm.ss zzzz",
+              "full-alt-variant": "HH:mm:ss zzzz",
               "long": "HH.mm.ss z",
+              "long-alt-variant": "HH:mm:ss z",
               "medium": "HH.mm.ss",
-              "short": "HH.mm"
+              "medium-alt-variant": "HH:mm:ss",
+              "short": "HH.mm",
+              "short-alt-variant": "HH:mm"
             },
             "dateTimeFormats": {
               "full": "{1} {0}",

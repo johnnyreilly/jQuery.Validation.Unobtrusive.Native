@@ -3,8 +3,8 @@
     "hr-BA": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "hr",
         "territory": "BA"
@@ -534,8 +534,8 @@
           "sux": "sumerski",
           "sv": "švedski",
           "sw": "svahili",
+          "sw-CD": "kongoanski swahili",
           "swb": "komorski",
-          "swc": "kongoanski swahili",
           "syc": "klasični sirski",
           "syr": "sirijski",
           "szl": "szl",

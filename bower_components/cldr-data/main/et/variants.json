@@ -3,8 +3,8 @@
     "et": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "et"
       },
@@ -25,12 +25,14 @@
           "BAKU1926": "ühtlustatud türgi-ladina tähestik",
           "BALANKA": "BALANKA",
           "BARLA": "BARLA",
+          "BASICENG": "BASICENG",
           "BAUDDHA": "BAUDDHA",
           "BISCAYAN": "BISCAYAN",
           "BISKE": "San Giorgio/Bila murre",
           "BOHORIC": "BOHORIC",
           "BOONT": "boontlingi",
           "COLB1945": "COLB1945",
+          "CORNU": "CORNU",
           "DAJNKO": "DAJNKO",
           "EKAVSK": "štokavi e-line murrak",
           "EMODENG": "EMODENG",
@@ -53,6 +55,7 @@
           "MONOTON": "monotoonne",
           "NDYUKA": "NDYUKA",
           "NEDIS": "Natisone murre",
+          "NEWFOUND": "NEWFOUND",
           "NJIVA": "Gniva/Njiva murre",
           "NULIK": "NULIK",
           "OSOJS": "Oseacco/Osojane murre",
@@ -70,6 +73,7 @@
           "SAAHO": "saho murre",
           "SCOTLAND": "šoti tavainglise",
           "SCOUSE": "scouse",
+          "SIMPLE": "SIMPLE",
           "SOLBA": "Stolvizza/Solbica murre",
           "SOTAV": "SOTAV",
           "SURMIRAN": "SURMIRAN",

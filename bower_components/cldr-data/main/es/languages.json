@@ -3,8 +3,8 @@
     "es": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12015 $"
+          "_number": "$Revision: 12318 $",
+          "_cldrVersion": "29"
         },
         "language": "es"
       },
@@ -532,8 +532,8 @@
           "sux": "sumerio",
           "sv": "sueco",
           "sw": "suajili",
+          "sw-CD": "suajili del Congo",
           "swb": "comorense",
-          "swc": "suajili del Congo",
           "syc": "siríaco clásico",
           "syr": "siriaco",
           "szl": "szl",

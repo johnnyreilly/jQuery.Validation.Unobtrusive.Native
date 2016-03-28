@@ -3,8 +3,8 @@
     "ru-MD": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "ru",
         "territory": "MD"
@@ -49,7 +49,6 @@
           "AI": "Ангилья",
           "AL": "Албания",
           "AM": "Армения",
-          "AN": "Нидерландские Антильские о-ва",
           "AO": "Ангола",
           "AQ": "Антарктида",
           "AR": "Аргентина",

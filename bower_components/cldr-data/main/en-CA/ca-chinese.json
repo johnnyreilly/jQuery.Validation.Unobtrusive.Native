@@ -3,8 +3,8 @@
     "en-CA": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11979 $"
+          "_number": "$Revision: 12291 $",
+          "_cldrVersion": "29"
         },
         "language": "en",
         "territory": "CA"
@@ -43,18 +43,18 @@
                   "12": "12"
                 },
                 "wide": {
-                  "1": "Month1",
-                  "2": "Month2",
-                  "3": "Month3",
-                  "4": "Month4",
-                  "5": "Month5",
-                  "6": "Month6",
-                  "7": "Month7",
-                  "8": "Month8",
-                  "9": "Month9",
-                  "10": "Month10",
-                  "11": "Month11",
-                  "12": "Month12"
+                  "1": "First Month",
+                  "2": "Second Month",
+                  "3": "Third Month",
+                  "4": "Fourth Month",
+                  "5": "Fifth Month",
+                  "6": "Sixth Month",
+                  "7": "Seventh Month",
+                  "8": "Eighth Month",
+                  "9": "Ninth Month",
+                  "10": "Tenth Month",
+                  "11": "Eleventh Month",
+                  "12": "Twelfth Month"
                 }
               },
               "stand-alone": {
@@ -87,18 +87,18 @@
                   "12": "12"
                 },
                 "wide": {
-                  "1": "Month1",
-                  "2": "Month2",
-                  "3": "Month3",
-                  "4": "Month4",
-                  "5": "Month5",
-                  "6": "Month6",
-                  "7": "Month7",
-                  "8": "Month8",
-                  "9": "Month9",
-                  "10": "Month10",
-                  "11": "Month11",
-                  "12": "Month12"
+                  "1": "First Month",
+                  "2": "Second Month",
+                  "3": "Third Month",
+                  "4": "Fourth Month",
+                  "5": "Fifth Month",
+                  "6": "Sixth Month",
+                  "7": "Seventh Month",
+                  "8": "Eighth Month",
+                  "9": "Ninth Month",
+                  "10": "Tenth Month",
+                  "11": "Eleventh Month",
+                  "12": "Twelfth Month"
                 }
               }
             },
@@ -1079,7 +1079,8 @@
               "full": "EEEE, MMMM d, r(U)",
               "long": "MMMM d, r(U)",
               "medium": "MMM d, r",
-              "short": "r-MM-dd"
+              "short": "r-MM-dd",
+              "short-alt-variant": "d/M/r"
             },
             "timeFormats": {
               "full": "h:mm:ss a zzzz",
@@ -1112,7 +1113,9 @@
                 "Hms": "HH:mm:ss",
                 "M": "LL",
                 "Md": "MM-dd",
+                "Md-alt-variant": "d/M",
                 "MEd": "E, MM-dd",
+                "MEd-alt-variant": "E, d/M",
                 "MMM": "LLL",
                 "MMMd": "MMM d",
                 "MMMEd": "E, MMM d",
@@ -1120,14 +1123,19 @@
                 "ms": "mm:ss",
                 "UM": "M/U",
                 "UMd": "U-MM-dd",
+                "UMd-alt-variant": "d/M/U",
                 "UMMM": "MMM U",
                 "UMMMd": "MMM d, U",
                 "y": "r(U)",
                 "yMd": "r-MM-dd",
+                "yMd-alt-variant": "d/M/r",
                 "yyyy": "r(U)",
                 "yyyyM": "r-MM",
+                "yyyyM-alt-variant": "M/r",
                 "yyyyMd": "r-MM-dd",
+                "yyyyMd-alt-variant": "d/M/r",
                 "yyyyMEd": "E, r-MM-dd",
+                "yyyyMEd-alt-variant": "E, d/M/r",
                 "yyyyMMM": "MMM r(U)",
                 "yyyyMMMd": "MMM d, r",
                 "yyyyMMMEd": "E, MMM d, r(U)",
@@ -1190,11 +1198,15 @@
                 },
                 "Md": {
                   "d": "MM-dd – MM-dd",
-                  "M": "MM-dd – MM-dd"
+                  "d-alt-variant": "d/M – d/M",
+                  "M": "MM-dd – MM-dd",
+                  "M-alt-variant": "d/M – d/M"
                 },
                 "MEd": {
                   "d": "E, MM-dd – E, MM-dd",
-                  "M": "E, MM-dd – E, MM-dd"
+                  "d-alt-variant": "E, d/M – E, d/M",
+                  "M": "E, MM-dd – E, MM-dd",
+                  "M-alt-variant": "E, d/M – E, d/M"
                 },
                 "MMM": {
                   "M": "MMM – MMM"
@@ -1212,17 +1224,25 @@
                 },
                 "yM": {
                   "M": "y-MM – y-MM",
-                  "y": "y-MM – y-MM"
+                  "M-alt-variant": "M/y – M/y",
+                  "y": "y-MM – y-MM",
+                  "y-alt-variant": "M/y – M/y"
                 },
                 "yMd": {
                   "d": "y-MM-dd – y-MM-dd",
+                  "d-alt-variant": "d/M/y – d/M/y",
                   "M": "y-MM-dd – y-MM-dd",
-                  "y": "y-MM-dd – y-MM-dd"
+                  "M-alt-variant": "d/M/y – d/M/y",
+                  "y": "y-MM-dd – y-MM-dd",
+                  "y-alt-variant": "d/M/y – d/M/y"
                 },
                 "yMEd": {
                   "d": "E, y-MM-dd – E, y-MM-dd",
+                  "d-alt-variant": "E, d/M/y – E, d/M/y",
                   "M": "E, y-MM-dd – E, y-MM-dd",
-                  "y": "E, y-MM-dd – E, y-MM-dd"
+                  "M-alt-variant": "E, d/M/y – E, d/M/y",
+                  "y": "E, y-MM-dd – E, y-MM-dd",
+                  "y-alt-variant": "E, d/M/y – E, d/M/y"
                 },
                 "yMMM": {
                   "M": "MMM – MMM U",

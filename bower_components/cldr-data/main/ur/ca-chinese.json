@@ -3,8 +3,8 @@
     "ur": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12311 $",
+          "_cldrVersion": "29"
         },
         "language": "ur"
       },

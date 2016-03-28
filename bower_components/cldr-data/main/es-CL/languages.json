@@ -3,8 +3,8 @@
     "es-CL": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12128 $",
+          "_cldrVersion": "29"
         },
         "language": "es",
         "territory": "CL"
@@ -533,8 +533,8 @@
           "sux": "sumerio",
           "sv": "sueco",
           "sw": "swahili",
+          "sw-CD": "swahili del Congo",
           "swb": "comorense",
-          "swc": "swahili del Congo",
           "syc": "siríaco clásico",
           "syr": "siriaco",
           "szl": "szl",

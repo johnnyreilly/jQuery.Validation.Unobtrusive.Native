@@ -3,8 +3,8 @@
     "de": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11972 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "de"
       },
@@ -236,7 +236,7 @@
                 },
                 "narrow": {
                   "midnight": "Mitternacht",
-                  "am": "vorm.",
+                  "am": "vm.",
                   "pm": "nm.",
                   "morning1": "morgens",
                   "morning2": "vormittags",

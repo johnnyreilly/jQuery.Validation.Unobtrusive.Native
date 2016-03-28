@@ -3,8 +3,8 @@
     "en-NZ": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12295 $",
+          "_cldrVersion": "29"
         },
         "language": "en",
         "territory": "NZ"
@@ -365,7 +365,7 @@
           "mgh": "Makhuwa-Meetto",
           "mgo": "Metaʼ",
           "mh": "Marshallese",
-          "mi": "Maori",
+          "mi": "Māori",
           "mic": "Micmac",
           "min": "Minangkabau",
           "mis": "mis",
@@ -536,8 +536,8 @@
           "sux": "Sumerian",
           "sv": "Swedish",
           "sw": "Swahili",
+          "sw-CD": "Congo Swahili",
           "swb": "Comorian",
-          "swc": "Congo Swahili",
           "syc": "Classical Syriac",
           "syr": "Syriac",
           "szl": "Silesian",

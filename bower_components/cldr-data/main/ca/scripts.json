@@ -3,13 +3,14 @@
     "ca": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ca"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "afaka",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
@@ -23,6 +24,7 @@
           "Bass": "bassa vah",
           "Batk": "batak",
           "Beng": "bengalí",
+          "Bhks": "Bhks",
           "Blis": "símbols Bliss",
           "Bopo": "bopomofo",
           "Brah": "brahmi",
@@ -55,6 +57,7 @@
           "Grek": "grec",
           "Gujr": "gujarati",
           "Guru": "gurmukhi",
+          "Hanb": "Hanb",
           "Hang": "hangul",
           "Hani": "han",
           "Hano": "hanunoo",
@@ -71,6 +74,7 @@
           "Hung": "hongarès antic",
           "Inds": "escriptura de la vall de l’Indus",
           "Ital": "cursiva antiga",
+          "Jamo": "Jamo",
           "Java": "javanès",
           "Jpan": "japonès",
           "Jurc": "jürchen",
@@ -99,6 +103,7 @@
           "Mahj": "Mahj",
           "Mand": "mandaic",
           "Mani": "maniqueu",
+          "Marc": "Marc",
           "Maya": "jeroglífics maies",
           "Mend": "mende",
           "Merc": "cursiva meroítica",
@@ -113,6 +118,7 @@
           "Mymr": "birmà",
           "Narb": "antic nord-aràbic",
           "Nbat": "nabateu",
+          "Newa": "Newa",
           "Nkgb": "geba",
           "Nkoo": "n’Ko",
           "Nshu": "nü shu",
@@ -120,6 +126,7 @@
           "Olck": "santali",
           "Orkh": "orkhon",
           "Orya": "oriya",
+          "Osge": "Osge",
           "Osma": "osmanya",
           "Palm": "palmirè",
           "Pauc": "Pauc",
@@ -225,6 +232,7 @@
           "Yiii": "yi",
           "Zinh": "heretat",
           "Zmth": "notació matemàtica",
+          "Zsye": "Zsye",
           "Zsym": "símbols",
           "Zxxx": "sense escriptura",
           "Zyyy": "comú",

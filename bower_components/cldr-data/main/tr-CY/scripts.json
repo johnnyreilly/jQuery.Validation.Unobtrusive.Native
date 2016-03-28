@@ -3,14 +3,15 @@
     "tr-CY": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "tr",
         "territory": "CY"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "Afaka",
           "Aghb": "Kafkas Albanyası",
           "Ahom": "Ahom",
@@ -24,6 +25,7 @@
           "Bass": "Bassa Vah",
           "Batk": "Batak",
           "Beng": "Bengal",
+          "Bhks": "Bhks",
           "Blis": "Blis Sembolleri",
           "Bopo": "Bopomofo",
           "Brah": "Brahmi",
@@ -56,6 +58,7 @@
           "Grek": "Yunan",
           "Gujr": "Gücerat",
           "Guru": "Gurmukhi",
+          "Hanb": "Hanb",
           "Hang": "Hangıl",
           "Hani": "Han",
           "Hano": "Hanunoo",
@@ -72,6 +75,7 @@
           "Hung": "Eski Macar",
           "Inds": "Indus",
           "Ital": "Eski İtalyan",
+          "Jamo": "Jamo",
           "Java": "Cava Dili",
           "Jpan": "Japon",
           "Jurc": "Jurchen",
@@ -100,6 +104,7 @@
           "Mahj": "Mahajani",
           "Mand": "Manden",
           "Mani": "Mani",
+          "Marc": "Marc",
           "Maya": "Maya Hiyeroglifleri",
           "Mend": "Mende",
           "Merc": "Meroitik El Yazısı",
@@ -114,6 +119,7 @@
           "Mymr": "Burma",
           "Narb": "Eski Kuzey Arap",
           "Nbat": "Nebati",
+          "Newa": "Newa",
           "Nkgb": "Naksi Geba",
           "Nkoo": "N’Ko",
           "Nshu": "Nüshu",
@@ -121,6 +127,7 @@
           "Olck": "Ol Chiki",
           "Orkh": "Orhun",
           "Orya": "Oriya",
+          "Osge": "Osge",
           "Osma": "Osmanya",
           "Palm": "Palmira",
           "Pauc": "Pau Cin Hau",
@@ -226,6 +233,7 @@
           "Yiii": "Yi",
           "Zinh": "Kalıtsal",
           "Zmth": "Matematiksel Gösterim",
+          "Zsye": "Zsye",
           "Zsym": "Sembol",
           "Zxxx": "Yazılı Olmayan",
           "Zyyy": "Ortak",

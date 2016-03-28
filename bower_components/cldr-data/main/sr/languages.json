@@ -3,8 +3,8 @@
     "sr": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "sr"
       },
@@ -532,8 +532,8 @@
           "sux": "Сумерски",
           "sv": "шведски",
           "sw": "свахили",
+          "sw-CD": "конго свахили",
           "swb": "Коморски",
-          "swc": "конго свахили",
           "syc": "Класични сиријски",
           "syr": "Сиријски",
           "szl": "szl",

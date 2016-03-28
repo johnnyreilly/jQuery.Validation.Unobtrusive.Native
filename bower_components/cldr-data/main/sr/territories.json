@@ -3,8 +3,8 @@
     "sr": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "sr"
       },
@@ -48,7 +48,6 @@
           "AI": "Ангвила",
           "AL": "Албанија",
           "AM": "Јерменија",
-          "AN": "Холандски Антили",
           "AO": "Ангола",
           "AQ": "Антарктик",
           "AR": "Аргентина",

@@ -3,8 +3,8 @@
     "id": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "id"
       },
@@ -48,7 +48,6 @@
           "AI": "Anguilla",
           "AL": "Albania",
           "AM": "Armenia",
-          "AN": "Antilla Belanda",
           "AO": "Angola",
           "AQ": "Antarktika",
           "AR": "Argentina",
@@ -92,7 +91,7 @@
           "CK": "Kepulauan Cook",
           "CL": "Cile",
           "CM": "Kamerun",
-          "CN": "China",
+          "CN": "Tiongkok",
           "CO": "Kolombia",
           "CP": "Pulau Clipperton",
           "CR": "Kosta Rika",
@@ -145,7 +144,7 @@
           "GU": "Guam",
           "GW": "Guinea-Bissau",
           "GY": "Guyana",
-          "HK": "Hong Kong SAR China",
+          "HK": "Hong Kong SAR Tiongkok",
           "HK-alt-short": "Hong Kong",
           "HM": "Pulau Heard dan Kepulauan McDonald",
           "HN": "Honduras",
@@ -201,7 +200,7 @@
           "ML": "Mali",
           "MM": "Myanmar (Burma)",
           "MN": "Mongolia",
-          "MO": "Makau SAR China",
+          "MO": "Makau SAR Tiongkok",
           "MO-alt-short": "Makau",
           "MP": "Kepulauan Mariana Utara",
           "MQ": "Martinik",

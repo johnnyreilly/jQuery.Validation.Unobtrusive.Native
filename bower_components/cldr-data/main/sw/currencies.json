@@ -3,8 +3,8 @@
     "sw": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "sw"
       },
@@ -523,6 +523,7 @@
             "displayName-count-one": "Lari ya Georgia",
             "displayName-count-other": "Lari za Georgia",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

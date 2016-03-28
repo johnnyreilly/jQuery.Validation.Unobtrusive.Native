@@ -3,8 +3,8 @@
     "fa-AF": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11977 $"
+          "_number": "$Revision: 12217 $",
+          "_cldrVersion": "29"
         },
         "language": "fa",
         "territory": "AF"
@@ -49,7 +49,6 @@
           "AI": "آنگویلا",
           "AL": "البانیا",
           "AM": "ارمنستان",
-          "AN": "آنتیل هلند",
           "AO": "انگولا",
           "AQ": "جنوبگان",
           "AR": "ارجنتاین",

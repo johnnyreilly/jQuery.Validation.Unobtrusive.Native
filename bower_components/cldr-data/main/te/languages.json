@@ -3,8 +3,8 @@
     "te": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "te"
       },
@@ -532,8 +532,8 @@
           "sux": "సుమేరియాన్",
           "sv": "స్వీడిష్",
           "sw": "స్వాహిలి",
+          "sw-CD": "కాంగో స్వాహిలి",
           "swb": "కొమొరియన్",
-          "swc": "కాంగో స్వాహిలి",
           "syc": "సాంప్రదాయ సిరియాక్",
           "syr": "సిరియాక్",
           "szl": "szl",

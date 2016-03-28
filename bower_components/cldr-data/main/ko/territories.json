@@ -3,8 +3,8 @@
     "ko": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ko"
       },
@@ -48,7 +48,6 @@
           "AI": "앵귈라",
           "AL": "알바니아",
           "AM": "아르메니아",
-          "AN": "네덜란드령 안틸레스",
           "AO": "앙골라",
           "AQ": "남극 대륙",
           "AR": "아르헨티나",

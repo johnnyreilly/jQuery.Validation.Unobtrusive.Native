@@ -1,9 +1,9 @@
 {
   "supplemental": {
     "version": {
-      "_cldrVersion": "28",
+      "_number": "$Revision: 12002 $",
       "_unicodeVersion": "8.0.0",
-      "_number": "$Revision: 12002 $"
+      "_cldrVersion": "29"
     },
     "plurals-type-cardinal": {
       "af": {

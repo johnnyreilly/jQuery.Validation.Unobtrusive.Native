@@ -3,8 +3,8 @@
     "nb-SJ": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "nb",
         "territory": "SJ"
@@ -27,7 +27,8 @@
           "perMille": "‰",
           "infinity": "∞",
           "nan": "NaN",
-          "timeSeparator": "."
+          "timeSeparator": ".",
+          "timeSeparator-alt-variant": ":"
         },
         "decimalFormats-numberSystem-latn": {
           "standard": "#,##0.###",

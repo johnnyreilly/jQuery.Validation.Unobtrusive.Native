@@ -3,8 +3,8 @@
     "el-CY": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "el",
         "territory": "CY"
@@ -532,8 +532,8 @@
           "sux": "Σουμερικά",
           "sv": "Σουηδικά",
           "sw": "Σουαχίλι",
+          "sw-CD": "Κονγκό Σουαχίλι",
           "swb": "Κομόρρια",
-          "swc": "Κονγκό Σουαχίλι",
           "syc": "Κλασικά Συριακά",
           "syr": "Συριακά",
           "szl": "szl",

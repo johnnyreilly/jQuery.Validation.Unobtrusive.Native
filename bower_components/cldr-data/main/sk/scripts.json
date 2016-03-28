@@ -3,13 +3,14 @@
     "sk": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12411 $",
+          "_cldrVersion": "29"
         },
         "language": "sk"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "arabské",
@@ -22,6 +23,7 @@
           "Bass": "Bass",
           "Batk": "Batk",
           "Beng": "bengálske",
+          "Bhks": "Bhks",
           "Bopo": "bopomofo",
           "Brah": "Brah",
           "Brai": "braillovo",
@@ -48,6 +50,7 @@
           "Grek": "grécke",
           "Gujr": "gudžarátí",
           "Guru": "gurmukhi",
+          "Hanb": "Hanb",
           "Hang": "hangul",
           "Hani": "čínske",
           "Hano": "Hano",
@@ -63,6 +66,7 @@
           "Hrkt": "Hrkt",
           "Hung": "Hung",
           "Ital": "Ital",
+          "Jamo": "Jamo",
           "Java": "Java",
           "Jpan": "japonské",
           "Kali": "Kali",
@@ -86,6 +90,7 @@
           "Mahj": "Mahj",
           "Mand": "Mand",
           "Mani": "Mani",
+          "Marc": "Marc",
           "Maya": "mayské hieroglyfy",
           "Mend": "Mend",
           "Merc": "Merc",
@@ -99,11 +104,13 @@
           "Mymr": "barmské",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "Nkoo",
           "Ogam": "Ogam",
           "Olck": "Olck",
           "Orkh": "Orkh",
           "Orya": "uríjske",
+          "Osge": "Osge",
           "Osma": "osmanský",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -183,6 +190,7 @@
           "Tale": "Tale",
           "Talu": "Talu",
           "Taml": "tamilské",
+          "Tang": "Tang",
           "Tavt": "Tavt",
           "Telu": "telugské",
           "Tfng": "Tfng",
@@ -199,6 +207,7 @@
           "Yiii": "Yiii",
           "Zinh": "Zinh",
           "Zmth": "Zmth",
+          "Zsye": "Zsye",
           "Zsym": "symboly",
           "Zxxx": "bez zápisu",
           "Zyyy": "všeobecné",

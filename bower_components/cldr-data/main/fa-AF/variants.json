@@ -3,8 +3,8 @@
     "fa-AF": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11977 $"
+          "_number": "$Revision: 12217 $",
+          "_cldrVersion": "29"
         },
         "language": "fa",
         "territory": "AF"
@@ -26,12 +26,14 @@
           "BAKU1926": "BAKU1926",
           "BALANKA": "BALANKA",
           "BARLA": "BARLA",
+          "BASICENG": "BASICENG",
           "BAUDDHA": "BAUDDHA",
           "BISCAYAN": "BISCAYAN",
           "BISKE": "BISKE",
           "BOHORIC": "BOHORIC",
           "BOONT": "BOONT",
           "COLB1945": "COLB1945",
+          "CORNU": "CORNU",
           "DAJNKO": "DAJNKO",
           "EKAVSK": "EKAVSK",
           "EMODENG": "EMODENG",
@@ -54,6 +56,7 @@
           "MONOTON": "MONOTON",
           "NDYUKA": "NDYUKA",
           "NEDIS": "NEDIS",
+          "NEWFOUND": "NEWFOUND",
           "NJIVA": "NJIVA",
           "NULIK": "NULIK",
           "OSOJS": "OSOJS",
@@ -71,6 +74,7 @@
           "SAAHO": "ساهویی",
           "SCOTLAND": "انگلیسی معیار اسکاتلند",
           "SCOUSE": "SCOUSE",
+          "SIMPLE": "SIMPLE",
           "SOLBA": "SOLBA",
           "SOTAV": "SOTAV",
           "SURMIRAN": "SURMIRAN",

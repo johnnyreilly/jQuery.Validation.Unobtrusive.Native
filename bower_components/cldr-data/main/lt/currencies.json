@@ -3,8 +3,8 @@
     "lt": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "lt"
       },
@@ -829,7 +829,7 @@
             "displayName-count-many": "Gruzijos lario",
             "displayName-count-other": "Gruzijos larių",
             "symbol": "GEL",
-            "symbol-alt-variant": "₾"
+            "symbol-alt-narrow": "₾"
           },
           "GHC": {
             "displayName": "Ganos sedis (1979–2007)",

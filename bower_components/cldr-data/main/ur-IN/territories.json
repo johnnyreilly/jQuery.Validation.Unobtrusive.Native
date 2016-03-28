@@ -3,8 +3,8 @@
     "ur-IN": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12217 $",
+          "_cldrVersion": "29"
         },
         "language": "ur",
         "territory": "IN"
@@ -49,7 +49,6 @@
           "AI": "انگوئیلا",
           "AL": "البانیہ",
           "AM": "آرمینیا",
-          "AN": "نیدرلینڈز انٹیلیز",
           "AO": "انگولا",
           "AQ": "انٹارکٹیکا",
           "AR": "ارجنٹینا",

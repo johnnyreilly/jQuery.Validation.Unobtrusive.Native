@@ -3,15 +3,15 @@
     "es-HN": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: $",
+          "_cldrVersion": "29"
         },
         "language": "es",
         "territory": "HN"
       },
       "characters": {
-        "exemplarCharacters": "[a á b c d e é f g h i í j k l m n ñ o ó p q r s t u ú ü v w x y z]",
-        "auxiliary": "[ª à ă â å ä ã ā æ ç è ĕ ê ë ē ì ĭ î ï ī º ò ŏ ô ö ø ō œ ù ŭ û ū ÿ]",
+        "exemplarCharacters": "[a á b c d e é f g h i í ï j k l m n ñ o ó p q r s t u ú ü v w x y ý z]",
+        "auxiliary": "[ª à ă â å ä ã ā æ ç è ĕ ê ë ē ì ĭ î ī º ò ŏ ô ö ø ō œ ù ŭ û ū ÿ]",
         "index": "[A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z]",
         "punctuation": "[\\\\- ‐ – — , ; \\\\: ! ¡ ? ¿ . … ' ‘ ’ \\\" “ ” « » ( ) \\\\[ \\\\] § @ * / \\\\\\\\ \\\\& # † ‡ ′ ″]",
         "ellipsis": {

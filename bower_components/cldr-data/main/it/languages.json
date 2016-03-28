@@ -3,8 +3,8 @@
     "it": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "it"
       },
@@ -531,8 +531,8 @@
           "sux": "sumero",
           "sv": "svedese",
           "sw": "swahili",
+          "sw-CD": "congo swahili",
           "swb": "comoriano",
-          "swc": "congo swahili",
           "syc": "siriaco classico",
           "syr": "siriaco",
           "szl": "slesiano",

@@ -3,8 +3,8 @@
     "en-CY": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11969 $"
+          "_number": "$Revision: 12347 $",
+          "_cldrVersion": "29"
         },
         "language": "en",
         "territory": "CY"

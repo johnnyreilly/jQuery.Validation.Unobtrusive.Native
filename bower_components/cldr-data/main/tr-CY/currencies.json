@@ -3,8 +3,8 @@
     "tr-CY": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "tr",
         "territory": "CY"
@@ -626,6 +626,7 @@
             "displayName-count-one": "Gürcistan larisi",
             "displayName-count-other": "Gürcistan larisi",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

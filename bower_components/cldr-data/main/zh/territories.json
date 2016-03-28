@@ -3,8 +3,8 @@
     "zh": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12031 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "zh"
       },
@@ -48,7 +48,6 @@
           "AI": "安圭拉",
           "AL": "阿尔巴尼亚",
           "AM": "亚美尼亚",
-          "AN": "荷属安的列斯群岛",
           "AO": "安哥拉",
           "AQ": "南极洲",
           "AR": "阿根廷",

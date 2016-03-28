@@ -3,13 +3,14 @@
     "ro": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ro"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "arabă",
@@ -22,6 +23,7 @@
           "Bass": "Bass",
           "Batk": "Batk",
           "Beng": "bengaleză",
+          "Bhks": "Bhks",
           "Bopo": "bopomofo",
           "Brah": "Brah",
           "Brai": "braille",
@@ -52,6 +54,7 @@
           "Grek": "greacă",
           "Gujr": "gujarati",
           "Guru": "gurmukhi",
+          "Hanb": "Hanb",
           "Hang": "hangul",
           "Hani": "han",
           "Hano": "Hano",
@@ -68,6 +71,7 @@
           "Hung": "maghiară veche",
           "Inds": "indus",
           "Ital": "italică veche",
+          "Jamo": "Jamo",
           "Java": "javaneză",
           "Jpan": "japoneză",
           "Kali": "Kali",
@@ -93,6 +97,7 @@
           "Mahj": "Mahj",
           "Mand": "Mand",
           "Mani": "Mani",
+          "Marc": "Marc",
           "Maya": "hieroglife maya",
           "Mend": "Mend",
           "Merc": "Merc",
@@ -106,11 +111,13 @@
           "Mymr": "birmană",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "Nkoo",
           "Ogam": "Ogam",
           "Olck": "Olck",
           "Orkh": "Orkh",
           "Orya": "oriya",
+          "Osge": "Osge",
           "Osma": "Osma",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -192,6 +199,7 @@
           "Tale": "Tale",
           "Talu": "Talu",
           "Taml": "tamilă",
+          "Tang": "Tang",
           "Tavt": "Tavt",
           "Telu": "telugu",
           "Tfng": "berberă",
@@ -208,6 +216,7 @@
           "Yiii": "Yiii",
           "Zinh": "moștenită",
           "Zmth": "Zmth",
+          "Zsye": "Zsye",
           "Zsym": "simboluri",
           "Zxxx": "nescrisă",
           "Zyyy": "comună",

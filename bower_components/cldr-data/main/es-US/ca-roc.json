@@ -3,8 +3,8 @@
     "es-US": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12217 $",
+          "_cldrVersion": "29"
         },
         "language": "es",
         "territory": "US"
@@ -235,7 +235,7 @@
                 },
                 "narrow": {
                   "am": "a",
-                  "noon": "m",
+                  "noon": "m.",
                   "pm": "p",
                   "morning1": "madrugada",
                   "morning2": "mañana",

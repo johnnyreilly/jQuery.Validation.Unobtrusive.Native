@@ -3,8 +3,8 @@
     "nb": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11996 $"
+          "_number": "$Revision: 12379 $",
+          "_cldrVersion": "29"
         },
         "language": "nb"
       },
@@ -629,6 +629,7 @@
             "displayName-count-one": "georgisk lari",
             "displayName-count-other": "georgiske lari",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

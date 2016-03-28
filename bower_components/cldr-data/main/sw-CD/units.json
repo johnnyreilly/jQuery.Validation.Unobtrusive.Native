@@ -3,8 +3,8 @@
     "sw-CD": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12197 $",
+          "_cldrVersion": "29"
         },
         "language": "sw",
         "territory": "CD"
@@ -97,6 +97,23 @@
             "unitPattern-count-other": "inchi {0} za mraba",
             "perUnitPattern": "{0} kwa kila inchi ya mraba"
           },
+          "concentr-karat": {
+            "displayName": "karati",
+            "unitPattern-count-one": "karati {0}",
+            "unitPattern-count-other": "karati {0}"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "lita kwa kila kilomita",
             "unitPattern-count-one": "lita {0} kwa kilomita",
@@ -111,6 +128,10 @@
             "displayName": "maili kwa kila galoni",
             "unitPattern-count-one": "maili {0} kwa kila galoni",
             "unitPattern-count-other": "maili {0} kwa kila galoni"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "terabaiti",
@@ -510,11 +531,6 @@
             "unitPattern-count-one": "kipimo cha milibari {0}",
             "unitPattern-count-other": "kipimo cha milibari {0}"
           },
-          "proportion-karat": {
-            "displayName": "karati",
-            "unitPattern-count-one": "karati {0}",
-            "unitPattern-count-other": "karati {0}"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "kilomita kwa saa",
             "unitPattern-count-one": "kilomita {0} kwa saa",
@@ -648,6 +664,11 @@
             "unitPattern-count-other": "galoni {0}",
             "perUnitPattern": "{0} kwa kila galoni"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "kwati",
             "unitPattern-count-one": "kwati {0}",
@@ -772,6 +793,23 @@
             "unitPattern-count-other": "in² {0}",
             "perUnitPattern": "{0}/in²"
           },
+          "concentr-karat": {
+            "displayName": "karati",
+            "unitPattern-count-one": "karati {0}",
+            "unitPattern-count-other": "karati {0}"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "lita kwa kila kilomita",
             "unitPattern-count-one": "lita {0} kwa kilomita",
@@ -786,6 +824,10 @@
             "displayName": "maili kwa kila galoni",
             "unitPattern-count-one": "maili {0} kwa kila galoni",
             "unitPattern-count-other": "maili {0} kwa kila galoni"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "terabaiti",
@@ -1185,11 +1227,6 @@
             "unitPattern-count-one": "mbar {0}",
             "unitPattern-count-other": "mbar {0}"
           },
-          "proportion-karat": {
-            "displayName": "karati",
-            "unitPattern-count-one": "karati {0}",
-            "unitPattern-count-other": "karati {0}"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "kilomita kwa saa",
             "unitPattern-count-one": "km {0}/saa",
@@ -1323,6 +1360,11 @@
             "unitPattern-count-other": "galoni {0}",
             "perUnitPattern": "{0}/gal"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "kwati",
             "unitPattern-count-one": "kwati {0}",
@@ -1447,6 +1489,23 @@
             "unitPattern-count-other": "in² {0}",
             "perUnitPattern": "{0}/in²"
           },
+          "concentr-karat": {
+            "displayName": "karati",
+            "unitPattern-count-one": "karati {0}",
+            "unitPattern-count-other": "karati {0}"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "lita kwa kila kilomita",
             "unitPattern-count-one": "lita {0} kwa kilomita",
@@ -1461,6 +1520,10 @@
             "displayName": "maili kwa kila galoni",
             "unitPattern-count-one": "maili {0} kwa kila galoni",
             "unitPattern-count-other": "maili {0} kwa kila galoni"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "terabaiti",
@@ -1860,11 +1923,6 @@
             "unitPattern-count-one": "mbar {0}",
             "unitPattern-count-other": "mbar {0}"
           },
-          "proportion-karat": {
-            "displayName": "karati",
-            "unitPattern-count-one": "karati {0}",
-            "unitPattern-count-other": "karati {0}"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "kilomita kwa saa",
             "unitPattern-count-one": "km {0}/saa",
@@ -1997,6 +2055,11 @@
             "unitPattern-count-one": "galoni {0}",
             "unitPattern-count-other": "galoni {0}",
             "perUnitPattern": "{0}/gal"
+          },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
           },
           "volume-quart": {
             "displayName": "kwati",

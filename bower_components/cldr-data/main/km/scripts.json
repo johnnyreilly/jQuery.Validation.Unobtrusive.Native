@@ -3,13 +3,14 @@
     "km": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "km"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "អារ៉ាប់",
@@ -21,6 +22,7 @@
           "Bass": "Bass",
           "Batk": "Batk",
           "Beng": "បង់ក្លាដែស",
+          "Bhks": "Bhks",
           "Bopo": "បូផូម៉ូហ្វូ",
           "Brah": "Brah",
           "Brai": "អក្សរ​សម្រាប់មនុស្ស​ពិការ​ភ្នែក",
@@ -47,6 +49,7 @@
           "Grek": "ក្រិច",
           "Gujr": "គូចារ៉ាទី",
           "Guru": "កុមុយឃី",
+          "Hanb": "Hanb",
           "Hang": "ហាំងកុល",
           "Hani": "ហាន",
           "Hano": "Hano",
@@ -62,6 +65,7 @@
           "Hrkt": "Hrkt",
           "Hung": "Hung",
           "Ital": "Ital",
+          "Jamo": "Jamo",
           "Java": "Java",
           "Jpan": "ជប៉ុន",
           "Kali": "Kali",
@@ -85,6 +89,7 @@
           "Mahj": "Mahj",
           "Mand": "Mand",
           "Mani": "Mani",
+          "Marc": "Marc",
           "Mend": "Mend",
           "Merc": "Merc",
           "Mero": "Mero",
@@ -97,11 +102,13 @@
           "Mymr": "ភូមា",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "Nkoo",
           "Ogam": "Ogam",
           "Olck": "Olck",
           "Orkh": "Orkh",
           "Orya": "អូរីយ៉ា",
+          "Osge": "Osge",
           "Osma": "Osma",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -181,6 +188,7 @@
           "Tale": "Tale",
           "Talu": "Talu",
           "Taml": "តាមីល",
+          "Tang": "Tang",
           "Tavt": "Tavt",
           "Telu": "តេលុគុ",
           "Tfng": "Tfng",
@@ -197,6 +205,7 @@
           "Yiii": "Yiii",
           "Zinh": "Zinh",
           "Zmth": "Zmth",
+          "Zsye": "Zsye",
           "Zsym": "និមិត្តសញ្ញា",
           "Zxxx": "គ្មានការសរសេរ",
           "Zyyy": "ទូទៅ",

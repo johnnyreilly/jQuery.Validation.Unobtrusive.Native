@@ -3,8 +3,8 @@
     "en-TC": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "en",
         "territory": "TC"
@@ -165,6 +165,9 @@
               },
               "El_Salvador": {
                 "exemplarCity": "El Salvador"
+              },
+              "Fort_Nelson": {
+                "exemplarCity": "Fort Nelson"
               },
               "Fortaleza": {
                 "exemplarCity": "Fortaleza"
@@ -390,9 +393,6 @@
               },
               "Rio_Branco": {
                 "exemplarCity": "Rio Branco"
-              },
-              "Santa_Isabel": {
-                "exemplarCity": "Santa Isabel"
               },
               "Santarem": {
                 "exemplarCity": "Santarem"
@@ -2164,6 +2164,11 @@
             "Ponape": {
               "long": {
                 "standard": "Ponape Time"
+              }
+            },
+            "Pyongyang": {
+              "long": {
+                "standard": "Pyongyang Time"
               }
             },
             "Qyzylorda": {

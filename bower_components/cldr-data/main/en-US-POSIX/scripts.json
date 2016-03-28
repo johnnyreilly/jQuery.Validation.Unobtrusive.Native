@@ -3,8 +3,8 @@
     "en-US-POSIX": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "en",
         "territory": "US",
@@ -12,6 +12,7 @@
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "Afaka",
           "Aghb": "Caucasian Albanian",
           "Ahom": "Ahom",
@@ -25,6 +26,7 @@
           "Bass": "Bassa Vah",
           "Batk": "Batak",
           "Beng": "Bengali",
+          "Bhks": "Bhks",
           "Blis": "Blissymbols",
           "Bopo": "Bopomofo",
           "Brah": "Brahmi",
@@ -58,6 +60,7 @@
           "Grek": "Greek",
           "Gujr": "Gujarati",
           "Guru": "Gurmukhi",
+          "Hanb": "Hanb",
           "Hang": "Hangul",
           "Hani": "Han",
           "Hano": "Hanunoo",
@@ -74,6 +77,7 @@
           "Hung": "Old Hungarian",
           "Inds": "Indus",
           "Ital": "Old Italic",
+          "Jamo": "Jamo",
           "Java": "Javanese",
           "Jpan": "Japanese",
           "Jurc": "Jurchen",
@@ -102,6 +106,7 @@
           "Mahj": "Mahajani",
           "Mand": "Mandaean",
           "Mani": "Manichaean",
+          "Marc": "Marc",
           "Maya": "Mayan hieroglyphs",
           "Mend": "Mende",
           "Merc": "Meroitic Cursive",
@@ -116,6 +121,7 @@
           "Mymr": "Myanmar",
           "Narb": "Old North Arabian",
           "Nbat": "Nabataean",
+          "Newa": "Newa",
           "Nkgb": "Naxi Geba",
           "Nkoo": "N’Ko",
           "Nshu": "Nüshu",
@@ -123,6 +129,7 @@
           "Olck": "Ol Chiki",
           "Orkh": "Orkhon",
           "Orya": "Oriya",
+          "Osge": "Osge",
           "Osma": "Osmanya",
           "Palm": "Palmyrene",
           "Pauc": "Pau Cin Hau",
@@ -229,6 +236,7 @@
           "Yiii": "Yi",
           "Zinh": "Inherited",
           "Zmth": "Mathematical Notation",
+          "Zsye": "Emoji",
           "Zsym": "Symbols",
           "Zxxx": "Unwritten",
           "Zyyy": "Common",

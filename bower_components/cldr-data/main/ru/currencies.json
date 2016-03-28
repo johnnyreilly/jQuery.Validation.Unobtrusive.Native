@@ -3,8 +3,8 @@
     "ru": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11974 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ru"
       },
@@ -631,6 +631,7 @@
             "displayName-count-many": "грузинских лари",
             "displayName-count-other": "грузинского лари",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

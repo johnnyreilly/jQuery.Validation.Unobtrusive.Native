@@ -3,8 +3,8 @@
     "lv": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11919 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "lv"
       },
@@ -225,9 +225,9 @@
               "format": {
                 "abbreviated": {
                   "midnight": "pusnaktī",
-                  "am": "AM",
+                  "am": "priekšp.",
                   "noon": "pusd.",
-                  "pm": "PM",
+                  "pm": "pēcp.",
                   "morning1": "no rīta",
                   "afternoon1": "pēcpusd.",
                   "evening1": "vakarā",

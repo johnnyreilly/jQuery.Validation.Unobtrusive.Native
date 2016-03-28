@@ -3,8 +3,8 @@
     "pl": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "pl"
       },
@@ -679,7 +679,7 @@
             "displayName-count-many": "lari gruzińskich",
             "displayName-count-other": "lari gruzińskiego",
             "symbol": "GEL",
-            "symbol-alt-variant": "₾"
+            "symbol-alt-narrow": "₾"
           },
           "GHC": {
             "displayName": "cedi ghańskie (1979–2007)",

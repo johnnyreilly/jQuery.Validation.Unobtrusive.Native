@@ -3,8 +3,8 @@
     "et": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "et"
       },
@@ -531,8 +531,8 @@
           "sux": "sumeri",
           "sv": "rootsi",
           "sw": "suahiili",
+          "sw-CD": "Kongo suahiili",
           "swb": "komoori",
-          "swc": "Kongo suahiili",
           "syc": "vanasüüria",
           "syr": "süüria",
           "szl": "sileesia",

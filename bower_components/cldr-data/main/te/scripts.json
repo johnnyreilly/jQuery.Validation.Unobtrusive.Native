@@ -3,13 +3,14 @@
     "te": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "te"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "అరబిక్",
@@ -22,6 +23,7 @@
           "Bass": "Bass",
           "Batk": "బాటక్",
           "Beng": "బెంగాలి",
+          "Bhks": "Bhks",
           "Blis": "బ్లిస్సింబల్స్",
           "Bopo": "బోపోమోఫో",
           "Brah": "బ్రాహ్మి",
@@ -54,6 +56,7 @@
           "Grek": "గ్రీక్",
           "Gujr": "గుజరాతీ",
           "Guru": "గుర్ముఖి",
+          "Hanb": "Hanb",
           "Hang": "హంగుల్",
           "Hani": "హాన్",
           "Hano": "హనునూ",
@@ -70,6 +73,7 @@
           "Hung": "ప్రాచీన హంగేరియన్",
           "Inds": "సింధు",
           "Ital": "ప్రాచిన ఐటాలిక్",
+          "Jamo": "Jamo",
           "Java": "జావనీస్",
           "Jpan": "జాపనీస్",
           "Kali": "కాయాహ్ లి",
@@ -95,6 +99,7 @@
           "Mahj": "Mahj",
           "Mand": "మాన్డియన్",
           "Mani": "మానిచేన్",
+          "Marc": "Marc",
           "Maya": "మాయన్ హైరోగ్లైఫ్స్",
           "Mend": "Mend",
           "Merc": "Merc",
@@ -109,11 +114,13 @@
           "Mymr": "మయాన్మార్",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "న్కో",
           "Ogam": "ఒఘమ్",
           "Olck": "ఓల్ చికి",
           "Orkh": "ఓర్ఖోన్",
           "Orya": "ఒరియా",
+          "Osge": "Osge",
           "Osma": "ఓసమాన్య",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -199,6 +206,7 @@
           "Tale": "తై లీ",
           "Talu": "క్రొత్త టై లుఇ",
           "Taml": "తమిళము",
+          "Tang": "Tang",
           "Tavt": "టై వియట్",
           "Telu": "తెలుగు",
           "Teng": "టేంగ్వార్",
@@ -217,6 +225,7 @@
           "Yiii": "యి",
           "Zinh": "వారసత్వం",
           "Zmth": "గణిత సంకేతలిపి",
+          "Zsye": "Zsye",
           "Zsym": "చిహ్నాలు",
           "Zxxx": "లిపి లేని",
           "Zyyy": "సామాన్య",

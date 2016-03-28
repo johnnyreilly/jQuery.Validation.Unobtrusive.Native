@@ -3,8 +3,8 @@
     "it": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "it"
       },
@@ -525,6 +525,7 @@
             "displayName-count-one": "lari georgiano",
             "displayName-count-other": "lari georgiani",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "ლ"
           },
           "GHC": {

@@ -3,8 +3,8 @@
     "da": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11944 $"
+          "_number": "$Revision: 12387 $",
+          "_cldrVersion": "29"
         },
         "language": "da"
       },
@@ -376,7 +376,7 @@
           "mos": "mossi",
           "mr": "marathisk",
           "mrj": "mrj",
-          "ms": "malay",
+          "ms": "malajisk",
           "mt": "maltesisk",
           "mua": "mundang",
           "mul": "flere sprog",
@@ -395,7 +395,7 @@
           "nb": "norsk bokmål",
           "nd": "nordndebele",
           "nds": "nedertysk",
-          "nds-NL": "nedertysk (Nederlandene)",
+          "nds-NL": "nedertysk (Holland)",
           "ne": "nepalesisk",
           "new": "newari",
           "ng": "ndonga",
@@ -533,8 +533,8 @@
           "sux": "sumerisk",
           "sv": "svensk",
           "sw": "swahili",
+          "sw-CD": "congolesisk swahili",
           "swb": "shimaore",
-          "swc": "congolesisk swahili",
           "syc": "klassisk syrisk",
           "syr": "syrisk",
           "szl": "szl",

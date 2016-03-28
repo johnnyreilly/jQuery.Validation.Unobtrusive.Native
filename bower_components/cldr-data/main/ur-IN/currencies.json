@@ -3,8 +3,8 @@
     "ur-IN": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12217 $",
+          "_cldrVersion": "29"
         },
         "language": "ur",
         "territory": "IN"
@@ -524,6 +524,7 @@
             "displayName-count-one": "جارجیائی لاری",
             "displayName-count-other": "جارجیائی لاری",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

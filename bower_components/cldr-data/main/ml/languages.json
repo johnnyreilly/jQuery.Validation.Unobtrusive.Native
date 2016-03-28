@@ -3,8 +3,8 @@
     "ml": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11977 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ml"
       },
@@ -532,8 +532,8 @@
           "sux": "സുമേരിയൻ",
           "sv": "സ്വീഡിഷ്",
           "sw": "സ്വാഹിലി",
+          "sw-CD": "കോംഗോ സ്വാഹിലി",
           "swb": "കൊമോറിയൻ",
-          "swc": "കോംഗോ സ്വാഹിലി",
           "syc": "പുരാതന സുറിയാനിഭാഷ",
           "syr": "സുറിയാനി",
           "szl": "szl",

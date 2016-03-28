@@ -3,8 +3,8 @@
     "mk": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12411 $",
+          "_cldrVersion": "29"
         },
         "language": "mk"
       },
@@ -48,7 +48,6 @@
           "AI": "Ангвила",
           "AL": "Албанија",
           "AM": "Ерменија",
-          "AN": "Холандски Антили",
           "AO": "Ангола",
           "AQ": "Антарктик",
           "AR": "Аргентина",

@@ -3,13 +3,14 @@
     "hu": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "hu"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "Arab",
@@ -22,6 +23,7 @@
           "Bass": "Bass",
           "Batk": "Batak",
           "Beng": "Bengáli",
+          "Bhks": "Bhks",
           "Blis": "Bliss jelképrendszer",
           "Bopo": "Bopomofo",
           "Brah": "Brámi",
@@ -53,6 +55,7 @@
           "Grek": "Görög",
           "Gujr": "Gudzsaráti",
           "Guru": "Gurmuki",
+          "Hanb": "Hanb",
           "Hang": "Hangul",
           "Hani": "Han",
           "Hano": "Hanunoo",
@@ -69,6 +72,7 @@
           "Hung": "Ómagyar",
           "Inds": "Indus",
           "Ital": "Régi olasz",
+          "Jamo": "Jamo",
           "Java": "Jávai",
           "Jpan": "Japán",
           "Kali": "Kajah li",
@@ -94,6 +98,7 @@
           "Mahj": "Mahj",
           "Mand": "Mandai",
           "Mani": "Manicheus",
+          "Marc": "Marc",
           "Maya": "Maja hieroglifák",
           "Mend": "Mend",
           "Merc": "Merc",
@@ -108,11 +113,13 @@
           "Mymr": "Burmai",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "N’ko",
           "Ogam": "Ogham",
           "Olck": "Ol chiki",
           "Orkh": "Orhon",
           "Orya": "Oriya",
+          "Osge": "Osge",
           "Osma": "Oszmán",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -198,6 +205,7 @@
           "Tale": "Tai Le",
           "Talu": "Új tai lue",
           "Taml": "Tamil",
+          "Tang": "Tang",
           "Tavt": "Tai viet",
           "Telu": "Telugu",
           "Teng": "Tengwar",
@@ -216,6 +224,7 @@
           "Yiii": "Ji",
           "Zinh": "Származtatott",
           "Zmth": "Matematikai jelrendszer",
+          "Zsye": "Zsye",
           "Zsym": "Szimbólum",
           "Zxxx": "Íratlan nyelvek kódja",
           "Zyyy": "Meghatározatlan",

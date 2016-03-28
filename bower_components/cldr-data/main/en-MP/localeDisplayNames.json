@@ -3,8 +3,8 @@
     "en-MP": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "en",
         "territory": "MP"
@@ -29,6 +29,7 @@
           "colReorder": "Script/Block Reordering",
           "colStrength": "Sorting Strength",
           "currency": "Currency",
+          "em": "Emoji Presentation Style",
           "fw": "First day of week",
           "hc": "Hour Cycle (12 vs 24)",
           "kv": "Highest Ignored",
@@ -36,6 +37,8 @@
           "lw": "Line Breaks In Words Setting",
           "ms": "Measurement System",
           "numbers": "Numbers",
+          "rg": "Region For Supplemental Data",
+          "sd": "Region Subdivision",
           "ss": "Sentence Break Suppressions Type",
           "timezone": "Time Zone",
           "va": "Locale Variant",
@@ -122,6 +125,20 @@
             "quaternary": "Sort Accents/Case/Width/Kana",
             "secondary": "Sort Accents",
             "tertiary": "Sort Accents/Case/Width"
+          },
+          "em": {
+            "default": "Use Default Presentation For Emoji Characters",
+            "emoji": "Prefer Emoji Presentation For Emoji Characters",
+            "text": "Prefer Text Presentation For Emoji Characters"
+          },
+          "fw": {
+            "fri": "First Day of Week Is Friday",
+            "mon": "First Day of Week Is Monday",
+            "sat": "First Day of Week Is Saturday",
+            "sun": "First Day of Week Is Sunday",
+            "thu": "First Day of Week Is Thursday",
+            "tue": "First Day of Week Is Tuesday",
+            "wed": "First Day of Week Is Wednesday"
           },
           "hc": {
             "h11": "12 Hour System (0–11)",

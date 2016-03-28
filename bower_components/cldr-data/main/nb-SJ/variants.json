@@ -3,8 +3,8 @@
     "nb-SJ": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "nb",
         "territory": "SJ"
@@ -26,12 +26,14 @@
           "BAKU1926": "samlet tyrkisk-latinsk alfabet",
           "BALANKA": "balankadialekten av anii",
           "BARLA": "barlaventa-dialektgruppen av kappverdiansk",
+          "BASICENG": "BASICENG",
           "BAUDDHA": "bauddha",
           "BISCAYAN": "biscayan",
           "BISKE": "san giorgio- og biladialekt",
           "BOHORIC": "bohorisk alfabet",
           "BOONT": "boontling",
           "COLB1945": "COLB1945",
+          "CORNU": "CORNU",
           "DAJNKO": "dajnkoalfabet",
           "EKAVSK": "serbisk med ekavisk uttale",
           "EMODENG": "tidlig moderne engelsk",
@@ -54,6 +56,7 @@
           "MONOTON": "monotonisk rettskriving",
           "NDYUKA": "ndyuka-dialekt",
           "NEDIS": "natisonedialekt",
+          "NEWFOUND": "NEWFOUND",
           "NJIVA": "gniva- og njivadialekt",
           "NULIK": "moderne volapük",
           "OSOJS": "oseacco- og osojanedialekt",
@@ -71,6 +74,7 @@
           "SAAHO": "saho",
           "SCOTLAND": "skotsk standard engelsk",
           "SCOUSE": "scouse dialekt",
+          "SIMPLE": "SIMPLE",
           "SOLBA": "stolvizza- og solbicadialekt",
           "SOTAV": "sotavento-dialektgruppen av kappverdiansk",
           "SURMIRAN": "surmiransk",

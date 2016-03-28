@@ -3,8 +3,8 @@
     "hi": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11947 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "hi"
       },
@@ -48,7 +48,6 @@
           "AI": "एंग्विला",
           "AL": "अल्बानिया",
           "AM": "आर्मेनिया",
-          "AN": "नीदरलैंडी ऐंटील",
           "AO": "अंगोला",
           "AQ": "अंटार्कटिका",
           "AR": "अर्जेंटीना",

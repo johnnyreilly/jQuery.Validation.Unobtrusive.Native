@@ -3,8 +3,8 @@
     "hu": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "hu"
       },
@@ -48,7 +48,6 @@
           "AI": "Anguilla",
           "AL": "Albánia",
           "AM": "Örményország",
-          "AN": "Holland Antillák",
           "AO": "Angola",
           "AQ": "Antarktisz",
           "AR": "Argentína",

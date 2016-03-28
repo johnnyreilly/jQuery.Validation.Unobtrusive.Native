@@ -3,8 +3,8 @@
     "zh-Hans-HK": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11979 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "zh",
         "script": "Hans",
@@ -529,6 +529,7 @@
             "displayName": "格鲁吉亚拉里",
             "displayName-count-other": "格鲁吉亚拉里",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

@@ -3,8 +3,8 @@
     "he": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "he"
       },
@@ -532,8 +532,8 @@
           "sux": "שומרית",
           "sv": "שוודית",
           "sw": "סווהילית",
+          "sw-CD": "סווהילי קונגולטזית",
           "swb": "swb",
-          "swc": "סווהילי קונגולטזית",
           "syc": "סירית קלאסית",
           "syr": "סורית",
           "szl": "szl",

@@ -3,8 +3,8 @@
     "ky": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11919 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ky"
       },
@@ -523,6 +523,7 @@
             "displayName-count-one": "Грузия лариси",
             "displayName-count-other": "Грузия лариси",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

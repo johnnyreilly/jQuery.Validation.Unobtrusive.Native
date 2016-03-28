@@ -3,8 +3,8 @@
     "kn": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11977 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "kn"
       },
@@ -523,6 +523,7 @@
             "displayName-count-one": "ಜಾರ್ಜಿಯಾದ ಲಾರಿ",
             "displayName-count-other": "ಜಾರ್ಜಿಯಾದ ಲಾರಿ",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

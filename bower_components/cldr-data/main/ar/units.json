@@ -3,8 +3,8 @@
     "ar": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ar"
       },
@@ -160,6 +160,27 @@
             "unitPattern-count-other": "{0} بوصة مربعة",
             "perUnitPattern": "{0} لكل بوصة مربعة"
           },
+          "concentr-karat": {
+            "displayName": "قيراط",
+            "unitPattern-count-zero": "{0} قيراط",
+            "unitPattern-count-one": "{0} قيراط",
+            "unitPattern-count-two": "{0} قيراط",
+            "unitPattern-count-few": "{0} قيراط",
+            "unitPattern-count-many": "{0} قيراط",
+            "unitPattern-count-other": "{0} قيراط"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "لتر لكل كيلومتر",
             "unitPattern-count-zero": "{0} لتر لكل كيلومتر",
@@ -186,6 +207,10 @@
             "unitPattern-count-few": "{0} ميل لكل غالون",
             "unitPattern-count-many": "{0} ميل لكل غالون",
             "unitPattern-count-other": "{0} ميل لكل غالون"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "تيرابايت",
@@ -294,7 +319,7 @@
             "unitPattern-count-few": "{0} سنوات",
             "unitPattern-count-many": "{0} سنة",
             "unitPattern-count-other": "{0} سنة",
-            "perUnitPattern": "في السنة"
+            "perUnitPattern": "{0} في السنة"
           },
           "duration-month": {
             "displayName": "شهور",
@@ -881,15 +906,6 @@
             "unitPattern-count-many": "{0} مللي بار",
             "unitPattern-count-other": "{0} مللي بار"
           },
-          "proportion-karat": {
-            "displayName": "قيراط",
-            "unitPattern-count-zero": "{0} قيراط",
-            "unitPattern-count-one": "{0} قيراط",
-            "unitPattern-count-two": "{0} قيراط",
-            "unitPattern-count-few": "{0} قيراط",
-            "unitPattern-count-many": "{0} قيراط",
-            "unitPattern-count-other": "{0} قيراط"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "كيلومتر في الساعة",
             "unitPattern-count-zero": "{0} كيلومتر في الساعة",
@@ -1123,6 +1139,11 @@
             "unitPattern-count-other": "{0} غالون",
             "perUnitPattern": "{0} لكل غالون"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "ربع غالون",
             "unitPattern-count-zero": "{0} ربع غالون",
@@ -1335,6 +1356,27 @@
             "unitPattern-count-other": "{0} بوصة مربعة",
             "perUnitPattern": "{0}/بوصة مربعة"
           },
+          "concentr-karat": {
+            "displayName": "قيراط",
+            "unitPattern-count-zero": "{0} قيراط",
+            "unitPattern-count-one": "{0} قيراط",
+            "unitPattern-count-two": "{0} قيراط",
+            "unitPattern-count-few": "{0} قيراط",
+            "unitPattern-count-many": "{0} قيراط",
+            "unitPattern-count-other": "{0} قيراط"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "لتر/كم",
             "unitPattern-count-zero": "{0} لتر/كم",
@@ -1361,6 +1403,10 @@
             "unitPattern-count-few": "{0} ميل/غالون",
             "unitPattern-count-many": "{0} ميل/غالون",
             "unitPattern-count-other": "{0} ميل/غالون"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "تيرابايت",
@@ -2056,15 +2102,6 @@
             "unitPattern-count-many": "{0} مللي بار",
             "unitPattern-count-other": "{0} مللي بار"
           },
-          "proportion-karat": {
-            "displayName": "قيراط",
-            "unitPattern-count-zero": "{0} قيراط",
-            "unitPattern-count-one": "{0} قيراط",
-            "unitPattern-count-two": "{0} قيراط",
-            "unitPattern-count-few": "{0} قيراط",
-            "unitPattern-count-many": "{0} قيراط",
-            "unitPattern-count-other": "{0} قيراط"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "كم/س",
             "unitPattern-count-zero": "{0} كم/س",
@@ -2298,6 +2335,11 @@
             "unitPattern-count-other": "{0} غالون",
             "perUnitPattern": "{0}/غالون"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "ربع غالون",
             "unitPattern-count-zero": "{0} ربع غالون",
@@ -2510,6 +2552,27 @@
             "unitPattern-count-other": "{0} بوصة مربعة",
             "perUnitPattern": "{0}/بوصة مربعة"
           },
+          "concentr-karat": {
+            "displayName": "قيراط",
+            "unitPattern-count-zero": "{0} قيراط",
+            "unitPattern-count-one": "{0} قيراط",
+            "unitPattern-count-two": "{0} قيراط",
+            "unitPattern-count-few": "{0} قيراط",
+            "unitPattern-count-many": "{0} قيراط",
+            "unitPattern-count-other": "{0} قيراط"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "لتر/كم",
             "unitPattern-count-zero": "{0} لتر/كم",
@@ -2536,6 +2599,10 @@
             "unitPattern-count-few": "{0} ميل/غالون",
             "unitPattern-count-many": "{0} ميل/غالون",
             "unitPattern-count-other": "{0} ميل/غالون"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "تيرابايت",
@@ -3231,15 +3298,6 @@
             "unitPattern-count-many": "{0} مللي بار",
             "unitPattern-count-other": "{0} مللي بار"
           },
-          "proportion-karat": {
-            "displayName": "قيراط",
-            "unitPattern-count-zero": "{0} قيراط",
-            "unitPattern-count-one": "{0} قيراط",
-            "unitPattern-count-two": "{0} قيراط",
-            "unitPattern-count-few": "{0} قيراط",
-            "unitPattern-count-many": "{0} قيراط",
-            "unitPattern-count-other": "{0} قيراط"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "كم/س",
             "unitPattern-count-zero": "{0} كم/س",
@@ -3472,6 +3530,11 @@
             "unitPattern-count-many": "{0} غالون",
             "unitPattern-count-other": "{0} غالون",
             "perUnitPattern": "{0}/غالون"
+          },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
           },
           "volume-quart": {
             "displayName": "ربع غالون",

@@ -3,8 +3,8 @@
     "bn-IN": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "bn",
         "territory": "IN"
@@ -165,6 +165,9 @@
               },
               "El_Salvador": {
                 "exemplarCity": "এল সালভাদোর"
+              },
+              "Fort_Nelson": {
+                "exemplarCity": "Fort Nelson"
               },
               "Fortaleza": {
                 "exemplarCity": "ফোর্টালেজা"

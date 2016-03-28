@@ -3,8 +3,8 @@
     "bn": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12306 $",
+          "_cldrVersion": "29"
         },
         "language": "bn"
       },
@@ -246,8 +246,8 @@
                   "night1": "রাত্রি"
                 },
                 "narrow": {
-                  "am": "পূর্বাহ্ণ",
-                  "pm": "অপরাহ্ণ",
+                  "am": "AM",
+                  "pm": "PM",
                   "morning1": "ভোর",
                   "morning2": "সকাল",
                   "afternoon1": "দুপুর",
@@ -256,7 +256,7 @@
                   "night1": "রাত্রি"
                 },
                 "wide": {
-                  "am": "AM",
+                  "am": "পূর্বাহ্ণ",
                   "pm": "অপরাহ্ণ",
                   "morning1": "ভোর",
                   "morning2": "সকাল",

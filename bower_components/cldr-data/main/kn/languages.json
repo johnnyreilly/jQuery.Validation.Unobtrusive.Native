@@ -3,8 +3,8 @@
     "kn": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11977 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "kn"
       },
@@ -532,8 +532,8 @@
           "sux": "ಸುಮೇರಿಯನ್",
           "sv": "ಸ್ವೀಡಿಷ್",
           "sw": "ಸ್ವಹಿಲಿ",
+          "sw-CD": "ಕಾಂಗೊ ಸ್ವಹಿಲಿ",
           "swb": "swb",
-          "swc": "ಕಾಂಗೊ ಸ್ವಹಿಲಿ",
           "syc": "ಶಾಸ್ತ್ರೀಯ ಸಿರಿಯಕ್",
           "syr": "ಸಿರಿಯಕ್",
           "szl": "szl",

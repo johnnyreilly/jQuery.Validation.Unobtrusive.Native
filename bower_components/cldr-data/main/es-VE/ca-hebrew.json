@@ -3,8 +3,8 @@
     "es-VE": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12217 $",
+          "_cldrVersion": "29"
         },
         "language": "es",
         "territory": "VE"
@@ -258,7 +258,7 @@
                   "am": "a. m.",
                   "noon": "del mediodía",
                   "pm": "p. m.",
-                  "morning1": "de la mañana",
+                  "morning1": "de la madrugada",
                   "morning2": "de la mañana",
                   "evening1": "de la tarde",
                   "night1": "de la noche"

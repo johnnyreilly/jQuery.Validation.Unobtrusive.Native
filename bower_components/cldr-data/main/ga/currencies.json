@@ -3,8 +3,8 @@
     "ga": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ga"
       },
@@ -780,7 +780,7 @@
             "displayName-count-many": "lari na Seoirsia",
             "displayName-count-other": "lari na Seoirsia",
             "symbol": "GEL",
-            "symbol-alt-variant": "₾"
+            "symbol-alt-narrow": "₾"
           },
           "GHC": {
             "displayName": "Cedi Ghána (1979–2007)",

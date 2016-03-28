@@ -3,8 +3,8 @@
     "uz": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "uz"
       },
@@ -523,6 +523,7 @@
             "displayName-count-one": "Gruziya larisi",
             "displayName-count-other": "Gruziya larisi",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

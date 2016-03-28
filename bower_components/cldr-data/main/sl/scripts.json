@@ -3,13 +3,14 @@
     "sl": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "sl"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "arabski",
@@ -22,6 +23,7 @@
           "Bass": "Bass",
           "Batk": "bataški",
           "Beng": "bengalski",
+          "Bhks": "Bhks",
           "Blis": "znakovna pisava Bliss",
           "Bopo": "bopomofo",
           "Brah": "bramanski",
@@ -54,6 +56,7 @@
           "Grek": "grški",
           "Gujr": "gudžaratski",
           "Guru": "gurmuki",
+          "Hanb": "Hanb",
           "Hang": "hangul",
           "Hani": "kanji",
           "Hano": "hanunski",
@@ -70,6 +73,7 @@
           "Hung": "staroogrski",
           "Inds": "induški",
           "Ital": "staroitalski",
+          "Jamo": "Jamo",
           "Java": "javanski",
           "Jpan": "japonski",
           "Kali": "karenski",
@@ -95,6 +99,7 @@
           "Mahj": "Mahj",
           "Mand": "mandanski",
           "Mani": "manihejski",
+          "Marc": "Marc",
           "Maya": "majevska slikovna pisava",
           "Mend": "Mend",
           "Merc": "Merc",
@@ -109,11 +114,13 @@
           "Mymr": "mjanmarski",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "Nkoo",
           "Ogam": "ogamski",
           "Olck": "santalski",
           "Orkh": "orkonski",
           "Orya": "orijski",
+          "Osge": "Osge",
           "Osma": "osmanski",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -199,6 +206,7 @@
           "Tale": "Tale",
           "Talu": "Talu",
           "Taml": "tamilski",
+          "Tang": "Tang",
           "Tavt": "tajsko-vietnamski",
           "Telu": "teluški",
           "Teng": "tengvarski",
@@ -217,6 +225,7 @@
           "Yiii": "Yiii",
           "Zinh": "podedovan",
           "Zmth": "matematična znamenja",
+          "Zsye": "Zsye",
           "Zsym": "simboli",
           "Zxxx": "nenapisano",
           "Zyyy": "splošno",

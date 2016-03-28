@@ -3,8 +3,8 @@
     "pa": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "pa"
       },
@@ -531,8 +531,8 @@
           "sux": "sux",
           "sv": "ਸਵੀਡਿਸ਼",
           "sw": "ਸਵਾਹਿਲੀ",
+          "sw-CD": "ਕਾਂਗੋ ਸਵਾਹਿਲੀ",
           "swb": "swb",
-          "swc": "ਕਾਂਗੋ ਸਵਾਹਿਲੀ",
           "syc": "syc",
           "syr": "syr",
           "szl": "szl",

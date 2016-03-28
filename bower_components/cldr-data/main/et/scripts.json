@@ -3,13 +3,14 @@
     "et": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "et"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "afaka",
           "Aghb": "albaani",
           "Ahom": "ahomi",
@@ -23,6 +24,7 @@
           "Bass": "bassa",
           "Batk": "bataki",
           "Beng": "bengali",
+          "Bhks": "Bhks",
           "Blis": "Blissi sümbolid",
           "Bopo": "bopomofo",
           "Brah": "braahmi",
@@ -55,6 +57,7 @@
           "Grek": "kreeka",
           "Gujr": "gudžarati",
           "Guru": "gurmukhi",
+          "Hanb": "Hanb",
           "Hang": "korea",
           "Hani": "hani",
           "Hano": "hanunoo",
@@ -71,6 +74,7 @@
           "Hung": "vanaungari",
           "Inds": "Induse",
           "Ital": "vanaitali",
+          "Jamo": "Jamo",
           "Java": "jaava",
           "Jpan": "jaapani",
           "Jurc": "tšurtšeni",
@@ -99,6 +103,7 @@
           "Mahj": "mahaadžani",
           "Mand": "mandea",
           "Mani": "mani",
+          "Marc": "Marc",
           "Maya": "maaja hieroglüüfkiri",
           "Mend": "mende",
           "Merc": "meroe kursiivkiri",
@@ -113,6 +118,7 @@
           "Mymr": "birma",
           "Narb": "Põhja-Araabia",
           "Nbat": "Nabatea",
+          "Newa": "Newa",
           "Nkgb": "nasi",
           "Nkoo": "nkoo",
           "Nshu": "nüšu",
@@ -120,6 +126,7 @@
           "Olck": "santali",
           "Orkh": "Orhoni",
           "Orya": "oria",
+          "Osge": "Osge",
           "Osma": "osmani",
           "Palm": "Palmyra",
           "Pauc": "Pauc",
@@ -225,6 +232,7 @@
           "Yiii": "jii",
           "Zinh": "päritud",
           "Zmth": "matemaatiline tähistus",
+          "Zsye": "Zsye",
           "Zsym": "sümbolid",
           "Zxxx": "kirjakeeleta",
           "Zyyy": "üldine",

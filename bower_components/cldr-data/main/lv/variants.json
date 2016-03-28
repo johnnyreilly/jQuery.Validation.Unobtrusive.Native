@@ -3,8 +3,8 @@
     "lv": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11919 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "lv"
       },
@@ -25,12 +25,14 @@
           "BAKU1926": "BAKU1926",
           "BALANKA": "BALANKA",
           "BARLA": "BARLA",
+          "BASICENG": "BASICENG",
           "BAUDDHA": "BAUDDHA",
           "BISCAYAN": "BISCAYAN",
           "BISKE": "BISKE",
           "BOHORIC": "BOHORIC",
           "BOONT": "BOONT",
           "COLB1945": "COLB1945",
+          "CORNU": "CORNU",
           "DAJNKO": "DAJNKO",
           "EKAVSK": "EKAVSK",
           "EMODENG": "EMODENG",
@@ -53,6 +55,7 @@
           "MONOTON": "monotons",
           "NDYUKA": "NDYUKA",
           "NEDIS": "Natisona dialekts",
+          "NEWFOUND": "NEWFOUND",
           "NJIVA": "NJIVA",
           "NULIK": "NULIK",
           "OSOJS": "OSOJS",
@@ -70,6 +73,7 @@
           "SAAHO": "saho",
           "SCOTLAND": "Skotijas angļu",
           "SCOUSE": "SCOUSE",
+          "SIMPLE": "SIMPLE",
           "SOLBA": "SOLBA",
           "SOTAV": "SOTAV",
           "SURMIRAN": "SURMIRAN",

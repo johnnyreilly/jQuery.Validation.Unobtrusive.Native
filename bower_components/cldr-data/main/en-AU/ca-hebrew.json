@@ -3,8 +3,8 @@
     "en-AU": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12413 $",
+          "_cldrVersion": "29"
         },
         "language": "en",
         "territory": "AU"
@@ -240,7 +240,7 @@
                   "midnight": "midnight",
                   "am": "am",
                   "am-alt-variant": "am",
-                  "noon": "noon",
+                  "noon": "midday",
                   "pm": "pm",
                   "pm-alt-variant": "pm",
                   "morning1": "morning",

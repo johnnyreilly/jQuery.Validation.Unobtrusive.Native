@@ -3,8 +3,8 @@
     "nl-SX": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "nl",
         "territory": "SX"
@@ -165,6 +165,9 @@
               },
               "El_Salvador": {
                 "exemplarCity": "El Salvador"
+              },
+              "Fort_Nelson": {
+                "exemplarCity": "Fort Nelson"
               },
               "Fortaleza": {
                 "exemplarCity": "Fortaleza"

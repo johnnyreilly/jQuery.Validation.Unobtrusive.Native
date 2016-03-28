@@ -3,8 +3,8 @@
     "ro-MD": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "ro",
         "territory": "MD"
@@ -113,6 +113,24 @@
             "unitPattern-count-other": "{0} de inchi pătrați",
             "perUnitPattern": "{0} pe inchi pătrat"
           },
+          "concentr-karat": {
+            "displayName": "karate",
+            "unitPattern-count-one": "{0} karată",
+            "unitPattern-count-few": "{0} karate",
+            "unitPattern-count-other": "{0} de karate"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "litri pe kilometru",
             "unitPattern-count-one": "{0} litru pe kilometru",
@@ -130,6 +148,10 @@
             "unitPattern-count-one": "{0} milă pe galon",
             "unitPattern-count-few": "{0} mile pe galon",
             "unitPattern-count-other": "{0} de mile pe galon"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "terabyți",
@@ -487,7 +509,7 @@
             "unitPattern-count-one": "{0} gram",
             "unitPattern-count-few": "{0} grame",
             "unitPattern-count-other": "{0} de grame",
-            "perUnitPattern": "per gram"
+            "perUnitPattern": "{0} per gram"
           },
           "mass-milligram": {
             "displayName": "miligrame",
@@ -602,12 +624,6 @@
             "unitPattern-count-one": "{0} milibar",
             "unitPattern-count-few": "{0} milibari",
             "unitPattern-count-other": "{0} de milibari"
-          },
-          "proportion-karat": {
-            "displayName": "karate",
-            "unitPattern-count-one": "{0} karată",
-            "unitPattern-count-few": "{0} karate",
-            "unitPattern-count-other": "{0} de karate"
           },
           "speed-kilometer-per-hour": {
             "displayName": "kilometri pe oră",
@@ -767,6 +783,11 @@
             "unitPattern-count-other": "{0} de galoane",
             "perUnitPattern": "{0} per galon"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "quarte",
             "unitPattern-count-one": "{0} quart",
@@ -913,6 +934,24 @@
             "unitPattern-count-other": "{0} in²",
             "perUnitPattern": "{0}/in²"
           },
+          "concentr-karat": {
+            "displayName": "kt",
+            "unitPattern-count-one": "{0} kt",
+            "unitPattern-count-few": "{0} kt",
+            "unitPattern-count-other": "{0} kt"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "l/km",
             "unitPattern-count-one": "{0} l/km",
@@ -930,6 +969,10 @@
             "unitPattern-count-one": "{0} milă/gal.",
             "unitPattern-count-few": "{0} mile/gal.",
             "unitPattern-count-other": "{0} mile/gal."
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "TB",
@@ -1403,12 +1446,6 @@
             "unitPattern-count-few": "{0} mbar",
             "unitPattern-count-other": "{0} mbar"
           },
-          "proportion-karat": {
-            "displayName": "kt",
-            "unitPattern-count-one": "{0} kt",
-            "unitPattern-count-few": "{0} kt",
-            "unitPattern-count-other": "{0} kt"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "km/h",
             "unitPattern-count-one": "{0} km/h",
@@ -1567,6 +1604,11 @@
             "unitPattern-count-other": "{0} gal",
             "perUnitPattern": "{0}/gal"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "qt",
             "unitPattern-count-one": "{0} qt",
@@ -1713,6 +1755,24 @@
             "unitPattern-count-other": "{0} in²",
             "perUnitPattern": "{0}/in²"
           },
+          "concentr-karat": {
+            "displayName": "kt",
+            "unitPattern-count-one": "{0} kt",
+            "unitPattern-count-few": "{0} kt",
+            "unitPattern-count-other": "{0} kt"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "l/km",
             "unitPattern-count-one": "{0} l/km",
@@ -1730,6 +1790,10 @@
             "unitPattern-count-one": "{0} mile/gal.",
             "unitPattern-count-few": "{0} mile/gal.",
             "unitPattern-count-other": "{0} mile/gal."
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "TB",
@@ -2203,12 +2267,6 @@
             "unitPattern-count-few": "{0} mb",
             "unitPattern-count-other": "{0} mb"
           },
-          "proportion-karat": {
-            "displayName": "kt",
-            "unitPattern-count-one": "{0} kt",
-            "unitPattern-count-few": "{0} kt",
-            "unitPattern-count-other": "{0} kt"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "km/h",
             "unitPattern-count-one": "{0} km/h",
@@ -2366,6 +2424,11 @@
             "unitPattern-count-few": "{0} gal",
             "unitPattern-count-other": "{0} gal",
             "perUnitPattern": "{0}/gal"
+          },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
           },
           "volume-quart": {
             "displayName": "qt",

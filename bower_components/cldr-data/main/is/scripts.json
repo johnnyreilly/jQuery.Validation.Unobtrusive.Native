@@ -3,13 +3,14 @@
     "is": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "is"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "arabískt",
@@ -22,6 +23,7 @@
           "Bass": "Bass",
           "Batk": "Batk",
           "Beng": "bengalskt",
+          "Bhks": "Bhks",
           "Bopo": "bopomofo",
           "Brah": "Brah",
           "Brai": "blindraletur",
@@ -48,6 +50,7 @@
           "Grek": "grískt",
           "Gujr": "gújaratí",
           "Guru": "gurmukhi",
+          "Hanb": "Hanb",
           "Hang": "hangul",
           "Hani": "kínverskt",
           "Hano": "Hano",
@@ -63,6 +66,7 @@
           "Hrkt": "katakana eða hiragana",
           "Hung": "Hung",
           "Ital": "Ital",
+          "Jamo": "Jamo",
           "Java": "Java",
           "Jpan": "japanskt",
           "Kali": "Kali",
@@ -86,6 +90,7 @@
           "Mahj": "Mahj",
           "Mand": "Mand",
           "Mani": "Mani",
+          "Marc": "Marc",
           "Mend": "Mend",
           "Merc": "Merc",
           "Mero": "Mero",
@@ -98,11 +103,13 @@
           "Mymr": "mjanmarskt",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "Nkoo",
           "Ogam": "Ogam",
           "Olck": "Olck",
           "Orkh": "Orkh",
           "Orya": "oriya",
+          "Osge": "Osge",
           "Osma": "Osma",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -182,6 +189,7 @@
           "Tale": "Tale",
           "Talu": "Talu",
           "Taml": "tamílskt",
+          "Tang": "Tang",
           "Tavt": "Tavt",
           "Telu": "telúgú",
           "Tfng": "Tfng",
@@ -198,6 +206,7 @@
           "Yiii": "Yiii",
           "Zinh": "Zinh",
           "Zmth": "Zmth",
+          "Zsye": "Zsye",
           "Zsym": "tákn",
           "Zxxx": "óskrifað",
           "Zyyy": "almennt",

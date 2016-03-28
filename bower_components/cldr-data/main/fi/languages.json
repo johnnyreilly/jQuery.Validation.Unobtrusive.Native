@@ -3,8 +3,8 @@
     "fi": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "fi"
       },
@@ -535,8 +535,8 @@
           "sux": "sumeri",
           "sv": "ruotsi",
           "sw": "swahili",
+          "sw-CD": "kingwana",
           "swb": "komori",
-          "swc": "kingwana",
           "syc": "muinaissyyria",
           "syr": "syyria",
           "szl": "sleesia",

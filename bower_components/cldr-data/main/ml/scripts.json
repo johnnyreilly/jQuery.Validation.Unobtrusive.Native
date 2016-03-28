@@ -3,13 +3,14 @@
     "ml": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11977 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "ml"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "അറബിക്",
@@ -22,6 +23,7 @@
           "Bass": "Bass",
           "Batk": "ബട്ടക്",
           "Beng": "ബംഗാളി",
+          "Bhks": "Bhks",
           "Blis": "ബ്ലിസ് ചിത്ര ലിപി",
           "Bopo": "ബോപ്പോമോഫോ",
           "Brah": "ബ്രാഹ്മി",
@@ -54,6 +56,7 @@
           "Grek": "ഗ്രീക്ക്",
           "Gujr": "ഗുജറാത്തി",
           "Guru": "ഗുരുമുഖി",
+          "Hanb": "Hanb",
           "Hang": "ഹാംഗുൽ",
           "Hani": "ഹാൻ",
           "Hano": "ഹനുനൂ",
@@ -70,6 +73,7 @@
           "Hung": "പുരാതന ഹംഗേറിയൻ",
           "Inds": "സിന്ധു",
           "Ital": "പഴയ ഇറ്റാലിയൻ",
+          "Jamo": "Jamo",
           "Java": "ജാവനീസ്",
           "Jpan": "ജാപ്പനീസ്",
           "Kali": "കയാ ലി",
@@ -95,6 +99,7 @@
           "Mahj": "Mahj",
           "Mand": "മൻഡേയൻ",
           "Mani": "മണിചേയൻ",
+          "Marc": "Marc",
           "Maya": "മായൻ ചിത്രലിപി",
           "Mend": "Mend",
           "Merc": "Merc",
@@ -109,11 +114,13 @@
           "Mymr": "മ്യാൻമാർ",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "എൻകോ",
           "Ogam": "ഒഖാം",
           "Olck": "ഒൽ ചിക്കി",
           "Orkh": "ഒർഖോൺ",
           "Orya": "ഒഡിയ",
+          "Osge": "Osge",
           "Osma": "ഒസ്‌മാനിയ",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -199,6 +206,7 @@
           "Tale": "തായ് ലേ",
           "Talu": "പുതിയ തായ് ല്യൂ",
           "Taml": "തമിഴ്",
+          "Tang": "Tang",
           "Tavt": "ത്വട്",
           "Telu": "തെലുങ്ക്",
           "Teng": "തെംഗ്വർ",
@@ -217,6 +225,7 @@
           "Yiii": "യി",
           "Zinh": "പാരമ്പര്യമായ",
           "Zmth": "ഗണിത രൂപം",
+          "Zsye": "Zsye",
           "Zsym": "ചിഹ്നങ്ങൾ",
           "Zxxx": "എഴുതപ്പെടാത്തത്",
           "Zyyy": "സാധാരണ",

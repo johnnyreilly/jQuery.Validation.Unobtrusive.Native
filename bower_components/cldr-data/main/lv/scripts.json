@@ -3,13 +3,14 @@
     "lv": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11919 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "lv"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "arābu",
@@ -22,6 +23,7 @@
           "Bass": "Bass",
           "Batk": "Batk",
           "Beng": "bengāļu",
+          "Bhks": "Bhks",
           "Bopo": "bopomofo",
           "Brah": "brahmi",
           "Brai": "Braila raksts",
@@ -51,6 +53,7 @@
           "Grek": "grieķu",
           "Gujr": "gudžaratu",
           "Guru": "pandžabu",
+          "Hanb": "Hanb",
           "Hang": "hangila",
           "Hani": "ķīniešu",
           "Hano": "Hano",
@@ -66,6 +69,7 @@
           "Hrkt": "katakana vai hiragana",
           "Hung": "senungāru",
           "Ital": "vecitāļu",
+          "Jamo": "Jamo",
           "Java": "javiešu",
           "Jpan": "japāņu",
           "Kali": "Kali",
@@ -89,6 +93,7 @@
           "Mahj": "Mahj",
           "Mand": "Mand",
           "Mani": "Mani",
+          "Marc": "Marc",
           "Maya": "maiju",
           "Mend": "Mend",
           "Merc": "Merc",
@@ -103,11 +108,13 @@
           "Mymr": "birmiešu",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "Nkoo",
           "Ogam": "ogamiskais raksts",
           "Olck": "Olck",
           "Orkh": "Orkh",
           "Orya": "oriju",
+          "Osge": "Osge",
           "Osma": "osmaņu turku",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -190,6 +197,7 @@
           "Tale": "Tale",
           "Talu": "Talu",
           "Taml": "tamilu",
+          "Tang": "Tang",
           "Tavt": "Tavt",
           "Telu": "telugu",
           "Tfng": "Tfng",
@@ -206,6 +214,7 @@
           "Yiii": "ji",
           "Zinh": "mantotā",
           "Zmth": "matemātiskais pieraksts",
+          "Zsye": "Zsye",
           "Zsym": "simboli",
           "Zxxx": "bez rakstības",
           "Zyyy": "vispārējā",

@@ -3,8 +3,8 @@
     "sr": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "sr"
       },
@@ -694,6 +694,7 @@
             "displayName-count-few": "грузијска ларија",
             "displayName-count-other": "грузијских ларија",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "ლ"
           },
           "GHC": {

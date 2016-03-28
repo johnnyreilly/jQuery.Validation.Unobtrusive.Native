@@ -3,8 +3,8 @@
     "fi": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "fi"
       },
@@ -633,6 +633,7 @@
             "displayName-count-one": "Georgian lari",
             "displayName-count-other": "Georgian laria",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

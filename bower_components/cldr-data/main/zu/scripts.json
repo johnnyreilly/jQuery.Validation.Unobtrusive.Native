@@ -3,13 +3,14 @@
     "zu": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "zu"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
           "Arab": "i-Arab",
@@ -22,6 +23,7 @@
           "Bass": "Bass",
           "Batk": "Batk",
           "Beng": "i-Bengali",
+          "Bhks": "Bhks",
           "Bopo": "i-Bopomofo",
           "Brah": "Brah",
           "Brai": "i-Braille",
@@ -48,6 +50,7 @@
           "Grek": "i-Greek",
           "Gujr": "i-Gujarati",
           "Guru": "i-Gurmukhi",
+          "Hanb": "Hanb",
           "Hang": "i-Hangul",
           "Hani": "i-Han",
           "Hano": "Hano",
@@ -63,6 +66,7 @@
           "Hrkt": "Hrkt",
           "Hung": "Hung",
           "Ital": "Ital",
+          "Jamo": "Jamo",
           "Java": "Java",
           "Jpan": "i-Japanese",
           "Kali": "Kali",
@@ -86,6 +90,7 @@
           "Mahj": "Mahj",
           "Mand": "Mand",
           "Mani": "Mani",
+          "Marc": "Marc",
           "Mend": "Mend",
           "Merc": "Merc",
           "Mero": "Mero",
@@ -98,11 +103,13 @@
           "Mymr": "i-Myanmar",
           "Narb": "Narb",
           "Nbat": "Nbat",
+          "Newa": "Newa",
           "Nkoo": "Nkoo",
           "Ogam": "Ogam",
           "Olck": "Olck",
           "Orkh": "Orkh",
           "Orya": "i-Oriya",
+          "Osge": "Osge",
           "Osma": "Osma",
           "Palm": "Palm",
           "Pauc": "Pauc",
@@ -182,6 +189,7 @@
           "Tale": "Tale",
           "Talu": "Talu",
           "Taml": "i-Tamil",
+          "Tang": "Tang",
           "Tavt": "Tavt",
           "Telu": "i-Telegu",
           "Tfng": "Tfng",
@@ -198,6 +206,7 @@
           "Yiii": "Yiii",
           "Zinh": "Zinh",
           "Zmth": "Zmth",
+          "Zsye": "Zsye",
           "Zsym": "amasimbuli",
           "Zxxx": "okungabhaliwe",
           "Zyyy": "ejwayelekile",

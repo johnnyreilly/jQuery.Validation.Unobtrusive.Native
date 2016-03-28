@@ -3,8 +3,8 @@
     "hr-BA": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "hr",
         "territory": "BA"
@@ -49,7 +49,6 @@
           "AI": "Angvila",
           "AL": "Albanija",
           "AM": "Armenija",
-          "AN": "Nizozemski Antili",
           "AO": "Angola",
           "AQ": "Antarktika",
           "AR": "Argentina",

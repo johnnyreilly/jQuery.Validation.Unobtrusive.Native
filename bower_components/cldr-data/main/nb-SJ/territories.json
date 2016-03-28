@@ -3,8 +3,8 @@
     "nb-SJ": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 11914 $",
+          "_cldrVersion": "29"
         },
         "language": "nb",
         "territory": "SJ"
@@ -49,7 +49,6 @@
           "AI": "Anguilla",
           "AL": "Albania",
           "AM": "Armenia",
-          "AN": "De nederlandske antiller",
           "AO": "Angola",
           "AQ": "Antarktis",
           "AR": "Argentina",

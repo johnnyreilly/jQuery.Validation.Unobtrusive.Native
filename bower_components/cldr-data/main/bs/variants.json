@@ -3,8 +3,8 @@
     "bs": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11977 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "bs"
       },
@@ -25,12 +25,14 @@
           "BAKU1926": "Ujedinjeni turski latinični alfabet",
           "BALANKA": "BALANKA",
           "BARLA": "BARLA",
+          "BASICENG": "BASICENG",
           "BAUDDHA": "BAUDDHA",
           "BISCAYAN": "BISCAYAN",
           "BISKE": "San Đorđijo/Bila dijalekt",
           "BOHORIC": "BOHORIC",
           "BOONT": "Buntling",
           "COLB1945": "COLB1945",
+          "CORNU": "CORNU",
           "DAJNKO": "DAJNKO",
           "EKAVSK": "EKAVSK",
           "EMODENG": "EMODENG",
@@ -53,6 +55,7 @@
           "MONOTON": "Monotonik",
           "NDYUKA": "NDYUKA",
           "NEDIS": "Natison dijalekt",
+          "NEWFOUND": "NEWFOUND",
           "NJIVA": "Gnjiva/Njiva dijalekt",
           "NULIK": "NULIK",
           "OSOJS": "Oseako/Osojane dijalekt",
@@ -70,6 +73,7 @@
           "SAAHO": "Saho",
           "SCOTLAND": "Škotski standardni engleski",
           "SCOUSE": "Skauz",
+          "SIMPLE": "SIMPLE",
           "SOLBA": "Stolvica/Solbica dijalekt",
           "SOTAV": "SOTAV",
           "SURMIRAN": "SURMIRAN",

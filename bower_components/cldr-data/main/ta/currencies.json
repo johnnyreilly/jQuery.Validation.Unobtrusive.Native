@@ -3,8 +3,8 @@
     "ta": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11955 $"
+          "_number": "$Revision: 12316 $",
+          "_cldrVersion": "29"
         },
         "language": "ta"
       },
@@ -523,6 +523,7 @@
             "displayName-count-one": "ஜியார்ஜியன் லாரி",
             "displayName-count-other": "ஜியார்ஜியன் லாரிகள்",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

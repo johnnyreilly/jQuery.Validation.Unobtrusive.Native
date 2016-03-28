@@ -3,8 +3,8 @@
     "de-CH": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11987 $"
+          "_number": "$Revision: 11987 $",
+          "_cldrVersion": "29"
         },
         "language": "de",
         "territory": "CH"
@@ -532,8 +532,8 @@
           "sux": "Sumerisch",
           "sv": "Schwedisch",
           "sw": "Suaheli",
+          "sw-CD": "Kongo-Suaheli",
           "swb": "Komorisch",
-          "swc": "Kongo-Suaheli",
           "syc": "Altsyrisch",
           "syr": "Syrisch",
           "szl": "Schlesisch (Polen)",

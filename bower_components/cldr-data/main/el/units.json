@@ -3,8 +3,8 @@
     "el": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11994 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "el"
       },
@@ -96,6 +96,23 @@
             "unitPattern-count-other": "{0} τετραγωνικές ίντσες",
             "perUnitPattern": "{0}/in²"
           },
+          "concentr-karat": {
+            "displayName": "καράτια",
+            "unitPattern-count-one": "{0} καράτι",
+            "unitPattern-count-other": "{0} καράτια"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "λίτρα ανά χιλιόμετρο",
             "unitPattern-count-one": "{0} λίτρο ανά χιλιόμετρο",
@@ -110,6 +127,10 @@
             "displayName": "μίλια ανά γαλόνι",
             "unitPattern-count-one": "{0} μίλι ανά γαλόνι",
             "unitPattern-count-other": "{0} μίλια ανά γαλόνι"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "terabyte",
@@ -509,11 +530,6 @@
             "unitPattern-count-one": "{0} μιλιμπάρ",
             "unitPattern-count-other": "{0} μιλιμπάρ"
           },
-          "proportion-karat": {
-            "displayName": "καράτια",
-            "unitPattern-count-one": "{0} καράτι",
-            "unitPattern-count-other": "{0} καράτια"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "χιλιόμετρα ανά ώρα",
             "unitPattern-count-one": "{0} χιλιόμετρο ανά ώρα",
@@ -647,6 +663,11 @@
             "unitPattern-count-other": "{0} γαλόνια",
             "perUnitPattern": "{0} ανά γαλόνι"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "τέταρτα του γαλονιού",
             "unitPattern-count-one": "{0} τέταρτο του γαλονιού",
@@ -771,6 +792,23 @@
             "unitPattern-count-other": "{0} in²",
             "perUnitPattern": "{0}/in²"
           },
+          "concentr-karat": {
+            "displayName": "καράτια",
+            "unitPattern-count-one": "{0} kt",
+            "unitPattern-count-other": "{0} kt"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "λίτρα/χλμ.",
             "unitPattern-count-one": "{0} λίτρο/χλμ",
@@ -785,6 +823,10 @@
             "displayName": "μίλια/γαλόνι",
             "unitPattern-count-one": "{0} mpg",
             "unitPattern-count-other": "{0} mpg"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "TB",
@@ -1184,11 +1226,6 @@
             "unitPattern-count-one": "{0} mbar",
             "unitPattern-count-other": "{0} mbar"
           },
-          "proportion-karat": {
-            "displayName": "καράτια",
-            "unitPattern-count-one": "{0} kt",
-            "unitPattern-count-other": "{0} kt"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "χλμ./ώρα",
             "unitPattern-count-one": "{0} χλμ./ώρα",
@@ -1322,6 +1359,11 @@
             "unitPattern-count-other": "{0} gal",
             "perUnitPattern": "{0}/gal"
           },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
+          },
           "volume-quart": {
             "displayName": "τέταρτα γαλονιού",
             "unitPattern-count-one": "{0} qt",
@@ -1446,6 +1488,23 @@
             "unitPattern-count-other": "{0} in²",
             "perUnitPattern": "{0}/in²"
           },
+          "concentr-karat": {
+            "displayName": "καράτια",
+            "unitPattern-count-one": "{0} kt",
+            "unitPattern-count-other": "{0} kt"
+          },
+          "concentr-milligram-per-deciliter": {
+            "displayName": "mg/dL",
+            "unitPattern-count-other": "{0} mg/dL"
+          },
+          "concentr-millimole-per-liter": {
+            "displayName": "mmol/L",
+            "unitPattern-count-other": "{0} mmol/L"
+          },
+          "concentr-part-per-million": {
+            "displayName": "ppm",
+            "unitPattern-count-other": "{0} ppm"
+          },
           "consumption-liter-per-kilometer": {
             "displayName": "λίτρα/χλμ.",
             "unitPattern-count-one": "{0} λίτρα/χλμ",
@@ -1460,6 +1519,10 @@
             "displayName": "μίλια/γαλόνι",
             "unitPattern-count-one": "{0} mpg",
             "unitPattern-count-other": "{0} mpg"
+          },
+          "consumption-mile-per-gallon-imperial": {
+            "displayName": "mpg Imp.",
+            "unitPattern-count-other": "{0} mpg Imp."
           },
           "digital-terabyte": {
             "displayName": "TB",
@@ -1859,11 +1922,6 @@
             "unitPattern-count-one": "{0} mbar",
             "unitPattern-count-other": "{0} mbar"
           },
-          "proportion-karat": {
-            "displayName": "καράτια",
-            "unitPattern-count-one": "{0} kt",
-            "unitPattern-count-other": "{0} kt"
-          },
           "speed-kilometer-per-hour": {
             "displayName": "χλμ./ώρα",
             "unitPattern-count-one": "{0} χλμ./ώρα",
@@ -1996,6 +2054,11 @@
             "unitPattern-count-one": "{0} gal",
             "unitPattern-count-other": "{0} gal",
             "perUnitPattern": "{0}/gal"
+          },
+          "volume-gallon-imperial": {
+            "displayName": "Imp. gal",
+            "unitPattern-count-other": "{0} gal Imp.",
+            "perUnitPattern": "{0}/gal Imp."
           },
           "volume-quart": {
             "displayName": "τέταρτα γαλονιού",

@@ -1,4039 +1,4039 @@
 {
   "supplemental": {
     "version": {
-      "_cldrVersion": "28",
+      "_number": "$Revision: 12404 $",
       "_unicodeVersion": "8.0.0",
-      "_number": "$Revision: 11941 $"
+      "_cldrVersion": "29"
     },
     "metadata": {
       "alias": {
         "languageAlias": {
           "aa-SAAHO": {
-            "_replacement": "ssy",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "ssy"
           },
           "aar": {
-            "_replacement": "aa",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "aa"
           },
           "abk": {
-            "_replacement": "ab",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ab"
           },
           "afr": {
-            "_replacement": "af",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "af"
           },
           "aju": {
-            "_replacement": "jrb",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "jrb"
           },
           "aka": {
-            "_replacement": "ak",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ak"
           },
           "alb": {
-            "_replacement": "sq",
-            "_reason": "bibliographic"
+            "_reason": "bibliographic",
+            "_replacement": "sq"
           },
           "als": {
-            "_replacement": "sq",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "sq"
           },
           "amh": {
-            "_replacement": "am",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "am"
           },
           "ara": {
-            "_replacement": "ar",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ar"
           },
           "arb": {
-            "_replacement": "ar",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "ar"
           },
           "arg": {
-            "_replacement": "an",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "an"
           },
           "arm": {
-            "_replacement": "hy",
-            "_reason": "bibliographic"
+            "_reason": "bibliographic",
+            "_replacement": "hy"
           },
           "art-lojban": {
-            "_replacement": "jbo",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "jbo"
           },
           "asm": {
-            "_replacement": "as",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "as"
           },
           "ava": {
-            "_replacement": "av",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "av"
           },
           "ave": {
-            "_replacement": "ae",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ae"
           },
           "aym": {
-            "_replacement": "ay",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ay"
           },
           "ayr": {
-            "_replacement": "ay",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "ay"
           },
           "az-AZ": {
-            "_replacement": "az-Latn-AZ",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "az-Latn-AZ"
           },
           "aze": {
-            "_replacement": "az",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "az"
           },
           "azj": {
-            "_replacement": "az",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "az"
           },
           "bak": {
-            "_replacement": "ba",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ba"
           },
           "bam": {
-            "_replacement": "bm",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "bm"
           },
           "baq": {
-            "_replacement": "eu",
-            "_reason": "bibliographic"
+            "_reason": "bibliographic",
+            "_replacement": "eu"
           },
           "bcc": {
-            "_replacement": "bal",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "bal"
           },
           "bcl": {
-            "_replacement": "bik",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "bik"
           },
           "bel": {
-            "_replacement": "be",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "be"
           },
           "ben": {
-            "_replacement": "bn",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "bn"
           },
           "bih": {
-            "_replacement": "bh",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "bh"
           },
           "bis": {
-            "_replacement": "bi",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "bi"
           },
           "bod": {
-            "_replacement": "bo",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "bo"
           },
           "bos": {
-            "_replacement": "bs",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "bs"
           },
           "bre": {
-            "_replacement": "br",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "br"
           },
           "bs-BA": {
-            "_replacement": "bs-Latn-BA",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "bs-Latn-BA"
           },
           "bul": {
-            "_replacement": "bg",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "bg"
           },
           "bur": {
-            "_replacement": "my",
-            "_reason": "bibliographic"
+            "_reason": "bibliographic",
+            "_replacement": "my"
           },
           "bxk": {
-            "_replacement": "luy",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "luy"
           },
           "bxr": {
-            "_replacement": "bua",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "bua"
           },
           "cat": {
-            "_replacement": "ca",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ca"
           },
           "ces": {
-            "_replacement": "cs",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "cs"
           },
           "cha": {
-            "_replacement": "ch",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ch"
           },
           "che": {
-            "_replacement": "ce",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ce"
           },
           "chi": {
-            "_replacement": "zh",
-            "_reason": "bibliographic"
+            "_reason": "bibliographic",
+            "_replacement": "zh"
           },
           "chu": {
-            "_replacement": "cu",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "cu"
           },
           "chv": {
-            "_replacement": "cv",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "cv"
           },
           "cld": {
-            "_replacement": "syr",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "syr"
           },
           "cmn": {
-            "_replacement": "zh",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "zh"
           },
           "cor": {
-            "_replacement": "kw",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "kw"
           },
           "cos": {
-            "_replacement": "co",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "co"
           },
           "cre": {
-            "_replacement": "cr",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "cr"
           },
           "cwd": {
-            "_replacement": "cr",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "cr"
           },
           "cym": {
-            "_replacement": "cy",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "cy"
           },
           "cze": {
-            "_replacement": "cs",
-            "_reason": "bibliographic"
+            "_reason": "bibliographic",
+            "_replacement": "cs"
           },
           "dan": {
-            "_replacement": "da",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "da"
           },
           "deu": {
-            "_replacement": "de",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "de"
           },
           "dgo": {
-            "_replacement": "doi",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "doi"
           },
           "dhd": {
-            "_replacement": "mwr",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "mwr"
           },
           "dik": {
-            "_replacement": "din",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "din"
           },
           "diq": {
-            "_replacement": "zza",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "zza"
           },
           "div": {
-            "_replacement": "dv",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "dv"
           },
           "dut": {
-            "_replacement": "nl",
-            "_reason": "bibliographic"
+            "_reason": "bibliographic",
+            "_replacement": "nl"
           },
           "dzo": {
-            "_replacement": "dz",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "dz"
           },
           "ekk": {
-            "_replacement": "et",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "et"
           },
           "ell": {
-            "_replacement": "el",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "el"
           },
           "emk": {
-            "_replacement": "man",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "man"
           },
           "eng": {
-            "_replacement": "en",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "en"
           },
           "epo": {
-            "_replacement": "eo",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "eo"
           },
           "esk": {
-            "_replacement": "ik",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "ik"
           },
           "est": {
-            "_replacement": "et",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "et"
           },
           "eus": {
-            "_replacement": "eu",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "eu"
           },
           "ewe": {
-            "_replacement": "ee",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ee"
           },
           "fao": {
-            "_replacement": "fo",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "fo"
           },
           "fas": {
-            "_replacement": "fa",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "fa"
           },
           "fat": {
-            "_replacement": "ak",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "ak"
           },
           "fij": {
-            "_replacement": "fj",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "fj"
           },
           "fin": {
-            "_replacement": "fi",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "fi"
           },
           "fra": {
-            "_replacement": "fr",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "fr"
           },
           "fre": {
-            "_replacement": "fr",
-            "_reason": "bibliographic"
+            "_reason": "bibliographic",
+            "_replacement": "fr"
           },
           "fry": {
-            "_replacement": "fy",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "fy"
           },
           "fuc": {
-            "_replacement": "ff",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "ff"
           },
           "ful": {
-            "_replacement": "ff",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ff"
           },
           "gaz": {
-            "_replacement": "om",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "om"
           },
           "gbo": {
-            "_replacement": "grb",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "grb"
           },
           "geo": {
-            "_replacement": "ka",
-            "_reason": "bibliographic"
+            "_reason": "bibliographic",
+            "_replacement": "ka"
           },
           "ger": {
-            "_replacement": "de",
-            "_reason": "bibliographic"
+            "_reason": "bibliographic",
+            "_replacement": "de"
           },
           "gla": {
-            "_replacement": "gd",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "gd"
           },
           "gle": {
-            "_replacement": "ga",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ga"
           },
           "glg": {
-            "_replacement": "gl",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "gl"
           },
           "glv": {
-            "_replacement": "gv",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "gv"
           },
           "gno": {
-            "_replacement": "gon",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "gon"
           },
           "gre": {
-            "_replacement": "el",
-            "_reason": "bibliographic"
+            "_reason": "bibliographic",
+            "_replacement": "el"
           },
           "grn": {
-            "_replacement": "gn",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "gn"
           },
           "gug": {
-            "_replacement": "gn",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "gn"
           },
           "guj": {
-            "_replacement": "gu",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "gu"
           },
           "gya": {
-            "_replacement": "gba",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "gba"
           },
           "ha-Latn-GH": {
-            "_replacement": "ha-GH",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "ha-GH"
           },
           "ha-Latn-NE": {
-            "_replacement": "ha-NE",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "ha-NE"
           },
           "ha-Latn-NG": {
-            "_replacement": "ha-NG",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "ha-NG"
           },
           "hat": {
-            "_replacement": "ht",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ht"
           },
           "hau": {
-            "_replacement": "ha",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ha"
           },
           "hbs": {
-            "_replacement": "sr-Latn",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "sr-Latn"
           },
           "hdn": {
-            "_replacement": "hai",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "hai"
           },
           "hea": {
-            "_replacement": "hmn",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "hmn"
           },
           "heb": {
-            "_replacement": "he",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "he"
           },
           "her": {
-            "_replacement": "hz",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "hz"
           },
           "him": {
-            "_replacement": "srx",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "srx"
           },
           "hin": {
-            "_replacement": "hi",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "hi"
           },
           "hmo": {
-            "_replacement": "ho",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ho"
           },
           "hrv": {
-            "_replacement": "hr",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "hr"
           },
           "hun": {
-            "_replacement": "hu",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "hu"
           },
           "hye": {
-            "_replacement": "hy",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "hy"
           },
           "i-ami": {
-            "_replacement": "ami",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "ami"
           },
           "i-bnn": {
-            "_replacement": "bnn",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "bnn"
           },
           "i-hak": {
-            "_replacement": "hak",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "hak"
           },
           "i-klingon": {
-            "_replacement": "tlh",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "tlh"
           },
           "i-lux": {
-            "_replacement": "lb",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "lb"
           },
           "i-navajo": {
-            "_replacement": "nv",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "nv"
           },
           "i-pwn": {
-            "_replacement": "pwn",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "pwn"
           },
           "i-tao": {
-            "_replacement": "tao",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "tao"
           },
           "i-tay": {
-            "_replacement": "tay",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "tay"
           },
           "i-tsu": {
-            "_replacement": "tsu",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "tsu"
           },
           "ibo": {
-            "_replacement": "ig",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ig"
           },
           "ice": {
-            "_replacement": "is",
-            "_reason": "bibliographic"
+            "_reason": "bibliographic",
+            "_replacement": "is"
           },
           "ido": {
-            "_replacement": "io",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "io"
           },
           "iii": {
-            "_replacement": "ii",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ii"
           },
           "ike": {
-            "_replacement": "iu",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "iu"
           },
           "iku": {
-            "_replacement": "iu",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "iu"
           },
           "ile": {
-            "_replacement": "ie",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ie"
           },
           "in": {
-            "_replacement": "id",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "id"
           },
           "ina": {
-            "_replacement": "ia",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ia"
           },
           "ind": {
-            "_replacement": "id",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "id"
           },
           "ipk": {
-            "_replacement": "ik",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ik"
           },
           "isl": {
-            "_replacement": "is",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "is"
           },
           "ita": {
-            "_replacement": "it",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "it"
           },
           "iw": {
-            "_replacement": "he",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "he"
           },
           "jav": {
-            "_replacement": "jv",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "jv"
           },
           "ji": {
-            "_replacement": "yi",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "yi"
           },
           "jpn": {
-            "_replacement": "ja",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ja"
           },
           "jw": {
-            "_replacement": "jv",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "jv"
           },
           "kal": {
-            "_replacement": "kl",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "kl"
           },
           "kan": {
-            "_replacement": "kn",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "kn"
           },
           "kas": {
-            "_replacement": "ks",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ks"
           },
           "kat": {
-            "_replacement": "ka",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ka"
           },
           "kau": {
-            "_replacement": "kr",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "kr"
           },
           "kaz": {
-            "_replacement": "kk",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "kk"
           },
           "khk": {
-            "_replacement": "mn",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "mn"
           },
           "khm": {
-            "_replacement": "km",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "km"
           },
           "kik": {
-            "_replacement": "ki",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ki"
           },
           "kin": {
-            "_replacement": "rw",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "rw"
           },
           "kir": {
-            "_replacement": "ky",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ky"
           },
           "kk-Cyrl-KZ": {
-            "_replacement": "kk-KZ",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "kk-KZ"
           },
           "kmr": {
-            "_replacement": "ku",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "ku"
           },
           "knc": {
-            "_replacement": "kr",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "kr"
           },
           "kng": {
-            "_replacement": "kg",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "kg"
           },
           "knn": {
-            "_replacement": "kok",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "kok"
           },
           "kom": {
-            "_replacement": "kv",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "kv"
           },
           "kon": {
-            "_replacement": "kg",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "kg"
           },
           "kor": {
-            "_replacement": "ko",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ko"
           },
           "kpv": {
-            "_replacement": "kv",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "kv"
           },
           "ks-Arab-IN": {
-            "_replacement": "ks-IN",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "ks-IN"
           },
           "kua": {
-            "_replacement": "kj",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "kj"
           },
           "kur": {
-            "_replacement": "ku",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ku"
           },
           "ky-Cyrl-KG": {
-            "_replacement": "ky-KG",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "ky-KG"
           },
           "lao": {
-            "_replacement": "lo",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "lo"
           },
           "lat": {
-            "_replacement": "la",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "la"
           },
           "lav": {
-            "_replacement": "lv",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "lv"
           },
           "lbk": {
-            "_replacement": "bnc",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "bnc"
           },
           "lim": {
-            "_replacement": "li",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "li"
           },
           "lin": {
-            "_replacement": "ln",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ln"
           },
           "lit": {
-            "_replacement": "lt",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "lt"
           },
           "ltz": {
-            "_replacement": "lb",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "lb"
           },
           "lub": {
-            "_replacement": "lu",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "lu"
           },
           "lug": {
-            "_replacement": "lg",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "lg"
           },
           "lvs": {
-            "_replacement": "lv",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "lv"
           },
           "mac": {
-            "_replacement": "mk",
-            "_reason": "bibliographic"
+            "_reason": "bibliographic",
+            "_replacement": "mk"
           },
           "mah": {
-            "_replacement": "mh",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "mh"
           },
           "mal": {
-            "_replacement": "ml",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ml"
           },
           "mao": {
-            "_replacement": "mi",
-            "_reason": "bibliographic"
+            "_reason": "bibliographic",
+            "_replacement": "mi"
           },
           "mar": {
-            "_replacement": "mr",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "mr"
           },
           "may": {
-            "_replacement": "ms",
-            "_reason": "bibliographic"
+            "_reason": "bibliographic",
+            "_replacement": "ms"
           },
           "mhr": {
-            "_replacement": "chm",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "chm"
           },
           "mkd": {
-            "_replacement": "mk",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "mk"
           },
           "mlg": {
-            "_replacement": "mg",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "mg"
           },
           "mlt": {
-            "_replacement": "mt",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "mt"
           },
           "mn-Cyrl-MN": {
-            "_replacement": "mn-MN",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "mn-MN"
           },
           "mnk": {
-            "_replacement": "man",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "man"
           },
           "mo": {
-            "_replacement": "ro-MD",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "ro-MD"
           },
           "mol": {
-            "_replacement": "ro-MD",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ro-MD"
           },
           "mon": {
-            "_replacement": "mn",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "mn"
           },
           "mri": {
-            "_replacement": "mi",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "mi"
           },
           "ms-Latn-BN": {
-            "_replacement": "ms-BN",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "ms-BN"
           },
           "ms-Latn-MY": {
-            "_replacement": "ms-MY",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "ms-MY"
           },
           "ms-Latn-SG": {
-            "_replacement": "ms-SG",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "ms-SG"
           },
           "msa": {
-            "_replacement": "ms",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ms"
           },
           "mup": {
-            "_replacement": "raj",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "raj"
           },
           "mya": {
-            "_replacement": "my",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "my"
           },
           "nau": {
-            "_replacement": "na",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "na"
           },
           "nav": {
-            "_replacement": "nv",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "nv"
           },
           "nbl": {
-            "_replacement": "nr",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "nr"
           },
           "nde": {
-            "_replacement": "nd",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "nd"
           },
           "ndo": {
-            "_replacement": "ng",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ng"
           },
           "nep": {
-            "_replacement": "ne",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ne"
           },
           "nld": {
-            "_replacement": "nl",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "nl"
           },
           "nno": {
-            "_replacement": "nn",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "nn"
           },
           "no": {
-            "_replacement": "nb",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "nb"
           },
           "no-bok": {
-            "_replacement": "nb",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "nb"
           },
           "no-BOKMAL": {
-            "_replacement": "nb",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "nb"
           },
           "no-nyn": {
-            "_replacement": "nn",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "nn"
           },
           "no-NYNORSK": {
-            "_replacement": "nn",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "nn"
           },
           "nob": {
-            "_replacement": "nb",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "nb"
           },
           "nor": {
-            "_replacement": "nb",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "nb"
           },
           "npi": {
-            "_replacement": "ne",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "ne"
           },
           "nya": {
-            "_replacement": "ny",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ny"
           },
           "oci": {
-            "_replacement": "oc",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "oc"
           },
           "ojg": {
-            "_replacement": "oj",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "oj"
           },
           "oji": {
-            "_replacement": "oj",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "oj"
           },
           "ori": {
-            "_replacement": "or",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "or"
           },
           "orm": {
-            "_replacement": "om",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "om"
           },
           "ory": {
-            "_replacement": "or",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "or"
           },
           "oss": {
-            "_replacement": "os",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "os"
           },
           "pa-IN": {
-            "_replacement": "pa-Guru-IN",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "pa-Guru-IN"
           },
           "pa-PK": {
-            "_replacement": "pa-Arab-PK",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "pa-Arab-PK"
           },
           "pan": {
-            "_replacement": "pa",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "pa"
           },
           "pbu": {
-            "_replacement": "ps",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "ps"
           },
           "per": {
-            "_replacement": "fa",
-            "_reason": "bibliographic"
+            "_reason": "bibliographic",
+            "_replacement": "fa"
           },
           "pes": {
-            "_replacement": "fa",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "fa"
           },
           "pli": {
-            "_replacement": "pi",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "pi"
           },
           "plt": {
-            "_replacement": "mg",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "mg"
           },
           "pnb": {
-            "_replacement": "lah",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "lah"
           },
           "pol": {
-            "_replacement": "pl",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "pl"
           },
           "por": {
-            "_replacement": "pt",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "pt"
           },
           "pus": {
-            "_replacement": "ps",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ps"
           },
           "que": {
-            "_replacement": "qu",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "qu"
           },
           "quz": {
-            "_replacement": "qu",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "qu"
           },
           "rmy": {
-            "_replacement": "rom",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "rom"
           },
           "roh": {
-            "_replacement": "rm",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "rm"
           },
           "ron": {
-            "_replacement": "ro",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ro"
           },
           "rum": {
-            "_replacement": "ro",
-            "_reason": "bibliographic"
+            "_reason": "bibliographic",
+            "_replacement": "ro"
           },
           "run": {
-            "_replacement": "rn",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "rn"
           },
           "rus": {
-            "_replacement": "ru",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ru"
           },
           "sag": {
-            "_replacement": "sg",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "sg"
           },
           "san": {
-            "_replacement": "sa",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "sa"
           },
           "scc": {
-            "_replacement": "sr",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "sr"
           },
           "scr": {
-            "_replacement": "hr",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "hr"
           },
           "sgn-BE-FR": {
-            "_replacement": "sfb",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "sfb"
           },
           "sgn-BE-NL": {
-            "_replacement": "vgt",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "vgt"
           },
           "sgn-CH-DE": {
-            "_replacement": "sgg",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "sgg"
           },
           "sh": {
-            "_replacement": "sr-Latn",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "sr-Latn"
           },
           "shi-MA": {
-            "_replacement": "shi-Tfng-MA",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "shi-Tfng-MA"
           },
           "sin": {
-            "_replacement": "si",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "si"
           },
           "slk": {
-            "_replacement": "sk",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "sk"
           },
           "slo": {
-            "_replacement": "sk",
-            "_reason": "bibliographic"
+            "_reason": "bibliographic",
+            "_replacement": "sk"
           },
           "slv": {
-            "_replacement": "sl",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "sl"
           },
           "sme": {
-            "_replacement": "se",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "se"
           },
           "smo": {
-            "_replacement": "sm",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "sm"
           },
           "sna": {
-            "_replacement": "sn",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "sn"
           },
           "snd": {
-            "_replacement": "sd",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "sd"
           },
           "som": {
-            "_replacement": "so",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "so"
           },
           "sot": {
-            "_replacement": "st",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "st"
           },
           "spa": {
-            "_replacement": "es",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "es"
           },
           "spy": {
-            "_replacement": "kln",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "kln"
           },
           "sqi": {
-            "_replacement": "sq",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "sq"
           },
           "sr-BA": {
-            "_replacement": "sr-Cyrl-BA",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "sr-Cyrl-BA"
           },
           "sr-ME": {
-            "_replacement": "sr-Latn-ME",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "sr-Latn-ME"
           },
           "sr-RS": {
-            "_replacement": "sr-Cyrl-RS",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "sr-Cyrl-RS"
           },
           "sr-XK": {
-            "_replacement": "sr-Cyrl-XK",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "sr-Cyrl-XK"
           },
           "src": {
-            "_replacement": "sc",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "sc"
           },
           "srd": {
-            "_replacement": "sc",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "sc"
           },
           "srp": {
-            "_replacement": "sr",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "sr"
           },
           "ssw": {
-            "_replacement": "ss",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ss"
           },
           "sun": {
-            "_replacement": "su",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "su"
           },
           "swa": {
-            "_replacement": "sw",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "sw"
           },
           "swe": {
-            "_replacement": "sv",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "sv"
           },
           "swh": {
-            "_replacement": "sw",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "sw"
           },
           "tah": {
-            "_replacement": "ty",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ty"
           },
           "tam": {
-            "_replacement": "ta",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ta"
           },
           "tat": {
-            "_replacement": "tt",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "tt"
           },
           "tel": {
-            "_replacement": "te",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "te"
           },
           "tgk": {
-            "_replacement": "tg",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "tg"
           },
           "tgl": {
-            "_replacement": "fil",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "fil"
           },
           "tha": {
-            "_replacement": "th",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "th"
           },
           "tib": {
-            "_replacement": "bo",
-            "_reason": "bibliographic"
+            "_reason": "bibliographic",
+            "_replacement": "bo"
           },
           "tir": {
-            "_replacement": "ti",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ti"
           },
           "tl": {
-            "_replacement": "fil",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "fil"
           },
           "ton": {
-            "_replacement": "to",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "to"
           },
           "tsn": {
-            "_replacement": "tn",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "tn"
           },
           "tso": {
-            "_replacement": "ts",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ts"
           },
           "ttq": {
-            "_replacement": "tmh",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "tmh"
           },
           "tuk": {
-            "_replacement": "tk",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "tk"
           },
           "tur": {
-            "_replacement": "tr",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "tr"
           },
           "tw": {
-            "_replacement": "ak",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "ak"
           },
           "twi": {
-            "_replacement": "ak",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ak"
           },
           "tzm-Latn-MA": {
-            "_replacement": "tzm-MA",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "tzm-MA"
           },
           "ug-Arab-CN": {
-            "_replacement": "ug-CN",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "ug-CN"
           },
           "uig": {
-            "_replacement": "ug",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ug"
           },
           "ukr": {
-            "_replacement": "uk",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "uk"
           },
           "umu": {
-            "_replacement": "del",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "del"
           },
           "urd": {
-            "_replacement": "ur",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ur"
           },
           "uz-AF": {
-            "_replacement": "uz-Arab-AF",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "uz-Arab-AF"
           },
           "uz-UZ": {
-            "_replacement": "uz-Latn-UZ",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "uz-Latn-UZ"
           },
           "uzb": {
-            "_replacement": "uz",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "uz"
           },
           "uzn": {
-            "_replacement": "uz",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "uz"
           },
           "vai-LR": {
-            "_replacement": "vai-Vaii-LR",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "vai-Vaii-LR"
           },
           "ven": {
-            "_replacement": "ve",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ve"
           },
           "vie": {
-            "_replacement": "vi",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "vi"
           },
           "vol": {
-            "_replacement": "vo",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "vo"
           },
           "wel": {
-            "_replacement": "cy",
-            "_reason": "bibliographic"
+            "_reason": "bibliographic",
+            "_replacement": "cy"
           },
           "wln": {
-            "_replacement": "wa",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "wa"
           },
           "wol": {
-            "_replacement": "wo",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "wo"
           },
           "xho": {
-            "_replacement": "xh",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "xh"
           },
           "xpe": {
-            "_replacement": "kpe",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "kpe"
           },
           "xsl": {
-            "_replacement": "den",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "den"
           },
           "ydd": {
-            "_replacement": "yi",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "yi"
           },
           "yid": {
-            "_replacement": "yi",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "yi"
           },
           "yor": {
-            "_replacement": "yo",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "yo"
           },
           "zai": {
-            "_replacement": "zap",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "zap"
           },
           "zh-CN": {
-            "_replacement": "zh-Hans-CN",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "zh-Hans-CN"
           },
           "zh-guoyu": {
-            "_replacement": "zh",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "zh"
           },
           "zh-hakka": {
-            "_replacement": "hak",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "hak"
           },
           "zh-HK": {
-            "_replacement": "zh-Hant-HK",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "zh-Hant-HK"
           },
           "zh-min-nan": {
-            "_replacement": "nan",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "nan"
           },
           "zh-MO": {
-            "_replacement": "zh-Hant-MO",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "zh-Hant-MO"
           },
           "zh-SG": {
-            "_replacement": "zh-Hans-SG",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "zh-Hans-SG"
           },
           "zh-TW": {
-            "_replacement": "zh-Hant-TW",
-            "_reason": "legacy"
+            "_reason": "legacy",
+            "_replacement": "zh-Hant-TW"
           },
           "zh-xiang": {
-            "_replacement": "hsn",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "hsn"
           },
           "zha": {
-            "_replacement": "za",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "za"
           },
           "zho": {
-            "_replacement": "zh",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "zh"
           },
           "zsm": {
-            "_replacement": "ms",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "ms"
           },
           "zul": {
-            "_replacement": "zu",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "zu"
           },
           "zyb": {
-            "_replacement": "za",
-            "_reason": "macrolanguage"
+            "_reason": "macrolanguage",
+            "_replacement": "za"
           }
         },
         "scriptAlias": {
           "Qaai": {
-            "_replacement": "Zinh",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "Zinh"
           }
         },
         "territoryAlias": {
           "004": {
-            "_replacement": "AF",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AF"
           },
           "008": {
-            "_replacement": "AL",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AL"
           },
           "010": {
-            "_replacement": "AQ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AQ"
           },
           "012": {
-            "_replacement": "DZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "DZ"
           },
           "016": {
-            "_replacement": "AS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AS"
           },
           "020": {
-            "_replacement": "AD",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AD"
           },
           "024": {
-            "_replacement": "AO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AO"
           },
           "028": {
-            "_replacement": "AG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AG"
           },
           "031": {
-            "_replacement": "AZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AZ"
           },
           "032": {
-            "_replacement": "AR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AR"
           },
           "036": {
-            "_replacement": "AU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AU"
           },
           "040": {
-            "_replacement": "AT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AT"
           },
           "044": {
-            "_replacement": "BS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BS"
           },
           "048": {
-            "_replacement": "BH",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BH"
           },
           "050": {
-            "_replacement": "BD",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BD"
           },
           "051": {
-            "_replacement": "AM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AM"
           },
           "052": {
-            "_replacement": "BB",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BB"
           },
           "056": {
-            "_replacement": "BE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BE"
           },
           "060": {
-            "_replacement": "BM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BM"
           },
           "062": {
-            "_replacement": "034 143",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "034 143"
           },
           "064": {
-            "_replacement": "BT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BT"
           },
           "068": {
-            "_replacement": "BO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BO"
           },
           "070": {
-            "_replacement": "BA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BA"
           },
           "072": {
-            "_replacement": "BW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BW"
           },
           "074": {
-            "_replacement": "BV",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BV"
           },
           "076": {
-            "_replacement": "BR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BR"
           },
           "084": {
-            "_replacement": "BZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BZ"
           },
           "086": {
-            "_replacement": "IO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "IO"
           },
           "090": {
-            "_replacement": "SB",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SB"
           },
           "092": {
-            "_replacement": "VG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "VG"
           },
           "096": {
-            "_replacement": "BN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BN"
           },
           "100": {
-            "_replacement": "BG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BG"
           },
           "104": {
-            "_replacement": "MM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MM"
           },
           "108": {
-            "_replacement": "BI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BI"
           },
           "112": {
-            "_replacement": "BY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BY"
           },
           "116": {
-            "_replacement": "KH",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KH"
           },
           "120": {
-            "_replacement": "CM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CM"
           },
           "124": {
-            "_replacement": "CA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CA"
           },
           "132": {
-            "_replacement": "CV",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CV"
           },
           "136": {
-            "_replacement": "KY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KY"
           },
           "140": {
-            "_replacement": "CF",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CF"
           },
           "144": {
-            "_replacement": "LK",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LK"
           },
           "148": {
-            "_replacement": "TD",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TD"
           },
           "152": {
-            "_replacement": "CL",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CL"
           },
           "156": {
-            "_replacement": "CN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CN"
           },
           "158": {
-            "_replacement": "TW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TW"
           },
           "162": {
-            "_replacement": "CX",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CX"
           },
           "166": {
-            "_replacement": "CC",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CC"
           },
           "170": {
-            "_replacement": "CO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CO"
           },
           "172": {
-            "_replacement": "RU AM AZ BY GE KG KZ MD TJ TM UA UZ",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "RU AM AZ BY GE KG KZ MD TJ TM UA UZ"
           },
           "174": {
-            "_replacement": "KM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KM"
           },
           "175": {
-            "_replacement": "YT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "YT"
           },
           "178": {
-            "_replacement": "CG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CG"
           },
           "180": {
-            "_replacement": "CD",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CD"
           },
           "184": {
-            "_replacement": "CK",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CK"
           },
           "188": {
-            "_replacement": "CR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CR"
           },
           "191": {
-            "_replacement": "HR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "HR"
           },
           "192": {
-            "_replacement": "CU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CU"
           },
           "196": {
-            "_replacement": "CY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CY"
           },
           "200": {
-            "_replacement": "CZ SK",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "CZ SK"
           },
           "203": {
-            "_replacement": "CZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CZ"
           },
           "204": {
-            "_replacement": "BJ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BJ"
           },
           "208": {
-            "_replacement": "DK",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "DK"
           },
           "212": {
-            "_replacement": "DM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "DM"
           },
           "214": {
-            "_replacement": "DO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "DO"
           },
           "218": {
-            "_replacement": "EC",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "EC"
           },
           "222": {
-            "_replacement": "SV",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SV"
           },
           "226": {
-            "_replacement": "GQ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GQ"
           },
           "230": {
-            "_replacement": "ET",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "ET"
           },
           "231": {
-            "_replacement": "ET",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ET"
           },
           "232": {
-            "_replacement": "ER",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ER"
           },
           "233": {
-            "_replacement": "EE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "EE"
           },
           "234": {
-            "_replacement": "FO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "FO"
           },
           "238": {
-            "_replacement": "FK",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "FK"
           },
           "239": {
-            "_replacement": "GS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GS"
           },
           "242": {
-            "_replacement": "FJ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "FJ"
           },
           "246": {
-            "_replacement": "FI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "FI"
           },
           "248": {
-            "_replacement": "AX",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AX"
           },
           "249": {
-            "_replacement": "FR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "FR"
           },
           "250": {
-            "_replacement": "FR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "FR"
           },
           "254": {
-            "_replacement": "GF",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GF"
           },
           "258": {
-            "_replacement": "PF",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PF"
           },
           "260": {
-            "_replacement": "TF",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TF"
           },
           "262": {
-            "_replacement": "DJ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "DJ"
           },
           "266": {
-            "_replacement": "GA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GA"
           },
           "268": {
-            "_replacement": "GE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GE"
           },
           "270": {
-            "_replacement": "GM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GM"
           },
           "275": {
-            "_replacement": "PS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PS"
           },
           "276": {
-            "_replacement": "DE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "DE"
           },
           "278": {
-            "_replacement": "DE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "DE"
           },
           "280": {
-            "_replacement": "DE",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "DE"
           },
           "288": {
-            "_replacement": "GH",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GH"
           },
           "292": {
-            "_replacement": "GI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GI"
           },
           "296": {
-            "_replacement": "KI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KI"
           },
           "300": {
-            "_replacement": "GR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GR"
           },
           "304": {
-            "_replacement": "GL",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GL"
           },
           "308": {
-            "_replacement": "GD",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GD"
           },
           "312": {
-            "_replacement": "GP",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GP"
           },
           "316": {
-            "_replacement": "GU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GU"
           },
           "320": {
-            "_replacement": "GT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GT"
           },
           "324": {
-            "_replacement": "GN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GN"
           },
           "328": {
-            "_replacement": "GY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GY"
           },
           "332": {
-            "_replacement": "HT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "HT"
           },
           "334": {
-            "_replacement": "HM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "HM"
           },
           "336": {
-            "_replacement": "VA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "VA"
           },
           "340": {
-            "_replacement": "HN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "HN"
           },
           "344": {
-            "_replacement": "HK",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "HK"
           },
           "348": {
-            "_replacement": "HU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "HU"
           },
           "352": {
-            "_replacement": "IS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "IS"
           },
           "356": {
-            "_replacement": "IN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "IN"
           },
           "360": {
-            "_replacement": "ID",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ID"
           },
           "364": {
-            "_replacement": "IR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "IR"
           },
           "368": {
-            "_replacement": "IQ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "IQ"
           },
           "372": {
-            "_replacement": "IE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "IE"
           },
           "376": {
-            "_replacement": "IL",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "IL"
           },
           "380": {
-            "_replacement": "IT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "IT"
           },
           "384": {
-            "_replacement": "CI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CI"
           },
           "388": {
-            "_replacement": "JM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "JM"
           },
           "392": {
-            "_replacement": "JP",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "JP"
           },
           "398": {
-            "_replacement": "KZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KZ"
           },
           "400": {
-            "_replacement": "JO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "JO"
           },
           "404": {
-            "_replacement": "KE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KE"
           },
           "408": {
-            "_replacement": "KP",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KP"
           },
           "410": {
-            "_replacement": "KR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KR"
           },
           "414": {
-            "_replacement": "KW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KW"
           },
           "417": {
-            "_replacement": "KG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KG"
           },
           "418": {
-            "_replacement": "LA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LA"
           },
           "422": {
-            "_replacement": "LB",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LB"
           },
           "426": {
-            "_replacement": "LS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LS"
           },
           "428": {
-            "_replacement": "LV",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LV"
           },
           "430": {
-            "_replacement": "LR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LR"
           },
           "434": {
-            "_replacement": "LY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LY"
           },
           "438": {
-            "_replacement": "LI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LI"
           },
           "440": {
-            "_replacement": "LT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LT"
           },
           "442": {
-            "_replacement": "LU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LU"
           },
           "446": {
-            "_replacement": "MO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MO"
           },
           "450": {
-            "_replacement": "MG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MG"
           },
           "454": {
-            "_replacement": "MW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MW"
           },
           "458": {
-            "_replacement": "MY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MY"
           },
           "462": {
-            "_replacement": "MV",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MV"
           },
           "466": {
-            "_replacement": "ML",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ML"
           },
           "470": {
-            "_replacement": "MT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MT"
           },
           "474": {
-            "_replacement": "MQ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MQ"
           },
           "478": {
-            "_replacement": "MR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MR"
           },
           "480": {
-            "_replacement": "MU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MU"
           },
           "484": {
-            "_replacement": "MX",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MX"
           },
           "492": {
-            "_replacement": "MC",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MC"
           },
           "496": {
-            "_replacement": "MN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MN"
           },
           "498": {
-            "_replacement": "MD",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MD"
           },
           "499": {
-            "_replacement": "ME",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ME"
           },
           "500": {
-            "_replacement": "MS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MS"
           },
           "504": {
-            "_replacement": "MA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MA"
           },
           "508": {
-            "_replacement": "MZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MZ"
           },
           "512": {
-            "_replacement": "OM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "OM"
           },
           "516": {
-            "_replacement": "NA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NA"
           },
           "520": {
-            "_replacement": "NR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NR"
           },
           "524": {
-            "_replacement": "NP",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NP"
           },
           "528": {
-            "_replacement": "NL",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NL"
           },
           "530": {
-            "_replacement": "CW SX BQ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CW SX BQ"
           },
           "531": {
-            "_replacement": "CW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CW"
           },
           "532": {
-            "_replacement": "CW SX BQ",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "CW SX BQ"
           },
           "533": {
-            "_replacement": "AW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AW"
           },
           "534": {
-            "_replacement": "SX",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SX"
           },
           "535": {
-            "_replacement": "BQ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BQ"
           },
           "536": {
-            "_replacement": "SA IQ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SA IQ"
           },
           "540": {
-            "_replacement": "NC",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NC"
           },
           "548": {
-            "_replacement": "VU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "VU"
           },
           "554": {
-            "_replacement": "NZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NZ"
           },
           "558": {
-            "_replacement": "NI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NI"
           },
           "562": {
-            "_replacement": "NE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NE"
           },
           "566": {
-            "_replacement": "NG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NG"
           },
           "570": {
-            "_replacement": "NU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NU"
           },
           "574": {
-            "_replacement": "NF",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NF"
           },
           "578": {
-            "_replacement": "NO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NO"
           },
           "580": {
-            "_replacement": "MP",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MP"
           },
           "581": {
-            "_replacement": "UM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "UM"
           },
           "582": {
-            "_replacement": "FM MH MP PW",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "FM MH MP PW"
           },
           "583": {
-            "_replacement": "FM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "FM"
           },
           "584": {
-            "_replacement": "MH",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MH"
           },
           "585": {
-            "_replacement": "PW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PW"
           },
           "586": {
-            "_replacement": "PK",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PK"
           },
           "591": {
-            "_replacement": "PA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PA"
           },
           "598": {
-            "_replacement": "PG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PG"
           },
           "600": {
-            "_replacement": "PY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PY"
           },
           "604": {
-            "_replacement": "PE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PE"
           },
           "608": {
-            "_replacement": "PH",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PH"
           },
           "612": {
-            "_replacement": "PN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PN"
           },
           "616": {
-            "_replacement": "PL",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PL"
           },
           "620": {
-            "_replacement": "PT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PT"
           },
           "624": {
-            "_replacement": "GW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GW"
           },
           "626": {
-            "_replacement": "TL",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TL"
           },
           "630": {
-            "_replacement": "PR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PR"
           },
           "634": {
-            "_replacement": "QA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QA"
           },
           "638": {
-            "_replacement": "RE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "RE"
           },
           "642": {
-            "_replacement": "RO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "RO"
           },
           "643": {
-            "_replacement": "RU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "RU"
           },
           "646": {
-            "_replacement": "RW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "RW"
           },
           "652": {
-            "_replacement": "BL",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BL"
           },
           "654": {
-            "_replacement": "SH",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SH"
           },
           "659": {
-            "_replacement": "KN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KN"
           },
           "660": {
-            "_replacement": "AI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AI"
           },
           "662": {
-            "_replacement": "LC",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LC"
           },
           "663": {
-            "_replacement": "MF",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MF"
           },
           "666": {
-            "_replacement": "PM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PM"
           },
           "670": {
-            "_replacement": "VC",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "VC"
           },
           "674": {
-            "_replacement": "SM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SM"
           },
           "678": {
-            "_replacement": "ST",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ST"
           },
           "682": {
-            "_replacement": "SA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SA"
           },
           "686": {
-            "_replacement": "SN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SN"
           },
           "688": {
-            "_replacement": "RS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "RS"
           },
           "690": {
-            "_replacement": "SC",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SC"
           },
           "694": {
-            "_replacement": "SL",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SL"
           },
           "702": {
-            "_replacement": "SG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SG"
           },
           "703": {
-            "_replacement": "SK",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SK"
           },
           "704": {
-            "_replacement": "VN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "VN"
           },
           "705": {
-            "_replacement": "SI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SI"
           },
           "706": {
-            "_replacement": "SO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SO"
           },
           "710": {
-            "_replacement": "ZA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ZA"
           },
           "716": {
-            "_replacement": "ZW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ZW"
           },
           "720": {
-            "_replacement": "YE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "YE"
           },
           "724": {
-            "_replacement": "ES",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ES"
           },
           "728": {
-            "_replacement": "SS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SS"
           },
           "729": {
-            "_replacement": "SD",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SD"
           },
           "732": {
-            "_replacement": "EH",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "EH"
           },
           "736": {
-            "_replacement": "SD",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "SD"
           },
           "740": {
-            "_replacement": "SR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SR"
           },
           "744": {
-            "_replacement": "SJ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SJ"
           },
           "748": {
-            "_replacement": "SZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SZ"
           },
           "752": {
-            "_replacement": "SE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SE"
           },
           "756": {
-            "_replacement": "CH",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CH"
           },
           "760": {
-            "_replacement": "SY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SY"
           },
           "762": {
-            "_replacement": "TJ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TJ"
           },
           "764": {
-            "_replacement": "TH",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TH"
           },
           "768": {
-            "_replacement": "TG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TG"
           },
           "772": {
-            "_replacement": "TK",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TK"
           },
           "776": {
-            "_replacement": "TO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TO"
           },
           "780": {
-            "_replacement": "TT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TT"
           },
           "784": {
-            "_replacement": "AE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AE"
           },
           "788": {
-            "_replacement": "TN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TN"
           },
           "792": {
-            "_replacement": "TR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TR"
           },
           "795": {
-            "_replacement": "TM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TM"
           },
           "796": {
-            "_replacement": "TC",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TC"
           },
           "798": {
-            "_replacement": "TV",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TV"
           },
           "800": {
-            "_replacement": "UG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "UG"
           },
           "804": {
-            "_replacement": "UA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "UA"
           },
           "807": {
-            "_replacement": "MK",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MK"
           },
           "810": {
-            "_replacement": "RU AM AZ BY EE GE KZ KG LV LT MD TJ TM UA UZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "RU AM AZ BY EE GE KZ KG LV LT MD TJ TM UA UZ"
           },
           "818": {
-            "_replacement": "EG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "EG"
           },
           "826": {
-            "_replacement": "GB",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GB"
           },
           "830": {
-            "_replacement": "JE GG",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "JE GG"
           },
           "831": {
-            "_replacement": "GG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GG"
           },
           "832": {
-            "_replacement": "JE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "JE"
           },
           "833": {
-            "_replacement": "IM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "IM"
           },
           "834": {
-            "_replacement": "TZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TZ"
           },
           "840": {
-            "_replacement": "US",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "US"
           },
           "850": {
-            "_replacement": "VI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "VI"
           },
           "854": {
-            "_replacement": "BF",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BF"
           },
           "858": {
-            "_replacement": "UY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "UY"
           },
           "860": {
-            "_replacement": "UZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "UZ"
           },
           "862": {
-            "_replacement": "VE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "VE"
           },
           "876": {
-            "_replacement": "WF",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "WF"
           },
           "882": {
-            "_replacement": "WS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "WS"
           },
           "886": {
-            "_replacement": "YE",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "YE"
           },
           "887": {
-            "_replacement": "YE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "YE"
           },
           "890": {
-            "_replacement": "RS ME SI HR MK BA",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "RS ME SI HR MK BA"
           },
           "891": {
-            "_replacement": "RS ME",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "RS ME"
           },
           "894": {
-            "_replacement": "ZM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ZM"
           },
           "958": {
-            "_replacement": "AA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AA"
           },
           "959": {
-            "_replacement": "QM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QM"
           },
           "960": {
-            "_replacement": "QN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QN"
           },
           "962": {
-            "_replacement": "QP",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QP"
           },
           "963": {
-            "_replacement": "QQ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QQ"
           },
           "964": {
-            "_replacement": "QR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QR"
           },
           "965": {
-            "_replacement": "QS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QS"
           },
           "966": {
-            "_replacement": "QT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QT"
           },
           "967": {
-            "_replacement": "EU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "EU"
           },
           "968": {
-            "_replacement": "QV",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QV"
           },
           "969": {
-            "_replacement": "QW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QW"
           },
           "970": {
-            "_replacement": "QX",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QX"
           },
           "971": {
-            "_replacement": "QY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QY"
           },
           "972": {
-            "_replacement": "QZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QZ"
           },
           "973": {
-            "_replacement": "XA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XA"
           },
           "974": {
-            "_replacement": "XB",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XB"
           },
           "975": {
-            "_replacement": "XC",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XC"
           },
           "976": {
-            "_replacement": "XD",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XD"
           },
           "977": {
-            "_replacement": "XE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XE"
           },
           "978": {
-            "_replacement": "XF",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XF"
           },
           "979": {
-            "_replacement": "XG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XG"
           },
           "980": {
-            "_replacement": "XH",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XH"
           },
           "981": {
-            "_replacement": "XI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XI"
           },
           "982": {
-            "_replacement": "XJ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XJ"
           },
           "983": {
-            "_replacement": "XK",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XK"
           },
           "984": {
-            "_replacement": "XL",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XL"
           },
           "985": {
-            "_replacement": "XM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XM"
           },
           "986": {
-            "_replacement": "XN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XN"
           },
           "987": {
-            "_replacement": "XO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XO"
           },
           "988": {
-            "_replacement": "XP",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XP"
           },
           "989": {
-            "_replacement": "XQ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XQ"
           },
           "990": {
-            "_replacement": "XR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XR"
           },
           "991": {
-            "_replacement": "XS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XS"
           },
           "992": {
-            "_replacement": "XT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XT"
           },
           "993": {
-            "_replacement": "XU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XU"
           },
           "994": {
-            "_replacement": "XV",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XV"
           },
           "995": {
-            "_replacement": "XW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XW"
           },
           "996": {
-            "_replacement": "XX",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XX"
           },
           "997": {
-            "_replacement": "XY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XY"
           },
           "998": {
-            "_replacement": "XZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XZ"
           },
           "999": {
-            "_replacement": "ZZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ZZ"
           },
           "AAA": {
-            "_replacement": "AA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AA"
           },
           "ABW": {
-            "_replacement": "AW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AW"
           },
           "AFG": {
-            "_replacement": "AF",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AF"
           },
           "AGO": {
-            "_replacement": "AO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AO"
           },
           "AIA": {
-            "_replacement": "AI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AI"
           },
           "ALA": {
-            "_replacement": "AX",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AX"
           },
           "ALB": {
-            "_replacement": "AL",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AL"
           },
           "AN": {
-            "_replacement": "CW SX BQ",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "CW SX BQ"
           },
           "AND": {
-            "_replacement": "AD",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AD"
           },
           "ANT": {
-            "_replacement": "CW SX BQ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CW SX BQ"
           },
           "ARE": {
-            "_replacement": "AE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AE"
           },
           "ARG": {
-            "_replacement": "AR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AR"
           },
           "ARM": {
-            "_replacement": "AM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AM"
           },
           "ASC": {
-            "_replacement": "AC",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AC"
           },
           "ASM": {
-            "_replacement": "AS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AS"
           },
           "ATA": {
-            "_replacement": "AQ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AQ"
           },
           "ATF": {
-            "_replacement": "TF",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TF"
           },
           "ATG": {
-            "_replacement": "AG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AG"
           },
           "AUS": {
-            "_replacement": "AU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AU"
           },
           "AUT": {
-            "_replacement": "AT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AT"
           },
           "AZE": {
-            "_replacement": "AZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "AZ"
           },
           "BDI": {
-            "_replacement": "BI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BI"
           },
           "BEL": {
-            "_replacement": "BE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BE"
           },
           "BEN": {
-            "_replacement": "BJ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BJ"
           },
           "BES": {
-            "_replacement": "BQ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BQ"
           },
           "BFA": {
-            "_replacement": "BF",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BF"
           },
           "BGD": {
-            "_replacement": "BD",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BD"
           },
           "BGR": {
-            "_replacement": "BG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BG"
           },
           "BHR": {
-            "_replacement": "BH",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BH"
           },
           "BHS": {
-            "_replacement": "BS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BS"
           },
           "BIH": {
-            "_replacement": "BA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BA"
           },
           "BLM": {
-            "_replacement": "BL",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BL"
           },
           "BLR": {
-            "_replacement": "BY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BY"
           },
           "BLZ": {
-            "_replacement": "BZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BZ"
           },
           "BMU": {
-            "_replacement": "BM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BM"
           },
           "BOL": {
-            "_replacement": "BO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BO"
           },
           "BRA": {
-            "_replacement": "BR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BR"
           },
           "BRB": {
-            "_replacement": "BB",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BB"
           },
           "BRN": {
-            "_replacement": "BN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BN"
           },
           "BTN": {
-            "_replacement": "BT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BT"
           },
           "BU": {
-            "_replacement": "MM",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "MM"
           },
           "BUR": {
-            "_replacement": "MM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MM"
           },
           "BVT": {
-            "_replacement": "BV",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BV"
           },
           "BWA": {
-            "_replacement": "BW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "BW"
           },
           "CAF": {
-            "_replacement": "CF",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CF"
           },
           "CAN": {
-            "_replacement": "CA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CA"
           },
           "CCK": {
-            "_replacement": "CC",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CC"
           },
           "CHE": {
-            "_replacement": "CH",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CH"
           },
           "CHL": {
-            "_replacement": "CL",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CL"
           },
           "CHN": {
-            "_replacement": "CN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CN"
           },
           "CIV": {
-            "_replacement": "CI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CI"
           },
           "CMR": {
-            "_replacement": "CM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CM"
           },
           "COD": {
-            "_replacement": "CD",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CD"
           },
           "COG": {
-            "_replacement": "CG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CG"
           },
           "COK": {
-            "_replacement": "CK",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CK"
           },
           "COL": {
-            "_replacement": "CO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CO"
           },
           "COM": {
-            "_replacement": "KM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KM"
           },
           "CPT": {
-            "_replacement": "CP",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CP"
           },
           "CPV": {
-            "_replacement": "CV",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CV"
           },
           "CRI": {
-            "_replacement": "CR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CR"
           },
           "CS": {
-            "_replacement": "RS ME",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "RS ME"
           },
           "CT": {
-            "_replacement": "KI",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "KI"
           },
           "CUB": {
-            "_replacement": "CU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CU"
           },
           "CUW": {
-            "_replacement": "CW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CW"
           },
           "CXR": {
-            "_replacement": "CX",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CX"
           },
           "CYM": {
-            "_replacement": "KY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KY"
           },
           "CYP": {
-            "_replacement": "CY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CY"
           },
           "CZE": {
-            "_replacement": "CZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CZ"
           },
           "DD": {
-            "_replacement": "DE",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "DE"
           },
           "DDR": {
-            "_replacement": "DE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "DE"
           },
           "DEU": {
-            "_replacement": "DE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "DE"
           },
           "DGA": {
-            "_replacement": "DG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "DG"
           },
           "DJI": {
-            "_replacement": "DJ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "DJ"
           },
           "DMA": {
-            "_replacement": "DM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "DM"
           },
           "DNK": {
-            "_replacement": "DK",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "DK"
           },
           "DOM": {
-            "_replacement": "DO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "DO"
           },
           "DY": {
-            "_replacement": "BJ",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "BJ"
           },
           "DZA": {
-            "_replacement": "DZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "DZ"
           },
           "ECU": {
-            "_replacement": "EC",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "EC"
           },
           "EGY": {
-            "_replacement": "EG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "EG"
           },
           "ERI": {
-            "_replacement": "ER",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ER"
           },
           "ESH": {
-            "_replacement": "EH",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "EH"
           },
           "ESP": {
-            "_replacement": "ES",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ES"
           },
           "EST": {
-            "_replacement": "EE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "EE"
           },
           "ETH": {
-            "_replacement": "ET",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ET"
           },
           "FIN": {
-            "_replacement": "FI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "FI"
           },
           "FJI": {
-            "_replacement": "FJ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "FJ"
           },
           "FLK": {
-            "_replacement": "FK",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "FK"
           },
           "FQ": {
-            "_replacement": "AQ TF",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "AQ TF"
           },
           "FRA": {
-            "_replacement": "FR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "FR"
           },
           "FRO": {
-            "_replacement": "FO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "FO"
           },
           "FSM": {
-            "_replacement": "FM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "FM"
           },
           "FX": {
-            "_replacement": "FR",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "FR"
           },
           "FXX": {
-            "_replacement": "FR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "FR"
           },
           "GAB": {
-            "_replacement": "GA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GA"
           },
           "GBR": {
-            "_replacement": "GB",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GB"
           },
           "GEO": {
-            "_replacement": "GE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GE"
           },
           "GGY": {
-            "_replacement": "GG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GG"
           },
           "GHA": {
-            "_replacement": "GH",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GH"
           },
           "GIB": {
-            "_replacement": "GI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GI"
           },
           "GIN": {
-            "_replacement": "GN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GN"
           },
           "GLP": {
-            "_replacement": "GP",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GP"
           },
           "GMB": {
-            "_replacement": "GM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GM"
           },
           "GNB": {
-            "_replacement": "GW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GW"
           },
           "GNQ": {
-            "_replacement": "GQ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GQ"
           },
           "GRC": {
-            "_replacement": "GR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GR"
           },
           "GRD": {
-            "_replacement": "GD",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GD"
           },
           "GRL": {
-            "_replacement": "GL",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GL"
           },
           "GTM": {
-            "_replacement": "GT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GT"
           },
           "GUF": {
-            "_replacement": "GF",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GF"
           },
           "GUM": {
-            "_replacement": "GU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GU"
           },
           "GUY": {
-            "_replacement": "GY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GY"
           },
           "HKG": {
-            "_replacement": "HK",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "HK"
           },
           "HMD": {
-            "_replacement": "HM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "HM"
           },
           "HND": {
-            "_replacement": "HN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "HN"
           },
           "HRV": {
-            "_replacement": "HR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "HR"
           },
           "HTI": {
-            "_replacement": "HT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "HT"
           },
           "HUN": {
-            "_replacement": "HU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "HU"
           },
           "HV": {
-            "_replacement": "BF",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "BF"
           },
           "IDN": {
-            "_replacement": "ID",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ID"
           },
           "IMN": {
-            "_replacement": "IM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "IM"
           },
           "IND": {
-            "_replacement": "IN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "IN"
           },
           "IOT": {
-            "_replacement": "IO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "IO"
           },
           "IRL": {
-            "_replacement": "IE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "IE"
           },
           "IRN": {
-            "_replacement": "IR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "IR"
           },
           "IRQ": {
-            "_replacement": "IQ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "IQ"
           },
           "ISL": {
-            "_replacement": "IS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "IS"
           },
           "ISR": {
-            "_replacement": "IL",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "IL"
           },
           "ITA": {
-            "_replacement": "IT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "IT"
           },
           "JAM": {
-            "_replacement": "JM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "JM"
           },
           "JEY": {
-            "_replacement": "JE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "JE"
           },
           "JOR": {
-            "_replacement": "JO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "JO"
           },
           "JPN": {
-            "_replacement": "JP",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "JP"
           },
           "JT": {
-            "_replacement": "UM",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "UM"
           },
           "KAZ": {
-            "_replacement": "KZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KZ"
           },
           "KEN": {
-            "_replacement": "KE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KE"
           },
           "KGZ": {
-            "_replacement": "KG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KG"
           },
           "KHM": {
-            "_replacement": "KH",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KH"
           },
           "KIR": {
-            "_replacement": "KI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KI"
           },
           "KNA": {
-            "_replacement": "KN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KN"
           },
           "KOR": {
-            "_replacement": "KR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KR"
           },
           "KWT": {
-            "_replacement": "KW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KW"
           },
           "LAO": {
-            "_replacement": "LA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LA"
           },
           "LBN": {
-            "_replacement": "LB",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LB"
           },
           "LBR": {
-            "_replacement": "LR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LR"
           },
           "LBY": {
-            "_replacement": "LY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LY"
           },
           "LCA": {
-            "_replacement": "LC",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LC"
           },
           "LIE": {
-            "_replacement": "LI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LI"
           },
           "LKA": {
-            "_replacement": "LK",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LK"
           },
           "LSO": {
-            "_replacement": "LS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LS"
           },
           "LTU": {
-            "_replacement": "LT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LT"
           },
           "LUX": {
-            "_replacement": "LU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LU"
           },
           "LVA": {
-            "_replacement": "LV",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "LV"
           },
           "MAC": {
-            "_replacement": "MO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MO"
           },
           "MAF": {
-            "_replacement": "MF",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MF"
           },
           "MAR": {
-            "_replacement": "MA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MA"
           },
           "MCO": {
-            "_replacement": "MC",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MC"
           },
           "MDA": {
-            "_replacement": "MD",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MD"
           },
           "MDG": {
-            "_replacement": "MG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MG"
           },
           "MDV": {
-            "_replacement": "MV",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MV"
           },
           "MEX": {
-            "_replacement": "MX",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MX"
           },
           "MHL": {
-            "_replacement": "MH",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MH"
           },
           "MI": {
-            "_replacement": "UM",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "UM"
           },
           "MKD": {
-            "_replacement": "MK",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MK"
           },
           "MLI": {
-            "_replacement": "ML",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ML"
           },
           "MLT": {
-            "_replacement": "MT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MT"
           },
           "MMR": {
-            "_replacement": "MM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MM"
           },
           "MNE": {
-            "_replacement": "ME",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ME"
           },
           "MNG": {
-            "_replacement": "MN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MN"
           },
           "MNP": {
-            "_replacement": "MP",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MP"
           },
           "MOZ": {
-            "_replacement": "MZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MZ"
           },
           "MRT": {
-            "_replacement": "MR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MR"
           },
           "MSR": {
-            "_replacement": "MS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MS"
           },
           "MTQ": {
-            "_replacement": "MQ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MQ"
           },
           "MUS": {
-            "_replacement": "MU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MU"
           },
           "MWI": {
-            "_replacement": "MW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MW"
           },
           "MYS": {
-            "_replacement": "MY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "MY"
           },
           "MYT": {
-            "_replacement": "YT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "YT"
           },
           "NAM": {
-            "_replacement": "NA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NA"
           },
           "NCL": {
-            "_replacement": "NC",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NC"
           },
           "NER": {
-            "_replacement": "NE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NE"
           },
           "NFK": {
-            "_replacement": "NF",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NF"
           },
           "NGA": {
-            "_replacement": "NG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NG"
           },
           "NH": {
-            "_replacement": "VU",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "VU"
           },
           "NIC": {
-            "_replacement": "NI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NI"
           },
           "NIU": {
-            "_replacement": "NU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NU"
           },
           "NLD": {
-            "_replacement": "NL",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NL"
           },
           "NOR": {
-            "_replacement": "NO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NO"
           },
           "NPL": {
-            "_replacement": "NP",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NP"
           },
           "NQ": {
-            "_replacement": "AQ",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "AQ"
           },
           "NRU": {
-            "_replacement": "NR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NR"
           },
           "NT": {
-            "_replacement": "SA IQ",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "SA IQ"
           },
           "NTZ": {
-            "_replacement": "SA IQ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SA IQ"
           },
           "NZL": {
-            "_replacement": "NZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "NZ"
           },
           "OMN": {
-            "_replacement": "OM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "OM"
           },
           "PAK": {
-            "_replacement": "PK",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PK"
           },
           "PAN": {
-            "_replacement": "PA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PA"
           },
           "PC": {
-            "_replacement": "FM MH MP PW",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "FM MH MP PW"
           },
           "PCN": {
-            "_replacement": "PN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PN"
           },
           "PER": {
-            "_replacement": "PE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PE"
           },
           "PHL": {
-            "_replacement": "PH",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PH"
           },
           "PLW": {
-            "_replacement": "PW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PW"
           },
           "PNG": {
-            "_replacement": "PG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PG"
           },
           "POL": {
-            "_replacement": "PL",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PL"
           },
           "PRI": {
-            "_replacement": "PR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PR"
           },
           "PRK": {
-            "_replacement": "KP",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "KP"
           },
           "PRT": {
-            "_replacement": "PT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PT"
           },
           "PRY": {
-            "_replacement": "PY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PY"
           },
           "PSE": {
-            "_replacement": "PS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PS"
           },
           "PU": {
-            "_replacement": "UM",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "UM"
           },
           "PYF": {
-            "_replacement": "PF",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PF"
           },
           "PZ": {
-            "_replacement": "PA",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "PA"
           },
           "QAT": {
-            "_replacement": "QA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QA"
           },
           "QMM": {
-            "_replacement": "QM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QM"
           },
           "QNN": {
-            "_replacement": "QN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QN"
           },
           "QPP": {
-            "_replacement": "QP",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QP"
           },
           "QQQ": {
-            "_replacement": "QQ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QQ"
           },
           "QRR": {
-            "_replacement": "QR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QR"
           },
           "QSS": {
-            "_replacement": "QS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QS"
           },
           "QTT": {
-            "_replacement": "QT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QT"
           },
           "QU": {
-            "_replacement": "EU",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "EU"
           },
           "QUU": {
-            "_replacement": "EU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "EU"
           },
           "QVV": {
-            "_replacement": "QV",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QV"
           },
           "QWW": {
-            "_replacement": "QW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QW"
           },
           "QXX": {
-            "_replacement": "QX",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QX"
           },
           "QYY": {
-            "_replacement": "QY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QY"
           },
           "QZZ": {
-            "_replacement": "QZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "QZ"
           },
           "REU": {
-            "_replacement": "RE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "RE"
           },
           "RH": {
-            "_replacement": "ZW",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "ZW"
           },
           "ROU": {
-            "_replacement": "RO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "RO"
           },
           "RUS": {
-            "_replacement": "RU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "RU"
           },
           "RWA": {
-            "_replacement": "RW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "RW"
           },
           "SAU": {
-            "_replacement": "SA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SA"
           },
           "SCG": {
-            "_replacement": "RS ME",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "RS ME"
           },
           "SDN": {
-            "_replacement": "SD",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SD"
           },
           "SEN": {
-            "_replacement": "SN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SN"
           },
           "SGP": {
-            "_replacement": "SG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SG"
           },
           "SGS": {
-            "_replacement": "GS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "GS"
           },
           "SHN": {
-            "_replacement": "SH",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SH"
           },
           "SJM": {
-            "_replacement": "SJ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SJ"
           },
           "SLB": {
-            "_replacement": "SB",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SB"
           },
           "SLE": {
-            "_replacement": "SL",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SL"
           },
           "SLV": {
-            "_replacement": "SV",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SV"
           },
           "SMR": {
-            "_replacement": "SM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SM"
           },
           "SOM": {
-            "_replacement": "SO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SO"
           },
           "SPM": {
-            "_replacement": "PM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "PM"
           },
           "SRB": {
-            "_replacement": "RS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "RS"
           },
           "SSD": {
-            "_replacement": "SS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SS"
           },
           "STP": {
-            "_replacement": "ST",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ST"
           },
           "SU": {
-            "_replacement": "RU AM AZ BY EE GE KZ KG LV LT MD TJ TM UA UZ",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "RU AM AZ BY EE GE KZ KG LV LT MD TJ TM UA UZ"
           },
           "SUN": {
-            "_replacement": "RU AM AZ BY EE GE KZ KG LV LT MD TJ TM UA UZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "RU AM AZ BY EE GE KZ KG LV LT MD TJ TM UA UZ"
           },
           "SUR": {
-            "_replacement": "SR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SR"
           },
           "SVK": {
-            "_replacement": "SK",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SK"
           },
           "SVN": {
-            "_replacement": "SI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SI"
           },
           "SWE": {
-            "_replacement": "SE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SE"
           },
           "SWZ": {
-            "_replacement": "SZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SZ"
           },
           "SXM": {
-            "_replacement": "SX",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SX"
           },
           "SYC": {
-            "_replacement": "SC",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SC"
           },
           "SYR": {
-            "_replacement": "SY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "SY"
           },
           "TAA": {
-            "_replacement": "TA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TA"
           },
           "TCA": {
-            "_replacement": "TC",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TC"
           },
           "TCD": {
-            "_replacement": "TD",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TD"
           },
           "TGO": {
-            "_replacement": "TG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TG"
           },
           "THA": {
-            "_replacement": "TH",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TH"
           },
           "TJK": {
-            "_replacement": "TJ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TJ"
           },
           "TKL": {
-            "_replacement": "TK",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TK"
           },
           "TKM": {
-            "_replacement": "TM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TM"
           },
           "TLS": {
-            "_replacement": "TL",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TL"
           },
           "TMP": {
-            "_replacement": "TL",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TL"
           },
           "TON": {
-            "_replacement": "TO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TO"
           },
           "TP": {
-            "_replacement": "TL",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "TL"
           },
           "TTO": {
-            "_replacement": "TT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TT"
           },
           "TUN": {
-            "_replacement": "TN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TN"
           },
           "TUR": {
-            "_replacement": "TR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TR"
           },
           "TUV": {
-            "_replacement": "TV",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TV"
           },
           "TWN": {
-            "_replacement": "TW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TW"
           },
           "TZA": {
-            "_replacement": "TZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "TZ"
           },
           "UGA": {
-            "_replacement": "UG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "UG"
           },
           "UK": {
-            "_replacement": "GB",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "GB"
           },
           "UKR": {
-            "_replacement": "UA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "UA"
           },
           "UMI": {
-            "_replacement": "UM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "UM"
           },
           "URY": {
-            "_replacement": "UY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "UY"
           },
           "USA": {
-            "_replacement": "US",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "US"
           },
           "UZB": {
-            "_replacement": "UZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "UZ"
           },
           "VAT": {
-            "_replacement": "VA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "VA"
           },
           "VCT": {
-            "_replacement": "VC",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "VC"
           },
           "VD": {
-            "_replacement": "VN",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "VN"
           },
           "VEN": {
-            "_replacement": "VE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "VE"
           },
           "VGB": {
-            "_replacement": "VG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "VG"
           },
           "VIR": {
-            "_replacement": "VI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "VI"
           },
           "VNM": {
-            "_replacement": "VN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "VN"
           },
           "VUT": {
-            "_replacement": "VU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "VU"
           },
           "WK": {
-            "_replacement": "UM",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "UM"
           },
           "WLF": {
-            "_replacement": "WF",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "WF"
           },
           "WSM": {
-            "_replacement": "WS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "WS"
           },
           "XAA": {
-            "_replacement": "XA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XA"
           },
           "XBB": {
-            "_replacement": "XB",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XB"
           },
           "XCC": {
-            "_replacement": "XC",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XC"
           },
           "XDD": {
-            "_replacement": "XD",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XD"
           },
           "XEE": {
-            "_replacement": "XE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XE"
           },
           "XFF": {
-            "_replacement": "XF",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XF"
           },
           "XGG": {
-            "_replacement": "XG",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XG"
           },
           "XHH": {
-            "_replacement": "XH",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XH"
           },
           "XII": {
-            "_replacement": "XI",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XI"
           },
           "XJJ": {
-            "_replacement": "XJ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XJ"
           },
           "XKK": {
-            "_replacement": "XK",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XK"
           },
           "XLL": {
-            "_replacement": "XL",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XL"
           },
           "XMM": {
-            "_replacement": "XM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XM"
           },
           "XNN": {
-            "_replacement": "XN",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XN"
           },
           "XOO": {
-            "_replacement": "XO",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XO"
           },
           "XPP": {
-            "_replacement": "XP",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XP"
           },
           "XQQ": {
-            "_replacement": "XQ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XQ"
           },
           "XRR": {
-            "_replacement": "XR",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XR"
           },
           "XSS": {
-            "_replacement": "XS",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XS"
           },
           "XTT": {
-            "_replacement": "XT",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XT"
           },
           "XUU": {
-            "_replacement": "XU",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XU"
           },
           "XVV": {
-            "_replacement": "XV",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XV"
           },
           "XWW": {
-            "_replacement": "XW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XW"
           },
           "XXX": {
-            "_replacement": "XX",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XX"
           },
           "XYY": {
-            "_replacement": "XY",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XY"
           },
           "XZZ": {
-            "_replacement": "XZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "XZ"
           },
           "YD": {
-            "_replacement": "YE",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "YE"
           },
           "YEM": {
-            "_replacement": "YE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "YE"
           },
           "YMD": {
-            "_replacement": "YE",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "YE"
           },
           "YU": {
-            "_replacement": "RS ME",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "RS ME"
           },
           "YUG": {
-            "_replacement": "RS ME",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "RS ME"
           },
           "ZAF": {
-            "_replacement": "ZA",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ZA"
           },
           "ZAR": {
-            "_replacement": "CD",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "CD"
           },
           "ZMB": {
-            "_replacement": "ZM",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ZM"
           },
           "ZR": {
-            "_replacement": "CD",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "CD"
           },
           "ZWE": {
-            "_replacement": "ZW",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ZW"
           },
           "ZZZ": {
-            "_replacement": "ZZ",
-            "_reason": "overlong"
+            "_reason": "overlong",
+            "_replacement": "ZZ"
           }
         },
         "variantAlias": {
           "AALAND": {
-            "_replacement": "AX",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "AX"
           },
           "HEPLOC": {
-            "_replacement": "ALALC97",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "ALALC97"
           },
           "POLYTONI": {
-            "_replacement": "POLYTON",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "POLYTON"
           }
         },
         "zoneAlias": {
           "Africa": {
             "Timbuktu": {
-              "_replacement": "Africa/Bamako",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "Africa/Bamako"
             }
           },
           "America": {
             "Montreal": {
-              "_replacement": "America/Toronto",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "America/Toronto"
             },
             "Shiprock": {
-              "_replacement": "America/Denver",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "America/Denver"
             }
           },
           "Antarctica": {
             "South_Pole": {
-              "_replacement": "Pacific/Auckland",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "Pacific/Auckland"
             }
           },
           "Asia": {
             "Chongqing": {
-              "_replacement": "Asia/Shanghai",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "Asia/Shanghai"
             },
             "Harbin": {
-              "_replacement": "Asia/Shanghai",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "Asia/Shanghai"
             },
             "Kashgar": {
-              "_replacement": "Asia/Urumqi",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "Asia/Urumqi"
             }
           },
           "Atlantic": {
             "Jan_Mayen": {
-              "_replacement": "Europe/Oslo",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "Europe/Oslo"
             }
           },
           "EST": {
-            "_replacement": "America/Indianapolis",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "America/Indianapolis"
           },
           "Europe": {
             "Belfast": {
-              "_replacement": "Europe/London",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "Europe/London"
             }
           },
           "HST": {
-            "_replacement": "Pacific/Honolulu",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "Pacific/Honolulu"
           },
           "MST": {
-            "_replacement": "America/Phoenix",
-            "_reason": "deprecated"
+            "_reason": "deprecated",
+            "_replacement": "America/Phoenix"
           },
           "Pacific": {
             "Yap": {
-              "_replacement": "Pacific/Truk",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "Pacific/Truk"
             }
           },
           "SystemV": {
             "AST4": {
-              "_replacement": "America/Puerto_Rico",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "America/Puerto_Rico"
             },
             "AST4ADT": {
-              "_replacement": "America/Halifax",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "America/Halifax"
             },
             "CST6": {
-              "_replacement": "America/Regina",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "America/Regina"
             },
             "CST6CDT": {
-              "_replacement": "America/Chicago",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "America/Chicago"
             },
             "EST5": {
-              "_replacement": "America/Indianapolis",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "America/Indianapolis"
             },
             "EST5EDT": {
-              "_replacement": "America/New_York",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "America/New_York"
             },
             "HST10": {
-              "_replacement": "Pacific/Honolulu",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "Pacific/Honolulu"
             },
             "MST7": {
-              "_replacement": "America/Phoenix",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "America/Phoenix"
             },
             "MST7MDT": {
-              "_replacement": "America/Denver",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "America/Denver"
             },
             "PST8": {
-              "_replacement": "Pacific/Pitcairn",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "Pacific/Pitcairn"
             },
             "PST8PDT": {
-              "_replacement": "America/Los_Angeles",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "America/Los_Angeles"
             },
             "YST9": {
-              "_replacement": "Pacific/Gambier",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "Pacific/Gambier"
             },
             "YST9YDT": {
-              "_replacement": "America/Anchorage",
-              "_reason": "deprecated"
+              "_reason": "deprecated",
+              "_replacement": "America/Anchorage"
             }
           }
         }

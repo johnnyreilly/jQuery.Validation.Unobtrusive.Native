@@ -3,8 +3,8 @@
     "be": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 12004 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "be"
       },
@@ -531,8 +531,8 @@
           "sux": "sux",
           "sv": "шведская",
           "sw": "суахілі",
+          "sw-CD": "суахілі Конга",
           "swb": "swb",
-          "swc": "суахілі Конга",
           "syc": "syc",
           "syr": "syr",
           "szl": "szl",

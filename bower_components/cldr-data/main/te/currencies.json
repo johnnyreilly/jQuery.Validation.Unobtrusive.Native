@@ -3,8 +3,8 @@
     "te": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "te"
       },
@@ -523,6 +523,7 @@
             "displayName-count-one": "జార్జియన్ లారి",
             "displayName-count-other": "జార్జియన్ లారీలు",
             "symbol": "GEL",
+            "symbol-alt-narrow": "₾",
             "symbol-alt-variant": "₾"
           },
           "GHC": {

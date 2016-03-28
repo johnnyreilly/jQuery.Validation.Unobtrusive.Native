@@ -3,13 +3,14 @@
     "to": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12379 $",
+          "_cldrVersion": "29"
         },
         "language": "to"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "tohinima fakaʻafaka",
           "Aghb": "tohinima fakaʻalapēnia-kaukasia",
           "Ahom": "Ahom",
@@ -22,6 +23,7 @@
           "Bass": "tohinima fakapasa-vā",
           "Batk": "tohinima fakapātaki",
           "Beng": "tohinima fakapengikali",
+          "Bhks": "Bhks",
           "Blis": "tohinima fakaʻilonga-pilisi",
           "Bopo": "tohinima fakapopomofo",
           "Brah": "tohinima fakapalāmī",
@@ -54,6 +56,7 @@
           "Grek": "tohinima fakakalisi",
           "Gujr": "tohinima fakaʻinitia-kutalati",
           "Guru": "tohinima fakakūmuki",
+          "Hanb": "Hanb",
           "Hang": "tohinima fakakōlea-hāngūlu",
           "Hani": "tohinima fakasiaina",
           "Hano": "tohinima fakahanunōʻo",
@@ -70,6 +73,7 @@
           "Hung": "tohinima fakahungakalia-motuʻa",
           "Inds": "tohinima fakaʻinitusi",
           "Ital": "tohinima fakaʻītali-motuʻa",
+          "Jamo": "Jamo",
           "Java": "tohinima fakasava",
           "Jpan": "tohinima fakasiapani",
           "Jurc": "tohinima fakaiūkeni",
@@ -98,6 +102,7 @@
           "Mahj": "tohinima fakamahasani",
           "Mand": "tohinima fakamanitaea",
           "Mani": "tohinima fakamanikaea",
+          "Marc": "Marc",
           "Maya": "tohinima tongitapu fakamaia",
           "Mend": "tohinima fakamēniti",
           "Merc": "tohinima fakameloue-heihei",
@@ -112,6 +117,7 @@
           "Mymr": "tohinima fakapema",
           "Narb": "tohinima fakaʻalepea-tokelau-motuʻa",
           "Nbat": "tohinima fakanapatea",
+          "Newa": "Newa",
           "Nkgb": "tohinima fakanati-sepa",
           "Nkoo": "tohinima fakanikō",
           "Nshu": "tohinima fakanasiū",
@@ -119,6 +125,7 @@
           "Olck": "tohinima fakaʻolisiki",
           "Orkh": "tohinima fakaʻolikoni",
           "Orya": "tohinima fakaʻinitia-ʻolāea",
+          "Osge": "Osge",
           "Osma": "tohinima fakaʻosimānia",
           "Palm": "tohinima fakapalamilene",
           "Pauc": "tohinima fakapausinihau",
@@ -224,6 +231,7 @@
           "Yiii": "tohinima fakaīī",
           "Zinh": "tohinima hokosi",
           "Zmth": "tohinima fakamatematika",
+          "Zsye": "Zsye",
           "Zsym": "tohinima fakaʻilonga",
           "Zxxx": "tohinima taʻetohitohiʻi",
           "Zyyy": "tohinima fakatatau",

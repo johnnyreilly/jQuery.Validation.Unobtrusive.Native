@@ -3,13 +3,14 @@
     "vi": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11917 $"
+          "_number": "$Revision: 12312 $",
+          "_cldrVersion": "29"
         },
         "language": "vi"
       },
       "localeDisplayNames": {
         "scripts": {
+          "Adlm": "Adlm",
           "Afak": "Chữ Afaka",
           "Aghb": "Aghb",
           "Ahom": "Ahom",
@@ -23,6 +24,7 @@
           "Bass": "Chữ Bassa Vah",
           "Batk": "Chữ Batak",
           "Beng": "Chữ Bengali",
+          "Bhks": "Bhks",
           "Blis": "Chữ Blissymbols",
           "Bopo": "Chữ Bopomofo",
           "Brah": "Chữ Brahmi",
@@ -55,6 +57,7 @@
           "Grek": "Chữ Hy Lạp",
           "Gujr": "Chữ Gujarati",
           "Guru": "Chữ Gurmukhi",
+          "Hanb": "Hanb",
           "Hang": "Chữ Hangul",
           "Hani": "Chữ Hán",
           "Hano": "Chữ Hanunoo",
@@ -71,6 +74,7 @@
           "Hung": "Chữ Hungary cổ",
           "Inds": "Chữ Indus",
           "Ital": "Chữ Italic cổ",
+          "Jamo": "Jamo",
           "Java": "Chữ Java",
           "Jpan": "Chữ Nhật Bản",
           "Jurc": "Chữ Jurchen",
@@ -99,6 +103,7 @@
           "Mahj": "Mahj",
           "Mand": "Chữ Mandaean",
           "Mani": "Chữ Manichaean",
+          "Marc": "Marc",
           "Maya": "Chữ tượng hình Maya",
           "Mend": "Chữ Mende",
           "Merc": "Chữ Meroitic Nét thảo",
@@ -113,6 +118,7 @@
           "Mymr": "Myanma",
           "Narb": "Chữ Bắc Ả Rập cổ",
           "Nbat": "Chữ Nabataean",
+          "Newa": "Newa",
           "Nkgb": "Chữ Naxi Geba",
           "Nkoo": "Chữ N’Ko",
           "Nshu": "Chữ Nüshu",
@@ -120,6 +126,7 @@
           "Olck": "Chữ Ol Chiki",
           "Orkh": "Chữ Orkhon",
           "Orya": "Chữ Oriya",
+          "Osge": "Osge",
           "Osma": "Chữ Osmanya",
           "Palm": "Chữ Palmyrene",
           "Pauc": "Pauc",
@@ -225,6 +232,7 @@
           "Yiii": "Chữ Di",
           "Zinh": "Chữ Kế thừa",
           "Zmth": "Ký hiệu Toán học",
+          "Zsye": "Zsye",
           "Zsym": "Ký hiệu",
           "Zxxx": "Chưa có chữ viết",
           "Zyyy": "Chung",

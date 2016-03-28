@@ -1,9 +1,9 @@
 {
   "supplemental": {
     "version": {
-      "_number": "$Revision: 11969 $",
+      "_number": "$Revision: 12447 $",
       "_unicodeVersion": "8.0.0",
-      "_cldrVersion": "28"
+      "_cldrVersion": "29"
     },
     "weekData": {
       "minDays": {

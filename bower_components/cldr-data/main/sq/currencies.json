@@ -3,8 +3,8 @@
     "sq": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12293 $",
+          "_cldrVersion": "29"
         },
         "language": "sq"
       },
@@ -523,7 +523,7 @@
             "displayName-count-one": "lari gjeorgjian",
             "displayName-count-other": "lari gjeorgjiane",
             "symbol": "GEL",
-            "symbol-alt-variant": "₾"
+            "symbol-alt-narrow": "₾"
           },
           "GHC": {
             "displayName": "GHC",

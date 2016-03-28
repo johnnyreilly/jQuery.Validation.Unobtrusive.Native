@@ -3,8 +3,8 @@
     "mn": {
       "identity": {
         "version": {
-          "_cldrVersion": "28",
-          "_number": "$Revision: 11914 $"
+          "_number": "$Revision: 12307 $",
+          "_cldrVersion": "29"
         },
         "language": "mn"
       },
@@ -236,8 +236,14 @@
             "dayPeriods": {
               "format": {
                 "abbreviated": {
-                  "am": "AM",
-                  "pm": "PM"
+                  "midnight": "шөнө дунд",
+                  "am": "ҮӨ",
+                  "noon": "үд дунд",
+                  "pm": "ҮХ",
+                  "morning1": "өглөө",
+                  "afternoon1": "өдөр",
+                  "evening1": "орой",
+                  "night1": "шөнө"
                 },
                 "narrow": {
                   "midnight": "шөнө дунд",
@@ -262,18 +268,30 @@
               },
               "stand-alone": {
                 "abbreviated": {
-                  "am": "AM",
-                  "pm": "PM"
+                  "midnight": "шөнө дунд",
+                  "am": "ҮӨ",
+                  "noon": "үд дунд",
+                  "pm": "ҮХ",
+                  "morning1": "өглөө",
+                  "afternoon1": "өдөр",
+                  "evening1": "орой",
+                  "night1": "шөнө"
                 },
                 "narrow": {
-                  "am": "AM",
-                  "pm": "PM"
+                  "midnight": "шөнө дунд",
+                  "am": "ҮӨ",
+                  "noon": "үд дунд",
+                  "pm": "ҮХ",
+                  "morning1": "өглөө",
+                  "afternoon1": "өдөр",
+                  "evening1": "орой",
+                  "night1": "шөнө"
                 },
                 "wide": {
                   "midnight": "шөнө дунд",
-                  "am": "AM",
+                  "am": "ҮӨ",
                   "noon": "үд дунд",
-                  "pm": "PM",
+                  "pm": "ҮХ",
                   "morning1": "өглөө",
                   "afternoon1": "өдөр",
                   "evening1": "орой",
