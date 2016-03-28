@@ -56,14 +56,9 @@ The only differences above are the extra `true` parameters being passed.  If you
 
 By the way, the above examples (and others) can be found in the MVC demo project jVUNDemo on GitHub - this demo site be viewed at [johnnyreilly.github.io/jQuery.Validation.Unobtrusive.Native/](http://johnnyreilly.github.io/jQuery.Validation.Unobtrusive.Native/).  2 of the demos ([Remote](http://johnnyreilly.github.io/jQuery.Validation.Unobtrusive.Native/Demo/Remote.html) and [Globalize](http://johnnyreilly.github.io/jQuery.Validation.Unobtrusive.Native/AdvancedDemo/Globalize.html)) do not work completely as static sites (which GitHub pages are).  If you would like to see these demo's in action it's best you run the jVUNDemo project locally.
 
-##Plans
+## State of the Union
 
-So far the basic set of the HtmlHelpers and their associated unobtrusive mappings have been implemented.  If any have been missed then let me know.  As time goes by I intend to:
-
-* fill in any missing gaps there may be
-* maintain both MVC 3, 4, 5 (and when / if the time comes 6+) versions of this on Nuget
-* get the unit test coverage to a good level and (most importantly)
-* create some really useful demos and documentation.
+This is basically a "done" project. Work is complete and I'm not aware of any missing pieces.  I could port this to ASP.Net Core / MVC 6 when it ships but I don't have any immediate plans to.  Never say never though.
 
 ## Author
 **John Reilly**
@@ -74,7 +69,7 @@ So far the basic set of the HtmlHelpers and their associated unobtrusive mapping
 Inspired by jquery.validate.unobtrusive.js and entirely dependent on http://github.com/jzaefferer/jquery-validation and http://aspnet.codeplex.com/wikipage?title=MVC.
 
 ## Copyright
-Copyright © 2013 [John Reilly](mailto:johnny_reilly@hotmail.com).
+Copyright Â© 2013 [John Reilly](mailto:johnny_reilly@hotmail.com).
 
 ##License
 
