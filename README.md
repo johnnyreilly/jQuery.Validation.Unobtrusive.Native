@@ -13,7 +13,7 @@ This project intends to be a bridge between MVC's inbuilt support for driving va
 
 You can see more detail on the [demo site](http://johnnyreilly.github.io/jQuery.Validation.Unobtrusive.Native/).
 
-##Getting started
+## Getting started
 
 If you haven't already, ensure that the following entries can be found in your web.config:
 
@@ -28,7 +28,7 @@ Ensure that you have the latest version of jquery.validate.js, you can find it [
 
 P.S. If you're using the source code from GitHub in Visual Studio, make sure you have the Package Manager option *"Allow NuGet to download missing packages during build"* set to true.  This will ensure that the required packages are downloaded from NuGet.
 
-##Examples
+## Examples
 
 Where you would previously have written:
 
@@ -71,11 +71,11 @@ Inspired by jquery.validate.unobtrusive.js and entirely dependent on http://gith
 ## Copyright
 Copyright © 2013 [John Reilly](mailto:johnny_reilly@hotmail.com).
 
-##License
+## License
 
 MIT license - [http://www.opensource.org/licenses/mit-license.php](http://www.opensource.org/licenses/mit-license.php)
 
-##Changelog
+## Changelog
 
 ### 1.3.0 / 2015-11-27
 
