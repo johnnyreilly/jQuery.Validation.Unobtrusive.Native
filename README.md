@@ -1,6 +1,8 @@
 jQuery Validation Unobtrusive Native [![Build Status](https://ci.appveyor.com/api/projects/status/github/johnnyreilly/jQuery.Validation.Unobtrusive.Native?retina=true)](https://ci.appveyor.com/project/JohnReilly/jquery-validation-unobtrusive-native)
 ====================================
 
+Find it on NuGet: [jQuery.Validation.Unobtrusive.Native.MVC5](https://www.nuget.org/packages/jQuery.Validation.Unobtrusive.Native.MVC5)
+
 jQuery.Validation.Unobtrusive.Native is a collection of ASP.Net MVC HTML helper extensions that make use of jQuery Validation's native unobtrusive support for validation driven by HTML 5 data attributes.  Microsoft shipped [jquery.validate.unobtrusive.js](http://bradwilson.typepad.com/blog/2010/10/mvc3-unobtrusive-validation.html) back with MVC 3.  It provided a way to apply data model validations to the client side using a combination of jQuery Validation and HTML 5 data attributes (that's the "unobtrusive" part).
 
 The principal of this was and is fantastic.  But since that time the jQuery Validation project has implemented its own support for driving validation unobtrusively (this shipped with [jQuery Validation 1.11.0](http://jquery.bassistance.de/validate/changelog.txt)).  The advantages of the native support over jquery.validate.unobtrusive.js are:
@@ -13,7 +15,7 @@ This project intends to be a bridge between MVC's inbuilt support for driving va
 
 You can see more detail on the [demo site](http://johnnyreilly.github.io/jQuery.Validation.Unobtrusive.Native/).
 
-##Getting started
+## Getting started
 
 If you haven't already, ensure that the following entries can be found in your web.config:
 
@@ -28,7 +30,7 @@ Ensure that you have the latest version of jquery.validate.js, you can find it [
 
 P.S. If you're using the source code from GitHub in Visual Studio, make sure you have the Package Manager option *"Allow NuGet to download missing packages during build"* set to true.  This will ensure that the required packages are downloaded from NuGet.
 
-##Examples
+## Examples
 
 Where you would previously have written:
 
@@ -71,11 +73,11 @@ Inspired by jquery.validate.unobtrusive.js and entirely dependent on http://gith
 ## Copyright
 Copyright © 2013 [John Reilly](mailto:johnny_reilly@hotmail.com).
 
-##License
+## License
 
 MIT license - [http://www.opensource.org/licenses/mit-license.php](http://www.opensource.org/licenses/mit-license.php)
 
-##Changelog
+## Changelog
 
 ### 1.3.0 / 2015-11-27
 
